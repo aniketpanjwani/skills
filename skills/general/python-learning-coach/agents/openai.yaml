@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Learning Coach"
+  short_description: "Adaptive Python tutoring with memory."
+  default_prompt: "Use $python-learning-coach to teach Python at the learner current level and update their memory after each session."
