@@ -1,19 +1,16 @@
-# Free Public Agent Skills
+# Skills
 
-<p align="center"><strong>Created by Aniket Panjwani</strong></p>
+<p align="center"><strong>Created by Aniket Panjwani, PhD</strong></p>
 <p align="center">
   <a href="https://ai-mba.io"><strong>Website: ai-mba.io</strong></a> |
-  <a href="https://www.youtube.com/@aniketapanjwani"><strong>YouTube: @aniketapanjwani</strong></a>
+  <a href="https://www.youtube.com/@aniketapanjwani"><strong>YouTube: @aniketapanjwani</strong></a> |
+  <a href="https://www.skool.com/the-ai-mba"><strong>Learn with 1000+ AI Devs</strong></a>
+
 </p>
 
-Free, reusable skills for Codex and Claude Code.
+A set of skills created by Aniket Panjwani. The skills are usable through Codex and Claude Code. The repo comes with a bootstrap script to easily install all of them. 
 
-## What This Repo Is
-
-- Public skill library (free to use).
-- One bootstrap script for Codex, Claude, or both.
-- Non-destructive installs by default.
-- Supports installing all skills, selected skills, or audience/type bundles (for example `economists`, `general`).
+There are two general sets of skills: ones for anyone/any developer, and others specifically for economists/social scientists/academics.
 
 ## Repo Layout
 
