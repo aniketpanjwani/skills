@@ -8,40 +8,42 @@
 
 </p>
 
-A set of skills created by Aniket Panjwani. The skills are usable through Codex and Claude Code. The repo comes with a bootstrap script to easily install all of them. 
+A set of reusable skills for Codex and Claude Code.
 
-There are two general sets of skills: ones for anyone/any developer, and others specifically for economists/social scientists/academics.
+## Start Here (Simple)
 
-## Repo Layout
+Skills are small instruction packs that make your coding agent better at specific jobs.
 
-```text
-.
-├── README.md
-├── scripts/
-│   └── bootstrap.sh
-└── skills/
-    ├── general/
-    │   └── starter-public-skill/
-    │       └── SKILL.md
-    └── economists/
-        └── economist-briefing/
-            └── SKILL.md
+- They help your agent follow a workflow instead of starting from scratch each time.
+- You can install all skills, only some skills, or only one category.
+- You can install for Codex, Claude, or both.
+
+### Easiest Path
+
+Clone this repo, then ask your coding agent:
+
+`Install this skills repo for me using scripts/bootstrap.sh for both Codex and Claude globally.`
+
+If you want to run it manually, this is the one command most people need:
+
+```bash
+./scripts/bootstrap.sh --target both --scope global
 ```
 
-## Install Targets and Scope
+## Learn More (Video)
 
-Targets:
+- [The Only Claude Code Skill You Need](https://youtu.be/MMpaPV3KMFI?si=b6PWSAtfawmk564R)
+- [Claude Code Skills vs MCPs: Complete Beginner's Guide 2026](https://youtu.be/42nz2FfKA9A?si=EUTr1Daohu-unqiP)
 
-- `codex`
-- `claude`
-- `both` (simultaneous install)
+## Skills Catalog
 
-Scopes:
+| Skill | Audience | What it does | Path |
+|---|---|---|---|
+| `python-learning-coach` | General | Personalized Python tutoring with memory, daily logs, and level adaptation | `skills/general/python-learning-coach` |
 
-- Global: `~/.codex/skills`, `~/.claude/skills`
-- Project: `<project>/.codex/skills`, `<project>/.claude/skills`
+## Install Options
 
-## 1) Clone
+### 1) Clone
 
 ```bash
 git clone https://github.com/aniketpanjwani/public-agent-skills.git ~/projects/public-agent-skills
@@ -49,74 +51,68 @@ cd ~/projects/public-agent-skills
 chmod +x scripts/bootstrap.sh
 ```
 
-If your repo URL/path is different, replace those values.
-
-## 2) Install All Skills
-
-Global install for both Codex + Claude:
+### 2) Install all skills (global, both agents)
 
 ```bash
 ./scripts/bootstrap.sh --target both --scope global
 ```
 
-Project-level install for both:
+### 3) Install all skills (project only)
 
 ```bash
 ./scripts/bootstrap.sh --target both --scope project --project-dir /path/to/project
 ```
 
-## 3) Let Users Choose What They Install
+### 4) Install only selected skills
 
-List available skills and types:
+```bash
+./scripts/bootstrap.sh --target both --scope global --skills python-learning-coach
+```
+
+### 5) Install by category/type
+
+```bash
+./scripts/bootstrap.sh --target both --scope global --type general
+```
+
+### 6) See what is available
 
 ```bash
 ./scripts/bootstrap.sh --list
 ```
 
-Install only specific skills:
+## Technical Reference
+
+### Targets
+
+- `codex`
+- `claude`
+- `both`
+
+### Scopes
+
+- Global: `~/.codex/skills`, `~/.claude/skills`
+- Project: `<project>/.codex/skills`, `<project>/.claude/skills`
+
+### Safe-by-default behavior
+
+- Existing personal skills are not overwritten.
+- Conflicts are skipped unless you pass `--force`.
+
+Use `--force` only when you intentionally want to replace files:
 
 ```bash
-./scripts/bootstrap.sh --target both --scope global --skills starter-public-skill,economist-briefing
+./scripts/bootstrap.sh --target both --scope global --type general --force
 ```
 
-Install by type (bundle):
-
-```bash
-./scripts/bootstrap.sh --target both --scope global --type economists
-```
-
-Install a union of type + specific skill:
-
-```bash
-./scripts/bootstrap.sh --target both --scope global --type economists --skills starter-public-skill
-```
-
-## Non-Destructive Behavior (Existing User Skills Stay Safe)
-
-By default:
-
-- Existing personal skills are untouched.
-- Conflicts are skipped.
-- Matching symlinks are left as-is.
-
-Use `--force` only when you explicitly want replacements:
-
-```bash
-./scripts/bootstrap.sh --target both --scope global --type economists --force
-```
-
-## Update Flow
-
-Users can keep this repo synced and get new/updated skills:
+### Update flow
 
 ```bash
 git pull
 ./scripts/bootstrap.sh --target both --scope global
 ```
 
-If they installed with symlink mode (default), updated skill content is reflected immediately after pull.
-
-## Optional Modes
+### Optional modes
 
 Dry run:
 
@@ -129,20 +125,6 @@ Copy mode (instead of symlink mode):
 ```bash
 ./scripts/bootstrap.sh --target both --scope global --copy
 ```
-
-## How To Organize Skills By Audience
-
-Use subdirectories under `skills/`:
-
-- `skills/general/<skill>/SKILL.md`
-- `skills/economists/<skill>/SKILL.md`
-- add more types as needed (for example `founders`, `students`)
-
-Then users can install by `--type`.
-
-Important:
-
-- Skill folder names must be globally unique, even across different types.
 
 ## License
 
