@@ -7,23 +7,40 @@ Use this guide to make the skill memory searchable for any user.
 Use `uv` so the memory helper script runs consistently:
 
 ```bash
-uv venv
-source .venv/bin/activate
-uv run python3 scripts/python_learning_memory.py doctor
+if ! command -v uv >/dev/null 2>&1; then
+  if command -v brew >/dev/null 2>&1; then
+    brew install uv
+  elif command -v curl >/dev/null 2>&1; then
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+  else
+    echo "Install uv manually: https://docs.astral.sh/uv/getting-started/installation/"
+  fi
+fi
+
+python3 scripts/python_learning_memory.py doctor
 ```
 
 ## Install
 
 ```bash
-bun install -g https://github.com/tobi/qmd
-qmd status
+if ! command -v qmd >/dev/null 2>&1; then
+  if command -v bun >/dev/null 2>&1; then
+    bun install -g @tobilu/qmd
+  elif command -v npm >/dev/null 2>&1; then
+    npm install -g @tobilu/qmd
+  else
+    echo "Install Bun or npm first, then install qmd from https://github.com/tobi/qmd"
+  fi
+fi
+
+qmd status || echo "QMD unavailable; continue with file-based memory only."
 ```
 
-If `qmd status` fails, fix installation before continuing.
+QMD is optional. If `qmd status` fails, continue with local files.
 If needed, run:
 
 ```bash
-uv run python3 scripts/python_learning_memory.py qmd-check
+python3 scripts/python_learning_memory.py qmd-check
 ```
 This command checks both `uv` and QMD, then prints guided next steps.
 
@@ -36,7 +53,9 @@ This command checks both `uv` and QMD, then prints guided next steps.
 3. Run index refresh after each tutoring session:
 
 ```bash
-qmd update
+if command -v qmd >/dev/null 2>&1 && qmd status >/dev/null 2>&1; then
+  qmd update
+fi
 ```
 
 ## Retrieval Commands

@@ -28,8 +28,27 @@ MAX_TOPICS = 20
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_MEMORY_ROOT = SCRIPT_DIR.parent / "references" / "memory"
-QMD_INSTALL_COMMAND = "bun install -g https://github.com/tobi/qmd"
+QMD_INSTALL_COMMAND_BUN = "bun install -g @tobilu/qmd"
+QMD_INSTALL_COMMAND_NPM = "npm install -g @tobilu/qmd"
 UV_INSTALL_URL = "https://docs.astral.sh/uv/getting-started/installation/"
+UV_INSTALL_COMMAND_CURL = "curl -LsSf https://astral.sh/uv/install.sh | sh"
+UV_INSTALL_COMMAND_BREW = "brew install uv"
+
+
+def recommended_uv_install_command() -> str:
+    if shutil.which("brew"):
+        return UV_INSTALL_COMMAND_BREW
+    if shutil.which("curl"):
+        return UV_INSTALL_COMMAND_CURL
+    return f"See {UV_INSTALL_URL}"
+
+
+def recommended_qmd_install_command() -> str:
+    if shutil.which("bun"):
+        return QMD_INSTALL_COMMAND_BUN
+    if shutil.which("npm"):
+        return QMD_INSTALL_COMMAND_NPM
+    return "Install Bun or npm first, then install qmd from https://github.com/tobi/qmd"
 
 
 def now_local() -> datetime:
@@ -186,7 +205,7 @@ def detect_uv() -> dict[str, Any]:
     return {
         "installed": bool(uv_bin),
         "path": uv_bin,
-        "error": "" if uv_bin else f"Install uv: {UV_INSTALL_URL}",
+        "next_step": "" if uv_bin else recommended_uv_install_command(),
     }
 
 
@@ -196,8 +215,8 @@ def print_uv_check() -> None:
     print(f"- Installed: {'yes' if uv['installed'] else 'no'}")
     if uv["path"]:
         print(f"- Path: {uv['path']}")
-    if uv["error"]:
-        print(f"- Next step: {uv['error']}")
+    if uv["next_step"]:
+        print(f"- Install command: `{uv['next_step']}`")
 
 
 def print_qmd_check() -> None:
@@ -216,7 +235,8 @@ def print_qmd_check() -> None:
     if qmd["error"]:
         print("")
         print("## Next Steps")
-        print(f"- Install qmd: `{QMD_INSTALL_COMMAND}`")
+        print(f"- Install qmd: `{recommended_qmd_install_command()}`")
+        print("- Alternate install: `npm install -g @tobilu/qmd`")
         print("- Verify install: `qmd status`")
         print("- Refresh index after log updates: `qmd update`")
 
