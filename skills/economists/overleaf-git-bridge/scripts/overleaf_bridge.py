@@ -605,7 +605,8 @@ def sync_exact(source_root: Path, dest_root: Path, *, preserve_top_level: tuple[
         current_path = Path(current_root)
         for dirname in list(dirnames):
             child = current_path / dirname
-            if child.name in preserve_top_level and child.parent == dest_root:
+            relative = PurePosixPath(child.relative_to(dest_root).as_posix())
+            if relative.parts and relative.parts[0] in preserve_top_level:
                 continue
             try:
                 child.rmdir()
@@ -618,7 +619,7 @@ def fetch_remote(bridge_repo: Path) -> bool:
     remotes = {line.strip() for line in result.stdout.splitlines() if line.strip()}
     if REMOTE_NAME not in remotes:
         return False
-    git(bridge_repo, "fetch", REMOTE_NAME, REMOTE_BRANCH)
+    git(bridge_repo, "fetch", REMOTE_NAME)
     return True
 
 
