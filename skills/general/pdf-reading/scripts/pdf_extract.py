@@ -10,6 +10,7 @@ import shutil
 import subprocess
 import sys
 from dataclasses import asdict
+from enum import Enum
 from pathlib import Path
 from typing import Any
 
@@ -17,7 +18,10 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
+from table_agent import build_agent_table
 from table_cleanup import clean_table_markdown
+
+TABLE_ARTIFACT_VERSION = "2026-03-15"
 
 
 def _parse_args() -> argparse.Namespace:
@@ -48,6 +52,7 @@ def _uv_bootstrap(args: argparse.Namespace) -> None:
 
     docling_missing = False
     markitdown_missing = False
+    pdfplumber_missing = False
 
     if not args.fast or args.extract_figures or args.extract_tables:
         try:
@@ -55,13 +60,19 @@ def _uv_bootstrap(args: argparse.Namespace) -> None:
         except ImportError:
             docling_missing = True
 
+    if args.extract_tables:
+        try:
+            import pdfplumber  # noqa: F401
+        except ImportError:
+            pdfplumber_missing = True
+
     if args.fast:
         try:
             import markitdown  # noqa: F401
         except ImportError:
             markitdown_missing = True
 
-    if not docling_missing and not markitdown_missing:
+    if not docling_missing and not markitdown_missing and not pdfplumber_missing:
         return
 
     uv = shutil.which("uv")
@@ -71,11 +82,15 @@ def _uv_bootstrap(args: argparse.Namespace) -> None:
             missing.append("docling")
         if markitdown_missing:
             missing.append("markitdown[pdf]")
+        if pdfplumber_missing:
+            missing.append("pdfplumber")
         raise SystemExit(f"Missing dependencies: {', '.join(missing)}. Install them or install uv first.")
 
     cmd = [uv, "run"]
     if docling_missing or args.extract_figures or args.extract_tables or not args.fast:
         cmd.extend(["--with", "docling"])
+    if pdfplumber_missing or args.extract_tables:
+        cmd.extend(["--with", "pdfplumber"])
     if markitdown_missing or args.fast:
         cmd.extend(["--with", "markitdown[pdf]"])
     cmd.extend(["python", str(Path(__file__).resolve()), *sys.argv[1:]])
@@ -112,8 +127,95 @@ def _parse_table_title(table_markdown: str) -> str | None:
     return None
 
 
+def _relative_path(from_dir: Path, target_path: Path | None) -> str | None:
+    if target_path is None:
+        return None
+    try:
+        return target_path.relative_to(from_dir).as_posix()
+    except ValueError:
+        return os.path.relpath(target_path, from_dir)
+
+
+def _yaml_scalar(value: Any) -> str:
+    if value is None:
+        return "null"
+    if isinstance(value, bool):
+        return "true" if value else "false"
+    if isinstance(value, (int, float)):
+        return str(value)
+    return json.dumps(str(value))
+
+
+def _table_artifact_block(
+    *,
+    table_id: str,
+    page: int | None,
+    verification_required: bool,
+    verification_reasons: list[str],
+    md_dir: Path,
+    agent_json_path: Path,
+    latex_path: Path,
+    crop_path: Path | None,
+    html_path: Path | None,
+    otsl_path: Path | None,
+    raw_docling_json_path: Path,
+) -> str:
+    lines = [
+        f"<!-- table-artifact:start {table_id} -->",
+        "```yaml",
+        f"table_id: {_yaml_scalar(table_id)}",
+        f"page: {_yaml_scalar(page)}",
+        f"verification_required: {_yaml_scalar(verification_required)}",
+    ]
+    if verification_reasons:
+        lines.append("verification_reasons:")
+        for reason in verification_reasons:
+            lines.append(f"  - {json.dumps(reason)}")
+    else:
+        lines.append("verification_reasons: []")
+    lines.extend(
+        [
+            f"agent_table: {_yaml_scalar(_relative_path(md_dir, agent_json_path))}",
+            f"latex: {_yaml_scalar(_relative_path(md_dir, latex_path))}",
+            f"crop: {_yaml_scalar(_relative_path(md_dir, crop_path))}",
+            f"html: {_yaml_scalar(_relative_path(md_dir, html_path))}",
+            f"otsl: {_yaml_scalar(_relative_path(md_dir, otsl_path))}",
+            f"raw_docling: {_yaml_scalar(_relative_path(md_dir, raw_docling_json_path))}",
+            "```",
+            f"<!-- table-artifact:end {table_id} -->",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def _annotate_markdown_with_table_artifacts(md_path: Path, table_blocks: list[dict[str, Any]]) -> None:
+    markdown = md_path.read_text(encoding="utf-8")
+    for block in table_blocks:
+        raw_markdown = block["raw_markdown"]
+        artifact_block = block["artifact_block"]
+        replacement = f"{raw_markdown}\n\n{artifact_block}"
+        if raw_markdown in markdown:
+            markdown = markdown.replace(raw_markdown, replacement, 1)
+    md_path.write_text(markdown, encoding="utf-8")
+
+
+def _json_default(value: Any) -> Any:
+    if hasattr(value, "model_dump"):
+        try:
+            return value.model_dump(mode="json")
+        except TypeError:
+            return value.model_dump()
+    if isinstance(value, Path):
+        return str(value)
+    if isinstance(value, Enum):
+        return value.value
+    if hasattr(value, "value"):
+        return value.value
+    raise TypeError(f"Object of type {type(value).__name__} is not JSON serializable")
+
+
 def _json_dump(path: Path, payload: Any) -> None:
-    path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(payload, indent=2, sort_keys=True, default=_json_default) + "\n", encoding="utf-8")
 
 
 def _is_fresh(pdf_path: Path, sentinels: list[Path]) -> bool:
@@ -220,66 +322,154 @@ def _extract_figures(doc: Any, pdf_path: Path, artifacts_dir: Path, figures_json
     _json_dump(figures_json, figures)
 
 
-def _extract_tables(doc: Any, tables_dir: Path, tables_json: Path, table_cleanup_mode: str) -> None:
+def _extract_tables(
+    doc: Any,
+    pdf_path: Path,
+    md_path: Path,
+    tables_dir: Path,
+    tables_json: Path,
+    table_cleanup_mode: str,
+    version_path: Path,
+) -> None:
+    import pdfplumber
+
     tables_dir.mkdir(parents=True, exist_ok=True)
+    version_path.write_text(TABLE_ARTIFACT_VERSION + "\n", encoding="utf-8")
     manifest: list[dict[str, Any]] = []
+    table_blocks: list[dict[str, Any]] = []
+    plumber_pdf = pdfplumber.open(str(pdf_path))
 
-    for index, table in enumerate(doc.tables, start=1):
-        prefix = f"table_{index:03d}"
-        raw_md_path = tables_dir / f"{prefix}.raw.md"
-        cleaned_md_path = tables_dir / f"{prefix}.cleaned.md"
-        crop_path = tables_dir / f"{prefix}.crop.png"
-        csv_path = tables_dir / f"{prefix}.csv"
+    try:
+        for index, table in enumerate(doc.tables, start=1):
+            prefix = f"table_{index:03d}"
+            raw_md_path = tables_dir / f"{prefix}.raw.md"
+            cleaned_md_path = tables_dir / f"{prefix}.cleaned.md"
+            raw_docling_json_path = tables_dir / f"{prefix}.raw_docling.json"
+            agent_json_path = tables_dir / f"{prefix}.agent.json"
+            crop_path = tables_dir / f"{prefix}.crop.png"
+            csv_path = tables_dir / f"{prefix}.csv"
+            html_path = tables_dir / f"{prefix}.html"
+            otsl_path = tables_dir / f"{prefix}.otsl.txt"
+            tex_path = tables_dir / f"{prefix}.tex"
 
-        raw_markdown = table.export_to_markdown(doc=doc)
-        raw_md_path.write_text(raw_markdown, encoding="utf-8")
+            raw_markdown = table.export_to_markdown(doc=doc)
+            raw_md_path.write_text(raw_markdown, encoding="utf-8")
 
-        cleanup_report = None
-        cleaned_markdown = raw_markdown
-        if table_cleanup_mode == "normal":
-            cleaned_markdown, cleanup_report = clean_table_markdown(raw_markdown)
-        cleaned_md_path.write_text(cleaned_markdown, encoding="utf-8")
+            cleanup_report = None
+            cleaned_markdown = raw_markdown
+            if table_cleanup_mode == "normal":
+                cleaned_markdown, cleanup_report = clean_table_markdown(raw_markdown)
+            cleaned_md_path.write_text(cleaned_markdown, encoding="utf-8")
 
-        csv_output = None
-        try:
-            dataframe = table.export_to_dataframe(doc=doc)
-            dataframe.to_csv(csv_path, index=False)
-            csv_output = csv_path
-        except Exception:
+            if cleanup_report is None:
+                _, cleanup_report = clean_table_markdown(raw_markdown)
+
+            if hasattr(table, "model_dump"):
+                try:
+                    _json_dump(raw_docling_json_path, table.model_dump(mode="json"))
+                except TypeError:
+                    _json_dump(raw_docling_json_path, table.model_dump())
+            else:
+                _json_dump(raw_docling_json_path, {})
+
             csv_output = None
+            try:
+                dataframe = table.export_to_dataframe(doc=doc)
+                dataframe.to_csv(csv_path, index=False)
+                csv_output = csv_path
+            except Exception:
+                csv_output = None
 
-        crop_saved = None
-        try:
-            crop = table.get_image(doc)
-            if crop is not None:
-                crop.save(crop_path)
-                crop_saved = crop_path
-        except Exception:
+            html_output = None
+            try:
+                html_output = table.export_to_html(doc=doc)
+                html_path.write_text(html_output, encoding="utf-8")
+            except Exception:
+                html_output = None
+
+            otsl_output = None
+            try:
+                otsl_output = table.export_to_otsl(doc=doc)
+                otsl_path.write_text(otsl_output, encoding="utf-8")
+            except Exception:
+                otsl_output = None
+
             crop_saved = None
+            crop = None
+            try:
+                crop = table.get_image(doc)
+                if crop is not None:
+                    crop.save(crop_path)
+                    crop_saved = crop_path
+            except Exception:
+                crop = None
+                crop_saved = None
 
-        page_no = None
-        if getattr(table, "prov", None):
-            page_no = getattr(table.prov[0], "page_no", None)
+            agent_table, full_latex = build_agent_table(
+                table=table,
+                doc=doc,
+                pdf_path=pdf_path,
+                table_index=index,
+                raw_markdown=raw_markdown,
+                cleaned_markdown=cleaned_markdown,
+                cleaned_report=cleanup_report,
+                html=html_output,
+                otsl=otsl_output,
+                crop_path=crop_saved,
+                table_image=crop,
+                plumber_pdf=plumber_pdf,
+            )
+            _json_dump(agent_json_path, agent_table)
+            tex_path.write_text(full_latex, encoding="utf-8")
 
-        if cleanup_report is None:
-            _, cleanup_report = clean_table_markdown(raw_markdown)
+            page_no = None
+            if getattr(table, "prov", None):
+                page_no = getattr(table.prov[0], "page_no", None)
 
-        manifest.append(
-            {
-                "id": index,
-                "page": page_no,
-                "title": _parse_table_title(raw_markdown),
-                "raw_markdown_path": str(raw_md_path),
-                "cleaned_markdown_path": str(cleaned_md_path),
-                "csv_path": str(csv_output) if csv_output is not None else None,
-                "crop_path": str(crop_saved) if crop_saved is not None else None,
-                "verification_required": cleanup_report.verification_required,
-                "verification_reasons": cleanup_report.reasons,
-                "cleanup_report": asdict(cleanup_report),
-            }
-        )
+            manifest.append(
+                {
+                    "schema_version": TABLE_ARTIFACT_VERSION,
+                    "id": index,
+                    "page": page_no,
+                    "title": agent_table.get("title") or _parse_table_title(raw_markdown),
+                    "raw_markdown_path": str(raw_md_path),
+                    "cleaned_markdown_path": str(cleaned_md_path),
+                    "raw_docling_json_path": str(raw_docling_json_path),
+                    "agent_table_path": str(agent_json_path),
+                    "html_path": str(html_path) if html_output is not None else None,
+                    "otsl_path": str(otsl_path) if otsl_output is not None else None,
+                    "latex_path": str(tex_path),
+                    "csv_path": str(csv_output) if csv_output is not None else None,
+                    "crop_path": str(crop_saved) if crop_saved is not None else None,
+                    "verification_required": cleanup_report.verification_required,
+                    "verification_reasons": cleanup_report.reasons,
+                    "cleanup_report": asdict(cleanup_report),
+                }
+            )
+
+            table_blocks.append(
+                {
+                    "raw_markdown": raw_markdown,
+                    "artifact_block": _table_artifact_block(
+                        table_id=agent_table["table_id"],
+                        page=page_no,
+                        verification_required=cleanup_report.verification_required,
+                        verification_reasons=cleanup_report.reasons,
+                        md_dir=md_path.parent,
+                        agent_json_path=agent_json_path,
+                        latex_path=tex_path,
+                        crop_path=crop_saved,
+                        html_path=html_path if html_output is not None else None,
+                        otsl_path=otsl_path if otsl_output is not None else None,
+                        raw_docling_json_path=raw_docling_json_path,
+                    ),
+                }
+            )
+    finally:
+        plumber_pdf.close()
 
     _json_dump(tables_json, manifest)
+    _annotate_markdown_with_table_artifacts(md_path, table_blocks)
 
 
 def _run_docling(
@@ -290,6 +480,7 @@ def _run_docling(
     figures_json: Path | None,
     tables_dir: Path | None,
     tables_json: Path | None,
+    tables_version_path: Path | None,
 ) -> Path:
     from docling.datamodel.base_models import InputFormat
     from docling.datamodel.pipeline_options import PdfPipelineOptions
@@ -330,7 +521,7 @@ def _run_docling(
         _extract_figures(doc, pdf_path, artifacts_dir, figures_json, renamed_artifacts)
 
     if args.extract_tables:
-        _extract_tables(doc, tables_dir, tables_json, args.table_cleanup)
+        _extract_tables(doc, pdf_path, md_path, tables_dir, tables_json, args.table_cleanup, tables_version_path)
 
     return md_path
 
@@ -354,6 +545,7 @@ def main() -> int:
     figures_json = pdf_path.parent / f"{stem}.figures.json" if args.extract_figures else None
     tables_dir = pdf_path.parent / f"{stem}.tables" if args.extract_tables else None
     tables_json = pdf_path.parent / f"{stem}.tables.json" if args.extract_tables else None
+    tables_version_path = tables_dir / ".artifact-version" if args.extract_tables else None
 
     read_artifact = fast_md if args.fast else docling_md
     sentinels = [read_artifact]
@@ -363,6 +555,8 @@ def main() -> int:
         sentinels.append(figures_json)
     if tables_json is not None:
         sentinels.append(tables_json)
+    if tables_version_path is not None:
+        sentinels.append(tables_version_path)
 
     engine = "markitdown" if args.fast else "docling"
     if not args.force and _is_fresh(pdf_path, sentinels):
@@ -389,6 +583,7 @@ def main() -> int:
                 figures_json=figures_json,
                 tables_dir=tables_dir,
                 tables_json=tables_json,
+                tables_version_path=tables_version_path,
             )
         except Exception as exc:
             read_artifact = _run_pdftotext(pdf_path, fallback_txt)

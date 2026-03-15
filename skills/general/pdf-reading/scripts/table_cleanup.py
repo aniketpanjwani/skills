@@ -22,7 +22,26 @@ class TableCleanupReport:
     reasons: list[str] = field(default_factory=list)
 
 
+@dataclass
+class CellTextCleanupReport:
+    original_text: str
+    normalized_text: str
+    repaired_decimal_markers: int = 0
+    repaired_checkmarks: int = 0
+    tightened_numeric_spacing: int = 0
+    repairs: list[str] = field(default_factory=list)
+    suspicious_markers: list[str] = field(default_factory=list)
+    needs_review: bool = False
+    confidence: float = 1.0
+
+
 def _subn(pattern: str, repl: str, text: str, count_attr: str, report: TableCleanupReport) -> str:
+    updated, count = re.subn(pattern, repl, text)
+    setattr(report, count_attr, getattr(report, count_attr) + count)
+    return updated
+
+
+def _subn_cell(pattern: str, repl: str, text: str, count_attr: str, report: CellTextCleanupReport) -> str:
     updated, count = re.subn(pattern, repl, text)
     setattr(report, count_attr, getattr(report, count_attr) + count)
     return updated
@@ -31,6 +50,11 @@ def _subn(pattern: str, repl: str, text: str, count_attr: str, report: TableClea
 def _append_reason(report: TableCleanupReport, reason: str) -> None:
     if reason not in report.reasons:
         report.reasons.append(reason)
+
+
+def _append_unique(items: list[str], value: str) -> None:
+    if value not in items:
+        items.append(value)
 
 
 def _repair_misplaced_signs(text: str, report: TableCleanupReport) -> str:
@@ -66,6 +90,63 @@ def _repair_misplaced_signs(text: str, report: TableCleanupReport) -> str:
             lines[index] = "|".join(curr_cells)
 
     return "\n".join(lines)
+
+
+def normalize_cell_text(text: str | None) -> tuple[str, CellTextCleanupReport]:
+    original = (text or "").replace("\u00a0", " ")
+    report = CellTextCleanupReport(original_text=original, normalized_text=original)
+    cleaned = original.replace("\u2212", "-")
+
+    decimal_patterns = (
+        r"(?<=\d)\s*/periodori\s*(?=\d)",
+        r"(?<=\()\s*/periodori\s*(?=\d)",
+        r"(?<=\d)\s*\(cid:4\)\s*(?=\d)",
+        r"(?<=\()\s*\(cid:4\)\s*(?=\d)",
+        r"(?<=\d)\s*\x04\s*(?=\d)",
+        r"(?<=\()\s*\x04\s*(?=\d)",
+    )
+    for pattern in decimal_patterns:
+        cleaned = _subn_cell(pattern, ".", cleaned, "repaired_decimal_markers", report)
+
+    cleaned = _subn_cell(r"\s*/check\b", " checkmark", cleaned, "repaired_checkmarks", report)
+
+    spacing_patterns = (
+        (r"(?<!\w)-\s+(?=\d)", "-"),
+        (r"\(\s+(?=[-0-9])", "("),
+        (r"(?<=\d)\s+\)", ")"),
+        (r"(?<=\d)\s*\.\s*(?=\d)", "."),
+        (r"\s+", " "),
+    )
+    for pattern, repl in spacing_patterns:
+        cleaned = _subn_cell(pattern, repl, cleaned, "tightened_numeric_spacing", report)
+
+    cleaned = cleaned.strip()
+
+    if report.repaired_decimal_markers:
+        _append_unique(report.repairs, "repaired_decimal_markers")
+    if report.repaired_checkmarks:
+        _append_unique(report.repairs, "repaired_checkmarks")
+    if report.tightened_numeric_spacing:
+        _append_unique(report.repairs, "tightened_numeric_spacing")
+
+    if re.search(r"/periodori|\(cid:4\)|\x04", cleaned):
+        _append_unique(report.suspicious_markers, "corrupted_decimal_marker")
+    if re.search(r"[\x00-\x08\x0b-\x1f\x7f]", cleaned):
+        _append_unique(report.suspicious_markers, "control_character")
+    if re.search(r"\b[A-Za-z]{20,}\b", cleaned):
+        _append_unique(report.suspicious_markers, "merged_token")
+    if re.search(r"(?<!\w)-\s+\(", cleaned):
+        _append_unique(report.suspicious_markers, "misplaced_sign")
+
+    report.needs_review = bool(report.suspicious_markers)
+    confidence = 0.98
+    confidence -= 0.05 * len(report.repairs)
+    confidence -= 0.12 * len(report.suspicious_markers)
+    if not cleaned:
+        confidence -= 0.3
+    report.confidence = round(max(0.0, min(0.99, confidence)), 3)
+    report.normalized_text = cleaned
+    return cleaned, report
 
 
 def clean_table_markdown(text: str) -> tuple[str, TableCleanupReport]:
