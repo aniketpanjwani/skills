@@ -39,6 +39,7 @@ If you want to run it manually, this is the one command most people need:
 
 | Skill | Audience | What it does | Path |
 |---|---|---|---|
+| `pdf-reading` | General | Docling-first PDF reading with optional figure, image, and table extraction artifacts | `skills/general/pdf-reading` |
 | `python-learning-coach` | General | Personalized Python tutoring with memory, daily logs, and level adaptation | `skills/general/python-learning-coach` |
 
 ## Install Options
@@ -66,7 +67,7 @@ chmod +x scripts/bootstrap.sh
 ### 4) Install only selected skills
 
 ```bash
-./scripts/bootstrap.sh --target both --scope global --skills python-learning-coach
+./scripts/bootstrap.sh --target both --scope global --skills pdf-reading
 ```
 
 ### 5) Install by category/type
