@@ -39,6 +39,7 @@ If you want to run it manually, this is the one command most people need:
 
 | Skill | Audience | What it does | Path |
 |---|---|---|---|
+| `overleaf-git-bridge` | Economists | Sync a Git-managed paper workspace with Overleaf through a filtered local mirror repo | `skills/economists/overleaf-git-bridge` |
 | `python-learning-coach` | General | Personalized Python tutoring with memory, daily logs, and level adaptation | `skills/general/python-learning-coach` |
 
 ## Install Options

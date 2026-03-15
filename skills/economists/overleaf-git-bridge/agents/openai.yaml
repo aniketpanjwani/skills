@@ -1,0 +1,4 @@
+interface:
+  display_name: "Overleaf Git Bridge"
+  short_description: "Sync Overleaf projects with Git-managed paper workflows"
+  default_prompt: "Use $overleaf-git-bridge to set up or sync an Overleaf-backed paper workspace."
