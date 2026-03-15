@@ -1,0 +1,30 @@
+{
+  "case_id": "synthetic-regression-booktabs",
+  "category": "regression",
+  "cell_count": 47,
+  "cell_text_exact_accuracy": 0.1489,
+  "cell_text_normalized_accuracy": 0.1489,
+  "coefficient_pair_accuracy": 0.0,
+  "extractor_summary": {
+    "cached": false,
+    "engine": "docling",
+    "read_artifact": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-regression-booktabs/source.docling.md",
+    "source_pdf": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-regression-booktabs/source.pdf",
+    "tables_manifest": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-regression-booktabs/source.tables.json"
+  },
+  "gold_agent_table": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-regression-booktabs/agent_table.json",
+  "gold_latex": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-regression-booktabs/table.tex",
+  "latex_exact_accuracy": 0.1489,
+  "latex_file_exact_match": false,
+  "latex_file_normalized_match": false,
+  "near_perfect_gate": false,
+  "numeric_cell_accuracy": 0.2,
+  "pdf_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-regression-booktabs/source.pdf",
+  "predicted_agent_table": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-regression-booktabs/source.tables/table_001.agent.json",
+  "predicted_latex": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-regression-booktabs/source.tables/table_001.tex",
+  "role_accuracy": 0.7234,
+  "structure_accuracy": 0.766,
+  "summary_row_accuracy": 0.0,
+  "table_id": "synthetic-regression-booktabs",
+  "unresolved_false_negatives": 16
+}

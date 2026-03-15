@@ -1,0 +1,1033 @@
+{
+  "benchmark_metadata": {
+    "case_id": "synthetic-sidewaystable",
+    "category": "landscape",
+    "description": "Landscape sidewaystable with many columns.",
+    "source_description": "synthetic-latex"
+  },
+  "cells": [
+    {
+      "bbox": null,
+      "cell_id": "r0_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 1.0,
+      "latex": "Sector",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "Sector",
+          "text_raw": "Sector"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "Sector",
+      "text_raw": "Sector"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 1.0,
+      "latex": "(1)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(1)",
+          "text_raw": "(1)"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "(1)",
+      "text_raw": "(1)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 1.0,
+      "latex": "(2)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(2)",
+          "text_raw": "(2)"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "(2)",
+      "text_raw": "(2)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c3",
+      "col_end": 4,
+      "col_start": 3,
+      "confidence": 1.0,
+      "latex": "(3)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(3)",
+          "text_raw": "(3)"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "(3)",
+      "text_raw": "(3)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c4",
+      "col_end": 5,
+      "col_start": 4,
+      "confidence": 1.0,
+      "latex": "(4)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(4)",
+          "text_raw": "(4)"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "(4)",
+      "text_raw": "(4)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c5",
+      "col_end": 6,
+      "col_start": 5,
+      "confidence": 1.0,
+      "latex": "(5)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(5)",
+          "text_raw": "(5)"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "(5)",
+      "text_raw": "(5)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c6",
+      "col_end": 7,
+      "col_start": 6,
+      "confidence": 1.0,
+      "latex": "(6)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(6)",
+          "text_raw": "(6)"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "(6)",
+      "text_raw": "(6)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c7",
+      "col_end": 8,
+      "col_start": 7,
+      "confidence": 1.0,
+      "latex": "(7)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(7)",
+          "text_raw": "(7)"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "(7)",
+      "text_raw": "(7)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c8",
+      "col_end": 9,
+      "col_start": 8,
+      "confidence": 1.0,
+      "latex": "(8)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(8)",
+          "text_raw": "(8)"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "(8)",
+      "text_raw": "(8)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c9",
+      "col_end": 10,
+      "col_start": 9,
+      "confidence": 1.0,
+      "latex": "(9)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(9)",
+          "text_raw": "(9)"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "(9)",
+      "text_raw": "(9)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c10",
+      "col_end": 11,
+      "col_start": 10,
+      "confidence": 1.0,
+      "latex": "(10)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(10)",
+          "text_raw": "(10)"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "(10)",
+      "text_raw": "(10)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 1.0,
+      "latex": "Robot exposure",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "Robot exposure",
+          "text_raw": "Robot exposure"
+        }
+      ],
+      "role": "stub",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "Robot exposure",
+      "text_raw": "Robot exposure"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 1.0,
+      "latex": "-0.11",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "-0.11",
+          "text_raw": "-0.11"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "-0.11",
+      "text_raw": "-0.11"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 1.0,
+      "latex": "-0.09",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "-0.09",
+          "text_raw": "-0.09"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "-0.09",
+      "text_raw": "-0.09"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c3",
+      "col_end": 4,
+      "col_start": 3,
+      "confidence": 1.0,
+      "latex": "-0.07",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "-0.07",
+          "text_raw": "-0.07"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "-0.07",
+      "text_raw": "-0.07"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c4",
+      "col_end": 5,
+      "col_start": 4,
+      "confidence": 1.0,
+      "latex": "-0.05",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "-0.05",
+          "text_raw": "-0.05"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "-0.05",
+      "text_raw": "-0.05"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c5",
+      "col_end": 6,
+      "col_start": 5,
+      "confidence": 1.0,
+      "latex": "-0.03",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "-0.03",
+          "text_raw": "-0.03"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "-0.03",
+      "text_raw": "-0.03"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c6",
+      "col_end": 7,
+      "col_start": 6,
+      "confidence": 1.0,
+      "latex": "-0.01",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "-0.01",
+          "text_raw": "-0.01"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "-0.01",
+      "text_raw": "-0.01"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c7",
+      "col_end": 8,
+      "col_start": 7,
+      "confidence": 1.0,
+      "latex": "0.00",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "0.00",
+          "text_raw": "0.00"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "0.00",
+      "text_raw": "0.00"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c8",
+      "col_end": 9,
+      "col_start": 8,
+      "confidence": 1.0,
+      "latex": "0.02",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "0.02",
+          "text_raw": "0.02"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "0.02",
+      "text_raw": "0.02"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c9",
+      "col_end": 10,
+      "col_start": 9,
+      "confidence": 1.0,
+      "latex": "0.03",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "0.03",
+          "text_raw": "0.03"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "0.03",
+      "text_raw": "0.03"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c10",
+      "col_end": 11,
+      "col_start": 10,
+      "confidence": 1.0,
+      "latex": "0.05",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "0.05",
+          "text_raw": "0.05"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "0.05",
+      "text_raw": "0.05"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 1.0,
+      "latex": "Standard error",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "Standard error",
+          "text_raw": "Standard error"
+        }
+      ],
+      "role": "stub",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "Standard error",
+      "text_raw": "Standard error"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 1.0,
+      "latex": "(0.04)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.04)",
+          "text_raw": "(0.04)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "(0.04)",
+      "text_raw": "(0.04)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 1.0,
+      "latex": "(0.04)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.04)",
+          "text_raw": "(0.04)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "(0.04)",
+      "text_raw": "(0.04)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c3",
+      "col_end": 4,
+      "col_start": 3,
+      "confidence": 1.0,
+      "latex": "(0.03)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.03)",
+          "text_raw": "(0.03)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "(0.03)",
+      "text_raw": "(0.03)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c4",
+      "col_end": 5,
+      "col_start": 4,
+      "confidence": 1.0,
+      "latex": "(0.03)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.03)",
+          "text_raw": "(0.03)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "(0.03)",
+      "text_raw": "(0.03)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c5",
+      "col_end": 6,
+      "col_start": 5,
+      "confidence": 1.0,
+      "latex": "(0.02)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.02)",
+          "text_raw": "(0.02)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "(0.02)",
+      "text_raw": "(0.02)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c6",
+      "col_end": 7,
+      "col_start": 6,
+      "confidence": 1.0,
+      "latex": "(0.02)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.02)",
+          "text_raw": "(0.02)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "(0.02)",
+      "text_raw": "(0.02)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c7",
+      "col_end": 8,
+      "col_start": 7,
+      "confidence": 1.0,
+      "latex": "(0.02)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.02)",
+          "text_raw": "(0.02)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "(0.02)",
+      "text_raw": "(0.02)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c8",
+      "col_end": 9,
+      "col_start": 8,
+      "confidence": 1.0,
+      "latex": "(0.02)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.02)",
+          "text_raw": "(0.02)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "(0.02)",
+      "text_raw": "(0.02)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c9",
+      "col_end": 10,
+      "col_start": 9,
+      "confidence": 1.0,
+      "latex": "(0.03)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.03)",
+          "text_raw": "(0.03)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "(0.03)",
+      "text_raw": "(0.03)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c10",
+      "col_end": 11,
+      "col_start": 10,
+      "confidence": 1.0,
+      "latex": "(0.03)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.03)",
+          "text_raw": "(0.03)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "(0.03)",
+      "text_raw": "(0.03)"
+    }
+  ],
+  "cleanup_report": {
+    "reasons": [],
+    "verification_required": false
+  },
+  "crop_path": null,
+  "n_cols": 11,
+  "n_rows": 3,
+  "notes": [],
+  "page": 1,
+  "regression_semantics": {
+    "coefficient_cells": [],
+    "coefficient_rows": [],
+    "control_rows": [],
+    "models": [
+      {
+        "column_index": 1,
+        "header_path": [
+          "(1)"
+        ],
+        "label": "(1)"
+      },
+      {
+        "column_index": 2,
+        "header_path": [
+          "(2)"
+        ],
+        "label": "(2)"
+      },
+      {
+        "column_index": 3,
+        "header_path": [
+          "(3)"
+        ],
+        "label": "(3)"
+      },
+      {
+        "column_index": 4,
+        "header_path": [
+          "(4)"
+        ],
+        "label": "(4)"
+      },
+      {
+        "column_index": 5,
+        "header_path": [
+          "(5)"
+        ],
+        "label": "(5)"
+      },
+      {
+        "column_index": 6,
+        "header_path": [
+          "(6)"
+        ],
+        "label": "(6)"
+      },
+      {
+        "column_index": 7,
+        "header_path": [
+          "(7)"
+        ],
+        "label": "(7)"
+      },
+      {
+        "column_index": 8,
+        "header_path": [
+          "(8)"
+        ],
+        "label": "(8)"
+      },
+      {
+        "column_index": 9,
+        "header_path": [
+          "(9)"
+        ],
+        "label": "(9)"
+      },
+      {
+        "column_index": 10,
+        "header_path": [
+          "(10)"
+        ],
+        "label": "(10)"
+      }
+    ],
+    "stderr_rows": [],
+    "summary_rows": []
+  },
+  "renderings": {
+    "html": null,
+    "latex_notes": null,
+    "latex_tabular": "\\begin{tabular}{lcccccccccc}\n\\toprule\nSector & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9) & (10) \\\\\n\\midrule\nRobot exposure & -0.11 & -0.09 & -0.07 & -0.05 & -0.03 & -0.01 & 0.00 & 0.02 & 0.03 & 0.05 \\\\\nStandard error & (0.04) & (0.04) & (0.03) & (0.03) & (0.02) & (0.02) & (0.02) & (0.02) & (0.03) & (0.03) \\\\\n\\bottomrule\n\\end{tabular}\n",
+    "markdown": null
+  },
+  "schema_version": "2026-03-15",
+  "source_pdf": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-sidewaystable/source.pdf",
+  "table_bbox": null,
+  "table_id": "synthetic-sidewaystable",
+  "title": "Table VIII: Sector-by-Sector Coefficients"
+}

@@ -1,0 +1,307 @@
+{
+  "benchmark_metadata": {
+    "case_id": "synthetic-math-headers",
+    "category": "math",
+    "description": "Math-heavy headers and cells with explicit LaTeX overrides.",
+    "source_description": "synthetic-latex"
+  },
+  "cells": [
+    {
+      "bbox": null,
+      "cell_id": "r0_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 1.0,
+      "latex": "Parameter",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "Parameter",
+          "text_raw": "Parameter"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "Parameter",
+      "text_raw": "Parameter"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 1.0,
+      "latex": "$\\hat{\\beta}$",
+      "latex_confidence": 1.0,
+      "latex_source": "synthetic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "Estimate",
+          "text_raw": "Estimate"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "Estimate",
+      "text_raw": "Estimate"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r0_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 1.0,
+      "latex": "$\\widehat{\\mathrm{SE}}$",
+      "latex_confidence": 1.0,
+      "latex_source": "synthetic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "SE",
+          "text_raw": "SE"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "synthetic",
+      "text_normalized": "SE",
+      "text_raw": "SE"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 1.0,
+      "latex": "$\\epsilon_L$",
+      "latex_confidence": 1.0,
+      "latex_source": "synthetic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "Labor elasticity",
+          "text_raw": "Labor elasticity"
+        }
+      ],
+      "role": "stub",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "Labor elasticity",
+      "text_raw": "Labor elasticity"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 1.0,
+      "latex": "$0.83$",
+      "latex_confidence": 1.0,
+      "latex_source": "synthetic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "0.83",
+          "text_raw": "0.83"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "0.83",
+      "text_raw": "0.83"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r1_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 1.0,
+      "latex": "$(0.12)$",
+      "latex_confidence": 1.0,
+      "latex_source": "synthetic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.12)",
+          "text_raw": "(0.12)"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "synthetic",
+      "text_normalized": "(0.12)",
+      "text_raw": "(0.12)"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 1.0,
+      "latex": "$\\epsilon_K$",
+      "latex_confidence": 1.0,
+      "latex_source": "synthetic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "Capital elasticity",
+          "text_raw": "Capital elasticity"
+        }
+      ],
+      "role": "stub",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "Capital elasticity",
+      "text_raw": "Capital elasticity"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 1.0,
+      "latex": "$0.17$",
+      "latex_confidence": 1.0,
+      "latex_source": "synthetic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "0.17",
+          "text_raw": "0.17"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "0.17",
+      "text_raw": "0.17"
+    },
+    {
+      "bbox": null,
+      "cell_id": "r2_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 1.0,
+      "latex": "$(0.08)$",
+      "latex_confidence": 1.0,
+      "latex_source": "synthetic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 1.0,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "synthetic",
+          "suspicious_markers": [],
+          "text_normalized": "(0.08)",
+          "text_raw": "(0.08)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "synthetic",
+      "text_normalized": "(0.08)",
+      "text_raw": "(0.08)"
+    }
+  ],
+  "cleanup_report": {
+    "reasons": [],
+    "verification_required": false
+  },
+  "crop_path": null,
+  "n_cols": 3,
+  "n_rows": 3,
+  "notes": [
+    "Parameters satisfy $\\epsilon_L + \\epsilon_K = 1$ by construction."
+  ],
+  "page": 1,
+  "regression_semantics": {
+    "coefficient_cells": [],
+    "coefficient_rows": [],
+    "control_rows": [],
+    "models": [
+      {
+        "column_index": 1,
+        "header_path": [
+          "Estimate"
+        ],
+        "label": "Estimate"
+      },
+      {
+        "column_index": 2,
+        "header_path": [
+          "SE"
+        ],
+        "label": "SE"
+      }
+    ],
+    "stderr_rows": [],
+    "summary_rows": []
+  },
+  "renderings": {
+    "html": null,
+    "latex_notes": "\\begin{tablenotes}[flushleft]\n\\item Parameters satisfy $\\epsilon_L + \\epsilon_K = 1$ by construction.\n\\end{tablenotes}\n",
+    "latex_tabular": "\\begin{tabular}{lcc}\n\\toprule\nParameter & $\\hat{\\beta}$ & $\\widehat{\\mathrm{SE}}$ \\\\\n\\midrule\n$\\epsilon_L$ & $0.83$ & $(0.12)$ \\\\\n$\\epsilon_K$ & $0.17$ & $(0.08)$ \\\\\n\\bottomrule\n\\end{tabular}\n",
+    "markdown": null
+  },
+  "schema_version": "2026-03-15",
+  "source_pdf": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-math-headers/source.pdf",
+  "table_bbox": null,
+  "table_id": "synthetic-math-headers",
+  "title": "Table VI: Structural Parameter Estimates"
+}

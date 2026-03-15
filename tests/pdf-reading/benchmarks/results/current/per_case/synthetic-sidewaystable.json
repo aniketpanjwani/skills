@@ -1,0 +1,30 @@
+{
+  "case_id": "synthetic-sidewaystable",
+  "category": "landscape",
+  "cell_count": 33,
+  "cell_text_exact_accuracy": 1.0,
+  "cell_text_normalized_accuracy": 1.0,
+  "coefficient_pair_accuracy": 1.0,
+  "extractor_summary": {
+    "cached": false,
+    "engine": "docling",
+    "read_artifact": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-sidewaystable/source.docling.md",
+    "source_pdf": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-sidewaystable/source.pdf",
+    "tables_manifest": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-sidewaystable/source.tables.json"
+  },
+  "gold_agent_table": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-sidewaystable/agent_table.json",
+  "gold_latex": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-sidewaystable/table.tex",
+  "latex_exact_accuracy": 1.0,
+  "latex_file_exact_match": false,
+  "latex_file_normalized_match": false,
+  "near_perfect_gate": true,
+  "numeric_cell_accuracy": 1.0,
+  "pdf_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-sidewaystable/source.pdf",
+  "predicted_agent_table": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-sidewaystable/source.tables/table_001.agent.json",
+  "predicted_latex": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/cases/synthetic-sidewaystable/source.tables/table_001.tex",
+  "role_accuracy": 1.0,
+  "structure_accuracy": 1.0,
+  "summary_row_accuracy": 1.0,
+  "table_id": "synthetic-sidewaystable",
+  "unresolved_false_negatives": 0
+}

@@ -54,12 +54,6 @@ Use the faster MarkItDown path only when requested:
 python3 scripts/pdf_extract.py /path/to/paper.pdf --fast
 ```
 
-Generate a synthetic LaTeX benchmark corpus for table extraction:
-
-```bash
-python3 scripts/synthetic_benchmarks.py
-```
-
 ## Outputs
 
 - `<basename>.docling.md`: primary reading artifact from Docling.
@@ -76,3 +70,5 @@ python3 scripts/synthetic_benchmarks.py
 - `<basename>.tables.json`: table metadata, paths, and verification flags.
 
 The script prints a JSON summary with the exact artifact paths to read next.
+
+Maintainer benchmark fixtures and runners live under `tests/pdf-reading/` rather than inside the installable skill.
