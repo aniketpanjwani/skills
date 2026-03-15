@@ -1,0 +1,112 @@
+{
+  "run_id": "2026-03-15T20-43-28Z",
+  "benchmark_kind": "real-world-smoke",
+  "paper_slug": "colonial-origins-of-comparative-development",
+  "paper_title": "The Colonial Origins of Comparative Development",
+  "source_url": "https://economics.mit.edu/sites/default/files/publications/colonial-origins-of-comparative-development.pdf",
+  "read_artifact": "source.docling.md",
+  "tables_manifest": "source.tables.json",
+  "engine": "docling",
+  "cached": false,
+  "run_started_at": "2026-03-15T20:43:35Z",
+  "run_finished_at": "2026-03-15T20:45:21Z",
+  "elapsed_seconds": 106.7,
+  "commit_hash": "e789e1d6947c80c8702e466e00d1576eb1733491",
+  "table_count": 11,
+  "table_index": [
+    {
+      "id": 1,
+      "page": 10,
+      "title": "TABLE 1-DESCRIPTIVE STATISTICS",
+      "agent_table": "table_001.agent.json",
+      "latex": "table_001.tex",
+      "cleaned_markdown": "table_001.cleaned.md"
+    },
+    {
+      "id": 2,
+      "page": 12,
+      "title": "TABLE  2-OLS REGRESSIONS",
+      "agent_table": "table_002.agent.json",
+      "latex": "table_002.tex",
+      "cleaned_markdown": "table_002.cleaned.md"
+    },
+    {
+      "id": 3,
+      "page": 18,
+      "title": "TABLE  3-DETERMINANTS OF INSTITUTIONS",
+      "agent_table": "table_003.agent.json",
+      "latex": "table_003.tex",
+      "cleaned_markdown": "table_003.cleaned.md"
+    },
+    {
+      "id": 4,
+      "page": 18,
+      "title": null,
+      "agent_table": "table_004.agent.json",
+      "latex": "table_004.tex",
+      "cleaned_markdown": "table_004.cleaned.md"
+    },
+    {
+      "id": 5,
+      "page": 19,
+      "title": "TABLE  4-IV REGRESSIONS OF LOG GDP PER  CAPITA",
+      "agent_table": "table_005.agent.json",
+      "latex": "table_005.tex",
+      "cleaned_markdown": "table_005.cleaned.md"
+    },
+    {
+      "id": 6,
+      "page": 22,
+      "title": "Panel B: First Stage for Average Protection Against ExpropriationR isk in 1985-1995",
+      "agent_table": "table_006.agent.json",
+      "latex": "table_006.tex",
+      "cleaned_markdown": "table_006.cleaned.md"
+    },
+    {
+      "id": 7,
+      "page": 23,
+      "title": "TABLE  6-ROBUSTNESS CHECKS  FOR  IV REGRESSIONS OF LOG GDP PER  CAPITA",
+      "agent_table": "table_007.agent.json",
+      "latex": "table_007.tex",
+      "cleaned_markdown": "table_007.cleaned.md"
+    },
+    {
+      "id": 8,
+      "page": 25,
+      "title": "TABLE  7-GEOGRAPHY AND HEALTH  VARIABLES",
+      "agent_table": "table_008.agent.json",
+      "latex": "table_008.tex",
+      "cleaned_markdown": "table_008.cleaned.md"
+    },
+    {
+      "id": 9,
+      "page": 27,
+      "title": "TABLE  8-OVERIDENTIFICATION TESTS",
+      "agent_table": "table_009.agent.json",
+      "latex": "table_009.tex",
+      "cleaned_markdown": "table_009.cleaned.md"
+    },
+    {
+      "id": 10,
+      "page": 27,
+      "title": "Panel B: First Stage for Average Protection  Against Expropriation Risk",
+      "agent_table": "table_010.agent.json",
+      "latex": "table_010.tex",
+      "cleaned_markdown": "table_010.cleaned.md"
+    },
+    {
+      "id": 11,
+      "page": 31,
+      "title": "APPENDIX TABLE  A2-DATA ON MORTALITY",
+      "agent_table": "table_011.agent.json",
+      "latex": "table_011.tex",
+      "cleaned_markdown": "table_011.cleaned.md"
+    }
+  ],
+  "notes": [
+    "No gold fixture yet; this is a real-world smoke test run.",
+    "Regression tables still show coefficient/stderr row merging and concatenated cells in some outputs.",
+    "Examples: source.tables/table_002.agent.json and source.tables/table_005.agent.json."
+  ],
+  "source_ref": "source_ref.json"
+}

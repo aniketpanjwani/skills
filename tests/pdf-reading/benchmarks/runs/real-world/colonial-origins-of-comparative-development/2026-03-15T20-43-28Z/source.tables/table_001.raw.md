@@ -1,0 +1,15 @@
+TABLE 1-DESCRIPTIVE STATISTICS
+
+|                                                                        |             |             | By quartilesof mortality   | By quartilesof mortality   | By quartilesof mortality   | By quartilesof mortality   |
+|------------------------------------------------------------------------|-------------|-------------|----------------------------|----------------------------|----------------------------|----------------------------|
+|                                                                        | Whole world | Base sample | (1)                        | (2)                        | (3)                        | (4)                        |
+| Log GDPpercapita(PPP)in 1995                                           | 8.3 (1.1)   | 8.05 (1.1)  | 8.9                        | 8.4                        | 7.73                       | 7.2                        |
+| Log outputperworkerin 1988 (with level of UnitedStates normalizedto 1) | -1.70 (1.1) | -1.93 (1.0) | -1.03                      | -1.46                      | -2.20                      | -3.03                      |
+| Averageprotectionagainst expropriation risk, 1985-1995                 | 7 (1.8)     | 6.5 (1.5)   | 7.9                        | 6.5                        | 6                          | 5.9                        |
+| Constrainton executive in 1990                                         | 3.6 (2.3)   | 4 (2.3)     | 5.3                        | 5.1                        | 3.3                        | 2.3                        |
+| Constrainton executive in 1900                                         | 1.9 (1.8)   | 2.3 (2.1)   | 3.7                        | 3.4                        | 1.1                        | 1                          |
+| Constrainton executive in firstyear of independence                    | 3.6 (2.4)   | 3.3 (2.4)   | 4.8                        | 2.4                        | 3.1                        | 3.4                        |
+| Democracyin 1900                                                       | 1.1 (2.6)   | 1.6 (3.0)   | 3.9                        | 2.8                        | 0.19                       | 0                          |
+| Europeansettlementsin 1900                                             | 0.31 (0.4)  | 0.16 (0.3)  | 0.32                       | 0.26                       | 0.08                       | 0.005                      |
+| Log Europeansettlermortality                                           | n.a.        | 4.7 (1.1)   | 3.0                        | 4.3                        | 4.9                        | 6.3                        |
+| Numberof observations                                                  | 163         | 64          | 14                         | 18                         | 17                         | 15                         |

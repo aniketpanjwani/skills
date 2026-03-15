@@ -1,0 +1,2173 @@
+{
+  "annotations": [],
+  "captions": [
+    {
+      "cref": "#/texts/506"
+    }
+  ],
+  "children": [
+    {
+      "cref": "#/texts/506"
+    }
+  ],
+  "content_layer": "body",
+  "data": {
+    "grid": [
+      [
+        {
+          "bbox": null,
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 1,
+          "end_row_offset_idx": 1,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 0,
+          "text": ""
+        },
+        {
+          "bbox": {
+            "b": 128.659,
+            "coord_origin": "TOPLEFT",
+            "l": 182.64,
+            "r": 203.64,
+            "t": 106.33900000000006
+          },
+          "col_span": 1,
+          "column_header": true,
+          "end_col_offset_idx": 2,
+          "end_row_offset_idx": 1,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 1,
+          "start_row_offset_idx": 0,
+          "text": "Base sample (1)"
+        },
+        {
+          "bbox": {
+            "b": 128.659,
+            "coord_origin": "TOPLEFT",
+            "l": 211.08,
+            "r": 232.08,
+            "t": 106.33900000000006
+          },
+          "col_span": 1,
+          "column_header": true,
+          "end_col_offset_idx": 3,
+          "end_row_offset_idx": 1,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 2,
+          "start_row_offset_idx": 0,
+          "text": "Base sample (2)"
+        },
+        {
+          "bbox": {
+            "b": 128.659,
+            "coord_origin": "TOPLEFT",
+            "l": 239.52,
+            "r": 260.52000000000004,
+            "t": 106.33900000000006
+          },
+          "col_span": 1,
+          "column_header": true,
+          "end_col_offset_idx": 4,
+          "end_row_offset_idx": 1,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 3,
+          "start_row_offset_idx": 0,
+          "text": "Base sample (3)"
+        },
+        {
+          "bbox": {
+            "b": 128.659,
+            "coord_origin": "TOPLEFT",
+            "l": 268.08,
+            "r": 289.08000000000004,
+            "t": 106.33900000000006
+          },
+          "col_span": 1,
+          "column_header": true,
+          "end_col_offset_idx": 5,
+          "end_row_offset_idx": 1,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 4,
+          "start_row_offset_idx": 0,
+          "text": "Base sample (4)"
+        },
+        {
+          "bbox": {
+            "b": 128.659,
+            "coord_origin": "TOPLEFT",
+            "l": 296.46,
+            "r": 317.46000000000004,
+            "t": 106.33900000000006
+          },
+          "col_span": 1,
+          "column_header": true,
+          "end_col_offset_idx": 6,
+          "end_row_offset_idx": 1,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 5,
+          "start_row_offset_idx": 0,
+          "text": "Base sample (5)"
+        },
+        {
+          "bbox": {
+            "b": 128.659,
+            "coord_origin": "TOPLEFT",
+            "l": 324.78,
+            "r": 345.78000000000003,
+            "t": 106.33900000000006
+          },
+          "col_span": 1,
+          "column_header": true,
+          "end_col_offset_idx": 7,
+          "end_row_offset_idx": 1,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 6,
+          "start_row_offset_idx": 0,
+          "text": "Base sample (6)"
+        },
+        {
+          "bbox": {
+            "b": 128.659,
+            "coord_origin": "TOPLEFT",
+            "l": 353.16,
+            "r": 374.1600000000001,
+            "t": 106.33900000000006
+          },
+          "col_span": 1,
+          "column_header": true,
+          "end_col_offset_idx": 8,
+          "end_row_offset_idx": 1,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 7,
+          "start_row_offset_idx": 0,
+          "text": "Base sample (7)"
+        },
+        {
+          "bbox": {
+            "b": 128.659,
+            "coord_origin": "TOPLEFT",
+            "l": 381.6,
+            "r": 402.6000000000001,
+            "t": 106.33900000000006
+          },
+          "col_span": 1,
+          "column_header": true,
+          "end_col_offset_idx": 9,
+          "end_row_offset_idx": 1,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 8,
+          "start_row_offset_idx": 0,
+          "text": "Base sample (8)"
+        },
+        {
+          "bbox": {
+            "b": 128.659,
+            "coord_origin": "TOPLEFT",
+            "l": 409.98,
+            "r": 430.9800000000001,
+            "t": 106.33900000000006
+          },
+          "col_span": 1,
+          "column_header": true,
+          "end_col_offset_idx": 10,
+          "end_row_offset_idx": 1,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 9,
+          "start_row_offset_idx": 0,
+          "text": "Base sample (9)"
+        },
+        {
+          "bbox": {
+            "b": 128.659,
+            "coord_origin": "TOPLEFT",
+            "l": 438.36,
+            "r": 459.36000000000007,
+            "t": 106.33900000000006
+          },
+          "col_span": 1,
+          "column_header": true,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 1,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 10,
+          "start_row_offset_idx": 0,
+          "text": "Base sample (10)"
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "b": 142.21900000000005,
+            "coord_origin": "TOPLEFT",
+            "l": 207.84,
+            "r": 309.83500000000004,
+            "t": 135.9190000000001
+          },
+          "col_span": 11,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 2,
+          "fillable": false,
+          "row_header": false,
+          "row_section": true,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 1,
+          "text": "Panel A: Two-Stage Least Squares"
+        },
+        {
+          "bbox": {
+            "b": 142.21900000000005,
+            "coord_origin": "TOPLEFT",
+            "l": 207.84,
+            "r": 309.83500000000004,
+            "t": 135.9190000000001
+          },
+          "col_span": 11,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 2,
+          "fillable": false,
+          "row_header": false,
+          "row_section": true,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 1,
+          "text": "Panel A: Two-Stage Least Squares"
+        },
+        {
+          "bbox": {
+            "b": 142.21900000000005,
+            "coord_origin": "TOPLEFT",
+            "l": 207.84,
+            "r": 309.83500000000004,
+            "t": 135.9190000000001
+          },
+          "col_span": 11,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 2,
+          "fillable": false,
+          "row_header": false,
+          "row_section": true,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 1,
+          "text": "Panel A: Two-Stage Least Squares"
+        },
+        {
+          "bbox": {
+            "b": 142.21900000000005,
+            "coord_origin": "TOPLEFT",
+            "l": 207.84,
+            "r": 309.83500000000004,
+            "t": 135.9190000000001
+          },
+          "col_span": 11,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 2,
+          "fillable": false,
+          "row_header": false,
+          "row_section": true,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 1,
+          "text": "Panel A: Two-Stage Least Squares"
+        },
+        {
+          "bbox": {
+            "b": 142.21900000000005,
+            "coord_origin": "TOPLEFT",
+            "l": 207.84,
+            "r": 309.83500000000004,
+            "t": 135.9190000000001
+          },
+          "col_span": 11,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 2,
+          "fillable": false,
+          "row_header": false,
+          "row_section": true,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 1,
+          "text": "Panel A: Two-Stage Least Squares"
+        },
+        {
+          "bbox": {
+            "b": 142.21900000000005,
+            "coord_origin": "TOPLEFT",
+            "l": 207.84,
+            "r": 309.83500000000004,
+            "t": 135.9190000000001
+          },
+          "col_span": 11,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 2,
+          "fillable": false,
+          "row_header": false,
+          "row_section": true,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 1,
+          "text": "Panel A: Two-Stage Least Squares"
+        },
+        {
+          "bbox": {
+            "b": 142.21900000000005,
+            "coord_origin": "TOPLEFT",
+            "l": 207.84,
+            "r": 309.83500000000004,
+            "t": 135.9190000000001
+          },
+          "col_span": 11,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 2,
+          "fillable": false,
+          "row_header": false,
+          "row_section": true,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 1,
+          "text": "Panel A: Two-Stage Least Squares"
+        },
+        {
+          "bbox": {
+            "b": 142.21900000000005,
+            "coord_origin": "TOPLEFT",
+            "l": 207.84,
+            "r": 309.83500000000004,
+            "t": 135.9190000000001
+          },
+          "col_span": 11,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 2,
+          "fillable": false,
+          "row_header": false,
+          "row_section": true,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 1,
+          "text": "Panel A: Two-Stage Least Squares"
+        },
+        {
+          "bbox": {
+            "b": 142.21900000000005,
+            "coord_origin": "TOPLEFT",
+            "l": 207.84,
+            "r": 309.83500000000004,
+            "t": 135.9190000000001
+          },
+          "col_span": 11,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 2,
+          "fillable": false,
+          "row_header": false,
+          "row_section": true,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 1,
+          "text": "Panel A: Two-Stage Least Squares"
+        },
+        {
+          "bbox": {
+            "b": 142.21900000000005,
+            "coord_origin": "TOPLEFT",
+            "l": 207.84,
+            "r": 309.83500000000004,
+            "t": 135.9190000000001
+          },
+          "col_span": 11,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 2,
+          "fillable": false,
+          "row_header": false,
+          "row_section": true,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 1,
+          "text": "Panel A: Two-Stage Least Squares"
+        },
+        {
+          "bbox": {
+            "b": 142.21900000000005,
+            "coord_origin": "TOPLEFT",
+            "l": 207.84,
+            "r": 309.83500000000004,
+            "t": 135.9190000000001
+          },
+          "col_span": 11,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 2,
+          "fillable": false,
+          "row_header": false,
+          "row_section": true,
+          "row_span": 1,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 1,
+          "text": "Panel A: Two-Stage Least Squares"
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 57.78,
+            "r": 177.063,
+            "t": 143.95900000000006
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 1,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": true,
+          "row_section": false,
+          "row_span": 2,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 2,
+          "text": "Averageprotectionagainstexpropriation risk, 1985-1995"
+        },
+        {
+          "bbox": {
+            "b": 150.25900000000001,
+            "coord_origin": "TOPLEFT",
+            "l": 188.04,
+            "r": 200.29,
+            "t": 143.95900000000006
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 2,
+          "end_row_offset_idx": 3,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 1,
+          "start_row_offset_idx": 2,
+          "text": "0.87"
+        },
+        {
+          "bbox": {
+            "b": 150.25900000000001,
+            "coord_origin": "TOPLEFT",
+            "l": 216.48,
+            "r": 228.73,
+            "t": 143.95900000000006
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 3,
+          "end_row_offset_idx": 3,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 2,
+          "start_row_offset_idx": 2,
+          "text": "0.92"
+        },
+        {
+          "bbox": {
+            "b": 150.19899999999996,
+            "coord_origin": "TOPLEFT",
+            "l": 245.04,
+            "r": 257.28999999999996,
+            "t": 143.899
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 4,
+          "end_row_offset_idx": 3,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 3,
+          "start_row_offset_idx": 2,
+          "text": "0.71"
+        },
+        {
+          "bbox": {
+            "b": 150.19899999999996,
+            "coord_origin": "TOPLEFT",
+            "l": 273.36,
+            "r": 285.61,
+            "t": 143.899
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 5,
+          "end_row_offset_idx": 3,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 4,
+          "start_row_offset_idx": 2,
+          "text": "0.68"
+        },
+        {
+          "bbox": {
+            "b": 150.19899999999996,
+            "coord_origin": "TOPLEFT",
+            "l": 301.74,
+            "r": 313.99,
+            "t": 143.899
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 6,
+          "end_row_offset_idx": 3,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 5,
+          "start_row_offset_idx": 2,
+          "text": "0.72"
+        },
+        {
+          "bbox": {
+            "b": 150.25900000000001,
+            "coord_origin": "TOPLEFT",
+            "l": 330.12,
+            "r": 342.37,
+            "t": 143.95900000000006
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 7,
+          "end_row_offset_idx": 3,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 6,
+          "start_row_offset_idx": 2,
+          "text": "0.69"
+        },
+        {
+          "bbox": {
+            "b": 150.19899999999996,
+            "coord_origin": "TOPLEFT",
+            "l": 358.56,
+            "r": 370.81,
+            "t": 143.899
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 8,
+          "end_row_offset_idx": 3,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 7,
+          "start_row_offset_idx": 2,
+          "text": "0.60"
+        },
+        {
+          "bbox": {
+            "b": 150.19899999999996,
+            "coord_origin": "TOPLEFT",
+            "l": 387.0,
+            "r": 399.25,
+            "t": 143.899
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 9,
+          "end_row_offset_idx": 3,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 8,
+          "start_row_offset_idx": 2,
+          "text": "0.61"
+        },
+        {
+          "bbox": {
+            "b": 150.25900000000001,
+            "coord_origin": "TOPLEFT",
+            "l": 415.44,
+            "r": 427.69,
+            "t": 143.95900000000006
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 10,
+          "end_row_offset_idx": 3,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 9,
+          "start_row_offset_idx": 2,
+          "text": "0.55"
+        },
+        {
+          "bbox": {
+            "b": 150.25900000000001,
+            "coord_origin": "TOPLEFT",
+            "l": 443.88,
+            "r": 456.13,
+            "t": 143.95900000000006
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 3,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 10,
+          "start_row_offset_idx": 2,
+          "text": "0.56"
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 57.78,
+            "r": 177.063,
+            "t": 143.95900000000006
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 1,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": true,
+          "row_section": false,
+          "row_span": 2,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 2,
+          "text": "Averageprotectionagainstexpropriation risk, 1985-1995"
+        },
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 185.88,
+            "r": 202.79199999999997,
+            "t": 151.99900000000002
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 2,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 1,
+          "start_row_offset_idx": 3,
+          "text": "(0.14)"
+        },
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 214.32,
+            "r": 231.23199999999997,
+            "t": 151.99900000000002
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 3,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 2,
+          "start_row_offset_idx": 3,
+          "text": "(0.20)"
+        },
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 242.76,
+            "r": 259.672,
+            "t": 151.99900000000002
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 4,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 3,
+          "start_row_offset_idx": 3,
+          "text": "(0.15)"
+        },
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 271.2,
+            "r": 288.112,
+            "t": 151.99900000000002
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 5,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 4,
+          "start_row_offset_idx": 3,
+          "text": "(0.20)"
+        },
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 299.52,
+            "r": 316.432,
+            "t": 151.99900000000002
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 6,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 5,
+          "start_row_offset_idx": 3,
+          "text": "(0.14)"
+        },
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 327.96,
+            "r": 344.872,
+            "t": 151.99900000000002
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 7,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 6,
+          "start_row_offset_idx": 3,
+          "text": "(0.19)"
+        },
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 356.28,
+            "r": 373.192,
+            "t": 151.99900000000002
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 8,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 7,
+          "start_row_offset_idx": 3,
+          "text": "(0.14)"
+        },
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 384.84,
+            "r": 401.752,
+            "t": 151.99900000000002
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 9,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 8,
+          "start_row_offset_idx": 3,
+          "text": "(0.17)"
+        },
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 413.16,
+            "r": 430.07200000000006,
+            "t": 151.99900000000002
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 10,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 9,
+          "start_row_offset_idx": 3,
+          "text": "(0.12)"
+        },
+        {
+          "bbox": {
+            "b": 158.29899999999998,
+            "coord_origin": "TOPLEFT",
+            "l": 441.6,
+            "r": 458.51200000000006,
+            "t": 151.99900000000002
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 4,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 10,
+          "start_row_offset_idx": 3,
+          "text": "(0.14)"
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "b": 166.33900000000006,
+            "coord_origin": "TOPLEFT",
+            "l": 57.72,
+            "r": 83.389,
+            "t": 160.0390000000001
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 1,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": true,
+          "row_section": false,
+          "row_span": 2,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 4,
+          "text": "Latitude"
+        },
+        {
+          "bbox": null,
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 2,
+          "end_row_offset_idx": 5,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 1,
+          "start_row_offset_idx": 4,
+          "text": ""
+        },
+        {
+          "bbox": {
+            "b": 166.33900000000006,
+            "coord_origin": "TOPLEFT",
+            "l": 211.2,
+            "r": 225.78099999999998,
+            "t": 160.0390000000001
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 3,
+          "end_row_offset_idx": 5,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 2,
+          "start_row_offset_idx": 4,
+          "text": "-0.47"
+        },
+        {
+          "bbox": null,
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 4,
+          "end_row_offset_idx": 5,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 3,
+          "start_row_offset_idx": 4,
+          "text": ""
+        },
+        {
+          "bbox": {
+            "b": 166.279,
+            "coord_origin": "TOPLEFT",
+            "l": 268.08,
+            "r": 282.661,
+            "t": 159.97900000000004
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 5,
+          "end_row_offset_idx": 5,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 4,
+          "start_row_offset_idx": 4,
+          "text": "-0.34"
+        },
+        {
+          "bbox": null,
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 6,
+          "end_row_offset_idx": 5,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 5,
+          "start_row_offset_idx": 4,
+          "text": ""
+        },
+        {
+          "bbox": {
+            "b": 166.279,
+            "coord_origin": "TOPLEFT",
+            "l": 330.0,
+            "r": 342.25,
+            "t": 159.97900000000004
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 7,
+          "end_row_offset_idx": 5,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 6,
+          "start_row_offset_idx": 4,
+          "text": "0.31"
+        },
+        {
+          "bbox": null,
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 8,
+          "end_row_offset_idx": 5,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 7,
+          "start_row_offset_idx": 4,
+          "text": ""
+        },
+        {
+          "bbox": {
+            "b": 166.279,
+            "coord_origin": "TOPLEFT",
+            "l": 381.6,
+            "r": 396.18100000000004,
+            "t": 159.97900000000004
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 9,
+          "end_row_offset_idx": 5,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 8,
+          "start_row_offset_idx": 4,
+          "text": "-0.41"
+        },
+        {
+          "bbox": null,
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 10,
+          "end_row_offset_idx": 5,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 9,
+          "start_row_offset_idx": 4,
+          "text": ""
+        },
+        {
+          "bbox": {
+            "b": 166.279,
+            "coord_origin": "TOPLEFT",
+            "l": 438.48,
+            "r": 453.06100000000004,
+            "t": 159.97900000000004
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 5,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 10,
+          "start_row_offset_idx": 4,
+          "text": "-0.16"
+        }
+      ],
+      [
+        {
+          "bbox": {
+            "b": 166.33900000000006,
+            "coord_origin": "TOPLEFT",
+            "l": 57.72,
+            "r": 83.389,
+            "t": 160.0390000000001
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 1,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": true,
+          "row_section": false,
+          "row_span": 2,
+          "start_col_offset_idx": 0,
+          "start_row_offset_idx": 4,
+          "text": "Latitude"
+        },
+        {
+          "bbox": null,
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 2,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 1,
+          "start_row_offset_idx": 5,
+          "text": ""
+        },
+        {
+          "bbox": {
+            "b": 174.31899999999996,
+            "coord_origin": "TOPLEFT",
+            "l": 214.32,
+            "r": 231.23199999999997,
+            "t": 168.019
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 3,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 2,
+          "start_row_offset_idx": 5,
+          "text": "(1.20)"
+        },
+        {
+          "bbox": null,
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 4,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 3,
+          "start_row_offset_idx": 5,
+          "text": ""
+        },
+        {
+          "bbox": {
+            "b": 174.31899999999996,
+            "coord_origin": "TOPLEFT",
+            "l": 271.08,
+            "r": 287.992,
+            "t": 168.019
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 5,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 4,
+          "start_row_offset_idx": 5,
+          "text": "(1.10)"
+        },
+        {
+          "bbox": null,
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 6,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 5,
+          "start_row_offset_idx": 5,
+          "text": ""
+        },
+        {
+          "bbox": {
+            "b": 174.31899999999996,
+            "coord_origin": "TOPLEFT",
+            "l": 327.84,
+            "r": 344.752,
+            "t": 168.019
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 7,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 6,
+          "start_row_offset_idx": 5,
+          "text": "(1.05)"
+        },
+        {
+          "bbox": null,
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 8,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 7,
+          "start_row_offset_idx": 5,
+          "text": ""
+        },
+        {
+          "bbox": {
+            "b": 174.31899999999996,
+            "coord_origin": "TOPLEFT",
+            "l": 384.72,
+            "r": 401.63200000000006,
+            "t": 168.019
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 9,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 8,
+          "start_row_offset_idx": 5,
+          "text": "(0.92)"
+        },
+        {
+          "bbox": null,
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 10,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 9,
+          "start_row_offset_idx": 5,
+          "text": ""
+        },
+        {
+          "bbox": {
+            "b": 174.31899999999996,
+            "coord_origin": "TOPLEFT",
+            "l": 441.66,
+            "r": 458.57200000000006,
+            "t": 168.019
+          },
+          "col_span": 1,
+          "column_header": false,
+          "end_col_offset_idx": 11,
+          "end_row_offset_idx": 6,
+          "fillable": false,
+          "row_header": false,
+          "row_section": false,
+          "row_span": 1,
+          "start_col_offset_idx": 10,
+          "start_row_offset_idx": 5,
+          "text": "(0.81)"
+        }
+      ]
+    ],
+    "num_cols": 11,
+    "num_rows": 6,
+    "table_cells": [
+      {
+        "bbox": {
+          "b": 128.659,
+          "coord_origin": "TOPLEFT",
+          "l": 182.64,
+          "r": 203.64,
+          "t": 106.33900000000006
+        },
+        "col_span": 1,
+        "column_header": true,
+        "end_col_offset_idx": 2,
+        "end_row_offset_idx": 1,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 1,
+        "start_row_offset_idx": 0,
+        "text": "Base sample (1)"
+      },
+      {
+        "bbox": {
+          "b": 128.659,
+          "coord_origin": "TOPLEFT",
+          "l": 211.08,
+          "r": 232.08,
+          "t": 106.33900000000006
+        },
+        "col_span": 1,
+        "column_header": true,
+        "end_col_offset_idx": 3,
+        "end_row_offset_idx": 1,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 2,
+        "start_row_offset_idx": 0,
+        "text": "Base sample (2)"
+      },
+      {
+        "bbox": {
+          "b": 128.659,
+          "coord_origin": "TOPLEFT",
+          "l": 239.52,
+          "r": 260.52000000000004,
+          "t": 106.33900000000006
+        },
+        "col_span": 1,
+        "column_header": true,
+        "end_col_offset_idx": 4,
+        "end_row_offset_idx": 1,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 3,
+        "start_row_offset_idx": 0,
+        "text": "Base sample (3)"
+      },
+      {
+        "bbox": {
+          "b": 128.659,
+          "coord_origin": "TOPLEFT",
+          "l": 268.08,
+          "r": 289.08000000000004,
+          "t": 106.33900000000006
+        },
+        "col_span": 1,
+        "column_header": true,
+        "end_col_offset_idx": 5,
+        "end_row_offset_idx": 1,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 4,
+        "start_row_offset_idx": 0,
+        "text": "Base sample (4)"
+      },
+      {
+        "bbox": {
+          "b": 128.659,
+          "coord_origin": "TOPLEFT",
+          "l": 296.46,
+          "r": 317.46000000000004,
+          "t": 106.33900000000006
+        },
+        "col_span": 1,
+        "column_header": true,
+        "end_col_offset_idx": 6,
+        "end_row_offset_idx": 1,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 5,
+        "start_row_offset_idx": 0,
+        "text": "Base sample (5)"
+      },
+      {
+        "bbox": {
+          "b": 128.659,
+          "coord_origin": "TOPLEFT",
+          "l": 324.78,
+          "r": 345.78000000000003,
+          "t": 106.33900000000006
+        },
+        "col_span": 1,
+        "column_header": true,
+        "end_col_offset_idx": 7,
+        "end_row_offset_idx": 1,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 6,
+        "start_row_offset_idx": 0,
+        "text": "Base sample (6)"
+      },
+      {
+        "bbox": {
+          "b": 128.659,
+          "coord_origin": "TOPLEFT",
+          "l": 353.16,
+          "r": 374.1600000000001,
+          "t": 106.33900000000006
+        },
+        "col_span": 1,
+        "column_header": true,
+        "end_col_offset_idx": 8,
+        "end_row_offset_idx": 1,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 7,
+        "start_row_offset_idx": 0,
+        "text": "Base sample (7)"
+      },
+      {
+        "bbox": {
+          "b": 128.659,
+          "coord_origin": "TOPLEFT",
+          "l": 381.6,
+          "r": 402.6000000000001,
+          "t": 106.33900000000006
+        },
+        "col_span": 1,
+        "column_header": true,
+        "end_col_offset_idx": 9,
+        "end_row_offset_idx": 1,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 8,
+        "start_row_offset_idx": 0,
+        "text": "Base sample (8)"
+      },
+      {
+        "bbox": {
+          "b": 128.659,
+          "coord_origin": "TOPLEFT",
+          "l": 409.98,
+          "r": 430.9800000000001,
+          "t": 106.33900000000006
+        },
+        "col_span": 1,
+        "column_header": true,
+        "end_col_offset_idx": 10,
+        "end_row_offset_idx": 1,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 9,
+        "start_row_offset_idx": 0,
+        "text": "Base sample (9)"
+      },
+      {
+        "bbox": {
+          "b": 128.659,
+          "coord_origin": "TOPLEFT",
+          "l": 438.36,
+          "r": 459.36000000000007,
+          "t": 106.33900000000006
+        },
+        "col_span": 1,
+        "column_header": true,
+        "end_col_offset_idx": 11,
+        "end_row_offset_idx": 1,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 10,
+        "start_row_offset_idx": 0,
+        "text": "Base sample (10)"
+      },
+      {
+        "bbox": {
+          "b": 142.21900000000005,
+          "coord_origin": "TOPLEFT",
+          "l": 207.84,
+          "r": 309.83500000000004,
+          "t": 135.9190000000001
+        },
+        "col_span": 11,
+        "column_header": false,
+        "end_col_offset_idx": 11,
+        "end_row_offset_idx": 2,
+        "fillable": false,
+        "row_header": false,
+        "row_section": true,
+        "row_span": 1,
+        "start_col_offset_idx": 0,
+        "start_row_offset_idx": 1,
+        "text": "Panel A: Two-Stage Least Squares"
+      },
+      {
+        "bbox": {
+          "b": 158.29899999999998,
+          "coord_origin": "TOPLEFT",
+          "l": 57.78,
+          "r": 177.063,
+          "t": 143.95900000000006
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 1,
+        "end_row_offset_idx": 4,
+        "fillable": false,
+        "row_header": true,
+        "row_section": false,
+        "row_span": 2,
+        "start_col_offset_idx": 0,
+        "start_row_offset_idx": 2,
+        "text": "Averageprotectionagainstexpropriation risk, 1985-1995"
+      },
+      {
+        "bbox": {
+          "b": 150.25900000000001,
+          "coord_origin": "TOPLEFT",
+          "l": 188.04,
+          "r": 200.29,
+          "t": 143.95900000000006
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 2,
+        "end_row_offset_idx": 3,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 1,
+        "start_row_offset_idx": 2,
+        "text": "0.87"
+      },
+      {
+        "bbox": {
+          "b": 150.25900000000001,
+          "coord_origin": "TOPLEFT",
+          "l": 216.48,
+          "r": 228.73,
+          "t": 143.95900000000006
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 3,
+        "end_row_offset_idx": 3,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 2,
+        "start_row_offset_idx": 2,
+        "text": "0.92"
+      },
+      {
+        "bbox": {
+          "b": 150.19899999999996,
+          "coord_origin": "TOPLEFT",
+          "l": 245.04,
+          "r": 257.28999999999996,
+          "t": 143.899
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 4,
+        "end_row_offset_idx": 3,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 3,
+        "start_row_offset_idx": 2,
+        "text": "0.71"
+      },
+      {
+        "bbox": {
+          "b": 150.19899999999996,
+          "coord_origin": "TOPLEFT",
+          "l": 273.36,
+          "r": 285.61,
+          "t": 143.899
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 5,
+        "end_row_offset_idx": 3,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 4,
+        "start_row_offset_idx": 2,
+        "text": "0.68"
+      },
+      {
+        "bbox": {
+          "b": 150.19899999999996,
+          "coord_origin": "TOPLEFT",
+          "l": 301.74,
+          "r": 313.99,
+          "t": 143.899
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 6,
+        "end_row_offset_idx": 3,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 5,
+        "start_row_offset_idx": 2,
+        "text": "0.72"
+      },
+      {
+        "bbox": {
+          "b": 150.25900000000001,
+          "coord_origin": "TOPLEFT",
+          "l": 330.12,
+          "r": 342.37,
+          "t": 143.95900000000006
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 7,
+        "end_row_offset_idx": 3,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 6,
+        "start_row_offset_idx": 2,
+        "text": "0.69"
+      },
+      {
+        "bbox": {
+          "b": 150.19899999999996,
+          "coord_origin": "TOPLEFT",
+          "l": 358.56,
+          "r": 370.81,
+          "t": 143.899
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 8,
+        "end_row_offset_idx": 3,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 7,
+        "start_row_offset_idx": 2,
+        "text": "0.60"
+      },
+      {
+        "bbox": {
+          "b": 150.19899999999996,
+          "coord_origin": "TOPLEFT",
+          "l": 387.0,
+          "r": 399.25,
+          "t": 143.899
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 9,
+        "end_row_offset_idx": 3,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 8,
+        "start_row_offset_idx": 2,
+        "text": "0.61"
+      },
+      {
+        "bbox": {
+          "b": 150.25900000000001,
+          "coord_origin": "TOPLEFT",
+          "l": 415.44,
+          "r": 427.69,
+          "t": 143.95900000000006
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 10,
+        "end_row_offset_idx": 3,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 9,
+        "start_row_offset_idx": 2,
+        "text": "0.55"
+      },
+      {
+        "bbox": {
+          "b": 150.25900000000001,
+          "coord_origin": "TOPLEFT",
+          "l": 443.88,
+          "r": 456.13,
+          "t": 143.95900000000006
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 11,
+        "end_row_offset_idx": 3,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 10,
+        "start_row_offset_idx": 2,
+        "text": "0.56"
+      },
+      {
+        "bbox": {
+          "b": 158.29899999999998,
+          "coord_origin": "TOPLEFT",
+          "l": 185.88,
+          "r": 202.79199999999997,
+          "t": 151.99900000000002
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 2,
+        "end_row_offset_idx": 4,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 1,
+        "start_row_offset_idx": 3,
+        "text": "(0.14)"
+      },
+      {
+        "bbox": {
+          "b": 158.29899999999998,
+          "coord_origin": "TOPLEFT",
+          "l": 214.32,
+          "r": 231.23199999999997,
+          "t": 151.99900000000002
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 3,
+        "end_row_offset_idx": 4,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 2,
+        "start_row_offset_idx": 3,
+        "text": "(0.20)"
+      },
+      {
+        "bbox": {
+          "b": 158.29899999999998,
+          "coord_origin": "TOPLEFT",
+          "l": 242.76,
+          "r": 259.672,
+          "t": 151.99900000000002
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 4,
+        "end_row_offset_idx": 4,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 3,
+        "start_row_offset_idx": 3,
+        "text": "(0.15)"
+      },
+      {
+        "bbox": {
+          "b": 158.29899999999998,
+          "coord_origin": "TOPLEFT",
+          "l": 271.2,
+          "r": 288.112,
+          "t": 151.99900000000002
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 5,
+        "end_row_offset_idx": 4,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 4,
+        "start_row_offset_idx": 3,
+        "text": "(0.20)"
+      },
+      {
+        "bbox": {
+          "b": 158.29899999999998,
+          "coord_origin": "TOPLEFT",
+          "l": 299.52,
+          "r": 316.432,
+          "t": 151.99900000000002
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 6,
+        "end_row_offset_idx": 4,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 5,
+        "start_row_offset_idx": 3,
+        "text": "(0.14)"
+      },
+      {
+        "bbox": {
+          "b": 158.29899999999998,
+          "coord_origin": "TOPLEFT",
+          "l": 327.96,
+          "r": 344.872,
+          "t": 151.99900000000002
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 7,
+        "end_row_offset_idx": 4,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 6,
+        "start_row_offset_idx": 3,
+        "text": "(0.19)"
+      },
+      {
+        "bbox": {
+          "b": 158.29899999999998,
+          "coord_origin": "TOPLEFT",
+          "l": 356.28,
+          "r": 373.192,
+          "t": 151.99900000000002
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 8,
+        "end_row_offset_idx": 4,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 7,
+        "start_row_offset_idx": 3,
+        "text": "(0.14)"
+      },
+      {
+        "bbox": {
+          "b": 158.29899999999998,
+          "coord_origin": "TOPLEFT",
+          "l": 384.84,
+          "r": 401.752,
+          "t": 151.99900000000002
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 9,
+        "end_row_offset_idx": 4,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 8,
+        "start_row_offset_idx": 3,
+        "text": "(0.17)"
+      },
+      {
+        "bbox": {
+          "b": 158.29899999999998,
+          "coord_origin": "TOPLEFT",
+          "l": 413.16,
+          "r": 430.07200000000006,
+          "t": 151.99900000000002
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 10,
+        "end_row_offset_idx": 4,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 9,
+        "start_row_offset_idx": 3,
+        "text": "(0.12)"
+      },
+      {
+        "bbox": {
+          "b": 158.29899999999998,
+          "coord_origin": "TOPLEFT",
+          "l": 441.6,
+          "r": 458.51200000000006,
+          "t": 151.99900000000002
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 11,
+        "end_row_offset_idx": 4,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 10,
+        "start_row_offset_idx": 3,
+        "text": "(0.14)"
+      },
+      {
+        "bbox": {
+          "b": 166.33900000000006,
+          "coord_origin": "TOPLEFT",
+          "l": 57.72,
+          "r": 83.389,
+          "t": 160.0390000000001
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 1,
+        "end_row_offset_idx": 6,
+        "fillable": false,
+        "row_header": true,
+        "row_section": false,
+        "row_span": 2,
+        "start_col_offset_idx": 0,
+        "start_row_offset_idx": 4,
+        "text": "Latitude"
+      },
+      {
+        "bbox": {
+          "b": 166.33900000000006,
+          "coord_origin": "TOPLEFT",
+          "l": 211.2,
+          "r": 225.78099999999998,
+          "t": 160.0390000000001
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 3,
+        "end_row_offset_idx": 5,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 2,
+        "start_row_offset_idx": 4,
+        "text": "-0.47"
+      },
+      {
+        "bbox": {
+          "b": 166.279,
+          "coord_origin": "TOPLEFT",
+          "l": 268.08,
+          "r": 282.661,
+          "t": 159.97900000000004
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 5,
+        "end_row_offset_idx": 5,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 4,
+        "start_row_offset_idx": 4,
+        "text": "-0.34"
+      },
+      {
+        "bbox": {
+          "b": 166.279,
+          "coord_origin": "TOPLEFT",
+          "l": 330.0,
+          "r": 342.25,
+          "t": 159.97900000000004
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 7,
+        "end_row_offset_idx": 5,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 6,
+        "start_row_offset_idx": 4,
+        "text": "0.31"
+      },
+      {
+        "bbox": {
+          "b": 166.279,
+          "coord_origin": "TOPLEFT",
+          "l": 381.6,
+          "r": 396.18100000000004,
+          "t": 159.97900000000004
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 9,
+        "end_row_offset_idx": 5,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 8,
+        "start_row_offset_idx": 4,
+        "text": "-0.41"
+      },
+      {
+        "bbox": {
+          "b": 166.279,
+          "coord_origin": "TOPLEFT",
+          "l": 438.48,
+          "r": 453.06100000000004,
+          "t": 159.97900000000004
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 11,
+        "end_row_offset_idx": 5,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 10,
+        "start_row_offset_idx": 4,
+        "text": "-0.16"
+      },
+      {
+        "bbox": {
+          "b": 174.31899999999996,
+          "coord_origin": "TOPLEFT",
+          "l": 214.32,
+          "r": 231.23199999999997,
+          "t": 168.019
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 3,
+        "end_row_offset_idx": 6,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 2,
+        "start_row_offset_idx": 5,
+        "text": "(1.20)"
+      },
+      {
+        "bbox": {
+          "b": 174.31899999999996,
+          "coord_origin": "TOPLEFT",
+          "l": 271.08,
+          "r": 287.992,
+          "t": 168.019
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 5,
+        "end_row_offset_idx": 6,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 4,
+        "start_row_offset_idx": 5,
+        "text": "(1.10)"
+      },
+      {
+        "bbox": {
+          "b": 174.31899999999996,
+          "coord_origin": "TOPLEFT",
+          "l": 327.84,
+          "r": 344.752,
+          "t": 168.019
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 7,
+        "end_row_offset_idx": 6,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 6,
+        "start_row_offset_idx": 5,
+        "text": "(1.05)"
+      },
+      {
+        "bbox": {
+          "b": 174.31899999999996,
+          "coord_origin": "TOPLEFT",
+          "l": 384.72,
+          "r": 401.63200000000006,
+          "t": 168.019
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 9,
+        "end_row_offset_idx": 6,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 8,
+        "start_row_offset_idx": 5,
+        "text": "(0.92)"
+      },
+      {
+        "bbox": {
+          "b": 174.31899999999996,
+          "coord_origin": "TOPLEFT",
+          "l": 441.66,
+          "r": 458.57200000000006,
+          "t": 168.019
+        },
+        "col_span": 1,
+        "column_header": false,
+        "end_col_offset_idx": 11,
+        "end_row_offset_idx": 6,
+        "fillable": false,
+        "row_header": false,
+        "row_section": false,
+        "row_span": 1,
+        "start_col_offset_idx": 10,
+        "start_row_offset_idx": 5,
+        "text": "(0.81)"
+      }
+    ]
+  },
+  "footnotes": [],
+  "image": null,
+  "label": "table",
+  "meta": null,
+  "parent": {
+    "cref": "#/body"
+  },
+  "prov": [
+    {
+      "bbox": {
+        "b": 542.5120849609375,
+        "coord_origin": "BOTTOMLEFT",
+        "l": 56.67664337158203,
+        "r": 459.08282470703125,
+        "t": 621.0644683837891
+      },
+      "charspan": [
+        0,
+        0
+      ],
+      "page_no": 27
+    }
+  ],
+  "references": [],
+  "self_ref": "#/tables/8"
+}

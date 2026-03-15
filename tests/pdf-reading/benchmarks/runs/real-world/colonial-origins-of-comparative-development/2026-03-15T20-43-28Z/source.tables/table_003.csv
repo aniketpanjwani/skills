@@ -1,0 +1,10 @@
+,(1),(2),(3),(4),(5),(6),(7),(8),(9),(10)
+PanelA,DependentVariableIs AverageProtectionAgainstExpropriation Risk in 1985-1995,DependentVariableIs AverageProtectionAgainstExpropriation Risk in 1985-1995,DependentVariableIs AverageProtectionAgainstExpropriation Risk in 1985-1995,DependentVariableIs AverageProtectionAgainstExpropriation Risk in 1985-1995,DependentVariableIs AverageProtectionAgainstExpropriation Risk in 1985-1995,DependentVariableIs AverageProtectionAgainstExpropriation Risk in 1985-1995,DependentVariableIs AverageProtectionAgainstExpropriation Risk in 1985-1995,DependentVariableIs AverageProtectionAgainstExpropriation Risk in 1985-1995,DependentVariableIs AverageProtectionAgainstExpropriation Risk in 1985-1995,DependentVariableIs AverageProtectionAgainstExpropriation Risk in 1985-1995
+Constrainton executive in 1900,0.32 (0.08),0.26 (0.09),,,,,,,,
+Democracyin 1900,,,0.24 (0.06),0.21 (0.07),,,,,,
+Constrainton executive in first year of independence,,,,,0.25 (0.08),0.22 (0.08),,,,
+Europeansettlementsin 1900,,,,,,,3.20 (0.61),3.00 (0.78),,
+Log Europeansettlermortality,,,,,,,,,-0.61 (0.13),-0.51 (0.14)
+Latitude,,2.20 (1.40),,1.60 (1.50),,2.70 (1.40),,0.58 (1.51),,2.00 (1.34)
+R2,0.2,0.23,0.24,0.25,0.19,0.24,0.3,0.3,0.27,0.3
+Numberof observations,63,63,62,62,63,63,66,66,64,64

@@ -1,0 +1,408 @@
+[
+  {
+    "agent_table_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_001.agent.json",
+    "cleaned_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_001.cleaned.md",
+    "cleanup_report": {
+      "max_line_length": 218,
+      "max_pipe_count": 8,
+      "reasons": [
+        "contains many columns",
+        "contains merged-text artifacts",
+        "looks like a dense academic regression table"
+      ],
+      "repaired_checkmarks": 0,
+      "repaired_decimal_markers": 0,
+      "repaired_misplaced_signs": 0,
+      "suspicious_merged_tokens": 3,
+      "tightened_numeric_spacing": 65,
+      "verification_required": true
+    },
+    "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_001.crop.png",
+    "csv_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_001.csv",
+    "html_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_001.html",
+    "id": 1,
+    "latex_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_001.tex",
+    "otsl_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_001.otsl.txt",
+    "page": 10,
+    "raw_docling_json_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_001.raw_docling.json",
+    "raw_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_001.raw.md",
+    "schema_version": "2026-03-15",
+    "title": "TABLE 1-DESCRIPTIVE STATISTICS",
+    "verification_reasons": [
+      "contains many columns",
+      "contains merged-text artifacts",
+      "looks like a dense academic regression table"
+    ],
+    "verification_required": true
+  },
+  {
+    "agent_table_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_002.agent.json",
+    "cleaned_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_002.cleaned.md",
+    "cleanup_report": {
+      "max_line_length": 366,
+      "max_pipe_count": 12,
+      "reasons": [
+        "contains very wide rows",
+        "contains many columns",
+        "contains merged-text artifacts",
+        "looks like a dense academic regression table"
+      ],
+      "repaired_checkmarks": 0,
+      "repaired_decimal_markers": 0,
+      "repaired_misplaced_signs": 0,
+      "suspicious_merged_tokens": 1,
+      "tightened_numeric_spacing": 50,
+      "verification_required": true
+    },
+    "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_002.crop.png",
+    "csv_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_002.csv",
+    "html_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_002.html",
+    "id": 2,
+    "latex_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_002.tex",
+    "otsl_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_002.otsl.txt",
+    "page": 12,
+    "raw_docling_json_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_002.raw_docling.json",
+    "raw_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_002.raw.md",
+    "schema_version": "2026-03-15",
+    "title": "TABLE  2-OLS REGRESSIONS",
+    "verification_reasons": [
+      "contains very wide rows",
+      "contains many columns",
+      "contains merged-text artifacts",
+      "looks like a dense academic regression table"
+    ],
+    "verification_required": true
+  },
+  {
+    "agent_table_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_003.agent.json",
+    "cleaned_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_003.cleaned.md",
+    "cleanup_report": {
+      "max_line_length": 836,
+      "max_pipe_count": 12,
+      "reasons": [
+        "contains very wide rows",
+        "contains many columns",
+        "contains merged-text artifacts",
+        "looks like a dense academic regression table"
+      ],
+      "repaired_checkmarks": 0,
+      "repaired_decimal_markers": 0,
+      "repaired_misplaced_signs": 0,
+      "suspicious_merged_tokens": 12,
+      "tightened_numeric_spacing": 40,
+      "verification_required": true
+    },
+    "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_003.crop.png",
+    "csv_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_003.csv",
+    "html_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_003.html",
+    "id": 3,
+    "latex_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_003.tex",
+    "otsl_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_003.otsl.txt",
+    "page": 18,
+    "raw_docling_json_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_003.raw_docling.json",
+    "raw_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_003.raw.md",
+    "schema_version": "2026-03-15",
+    "title": "TABLE  3-DETERMINANTS OF INSTITUTIONS",
+    "verification_reasons": [
+      "contains very wide rows",
+      "contains many columns",
+      "contains merged-text artifacts",
+      "looks like a dense academic regression table"
+    ],
+    "verification_required": true
+  },
+  {
+    "agent_table_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_004.agent.json",
+    "cleaned_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_004.cleaned.md",
+    "cleanup_report": {
+      "max_line_length": 435,
+      "max_pipe_count": 12,
+      "reasons": [
+        "contains very wide rows",
+        "contains many columns",
+        "contains merged-text artifacts",
+        "looks like a dense academic regression table"
+      ],
+      "repaired_checkmarks": 0,
+      "repaired_decimal_markers": 0,
+      "repaired_misplaced_signs": 0,
+      "suspicious_merged_tokens": 2,
+      "tightened_numeric_spacing": 40,
+      "verification_required": true
+    },
+    "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_004.crop.png",
+    "csv_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_004.csv",
+    "html_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_004.html",
+    "id": 4,
+    "latex_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_004.tex",
+    "otsl_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_004.otsl.txt",
+    "page": 18,
+    "raw_docling_json_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_004.raw_docling.json",
+    "raw_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_004.raw.md",
+    "schema_version": "2026-03-15",
+    "title": null,
+    "verification_reasons": [
+      "contains very wide rows",
+      "contains many columns",
+      "contains merged-text artifacts",
+      "looks like a dense academic regression table"
+    ],
+    "verification_required": true
+  },
+  {
+    "agent_table_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_005.agent.json",
+    "cleaned_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_005.cleaned.md",
+    "cleanup_report": {
+      "max_line_length": 841,
+      "max_pipe_count": 11,
+      "reasons": [
+        "contains very wide rows",
+        "contains many columns",
+        "contains merged-text artifacts",
+        "looks like a dense academic regression table"
+      ],
+      "repaired_checkmarks": 0,
+      "repaired_decimal_markers": 0,
+      "repaired_misplaced_signs": 0,
+      "suspicious_merged_tokens": 2,
+      "tightened_numeric_spacing": 97,
+      "verification_required": true
+    },
+    "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_005.crop.png",
+    "csv_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_005.csv",
+    "html_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_005.html",
+    "id": 5,
+    "latex_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_005.tex",
+    "otsl_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_005.otsl.txt",
+    "page": 19,
+    "raw_docling_json_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_005.raw_docling.json",
+    "raw_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_005.raw.md",
+    "schema_version": "2026-03-15",
+    "title": "TABLE  4-IV REGRESSIONS OF LOG GDP PER  CAPITA",
+    "verification_reasons": [
+      "contains very wide rows",
+      "contains many columns",
+      "contains merged-text artifacts",
+      "looks like a dense academic regression table"
+    ],
+    "verification_required": true
+  },
+  {
+    "agent_table_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_006.agent.json",
+    "cleaned_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_006.cleaned.md",
+    "cleanup_report": {
+      "max_line_length": 841,
+      "max_pipe_count": 11,
+      "reasons": [
+        "contains very wide rows",
+        "contains many columns",
+        "contains merged-text artifacts",
+        "looks like a dense academic regression table"
+      ],
+      "repaired_checkmarks": 0,
+      "repaired_decimal_markers": 0,
+      "repaired_misplaced_signs": 0,
+      "suspicious_merged_tokens": 12,
+      "tightened_numeric_spacing": 65,
+      "verification_required": true
+    },
+    "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_006.crop.png",
+    "csv_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_006.csv",
+    "html_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_006.html",
+    "id": 6,
+    "latex_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_006.tex",
+    "otsl_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_006.otsl.txt",
+    "page": 22,
+    "raw_docling_json_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_006.raw_docling.json",
+    "raw_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_006.raw.md",
+    "schema_version": "2026-03-15",
+    "title": "Panel B: First Stage for Average Protection Against ExpropriationR isk in 1985-1995",
+    "verification_reasons": [
+      "contains very wide rows",
+      "contains many columns",
+      "contains merged-text artifacts",
+      "looks like a dense academic regression table"
+    ],
+    "verification_required": true
+  },
+  {
+    "agent_table_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_007.agent.json",
+    "cleaned_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_007.cleaned.md",
+    "cleanup_report": {
+      "max_line_length": 831,
+      "max_pipe_count": 11,
+      "reasons": [
+        "contains very wide rows",
+        "contains many columns",
+        "contains merged-text artifacts"
+      ],
+      "repaired_checkmarks": 0,
+      "repaired_decimal_markers": 0,
+      "repaired_misplaced_signs": 0,
+      "suspicious_merged_tokens": 14,
+      "tightened_numeric_spacing": 113,
+      "verification_required": true
+    },
+    "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_007.crop.png",
+    "csv_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_007.csv",
+    "html_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_007.html",
+    "id": 7,
+    "latex_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_007.tex",
+    "otsl_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_007.otsl.txt",
+    "page": 23,
+    "raw_docling_json_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_007.raw_docling.json",
+    "raw_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_007.raw.md",
+    "schema_version": "2026-03-15",
+    "title": "TABLE  6-ROBUSTNESS CHECKS  FOR  IV REGRESSIONS OF LOG GDP PER  CAPITA",
+    "verification_reasons": [
+      "contains very wide rows",
+      "contains many columns",
+      "contains merged-text artifacts"
+    ],
+    "verification_required": true
+  },
+  {
+    "agent_table_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_008.agent.json",
+    "cleaned_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_008.cleaned.md",
+    "cleanup_report": {
+      "max_line_length": 985,
+      "max_pipe_count": 13,
+      "reasons": [
+        "contains very wide rows",
+        "contains many columns",
+        "contains merged-text artifacts",
+        "looks like a dense academic regression table"
+      ],
+      "repaired_checkmarks": 0,
+      "repaired_decimal_markers": 0,
+      "repaired_misplaced_signs": 0,
+      "suspicious_merged_tokens": 20,
+      "tightened_numeric_spacing": 132,
+      "verification_required": true
+    },
+    "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_008.crop.png",
+    "csv_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_008.csv",
+    "html_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_008.html",
+    "id": 8,
+    "latex_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_008.tex",
+    "otsl_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_008.otsl.txt",
+    "page": 25,
+    "raw_docling_json_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_008.raw_docling.json",
+    "raw_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_008.raw.md",
+    "schema_version": "2026-03-15",
+    "title": "TABLE  7-GEOGRAPHY AND HEALTH  VARIABLES",
+    "verification_reasons": [
+      "contains very wide rows",
+      "contains many columns",
+      "contains merged-text artifacts",
+      "looks like a dense academic regression table"
+    ],
+    "verification_required": true
+  },
+  {
+    "agent_table_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_009.agent.json",
+    "cleaned_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_009.cleaned.md",
+    "cleanup_report": {
+      "max_line_length": 407,
+      "max_pipe_count": 12,
+      "reasons": [
+        "contains very wide rows",
+        "contains many columns",
+        "contains merged-text artifacts"
+      ],
+      "repaired_checkmarks": 0,
+      "repaired_decimal_markers": 0,
+      "repaired_misplaced_signs": 0,
+      "suspicious_merged_tokens": 2,
+      "tightened_numeric_spacing": 30,
+      "verification_required": true
+    },
+    "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_009.crop.png",
+    "csv_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_009.csv",
+    "html_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_009.html",
+    "id": 9,
+    "latex_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_009.tex",
+    "otsl_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_009.otsl.txt",
+    "page": 27,
+    "raw_docling_json_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_009.raw_docling.json",
+    "raw_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_009.raw.md",
+    "schema_version": "2026-03-15",
+    "title": "TABLE  8-OVERIDENTIFICATION TESTS",
+    "verification_reasons": [
+      "contains very wide rows",
+      "contains many columns",
+      "contains merged-text artifacts"
+    ],
+    "verification_required": true
+  },
+  {
+    "agent_table_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_010.agent.json",
+    "cleaned_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_010.cleaned.md",
+    "cleanup_report": {
+      "max_line_length": 694,
+      "max_pipe_count": 12,
+      "reasons": [
+        "contains very wide rows",
+        "contains many columns",
+        "contains merged-text artifacts"
+      ],
+      "repaired_checkmarks": 0,
+      "repaired_decimal_markers": 0,
+      "repaired_misplaced_signs": 0,
+      "suspicious_merged_tokens": 13,
+      "tightened_numeric_spacing": 88,
+      "verification_required": true
+    },
+    "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_010.crop.png",
+    "csv_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_010.csv",
+    "html_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_010.html",
+    "id": 10,
+    "latex_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_010.tex",
+    "otsl_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_010.otsl.txt",
+    "page": 27,
+    "raw_docling_json_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_010.raw_docling.json",
+    "raw_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_010.raw.md",
+    "schema_version": "2026-03-15",
+    "title": "Panel B: First Stage for Average Protection  Against Expropriation Risk",
+    "verification_reasons": [
+      "contains very wide rows",
+      "contains many columns",
+      "contains merged-text artifacts"
+    ],
+    "verification_required": true
+  },
+  {
+    "agent_table_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_011.agent.json",
+    "cleaned_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_011.cleaned.md",
+    "cleanup_report": {
+      "max_line_length": 361,
+      "max_pipe_count": 11,
+      "reasons": [
+        "contains very wide rows",
+        "contains many columns"
+      ],
+      "repaired_checkmarks": 0,
+      "repaired_decimal_markers": 0,
+      "repaired_misplaced_signs": 0,
+      "suspicious_merged_tokens": 0,
+      "tightened_numeric_spacing": 148,
+      "verification_required": true
+    },
+    "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_011.crop.png",
+    "csv_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_011.csv",
+    "html_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_011.html",
+    "id": 11,
+    "latex_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_011.tex",
+    "otsl_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_011.otsl.txt",
+    "page": 31,
+    "raw_docling_json_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_011.raw_docling.json",
+    "raw_markdown_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_011.raw.md",
+    "schema_version": "2026-03-15",
+    "title": "APPENDIX TABLE  A2-DATA ON MORTALITY",
+    "verification_reasons": [
+      "contains very wide rows",
+      "contains many columns"
+    ],
+    "verification_required": true
+  }
+]

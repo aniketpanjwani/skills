@@ -1,0 +1,3001 @@
+{
+  "cells": [
+    {
+      "bbox": {
+        "b": 303.956,
+        "coord_origin": "TOPLEFT",
+        "l": 55.2,
+        "r": 158.11199999999994,
+        "t": 296.75600000000003
+      },
+      "cell_id": "r0_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 0.86,
+      "latex": "Log Europeans ettler mortality",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.61,
+          "needs_review": true,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [
+            "merged_token"
+          ],
+          "text_normalized": "Log Europeansettlermortality",
+          "text_raw": "Log Europeansettlermortality"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "Log Europeans ettler mortality",
+          "text_raw": "Log Europeans ettler mortality"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "pdfplumber",
+      "text_normalized": "Log Europeans ettler mortality",
+      "text_raw": "Log Europeans ettler mortality"
+    },
+    {
+      "bbox": {
+        "b": 303.956,
+        "coord_origin": "TOPLEFT",
+        "l": 171.42,
+        "r": 188.08399999999997,
+        "t": 296.75600000000003
+      },
+      "cell_id": "r0_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 0.9,
+      "latex": "-0.53",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.53",
+          "text_raw": "-0.53"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.53",
+          "text_raw": "-0.53"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "pdfplumber",
+      "text_normalized": "-0.53",
+      "text_raw": "-0.53"
+    },
+    {
+      "bbox": {
+        "b": 303.956,
+        "coord_origin": "TOPLEFT",
+        "l": 203.16,
+        "r": 219.82399999999998,
+        "t": 296.75600000000003
+      },
+      "cell_id": "r0_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 0.9,
+      "latex": "-0.43",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.43",
+          "text_raw": "-0.43"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.43",
+          "text_raw": "-0.43"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "pdfplumber",
+      "text_normalized": "-0.43",
+      "text_raw": "-0.43"
+    },
+    {
+      "bbox": {
+        "b": 303.956,
+        "coord_origin": "TOPLEFT",
+        "l": 236.88,
+        "r": 253.54399999999998,
+        "t": 296.75600000000003
+      },
+      "cell_id": "r0_c3",
+      "col_end": 4,
+      "col_start": 3,
+      "confidence": 0.9,
+      "latex": "-0.59",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.59",
+          "text_raw": "-0.59"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.59",
+          "text_raw": "-0.59"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "pdfplumber",
+      "text_normalized": "-0.59",
+      "text_raw": "-0.59"
+    },
+    {
+      "bbox": {
+        "b": 303.956,
+        "coord_origin": "TOPLEFT",
+        "l": 272.28,
+        "r": 288.94399999999996,
+        "t": 296.75600000000003
+      },
+      "cell_id": "r0_c4",
+      "col_end": 5,
+      "col_start": 4,
+      "confidence": 0.9,
+      "latex": "-0.51",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.51",
+          "text_raw": "-0.51"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.51",
+          "text_raw": "-0.51"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "pdfplumber",
+      "text_normalized": "-0.51",
+      "text_raw": "-0.51"
+    },
+    {
+      "bbox": {
+        "b": 303.956,
+        "coord_origin": "TOPLEFT",
+        "l": 305.88,
+        "r": 322.544,
+        "t": 296.75600000000003
+      },
+      "cell_id": "r0_c5",
+      "col_end": 6,
+      "col_start": 5,
+      "confidence": 0.9,
+      "latex": "-0.54",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.54",
+          "text_raw": "-0.54"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.54",
+          "text_raw": "-0.54"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "pdfplumber",
+      "text_normalized": "-0.54",
+      "text_raw": "-0.54"
+    },
+    {
+      "bbox": {
+        "b": 303.956,
+        "coord_origin": "TOPLEFT",
+        "l": 337.8,
+        "r": 354.464,
+        "t": 296.75600000000003
+      },
+      "cell_id": "r0_c6",
+      "col_end": 7,
+      "col_start": 6,
+      "confidence": 0.9,
+      "latex": "-0.44",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.44",
+          "text_raw": "-0.44"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.44",
+          "text_raw": "-0.44"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "pdfplumber",
+      "text_normalized": "-0.44",
+      "text_raw": "-0.44"
+    },
+    {
+      "bbox": {
+        "b": 303.956,
+        "coord_origin": "TOPLEFT",
+        "l": 366.36,
+        "r": 383.024,
+        "t": 296.75600000000003
+      },
+      "cell_id": "r0_c7",
+      "col_end": 8,
+      "col_start": 7,
+      "confidence": 0.9,
+      "latex": "-0.58",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.58",
+          "text_raw": "-0.58"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.58",
+          "text_raw": "-0.58"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "pdfplumber",
+      "text_normalized": "-0.58",
+      "text_raw": "-0.58"
+    },
+    {
+      "bbox": {
+        "b": 303.956,
+        "coord_origin": "TOPLEFT",
+        "l": 398.4,
+        "r": 415.06399999999996,
+        "t": 296.75600000000003
+      },
+      "cell_id": "r0_c8",
+      "col_end": 9,
+      "col_start": 8,
+      "confidence": 0.9,
+      "latex": "-0.44",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.44",
+          "text_raw": "-0.44"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.44",
+          "text_raw": "-0.44"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "pdfplumber",
+      "text_normalized": "-0.44",
+      "text_raw": "-0.44"
+    },
+    {
+      "bbox": {
+        "b": 303.956,
+        "coord_origin": "TOPLEFT",
+        "l": 433.92,
+        "r": 450.584,
+        "t": 296.75600000000003
+      },
+      "cell_id": "r0_c9",
+      "col_end": 10,
+      "col_start": 9,
+      "confidence": 0.9,
+      "latex": "-0.48",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.48",
+          "text_raw": "-0.48"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.48",
+          "text_raw": "-0.48"
+        }
+      ],
+      "role": "column_header",
+      "row_end": 1,
+      "row_start": 0,
+      "source": "pdfplumber",
+      "text_normalized": "-0.48",
+      "text_raw": "-0.48"
+    },
+    {
+      "bbox": {
+        "b": 322.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 55.14,
+        "r": 84.47600000000001,
+        "t": 314.816
+      },
+      "cell_id": "r1_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 0.91,
+      "latex": "Latitude",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.84,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "Latitude",
+          "text_raw": "Latitude"
+        },
+        {
+          "confidence": 0.91,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "Latitude",
+          "text_raw": "Latitude"
+        }
+      ],
+      "role": "stub",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "pdfplumber",
+      "text_normalized": "Latitude",
+      "text_raw": "Latitude"
+    },
+    {
+      "bbox": {
+        "b": 312.956,
+        "coord_origin": "TOPLEFT",
+        "l": 174.6,
+        "r": 193.92799999999997,
+        "t": 305.75600000000003
+      },
+      "cell_id": "r1_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 0.9,
+      "latex": "(0.14)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.14)",
+          "text_raw": "(0.14)"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.14)",
+          "text_raw": "(0.14)"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "pdfplumber",
+      "text_normalized": "(0.14)",
+      "text_raw": "(0.14)"
+    },
+    {
+      "bbox": {
+        "b": 312.956,
+        "coord_origin": "TOPLEFT",
+        "l": 206.64,
+        "r": 225.96799999999996,
+        "t": 305.75600000000003
+      },
+      "cell_id": "r1_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 0.9,
+      "latex": "(0.16)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.16)",
+          "text_raw": "(0.16)"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.16)",
+          "text_raw": "(0.16)"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "pdfplumber",
+      "text_normalized": "(0.16)",
+      "text_raw": "(0.16)"
+    },
+    {
+      "bbox": {
+        "b": 312.956,
+        "coord_origin": "TOPLEFT",
+        "l": 240.24,
+        "r": 259.568,
+        "t": 305.75600000000003
+      },
+      "cell_id": "r1_c3",
+      "col_end": 4,
+      "col_start": 3,
+      "confidence": 0.9,
+      "latex": "(0.19)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.19)",
+          "text_raw": "(0.19)"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.19)",
+          "text_raw": "(0.19)"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "pdfplumber",
+      "text_normalized": "(0.19)",
+      "text_raw": "(0.19)"
+    },
+    {
+      "bbox": {
+        "b": 312.956,
+        "coord_origin": "TOPLEFT",
+        "l": 275.7,
+        "r": 295.02799999999996,
+        "t": 305.75600000000003
+      },
+      "cell_id": "r1_c4",
+      "col_end": 5,
+      "col_start": 4,
+      "confidence": 0.9,
+      "latex": "(0.14)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.14)",
+          "text_raw": "(0.14)"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.14)",
+          "text_raw": "(0.14)"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "pdfplumber",
+      "text_normalized": "(0.14)",
+      "text_raw": "(0.14)"
+    },
+    {
+      "bbox": {
+        "b": 312.956,
+        "coord_origin": "TOPLEFT",
+        "l": 309.3,
+        "r": 328.628,
+        "t": 305.75600000000003
+      },
+      "cell_id": "r1_c5",
+      "col_end": 6,
+      "col_start": 5,
+      "confidence": 0.9,
+      "latex": "(0.13)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.13)",
+          "text_raw": "(0.13)"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.13)",
+          "text_raw": "(0.13)"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "pdfplumber",
+      "text_normalized": "(0.13)",
+      "text_raw": "(0.13)"
+    },
+    {
+      "bbox": {
+        "b": 312.956,
+        "coord_origin": "TOPLEFT",
+        "l": 341.34,
+        "r": 360.66799999999995,
+        "t": 305.75600000000003
+      },
+      "cell_id": "r1_c6",
+      "col_end": 7,
+      "col_start": 6,
+      "confidence": 0.9,
+      "latex": "(0.14)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.14)",
+          "text_raw": "(0.14)"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.14)",
+          "text_raw": "(0.14)"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "pdfplumber",
+      "text_normalized": "(0.14)",
+      "text_raw": "(0.14)"
+    },
+    {
+      "bbox": {
+        "b": 312.956,
+        "coord_origin": "TOPLEFT",
+        "l": 369.9,
+        "r": 389.22799999999995,
+        "t": 305.75600000000003
+      },
+      "cell_id": "r1_c7",
+      "col_end": 8,
+      "col_start": 7,
+      "confidence": 0.9,
+      "latex": "(0.13)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.13)",
+          "text_raw": "(0.13)"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.13)",
+          "text_raw": "(0.13)"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "pdfplumber",
+      "text_normalized": "(0.13)",
+      "text_raw": "(0.13)"
+    },
+    {
+      "bbox": {
+        "b": 312.956,
+        "coord_origin": "TOPLEFT",
+        "l": 401.76,
+        "r": 421.08799999999997,
+        "t": 305.75600000000003
+      },
+      "cell_id": "r1_c8",
+      "col_end": 9,
+      "col_start": 8,
+      "confidence": 0.9,
+      "latex": "(0.15)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.15)",
+          "text_raw": "(0.15)"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.15)",
+          "text_raw": "(0.15)"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "pdfplumber",
+      "text_normalized": "(0.15)",
+      "text_raw": "(0.15)"
+    },
+    {
+      "bbox": {
+        "b": 312.956,
+        "coord_origin": "TOPLEFT",
+        "l": 437.28,
+        "r": 456.60799999999995,
+        "t": 305.75600000000003
+      },
+      "cell_id": "r1_c9",
+      "col_end": 10,
+      "col_start": 9,
+      "confidence": 0.9,
+      "latex": "(0.18)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.18)",
+          "text_raw": "(0.18)"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.18)",
+          "text_raw": "(0.18)"
+        }
+      ],
+      "role": "data",
+      "row_end": 2,
+      "row_start": 1,
+      "source": "pdfplumber",
+      "text_normalized": "(0.18)",
+      "text_raw": "(0.18)"
+    },
+    {
+      "bbox": {
+        "b": 340.256,
+        "coord_origin": "TOPLEFT",
+        "l": 55.08,
+        "r": 133.984,
+        "t": 332.936
+      },
+      "cell_id": "r2_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 0.79,
+      "latex": "Britishcolonial dummy",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "Britishcolonial dummy",
+          "text_raw": "Britishcolonial dummy"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "British colonial dummy",
+          "text_raw": "British colonial dummy"
+        }
+      ],
+      "role": "stub",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "docling",
+      "text_normalized": "Britishcolonial dummy",
+      "text_raw": "Britishcolonial dummy"
+    },
+    {
+      "bbox": {
+        "b": 349.13599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 174.6,
+        "r": 193.92799999999997,
+        "t": 333.056
+      },
+      "cell_id": "r2_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 0.86,
+      "latex": "0.63 (0.37)",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.63 (0.37)",
+          "text_raw": "0.63 (0.37)"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.63 (0.37)",
+          "text_raw": "0.63 (0.37)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "pdfplumber",
+      "text_normalized": "0.63 (0.37)",
+      "text_raw": "0.63 (0.37)"
+    },
+    {
+      "bbox": {
+        "b": 349.13599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 206.64,
+        "r": 225.96799999999996,
+        "t": 323.996
+      },
+      "cell_id": "r2_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 0.86,
+      "latex": "(1.40) 0.55 (0.37)",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(1.40) 0.55 (0.37)",
+          "text_raw": "(1.40) 0.55 (0.37)"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(1.40) 0.55 (0.37)",
+          "text_raw": "(1.40) 0.55 (0.37)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "pdfplumber",
+      "text_normalized": "(1.40) 0.55 (0.37)",
+      "text_raw": "(1.40) 0.55 (0.37)"
+    },
+    {
+      "bbox": {
+        "b": 331.19599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 341.28,
+        "r": 360.60799999999995,
+        "t": 323.996
+      },
+      "cell_id": "r2_c6",
+      "col_end": 7,
+      "col_start": 6,
+      "confidence": 0.9,
+      "latex": "(1.30)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(1.30)",
+          "text_raw": "(1.30)"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(1.30)",
+          "text_raw": "(1.30)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "pdfplumber",
+      "text_normalized": "(1.30)",
+      "text_raw": "(1.30)"
+    },
+    {
+      "bbox": {
+        "b": 331.19599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 401.94,
+        "r": 421.268,
+        "t": 323.996
+      },
+      "cell_id": "r2_c8",
+      "col_end": 9,
+      "col_start": 8,
+      "confidence": 0.9,
+      "latex": "(1.50)",
+      "latex_confidence": 0.99,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(1.50)",
+          "text_raw": "(1.50)"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(1.50)",
+          "text_raw": "(1.50)"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "pdfplumber",
+      "text_normalized": "(1.50)",
+      "text_raw": "(1.50)"
+    },
+    {
+      "bbox": {
+        "b": 358.13599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 433.92,
+        "r": 456.60799999999995,
+        "t": 323.996
+      },
+      "cell_id": "r2_c9",
+      "col_end": 10,
+      "col_start": 9,
+      "confidence": 0.86,
+      "latex": "(1.60) -0.25",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(1.60) -0.25",
+          "text_raw": "(1.60) -0.25"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(1.60) -0.25",
+          "text_raw": "(1.60) -0.25"
+        }
+      ],
+      "role": "data",
+      "row_end": 3,
+      "row_start": 2,
+      "source": "pdfplumber",
+      "text_normalized": "(1.60) -0.25",
+      "text_raw": "(1.60) -0.25"
+    },
+    {
+      "bbox": {
+        "b": 358.13599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 55.14,
+        "r": 134.584,
+        "t": 350.816
+      },
+      "cell_id": "r3_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 0.79,
+      "latex": "Frenchcolonial dummy",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "Frenchcolonial dummy",
+          "text_raw": "Frenchcolonial dummy"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "French colonial dummy",
+          "text_raw": "French colonial dummy"
+        }
+      ],
+      "role": "stub",
+      "row_end": 4,
+      "row_start": 3,
+      "source": "docling",
+      "text_normalized": "Frenchcolonial dummy",
+      "text_raw": "Frenchcolonial dummy"
+    },
+    {
+      "bbox": {
+        "b": 367.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 174.72,
+        "r": 194.04799999999997,
+        "t": 350.936
+      },
+      "cell_id": "r3_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 0.86,
+      "latex": "0.05 (0.43)",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.05 (0.43)",
+          "text_raw": "0.05 (0.43)"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.05 (0.43)",
+          "text_raw": "0.05 (0.43)"
+        }
+      ],
+      "role": "data",
+      "row_end": 4,
+      "row_start": 3,
+      "source": "pdfplumber",
+      "text_normalized": "0.05 (0.43)",
+      "text_raw": "0.05 (0.43)"
+    },
+    {
+      "bbox": {
+        "b": 367.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 203.4,
+        "r": 226.08799999999997,
+        "t": 350.816
+      },
+      "cell_id": "r3_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 0.86,
+      "latex": "-0.12 (0.44)",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.12 (0.44)",
+          "text_raw": "-0.12 (0.44)"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.12 (0.44)",
+          "text_raw": "-0.12 (0.44)"
+        }
+      ],
+      "role": "data",
+      "row_end": 4,
+      "row_start": 3,
+      "source": "pdfplumber",
+      "text_normalized": "-0.12 (0.44)",
+      "text_raw": "-0.12 (0.44)"
+    },
+    {
+      "bbox": {
+        "b": 385.07599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 305.88,
+        "r": 328.568,
+        "t": 368.816
+      },
+      "cell_id": "r3_c5",
+      "col_end": 6,
+      "col_start": 5,
+      "confidence": 0.86,
+      "latex": "-0.67 (0.33)",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.67 (0.33)",
+          "text_raw": "-0.67 (0.33)"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.67 (0.33)",
+          "text_raw": "-0.67 (0.33)"
+        }
+      ],
+      "role": "data",
+      "row_end": 4,
+      "row_start": 3,
+      "source": "pdfplumber",
+      "text_normalized": "-0.67 (0.33)",
+      "text_raw": "-0.67 (0.33)"
+    },
+    {
+      "bbox": {
+        "b": 385.07599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 337.92,
+        "r": 360.60799999999995,
+        "t": 368.696
+      },
+      "cell_id": "r3_c6",
+      "col_end": 7,
+      "col_start": 6,
+      "confidence": 0.86,
+      "latex": "-0.7 (0.32)",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "-0.7 (0.32)",
+          "text_raw": "-0.7 (0.32)"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "-0.7 (0.32)",
+          "text_raw": "-0.7 (0.32)"
+        }
+      ],
+      "role": "data",
+      "row_end": 4,
+      "row_start": 3,
+      "source": "pdfplumber",
+      "text_normalized": "-0.7 (0.32)",
+      "text_raw": "-0.7 (0.32)"
+    },
+    {
+      "bbox": {
+        "b": 375.896,
+        "coord_origin": "TOPLEFT",
+        "l": 433.92,
+        "r": 456.60799999999995,
+        "t": 359.816
+      },
+      "cell_id": "r3_c9",
+      "col_end": 10,
+      "col_start": 9,
+      "confidence": 0.86,
+      "latex": "(0.89) -0.05",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.89) -0.05",
+          "text_raw": "(0.89) -0.05"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.89) -0.05",
+          "text_raw": "(0.89) -0.05"
+        }
+      ],
+      "role": "data",
+      "row_end": 4,
+      "row_start": 3,
+      "source": "pdfplumber",
+      "text_normalized": "(0.89) -0.05",
+      "text_raw": "(0.89) -0.05"
+    },
+    {
+      "bbox": {
+        "b": 394.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 55.08,
+        "r": 118.608,
+        "t": 368.696
+      },
+      "cell_id": "r4_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 0.79,
+      "latex": "Frenchlegal origin R 2",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "Frenchlegal origin R 2",
+          "text_raw": "Frenchlegal origin R 2"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "French legal origin R2",
+          "text_raw": "French legal origin R2"
+        }
+      ],
+      "role": "stub",
+      "row_end": 5,
+      "row_start": 4,
+      "source": "docling",
+      "text_normalized": "Frenchlegal origin R 2",
+      "text_raw": "Frenchlegal origin R 2"
+    },
+    {
+      "bbox": {
+        "b": 393.896,
+        "coord_origin": "TOPLEFT",
+        "l": 177.18,
+        "r": 191.18,
+        "t": 386.696
+      },
+      "cell_id": "r4_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 0.9,
+      "latex": "0.31",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.31",
+          "text_raw": "0.31"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.31",
+          "text_raw": "0.31"
+        }
+      ],
+      "role": "data",
+      "row_end": 5,
+      "row_start": 4,
+      "source": "pdfplumber",
+      "text_normalized": "0.31",
+      "text_raw": "0.31"
+    },
+    {
+      "bbox": {
+        "b": 393.896,
+        "coord_origin": "TOPLEFT",
+        "l": 209.28,
+        "r": 223.28,
+        "t": 386.696
+      },
+      "cell_id": "r4_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 0.9,
+      "latex": "0.33",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.33",
+          "text_raw": "0.33"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.33",
+          "text_raw": "0.33"
+        }
+      ],
+      "role": "data",
+      "row_end": 5,
+      "row_start": 4,
+      "source": "pdfplumber",
+      "text_normalized": "0.33",
+      "text_raw": "0.33"
+    },
+    {
+      "bbox": {
+        "b": 393.896,
+        "coord_origin": "TOPLEFT",
+        "l": 242.88,
+        "r": 256.88,
+        "t": 386.696
+      },
+      "cell_id": "r4_c3",
+      "col_end": 4,
+      "col_start": 3,
+      "confidence": 0.9,
+      "latex": "0.30",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.30",
+          "text_raw": "0.30"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.30",
+          "text_raw": "0.30"
+        }
+      ],
+      "role": "data",
+      "row_end": 5,
+      "row_start": 4,
+      "source": "pdfplumber",
+      "text_normalized": "0.30",
+      "text_raw": "0.30"
+    },
+    {
+      "bbox": {
+        "b": 393.896,
+        "coord_origin": "TOPLEFT",
+        "l": 278.22,
+        "r": 292.22,
+        "t": 386.696
+      },
+      "cell_id": "r4_c4",
+      "col_end": 5,
+      "col_start": 4,
+      "confidence": 0.9,
+      "latex": "0.30",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.30",
+          "text_raw": "0.30"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.30",
+          "text_raw": "0.30"
+        }
+      ],
+      "role": "data",
+      "row_end": 5,
+      "row_start": 4,
+      "source": "pdfplumber",
+      "text_normalized": "0.30",
+      "text_raw": "0.30"
+    },
+    {
+      "bbox": {
+        "b": 393.896,
+        "coord_origin": "TOPLEFT",
+        "l": 311.82,
+        "r": 325.82,
+        "t": 386.696
+      },
+      "cell_id": "r4_c5",
+      "col_end": 6,
+      "col_start": 5,
+      "confidence": 0.9,
+      "latex": "0.32",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.32",
+          "text_raw": "0.32"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.32",
+          "text_raw": "0.32"
+        }
+      ],
+      "role": "data",
+      "row_end": 5,
+      "row_start": 4,
+      "source": "pdfplumber",
+      "text_normalized": "0.32",
+      "text_raw": "0.32"
+    },
+    {
+      "bbox": {
+        "b": 393.956,
+        "coord_origin": "TOPLEFT",
+        "l": 343.8,
+        "r": 357.8,
+        "t": 386.75600000000003
+      },
+      "cell_id": "r4_c6",
+      "col_end": 7,
+      "col_start": 6,
+      "confidence": 0.9,
+      "latex": "0.35",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.35",
+          "text_raw": "0.35"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.35",
+          "text_raw": "0.35"
+        }
+      ],
+      "role": "data",
+      "row_end": 5,
+      "row_start": 4,
+      "source": "pdfplumber",
+      "text_normalized": "0.35",
+      "text_raw": "0.35"
+    },
+    {
+      "bbox": {
+        "b": 393.956,
+        "coord_origin": "TOPLEFT",
+        "l": 372.36,
+        "r": 386.36,
+        "t": 386.75600000000003
+      },
+      "cell_id": "r4_c7",
+      "col_end": 8,
+      "col_start": 7,
+      "confidence": 0.9,
+      "latex": "0.32",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.32",
+          "text_raw": "0.32"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.32",
+          "text_raw": "0.32"
+        }
+      ],
+      "role": "data",
+      "row_end": 5,
+      "row_start": 4,
+      "source": "pdfplumber",
+      "text_normalized": "0.32",
+      "text_raw": "0.32"
+    },
+    {
+      "bbox": {
+        "b": 393.956,
+        "coord_origin": "TOPLEFT",
+        "l": 404.28,
+        "r": 418.28,
+        "t": 386.75600000000003
+      },
+      "cell_id": "r4_c8",
+      "col_end": 9,
+      "col_start": 8,
+      "confidence": 0.9,
+      "latex": "0.35",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.35",
+          "text_raw": "0.35"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.35",
+          "text_raw": "0.35"
+        }
+      ],
+      "role": "data",
+      "row_end": 5,
+      "row_start": 4,
+      "source": "pdfplumber",
+      "text_normalized": "0.35",
+      "text_raw": "0.35"
+    },
+    {
+      "bbox": {
+        "b": 393.956,
+        "coord_origin": "TOPLEFT",
+        "l": 437.28,
+        "r": 456.60799999999995,
+        "t": 377.876
+      },
+      "cell_id": "r4_c9",
+      "col_end": 10,
+      "col_start": 9,
+      "confidence": 0.86,
+      "latex": "(0.91) 0.45",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.91) 0.45",
+          "text_raw": "(0.91) 0.45"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.91) 0.45",
+          "text_raw": "(0.91) 0.45"
+        }
+      ],
+      "role": "data",
+      "row_end": 5,
+      "row_start": 4,
+      "source": "pdfplumber",
+      "text_normalized": "(0.91) 0.45",
+      "text_raw": "(0.91) 0.45"
+    },
+    {
+      "bbox": {
+        "b": 433.19599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 55.32,
+        "r": 161.024,
+        "t": 416.816
+      },
+      "cell_id": "r5_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 0.86,
+      "latex": "Average protection against expropriationr isk, 1985-1995",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.61,
+          "needs_review": true,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [
+            "merged_token"
+          ],
+          "text_normalized": "Averageprotectionagainst expropriation risk, 1985-1995",
+          "text_raw": "Averageprotectionagainst expropriation risk, 1985-1995"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "Average protection against expropriationr isk, 1985-1995",
+          "text_raw": "Average protection against expropriationr isk, 1985-1995"
+        }
+      ],
+      "role": "stub",
+      "row_end": 6,
+      "row_start": 5,
+      "source": "pdfplumber",
+      "text_normalized": "Average protection against expropriationr isk, 1985-1995",
+      "text_raw": "Average protection against expropriationr isk, 1985-1995"
+    },
+    {
+      "bbox": {
+        "b": 424.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 177.12,
+        "r": 191.12,
+        "t": 416.816
+      },
+      "cell_id": "r5_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 0.9,
+      "latex": "0.53",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.53",
+          "text_raw": "0.53"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.53",
+          "text_raw": "0.53"
+        }
+      ],
+      "role": "data",
+      "row_end": 6,
+      "row_start": 5,
+      "source": "pdfplumber",
+      "text_normalized": "0.53",
+      "text_raw": "0.53"
+    },
+    {
+      "bbox": {
+        "b": 433.19599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 206.76,
+        "r": 226.08799999999997,
+        "t": 416.696
+      },
+      "cell_id": "r5_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 0.86,
+      "latex": "0.47 (0.07)",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.47 (0.07)",
+          "text_raw": "0.47 (0.07)"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.47 (0.07)",
+          "text_raw": "0.47 (0.07)"
+        }
+      ],
+      "role": "data",
+      "row_end": 6,
+      "row_start": 5,
+      "source": "pdfplumber",
+      "text_normalized": "0.47 (0.07)",
+      "text_raw": "0.47 (0.07)"
+    },
+    {
+      "bbox": {
+        "b": 424.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 242.76,
+        "r": 256.76,
+        "t": 416.816
+      },
+      "cell_id": "r5_c3",
+      "col_end": 4,
+      "col_start": 3,
+      "confidence": 0.9,
+      "latex": "0.61",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.61",
+          "text_raw": "0.61"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.61",
+          "text_raw": "0.61"
+        }
+      ],
+      "role": "data",
+      "row_end": 6,
+      "row_start": 5,
+      "source": "pdfplumber",
+      "text_normalized": "0.61",
+      "text_raw": "0.61"
+    },
+    {
+      "bbox": {
+        "b": 433.19599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 275.7,
+        "r": 295.02799999999996,
+        "t": 416.816
+      },
+      "cell_id": "r5_c4",
+      "col_end": 5,
+      "col_start": 4,
+      "confidence": 0.86,
+      "latex": "0.47 (0.06)",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.47 (0.06)",
+          "text_raw": "0.47 (0.06)"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.47 (0.06)",
+          "text_raw": "0.47 (0.06)"
+        }
+      ],
+      "role": "data",
+      "row_end": 6,
+      "row_start": 5,
+      "source": "pdfplumber",
+      "text_normalized": "0.47 (0.06)",
+      "text_raw": "0.47 (0.06)"
+    },
+    {
+      "bbox": {
+        "b": 433.19599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 309.24,
+        "r": 328.568,
+        "t": 416.816
+      },
+      "cell_id": "r5_c5",
+      "col_end": 6,
+      "col_start": 5,
+      "confidence": 0.86,
+      "latex": "0.56 (0.06)",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.56 (0.06)",
+          "text_raw": "0.56 (0.06)"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.56 (0.06)",
+          "text_raw": "0.56 (0.06)"
+        }
+      ],
+      "role": "data",
+      "row_end": 6,
+      "row_start": 5,
+      "source": "pdfplumber",
+      "text_normalized": "0.56 (0.06)",
+      "text_raw": "0.56 (0.06)"
+    },
+    {
+      "bbox": {
+        "b": 433.19599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 341.28,
+        "r": 360.60799999999995,
+        "t": 416.816
+      },
+      "cell_id": "r5_c6",
+      "col_end": 7,
+      "col_start": 6,
+      "confidence": 0.86,
+      "latex": "0.56 (0.06)",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.56 (0.06)",
+          "text_raw": "0.56 (0.06)"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.56 (0.06)",
+          "text_raw": "0.56 (0.06)"
+        }
+      ],
+      "role": "data",
+      "row_end": 6,
+      "row_start": 5,
+      "source": "pdfplumber",
+      "text_normalized": "0.56 (0.06)",
+      "text_raw": "0.56 (0.06)"
+    },
+    {
+      "bbox": {
+        "b": 424.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 372.24,
+        "r": 386.24,
+        "t": 416.816
+      },
+      "cell_id": "r5_c7",
+      "col_end": 8,
+      "col_start": 7,
+      "confidence": 0.9,
+      "latex": "0.53",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.53",
+          "text_raw": "0.53"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.53",
+          "text_raw": "0.53"
+        }
+      ],
+      "role": "data",
+      "row_end": 6,
+      "row_start": 5,
+      "source": "pdfplumber",
+      "text_normalized": "0.53",
+      "text_raw": "0.53"
+    },
+    {
+      "bbox": {
+        "b": 424.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 404.28,
+        "r": 418.28,
+        "t": 416.816
+      },
+      "cell_id": "r5_c8",
+      "col_end": 9,
+      "col_start": 8,
+      "confidence": 0.9,
+      "latex": "0.47",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.83,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.47",
+          "text_raw": "0.47"
+        },
+        {
+          "confidence": 0.9,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.47",
+          "text_raw": "0.47"
+        }
+      ],
+      "role": "data",
+      "row_end": 6,
+      "row_start": 5,
+      "source": "pdfplumber",
+      "text_normalized": "0.47",
+      "text_raw": "0.47"
+    },
+    {
+      "bbox": {
+        "b": 433.19599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 437.28,
+        "r": 456.60799999999995,
+        "t": 416.816
+      },
+      "cell_id": "r5_c9",
+      "col_end": 10,
+      "col_start": 9,
+      "confidence": 0.86,
+      "latex": "0.47 (0.06)",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "0.47 (0.06)",
+          "text_raw": "0.47 (0.06)"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "0.47 (0.06)",
+          "text_raw": "0.47 (0.06)"
+        }
+      ],
+      "role": "data",
+      "row_end": 6,
+      "row_start": 5,
+      "source": "pdfplumber",
+      "text_normalized": "0.47 (0.06)",
+      "text_raw": "0.47 (0.06)"
+    },
+    {
+      "bbox": {
+        "b": 442.13599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 55.32,
+        "r": 136.592,
+        "t": 434.936
+      },
+      "cell_id": "r6_c0",
+      "col_end": 1,
+      "col_start": 0,
+      "confidence": 0.79,
+      "latex": "Numberof observations",
+      "latex_confidence": 0.97,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "Numberof observations",
+          "text_raw": "Numberof observations"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "Number of observations",
+          "text_raw": "Number of observations"
+        }
+      ],
+      "role": "stub",
+      "row_end": 7,
+      "row_start": 6,
+      "source": "docling",
+      "text_normalized": "Numberof observations",
+      "text_raw": "Numberof observations"
+    },
+    {
+      "bbox": {
+        "b": 442.13599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 174.72,
+        "r": 194.04799999999997,
+        "t": 425.996
+      },
+      "cell_id": "r6_c1",
+      "col_end": 2,
+      "col_start": 1,
+      "confidence": 0.86,
+      "latex": "(0.19) 64",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.19) 64",
+          "text_raw": "(0.19) 64"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.19) 64",
+          "text_raw": "(0.19) 64"
+        }
+      ],
+      "role": "data",
+      "row_end": 7,
+      "row_start": 6,
+      "source": "pdfplumber",
+      "text_normalized": "(0.19) 64",
+      "text_raw": "(0.19) 64"
+    },
+    {
+      "bbox": {
+        "b": 442.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 210.36,
+        "r": 218.36,
+        "t": 434.816
+      },
+      "cell_id": "r6_c2",
+      "col_end": 3,
+      "col_start": 2,
+      "confidence": 0.95,
+      "latex": "64",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.88,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "64",
+          "text_raw": "64"
+        },
+        {
+          "confidence": 0.95,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "64",
+          "text_raw": "64"
+        }
+      ],
+      "role": "data",
+      "row_end": 7,
+      "row_start": 6,
+      "source": "pdfplumber",
+      "text_normalized": "64",
+      "text_raw": "64"
+    },
+    {
+      "bbox": {
+        "b": 442.13599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 240.36,
+        "r": 259.688,
+        "t": 425.996
+      },
+      "cell_id": "r6_c3",
+      "col_end": 4,
+      "col_start": 3,
+      "confidence": 0.86,
+      "latex": "(0.09) 25",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.09) 25",
+          "text_raw": "(0.09) 25"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.09) 25",
+          "text_raw": "(0.09) 25"
+        }
+      ],
+      "role": "data",
+      "row_end": 7,
+      "row_start": 6,
+      "source": "pdfplumber",
+      "text_normalized": "(0.09) 25",
+      "text_raw": "(0.09) 25"
+    },
+    {
+      "bbox": {
+        "b": 442.13599999999997,
+        "coord_origin": "TOPLEFT",
+        "l": 279.12,
+        "r": 287.12,
+        "t": 434.936
+      },
+      "cell_id": "r6_c4",
+      "col_end": 5,
+      "col_start": 4,
+      "confidence": 0.95,
+      "latex": "25",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.88,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "25",
+          "text_raw": "25"
+        },
+        {
+          "confidence": 0.95,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "25",
+          "text_raw": "25"
+        }
+      ],
+      "role": "data",
+      "row_end": 7,
+      "row_start": 6,
+      "source": "pdfplumber",
+      "text_normalized": "25",
+      "text_raw": "25"
+    },
+    {
+      "bbox": {
+        "b": 442.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 312.84,
+        "r": 320.84,
+        "t": 434.816
+      },
+      "cell_id": "r6_c5",
+      "col_end": 6,
+      "col_start": 5,
+      "confidence": 0.95,
+      "latex": "64",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.88,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "64",
+          "text_raw": "64"
+        },
+        {
+          "confidence": 0.95,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "64",
+          "text_raw": "64"
+        }
+      ],
+      "role": "data",
+      "row_end": 7,
+      "row_start": 6,
+      "source": "pdfplumber",
+      "text_normalized": "64",
+      "text_raw": "64"
+    },
+    {
+      "bbox": {
+        "b": 441.896,
+        "coord_origin": "TOPLEFT",
+        "l": 344.76,
+        "r": 352.76,
+        "t": 434.696
+      },
+      "cell_id": "r6_c6",
+      "col_end": 7,
+      "col_start": 6,
+      "confidence": 0.95,
+      "latex": "64",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.88,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "64",
+          "text_raw": "64"
+        },
+        {
+          "confidence": 0.95,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "64",
+          "text_raw": "64"
+        }
+      ],
+      "role": "data",
+      "row_end": 7,
+      "row_start": 6,
+      "source": "pdfplumber",
+      "text_normalized": "64",
+      "text_raw": "64"
+    },
+    {
+      "bbox": {
+        "b": 442.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 369.84,
+        "r": 389.16799999999995,
+        "t": 425.996
+      },
+      "cell_id": "r6_c7",
+      "col_end": 8,
+      "col_start": 7,
+      "confidence": 0.86,
+      "latex": "(0.06) 64",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.06) 64",
+          "text_raw": "(0.06) 64"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.06) 64",
+          "text_raw": "(0.06) 64"
+        }
+      ],
+      "role": "data",
+      "row_end": 7,
+      "row_start": 6,
+      "source": "pdfplumber",
+      "text_normalized": "(0.06) 64",
+      "text_raw": "(0.06) 64"
+    },
+    {
+      "bbox": {
+        "b": 442.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 401.76,
+        "r": 421.08799999999997,
+        "t": 425.996
+      },
+      "cell_id": "r6_c8",
+      "col_end": 9,
+      "col_start": 8,
+      "confidence": 0.86,
+      "latex": "(0.06) 64",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.79,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "(0.06) 64",
+          "text_raw": "(0.06) 64"
+        },
+        {
+          "confidence": 0.86,
+          "needs_review": false,
+          "repair_actions": [
+            "tightened_numeric_spacing"
+          ],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "(0.06) 64",
+          "text_raw": "(0.06) 64"
+        }
+      ],
+      "role": "data",
+      "row_end": 7,
+      "row_start": 6,
+      "source": "pdfplumber",
+      "text_normalized": "(0.06) 64",
+      "text_raw": "(0.06) 64"
+    },
+    {
+      "bbox": {
+        "b": 442.01599999999996,
+        "coord_origin": "TOPLEFT",
+        "l": 440.88,
+        "r": 448.88,
+        "t": 434.816
+      },
+      "cell_id": "r6_c9",
+      "col_end": 10,
+      "col_start": 9,
+      "confidence": 0.95,
+      "latex": "64",
+      "latex_confidence": 0.96,
+      "latex_source": "deterministic",
+      "needs_review": false,
+      "provenance": [
+        {
+          "confidence": 0.88,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "docling",
+          "suspicious_markers": [],
+          "text_normalized": "64",
+          "text_raw": "64"
+        },
+        {
+          "confidence": 0.95,
+          "needs_review": false,
+          "repair_actions": [],
+          "source": "pdfplumber",
+          "suspicious_markers": [],
+          "text_normalized": "64",
+          "text_raw": "64"
+        }
+      ],
+      "role": "data",
+      "row_end": 7,
+      "row_start": 6,
+      "source": "pdfplumber",
+      "text_normalized": "64",
+      "text_raw": "64"
+    }
+  ],
+  "cleanup_report": {
+    "reasons": [
+      "contains very wide rows",
+      "contains many columns",
+      "contains merged-text artifacts",
+      "looks like a dense academic regression table"
+    ],
+    "verification_required": true
+  },
+  "crop_path": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.tables/table_006.crop.png",
+  "n_cols": 10,
+  "n_rows": 7,
+  "notes": [],
+  "page": 22,
+  "regression_semantics": {
+    "coefficient_cells": [],
+    "coefficient_rows": [],
+    "control_rows": [],
+    "models": [
+      {
+        "column_index": 1,
+        "header_path": [
+          "-0.53"
+        ],
+        "label": "-0.53"
+      },
+      {
+        "column_index": 2,
+        "header_path": [
+          "-0.43"
+        ],
+        "label": "-0.43"
+      },
+      {
+        "column_index": 3,
+        "header_path": [
+          "-0.59"
+        ],
+        "label": "-0.59"
+      },
+      {
+        "column_index": 4,
+        "header_path": [
+          "-0.51"
+        ],
+        "label": "-0.51"
+      },
+      {
+        "column_index": 5,
+        "header_path": [
+          "-0.54"
+        ],
+        "label": "-0.54"
+      },
+      {
+        "column_index": 6,
+        "header_path": [
+          "-0.44"
+        ],
+        "label": "-0.44"
+      },
+      {
+        "column_index": 7,
+        "header_path": [
+          "-0.58"
+        ],
+        "label": "-0.58"
+      },
+      {
+        "column_index": 8,
+        "header_path": [
+          "-0.44"
+        ],
+        "label": "-0.44"
+      },
+      {
+        "column_index": 9,
+        "header_path": [
+          "-0.48"
+        ],
+        "label": "-0.48"
+      }
+    ],
+    "stderr_rows": [],
+    "summary_rows": []
+  },
+  "renderings": {
+    "html": "<table><tbody><tr><th colspan=\"10\">Panel B: FirstStage for AverageProtectionAgainstExpropriation Risk in 1985-1995</th></tr><tr><th>Log Europeansettlermortality</th><th>-0.53</th><th>-0.43</th><th>-0.59</th><th>-0.51</th><th>-0.54</th><th>-0.44</th><th>-0.58</th><th>-0.44</th><th>-0.48</th></tr><tr><th>Latitude</th><td>(0.14)</td><td>(0.16)</td><td>(0.19)</td><td>(0.14)</td><td>(0.13)</td><td>(0.14)</td><td>(0.13)</td><td>(0.15)</td><td>(0.18)</td></tr><tr><th>Britishcolonial dummy</th><td>0.63 (0.37)</td><td>(1.40) 0.55 (0.37)</td><td></td><td></td><td></td><td>(1.30)</td><td></td><td>(1.50)</td><td>(1.60) -0.25</td></tr><tr><th>Frenchcolonial dummy</th><td>0.05 (0.43)</td><td>-0.12 (0.44)</td><td></td><td></td><td>-0.67 (0.33)</td><td>-0.7 (0.32)</td><td></td><td></td><td>(0.89) -0.05</td></tr><tr><th>Frenchlegal origin R 2</th><td>0.31</td><td>0.33</td><td>0.30</td><td>0.30</td><td>0.32</td><td>0.35</td><td>0.32</td><td>0.35</td><td>(0.91) 0.45</td></tr><tr><th>Averageprotectionagainst expropriation risk, 1985-1995</th><td>0.53</td><td>0.47 (0.07)</td><td>0.61</td><td>0.47 (0.06)</td><td>0.56 (0.06)</td><td>0.56 (0.06)</td><td>0.53</td><td>0.47</td><td>0.47 (0.06)</td></tr><tr><th>Numberof observations</th><td>(0.19) 64</td><td>64</td><td>(0.09) 25</td><td>25</td><td>64</td><td>64</td><td>(0.06) 64</td><td>(0.06) 64</td><td>64</td></tr></tbody></table>",
+    "latex_notes": null,
+    "latex_tabular": "\\begin{tabular}{lccccccccc}\n\\hline\nLog Europeans ettler mortality & -0.53 & -0.43 & -0.59 & -0.51 & -0.54 & -0.44 & -0.58 & -0.44 & -0.48 \\\\\nLatitude & (0.14) & (0.16) & (0.19) & (0.14) & (0.13) & (0.14) & (0.13) & (0.15) & (0.18) \\\\\nBritishcolonial dummy & 0.63 (0.37) & (1.40) 0.55 (0.37) &  &  &  & (1.30) &  & (1.50) & (1.60) -0.25 \\\\\nFrenchcolonial dummy & 0.05 (0.43) & -0.12 (0.44) &  &  & -0.67 (0.33) & -0.7 (0.32) &  &  & (0.89) -0.05 \\\\\nFrenchlegal origin R 2 & 0.31 & 0.33 & 0.30 & 0.30 & 0.32 & 0.35 & 0.32 & 0.35 & (0.91) 0.45 \\\\\nAverage protection against expropriationr isk, 1985-1995 & 0.53 & 0.47 (0.07) & 0.61 & 0.47 (0.06) & 0.56 (0.06) & 0.56 (0.06) & 0.53 & 0.47 & 0.47 (0.06) \\\\\nNumberof observations & (0.19) 64 & 64 & (0.09) 25 & 25 & 64 & 64 & (0.06) 64 & (0.06) 64 & 64 \\\\\n\\hline\n\\end{tabular}\n",
+    "markdown": "| Panel B: FirstStage for AverageProtectionAgainstExpropriation Risk in 1985-1995   | Panel B: FirstStage for AverageProtectionAgainstExpropriation Risk in 1985-1995   | Panel B: FirstStage for AverageProtectionAgainstExpropriation Risk in 1985-1995   | Panel B: FirstStage for AverageProtectionAgainstExpropriation Risk in 1985-1995   | Panel B: FirstStage for AverageProtectionAgainstExpropriation Risk in 1985-1995   | Panel B: FirstStage for AverageProtectionAgainstExpropriation Risk in 1985-1995   | Panel B: FirstStage for AverageProtectionAgainstExpropriation Risk in 1985-1995   | Panel B: FirstStage for AverageProtectionAgainstExpropriation Risk in 1985-1995   | Panel B: FirstStage for AverageProtectionAgainstExpropriation Risk in 1985-1995   | Panel B: FirstStage for AverageProtectionAgainstExpropriation Risk in 1985-1995   |\n|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|\n| Log Europeansettlermortality                                                      | -0.53                                                                             | -0.43                                                                             | -0.59                                                                             | -0.51                                                                             | -0.54                                                                             | -0.44                                                                             | -0.58                                                                             | -0.44                                                                             | -0.48                                                                             |\n| Latitude                                                                          | (0.14)                                                                            | (0.16)                                                                            | (0.19)                                                                            | (0.14)                                                                            | (0.13)                                                                            | (0.14)                                                                            | (0.13)                                                                            | (0.15)                                                                            | (0.18)                                                                            |\n| Britishcolonial dummy                                                             | 0.63 (0.37)                                                                       | (1.40) 0.55 (0.37)                                                                |                                                                                   |                                                                                   |                                                                                   | (1.30)                                                                            |                                                                                   | (1.50)                                                                            | (1.60) -0.25                                                                      |\n| Frenchcolonial dummy                                                              | 0.05 (0.43)                                                                       | -0.12 (0.44)                                                                      |                                                                                   |                                                                                   | -0.67 (0.33)                                                                      | -0.7 (0.32)                                                                       |                                                                                   |                                                                                   | (0.89) -0.05                                                                      |\n| Frenchlegal origin R 2                                                            | 0.31                                                                              | 0.33                                                                              | 0.30                                                                              | 0.30                                                                              | 0.32                                                                              | 0.35                                                                              | 0.32                                                                              | 0.35                                                                              | (0.91) 0.45                                                                       |\n| Averageprotectionagainst expropriation risk, 1985-1995                            | 0.53                                                                              | 0.47 (0.07)                                                                       | 0.61                                                                              | 0.47 (0.06)                                                                       | 0.56 (0.06)                                                                       | 0.56 (0.06)                                                                       | 0.53                                                                              | 0.47                                                                              | 0.47 (0.06)                                                                       |\n| Numberof observations                                                             | (0.19) 64                                                                         | 64                                                                                | (0.09) 25                                                                         | 25                                                                                | 64                                                                                | 64                                                                                | (0.06) 64                                                                         | (0.06) 64                                                                         | 64                                                                                |"
+  },
+  "schema_version": "2026-03-15",
+  "source_pdf": "/Users/aniketpanjwani/.codex/worktrees/81eb/skills/tests/pdf-reading/benchmarks/runs/real-world/colonial-origins-of-comparative-development/2026-03-15T20-43-28Z/source.pdf",
+  "table_bbox": {
+    "b": 445.3816223144531,
+    "coord_origin": "TOPLEFT",
+    "l": 53.86200714111328,
+    "r": 457.6216735839844,
+    "t": 279.84039306640625
+  },
+  "table_id": "table_006",
+  "title": "Panel B: First Stage for Average Protection Against ExpropriationR isk in 1985-1995"
+}

@@ -1,0 +1,18 @@
+,(1).Instrunienting protectionagainstexpropriation,(2).Instrunienting protectionagainstexpropriation,(3).Instrunienting protectionagainstexpropriation,(4).Instrunienting protectionagainstexpropriation,(5).Instrunienting protectionagainstexpropriation,(6).for average Instrumenting risk right-hand-sidevariables,(7).for average Instrumenting risk right-hand-sidevariables,(8).for average Instrumenting risk right-hand-sidevariables,(9).for average Instrumenting risk right-hand-sidevariables,(10).Yellowfever instrument for average protection against expropriation risk,(11).Yellowfever instrument for average protection against expropriation risk
+PanelA: Two-Stage Least Squares,PanelA: Two-Stage Least Squares,PanelA: Two-Stage Least Squares,PanelA: Two-Stage Least Squares,PanelA: Two-Stage Least Squares,PanelA: Two-Stage Least Squares,PanelA: Two-Stage Least Squares,PanelA: Two-Stage Least Squares,PanelA: Two-Stage Least Squares,PanelA: Two-Stage Least Squares,PanelA: Two-Stage Least Squares,PanelA: Two-Stage Least Squares
+"Averageprotectionagainst expropriation risk, 1985-1995 Latitude",0.69 (0.25),0.72 (0.30) -0.57 (1.04),0.63 (0.28),0.68 (0.34) -0.53 (0.97),0.55 (0.24),0.56 (0.31) -0.1 (0.95),0.69 (0.26),0.74 (0.24),0.68 (0.23),0.91 (0.24),0.90 (0.32)
+Malariain 1994,-0.57 (0.47),-0.60 (0.47),,,,,-0.62 (0.68),,,,
+Life expectancy,,,0.03,0.03,,,,0.02,,,
+Infantmortality,,,(0.02),(0.02),-0.01 (0.005),-0.01 (0.006),,(0.02),-0.01 (0.01),,
+PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995,PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995,PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995,PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995,PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995,PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995,PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995,PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995,PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995,PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995,PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995,PanelB: FirstStage for AverageProtectionAgainst Expropriation Risk in 1985-1995
+Log Europeansettlermortality,-0.42 (0.19),-0.38 (0.19),-0.34 (0.17),-0.30 (0.18),-0.36 (0.18),-0.29 (0.19),-0.41 (0.17),-0.40 (0.17),-0.40 (0.17),,
+Latitude,,1.70,,1.10,,1.60,-0.81,-0.84,-0.84,,
+,,(1.40) -0.65,,(1.40),,(1.40),(1.80),(1.80),(1.80),,
+Malariain 1994,-0.79 (0.54),(0.55),,,,,,,,,
+Life expectancy,,,0.05 (0.02),0.04 (0.02),,,,,,,
+Infant mortality,,,,,-0.01 (0.01),-0.01,,,-0.12,,
+,,,,,,,(0.05) 0.57,(0.05) 0.55,(0.05) 0.55,,
+Distancefrom coast,,,,,,,(0.51),(0.52),(0.52),,
+R2,0.3,0.31,0.34,0.35,0.32,0.34,0.37,0.36,0.36,(0.41) 0.10,(0.38) 0.32
+Panel C: OrdinaryLeast Squares,Panel C: OrdinaryLeast Squares,Panel C: OrdinaryLeast Squares,Panel C: OrdinaryLeast Squares,Panel C: OrdinaryLeast Squares,Panel C: OrdinaryLeast Squares,Panel C: OrdinaryLeast Squares,Panel C: OrdinaryLeast Squares,Panel C: OrdinaryLeast Squares,Panel C: OrdinaryLeast Squares,Panel C: OrdinaryLeast Squares,Panel C: OrdinaryLeast Squares
+"Averageprotectionagainst expropriation risk, 1985-1995 Numnber of observations",0.35 (0.06) 62,0.35 (0.06) 62,0.28 (0.05) 60,0.28 (0.05) 60,0.29 (0.05) 60,0.28 (0.05) 60,0.35 (0.06) 60,0.29 (0.05) 59,0.29 (0.05) 59,0.48 (0.06) 64,0.39 (0.06) 64
