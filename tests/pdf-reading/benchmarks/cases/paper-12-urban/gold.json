@@ -1,0 +1,5877 @@
+{
+  "paper_id": "12",
+  "field": "urban",
+  "title": "Housing Supply, Land Constraints, and Urban Spatial Equilibrium",
+  "journal_style": "jpe",
+  "target_pages": 55,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-urban",
+      "level": 1
+    },
+    {
+      "title": "Data and Institutional Background",
+      "label": "sec:data-urban",
+      "level": 1
+    },
+    {
+      "title": "Metropolitan Area Data Sources",
+      "label": "sec:data-msa",
+      "level": 2
+    },
+    {
+      "title": "Housing Market Institutions",
+      "label": "sec:data-housing-inst",
+      "level": 2
+    },
+    {
+      "title": "Geographic Constraint Measures",
+      "label": "sec:data-geo",
+      "level": 2
+    },
+    {
+      "title": "Theoretical Framework",
+      "label": "sec:theory-urban",
+      "level": 1
+    },
+    {
+      "title": "Spatial Equilibrium",
+      "label": "sec:theory-spatial",
+      "level": 2
+    },
+    {
+      "title": "Housing Supply and Land Constraints",
+      "label": "sec:theory-supply",
+      "level": 2
+    },
+    {
+      "title": "Amenity Capitalization",
+      "label": "sec:theory-amenity",
+      "level": 2
+    },
+    {
+      "title": "Identification Strategy",
+      "label": "sec:identification-urban",
+      "level": 1
+    },
+    {
+      "title": "The Saiz Land Instrument",
+      "label": "sec:saiz-iv",
+      "level": 2
+    },
+    {
+      "title": "First Stage and Instrument Validity",
+      "label": "sec:first-stage",
+      "level": 2
+    },
+    {
+      "title": "Housing Markets and Supply Elasticities",
+      "label": "sec:housing-market",
+      "level": 1
+    },
+    {
+      "title": "House Price Determinants",
+      "label": "sec:house-price-det",
+      "level": 2
+    },
+    {
+      "title": "Supply Elasticity Estimates",
+      "label": "sec:supply-elast-est",
+      "level": 2
+    },
+    {
+      "title": "Construction and Land Costs",
+      "label": "sec:costs",
+      "level": 2
+    },
+    {
+      "title": "Amenities and Income Sorting",
+      "label": "sec:amenities-sorting",
+      "level": 1
+    },
+    {
+      "title": "Amenity Values and Quality of Life",
+      "label": "sec:qol",
+      "level": 2
+    },
+    {
+      "title": "Skill Sorting Across Cities",
+      "label": "sec:sorting",
+      "level": 2
+    },
+    {
+      "title": "Spatial Equilibrium and Migration",
+      "label": "sec:equil-migration",
+      "level": 1
+    },
+    {
+      "title": "Testing Utility Equalization",
+      "label": "sec:utility-test",
+      "level": 2
+    },
+    {
+      "title": "Migration Responses to City Shocks",
+      "label": "sec:migration-resp",
+      "level": 2
+    },
+    {
+      "title": "Land Use Regulation",
+      "label": "sec:regulation",
+      "level": 1
+    },
+    {
+      "title": "Effects of Regulation on Supply",
+      "label": "sec:reg-supply",
+      "level": 2
+    },
+    {
+      "title": "Political Economy of Zoning",
+      "label": "sec:reg-political",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-urban",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Spatial Equilibrium Theory",
+      "label": "sec:appendix-a-urban",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Geographic Instrument Validity",
+      "label": "sec:appendix-b-urban",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "city-summary",
+      "caption": "Summary Statistics: Metropolitan Areas 1980--2010",
+      "label": "tab:city-summary",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "11.84",
+          "role": "data",
+          "variable": "Log Median House Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.62",
+          "role": "data",
+          "variable": "Log Median House Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "11.08",
+          "role": "data",
+          "variable": "Log Median House Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "12.61",
+          "role": "data",
+          "variable": "Log Median House Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median House Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median House Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median House Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median House Price",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "6.71",
+          "role": "data",
+          "variable": "Log Median Rent",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Log Median Rent",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "6.21",
+          "role": "data",
+          "variable": "Log Median Rent",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "7.24",
+          "role": "data",
+          "variable": "Log Median Rent",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median Rent",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median Rent",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median Rent",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median Rent",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.421",
+          "role": "data",
+          "variable": "Housing Units per Capita",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.074",
+          "role": "data",
+          "variable": "Housing Units per Capita",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.334",
+          "role": "data",
+          "variable": "Housing Units per Capita",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.518",
+          "role": "data",
+          "variable": "Housing Units per Capita",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Housing Units per Capita",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Housing Units per Capita",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Housing Units per Capita",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Housing Units per Capita",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "6.84",
+          "role": "data",
+          "variable": "Annual Permit Rate (per 1,000 residents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "5.21",
+          "role": "data",
+          "variable": "Annual Permit Rate (per 1,000 residents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1.42",
+          "role": "data",
+          "variable": "Annual Permit Rate (per 1,000 residents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "14.18",
+          "role": "data",
+          "variable": "Annual Permit Rate (per 1,000 residents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Permit Rate (per 1,000 residents)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Permit Rate (per 1,000 residents)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Permit Rate (per 1,000 residents)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Permit Rate (per 1,000 residents)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Price-to-Rent Ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "5.2",
+          "role": "data",
+          "variable": "Price-to-Rent Ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "12.1",
+          "role": "data",
+          "variable": "Price-to-Rent Ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "26.8",
+          "role": "data",
+          "variable": "Price-to-Rent Ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Price-to-Rent Ratio",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Price-to-Rent Ratio",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Price-to-Rent Ratio",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Price-to-Rent Ratio",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "12.91",
+          "role": "data",
+          "variable": "Log Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "1.18",
+          "role": "data",
+          "variable": "Log Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "11.48",
+          "role": "data",
+          "variable": "Log Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "14.52",
+          "role": "data",
+          "variable": "Log Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Population",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Population",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Population",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Population",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "28.4",
+          "role": "data",
+          "variable": "Population Growth 1980-2010 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "31.8",
+          "role": "data",
+          "variable": "Population Growth 1980-2010 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "-4.1",
+          "role": "data",
+          "variable": "Population Growth 1980-2010 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "74.8",
+          "role": "data",
+          "variable": "Population Growth 1980-2010 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Population Growth 1980-2010 (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Population Growth 1980-2010 (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Population Growth 1980-2010 (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Population Growth 1980-2010 (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "10.71",
+          "role": "data",
+          "variable": "Log Median Household Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "0.31",
+          "role": "data",
+          "variable": "Log Median Household Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "10.32",
+          "role": "data",
+          "variable": "Log Median Household Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "11.12",
+          "role": "data",
+          "variable": "Log Median Household Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median Household Income",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median Household Income",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median Household Income",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Median Household Income",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "28.4",
+          "role": "data",
+          "variable": "College Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "9.8",
+          "role": "data",
+          "variable": "College Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "17.1",
+          "role": "data",
+          "variable": "College Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "41.8",
+          "role": "data",
+          "variable": "College Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "College Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "College Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "College Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "College Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "19.8",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "14.2",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "4.1",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "42.8",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 1,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 22,
+          "col": 2,
+          "text": "1.12",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 22,
+          "col": 3,
+          "text": "-1.18",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 22,
+          "col": 4,
+          "text": "1.42",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 23,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 23,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 23,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 23,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 24,
+          "col": 1,
+          "text": "318",
+          "role": "summary",
+          "label": "Metropolitan Areas"
+        },
+        {
+          "row": 24,
+          "col": 2,
+          "text": "318",
+          "role": "summary",
+          "label": "Metropolitan Areas"
+        },
+        {
+          "row": 24,
+          "col": 3,
+          "text": "318",
+          "role": "summary",
+          "label": "Metropolitan Areas"
+        },
+        {
+          "row": 24,
+          "col": 4,
+          "text": "318",
+          "role": "summary",
+          "label": "Metropolitan Areas"
+        },
+        {
+          "row": 25,
+          "col": 1,
+          "text": "4",
+          "role": "summary",
+          "label": "Census Waves"
+        },
+        {
+          "row": 25,
+          "col": 2,
+          "text": "4",
+          "role": "summary",
+          "label": "Census Waves"
+        },
+        {
+          "row": 25,
+          "col": 3,
+          "text": "4",
+          "role": "summary",
+          "label": "Census Waves"
+        },
+        {
+          "row": 25,
+          "col": 4,
+          "text": "4",
+          "role": "summary",
+          "label": "Census Waves"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean log median house price?",
+          "answer": "11.84"
+        },
+        {
+          "question": "What is the mean undevelopable land share?",
+          "answer": "19.8 percent"
+        },
+        {
+          "question": "How many MSAs are in the sample?",
+          "answer": "318"
+        },
+        {
+          "question": "What is the mean Wharton Regulatory Index?",
+          "answer": "0.04"
+        }
+      ]
+    },
+    {
+      "table_id": "housing-supply-iv",
+      "caption": "IV Estimates: Housing Supply Elasticity (Saiz Land Instrument)",
+      "label": "tab:housing-supply-iv",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "$\\Delta$ Log House Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.841***",
+          "role": "data",
+          "variable": "$\\Delta$ Log House Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.712***",
+          "role": "data",
+          "variable": "$\\Delta$ Log House Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.684***",
+          "role": "data",
+          "variable": "$\\Delta$ Log House Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "--",
+          "role": "data",
+          "variable": "$\\Delta$ Log House Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "$\\Delta$ Log House Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.284)",
+          "role": "data",
+          "variable": "$\\Delta$ Log House Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.264)",
+          "role": "data",
+          "variable": "$\\Delta$ Log House Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.271)",
+          "role": "data",
+          "variable": "$\\Delta$ Log House Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "$\\Delta$ Log House Price",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.184***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.142**",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.138**",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.131**",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "--",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.218***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.171***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.164***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.158***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "--",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.032)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.054)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Undevelopable Land Share $\\times$ Pop. Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Undevelopable Land Share $\\times$ Pop. Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Undevelopable Land Share $\\times$ Pop. Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Undevelopable Land Share $\\times$ Pop. Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 5,
+          "text": "0.814***",
+          "role": "data",
+          "variable": "Undevelopable Land Share $\\times$ Pop. Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share $\\times$ Pop. Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share $\\times$ Pop. Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share $\\times$ Pop. Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share $\\times$ Pop. Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 5,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Undevelopable Land Share $\\times$ Pop. Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Slope Index $\\times$ Pop. Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Slope Index $\\times$ Pop. Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Slope Index $\\times$ Pop. Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Slope Index $\\times$ Pop. Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 5,
+          "text": "0.641***",
+          "role": "data",
+          "variable": "Slope Index $\\times$ Pop. Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Slope Index $\\times$ Pop. Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Slope Index $\\times$ Pop. Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Slope Index $\\times$ Pop. Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Slope Index $\\times$ Pop. Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 5,
+          "text": "(0.074)",
+          "role": "data",
+          "variable": "Slope Index $\\times$ Pop. Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 5,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "--",
+          "role": "summary",
+          "label": "Kleibergen-Paap F-stat"
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "84.2",
+          "role": "summary",
+          "label": "Kleibergen-Paap F-stat"
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "81.4",
+          "role": "summary",
+          "label": "Kleibergen-Paap F-stat"
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "78.9",
+          "role": "summary",
+          "label": "Kleibergen-Paap F-stat"
+        },
+        {
+          "row": 17,
+          "col": 5,
+          "text": "--",
+          "role": "summary",
+          "label": "Kleibergen-Paap F-stat"
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "--",
+          "role": "summary",
+          "label": "R-squared (first stage)"
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "--",
+          "role": "summary",
+          "label": "R-squared (first stage)"
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "--",
+          "role": "summary",
+          "label": "R-squared (first stage)"
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "--",
+          "role": "summary",
+          "label": "R-squared (first stage)"
+        },
+        {
+          "row": 18,
+          "col": 5,
+          "text": "0.618",
+          "role": "summary",
+          "label": "R-squared (first stage)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV estimate of the supply elasticity in column 2?",
+          "answer": "1.841"
+        },
+        {
+          "question": "What is the Kleibergen-Paap F-statistic in column 2?",
+          "answer": "84.2"
+        },
+        {
+          "question": "What is the OLS estimate of the supply elasticity?",
+          "answer": "0.412"
+        },
+        {
+          "question": "What is the first-stage coefficient on undevelopable land share interacted with population growth?",
+          "answer": "0.814"
+        }
+      ]
+    },
+    {
+      "table_id": "housing-price-ols",
+      "caption": "OLS Estimates: Determinants of House Price Growth",
+      "label": "tab:housing-price-ols",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.584***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.512***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.498***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.474***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "0.461***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.053)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Employment",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.312***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.284***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.271***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.248***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "0.231***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Population",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Population",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.046)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Population",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Population",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "(0.054)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Population",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.241***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.218***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.204***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.191***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "0.178***",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.043)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.047)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "(0.050)",
+          "role": "data",
+          "variable": "$\\Delta$ Log Income",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "College Share Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "College Share Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.398***",
+          "role": "data",
+          "variable": "College Share Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.371***",
+          "role": "data",
+          "variable": "College Share Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "0.348***",
+          "role": "data",
+          "variable": "College Share Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "College Share Change",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.062)",
+          "role": "data",
+          "variable": "College Share Change",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "College Share Change",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "College Share Change",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 5,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "College Share Change",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.184**",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.162**",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 5,
+          "text": "0.141**",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.074)",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.078)",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 5,
+          "text": "(0.081)",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Supply Elasticity",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Supply Elasticity",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Supply Elasticity",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "-0.218***",
+          "role": "data",
+          "variable": "Supply Elasticity",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 5,
+          "text": "-0.204***",
+          "role": "data",
+          "variable": "Supply Elasticity",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Supply Elasticity",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Supply Elasticity",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Supply Elasticity",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Supply Elasticity",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 5,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Supply Elasticity",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Wharton Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Wharton Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Wharton Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Wharton Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 5,
+          "text": "0.094**",
+          "role": "data",
+          "variable": "Wharton Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Wharton Index",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Wharton Index",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Wharton Index",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Wharton Index",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 5,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Wharton Index",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 18,
+          "col": 5,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "0.421",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "0.498",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "0.531",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "0.568",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 19,
+          "col": 5,
+          "text": "0.582",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the OLS coefficient on log employment growth in column 1?",
+          "answer": "0.584"
+        },
+        {
+          "question": "What is the R-squared in the most saturated specification (column 5)?",
+          "answer": "0.582"
+        },
+        {
+          "question": "What is the coefficient on supply elasticity in column 4?",
+          "answer": "-0.218"
+        },
+        {
+          "question": "What is the coefficient on the Wharton regulatory index in column 5?",
+          "answer": "0.094"
+        }
+      ]
+    },
+    {
+      "table_id": "elasticity-estimates",
+      "caption": "Housing Supply Elasticity Estimates by City",
+      "label": "tab:elasticity-estimates",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.76",
+          "role": "data",
+          "variable": "New York--Northern NJ",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.82",
+          "role": "data",
+          "variable": "New York--Northern NJ",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.71",
+          "role": "data",
+          "variable": "New York--Northern NJ",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.76",
+          "role": "data",
+          "variable": "New York--Northern NJ",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "New York--Northern NJ",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.11)",
+          "role": "data",
+          "variable": "New York--Northern NJ",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "New York--Northern NJ",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "New York--Northern NJ",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.64",
+          "role": "data",
+          "variable": "San Francisco--Oakland",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.71",
+          "role": "data",
+          "variable": "San Francisco--Oakland",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.58",
+          "role": "data",
+          "variable": "San Francisco--Oakland",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.64",
+          "role": "data",
+          "variable": "San Francisco--Oakland",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "San Francisco--Oakland",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.12)",
+          "role": "data",
+          "variable": "San Francisco--Oakland",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "San Francisco--Oakland",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "San Francisco--Oakland",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.84",
+          "role": "data",
+          "variable": "Los Angeles--Long Beach",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.91",
+          "role": "data",
+          "variable": "Los Angeles--Long Beach",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.78",
+          "role": "data",
+          "variable": "Los Angeles--Long Beach",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.84",
+          "role": "data",
+          "variable": "Los Angeles--Long Beach",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "Los Angeles--Long Beach",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.11)",
+          "role": "data",
+          "variable": "Los Angeles--Long Beach",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "Los Angeles--Long Beach",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "Los Angeles--Long Beach",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.91",
+          "role": "data",
+          "variable": "Boston",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.98",
+          "role": "data",
+          "variable": "Boston",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.85",
+          "role": "data",
+          "variable": "Boston",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.91",
+          "role": "data",
+          "variable": "Boston",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "Boston",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.12)",
+          "role": "data",
+          "variable": "Boston",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "Boston",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "Boston",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "5.41",
+          "role": "data",
+          "variable": "Houston",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "5.18",
+          "role": "data",
+          "variable": "Houston",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "5.62",
+          "role": "data",
+          "variable": "Houston",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "5.40",
+          "role": "data",
+          "variable": "Houston",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.48)",
+          "role": "data",
+          "variable": "Houston",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.52)",
+          "role": "data",
+          "variable": "Houston",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.51)",
+          "role": "data",
+          "variable": "Houston",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.36)",
+          "role": "data",
+          "variable": "Houston",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "4.84",
+          "role": "data",
+          "variable": "Phoenix",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "4.61",
+          "role": "data",
+          "variable": "Phoenix",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "5.02",
+          "role": "data",
+          "variable": "Phoenix",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "4.82",
+          "role": "data",
+          "variable": "Phoenix",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.44)",
+          "role": "data",
+          "variable": "Phoenix",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.48)",
+          "role": "data",
+          "variable": "Phoenix",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.47)",
+          "role": "data",
+          "variable": "Phoenix",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.33)",
+          "role": "data",
+          "variable": "Phoenix",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "4.12",
+          "role": "data",
+          "variable": "Atlanta",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "3.98",
+          "role": "data",
+          "variable": "Atlanta",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "4.28",
+          "role": "data",
+          "variable": "Atlanta",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "4.13",
+          "role": "data",
+          "variable": "Atlanta",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "(0.38)",
+          "role": "data",
+          "variable": "Atlanta",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "(0.42)",
+          "role": "data",
+          "variable": "Atlanta",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "(0.41)",
+          "role": "data",
+          "variable": "Atlanta",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "(0.29)",
+          "role": "data",
+          "variable": "Atlanta",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "4.51",
+          "role": "data",
+          "variable": "Dallas--Fort Worth",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "4.34",
+          "role": "data",
+          "variable": "Dallas--Fort Worth",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "4.68",
+          "role": "data",
+          "variable": "Dallas--Fort Worth",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "4.51",
+          "role": "data",
+          "variable": "Dallas--Fort Worth",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "(0.41)",
+          "role": "data",
+          "variable": "Dallas--Fort Worth",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "(0.45)",
+          "role": "data",
+          "variable": "Dallas--Fort Worth",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "(0.44)",
+          "role": "data",
+          "variable": "Dallas--Fort Worth",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "(0.31)",
+          "role": "data",
+          "variable": "Dallas--Fort Worth",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "2.48",
+          "role": "summary",
+          "label": "Mean elasticity (full sample)"
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "2.41",
+          "role": "summary",
+          "label": "Mean elasticity (full sample)"
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "2.58",
+          "role": "summary",
+          "label": "Mean elasticity (full sample)"
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "2.49",
+          "role": "summary",
+          "label": "Mean elasticity (full sample)"
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "1.84",
+          "role": "summary",
+          "label": "Std. dev."
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "1.79",
+          "role": "summary",
+          "label": "Std. dev."
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "1.91",
+          "role": "summary",
+          "label": "Std. dev."
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "1.82",
+          "role": "summary",
+          "label": "Std. dev."
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the Saiz IV elasticity for San Francisco?",
+          "answer": "0.64"
+        },
+        {
+          "question": "What is the Saiz IV elasticity for Houston?",
+          "answer": "5.41"
+        },
+        {
+          "question": "What is the mean supply elasticity across all methods in the combined column?",
+          "answer": "2.49"
+        }
+      ]
+    },
+    {
+      "table_id": "construction-costs",
+      "caption": "Construction Costs, Land Costs, and the Marginal Cost of Housing",
+      "label": "tab:construction-costs",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1.841***",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.712***",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.584***",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.478***",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.192)",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.201)",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.214)",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.512***",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.484***",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.454***",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.421***",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.074)",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.078)",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.641***",
+          "role": "data",
+          "variable": "Log City Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.614***",
+          "role": "data",
+          "variable": "Log City Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.581***",
+          "role": "data",
+          "variable": "Log City Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.548***",
+          "role": "data",
+          "variable": "Log City Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Log City Income",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.074)",
+          "role": "data",
+          "variable": "Log City Income",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.078)",
+          "role": "data",
+          "variable": "Log City Income",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.081)",
+          "role": "data",
+          "variable": "Log City Income",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.481***",
+          "role": "data",
+          "variable": "Log Material Prices",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.452***",
+          "role": "data",
+          "variable": "Log Material Prices",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.424***",
+          "role": "data",
+          "variable": "Log Material Prices",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.398***",
+          "role": "data",
+          "variable": "Log Material Prices",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Log Material Prices",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "Log Material Prices",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "Log Material Prices",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Log Material Prices",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.318***",
+          "role": "data",
+          "variable": "Log Wage (construction)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.298***",
+          "role": "data",
+          "variable": "Log Wage (construction)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.281***",
+          "role": "data",
+          "variable": "Log Wage (construction)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.264***",
+          "role": "data",
+          "variable": "Log Wage (construction)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Log Wage (construction)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Log Wage (construction)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.046)",
+          "role": "data",
+          "variable": "Log Wage (construction)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.049)",
+          "role": "data",
+          "variable": "Log Wage (construction)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.214***",
+          "role": "data",
+          "variable": "Building Height Regulation",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.198***",
+          "role": "data",
+          "variable": "Building Height Regulation",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.184***",
+          "role": "data",
+          "variable": "Building Height Regulation",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "0.171***",
+          "role": "data",
+          "variable": "Building Height Regulation",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Building Height Regulation",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.033)",
+          "role": "data",
+          "variable": "Building Height Regulation",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.035)",
+          "role": "data",
+          "variable": "Building Height Regulation",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.037)",
+          "role": "data",
+          "variable": "Building Height Regulation",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "1,272",
+          "role": "summary",
+          "label": "Observations (Panel A)"
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "1,272",
+          "role": "summary",
+          "label": "Observations (Panel A)"
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "1,272",
+          "role": "summary",
+          "label": "Observations (Panel A)"
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "1,272",
+          "role": "summary",
+          "label": "Observations (Panel A)"
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "1,272",
+          "role": "summary",
+          "label": "Observations (Panel B)"
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "1,272",
+          "role": "summary",
+          "label": "Observations (Panel B)"
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "1,272",
+          "role": "summary",
+          "label": "Observations (Panel B)"
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "1,272",
+          "role": "summary",
+          "label": "Observations (Panel B)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the effect of undevelopable land share on land values in column 1?",
+          "answer": "1.841"
+        },
+        {
+          "question": "What is the elasticity of construction costs with respect to material prices in column 1?",
+          "answer": "0.481"
+        }
+      ]
+    },
+    {
+      "table_id": "amenity-capitalization",
+      "caption": "Amenity Capitalization into House Prices and Wages",
+      "label": "tab:amenity-capitalization",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.184***",
+          "role": "data",
+          "variable": "January Temperature (10-deg F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.172***",
+          "role": "data",
+          "variable": "January Temperature (10-deg F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.041**",
+          "role": "data",
+          "variable": "January Temperature (10-deg F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.038**",
+          "role": "data",
+          "variable": "January Temperature (10-deg F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "January Temperature (10-deg F)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "January Temperature (10-deg F)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "January Temperature (10-deg F)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "January Temperature (10-deg F)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.214***",
+          "role": "data",
+          "variable": "Coast Dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.198***",
+          "role": "data",
+          "variable": "Coast Dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.024",
+          "role": "data",
+          "variable": "Coast Dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.021",
+          "role": "data",
+          "variable": "Coast Dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Coast Dummy",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Coast Dummy",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Coast Dummy",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.026)",
+          "role": "data",
+          "variable": "Coast Dummy",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.148***",
+          "role": "data",
+          "variable": "Log Sunshine Hours",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.138***",
+          "role": "data",
+          "variable": "Log Sunshine Hours",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.018",
+          "role": "data",
+          "variable": "Log Sunshine Hours",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.016",
+          "role": "data",
+          "variable": "Log Sunshine Hours",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Log Sunshine Hours",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Log Sunshine Hours",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.022)",
+          "role": "data",
+          "variable": "Log Sunshine Hours",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Log Sunshine Hours",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.124***",
+          "role": "data",
+          "variable": "Log Crime Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.114***",
+          "role": "data",
+          "variable": "Log Crime Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.028**",
+          "role": "data",
+          "variable": "Log Crime Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.024*",
+          "role": "data",
+          "variable": "Log Crime Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Log Crime Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.026)",
+          "role": "data",
+          "variable": "Log Crime Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Log Crime Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.015)",
+          "role": "data",
+          "variable": "Log Crime Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.094***",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.084***",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "-0.008",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "-0.007",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.021)",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "318",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "318",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "318",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "318",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.541",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "0.584",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "0.314",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "0.348",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the price effect of a 10-degree F increase in January temperature in column 1?",
+          "answer": "0.184"
+        },
+        {
+          "question": "What is the wage effect of the coastal dummy?",
+          "answer": "0.024 (not statistically significant)"
+        },
+        {
+          "question": "What is the price effect of school quality in column 2?",
+          "answer": "0.084"
+        }
+      ]
+    },
+    {
+      "table_id": "sorting-income",
+      "caption": "Income Sorting and Skill Sorting Across Cities",
+      "label": "tab:sorting-income",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.048***",
+          "role": "data",
+          "variable": "Supply Elasticity (Saiz)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.041***",
+          "role": "data",
+          "variable": "Supply Elasticity (Saiz)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.081***",
+          "role": "data",
+          "variable": "Supply Elasticity (Saiz)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.074***",
+          "role": "data",
+          "variable": "Supply Elasticity (Saiz)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Supply Elasticity (Saiz)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Supply Elasticity (Saiz)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Supply Elasticity (Saiz)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Supply Elasticity (Saiz)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.124***",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.114***",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.218***",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.204***",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Amenity Index",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.312***",
+          "role": "data",
+          "variable": "Initial College Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.284***",
+          "role": "data",
+          "variable": "Initial College Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Initial College Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Initial College Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Initial College Share",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Initial College Share",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Initial College Share",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Initial College Share",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.248***",
+          "role": "data",
+          "variable": "Productivity Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.228***",
+          "role": "data",
+          "variable": "Productivity Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "Productivity Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.384***",
+          "role": "data",
+          "variable": "Productivity Growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Productivity Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Productivity Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Productivity Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.062)",
+          "role": "data",
+          "variable": "Productivity Growth",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.481",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "0.524",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "0.514",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.558",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the effect of supply elasticity on income growth in column 1?",
+          "answer": "-0.048"
+        },
+        {
+          "question": "What is the effect of the amenity index on college share change in column 3?",
+          "answer": "0.218"
+        }
+      ]
+    },
+    {
+      "table_id": "spatial-equilibrium",
+      "caption": "Tests of Spatial Equilibrium: Utility Equalization Across Cities",
+      "label": "tab:spatial-equilibrium",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.618***",
+          "role": "data",
+          "variable": "Real Wage Advantage (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.584***",
+          "role": "data",
+          "variable": "Real Wage Advantage (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.541***",
+          "role": "data",
+          "variable": "Real Wage Advantage (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.512***",
+          "role": "data",
+          "variable": "Real Wage Advantage (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Real Wage Advantage (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.074)",
+          "role": "data",
+          "variable": "Real Wage Advantage (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.078)",
+          "role": "data",
+          "variable": "Real Wage Advantage (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.081)",
+          "role": "data",
+          "variable": "Real Wage Advantage (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.481***",
+          "role": "data",
+          "variable": "House Price Disadvantage (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.452***",
+          "role": "data",
+          "variable": "House Price Disadvantage (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.418***",
+          "role": "data",
+          "variable": "House Price Disadvantage (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.394***",
+          "role": "data",
+          "variable": "House Price Disadvantage (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "House Price Disadvantage (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "House Price Disadvantage (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "House Price Disadvantage (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "House Price Disadvantage (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.214***",
+          "role": "data",
+          "variable": "Amenity Differential",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.198***",
+          "role": "data",
+          "variable": "Amenity Differential",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.184***",
+          "role": "data",
+          "variable": "Amenity Differential",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.171***",
+          "role": "data",
+          "variable": "Amenity Differential",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Amenity Differential",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Amenity Differential",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.043)",
+          "role": "data",
+          "variable": "Amenity Differential",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.046)",
+          "role": "data",
+          "variable": "Amenity Differential",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.284***",
+          "role": "data",
+          "variable": "Unemployment Differential",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.261***",
+          "role": "data",
+          "variable": "Unemployment Differential",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.241***",
+          "role": "data",
+          "variable": "Unemployment Differential",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-0.224***",
+          "role": "data",
+          "variable": "Unemployment Differential",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Unemployment Differential",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.047)",
+          "role": "data",
+          "variable": "Unemployment Differential",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.050)",
+          "role": "data",
+          "variable": "Unemployment Differential",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.053)",
+          "role": "data",
+          "variable": "Unemployment Differential",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "2.84",
+          "role": "data",
+          "variable": "Utility Equalization Test ($\\chi^2$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "2.41",
+          "role": "data",
+          "variable": "Utility Equalization Test ($\\chi^2$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "2.18",
+          "role": "data",
+          "variable": "Utility Equalization Test ($\\chi^2$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "1.98",
+          "role": "data",
+          "variable": "Utility Equalization Test ($\\chi^2$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "[0.241]",
+          "role": "data",
+          "variable": "Utility Equalization Test ($\\chi^2$)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "[0.299]",
+          "role": "data",
+          "variable": "Utility Equalization Test ($\\chi^2$)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "[0.336]",
+          "role": "data",
+          "variable": "Utility Equalization Test ($\\chi^2$)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "[0.372]",
+          "role": "data",
+          "variable": "Utility Equalization Test ($\\chi^2$)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "0.468",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "0.511",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "0.548",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "0.572",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the coefficient on real wage advantage in column 1?",
+          "answer": "0.618"
+        },
+        {
+          "question": "What is the coefficient on house price disadvantage in column 1?",
+          "answer": "-0.481"
+        },
+        {
+          "question": "What is the p-value on the utility equalization test in column 4?",
+          "answer": "0.372"
+        }
+      ]
+    },
+    {
+      "table_id": "migration-flows",
+      "caption": "Migration Gravity Model: Bilateral Flows Between MSAs",
+      "label": "tab:migration-flows",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-1.284***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-1.218***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-1.184***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-1.148***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.054)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.841***",
+          "role": "data",
+          "variable": "Log Origin Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.812***",
+          "role": "data",
+          "variable": "Log Origin Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.784***",
+          "role": "data",
+          "variable": "Log Origin Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.754***",
+          "role": "data",
+          "variable": "Log Origin Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Log Origin Population",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.033)",
+          "role": "data",
+          "variable": "Log Origin Population",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.035)",
+          "role": "data",
+          "variable": "Log Origin Population",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Log Origin Population",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.914***",
+          "role": "data",
+          "variable": "Log Destination Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.884***",
+          "role": "data",
+          "variable": "Log Destination Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.852***",
+          "role": "data",
+          "variable": "Log Destination Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.821***",
+          "role": "data",
+          "variable": "Log Destination Population",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.033)",
+          "role": "data",
+          "variable": "Log Destination Population",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.036)",
+          "role": "data",
+          "variable": "Log Destination Population",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Log Destination Population",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Log Destination Population",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.481***",
+          "role": "data",
+          "variable": "Destination Wage Premium",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.448***",
+          "role": "data",
+          "variable": "Destination Wage Premium",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "Destination Wage Premium",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.384***",
+          "role": "data",
+          "variable": "Destination Wage Premium",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "Destination Wage Premium",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Destination Wage Premium",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Destination Wage Premium",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.074)",
+          "role": "data",
+          "variable": "Destination Wage Premium",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "-0.314***",
+          "role": "data",
+          "variable": "Destination Housing Cost",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "-0.284***",
+          "role": "data",
+          "variable": "Destination Housing Cost",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "-0.261***",
+          "role": "data",
+          "variable": "Destination Housing Cost",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "-0.241***",
+          "role": "data",
+          "variable": "Destination Housing Cost",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Destination Housing Cost",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "Destination Housing Cost",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.054)",
+          "role": "data",
+          "variable": "Destination Housing Cost",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Destination Housing Cost",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "0.684***",
+          "role": "data",
+          "variable": "Common State Dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "0.648***",
+          "role": "data",
+          "variable": "Common State Dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "0.614***",
+          "role": "data",
+          "variable": "Common State Dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "0.584***",
+          "role": "data",
+          "variable": "Common State Dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "(0.081)",
+          "role": "data",
+          "variable": "Common State Dummy",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "(0.084)",
+          "role": "data",
+          "variable": "Common State Dummy",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "(0.088)",
+          "role": "data",
+          "variable": "Common State Dummy",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "(0.091)",
+          "role": "data",
+          "variable": "Common State Dummy",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "30,258",
+          "role": "summary",
+          "label": "Observations (city pairs)"
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "30,258",
+          "role": "summary",
+          "label": "Observations (city pairs)"
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "30,258",
+          "role": "summary",
+          "label": "Observations (city pairs)"
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "30,258",
+          "role": "summary",
+          "label": "Observations (city pairs)"
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "0.641",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "0.712",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "0.748",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "0.784",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the distance elasticity in column 1?",
+          "answer": "-1.284"
+        },
+        {
+          "question": "What is the wage premium coefficient in column 4?",
+          "answer": "0.384"
+        },
+        {
+          "question": "What is the common-state dummy coefficient in column 1?",
+          "answer": "0.684"
+        }
+      ]
+    },
+    {
+      "table_id": "land-regulation",
+      "caption": "Land Use Regulation and Housing Supply",
+      "label": "tab:land-regulation",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.284***",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.261***",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.241***",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.218***",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Wharton Regulatory Index",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Minimum Lot Size (acres)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.148***",
+          "role": "data",
+          "variable": "Minimum Lot Size (acres)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.138***",
+          "role": "data",
+          "variable": "Minimum Lot Size (acres)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.124***",
+          "role": "data",
+          "variable": "Minimum Lot Size (acres)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Minimum Lot Size (acres)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Minimum Lot Size (acres)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.030)",
+          "role": "data",
+          "variable": "Minimum Lot Size (acres)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.033)",
+          "role": "data",
+          "variable": "Minimum Lot Size (acres)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Zoning Strictness Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Zoning Strictness Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.184***",
+          "role": "data",
+          "variable": "Zoning Strictness Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.168***",
+          "role": "data",
+          "variable": "Zoning Strictness Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Zoning Strictness Index",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Zoning Strictness Index",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.034)",
+          "role": "data",
+          "variable": "Zoning Strictness Index",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.037)",
+          "role": "data",
+          "variable": "Zoning Strictness Index",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.218***",
+          "role": "data",
+          "variable": "Log House Price (lagged)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.198***",
+          "role": "data",
+          "variable": "Log House Price (lagged)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.184***",
+          "role": "data",
+          "variable": "Log House Price (lagged)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.168***",
+          "role": "data",
+          "variable": "Log House Price (lagged)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Log House Price (lagged)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.033)",
+          "role": "data",
+          "variable": "Log House Price (lagged)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.035)",
+          "role": "data",
+          "variable": "Log House Price (lagged)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Log House Price (lagged)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "-0.614***",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "-0.581***",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "-0.554***",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "-0.524***",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.074)",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.078)",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.081)",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.085)",
+          "role": "data",
+          "variable": "Undevelopable Land Share",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "954",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "0.514",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "0.548",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "0.574",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "0.598",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the effect of the Wharton index on permits in column 1?",
+          "answer": "-0.284"
+        },
+        {
+          "question": "What is the effect of undevelopable land share on permits in column 4?",
+          "answer": "-0.524"
+        },
+        {
+          "question": "What is the R-squared in column 4?",
+          "answer": "0.598"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-proofs-urban",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-geo",
+      "caption": "Appendix: Geographic Land Availability and Instrument Validity",
+      "label": "tab:appendix-geo",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "19.8",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "14.2",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "71.4",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Undevelopable Land Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "2.84",
+          "role": "data",
+          "variable": "Terrain Slope Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "2.41",
+          "role": "data",
+          "variable": "Terrain Slope Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.12",
+          "role": "data",
+          "variable": "Terrain Slope Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "11.84",
+          "role": "data",
+          "variable": "Terrain Slope Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Terrain Slope Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Terrain Slope Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Terrain Slope Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Terrain Slope Index",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "4.21",
+          "role": "data",
+          "variable": "Wetlands Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "6.84",
+          "role": "data",
+          "variable": "Wetlands Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Wetlands Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "38.4",
+          "role": "data",
+          "variable": "Wetlands Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Wetlands Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Wetlands Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Wetlands Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Wetlands Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "8.14",
+          "role": "data",
+          "variable": "Floodplain Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "9.21",
+          "role": "data",
+          "variable": "Floodplain Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Floodplain Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "41.8",
+          "role": "data",
+          "variable": "Floodplain Share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Floodplain Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Floodplain Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Floodplain Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Floodplain Share (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.081",
+          "role": "data",
+          "variable": "Correlation with 1900 Population Density",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation with 1900 Population Density",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation with 1900 Population Density",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation with 1900 Population Density",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "[0.142]",
+          "role": "data",
+          "variable": "Correlation with 1900 Population Density",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation with 1900 Population Density",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation with 1900 Population Density",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation with 1900 Population Density",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.064",
+          "role": "data",
+          "variable": "Correlation with 1900 Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation with 1900 Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation with 1900 Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation with 1900 Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "[0.248]",
+          "role": "data",
+          "variable": "Correlation with 1900 Income",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation with 1900 Income",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation with 1900 Income",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation with 1900 Income",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.048",
+          "role": "data",
+          "variable": "Correlation with 1900 Manufacturing Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation with 1900 Manufacturing Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation with 1900 Manufacturing Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation with 1900 Manufacturing Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "[0.384]",
+          "role": "data",
+          "variable": "Correlation with 1900 Manufacturing Share",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation with 1900 Manufacturing Share",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation with 1900 Manufacturing Share",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation with 1900 Manufacturing Share",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "318",
+          "role": "summary",
+          "label": "MSAs"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "318",
+          "role": "summary",
+          "label": "MSAs"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "318",
+          "role": "summary",
+          "label": "MSAs"
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "318",
+          "role": "summary",
+          "label": "MSAs"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean undevelopable land share?",
+          "answer": "19.8 percent"
+        },
+        {
+          "question": "What is the correlation between undevelopable land share and 1900 population density?",
+          "answer": "0.081 (p-value 0.142, not statistically significant)"
+        },
+        {
+          "question": "What is the mean terrain slope index?",
+          "answer": "2.84"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "spatial-equilibrium",
+      "label": "eq:spatial-equil",
+      "latex": "V(w_j, r_j, A_j) = \\bar{V} \\quad \\forall j \\in \\mathcal{J}",
+      "description": "Spatial equilibrium: utility $V$ is equalized across all cities $j$ via adjustment of wages $w_j$, rents $r_j$, and amenities $A_j$.",
+      "qa": [
+        {
+          "question": "What condition characterizes spatial equilibrium?",
+          "answer": "Utility V is equalized across all cities via wages, rents, and amenities"
+        }
+      ]
+    },
+    {
+      "eq_id": "housing-supply",
+      "label": "eq:housing-supply",
+      "latex": "H_j = S(r_j;\\, \\eta_j), \\quad \\frac{\\partial \\log H_j}{\\partial \\log r_j} = \\varepsilon_j^S",
+      "description": "Housing supply in city $j$ as a function of rents; $\\varepsilon_j^S$ is the supply elasticity, which varies with physical geography.",
+      "qa": []
+    },
+    {
+      "eq_id": "rosen-roback",
+      "label": "eq:rosen-roback",
+      "latex": "\\frac{\\partial \\log r_j}{\\partial A_j} = \\frac{U_A}{U_r \\cdot H}, \\quad \\frac{\\partial \\log w_j}{\\partial A_j} = -\\frac{U_A}{U_w}, \\quad \\hat{A}_j = \\underset{A}{\\operatorname{arg\\,max}}\\; \\tilde{V}(w_j, r_j, A)",
+      "description": "Rosen-Roback amenity gradients: amenities are capitalized into higher rents and lower wages in equilibrium.",
+      "qa": []
+    },
+    {
+      "eq_id": "bid-rent",
+      "label": "eq:bid-rent",
+      "latex": "r(d) = r_0 - \\tau d, \\quad r_0 = \\hat{w} - c(\\tilde{H}^*), \\quad r'(d) = -\\tau < 0, \\quad \\hat{r}(d) \\overset{p}{\\to} r(d)",
+      "description": "Monocentric bid-rent gradient: rents decline with distance $d$ from the CBD at rate $\\tau$ equal to commuting cost.",
+      "qa": []
+    },
+    {
+      "eq_id": "supply-elasticity",
+      "label": "eq:supply-elasticity",
+      "latex": "\\varepsilon_j^S = \\varepsilon^S_0 - \\kappa_1 \\\\cdot \\\\text{Undev}_j - \\\\kappa_2 \\\\cdot \\\\text{Reg}_j",
+      "description": "Supply elasticity as a decreasing function of undevelopable land share $\\text{Undev}_j$ and regulatory stringency $\\text{Reg}_j$.",
+      "qa": []
+    },
+    {
+      "eq_id": "hedonic-price",
+      "label": "eq:hedonic-price",
+      "latex": "\\log P_{ij} = \\hat{\\alpha}_j + \\tilde{\\beta} X_{ij} + \\varepsilon_{ij}, \\quad \\hat{\\alpha}_j \\xrightarrow{p} \\alpha_j \\text{ as } N_j \\to \\infty",
+      "description": "Hedonic house price equation: log price of house $i$ in city $j$ as a function of structural characteristics $X_{ij}$ and city fixed effect $\\alpha_j$.",
+      "qa": []
+    },
+    {
+      "eq_id": "amenity-valuation",
+      "label": "eq:amenity-valuation",
+      "latex": "\\\\widetilde{A}_j = \\\\frac{\\\\partial \\\\log r_j / \\\\partial A_j}{\\\\partial \\\\log r_j / \\\\partial A_j - \\\\partial \\\\log w_j / \\\\partial A_j} \\\\cdot \\\\Delta \\\\log r_j + \\\\frac{\\\\partial \\\\log w_j / \\\\partial A_j}{\\\\partial \\\\log w_j / \\\\partial A_j - \\\\partial \\\\log r_j / \\\\partial A_j} \\\\cdot \\\\Delta \\\\log w_j",
+      "description": "Quality-of-life index: value of amenity $A_j$ recovered from observed rent and wage differentials using Rosen-Roback theory.",
+      "qa": []
+    },
+    {
+      "eq_id": "migration-gravity",
+      "label": "eq:migration-gravity",
+      "latex": "M_{ij} = \\\\exp\\\\!\\\\left(\\\\alpha_i + \\\\gamma_j + \\\\delta_1 \\\\log d_{ij} + \\\\delta_2 (\\\\log w_j - \\\\log r_j) + \\\\varepsilon_{ij}\\\\right)",
+      "description": "Gravity model of migration: bilateral flow $M_{ij}$ depends on distance, origin FE $\\alpha_i$, destination FE $\\gamma_j$, and destination real wage $\\log w_j - \\log r_j$.",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main instrument for housing supply elasticity?",
+      "answer": "Undevelopable land share and terrain slope index from Saiz (2010), interacted with population growth"
+    },
+    {
+      "question": "What is the IV estimate of the housing supply elasticity in the baseline specification?",
+      "answer": "1.841"
+    },
+    {
+      "question": "What is the Kleibergen-Paap F-statistic for the baseline IV?",
+      "answer": "84.2"
+    },
+    {
+      "question": "By how much does a one standard deviation increase in the Wharton Regulatory Index reduce annual permit rates?",
+      "answer": "28 percent (coefficient -0.284)"
+    },
+    {
+      "question": "What amenity has the largest capitalization into house prices?",
+      "answer": "Coastal location (dummy coefficient 0.214 in column 1)"
+    },
+    {
+      "question": "What is the mean log median house price?",
+      "answer": "11.84"
+    },
+    {
+      "question": "What is the mean undevelopable land share?",
+      "answer": "19.8 percent"
+    },
+    {
+      "question": "How many MSAs are in the sample?",
+      "answer": "318"
+    },
+    {
+      "question": "What is the mean Wharton Regulatory Index?",
+      "answer": "0.04"
+    },
+    {
+      "question": "What is the IV estimate of the supply elasticity in column 2?",
+      "answer": "1.841"
+    },
+    {
+      "question": "What is the Kleibergen-Paap F-statistic in column 2?",
+      "answer": "84.2"
+    },
+    {
+      "question": "What is the OLS estimate of the supply elasticity?",
+      "answer": "0.412"
+    },
+    {
+      "question": "What is the first-stage coefficient on undevelopable land share interacted with population growth?",
+      "answer": "0.814"
+    },
+    {
+      "question": "What is the OLS coefficient on log employment growth in column 1?",
+      "answer": "0.584"
+    },
+    {
+      "question": "What is the R-squared in the most saturated specification (column 5)?",
+      "answer": "0.582"
+    },
+    {
+      "question": "What is the coefficient on supply elasticity in column 4?",
+      "answer": "-0.218"
+    },
+    {
+      "question": "What is the coefficient on the Wharton regulatory index in column 5?",
+      "answer": "0.094"
+    },
+    {
+      "question": "What is the Saiz IV elasticity for San Francisco?",
+      "answer": "0.64"
+    },
+    {
+      "question": "What is the Saiz IV elasticity for Houston?",
+      "answer": "5.41"
+    },
+    {
+      "question": "What is the mean supply elasticity across all methods in the combined column?",
+      "answer": "2.49"
+    },
+    {
+      "question": "What is the effect of undevelopable land share on land values in column 1?",
+      "answer": "1.841"
+    },
+    {
+      "question": "What is the elasticity of construction costs with respect to material prices in column 1?",
+      "answer": "0.481"
+    },
+    {
+      "question": "What is the price effect of a 10-degree F increase in January temperature in column 1?",
+      "answer": "0.184"
+    },
+    {
+      "question": "What is the wage effect of the coastal dummy?",
+      "answer": "0.024 (not statistically significant)"
+    },
+    {
+      "question": "What is the price effect of school quality in column 2?",
+      "answer": "0.084"
+    },
+    {
+      "question": "What is the effect of supply elasticity on income growth in column 1?",
+      "answer": "-0.048"
+    },
+    {
+      "question": "What is the effect of the amenity index on college share change in column 3?",
+      "answer": "0.218"
+    },
+    {
+      "question": "What is the coefficient on real wage advantage in column 1?",
+      "answer": "0.618"
+    },
+    {
+      "question": "What is the coefficient on house price disadvantage in column 1?",
+      "answer": "-0.481"
+    },
+    {
+      "question": "What is the p-value on the utility equalization test in column 4?",
+      "answer": "0.372"
+    },
+    {
+      "question": "What is the distance elasticity in column 1?",
+      "answer": "-1.284"
+    },
+    {
+      "question": "What is the wage premium coefficient in column 4?",
+      "answer": "0.384"
+    },
+    {
+      "question": "What is the common-state dummy coefficient in column 1?",
+      "answer": "0.684"
+    },
+    {
+      "question": "What is the effect of the Wharton index on permits in column 1?",
+      "answer": "-0.284"
+    },
+    {
+      "question": "What is the effect of undevelopable land share on permits in column 4?",
+      "answer": "-0.524"
+    },
+    {
+      "question": "What is the R-squared in column 4?",
+      "answer": "0.598"
+    },
+    {
+      "question": "What is the mean undevelopable land share?",
+      "answer": "19.8 percent"
+    },
+    {
+      "question": "What is the correlation between undevelopable land share and 1900 population density?",
+      "answer": "0.081 (p-value 0.142, not statistically significant)"
+    },
+    {
+      "question": "What is the mean terrain slope index?",
+      "answer": "2.84"
+    },
+    {
+      "question": "What condition characterizes spatial equilibrium?",
+      "answer": "Utility V is equalized across all cities via wages, rents, and amenities"
+    }
+  ]
+}

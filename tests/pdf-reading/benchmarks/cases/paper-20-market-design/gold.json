@@ -1,0 +1,3605 @@
+{
+  "paper_id": "20",
+  "field": "market-design",
+  "title": "School Choice, Deferred Acceptance, and Student Outcomes: Evidence from a Centralized Admissions System",
+  "journal_style": "restud",
+  "target_pages": 60,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-20",
+      "level": 1
+    },
+    {
+      "title": "Institutional Background",
+      "label": "sec:background-20",
+      "level": 1
+    },
+    {
+      "title": "The Centralized School Choice System",
+      "label": "sec:system-20",
+      "level": 2
+    },
+    {
+      "title": "History of Mechanism Design",
+      "label": "sec:history-mech-20",
+      "level": 2
+    },
+    {
+      "title": "Data Sources and Sample Construction",
+      "label": "sec:data-mech-20",
+      "level": 2
+    },
+    {
+      "title": "Matching Theory",
+      "label": "sec:theory-20",
+      "level": 1
+    },
+    {
+      "title": "The Deferred Acceptance Algorithm",
+      "label": "sec:da-theory-20",
+      "level": 2
+    },
+    {
+      "title": "Stability and Strategy-Proofness",
+      "label": "sec:stability-sp-20",
+      "level": 2
+    },
+    {
+      "title": "Welfare Criteria and Mechanism Comparison",
+      "label": "sec:welfare-theory-20",
+      "level": 2
+    },
+    {
+      "title": "Data",
+      "label": "sec:data-20",
+      "level": 1
+    },
+    {
+      "title": "Student and School Characteristics",
+      "label": "sec:chars-20",
+      "level": 2
+    },
+    {
+      "title": "Preference Distributions",
+      "label": "sec:pref-20",
+      "level": 2
+    },
+    {
+      "title": "Matching Outcomes",
+      "label": "sec:outcomes-20",
+      "level": 2
+    },
+    {
+      "title": "Empirical Strategy",
+      "label": "sec:empirical-20",
+      "level": 1
+    },
+    {
+      "title": "Regression Discontinuity at Admission Cutoffs",
+      "label": "sec:rdd-20",
+      "level": 2
+    },
+    {
+      "title": "Identification and Validity Checks",
+      "label": "sec:validity-20",
+      "level": 2
+    },
+    {
+      "title": "Results",
+      "label": "sec:results-20",
+      "level": 1
+    },
+    {
+      "title": "Test Score Outcomes",
+      "label": "sec:test-scores-20",
+      "level": 2
+    },
+    {
+      "title": "High School Graduation and College Enrollment",
+      "label": "sec:grad-college-20",
+      "level": 2
+    },
+    {
+      "title": "Heterogeneous Effects by Student Subgroup",
+      "label": "sec:subgroup-20",
+      "level": 2
+    },
+    {
+      "title": "Welfare Analysis",
+      "label": "sec:welfare-20",
+      "level": 1
+    },
+    {
+      "title": "Counterfactual Mechanism Comparison",
+      "label": "sec:counterfactual-20",
+      "level": 2
+    },
+    {
+      "title": "Distributional Welfare Effects",
+      "label": "sec:distrib-20",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-20",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Matching Theory Proofs",
+      "label": "sec:appendix-a-20",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: DA Algorithm Details",
+      "label": "sec:appendix-b-20",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Additional Results",
+      "label": "sec:appendix-c-20",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "student-summary-stats",
+      "caption": "Student Summary Statistics",
+      "label": "tab:student-summary-stats",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "49.8",
+          "role": "data",
+          "variable": "Female (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "50.2",
+          "role": "data",
+          "variable": "Female (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "49.4",
+          "role": "data",
+          "variable": "Female (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "0.8",
+          "role": "data",
+          "variable": "Female (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "62.4",
+          "role": "data",
+          "variable": "Free/reduced lunch (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "64.1",
+          "role": "data",
+          "variable": "Free/reduced lunch (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "60.8",
+          "role": "data",
+          "variable": "Free/reduced lunch (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "3.3",
+          "role": "data",
+          "variable": "Free/reduced lunch (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "14.2",
+          "role": "data",
+          "variable": "Special education (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "13.8",
+          "role": "data",
+          "variable": "Special education (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "14.6",
+          "role": "data",
+          "variable": "Special education (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "-0.8",
+          "role": "data",
+          "variable": "Special education (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "18.7",
+          "role": "data",
+          "variable": "English language learner (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "19.4",
+          "role": "data",
+          "variable": "English language learner (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "18.1",
+          "role": "data",
+          "variable": "English language learner (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "1.3",
+          "role": "data",
+          "variable": "English language learner (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.00",
+          "role": "data",
+          "variable": "4th grade math score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.04",
+          "role": "data",
+          "variable": "4th grade math score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "-0.04",
+          "role": "data",
+          "variable": "4th grade math score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.08",
+          "role": "data",
+          "variable": "4th grade math score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.00",
+          "role": "data",
+          "variable": "4th grade reading score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.02",
+          "role": "data",
+          "variable": "4th grade reading score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.02",
+          "role": "data",
+          "variable": "4th grade reading score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.04",
+          "role": "data",
+          "variable": "4th grade reading score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "131.4",
+          "role": "data",
+          "variable": "Age at application (months)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "131.6",
+          "role": "data",
+          "variable": "Age at application (months)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "131.2",
+          "role": "data",
+          "variable": "Age at application (months)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.4",
+          "role": "data",
+          "variable": "Age at application (months)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What fraction of students receive free or reduced lunch?",
+          "answer": "62.4%"
+        },
+        {
+          "question": "Are DA-assigned and non-DA-assigned students different in 4th grade math scores?",
+          "answer": "Slightly: 0.04 vs -0.04 standard deviations, difference of 0.08, but not statistically significant"
+        },
+        {
+          "question": "What fraction of students are English language learners?",
+          "answer": "18.7%"
+        }
+      ]
+    },
+    {
+      "table_id": "school-characteristics",
+      "caption": "School Characteristics",
+      "label": "tab:school-characteristics",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "482",
+          "role": "data",
+          "variable": "Total enrollment",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "641",
+          "role": "data",
+          "variable": "Total enrollment",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "384",
+          "role": "data",
+          "variable": "Total enrollment",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "257***",
+          "role": "data",
+          "variable": "Total enrollment",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "59.4",
+          "role": "data",
+          "variable": "Free/reduced lunch (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "52.1",
+          "role": "data",
+          "variable": "Free/reduced lunch (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "63.8",
+          "role": "data",
+          "variable": "Free/reduced lunch (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-11.7***",
+          "role": "data",
+          "variable": "Free/reduced lunch (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "0.00",
+          "role": "data",
+          "variable": "4th-8th grade test score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.41",
+          "role": "data",
+          "variable": "4th-8th grade test score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "-0.24",
+          "role": "data",
+          "variable": "4th-8th grade test score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.65***",
+          "role": "data",
+          "variable": "4th-8th grade test score (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "16.4",
+          "role": "data",
+          "variable": "Pupil-teacher ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "15.8",
+          "role": "data",
+          "variable": "Pupil-teacher ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "16.8",
+          "role": "data",
+          "variable": "Pupil-teacher ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-1.0**",
+          "role": "data",
+          "variable": "Pupil-teacher ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "61.4",
+          "role": "data",
+          "variable": "Share of teachers with > 5 years experience (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "68.4",
+          "role": "data",
+          "variable": "Share of teachers with > 5 years experience (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "57.1",
+          "role": "data",
+          "variable": "Share of teachers with > 5 years experience (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "11.3***",
+          "role": "data",
+          "variable": "Share of teachers with > 5 years experience (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "2.84",
+          "role": "data",
+          "variable": "Distance from median applicant (km)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "3.12",
+          "role": "data",
+          "variable": "Distance from median applicant (km)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "2.68",
+          "role": "data",
+          "variable": "Distance from median applicant (km)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.44",
+          "role": "data",
+          "variable": "Distance from median applicant (km)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Are oversubscribed schools higher or lower in average test scores?",
+          "answer": "Higher: 0.41 vs -0.24 standard deviations"
+        },
+        {
+          "question": "Do oversubscribed schools have fewer free/reduced lunch students?",
+          "answer": "Yes: 52.1% vs 63.8%"
+        },
+        {
+          "question": "What is the average school enrollment?",
+          "answer": "482 students"
+        }
+      ]
+    },
+    {
+      "table_id": "welfare-comparison-mechanisms",
+      "caption": "Welfare Comparison of School Assignment Mechanisms",
+      "label": "tab:welfare-comparison-mechanisms",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "Yes",
+          "latex": "Yes",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "Yes",
+          "latex": "Yes",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "0.742",
+          "latex": "0.742",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "0.484",
+          "latex": "0.484",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "Yes",
+          "latex": "Yes",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "No",
+          "latex": "No",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.731",
+          "latex": "0.731",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.412",
+          "latex": "0.412",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "No",
+          "latex": "No",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "No",
+          "latex": "No",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.718",
+          "latex": "0.718",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.314",
+          "latex": "0.314",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "No",
+          "latex": "No",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "Yes",
+          "latex": "Yes",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.761",
+          "latex": "0.761",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.498",
+          "latex": "0.498",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "No",
+          "latex": "No",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "Yes",
+          "latex": "Yes",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.724",
+          "latex": "0.724",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.441",
+          "latex": "0.441",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "No",
+          "latex": "No",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "No",
+          "latex": "No",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.706",
+          "latex": "0.706",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.287",
+          "latex": "0.287",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Which mechanism is both stable and strategy-proof?",
+          "answer": "Student-proposing DA"
+        },
+        {
+          "question": "Which mechanism achieves the highest average welfare?",
+          "answer": "Top Trading Cycles (TTC) with 0.761"
+        },
+        {
+          "question": "Is the Boston mechanism stable?",
+          "answer": "No"
+        }
+      ]
+    },
+    {
+      "table_id": "preference-distributions",
+      "caption": "Distribution of Student Preferences",
+      "label": "tab:preference-distributions",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "12.4",
+          "role": "data",
+          "variable": "Fraction of applicants (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "18.7",
+          "role": "data",
+          "variable": "Fraction of applicants (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "31.4",
+          "role": "data",
+          "variable": "Fraction of applicants (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "28.8",
+          "role": "data",
+          "variable": "Fraction of applicants (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "8.7",
+          "role": "data",
+          "variable": "Fraction of applicants (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.12",
+          "role": "data",
+          "variable": "Mean test score of 1st choice (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.18",
+          "role": "data",
+          "variable": "Mean test score of 1st choice (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.24",
+          "role": "data",
+          "variable": "Mean test score of 1st choice (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.31",
+          "role": "data",
+          "variable": "Mean test score of 1st choice (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "0.28",
+          "role": "data",
+          "variable": "Mean test score of 1st choice (std. dev.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "84.1",
+          "role": "data",
+          "variable": "Fraction assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "72.4",
+          "role": "data",
+          "variable": "Fraction assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "61.8",
+          "role": "data",
+          "variable": "Fraction assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "54.2",
+          "role": "data",
+          "variable": "Fraction assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "49.8",
+          "role": "data",
+          "variable": "Fraction assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "84.1",
+          "role": "data",
+          "variable": "Fraction assigned to any listed school (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "88.3",
+          "role": "data",
+          "variable": "Fraction assigned to any listed school (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "91.4",
+          "role": "data",
+          "variable": "Fraction assigned to any listed school (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "93.8",
+          "role": "data",
+          "variable": "Fraction assigned to any listed school (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "95.2",
+          "role": "data",
+          "variable": "Fraction assigned to any listed school (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "1.84",
+          "role": "data",
+          "variable": "Distance from 1st choice school (km)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "2.14",
+          "role": "data",
+          "variable": "Distance from 1st choice school (km)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "2.74",
+          "role": "data",
+          "variable": "Distance from 1st choice school (km)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "3.12",
+          "role": "data",
+          "variable": "Distance from 1st choice school (km)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "3.84",
+          "role": "data",
+          "variable": "Distance from 1st choice school (km)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What fraction of students list only one school?",
+          "answer": "12.4%"
+        },
+        {
+          "question": "Does listing more schools increase the chance of assignment to some listed school?",
+          "answer": "Yes: from 84.1% (1 school) to 95.2% (11+ schools)"
+        },
+        {
+          "question": "What is the maximum list length allowed?",
+          "answer": "12 schools"
+        }
+      ]
+    },
+    {
+      "table_id": "da-assignment-results",
+      "caption": "DA Algorithm Assignment Outcomes",
+      "label": "tab:da-assignment-results",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "61.4",
+          "role": "data",
+          "variable": "Assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "63.8",
+          "role": "data",
+          "variable": "Assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "66.2",
+          "role": "data",
+          "variable": "Assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "68.4",
+          "role": "data",
+          "variable": "Assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "14.2",
+          "role": "data",
+          "variable": "Assigned to 2nd choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "13.8",
+          "role": "data",
+          "variable": "Assigned to 2nd choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "12.4",
+          "role": "data",
+          "variable": "Assigned to 2nd choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "11.8",
+          "role": "data",
+          "variable": "Assigned to 2nd choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "11.8",
+          "role": "data",
+          "variable": "Assigned to 3rd+ choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "10.4",
+          "role": "data",
+          "variable": "Assigned to 3rd+ choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "9.8",
+          "role": "data",
+          "variable": "Assigned to 3rd+ choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "9.1",
+          "role": "data",
+          "variable": "Assigned to 3rd+ choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "12.6",
+          "role": "data",
+          "variable": "Unassigned (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "12.0",
+          "role": "data",
+          "variable": "Unassigned (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "11.6",
+          "role": "data",
+          "variable": "Unassigned (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "10.7",
+          "role": "data",
+          "variable": "Unassigned (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Justified envy rate (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Justified envy rate (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Justified envy rate (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Justified envy rate (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1.74",
+          "role": "data",
+          "variable": "Avg. rank of assigned school",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1.71",
+          "role": "data",
+          "variable": "Avg. rank of assigned school",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.68",
+          "role": "data",
+          "variable": "Avg. rank of assigned school",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1.63",
+          "role": "data",
+          "variable": "Avg. rank of assigned school",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What fraction of students are assigned to their first choice in 2017-2018?",
+          "answer": "68.4%"
+        },
+        {
+          "question": "What is the justified envy rate under DA?",
+          "answer": "0.0% -- DA produces stable matchings which eliminate justified envy"
+        },
+        {
+          "question": "Has the fraction assigned to first choice been increasing over time?",
+          "answer": "Yes: from 61.4% in 2005-2008 to 68.4% in 2017-2018"
+        }
+      ]
+    },
+    {
+      "table_id": "rdd-cutoff-effects",
+      "caption": "RDD First Stage: Probability of Attending School at Admission Cutoff",
+      "label": "tab:rdd-cutoff-effects",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.61***",
+          "role": "data",
+          "variable": "Above cutoff (sharp RD)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.61***",
+          "role": "data",
+          "variable": "Above cutoff (sharp RD)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.62***",
+          "role": "data",
+          "variable": "Above cutoff (sharp RD)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.62***",
+          "role": "data",
+          "variable": "Above cutoff (sharp RD)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Above cutoff (sharp RD)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Above cutoff (sharp RD)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Above cutoff (sharp RD)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Above cutoff (sharp RD)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.04***",
+          "role": "data",
+          "variable": "Running variable (score - cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.04***",
+          "role": "data",
+          "variable": "Running variable (score - cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.03***",
+          "role": "data",
+          "variable": "Running variable (score - cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.03***",
+          "role": "data",
+          "variable": "Running variable (score - cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Running variable (score - cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Running variable (score - cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Running variable (score - cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Running variable (score - cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-0.02*",
+          "role": "data",
+          "variable": "Above x Running",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-0.02*",
+          "role": "data",
+          "variable": "Above x Running",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "Above x Running",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "Above x Running",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Above x Running",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Above x Running",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Above x Running",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Above x Running",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "24,841",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "24,841",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "24,841",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "21,382",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "0.12",
+          "role": "summary",
+          "label": "Mean dep. var. (below cutoff)"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "0.12",
+          "role": "summary",
+          "label": "Mean dep. var. (below cutoff)"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "0.12",
+          "role": "summary",
+          "label": "Mean dep. var. (below cutoff)"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "0.12",
+          "role": "summary",
+          "label": "Mean dep. var. (below cutoff)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the first-stage jump at the cutoff?",
+          "answer": "0.61 -- students just above the cutoff are 61 percentage points more likely to attend the school"
+        },
+        {
+          "question": "What is the mean attendance rate just below the cutoff?",
+          "answer": "0.12 (12%)"
+        },
+        {
+          "question": "What bandwidth is used in the baseline specification?",
+          "answer": "10 points (Calonico-Cattaneo-Titiunik MSE-optimal)"
+        }
+      ]
+    },
+    {
+      "table_id": "rdd-test-score-outcomes",
+      "caption": "RDD Estimates: Effect of Attending Oversubscribed School on 8th Grade Test Scores",
+      "label": "tab:rdd-test-score-outcomes",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.18***",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.19***",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.19***",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.18***",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.30***",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.31***",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.31***",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.29***",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.12**",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.13**",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.13**",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.12**",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.20**",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.21**",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.21**",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.19**",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "IV (2SLS: attend = 1)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "22,184",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "22,184",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "22,184",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "19,013",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "841",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "841",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "847",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "798",
+          "role": "summary",
+          "label": "First-stage F"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV estimate of attending an oversubscribed school on math scores?",
+          "answer": "0.30 standard deviations in the baseline specification"
+        },
+        {
+          "question": "Is the effect larger for math or reading?",
+          "answer": "Math (0.30 sd) is larger than reading (0.20 sd)"
+        },
+        {
+          "question": "What is the first-stage F-statistic?",
+          "answer": "841, far above conventional weak-instrument thresholds"
+        }
+      ]
+    },
+    {
+      "table_id": "rdd-graduation",
+      "caption": "RDD Estimates: Effect of Attending Oversubscribed School on High School Outcomes",
+      "label": "tab:rdd-graduation",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "4.2***",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "4.4***",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "4.3***",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "4.1***",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(1.4)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(1.4)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(1.4)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(1.5)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "6.9***",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "7.2***",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "6.9***",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "6.6***",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(2.3)",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(2.3)",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(2.3)",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(2.5)",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "3.1**",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "3.4**",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "3.3**",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "3.0**",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(1.4)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(1.4)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(1.4)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(1.5)",
+          "role": "data",
+          "variable": "ITT (above cutoff)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "5.1**",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "5.6**",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "5.3**",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "4.8**",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(2.3)",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(2.3)",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(2.3)",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(2.5)",
+          "role": "data",
+          "variable": "IV (2SLS)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "18,421",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "18,421",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "18,421",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "15,847",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "74.2",
+          "role": "summary",
+          "label": "Mean dep. var. (below cutoff, \\%)"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "74.2",
+          "role": "summary",
+          "label": "Mean dep. var. (below cutoff, \\%)"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "74.2",
+          "role": "summary",
+          "label": "Mean dep. var. (below cutoff, \\%)"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "74.2",
+          "role": "summary",
+          "label": "Mean dep. var. (below cutoff, \\%)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV estimate of attending an oversubscribed school on graduation rate?",
+          "answer": "6.9 percentage points in the baseline"
+        },
+        {
+          "question": "What is the baseline graduation rate for students just below the cutoff?",
+          "answer": "74.2%"
+        },
+        {
+          "question": "Does attending the oversubscribed school increase college enrollment?",
+          "answer": "Yes: 5.1 percentage point increase in 4-year college enrollment (IV estimate)"
+        }
+      ]
+    },
+    {
+      "table_id": "subgroup-effects",
+      "caption": "Heterogeneous Effects of Attending Oversubscribed School by Student Subgroup",
+      "label": "tab:subgroup-effects",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "0.30***",
+          "role": "data",
+          "variable": "All students (IV baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "0.20**",
+          "role": "data",
+          "variable": "All students (IV baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "6.9***",
+          "role": "data",
+          "variable": "All students (IV baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "5.1**",
+          "role": "data",
+          "variable": "All students (IV baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "All students (IV baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "All students (IV baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "(2.3)",
+          "role": "data",
+          "variable": "All students (IV baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "(2.3)",
+          "role": "data",
+          "variable": "All students (IV baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "0.34***",
+          "role": "data",
+          "variable": "Free/reduced lunch",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.23**",
+          "role": "data",
+          "variable": "Free/reduced lunch",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "8.1***",
+          "role": "data",
+          "variable": "Free/reduced lunch",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "6.2**",
+          "role": "data",
+          "variable": "Free/reduced lunch",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "(0.11)",
+          "role": "data",
+          "variable": "Free/reduced lunch",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "(0.11)",
+          "role": "data",
+          "variable": "Free/reduced lunch",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "(2.8)",
+          "role": "data",
+          "variable": "Free/reduced lunch",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "(2.8)",
+          "role": "data",
+          "variable": "Free/reduced lunch",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.24**",
+          "role": "data",
+          "variable": "Not free/reduced lunch",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.14",
+          "role": "data",
+          "variable": "Not free/reduced lunch",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "5.2*",
+          "role": "data",
+          "variable": "Not free/reduced lunch",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "3.4",
+          "role": "data",
+          "variable": "Not free/reduced lunch",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.12)",
+          "role": "data",
+          "variable": "Not free/reduced lunch",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.13)",
+          "role": "data",
+          "variable": "Not free/reduced lunch",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(3.0)",
+          "role": "data",
+          "variable": "Not free/reduced lunch",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(3.1)",
+          "role": "data",
+          "variable": "Not free/reduced lunch",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.41***",
+          "role": "data",
+          "variable": "English language learner",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.28**",
+          "role": "data",
+          "variable": "English language learner",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "9.4***",
+          "role": "data",
+          "variable": "English language learner",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "7.1**",
+          "role": "data",
+          "variable": "English language learner",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "English language learner",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "English language learner",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(3.4)",
+          "role": "data",
+          "variable": "English language learner",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(3.4)",
+          "role": "data",
+          "variable": "English language learner",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.22",
+          "role": "data",
+          "variable": "Special education",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.18",
+          "role": "data",
+          "variable": "Special education",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "4.1",
+          "role": "data",
+          "variable": "Special education",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "2.8",
+          "role": "data",
+          "variable": "Special education",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "Special education",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "Special education",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(4.2)",
+          "role": "data",
+          "variable": "Special education",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(4.3)",
+          "role": "data",
+          "variable": "Special education",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.28***",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.22**",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "6.4**",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "6.2**",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(2.6)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(2.6)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.32***",
+          "role": "data",
+          "variable": "Male",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.18*",
+          "role": "data",
+          "variable": "Male",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "7.4***",
+          "role": "data",
+          "variable": "Male",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "4.1*",
+          "role": "data",
+          "variable": "Male",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "Male",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "Male",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(2.7)",
+          "role": "data",
+          "variable": "Male",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(2.5)",
+          "role": "data",
+          "variable": "Male",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Which subgroup benefits most in math from attending an oversubscribed school?",
+          "answer": "English language learners (0.41 sd)"
+        },
+        {
+          "question": "Are effects larger for free/reduced lunch students than non-FRL students?",
+          "answer": "Yes, 0.34 vs 0.24 sd for math"
+        }
+      ]
+    },
+    {
+      "table_id": "boston-vs-da",
+      "caption": "Boston Mechanism vs. Deferred Acceptance: Outcomes Under Misreported Preferences",
+      "label": "tab:boston-vs-da",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "71.4",
+          "role": "data",
+          "variable": "Assigned to 1st true preference (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "68.4",
+          "role": "data",
+          "variable": "Assigned to 1st true preference (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "61.8",
+          "role": "data",
+          "variable": "Assigned to 1st true preference (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "58.4",
+          "role": "data",
+          "variable": "Assigned to 1st true preference (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "0.718",
+          "role": "data",
+          "variable": "Avg welfare (0-1 scale)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.694",
+          "role": "data",
+          "variable": "Avg welfare (0-1 scale)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.672",
+          "role": "data",
+          "variable": "Avg welfare (0-1 scale)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.651",
+          "role": "data",
+          "variable": "Avg welfare (0-1 scale)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Welfare loss from manipulation (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "2.4",
+          "role": "data",
+          "variable": "Welfare loss from manipulation (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "4.6",
+          "role": "data",
+          "variable": "Welfare loss from manipulation (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "6.7",
+          "role": "data",
+          "variable": "Welfare loss from manipulation (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "66.2",
+          "role": "data",
+          "variable": "Assigned to 1st true preference (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "66.2",
+          "role": "data",
+          "variable": "Assigned to 1st true preference (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "66.2",
+          "role": "data",
+          "variable": "Assigned to 1st true preference (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "66.2",
+          "role": "data",
+          "variable": "Assigned to 1st true preference (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.742",
+          "role": "data",
+          "variable": "Avg welfare (0-1 scale)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.742",
+          "role": "data",
+          "variable": "Avg welfare (0-1 scale)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.742",
+          "role": "data",
+          "variable": "Avg welfare (0-1 scale)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.742",
+          "role": "data",
+          "variable": "Avg welfare (0-1 scale)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Welfare loss from manipulation (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Welfare loss from manipulation (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Welfare loss from manipulation (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Welfare loss from manipulation (pp)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does manipulation under the Boston mechanism reduce welfare?",
+          "answer": "Yes, by 6.7 percentage points in Nash equilibrium relative to truthful play"
+        },
+        {
+          "question": "Does manipulation under DA reduce welfare?",
+          "answer": "No, welfare loss is 0.0 pp at all manipulation levels -- DA is strategy-proof"
+        },
+        {
+          "question": "Which mechanism assigns more students to their true first choice under truthful play?",
+          "answer": "Boston mechanism (71.4% vs 66.2% for DA)"
+        }
+      ]
+    },
+    {
+      "table_id": "ttc-vs-da",
+      "caption": "TTC vs. DA: Assignment Differences and Welfare",
+      "label": "tab:ttc-vs-da",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "68.4",
+          "role": "data",
+          "variable": "Assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "66.2",
+          "role": "data",
+          "variable": "Assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "2.2",
+          "role": "data",
+          "variable": "Assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "0.01",
+          "role": "data",
+          "variable": "Assigned to 1st choice (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "94.1",
+          "role": "data",
+          "variable": "Assigned to any listed school (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "91.8",
+          "role": "data",
+          "variable": "Assigned to any listed school (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "2.3",
+          "role": "data",
+          "variable": "Assigned to any listed school (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Assigned to any listed school (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "1.61",
+          "role": "data",
+          "variable": "Average rank of assigned school",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "1.68",
+          "role": "data",
+          "variable": "Average rank of assigned school",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "-0.07",
+          "role": "data",
+          "variable": "Average rank of assigned school",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Average rank of assigned school",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.761",
+          "role": "data",
+          "variable": "Utilitarian welfare",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.742",
+          "role": "data",
+          "variable": "Utilitarian welfare",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.019",
+          "role": "data",
+          "variable": "Utilitarian welfare",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Utilitarian welfare",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.498",
+          "role": "data",
+          "variable": "Rawlsian welfare (min utility)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.484",
+          "role": "data",
+          "variable": "Rawlsian welfare (min utility)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.014",
+          "role": "data",
+          "variable": "Rawlsian welfare (min utility)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Rawlsian welfare (min utility)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "N/A",
+          "role": "data",
+          "variable": "Stable matchings achieved (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "100",
+          "role": "data",
+          "variable": "Stable matchings achieved (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Stable matchings achieved (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Stable matchings achieved (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1.84",
+          "role": "data",
+          "variable": "Justified envy (\\% of pairs)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Justified envy (\\% of pairs)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1.84",
+          "role": "data",
+          "variable": "Justified envy (\\% of pairs)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Justified envy (\\% of pairs)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does TTC achieve higher average welfare than DA?",
+          "answer": "Yes: 0.761 vs 0.742"
+        },
+        {
+          "question": "Is TTC stable?",
+          "answer": "No, TTC has 1.84% of student-school pairs with justified envy"
+        },
+        {
+          "question": "What fraction of DA matchings are stable?",
+          "answer": "100%"
+        }
+      ]
+    },
+    {
+      "table_id": "proofs-block",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-preference-elicitation",
+      "caption": "Appendix: Estimated Preference Parameters from Structural Demand Model",
+      "label": "tab:appendix-preference-elicitation",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "1.84***",
+          "role": "data",
+          "variable": "School test score (1 sd increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "0.21",
+          "role": "data",
+          "variable": "School test score (1 sd increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "1.43",
+          "role": "data",
+          "variable": "School test score (1 sd increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "2.25",
+          "role": "data",
+          "variable": "School test score (1 sd increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.42***",
+          "role": "data",
+          "variable": "Distance (1 km increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.08",
+          "role": "data",
+          "variable": "Distance (1 km increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.58",
+          "role": "data",
+          "variable": "Distance (1 km increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.26",
+          "role": "data",
+          "variable": "Distance (1 km increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "-0.18**",
+          "role": "data",
+          "variable": "Peer free lunch share (10 pp increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.09",
+          "role": "data",
+          "variable": "Peer free lunch share (10 pp increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "-0.36",
+          "role": "data",
+          "variable": "Peer free lunch share (10 pp increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "-0.00",
+          "role": "data",
+          "variable": "Peer free lunch share (10 pp increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.08*",
+          "role": "data",
+          "variable": "School size (100 students)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.04",
+          "role": "data",
+          "variable": "School size (100 students)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.00",
+          "role": "data",
+          "variable": "School size (100 students)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.16",
+          "role": "data",
+          "variable": "School size (100 students)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.24***",
+          "role": "data",
+          "variable": "Teacher experience share (10 pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.07",
+          "role": "data",
+          "variable": "Teacher experience share (10 pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.10",
+          "role": "data",
+          "variable": "Teacher experience share (10 pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.38",
+          "role": "data",
+          "variable": "Teacher experience share (10 pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.31***",
+          "role": "data",
+          "variable": "Fraction same race as student",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.08",
+          "role": "data",
+          "variable": "Fraction same race as student",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.15",
+          "role": "data",
+          "variable": "Fraction same race as student",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.47",
+          "role": "data",
+          "variable": "Fraction same race as student",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the most important positive factor in school preferences?",
+          "answer": "School test score (coefficient 1.84 per sd)"
+        },
+        {
+          "question": "Does distance deter school choice?",
+          "answer": "Yes, coefficient -0.42 per km is negative and significant"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "da-step",
+      "label": "eq:da-step",
+      "latex": "\\text{Step } t: \\text{ each unmatched student } i \\text{ proposes to best unrejected school } s; \\text{ school } s \\text{ tentatively holds top-}q_s \\text{ and rejects others}",
+      "description": "Deferred Acceptance algorithm: student proposes, school tentatively holds",
+      "qa": [
+        {
+          "question": "What happens in each step of the DA algorithm?",
+          "answer": "Each unmatched student proposes to their most-preferred unrejected school; each school tentatively holds its top-q_s applicants by priority and rejects the rest"
+        }
+      ]
+    },
+    {
+      "eq_id": "stability",
+      "label": "eq:stability",
+      "latex": "(i, s) \\text{ is a blocking pair if } s \\succ_i \\mu(i) \\text{ and } i \\succ_s j \\text{ for some } j \\in \\mu(s), \\quad |\\mathcal{S}| \\leq \\binom{n}{2} \\cdot \\lfloor K/2 \\rfloor",
+      "description": "Stability: no student-school pair prefers each other to their current match",
+      "qa": [
+        {
+          "question": "What is a blocking pair?",
+          "answer": "A student i and school s such that s is preferred by i over their current match mu(i), and i is preferred by s over some currently matched student j"
+        }
+      ]
+    },
+    {
+      "eq_id": "strategy-proof",
+      "label": "eq:strategy-proof",
+      "latex": "\\mu_D(\\succ_i, \\succ_{-i}) \\succsim_i \\mu_D(\\succ_i', \\succ_{-i}) \\quad \\forall \\succ_i', \\succ_{-i}, i",
+      "description": "Strategy-proofness: truthful preference revelation is a dominant strategy under DA",
+      "qa": [
+        {
+          "question": "What does strategy-proofness mean?",
+          "answer": "A student cannot improve their assignment by misreporting their preferences: mu_D(true) is weakly preferred to mu_D(misreport) for all misreports and all others' reports"
+        }
+      ]
+    },
+    {
+      "eq_id": "justified-envy",
+      "label": "eq:justified-envy",
+      "latex": "(i, s) \\text{ has justified envy if } s \\succ_i \\mu(i) \\text{ and } \\text{priority}_{is} > \\text{priority}_{js} \\text{ for some } j \\in \\mu(s)",
+      "description": "Justified envy: student i has higher priority than an assigned student at a school s they prefer",
+      "qa": [
+        {
+          "question": "What is justified envy?",
+          "answer": "Student i has justified envy if they prefer school s to their current assignment AND have higher priority than some student who was assigned to s"
+        }
+      ]
+    },
+    {
+      "eq_id": "boston-manipulation",
+      "label": "eq:boston-manip",
+      "latex": "\\\\exists \\\\succ_i' \\\\neq \\\\succ_i : \\\\mu_{Boston}(\\\\succ_i', \\\\succ_{-i}) \\\\succ_i \\\\mu_{Boston}(\\\\succ_i, \\\\succ_{-i})",
+      "description": "Boston mechanism is manipulable: misreporting can strictly improve a student's outcome",
+      "qa": [
+        {
+          "question": "Is the Boston mechanism strategy-proof?",
+          "answer": "No -- there exist preference reports succ_i' such that the student strictly prefers their assignment under misreporting to truthful play"
+        }
+      ]
+    },
+    {
+      "eq_id": "welfare-utilitarian",
+      "label": "eq:welfare-util",
+      "latex": "W_U(\\mu) = \\sum_{i=1}^n u_i(\\mu(i)), \\quad u_i(s) = \\beta_1 q_s + \\beta_2 d_{is} + \\varepsilon_{is}, \\quad \\#\\{\\text{matchings}\\} = \\binom{n + K - 1}{K} \\cdot \\prod_{s=1}^{K} \\lfloor q_s \\rfloor !",
+      "description": "Utilitarian social welfare: sum of student utilities under matching mu",
+      "qa": [
+        {
+          "question": "How is utilitarian welfare calculated?",
+          "answer": "Sum of individual utilities u_i(mu(i)) where utility is a function of school quality q_s and distance d_is"
+        }
+      ]
+    },
+    {
+      "eq_id": "welfare-rawlsian",
+      "label": "eq:welfare-rawls",
+      "latex": "W_R(\\mu) = \\min_{i=1,\\ldots,n} u_i(\\mu(i))",
+      "description": "Rawlsian social welfare: minimum utility across all students",
+      "qa": [
+        {
+          "question": "What does Rawlsian welfare capture?",
+          "answer": "The welfare of the worst-off student -- the minimum utility across all students in the matching"
+        }
+      ]
+    },
+    {
+      "eq_id": "match-prob",
+      "label": "eq:match-prob",
+      "latex": "P_{is} = \\Pr(\\mu(i) = s) = \\Pr\\!\\left(\\text{priority}_{is} \\geq \\text{priority}_{\\lceil q_s \\rceil\\text{-th}}\\right), \\quad \\begin{bmatrix} P_{i1} \\\\ P_{i2} \\\\ \\vdots \\\\ P_{iK} \\end{bmatrix} \\in [0,1]^K, \\; \\sum_{s=1}^K P_{is} \\leq 1",
+      "description": "Matching probability: likelihood student i is matched to school s under DA",
+      "qa": [
+        {
+          "question": "What determines a student's probability of being matched to a school?",
+          "answer": "Whether the student's priority score at the school is above the cutoff (q_s-th highest applicant priority)"
+        }
+      ]
+    },
+    {
+      "eq_id": "rdd-cutoff",
+      "label": "eq:rdd",
+      "latex": "Y_i = \\alpha + \\tau D_i + f(R_i - c) + \\varepsilon_i, \\quad D_i = \\mathbf{1}[R_i \\geq c]",
+      "description": "RDD at school admission cutoff c; D_i = 1 if student admitted above cutoff",
+      "qa": [
+        {
+          "question": "What is the identifying variation in the RDD?",
+          "answer": "Whether student priority score R_i is above or below the school's admission cutoff c; tau is the local average treatment effect for marginal applicants"
+        }
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "question": "What mechanisms are compared in this paper?",
+      "answer": "Boston (Immediate Acceptance), student-proposing DA, and Top Trading Cycles (TTC)"
+    },
+    {
+      "question": "What is the IV estimate of attending an oversubscribed school on math scores?",
+      "answer": "0.30 standard deviations"
+    },
+    {
+      "question": "Is student-proposing DA strategy-proof?",
+      "answer": "Yes -- truthful preference reporting is a dominant strategy under DA"
+    },
+    {
+      "question": "Which mechanism achieves higher average welfare, TTC or DA?",
+      "answer": "TTC achieves higher average welfare (0.761 vs 0.742), but TTC is not stable"
+    },
+    {
+      "question": "What is the graduation rate for students just below the admission cutoff?",
+      "answer": "74.2%"
+    },
+    {
+      "question": "What fraction of students receive free or reduced lunch?",
+      "answer": "62.4%"
+    },
+    {
+      "question": "Are DA-assigned and non-DA-assigned students different in 4th grade math scores?",
+      "answer": "Slightly: 0.04 vs -0.04 standard deviations, difference of 0.08, but not statistically significant"
+    },
+    {
+      "question": "What fraction of students are English language learners?",
+      "answer": "18.7%"
+    },
+    {
+      "question": "Are oversubscribed schools higher or lower in average test scores?",
+      "answer": "Higher: 0.41 vs -0.24 standard deviations"
+    },
+    {
+      "question": "Do oversubscribed schools have fewer free/reduced lunch students?",
+      "answer": "Yes: 52.1% vs 63.8%"
+    },
+    {
+      "question": "What is the average school enrollment?",
+      "answer": "482 students"
+    },
+    {
+      "question": "Which mechanism is both stable and strategy-proof?",
+      "answer": "Student-proposing DA"
+    },
+    {
+      "question": "Which mechanism achieves the highest average welfare?",
+      "answer": "Top Trading Cycles (TTC) with 0.761"
+    },
+    {
+      "question": "Is the Boston mechanism stable?",
+      "answer": "No"
+    },
+    {
+      "question": "What fraction of students list only one school?",
+      "answer": "12.4%"
+    },
+    {
+      "question": "Does listing more schools increase the chance of assignment to some listed school?",
+      "answer": "Yes: from 84.1% (1 school) to 95.2% (11+ schools)"
+    },
+    {
+      "question": "What is the maximum list length allowed?",
+      "answer": "12 schools"
+    },
+    {
+      "question": "What fraction of students are assigned to their first choice in 2017-2018?",
+      "answer": "68.4%"
+    },
+    {
+      "question": "What is the justified envy rate under DA?",
+      "answer": "0.0% -- DA produces stable matchings which eliminate justified envy"
+    },
+    {
+      "question": "Has the fraction assigned to first choice been increasing over time?",
+      "answer": "Yes: from 61.4% in 2005-2008 to 68.4% in 2017-2018"
+    },
+    {
+      "question": "What is the first-stage jump at the cutoff?",
+      "answer": "0.61 -- students just above the cutoff are 61 percentage points more likely to attend the school"
+    },
+    {
+      "question": "What is the mean attendance rate just below the cutoff?",
+      "answer": "0.12 (12%)"
+    },
+    {
+      "question": "What bandwidth is used in the baseline specification?",
+      "answer": "10 points (Calonico-Cattaneo-Titiunik MSE-optimal)"
+    },
+    {
+      "question": "What is the IV estimate of attending an oversubscribed school on math scores?",
+      "answer": "0.30 standard deviations in the baseline specification"
+    },
+    {
+      "question": "Is the effect larger for math or reading?",
+      "answer": "Math (0.30 sd) is larger than reading (0.20 sd)"
+    },
+    {
+      "question": "What is the first-stage F-statistic?",
+      "answer": "841, far above conventional weak-instrument thresholds"
+    },
+    {
+      "question": "What is the IV estimate of attending an oversubscribed school on graduation rate?",
+      "answer": "6.9 percentage points in the baseline"
+    },
+    {
+      "question": "What is the baseline graduation rate for students just below the cutoff?",
+      "answer": "74.2%"
+    },
+    {
+      "question": "Does attending the oversubscribed school increase college enrollment?",
+      "answer": "Yes: 5.1 percentage point increase in 4-year college enrollment (IV estimate)"
+    },
+    {
+      "question": "Which subgroup benefits most in math from attending an oversubscribed school?",
+      "answer": "English language learners (0.41 sd)"
+    },
+    {
+      "question": "Are effects larger for free/reduced lunch students than non-FRL students?",
+      "answer": "Yes, 0.34 vs 0.24 sd for math"
+    },
+    {
+      "question": "Does manipulation under the Boston mechanism reduce welfare?",
+      "answer": "Yes, by 6.7 percentage points in Nash equilibrium relative to truthful play"
+    },
+    {
+      "question": "Does manipulation under DA reduce welfare?",
+      "answer": "No, welfare loss is 0.0 pp at all manipulation levels -- DA is strategy-proof"
+    },
+    {
+      "question": "Which mechanism assigns more students to their true first choice under truthful play?",
+      "answer": "Boston mechanism (71.4% vs 66.2% for DA)"
+    },
+    {
+      "question": "Does TTC achieve higher average welfare than DA?",
+      "answer": "Yes: 0.761 vs 0.742"
+    },
+    {
+      "question": "Is TTC stable?",
+      "answer": "No, TTC has 1.84% of student-school pairs with justified envy"
+    },
+    {
+      "question": "What fraction of DA matchings are stable?",
+      "answer": "100%"
+    },
+    {
+      "question": "What is the most important positive factor in school preferences?",
+      "answer": "School test score (coefficient 1.84 per sd)"
+    },
+    {
+      "question": "Does distance deter school choice?",
+      "answer": "Yes, coefficient -0.42 per km is negative and significant"
+    },
+    {
+      "question": "What happens in each step of the DA algorithm?",
+      "answer": "Each unmatched student proposes to their most-preferred unrejected school; each school tentatively holds its top-q_s applicants by priority and rejects the rest"
+    },
+    {
+      "question": "What is a blocking pair?",
+      "answer": "A student i and school s such that s is preferred by i over their current match mu(i), and i is preferred by s over some currently matched student j"
+    },
+    {
+      "question": "What does strategy-proofness mean?",
+      "answer": "A student cannot improve their assignment by misreporting their preferences: mu_D(true) is weakly preferred to mu_D(misreport) for all misreports and all others' reports"
+    },
+    {
+      "question": "What is justified envy?",
+      "answer": "Student i has justified envy if they prefer school s to their current assignment AND have higher priority than some student who was assigned to s"
+    },
+    {
+      "question": "Is the Boston mechanism strategy-proof?",
+      "answer": "No -- there exist preference reports succ_i' such that the student strictly prefers their assignment under misreporting to truthful play"
+    },
+    {
+      "question": "How is utilitarian welfare calculated?",
+      "answer": "Sum of individual utilities u_i(mu(i)) where utility is a function of school quality q_s and distance d_is"
+    },
+    {
+      "question": "What does Rawlsian welfare capture?",
+      "answer": "The welfare of the worst-off student -- the minimum utility across all students in the matching"
+    },
+    {
+      "question": "What determines a student's probability of being matched to a school?",
+      "answer": "Whether the student's priority score at the school is above the cutoff (q_s-th highest applicant priority)"
+    },
+    {
+      "question": "What is the identifying variation in the RDD?",
+      "answer": "Whether student priority score R_i is above or below the school's admission cutoff c; tau is the local average treatment effect for marginal applicants"
+    }
+  ]
+}

@@ -1,0 +1,3792 @@
+{
+  "paper_id": "03",
+  "field": "trade",
+  "title": "The China Syndrome: Local Labor Market Effects of Import Competition in the United States",
+  "journal_style": "restud",
+  "target_pages": 65,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-trade",
+      "level": 1
+    },
+    {
+      "title": "Background on China's WTO Accession",
+      "label": "sec:background-trade",
+      "level": 1
+    },
+    {
+      "title": "China's Export Growth",
+      "label": "sec:bg-china",
+      "level": 2
+    },
+    {
+      "title": "US Manufacturing Labor Markets",
+      "label": "sec:bg-us",
+      "level": 2
+    },
+    {
+      "title": "Model",
+      "label": "sec:model-trade",
+      "level": 1
+    },
+    {
+      "title": "Open Economy Framework",
+      "label": "sec:model-open",
+      "level": 2
+    },
+    {
+      "title": "Local Labor Market Equilibrium",
+      "label": "sec:model-llm",
+      "level": 2
+    },
+    {
+      "title": "Data",
+      "label": "sec:data-trade",
+      "level": 1
+    },
+    {
+      "title": "Trade Data",
+      "label": "sec:data-trade-data",
+      "level": 2
+    },
+    {
+      "title": "Employment Data",
+      "label": "sec:data-emp",
+      "level": 2
+    },
+    {
+      "title": "Commuting Zone Construction",
+      "label": "sec:data-cz",
+      "level": 2
+    },
+    {
+      "title": "Empirical Strategy",
+      "label": "sec:empirical-trade",
+      "level": 1
+    },
+    {
+      "title": "Shift-Share Instrument",
+      "label": "sec:empirical-ss",
+      "level": 2
+    },
+    {
+      "title": "Identification and Inference",
+      "label": "sec:empirical-id",
+      "level": 2
+    },
+    {
+      "title": "Results",
+      "label": "sec:results-trade",
+      "level": 1
+    },
+    {
+      "title": "Employment Effects",
+      "label": "sec:results-emp",
+      "level": 2
+    },
+    {
+      "title": "Wage Effects",
+      "label": "sec:results-wages",
+      "level": 2
+    },
+    {
+      "title": "Decomposition Across Periods",
+      "label": "sec:results-periods",
+      "level": 2
+    },
+    {
+      "title": "Multiple Outcomes",
+      "label": "sec:results-multi",
+      "level": 2
+    },
+    {
+      "title": "Robustness",
+      "label": "sec:robust-trade",
+      "level": 1
+    },
+    {
+      "title": "Standard Error Approaches",
+      "label": "sec:robust-se",
+      "level": 2
+    },
+    {
+      "title": "Alternative Controls",
+      "label": "sec:robust-alt",
+      "level": 2
+    },
+    {
+      "title": "Regional Heterogeneity",
+      "label": "sec:robust-region",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-trade",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Inference Theory",
+      "label": "sec:appendix-a-trade",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Additional Results",
+      "label": "sec:appendix-b-trade",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Industry Classification",
+      "label": "sec:appendix-c-trade",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "summary-stats-trade",
+      "caption": "Summary Statistics",
+      "label": "tab:summary-stats-trade",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.21",
+          "role": "data",
+          "variable": "Manufacturing Emp. Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.09",
+          "role": "data",
+          "variable": "Manufacturing Emp. Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.09",
+          "role": "data",
+          "variable": "Manufacturing Emp. Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.33",
+          "role": "data",
+          "variable": "Manufacturing Emp. Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Manufacturing Emp. Share",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Manufacturing Emp. Share",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Manufacturing Emp. Share",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Manufacturing Emp. Share",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1842",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1621",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "312",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "4218",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-0.041",
+          "role": "data",
+          "variable": "Mfg. Emp. Change 1990-2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.031",
+          "role": "data",
+          "variable": "Mfg. Emp. Change 1990-2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.089",
+          "role": "data",
+          "variable": "Mfg. Emp. Change 1990-2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.008",
+          "role": "data",
+          "variable": "Mfg. Emp. Change 1990-2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Mfg. Emp. Change 1990-2007",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Mfg. Emp. Change 1990-2007",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Mfg. Emp. Change 1990-2007",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Mfg. Emp. Change 1990-2007",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "12.21",
+          "role": "data",
+          "variable": "Log Population 1990",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "1.34",
+          "role": "data",
+          "variable": "Log Population 1990",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "10.62",
+          "role": "data",
+          "variable": "Log Population 1990",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "14.01",
+          "role": "data",
+          "variable": "Log Population 1990",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Population 1990",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Population 1990",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Population 1990",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Population 1990",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.089",
+          "role": "data",
+          "variable": "China Import Penetration Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.112",
+          "role": "data",
+          "variable": "China Import Penetration Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.002",
+          "role": "data",
+          "variable": "China Import Penetration Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.241",
+          "role": "data",
+          "variable": "China Import Penetration Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "China Import Penetration Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "China Import Penetration Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "China Import Penetration Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "China Import Penetration Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "10.82",
+          "role": "data",
+          "variable": "Log Value Added per Worker",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Log Value Added per Worker",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "9.91",
+          "role": "data",
+          "variable": "Log Value Added per Worker",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "11.72",
+          "role": "data",
+          "variable": "Log Value Added per Worker",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Value Added per Worker",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Value Added per Worker",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Value Added per Worker",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Value Added per Worker",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "722",
+          "role": "summary",
+          "label": "Commuting Zones"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "722",
+          "role": "summary",
+          "label": "Commuting Zones"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "722",
+          "role": "summary",
+          "label": "Commuting Zones"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "722",
+          "role": "summary",
+          "label": "Commuting Zones"
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "392",
+          "role": "summary",
+          "label": "Industries"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "392",
+          "role": "summary",
+          "label": "Industries"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "392",
+          "role": "summary",
+          "label": "Industries"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "392",
+          "role": "summary",
+          "label": "Industries"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean China import exposure per worker?",
+          "answer": "1842"
+        },
+        {
+          "question": "How many commuting zones are in the sample?",
+          "answer": "722"
+        },
+        {
+          "question": "What is the mean manufacturing employment share?",
+          "answer": "0.21"
+        }
+      ]
+    },
+    {
+      "table_id": "first-stage-china-shock",
+      "caption": "First Stage: China Import Exposure Instrument",
+      "label": "tab:first-stage",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.812***",
+          "role": "data",
+          "variable": "China Import Exposure (Other Countries)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.798***",
+          "role": "data",
+          "variable": "China Import Exposure (Other Countries)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.781***",
+          "role": "data",
+          "variable": "China Import Exposure (Other Countries)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.775***",
+          "role": "data",
+          "variable": "China Import Exposure (Other Countries)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "China Import Exposure (Other Countries)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.059)",
+          "role": "data",
+          "variable": "China Import Exposure (Other Countries)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.063)",
+          "role": "data",
+          "variable": "China Import Exposure (Other Countries)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "China Import Exposure (Other Countries)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "177.3",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "182.1",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "168.4",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "161.8",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.482",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.561",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.589",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.612",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the first stage coefficient in column 1?",
+          "answer": "0.812"
+        },
+        {
+          "question": "What is the first stage F-statistic in column 2?",
+          "answer": "182.1"
+        },
+        {
+          "question": "What is the first stage coefficient in column 4?",
+          "answer": "0.775"
+        }
+      ]
+    },
+    {
+      "table_id": "shift-share-diagnostics",
+      "caption": "Shift-Share Instrument Diagnostics",
+      "label": "tab:ss-diagnostics",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "72.4",
+          "role": "data",
+          "variable": "Rotemberg $\\alpha$-weight (\\% positive)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Rotemberg $\\alpha$-weight (\\% positive)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Rotemberg $\\alpha$-weight (\\% positive)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": ">50\\%",
+          "role": "data",
+          "variable": "Rotemberg $\\alpha$-weight (\\% positive)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Rotemberg $\\alpha$-weight (\\% positive)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Rotemberg $\\alpha$-weight (\\% positive)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Rotemberg $\\alpha$-weight (\\% positive)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Rotemberg $\\alpha$-weight (\\% positive)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.382",
+          "role": "data",
+          "variable": "Top-5 industry share of $\\hat{\\beta}_{ss}$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Top-5 industry share of $\\hat{\\beta}_{ss}$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Top-5 industry share of $\\hat{\\beta}_{ss}$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "<0.5",
+          "role": "data",
+          "variable": "Top-5 industry share of $\\hat{\\beta}_{ss}$",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Top-5 industry share of $\\hat{\\beta}_{ss}$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Top-5 industry share of $\\hat{\\beta}_{ss}$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Top-5 industry share of $\\hat{\\beta}_{ss}$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Top-5 industry share of $\\hat{\\beta}_{ss}$",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.118",
+          "role": "data",
+          "variable": "AKM standard error",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "AKM standard error",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.001",
+          "role": "data",
+          "variable": "AKM standard error",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "AKM standard error",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "AKM standard error",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "AKM standard error",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "AKM standard error",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "AKM standard error",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Overidentification (Hansen J)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "4.82",
+          "role": "data",
+          "variable": "Overidentification (Hansen J)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.421",
+          "role": "data",
+          "variable": "Overidentification (Hansen J)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Overidentification (Hansen J)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Overidentification (Hansen J)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Overidentification (Hansen J)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Overidentification (Hansen J)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Overidentification (Hansen J)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What share of Rotemberg alpha-weights are positive?",
+          "answer": "72.4"
+        },
+        {
+          "question": "What is the p-value for the Hansen J overidentification test?",
+          "answer": "0.421"
+        }
+      ]
+    },
+    {
+      "table_id": "main-employment",
+      "caption": "Effects on Manufacturing Employment",
+      "label": "tab:main-employment",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.189***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.596***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.549***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.523***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.107)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.099)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.201",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV coefficient on manufacturing employment in column 2?",
+          "answer": "-0.596"
+        },
+        {
+          "question": "What is the OLS coefficient on manufacturing employment in column 1?",
+          "answer": "-0.189"
+        },
+        {
+          "question": "What is the IV coefficient in column 4?",
+          "answer": "-0.523"
+        }
+      ]
+    },
+    {
+      "table_id": "main-wages",
+      "caption": "Effects on Wages",
+      "label": "tab:main-wages",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.142***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.441***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.408***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.389***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.088)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.082)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.078)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.181",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV wage coefficient in column 2?",
+          "answer": "-0.441"
+        },
+        {
+          "question": "What is the OLS wage coefficient in column 1?",
+          "answer": "-0.142"
+        }
+      ]
+    },
+    {
+      "table_id": "manufacturing-decline",
+      "caption": "Decomposition of Manufacturing Employment Decline",
+      "label": "tab:mfg-decline",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.412***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.489***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.451***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.431***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.091)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.104)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.097)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.092)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.688***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.721***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.697***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.674***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.119)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.131)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.122)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.117)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.221",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.278",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.304",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.328",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV effect of China exposure on manufacturing employment in the 1990-2000 period in column 2?",
+          "answer": "-0.489"
+        },
+        {
+          "question": "What is the IV effect for the 2000-2007 period in column 1?",
+          "answer": "-0.688"
+        }
+      ]
+    },
+    {
+      "table_id": "stacked-panels",
+      "caption": "Stacked Panel Estimates: Multiple Outcomes",
+      "label": "tab:stacked",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.549***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.218***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.408***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.214***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "0.391***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.099)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.082)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(0.088)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "168.4",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "168.4",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "168.4",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "168.4",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "168.4",
+          "role": "summary",
+          "label": "F-statistic"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the effect of China exposure on the unemployment rate?",
+          "answer": "0.214"
+        },
+        {
+          "question": "What is the effect on the not-in-labor-force share?",
+          "answer": "0.391"
+        },
+        {
+          "question": "What is the effect on non-manufacturing employment?",
+          "answer": "-0.218"
+        }
+      ]
+    },
+    {
+      "table_id": "main-employment",
+      "caption": "Effects on Manufacturing Employment",
+      "label": "tab:main-employment",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.189***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.596***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.549***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.523***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.107)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.099)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.201",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV coefficient on manufacturing employment in column 2?",
+          "answer": "-0.596"
+        },
+        {
+          "question": "What is the OLS coefficient on manufacturing employment in column 1?",
+          "answer": "-0.189"
+        },
+        {
+          "question": "What is the IV coefficient in column 4?",
+          "answer": "-0.523"
+        }
+      ]
+    },
+    {
+      "table_id": "main-wages",
+      "caption": "Effects on Wages",
+      "label": "tab:main-wages",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.142***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.441***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.408***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.389***",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.088)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.082)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.078)",
+          "role": "data",
+          "variable": "China Import Exposure (\\$/worker)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.181",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV wage coefficient in column 2?",
+          "answer": "-0.441"
+        },
+        {
+          "question": "What is the OLS wage coefficient in column 1?",
+          "answer": "-0.142"
+        }
+      ]
+    },
+    {
+      "table_id": "manufacturing-decline",
+      "caption": "Decomposition of Manufacturing Employment Decline",
+      "label": "tab:mfg-decline",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.412***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.489***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.451***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.431***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.091)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.104)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.097)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.092)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 1990--2000",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.688***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.721***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.697***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.674***",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.119)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.131)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.122)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.117)",
+          "role": "data",
+          "variable": "China Exposure $\\times$ 2000--2007",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.221",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.278",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.304",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.328",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV effect of China exposure on manufacturing employment in the 1990-2000 period in column 2?",
+          "answer": "-0.489"
+        },
+        {
+          "question": "What is the IV effect for the 2000-2007 period in column 1?",
+          "answer": "-0.688"
+        }
+      ]
+    },
+    {
+      "table_id": "stacked-panels",
+      "caption": "Stacked Panel Estimates: Multiple Outcomes",
+      "label": "tab:stacked",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.549***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.218***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.408***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.214***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "0.391***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.099)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.082)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(0.088)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "168.4",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "168.4",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "168.4",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "168.4",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "168.4",
+          "role": "summary",
+          "label": "F-statistic"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the effect of China exposure on the unemployment rate?",
+          "answer": "0.214"
+        },
+        {
+          "question": "What is the effect on the not-in-labor-force share?",
+          "answer": "0.391"
+        },
+        {
+          "question": "What is the effect on non-manufacturing employment?",
+          "answer": "-0.218"
+        }
+      ]
+    },
+    {
+      "table_id": "robustness-clustering",
+      "caption": "Robustness: Alternative Standard Error Approaches",
+      "label": "tab:robust-clustering",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.549***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.549***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.549***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.549***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.099)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.112)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.118)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.104)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the AKM standard error for the China exposure coefficient?",
+          "answer": "0.118"
+        },
+        {
+          "question": "What is the state-clustered standard error?",
+          "answer": "0.112"
+        }
+      ]
+    },
+    {
+      "table_id": "robustness-controls",
+      "caption": "Robustness: Alternative Control Sets",
+      "label": "tab:robust-controls",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.549***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.521***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.537***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.514***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.099)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.097)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.101)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.096)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "1444",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV coefficient when controlling for automation exposure in column 2?",
+          "answer": "-0.521"
+        }
+      ]
+    },
+    {
+      "table_id": "regional-variation",
+      "caption": "Regional Heterogeneity in China Shock Effects",
+      "label": "tab:regional",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.481***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.618***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.529***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.441***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.118)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.127)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.112)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.124)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "142",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "218",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "248",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "114",
+          "role": "summary",
+          "label": "CZs"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the China shock effect in the Midwest?",
+          "answer": "-0.618"
+        },
+        {
+          "question": "What region has the smallest effect?",
+          "answer": "West, with coefficient -0.441"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-proofs-trade",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "industry-exposure",
+      "caption": "Industry-Level Import Exposure Effects",
+      "label": "tab:industry",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.612***",
+          "role": "data",
+          "variable": "Industry Import Penetration",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.589***",
+          "role": "data",
+          "variable": "Industry Import Penetration",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.574***",
+          "role": "data",
+          "variable": "Industry Import Penetration",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.558***",
+          "role": "data",
+          "variable": "Industry Import Penetration",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.098)",
+          "role": "data",
+          "variable": "Industry Import Penetration",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "Industry Import Penetration",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.101)",
+          "role": "data",
+          "variable": "Industry Import Penetration",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.097)",
+          "role": "data",
+          "variable": "Industry Import Penetration",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "7840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "7840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "7840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "7840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "392",
+          "role": "summary",
+          "label": "Industries"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "392",
+          "role": "summary",
+          "label": "Industries"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "392",
+          "role": "summary",
+          "label": "Industries"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "392",
+          "role": "summary",
+          "label": "Industries"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the industry-level effect of import penetration in column 1?",
+          "answer": "-0.612"
+        }
+      ]
+    },
+    {
+      "table_id": "gravity-model",
+      "caption": "Gravity Model Estimates",
+      "label": "tab:gravity",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-1.182***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-1.074***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-1.028***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.994***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.037)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.612***",
+          "role": "data",
+          "variable": "Contiguous",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.589***",
+          "role": "data",
+          "variable": "Contiguous",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.571***",
+          "role": "data",
+          "variable": "Contiguous",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.558***",
+          "role": "data",
+          "variable": "Contiguous",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.081)",
+          "role": "data",
+          "variable": "Contiguous",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.077)",
+          "role": "data",
+          "variable": "Contiguous",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.082)",
+          "role": "data",
+          "variable": "Contiguous",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.078)",
+          "role": "data",
+          "variable": "Contiguous",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.441***",
+          "role": "data",
+          "variable": "Common Language",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.418***",
+          "role": "data",
+          "variable": "Common Language",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.408***",
+          "role": "data",
+          "variable": "Common Language",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.391***",
+          "role": "data",
+          "variable": "Common Language",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.059)",
+          "role": "data",
+          "variable": "Common Language",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.056)",
+          "role": "data",
+          "variable": "Common Language",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "Common Language",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Common Language",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.321***",
+          "role": "data",
+          "variable": "RTA",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.298***",
+          "role": "data",
+          "variable": "RTA",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.285***",
+          "role": "data",
+          "variable": "RTA",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.274***",
+          "role": "data",
+          "variable": "RTA",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.047)",
+          "role": "data",
+          "variable": "RTA",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "RTA",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "RTA",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.046)",
+          "role": "data",
+          "variable": "RTA",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "48420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "48420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "48420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "48420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.681",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "0.784",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "0.812",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.831",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the PPML gravity coefficient on log distance in column 2?",
+          "answer": "-1.074"
+        },
+        {
+          "question": "What is the contiguous coefficient in column 1 OLS?",
+          "answer": "0.612"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-instrument",
+      "caption": "Appendix: Instrument Construction Details",
+      "label": "tab:appendix-instrument",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.549***",
+          "role": "data",
+          "variable": "Bartik Instrument (baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Bartik Instrument (baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Bartik Instrument (baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Bartik Instrument (baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.099)",
+          "role": "data",
+          "variable": "Bartik Instrument (baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Bartik Instrument (baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Bartik Instrument (baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Bartik Instrument (baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Excluding Top Industry",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.531***",
+          "role": "data",
+          "variable": "Excluding Top Industry",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Excluding Top Industry",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Excluding Top Industry",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Excluding Top Industry",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.102)",
+          "role": "data",
+          "variable": "Excluding Top Industry",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Excluding Top Industry",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Excluding Top Industry",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Leave-one-out",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Leave-one-out",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.541***",
+          "role": "data",
+          "variable": "Leave-one-out",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Leave-one-out",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Leave-one-out",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Leave-one-out",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.100)",
+          "role": "data",
+          "variable": "Leave-one-out",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Leave-one-out",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Pre-1990 Shares",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Pre-1990 Shares",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Pre-1990 Shares",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-0.558***",
+          "role": "data",
+          "variable": "Pre-1990 Shares",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Pre-1990 Shares",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Pre-1990 Shares",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Pre-1990 Shares",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.103)",
+          "role": "data",
+          "variable": "Pre-1990 Shares",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV coefficient using the leave-one-out instrument?",
+          "answer": "-0.541"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-sectors",
+      "caption": "Appendix: Effects by Broad Sector",
+      "label": "tab:appendix-sectors",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.712***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.418***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.531***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.689***",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.131)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.098)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.114)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.128)",
+          "role": "data",
+          "variable": "China Exposure (IV)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "181",
+          "role": "summary",
+          "label": "Industries"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "211",
+          "role": "summary",
+          "label": "Industries"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "124",
+          "role": "summary",
+          "label": "Industries"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "268",
+          "role": "summary",
+          "label": "Industries"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the China shock effect on durable goods employment?",
+          "answer": "-0.712"
+        },
+        {
+          "question": "What is the effect on high-tech employment?",
+          "answer": "-0.531"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "exposure-measure",
+      "label": "eq:exposure",
+      "latex": "\\Delta IPW_{uit} = \\sum_j \\frac{L_{ijt-1}}{L_{it-1}} \\cdot \\frac{\\Delta M_{jt}^{US}}{L_{jt-1}}",
+      "description": "China import exposure per worker: weighted average of industry-level import growth by initial employment shares.",
+      "qa": []
+    },
+    {
+      "eq_id": "gravity-equation",
+      "label": "eq:gravity",
+      "latex": "\\ln X_{ij} = \\alpha + \\beta_1 \\ln d_{ij} + \\beta_2 \\text{Contig}_{ij} + \\beta_3 \\text{Lang}_{ij} + \\mu_i + \\nu_j + \\varepsilon_{ij}, \\quad X_{ij} = \\int_0^\\infty \\prod_{k=1}^{K} q_{ijk}(p)\\, dp",
+      "description": "Gravity equation with importer and exporter fixed effects.",
+      "qa": []
+    },
+    {
+      "eq_id": "labor-demand",
+      "label": "eq:labor-demand",
+      "latex": "\\ln L_{ij} = \\alpha + \\gamma \\ln w_{ij} + \\delta \\int_0^{1} \\ln P_{ij}^M(\\omega)\\,d\\omega + X_{ij}'\\begin{bmatrix}\\beta_1 \\\\ \\beta_2 \\\\ \\vdots \\\\ \\beta_K\\end{bmatrix} + \\varepsilon_{ij}",
+      "description": "Local labor demand equation linking employment to wages and import price.",
+      "qa": []
+    },
+    {
+      "eq_id": "bartik-instrument",
+      "label": "eq:bartik",
+      "latex": "\\Delta IPW_{uit} = \\sum_j z_{ijt} \\cdot \\Delta IPW_{ojt}, \\quad z_{ijt} = \\frac{L_{ijt-1}}{L_{it-1}}",
+      "description": "Shift-share (Bartik) instrument: local employment shares $z_{ijt}$ interacted with national import growth from other countries.",
+      "qa": [
+        {
+          "question": "What are the shares in the shift-share instrument?",
+          "answer": "z_ijt = initial employment share of industry j in CZ i"
+        }
+      ]
+    },
+    {
+      "eq_id": "ssiv-estimator",
+      "label": "eq:ssiv",
+      "latex": "\\hat{\\beta}_{SSIV} = \\frac{\\sum_i \\sum_j z_{ij} g_j (Y_i - \\bar{Y})}{\\sum_i \\sum_j z_{ij} g_j (X_i - \\bar{X})}",
+      "description": "Shift-share IV estimator in terms of shares $z_{ij}$ and shocks $g_j$.",
+      "qa": []
+    },
+    {
+      "eq_id": "rotemberg-weights",
+      "label": "eq:rotemberg",
+      "latex": "\\hat{\\beta}_{ss} = \\prod_{k=1}^{K}\\!\\left(\\frac{1}{J_k}\\right) \\sum_j \\alpha_j \\hat{\\beta}_j, \\quad \\alpha_j = \\frac{z_j' M_Z z_j}{\\sum_k z_k' M_Z z_k}, \\quad M_Z = I - Z(Z'Z)^{-1}Z' = \\begin{bmatrix} m_{11} & \\cdots & m_{1n} \\\\ \\vdots & \\ddots & \\vdots \\\\ m_{n1} & \\cdots & m_{nn} \\end{bmatrix}",
+      "description": "Rotemberg weight decomposition: shift-share IV estimator as weighted average of industry-specific IV estimates.",
+      "qa": []
+    },
+    {
+      "eq_id": "reduced-form",
+      "label": "eq:reduced-form",
+      "latex": "\\Delta L_{it} = \\alpha + \\rho \\cdot \\Delta IPW_{oit} + X_{it}'\\gamma + \\varepsilon_{it}",
+      "description": "Reduced form regression of employment change on the instrument (other-country exposure).",
+      "qa": []
+    },
+    {
+      "eq_id": "trade-shock",
+      "label": "eq:trade-shock",
+      "latex": "\\Delta M_{jt} = M_{jt}^{CN} - M_{jt-1}^{CN}, \\quad \\text{where} \\quad M_{jt}^{CN} = \\sum_i X_{ijt}^{CN}",
+      "description": "Definition of the China trade shock as the change in US imports from China in industry $j$.",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main identification strategy?",
+      "answer": "Shift-share (Bartik) instrument using other high-income countries' import exposure from China"
+    },
+    {
+      "question": "What is the main finding for manufacturing employment?",
+      "answer": "A $1000 increase in China import exposure reduces manufacturing employment by 0.549 percentage points (IV estimate)"
+    },
+    {
+      "question": "What is the first-stage F-statistic in the baseline specification?",
+      "answer": "182.1"
+    },
+    {
+      "question": "How many commuting zones are in the sample?",
+      "answer": "722"
+    },
+    {
+      "question": "What is the effect of China exposure on the not-in-labor-force share?",
+      "answer": "0.391 percentage points"
+    },
+    {
+      "question": "What is the mean China import exposure per worker?",
+      "answer": "1842"
+    },
+    {
+      "question": "How many commuting zones are in the sample?",
+      "answer": "722"
+    },
+    {
+      "question": "What is the mean manufacturing employment share?",
+      "answer": "0.21"
+    },
+    {
+      "question": "What is the first stage coefficient in column 1?",
+      "answer": "0.812"
+    },
+    {
+      "question": "What is the first stage F-statistic in column 2?",
+      "answer": "182.1"
+    },
+    {
+      "question": "What is the first stage coefficient in column 4?",
+      "answer": "0.775"
+    },
+    {
+      "question": "What share of Rotemberg alpha-weights are positive?",
+      "answer": "72.4"
+    },
+    {
+      "question": "What is the p-value for the Hansen J overidentification test?",
+      "answer": "0.421"
+    },
+    {
+      "question": "What is the IV coefficient on manufacturing employment in column 2?",
+      "answer": "-0.596"
+    },
+    {
+      "question": "What is the OLS coefficient on manufacturing employment in column 1?",
+      "answer": "-0.189"
+    },
+    {
+      "question": "What is the IV coefficient in column 4?",
+      "answer": "-0.523"
+    },
+    {
+      "question": "What is the IV wage coefficient in column 2?",
+      "answer": "-0.441"
+    },
+    {
+      "question": "What is the OLS wage coefficient in column 1?",
+      "answer": "-0.142"
+    },
+    {
+      "question": "What is the IV effect of China exposure on manufacturing employment in the 1990-2000 period in column 2?",
+      "answer": "-0.489"
+    },
+    {
+      "question": "What is the IV effect for the 2000-2007 period in column 1?",
+      "answer": "-0.688"
+    },
+    {
+      "question": "What is the effect of China exposure on the unemployment rate?",
+      "answer": "0.214"
+    },
+    {
+      "question": "What is the effect on the not-in-labor-force share?",
+      "answer": "0.391"
+    },
+    {
+      "question": "What is the effect on non-manufacturing employment?",
+      "answer": "-0.218"
+    },
+    {
+      "question": "What is the IV coefficient on manufacturing employment in column 2?",
+      "answer": "-0.596"
+    },
+    {
+      "question": "What is the OLS coefficient on manufacturing employment in column 1?",
+      "answer": "-0.189"
+    },
+    {
+      "question": "What is the IV coefficient in column 4?",
+      "answer": "-0.523"
+    },
+    {
+      "question": "What is the IV wage coefficient in column 2?",
+      "answer": "-0.441"
+    },
+    {
+      "question": "What is the OLS wage coefficient in column 1?",
+      "answer": "-0.142"
+    },
+    {
+      "question": "What is the IV effect of China exposure on manufacturing employment in the 1990-2000 period in column 2?",
+      "answer": "-0.489"
+    },
+    {
+      "question": "What is the IV effect for the 2000-2007 period in column 1?",
+      "answer": "-0.688"
+    },
+    {
+      "question": "What is the effect of China exposure on the unemployment rate?",
+      "answer": "0.214"
+    },
+    {
+      "question": "What is the effect on the not-in-labor-force share?",
+      "answer": "0.391"
+    },
+    {
+      "question": "What is the effect on non-manufacturing employment?",
+      "answer": "-0.218"
+    },
+    {
+      "question": "What is the AKM standard error for the China exposure coefficient?",
+      "answer": "0.118"
+    },
+    {
+      "question": "What is the state-clustered standard error?",
+      "answer": "0.112"
+    },
+    {
+      "question": "What is the IV coefficient when controlling for automation exposure in column 2?",
+      "answer": "-0.521"
+    },
+    {
+      "question": "What is the China shock effect in the Midwest?",
+      "answer": "-0.618"
+    },
+    {
+      "question": "What region has the smallest effect?",
+      "answer": "West, with coefficient -0.441"
+    },
+    {
+      "question": "What is the industry-level effect of import penetration in column 1?",
+      "answer": "-0.612"
+    },
+    {
+      "question": "What is the PPML gravity coefficient on log distance in column 2?",
+      "answer": "-1.074"
+    },
+    {
+      "question": "What is the contiguous coefficient in column 1 OLS?",
+      "answer": "0.612"
+    },
+    {
+      "question": "What is the IV coefficient using the leave-one-out instrument?",
+      "answer": "-0.541"
+    },
+    {
+      "question": "What is the China shock effect on durable goods employment?",
+      "answer": "-0.712"
+    },
+    {
+      "question": "What is the effect on high-tech employment?",
+      "answer": "-0.531"
+    },
+    {
+      "question": "What are the shares in the shift-share instrument?",
+      "answer": "z_ijt = initial employment share of industry j in CZ i"
+    }
+  ]
+}

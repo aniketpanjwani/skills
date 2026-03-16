@@ -1,0 +1,3238 @@
+{
+  "paper_id": "10",
+  "field": "political-economy",
+  "title": "Information, Accountability, and Corruption: Evidence from Random Audits in Brazil",
+  "journal_style": "rfs",
+  "target_pages": 55,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-pe",
+      "level": 1
+    },
+    {
+      "title": "Institutional Background",
+      "label": "sec:background-pe",
+      "level": 1
+    },
+    {
+      "title": "The Brazilian Anti-Corruption Program",
+      "label": "sec:anti-corruption",
+      "level": 2
+    },
+    {
+      "title": "Audit Lottery and Disclosure Process",
+      "label": "sec:audit-lottery",
+      "level": 2
+    },
+    {
+      "title": "Local Media Landscape",
+      "label": "sec:media-landscape",
+      "level": 2
+    },
+    {
+      "title": "Theoretical Framework",
+      "label": "sec:theory-pe",
+      "level": 1
+    },
+    {
+      "title": "A Model of Electoral Accountability",
+      "label": "sec:model-accountability",
+      "level": 2
+    },
+    {
+      "title": "The Role of Information",
+      "label": "sec:model-information",
+      "level": 2
+    },
+    {
+      "title": "Testable Predictions",
+      "label": "sec:model-predictions",
+      "level": 2
+    },
+    {
+      "title": "Data",
+      "label": "sec:data-pe",
+      "level": 1
+    },
+    {
+      "title": "Audit Data",
+      "label": "sec:data-audit",
+      "level": 2
+    },
+    {
+      "title": "Electoral Data",
+      "label": "sec:data-electoral",
+      "level": 2
+    },
+    {
+      "title": "Media Data",
+      "label": "sec:data-media",
+      "level": 2
+    },
+    {
+      "title": "Empirical Strategy",
+      "label": "sec:empirical-pe",
+      "level": 1
+    },
+    {
+      "title": "Identification",
+      "label": "sec:identification",
+      "level": 2
+    },
+    {
+      "title": "Regression Discontinuity Design",
+      "label": "sec:rd-design",
+      "level": 2
+    },
+    {
+      "title": "Results",
+      "label": "sec:results-pe",
+      "level": 1
+    },
+    {
+      "title": "Electoral Accountability",
+      "label": "sec:results-electoral",
+      "level": 2
+    },
+    {
+      "title": "The Role of Media",
+      "label": "sec:results-media",
+      "level": 2
+    },
+    {
+      "title": "RD Estimates",
+      "label": "sec:results-rd",
+      "level": 2
+    },
+    {
+      "title": "Mechanisms",
+      "label": "sec:mechanisms-pe",
+      "level": 1
+    },
+    {
+      "title": "Information Channels",
+      "label": "sec:info-channels",
+      "level": 2
+    },
+    {
+      "title": "Voter Learning",
+      "label": "sec:voter-learning",
+      "level": 2
+    },
+    {
+      "title": "Deterrence Effects",
+      "label": "sec:deterrence",
+      "level": 1
+    },
+    {
+      "title": "Robustness and Placebo Tests",
+      "label": "sec:robustness-pe",
+      "level": 1
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-pe",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Proofs",
+      "label": "sec:appendix-a-pe",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Balance and Sample",
+      "label": "sec:appendix-b-pe",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "summary-stats",
+      "caption": "Summary Statistics",
+      "label": "tab:summary-stats",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "31.4",
+          "role": "data",
+          "variable": "Population (thousands)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "98.2",
+          "role": "data",
+          "variable": "Population (thousands)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.8",
+          "role": "data",
+          "variable": "Population (thousands)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1,024.3",
+          "role": "data",
+          "variable": "Population (thousands)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "1,891",
+          "role": "data",
+          "variable": "Population (thousands)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Population (thousands)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Population (thousands)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Population (thousands)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Population (thousands)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Population (thousands)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "7.82",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.64",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "5.91",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "9.84",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "1,891",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.74",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.14",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.31",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.97",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "1,891",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.58",
+          "role": "data",
+          "variable": "Urbanization rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.24",
+          "role": "data",
+          "variable": "Urbanization rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Urbanization rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Urbanization rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "1,891",
+          "role": "data",
+          "variable": "Urbanization rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Urbanization rate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Urbanization rate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Urbanization rate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Urbanization rate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Urbanization rate",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "2.41",
+          "role": "data",
+          "variable": "Number of local radio stations",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "2.18",
+          "role": "data",
+          "variable": "Number of local radio stations",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0",
+          "role": "data",
+          "variable": "Number of local radio stations",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "14",
+          "role": "data",
+          "variable": "Number of local radio stations",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 5,
+          "text": "1,891",
+          "role": "data",
+          "variable": "Number of local radio stations",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Number of local radio stations",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Number of local radio stations",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Number of local radio stations",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Number of local radio stations",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Number of local radio stations",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.34",
+          "role": "data",
+          "variable": "Has local newspaper",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.47",
+          "role": "data",
+          "variable": "Has local newspaper",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0",
+          "role": "data",
+          "variable": "Has local newspaper",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "1",
+          "role": "data",
+          "variable": "Has local newspaper",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 5,
+          "text": "1,891",
+          "role": "data",
+          "variable": "Has local newspaper",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Has local newspaper",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Has local newspaper",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Has local newspaper",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Has local newspaper",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Has local newspaper",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.082",
+          "role": "data",
+          "variable": "Audit irregularities (share of resources)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "0.104",
+          "role": "data",
+          "variable": "Audit irregularities (share of resources)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "0.000",
+          "role": "data",
+          "variable": "Audit irregularities (share of resources)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "0.891",
+          "role": "data",
+          "variable": "Audit irregularities (share of resources)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 5,
+          "text": "1,891",
+          "role": "data",
+          "variable": "Audit irregularities (share of resources)",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Audit irregularities (share of resources)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Audit irregularities (share of resources)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Audit irregularities (share of resources)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Audit irregularities (share of resources)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Audit irregularities (share of resources)",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "0.42",
+          "role": "data",
+          "variable": "Re-election rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "0.49",
+          "role": "data",
+          "variable": "Re-election rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "0",
+          "role": "data",
+          "variable": "Re-election rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "1",
+          "role": "data",
+          "variable": "Re-election rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 5,
+          "text": "1,456",
+          "role": "data",
+          "variable": "Re-election rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Re-election rate",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Re-election rate",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Re-election rate",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Re-election rate",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Re-election rate",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean share of resources with audit irregularities?",
+          "answer": "0.082 (8.2 percent)"
+        },
+        {
+          "question": "How many municipalities are in the sample?",
+          "answer": "1,891"
+        },
+        {
+          "question": "What fraction of municipalities have a local newspaper?",
+          "answer": "0.34 (34 percent)"
+        },
+        {
+          "question": "What is the mean number of local radio stations?",
+          "answer": "2.41"
+        }
+      ]
+    },
+    {
+      "table_id": "main-results",
+      "caption": "Effect of Audit Disclosure on Electoral Accountability",
+      "label": "tab:main-results",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.041***",
+          "role": "data",
+          "variable": "Audit disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.038***",
+          "role": "data",
+          "variable": "Audit disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.036***",
+          "role": "data",
+          "variable": "Audit disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.034***",
+          "role": "data",
+          "variable": "Audit disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "-0.032***",
+          "role": "data",
+          "variable": "Audit disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Audit disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Audit disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Audit disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Audit disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Audit disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Irregularity share",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.112***",
+          "role": "data",
+          "variable": "Irregularity share",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.108***",
+          "role": "data",
+          "variable": "Irregularity share",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.094***",
+          "role": "data",
+          "variable": "Irregularity share",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "-0.091***",
+          "role": "data",
+          "variable": "Irregularity share",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Irregularity share",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Irregularity share",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Irregularity share",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Irregularity share",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Irregularity share",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.084***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.078***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "-0.074***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "(0.029)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 5,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.014",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.028",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.034",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.118",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 5,
+          "text": "0.184",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the main effect of audit disclosure on incumbent vote share?",
+          "answer": "-0.041 (4.1 percentage point decrease) in column 1"
+        },
+        {
+          "question": "What is the interaction effect of disclosure and irregularity share?",
+          "answer": "-0.084 in column 3, indicating larger electoral penalties in more corrupt municipalities"
+        },
+        {
+          "question": "What controls are included in column 5?",
+          "answer": "Municipality controls and state fixed effects"
+        },
+        {
+          "question": "How are standard errors clustered?",
+          "answer": "At the state level"
+        }
+      ]
+    },
+    {
+      "table_id": "reelection",
+      "caption": "Effect of Audit Disclosure on Re-Election Probability",
+      "label": "tab:reelection",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.098***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ High irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.091***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ High irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.084***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ High irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.078***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ High irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ High irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ High irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.025)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ High irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.026)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ High irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.012",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Low irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.008",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Low irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.004",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Low irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.002",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Low irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Low irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Low irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Low irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Low irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.38",
+          "role": "summary",
+          "label": "Control mean (high irr.)"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.38",
+          "role": "summary",
+          "label": "Control mean (high irr.)"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.38",
+          "role": "summary",
+          "label": "Control mean (high irr.)"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.38",
+          "role": "summary",
+          "label": "Control mean (high irr.)"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.48",
+          "role": "summary",
+          "label": "Control mean (low irr.)"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.48",
+          "role": "summary",
+          "label": "Control mean (low irr.)"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.48",
+          "role": "summary",
+          "label": "Control mean (low irr.)"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.48",
+          "role": "summary",
+          "label": "Control mean (low irr.)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does audit disclosure reduce re-election of corrupt mayors?",
+          "answer": "Yes, by 9.8 percentage points for high-irregularity mayors (column 1)"
+        },
+        {
+          "question": "Does audit disclosure affect re-election of non-corrupt mayors?",
+          "answer": "No, the effect for low-irregularity mayors is -0.012 and insignificant"
+        },
+        {
+          "question": "What is the control mean re-election rate for high-irregularity mayors?",
+          "answer": "0.38 (38 percent)"
+        }
+      ]
+    },
+    {
+      "table_id": "media-interaction",
+      "caption": "Media Exposure and the Electoral Effect of Audits",
+      "label": "tab:media-interaction",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.024",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.028",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.018",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.022",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.032)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.034)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.033)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irregularity",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.058***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Local radio",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Local radio",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.042**",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Local radio",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Local radio",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Local radio",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Local radio",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Local radio",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Local radio",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Newspaper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-0.071***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Newspaper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Newspaper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.054***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Newspaper",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Newspaper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.022)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Newspaper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Newspaper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. $\\times$ Newspaper",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.138",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.141",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.198",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.201",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is the electoral penalty from audits larger in municipalities with local radio?",
+          "answer": "Yes, the triple interaction is -0.058 (significant at 1% level)"
+        },
+        {
+          "question": "Is the electoral penalty from audits larger in municipalities with newspapers?",
+          "answer": "Yes, the triple interaction is -0.071 (significant at 1% level)"
+        },
+        {
+          "question": "Is there an electoral penalty in municipalities without media?",
+          "answer": "The base interaction is -0.024, small and insignificant, suggesting minimal penalty without media"
+        }
+      ]
+    },
+    {
+      "table_id": "rd-results",
+      "caption": "Regression Discontinuity: Audit Disclosure Timing",
+      "label": "tab:rd-results",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.038***",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.084**",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.024**",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.218***",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.062)",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "-0.041***",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "-0.091**",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.028**",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.241***",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Disclosed before election",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "512",
+          "role": "summary",
+          "label": "Observations (h=60)"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "512",
+          "role": "summary",
+          "label": "Observations (h=60)"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "512",
+          "role": "summary",
+          "label": "Observations (h=60)"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "512",
+          "role": "summary",
+          "label": "Observations (h=60)"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "684",
+          "role": "summary",
+          "label": "Observations (h=90)"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "684",
+          "role": "summary",
+          "label": "Observations (h=90)"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "684",
+          "role": "summary",
+          "label": "Observations (h=90)"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "684",
+          "role": "summary",
+          "label": "Observations (h=90)"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "60",
+          "role": "summary",
+          "label": "Bandwidth (days)"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "60",
+          "role": "summary",
+          "label": "Bandwidth (days)"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "60",
+          "role": "summary",
+          "label": "Bandwidth (days)"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "60",
+          "role": "summary",
+          "label": "Bandwidth (days)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the RD estimate of audit disclosure on vote share?",
+          "answer": "-0.038 with the local linear estimator"
+        },
+        {
+          "question": "Does audit disclosure increase voter turnout?",
+          "answer": "Yes, by 2.4 percentage points (local linear)"
+        },
+        {
+          "question": "Does audit disclosure increase challenger entry?",
+          "answer": "Yes, by 21.8 percentage points"
+        }
+      ]
+    },
+    {
+      "table_id": "mechanisms",
+      "caption": "Mechanisms: How Information Reaches Voters",
+      "label": "tab:mechanisms",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "Audit disclosed",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.284***",
+          "role": "data",
+          "variable": "Audit disclosed",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.168***",
+          "role": "data",
+          "variable": "Audit disclosed",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.342***",
+          "role": "data",
+          "variable": "Audit disclosed",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Audit disclosed",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Audit disclosed",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Audit disclosed",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Audit disclosed",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.184***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. share",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.142***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. share",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.098**",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. share",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.218***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. share",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.052)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. share",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. share",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. share",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr. share",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "1,891",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "1,891",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "4,812",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.12",
+          "role": "summary",
+          "label": "Control mean"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.08",
+          "role": "summary",
+          "label": "Control mean"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.14",
+          "role": "summary",
+          "label": "Control mean"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.18",
+          "role": "summary",
+          "label": "Control mean"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does audit disclosure increase radio coverage?",
+          "answer": "Yes, by 41.2 percentage points"
+        },
+        {
+          "question": "Does disclosure increase voter awareness of corruption?",
+          "answer": "Yes, by 34.2 percentage points"
+        },
+        {
+          "question": "What is the control mean of voter awareness?",
+          "answer": "0.18 (18 percent)"
+        }
+      ]
+    },
+    {
+      "table_id": "corruption-outcomes",
+      "caption": "Effect of Audit Disclosure on Subsequent Corruption",
+      "label": "tab:corruption-outcomes",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.028***",
+          "role": "data",
+          "variable": "Prior audit disclosed",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.024***",
+          "role": "data",
+          "variable": "Prior audit disclosed",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.022**",
+          "role": "data",
+          "variable": "Prior audit disclosed",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.018**",
+          "role": "data",
+          "variable": "Prior audit disclosed",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Prior audit disclosed",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Prior audit disclosed",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Prior audit disclosed",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Prior audit disclosed",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Prior irregularity share",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.384***",
+          "role": "data",
+          "variable": "Prior irregularity share",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.371***",
+          "role": "data",
+          "variable": "Prior irregularity share",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.362***",
+          "role": "data",
+          "variable": "Prior irregularity share",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Prior irregularity share",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Prior irregularity share",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Prior irregularity share",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Prior irregularity share",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Prior irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Prior irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.148***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Prior irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.134***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Prior irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Prior irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Prior irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Prior irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.049)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Prior irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "842",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "842",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "842",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "842",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.012",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.158",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.172",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.248",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does audit disclosure reduce subsequent corruption?",
+          "answer": "Yes, by 2.8 percentage points of federal transfers (column 1)"
+        },
+        {
+          "question": "Is the persistence of corruption significant?",
+          "answer": "Yes, prior irregularity share coefficient is 0.384 (highly persistent)"
+        },
+        {
+          "question": "Is the deterrence effect larger for more corrupt municipalities?",
+          "answer": "Yes, the interaction is -0.148, indicating stronger deterrence where prior corruption was higher"
+        }
+      ]
+    },
+    {
+      "table_id": "robustness",
+      "caption": "Robustness: Alternative Specifications",
+      "label": "tab:robustness",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.074***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.068***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.081***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.064***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "-0.078***",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.029)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(0.030)",
+          "role": "data",
+          "variable": "Disclosed $\\times$ Irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1,384",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "1,456",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Are results robust to dropping top 5% outliers?",
+          "answer": "Yes, the coefficient is -0.081 (slightly larger), significant at 1%"
+        },
+        {
+          "question": "Are results robust to ordered probit?",
+          "answer": "Yes, the coefficient is -0.068, significant at 1%"
+        }
+      ]
+    },
+    {
+      "table_id": "placebo",
+      "caption": "Placebo Tests: Pre-Audit Electoral Outcomes",
+      "label": "tab:placebo",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.004",
+          "role": "data",
+          "variable": "Will be disclosed",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.008",
+          "role": "data",
+          "variable": "Will be disclosed",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.002",
+          "role": "data",
+          "variable": "Will be disclosed",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Will be disclosed",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.021)",
+          "role": "data",
+          "variable": "Will be disclosed",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Will be disclosed",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.012",
+          "role": "data",
+          "variable": "Will be disclosed $\\times$ Irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.018",
+          "role": "data",
+          "variable": "Will be disclosed $\\times$ Irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.008",
+          "role": "data",
+          "variable": "Will be disclosed $\\times$ Irr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Will be disclosed $\\times$ Irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Will be disclosed $\\times$ Irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Will be disclosed $\\times$ Irr.",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "1,224",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "1,224",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1,224",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Do placebo tests reject the null?",
+          "answer": "No, all coefficients are small and insignificant, supporting the identification strategy"
+        }
+      ]
+    },
+    {
+      "table_id": "proofs-block",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-audit-process",
+      "caption": "Appendix: Audit Lottery Selection and Balance",
+      "label": "tab:appendix-audit",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "9.84",
+          "role": "data",
+          "variable": "Log population",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "9.81",
+          "role": "data",
+          "variable": "Log population",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.03",
+          "role": "data",
+          "variable": "Log population",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.62",
+          "role": "data",
+          "variable": "Log population",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log population",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log population",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log population",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log population",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "7.81",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "7.84",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.03",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.54",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log per capita income",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.57",
+          "role": "data",
+          "variable": "Urbanization",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.58",
+          "role": "data",
+          "variable": "Urbanization",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "Urbanization",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.68",
+          "role": "data",
+          "variable": "Urbanization",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Urbanization",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Urbanization",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Urbanization",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Urbanization",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.73",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.74",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Literacy rate",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.31",
+          "role": "data",
+          "variable": "Mayor party alignment",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.32",
+          "role": "data",
+          "variable": "Mayor party alignment",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "Mayor party alignment",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.72",
+          "role": "data",
+          "variable": "Mayor party alignment",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Mayor party alignment",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Mayor party alignment",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Mayor party alignment",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Mayor party alignment",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "summary",
+          "label": "Joint F-test p-value"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "summary",
+          "label": "Joint F-test p-value"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "summary",
+          "label": "Joint F-test p-value"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "0.78",
+          "role": "summary",
+          "label": "Joint F-test p-value"
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "1,891",
+          "role": "summary",
+          "label": "N municipalities"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "3,648",
+          "role": "summary",
+          "label": "N municipalities"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "",
+          "role": "summary",
+          "label": "N municipalities"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "",
+          "role": "summary",
+          "label": "N municipalities"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is the audit lottery random?",
+          "answer": "Yes, the joint F-test p-value is 0.78, confirming balance"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "voting-model",
+      "label": "eq:voting",
+      "latex": "v_i^* = \\mu + \\beta D_i + \\gamma C_i + \\delta (D_i \\times C_i) + X_i'\\theta + \\varepsilon_i",
+      "description": "Voting model: $v_i^*$ is incumbent vote share, $D_i$ is disclosure indicator, $C_i$ is corruption measure, and the interaction $D_i \\times C_i$ captures information-dependent accountability.",
+      "qa": [
+        {
+          "question": "What does the interaction term D_i x C_i capture?",
+          "answer": "The additional electoral penalty for corruption that occurs when voters are informed by audit disclosure"
+        }
+      ]
+    },
+    {
+      "eq_id": "bayesian-updating",
+      "label": "eq:bayesian",
+      "latex": "\\dot{\\pi}_i = \\frac{\\int_0^1 \\Pr(s_i | \\pi_H, \\omega)\\, d\\omega}{\\int_0^1 \\Pr(s_i | \\pi_H, \\omega)\\, d\\omega + \\int_0^1 \\Pr(s_i | \\pi_L, \\omega)\\, d\\omega} \\cdot \\frac{\\Pr(\\pi_H)}{\\Pr(\\pi_H) + \\Pr(\\pi_L)}",
+      "description": "Bayesian updating: voter posterior belief about incumbent type ($\\pi_H$ = honest) given audit signal $s_i$.",
+      "qa": []
+    },
+    {
+      "eq_id": "optimal-vote",
+      "label": "eq:optimal-vote",
+      "latex": "\\text{Vote}_i = \\mathbf{1}\\left\\{\\hat{\\pi}_i > \\bar{\\pi}(b_C)\\right\\}, \\quad \\bar{\\pi}(b_C) = \\frac{u(b_C)}{u(b_H) - u(b_D)}",
+      "description": "Optimal voting rule: re-elect the incumbent iff the posterior probability of honesty exceeds a threshold determined by the relative payoffs.",
+      "qa": []
+    },
+    {
+      "eq_id": "accountability-condition",
+      "label": "eq:accountability",
+      "latex": "\\frac{\\partial v}{\\partial C} \\bigg|_{D=1} = \\gamma + \\delta < 0 \\quad \\text{(informed accountability)}",
+      "description": "Accountability condition: when audits are disclosed ($D=1$), the electoral penalty for corruption is $\\gamma + \\delta$. The key prediction is $\\delta < 0$.",
+      "qa": []
+    },
+    {
+      "eq_id": "deterrence",
+      "label": "eq:deterrence",
+      "latex": "\\dot{C}_t^* = \\arg\\max_{C} \\left\\{\\int_0^\\infty R(C, \\omega)\\, d\\omega - p \\cdot L(C) - (1-p) \\cdot \\begin{bmatrix} \\Pr(\\text{audit}) \\\\ \\Delta \\dot{v}(C) \\\\ V \\end{bmatrix}' \\begin{bmatrix} 1 \\\\ 1 \\\\ 1 \\end{bmatrix}\\right\\}",
+      "description": "Official's optimal corruption $C^*$: balances rent extraction $R(C)$, legal penalty $L(C)$, and electoral sanction $\\Delta v(C)$ weighted by audit probability and value of office $V$.",
+      "qa": [
+        {
+          "question": "What determines the optimal level of corruption?",
+          "answer": "The tradeoff between rents from corruption, legal penalties, and electoral sanctions conditional on audit probability"
+        }
+      ]
+    },
+    {
+      "eq_id": "rd-specification",
+      "label": "eq:rd",
+      "latex": "v_i = \\alpha + \\tau \\cdot \\mathbf{1}(d_i > 0) + f(d_i) + X_i'\\gamma + \\varepsilon_i, \\quad d_i = \\text{election date} - \\text{audit release date}",
+      "description": "Regression discontinuity: $d_i$ is days between audit release and election. Treatment: audit disclosed before election ($d_i > 0$). $f(d_i)$ is local polynomial.",
+      "qa": []
+    },
+    {
+      "eq_id": "media-channel",
+      "label": "eq:media-channel",
+      "latex": "v_i^* = \\mu + \\beta D_i + \\gamma C_i + \\delta_1 (D_i \\times C_i \\times M_i) + \\delta_0 (D_i \\times C_i \\times (1-M_i)) + X_i'\\theta + \\varepsilon_i",
+      "description": "Extended model decomposing accountability by media presence $M_i$. Tests whether electoral punishment requires media to inform voters.",
+      "qa": []
+    },
+    {
+      "eq_id": "information-value",
+      "label": "eq:voi",
+      "latex": "\\text{VOI} = E_s\\left[\\max_a u(a, \\theta) | s\\right] - \\max_a E_\\theta\\left[u(a, \\theta)\\right]",
+      "description": "Value of information (VOI): expected gain from making informed decisions (conditional on signal $s$) minus the value of the best uninformed decision.",
+      "qa": []
+    },
+    {
+      "eq_id": "persistence-model",
+      "label": "eq:persistence",
+      "latex": "\\dot{C}_{i,t+1} = \\rho \\ddot{C}_{i,t} + \\phi D_{i,t} \\times \\dot{C}_{i,t} + X_{i,t}'\\begin{bmatrix}\\psi_1 \\\\ \\psi_2 \\\\ \\vdots \\\\ \\psi_K\\end{bmatrix} + \\eta_{i,t}",
+      "description": "Persistence of corruption: $\\rho$ captures baseline persistence; $\\phi$ measures the deterrence effect of disclosure on future corruption.",
+      "qa": []
+    },
+    {
+      "eq_id": "welfare-selection",
+      "label": "eq:welfare",
+      "latex": "\\Delta W = \\underbrace{\\Pr(\\text{high type elected} | D=1) - \\Pr(\\text{high type elected} | D=0)}_{\\text{selection effect}} \\times (V_H - V_L)",
+      "description": "Welfare gain from audit disclosure: improved selection of honest politicians times the value difference between high and low types.",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main identification strategy?",
+      "answer": "Random audit lottery combined with quasi-random timing of audit disclosure relative to elections"
+    },
+    {
+      "question": "What is the main effect of audit disclosure on incumbent vote share?",
+      "answer": "-4.1 percentage points (ITT)"
+    },
+    {
+      "question": "How does media amplify the accountability effect?",
+      "answer": "The triple interaction of disclosure, corruption, and radio presence adds -5.8 percentage points"
+    },
+    {
+      "question": "Does disclosure reduce future corruption?",
+      "answer": "Yes, by 2.8 percentage points in subsequent audits"
+    },
+    {
+      "question": "How many municipalities are in the sample?",
+      "answer": "1,891 audited municipalities, 1,456 with incumbent re-election data"
+    },
+    {
+      "question": "What is the mean share of resources with audit irregularities?",
+      "answer": "0.082 (8.2 percent)"
+    },
+    {
+      "question": "How many municipalities are in the sample?",
+      "answer": "1,891"
+    },
+    {
+      "question": "What fraction of municipalities have a local newspaper?",
+      "answer": "0.34 (34 percent)"
+    },
+    {
+      "question": "What is the mean number of local radio stations?",
+      "answer": "2.41"
+    },
+    {
+      "question": "What is the main effect of audit disclosure on incumbent vote share?",
+      "answer": "-0.041 (4.1 percentage point decrease) in column 1"
+    },
+    {
+      "question": "What is the interaction effect of disclosure and irregularity share?",
+      "answer": "-0.084 in column 3, indicating larger electoral penalties in more corrupt municipalities"
+    },
+    {
+      "question": "What controls are included in column 5?",
+      "answer": "Municipality controls and state fixed effects"
+    },
+    {
+      "question": "How are standard errors clustered?",
+      "answer": "At the state level"
+    },
+    {
+      "question": "Does audit disclosure reduce re-election of corrupt mayors?",
+      "answer": "Yes, by 9.8 percentage points for high-irregularity mayors (column 1)"
+    },
+    {
+      "question": "Does audit disclosure affect re-election of non-corrupt mayors?",
+      "answer": "No, the effect for low-irregularity mayors is -0.012 and insignificant"
+    },
+    {
+      "question": "What is the control mean re-election rate for high-irregularity mayors?",
+      "answer": "0.38 (38 percent)"
+    },
+    {
+      "question": "Is the electoral penalty from audits larger in municipalities with local radio?",
+      "answer": "Yes, the triple interaction is -0.058 (significant at 1% level)"
+    },
+    {
+      "question": "Is the electoral penalty from audits larger in municipalities with newspapers?",
+      "answer": "Yes, the triple interaction is -0.071 (significant at 1% level)"
+    },
+    {
+      "question": "Is there an electoral penalty in municipalities without media?",
+      "answer": "The base interaction is -0.024, small and insignificant, suggesting minimal penalty without media"
+    },
+    {
+      "question": "What is the RD estimate of audit disclosure on vote share?",
+      "answer": "-0.038 with the local linear estimator"
+    },
+    {
+      "question": "Does audit disclosure increase voter turnout?",
+      "answer": "Yes, by 2.4 percentage points (local linear)"
+    },
+    {
+      "question": "Does audit disclosure increase challenger entry?",
+      "answer": "Yes, by 21.8 percentage points"
+    },
+    {
+      "question": "Does audit disclosure increase radio coverage?",
+      "answer": "Yes, by 41.2 percentage points"
+    },
+    {
+      "question": "Does disclosure increase voter awareness of corruption?",
+      "answer": "Yes, by 34.2 percentage points"
+    },
+    {
+      "question": "What is the control mean of voter awareness?",
+      "answer": "0.18 (18 percent)"
+    },
+    {
+      "question": "Does audit disclosure reduce subsequent corruption?",
+      "answer": "Yes, by 2.8 percentage points of federal transfers (column 1)"
+    },
+    {
+      "question": "Is the persistence of corruption significant?",
+      "answer": "Yes, prior irregularity share coefficient is 0.384 (highly persistent)"
+    },
+    {
+      "question": "Is the deterrence effect larger for more corrupt municipalities?",
+      "answer": "Yes, the interaction is -0.148, indicating stronger deterrence where prior corruption was higher"
+    },
+    {
+      "question": "Are results robust to dropping top 5% outliers?",
+      "answer": "Yes, the coefficient is -0.081 (slightly larger), significant at 1%"
+    },
+    {
+      "question": "Are results robust to ordered probit?",
+      "answer": "Yes, the coefficient is -0.068, significant at 1%"
+    },
+    {
+      "question": "Do placebo tests reject the null?",
+      "answer": "No, all coefficients are small and insignificant, supporting the identification strategy"
+    },
+    {
+      "question": "Is the audit lottery random?",
+      "answer": "Yes, the joint F-test p-value is 0.78, confirming balance"
+    },
+    {
+      "question": "What does the interaction term D_i x C_i capture?",
+      "answer": "The additional electoral penalty for corruption that occurs when voters are informed by audit disclosure"
+    },
+    {
+      "question": "What determines the optimal level of corruption?",
+      "answer": "The tradeoff between rents from corruption, legal penalties, and electoral sanctions conditional on audit probability"
+    }
+  ]
+}

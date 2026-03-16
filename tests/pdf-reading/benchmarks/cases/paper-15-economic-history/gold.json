@@ -1,0 +1,4069 @@
+{
+  "paper_id": "15",
+  "field": "economic-history",
+  "title": "The Long-Run Effects of the Slave Trade on Economic Development in Africa",
+  "journal_style": "typewriter",
+  "target_pages": 50,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-econhist",
+      "level": 1
+    },
+    {
+      "title": "Historical Background: The African Slave Trades",
+      "label": "sec:history",
+      "level": 1
+    },
+    {
+      "title": "Four Slave Trades of Africa",
+      "label": "sec:history-trades",
+      "level": 2
+    },
+    {
+      "title": "Mechanisms of Economic Disruption",
+      "label": "sec:history-mechanisms",
+      "level": 2
+    },
+    {
+      "title": "Historical Data Sources",
+      "label": "sec:history-data",
+      "level": 2
+    },
+    {
+      "title": "Empirical Strategy",
+      "label": "sec:empirical-econhist",
+      "level": 1
+    },
+    {
+      "title": "OLS Specification",
+      "label": "sec:empirical-ols",
+      "level": 2
+    },
+    {
+      "title": "Instrumental Variables Strategy",
+      "label": "sec:empirical-iv",
+      "level": 2
+    },
+    {
+      "title": "Identification Concerns",
+      "label": "sec:empirical-id",
+      "level": 2
+    },
+    {
+      "title": "Main Results",
+      "label": "sec:results-econhist",
+      "level": 1
+    },
+    {
+      "title": "OLS Evidence",
+      "label": "sec:results-ols",
+      "level": 2
+    },
+    {
+      "title": "Instrumental Variables Estimates",
+      "label": "sec:results-iv",
+      "level": 2
+    },
+    {
+      "title": "Long-Run Persistence",
+      "label": "sec:results-persistence",
+      "level": 2
+    },
+    {
+      "title": "Mechanisms",
+      "label": "sec:mechanisms-econhist",
+      "level": 1
+    },
+    {
+      "title": "Ethnic Fractionalization Channel",
+      "label": "sec:mech-ethnic",
+      "level": 2
+    },
+    {
+      "title": "Social Trust Channel",
+      "label": "sec:mech-trust",
+      "level": 2
+    },
+    {
+      "title": "Institutional Channel",
+      "label": "sec:mech-institutions",
+      "level": 2
+    },
+    {
+      "title": "Robustness",
+      "label": "sec:robustness-econhist",
+      "level": 1
+    },
+    {
+      "title": "Falsification Tests",
+      "label": "sec:robust-falsify",
+      "level": 2
+    },
+    {
+      "title": "Alternative Specifications",
+      "label": "sec:robust-specs",
+      "level": 2
+    },
+    {
+      "title": "Addressing Measurement Error",
+      "label": "sec:robust-meas",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-econhist",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Theoretical Proofs",
+      "label": "sec:appendix-a-econhist",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Data Construction",
+      "label": "sec:appendix-b-econhist",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Additional Robustness",
+      "label": "sec:appendix-c-econhist",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "appendix-historical",
+      "caption": "Appendix: Historical Slave Trade Data Validation",
+      "label": "tab:appendix-historical",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "8,141",
+          "role": "data",
+          "variable": "Total Exports (all periods)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "2,414",
+          "role": "data",
+          "variable": "Total Exports (all periods)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1,241",
+          "role": "data",
+          "variable": "Total Exports (all periods)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "11,796",
+          "role": "data",
+          "variable": "Total Exports (all periods)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Total Exports (all periods)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Total Exports (all periods)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Total Exports (all periods)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Total Exports (all periods)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "481",
+          "role": "data",
+          "variable": "Peak period exports (per decade)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "142",
+          "role": "data",
+          "variable": "Peak period exports (per decade)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "64",
+          "role": "data",
+          "variable": "Peak period exports (per decade)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "687",
+          "role": "data",
+          "variable": "Peak period exports (per decade)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Peak period exports (per decade)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Peak period exports (per decade)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Peak period exports (per decade)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Peak period exports (per decade)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "41",
+          "role": "data",
+          "variable": "Countries with exports > 0",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "28",
+          "role": "data",
+          "variable": "Countries with exports > 0",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "21",
+          "role": "data",
+          "variable": "Countries with exports > 0",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "48",
+          "role": "data",
+          "variable": "Countries with exports > 0",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Countries with exports > 0",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Countries with exports > 0",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Countries with exports > 0",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Countries with exports > 0",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.841",
+          "role": "data",
+          "variable": "Correlation: shipping vs. census",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.784",
+          "role": "data",
+          "variable": "Correlation: shipping vs. census",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.714",
+          "role": "data",
+          "variable": "Correlation: shipping vs. census",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.871",
+          "role": "data",
+          "variable": "Correlation: shipping vs. census",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation: shipping vs. census",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation: shipping vs. census",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation: shipping vs. census",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation: shipping vs. census",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.924",
+          "role": "data",
+          "variable": "Correlation: trade route variants",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.894",
+          "role": "data",
+          "variable": "Correlation: trade route variants",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.841",
+          "role": "data",
+          "variable": "Correlation: trade route variants",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.941",
+          "role": "data",
+          "variable": "Correlation: trade route variants",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation: trade route variants",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation: trade route variants",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation: trade route variants",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation: trade route variants",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "52",
+          "role": "summary",
+          "label": "Countries with data"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "52",
+          "role": "summary",
+          "label": "Countries with data"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "52",
+          "role": "summary",
+          "label": "Countries with data"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "52",
+          "role": "summary",
+          "label": "Countries with data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "How many total slaves were exported across all trade routes?",
+          "answer": "11,796 thousand"
+        },
+        {
+          "question": "What fraction of countries have positive Atlantic slave exports?",
+          "answer": "41 out of 52 countries (79 percent)"
+        }
+      ]
+    },
+    {
+      "table_id": "country-summary",
+      "caption": "Summary Statistics: Country-Level Variables",
+      "label": "tab:country-summary",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "7.84",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP, 2000)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.14",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP, 2000)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "5.42",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP, 2000)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "10.21",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP, 2000)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP, 2000)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP, 2000)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP, 2000)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP, 2000)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.84",
+          "role": "data",
+          "variable": "Real GDP Growth 1970-2000 (\\%/yr)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "2.41",
+          "role": "data",
+          "variable": "Real GDP Growth 1970-2000 (\\%/yr)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-3.12",
+          "role": "data",
+          "variable": "Real GDP Growth 1970-2000 (\\%/yr)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "8.14",
+          "role": "data",
+          "variable": "Real GDP Growth 1970-2000 (\\%/yr)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Real GDP Growth 1970-2000 (\\%/yr)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Real GDP Growth 1970-2000 (\\%/yr)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Real GDP Growth 1970-2000 (\\%/yr)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Real GDP Growth 1970-2000 (\\%/yr)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "21.4",
+          "role": "data",
+          "variable": "Investment Rate (\\% GDP)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "8.2",
+          "role": "data",
+          "variable": "Investment Rate (\\% GDP)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "4.1",
+          "role": "data",
+          "variable": "Investment Rate (\\% GDP)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "42.8",
+          "role": "data",
+          "variable": "Investment Rate (\\% GDP)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Investment Rate (\\% GDP)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Investment Rate (\\% GDP)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Investment Rate (\\% GDP)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Investment Rate (\\% GDP)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.421",
+          "role": "data",
+          "variable": "Slaves Exported (log, normalized by area)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "1.842",
+          "role": "data",
+          "variable": "Slaves Exported (log, normalized by area)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "-5.298",
+          "role": "data",
+          "variable": "Slaves Exported (log, normalized by area)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "4.211",
+          "role": "data",
+          "variable": "Slaves Exported (log, normalized by area)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Slaves Exported (log, normalized by area)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Slaves Exported (log, normalized by area)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Slaves Exported (log, normalized by area)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Slaves Exported (log, normalized by area)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.281",
+          "role": "data",
+          "variable": "Atlantic Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "1.614",
+          "role": "data",
+          "variable": "Atlantic Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Atlantic Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "4.012",
+          "role": "data",
+          "variable": "Atlantic Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Atlantic Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Atlantic Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Atlantic Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Atlantic Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.112",
+          "role": "data",
+          "variable": "Indian Ocean Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.814",
+          "role": "data",
+          "variable": "Indian Ocean Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Indian Ocean Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "2.814",
+          "role": "data",
+          "variable": "Indian Ocean Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Indian Ocean Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Indian Ocean Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Indian Ocean Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Indian Ocean Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.028",
+          "role": "data",
+          "variable": "Red Sea Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "0.241",
+          "role": "data",
+          "variable": "Red Sea Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Red Sea Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "1.214",
+          "role": "data",
+          "variable": "Red Sea Slave Trade Exports",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Red Sea Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Red Sea Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Red Sea Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Red Sea Slave Trade Exports",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "0.614",
+          "role": "data",
+          "variable": "Ethnic Fractionalization (ELF index)",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "0.248",
+          "role": "data",
+          "variable": "Ethnic Fractionalization (ELF index)",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "0.041",
+          "role": "data",
+          "variable": "Ethnic Fractionalization (ELF index)",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "0.981",
+          "role": "data",
+          "variable": "Ethnic Fractionalization (ELF index)",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Ethnic Fractionalization (ELF index)",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Ethnic Fractionalization (ELF index)",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Ethnic Fractionalization (ELF index)",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Ethnic Fractionalization (ELF index)",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "0.148",
+          "role": "data",
+          "variable": "Trust (World Values Survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "0.114",
+          "role": "data",
+          "variable": "Trust (World Values Survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "0.021",
+          "role": "data",
+          "variable": "Trust (World Values Survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "0.481",
+          "role": "data",
+          "variable": "Trust (World Values Survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Trust (World Values Survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Trust (World Values Survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Trust (World Values Survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Trust (World Values Survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "-0.412",
+          "role": "data",
+          "variable": "Rule of Law Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "0.814",
+          "role": "data",
+          "variable": "Rule of Law Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "-2.141",
+          "role": "data",
+          "variable": "Rule of Law Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 4,
+          "text": "1.984",
+          "role": "data",
+          "variable": "Rule of Law Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 22,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Rule of Law Index",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Rule of Law Index",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Rule of Law Index",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Rule of Law Index",
+          "is_stderr": true
+        },
+        {
+          "row": 23,
+          "col": 1,
+          "text": "52",
+          "role": "summary",
+          "label": "Countries"
+        },
+        {
+          "row": 23,
+          "col": 2,
+          "text": "52",
+          "role": "summary",
+          "label": "Countries"
+        },
+        {
+          "row": 23,
+          "col": 3,
+          "text": "52",
+          "role": "summary",
+          "label": "Countries"
+        },
+        {
+          "row": 23,
+          "col": 4,
+          "text": "52",
+          "role": "summary",
+          "label": "Countries"
+        },
+        {
+          "row": 24,
+          "col": 1,
+          "text": "40",
+          "role": "summary",
+          "label": "Sub-Saharan African countries"
+        },
+        {
+          "row": 24,
+          "col": 2,
+          "text": "40",
+          "role": "summary",
+          "label": "Sub-Saharan African countries"
+        },
+        {
+          "row": 24,
+          "col": 3,
+          "text": "40",
+          "role": "summary",
+          "label": "Sub-Saharan African countries"
+        },
+        {
+          "row": 24,
+          "col": 4,
+          "text": "40",
+          "role": "summary",
+          "label": "Sub-Saharan African countries"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean log GDP per capita (PPP, 2000) for the sample?",
+          "answer": "7.84"
+        },
+        {
+          "question": "How many African countries are in the sample?",
+          "answer": "52"
+        },
+        {
+          "question": "What is the mean ethnic fractionalization index?",
+          "answer": "0.614"
+        },
+        {
+          "question": "What is the mean trust level from the World Values Survey?",
+          "answer": "0.148"
+        }
+      ]
+    },
+    {
+      "table_id": "ols-slave-gdp",
+      "caption": "OLS: Slave Trade and Contemporary Economic Development",
+      "label": "tab:ols-slave-gdp",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.214***",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.184***",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.162***",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.148***",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Log Atlantic Slave Trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Log Atlantic Slave Trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Log Atlantic Slave Trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Log Atlantic Slave Trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Atlantic Slave Trade",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Atlantic Slave Trade",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Atlantic Slave Trade",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Atlantic Slave Trade",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.141**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.128**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.121**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.114**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.062)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.842***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.814***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.784***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.761***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.178)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.182)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.179)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "-0.481**",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "-0.441**",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "-0.418**",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.218)",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.222)",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.218)",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Fraction Catholic",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "0.284",
+          "role": "data",
+          "variable": "Fraction Catholic",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "0.261",
+          "role": "data",
+          "variable": "Fraction Catholic",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "0.248",
+          "role": "data",
+          "variable": "Fraction Catholic",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Fraction Catholic",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "(0.214)",
+          "role": "data",
+          "variable": "Fraction Catholic",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "(0.218)",
+          "role": "data",
+          "variable": "Fraction Catholic",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "(0.214)",
+          "role": "data",
+          "variable": "Fraction Catholic",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "-0.284**",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "-0.261**",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "(0.128)",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "(0.124)",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Former British Colony",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Former British Colony",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Former British Colony",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "0.318**",
+          "role": "data",
+          "variable": "Former British Colony",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Former British Colony",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Former British Colony",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Former British Colony",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "(0.148)",
+          "role": "data",
+          "variable": "Former British Colony",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "0.341",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "0.398",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "0.421",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "0.448",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the OLS coefficient on log slaves exported in column 1?",
+          "answer": "-0.214"
+        },
+        {
+          "question": "What is the R-squared in column 4?",
+          "answer": "0.448"
+        },
+        {
+          "question": "What is the coefficient on absolute latitude in column 1?",
+          "answer": "0.842"
+        }
+      ]
+    },
+    {
+      "table_id": "iv-first-stage",
+      "caption": "IV First Stage: Distance to Coast as Instrument",
+      "label": "tab:iv-first-stage",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.814***",
+          "role": "data",
+          "variable": "Log Distance to Coast (coastline weighted)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.784***",
+          "role": "data",
+          "variable": "Log Distance to Coast (coastline weighted)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.761***",
+          "role": "data",
+          "variable": "Log Distance to Coast (coastline weighted)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.741***",
+          "role": "data",
+          "variable": "Log Distance to Coast (coastline weighted)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.084)",
+          "role": "data",
+          "variable": "Log Distance to Coast (coastline weighted)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.081)",
+          "role": "data",
+          "variable": "Log Distance to Coast (coastline weighted)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.084)",
+          "role": "data",
+          "variable": "Log Distance to Coast (coastline weighted)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.082)",
+          "role": "data",
+          "variable": "Log Distance to Coast (coastline weighted)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Log Distance to Ocean (area weighted)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.218***",
+          "role": "data",
+          "variable": "Log Distance to Ocean (area weighted)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.204***",
+          "role": "data",
+          "variable": "Log Distance to Ocean (area weighted)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.198***",
+          "role": "data",
+          "variable": "Log Distance to Ocean (area weighted)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Distance to Ocean (area weighted)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Log Distance to Ocean (area weighted)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "Log Distance to Ocean (area weighted)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.049)",
+          "role": "data",
+          "variable": "Log Distance to Ocean (area weighted)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.214***",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.198***",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.188***",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.181***",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.046)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.047)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.481***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.461***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.441***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-0.428***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.108)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.104)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.108)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.106)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "94.1",
+          "role": "summary",
+          "label": "F-statistic (excluded)"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "81.4",
+          "role": "summary",
+          "label": "F-statistic (excluded)"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "78.2",
+          "role": "summary",
+          "label": "F-statistic (excluded)"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "72.8",
+          "role": "summary",
+          "label": "F-statistic (excluded)"
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.648",
+          "role": "summary",
+          "label": "Partial R-squared"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "0.698",
+          "role": "summary",
+          "label": "Partial R-squared"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "0.712",
+          "role": "summary",
+          "label": "Partial R-squared"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.724",
+          "role": "summary",
+          "label": "Partial R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the first-stage F-statistic on excluded instruments in column 1?",
+          "answer": "94.1"
+        },
+        {
+          "question": "What is the first-stage coefficient on log distance to coast in column 1?",
+          "answer": "-0.814"
+        },
+        {
+          "question": "Is the instrument strong (F > 10)?",
+          "answer": "Yes, all first-stage F-statistics exceed 72"
+        }
+      ]
+    },
+    {
+      "table_id": "iv-second-stage",
+      "caption": "IV Second Stage: Slave Trade and Economic Development",
+      "label": "tab:iv-second-stage",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.318***",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.284***",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.291***",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.262***",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.062)",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.161**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.148**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.152**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.141**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.074)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.066)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.924***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.894***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.908***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.878***",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.198)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.191)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.204)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.188)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "94.1",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "78.2",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "78.2",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "72.8",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "--",
+          "role": "summary",
+          "label": "Hansen J p-value"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.481",
+          "role": "summary",
+          "label": "Hansen J p-value"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.481",
+          "role": "summary",
+          "label": "Hansen J p-value"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "0.514",
+          "role": "summary",
+          "label": "Hansen J p-value"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the 2SLS coefficient on log slaves exported in column 1?",
+          "answer": "-0.318"
+        },
+        {
+          "question": "What is the Hansen J overidentification p-value in column 2?",
+          "answer": "0.481"
+        },
+        {
+          "question": "What is the LIML coefficient on log slaves exported?",
+          "answer": "-0.291"
+        },
+        {
+          "question": "Is the IV coefficient larger or smaller in magnitude than the OLS?",
+          "answer": "Larger in magnitude: IV is -0.318 vs OLS -0.214, consistent with attenuation bias in OLS"
+        }
+      ]
+    },
+    {
+      "table_id": "persistence-1400-2000",
+      "caption": "Long-Run Persistence: 1400 to 2000",
+      "label": "tab:persistence-1400-2000",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.214***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.318***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.248***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.281***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "-0.184***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "-0.271***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "-0.214***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "-0.241***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.062)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.052)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.041***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.062***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.048***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-0.054***",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Slave Trade Intensity (log, 1400-1900)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV coefficient on slave trade intensity for log GDP per capita?",
+          "answer": "-0.318"
+        },
+        {
+          "question": "What is the OLS coefficient on slave trade for the trust outcome?",
+          "answer": "-0.041"
+        },
+        {
+          "question": "Does the effect persist when measuring trade only through 1800?",
+          "answer": "Yes, coefficient is -0.248 (column 3)"
+        }
+      ]
+    },
+    {
+      "table_id": "mechanisms-ethnic-frac",
+      "caption": "Mechanisms: Slave Trade and Ethnic Fractionalization",
+      "label": "tab:mechanisms-ethnic-frac",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.084***",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.121***",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.074***",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.108***",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.026)",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.028**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.031**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.024**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.027**",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-0.148",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-0.162",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.131",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.144",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.098)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.108)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.104)",
+          "role": "data",
+          "variable": "Latitude (absolute)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.284",
+          "role": "summary",
+          "label": "R-squared / First-stage F"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "72.8",
+          "role": "summary",
+          "label": "R-squared / First-stage F"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.321",
+          "role": "summary",
+          "label": "R-squared / First-stage F"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "72.8",
+          "role": "summary",
+          "label": "R-squared / First-stage F"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV coefficient on log slaves exported for ethnic fractionalization?",
+          "answer": "0.121"
+        },
+        {
+          "question": "What is the OLS coefficient on slave trade for ethnic fractionalization in column 1?",
+          "answer": "0.084"
+        },
+        {
+          "question": "Is the IV coefficient larger than the OLS coefficient?",
+          "answer": "Yes, IV (0.121) > OLS (0.084), suggesting attenuation bias in OLS"
+        }
+      ]
+    },
+    {
+      "table_id": "mechanisms-trust",
+      "caption": "Mechanisms: Slave Trade, Ethnic Fractionalization, and Trust",
+      "label": "tab:mechanisms-trust",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.041***",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.018**",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.062***",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Log Slaves Exported (normalized)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Ethnic Fractionalization",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.181***",
+          "role": "data",
+          "variable": "Ethnic Fractionalization",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.148***",
+          "role": "data",
+          "variable": "Ethnic Fractionalization",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.174***",
+          "role": "data",
+          "variable": "Ethnic Fractionalization",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Ethnic Fractionalization",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Ethnic Fractionalization",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.036)",
+          "role": "data",
+          "variable": "Ethnic Fractionalization",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Ethnic Fractionalization",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.008",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.011",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.009",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.010",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Area (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.421",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.384",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.448",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "--",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the direct effect of slave trade on trust in column 1?",
+          "answer": "-0.041"
+        },
+        {
+          "question": "What is the coefficient on ethnic fractionalization in the full chain model (column 3)?",
+          "answer": "-0.148"
+        },
+        {
+          "question": "What is the 2SLS coefficient on slave trade in column 4?",
+          "answer": "-0.062"
+        },
+        {
+          "question": "What is the residual direct effect of slave trade after including ethnic fractionalization?",
+          "answer": "-0.018"
+        }
+      ]
+    },
+    {
+      "table_id": "falsification-geography",
+      "caption": "Falsification Tests: Geographic Predictors of Slave Trade",
+      "label": "tab:falsification-geography",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.008",
+          "role": "data",
+          "variable": "Log Slaves Exported $\\times$ Geographic var.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.004",
+          "role": "data",
+          "variable": "Log Slaves Exported $\\times$ Geographic var.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.006",
+          "role": "data",
+          "variable": "Log Slaves Exported $\\times$ Geographic var.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.003",
+          "role": "data",
+          "variable": "Log Slaves Exported $\\times$ Geographic var.",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Log Slaves Exported $\\times$ Geographic var.",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Log Slaves Exported $\\times$ Geographic var.",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Log Slaves Exported $\\times$ Geographic var.",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Log Slaves Exported $\\times$ Geographic var.",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.201***",
+          "role": "data",
+          "variable": "Log Slaves Exported (main effect)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.198***",
+          "role": "data",
+          "variable": "Log Slaves Exported (main effect)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.204***",
+          "role": "data",
+          "variable": "Log Slaves Exported (main effect)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.196***",
+          "role": "data",
+          "variable": "Log Slaves Exported (main effect)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Log Slaves Exported (main effect)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Log Slaves Exported (main effect)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.043)",
+          "role": "data",
+          "variable": "Log Slaves Exported (main effect)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Log Slaves Exported (main effect)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-0.214***",
+          "role": "data",
+          "variable": "Geographic variable (direct)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.124**",
+          "role": "data",
+          "variable": "Geographic variable (direct)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.084*",
+          "role": "data",
+          "variable": "Geographic variable (direct)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.041",
+          "role": "data",
+          "variable": "Geographic variable (direct)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Geographic variable (direct)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.052)",
+          "role": "data",
+          "variable": "Geographic variable (direct)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Geographic variable (direct)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Geographic variable (direct)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.488",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.474",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.461",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.452",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is the slave trade interaction with malaria index statistically significant?",
+          "answer": "No, coefficient is -0.008 with SE (0.012)"
+        },
+        {
+          "question": "Does the main effect of slave trade remain significant after adding geographic interactions?",
+          "answer": "Yes, the main effect remains around -0.20 and statistically significant in all columns"
+        }
+      ]
+    },
+    {
+      "table_id": "robustness-progressive",
+      "caption": "Robustness: Progressive Controls and Alternative Samples",
+      "label": "tab:robustness-progressive",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.318***",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.298***",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.284***",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.271***",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Log Slaves Exported (instrumented)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.498**",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.461**",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.444**",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.224)",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.218)",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.214)",
+          "role": "data",
+          "variable": "Fraction Muslim",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Settler mortality (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Settler mortality (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.241***",
+          "role": "data",
+          "variable": "Settler mortality (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.224***",
+          "role": "data",
+          "variable": "Settler mortality (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Settler mortality (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Settler mortality (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Settler mortality (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "Settler mortality (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-0.298**",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.134)",
+          "role": "data",
+          "variable": "Legal Origin: French",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "52",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "49",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "49",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "78.2",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "76.4",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "71.8",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "69.4",
+          "role": "summary",
+          "label": "First-stage F"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the baseline 2SLS coefficient on slave trade?",
+          "answer": "-0.318"
+        },
+        {
+          "question": "Does the slave trade coefficient remain significant when adding settler mortality?",
+          "answer": "Yes, coefficient is -0.284 with SE (0.061)"
+        },
+        {
+          "question": "What is the sample size with settler mortality controls?",
+          "answer": "49 countries"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-proofs-econhist",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "persistence-equation",
+      "label": "eq:persistence",
+      "latex": "\\log \\hat{y}_i = \\alpha + \\hat{\\beta} \\log \\bar{S}_i + X_i'\\gamma + \\varepsilon_i, \\quad \\frac{\\partial^2 \\log y_i}{\\partial (\\log S_i) \\partial X_i} = \\mathcal{F}(\\gamma, \\beta)",
+      "description": "Main persistence equation: current income $\\log y_i$ on normalized slave exports $\\log S_i$ and geographic controls $X_i$.",
+      "qa": [
+        {
+          "question": "What is the null hypothesis of no persistence?",
+          "answer": "Beta = 0: slave trade has no long-run effect on current income"
+        }
+      ]
+    },
+    {
+      "eq_id": "iv-model",
+      "label": "eq:iv-model",
+      "latex": "\\log S_i = \\pi_0 + \\pi_1 \\log D_i^{coast} + X_i'\\pi_2 + \\nu_i, \\quad \\log y_i = \\alpha + \\beta \\widehat{\\log S_i} + X_i'\\gamma + \\varepsilon_i",
+      "description": "Two-stage least squares: first stage uses distance to coast $D_i^{coast}$ to instrument slave exports; second stage uses predicted exports.",
+      "qa": []
+    },
+    {
+      "eq_id": "gravity-slave-trade",
+      "label": "eq:gravity-slave",
+      "latex": "\\\\log T_{ij} = \\\\mu + \\\\alpha_1 \\\\log D_{ij} + \\\\alpha_2 \\\\log Y_j + \\\\alpha_3 \\\\log P_j + \\\\xi_{ij}",
+      "description": "Gravity model of slave trade flows: bilateral trade $T_{ij}$ from origin $i$ to destination $j$ depends on distance $D_{ij}$, demand $Y_j$, and price $P_j$.",
+      "qa": []
+    },
+    {
+      "eq_id": "historical-channel",
+      "label": "eq:historical-channel",
+      "latex": "\\log y_i = \\alpha + \\hat{\\beta}_D \\log \\bar{S}_i + \\hat{\\beta}_I \\text{EF}_i + \\hat{\\beta}_T \\text{Trust}_i + X_i'\\gamma + \\varepsilon_i, \\quad \\frac{\\partial \\log y_i}{\\partial \\log S_i} = \\hat{\\beta}_D + \\hat{\\beta}_I \\frac{\\partial \\text{EF}_i}{\\partial \\log S_i} + \\hat{\\beta}_T \\frac{\\partial \\text{Trust}_i}{\\partial \\log S_i}",
+      "description": "Mechanism equation: slave trade affects income through ethnic fractionalization (EF) and social trust. $\\beta_D$ is the direct effect; $\\beta_I \\cdot \\partial\\text{EF}/\\partial S$ and $\\beta_T \\cdot \\partial\\text{Trust}/\\partial S$ are indirect channels.",
+      "qa": []
+    },
+    {
+      "eq_id": "ethnic-fractionalization",
+      "label": "eq:ethnic-frac",
+      "latex": "\\\\text{EF}_i = 1 - \\\\sum_{k=1}^{K_i} \\\\sum_{l=1}^{K_i} \\\\bar{s}_{ik} \\\\bar{s}_{il} \\\\mathbf{1}[k = l] = 1 - \\\\sum_{k=1}^{K_i} \\\\hat{s}_{ik}^2",
+      "description": "Herfindahl-based ethnic fractionalization index: $s_{ik}$ is the population share of ethnic group $k$ in country $i$.",
+      "qa": []
+    },
+    {
+      "eq_id": "trust-formation",
+      "label": "eq:trust-formation",
+      "latex": "\\\\text{Trust}_{it} = \\\\rho_0 + \\\\rho_1 \\\\text{Trust}_{i,t-1} + \\\\rho_2 \\\\text{EF}_{it} + \\\\rho_3 \\\\text{Conflict}_{it} + \\\\eta_{it}",
+      "description": "Intergenerational trust formation: current trust depends on lagged trust, ethnic fractionalization, and conflict history.",
+      "qa": [
+        {
+          "question": "What parameter captures intergenerational persistence of trust?",
+          "answer": "rho_1, the coefficient on lagged trust"
+        }
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main identification strategy?",
+      "answer": "IV using distance to coast as instrument for slave trade intensity, exploiting the fact that coastal proximity increased slave export exposure"
+    },
+    {
+      "question": "What is the 2SLS coefficient on log slaves exported for log GDP per capita?",
+      "answer": "-0.318"
+    },
+    {
+      "question": "Why is the IV estimate larger than OLS?",
+      "answer": "Consistent with attenuation bias from measurement error in slave trade data: IV corrects downward bias in OLS"
+    },
+    {
+      "question": "What fraction of the income effect operates through ethnic fractionalization?",
+      "answer": "Approximately 69 percent of the total effect"
+    },
+    {
+      "question": "What is the first-stage F-statistic?",
+      "answer": "94.1 with one instrument, well above conventional weak-instrument threshold of 10"
+    },
+    {
+      "question": "How many total slaves were exported across all trade routes?",
+      "answer": "11,796 thousand"
+    },
+    {
+      "question": "What fraction of countries have positive Atlantic slave exports?",
+      "answer": "41 out of 52 countries (79 percent)"
+    },
+    {
+      "question": "What is the mean log GDP per capita (PPP, 2000) for the sample?",
+      "answer": "7.84"
+    },
+    {
+      "question": "How many African countries are in the sample?",
+      "answer": "52"
+    },
+    {
+      "question": "What is the mean ethnic fractionalization index?",
+      "answer": "0.614"
+    },
+    {
+      "question": "What is the mean trust level from the World Values Survey?",
+      "answer": "0.148"
+    },
+    {
+      "question": "What is the OLS coefficient on log slaves exported in column 1?",
+      "answer": "-0.214"
+    },
+    {
+      "question": "What is the R-squared in column 4?",
+      "answer": "0.448"
+    },
+    {
+      "question": "What is the coefficient on absolute latitude in column 1?",
+      "answer": "0.842"
+    },
+    {
+      "question": "What is the first-stage F-statistic on excluded instruments in column 1?",
+      "answer": "94.1"
+    },
+    {
+      "question": "What is the first-stage coefficient on log distance to coast in column 1?",
+      "answer": "-0.814"
+    },
+    {
+      "question": "Is the instrument strong (F > 10)?",
+      "answer": "Yes, all first-stage F-statistics exceed 72"
+    },
+    {
+      "question": "What is the 2SLS coefficient on log slaves exported in column 1?",
+      "answer": "-0.318"
+    },
+    {
+      "question": "What is the Hansen J overidentification p-value in column 2?",
+      "answer": "0.481"
+    },
+    {
+      "question": "What is the LIML coefficient on log slaves exported?",
+      "answer": "-0.291"
+    },
+    {
+      "question": "Is the IV coefficient larger or smaller in magnitude than the OLS?",
+      "answer": "Larger in magnitude: IV is -0.318 vs OLS -0.214, consistent with attenuation bias in OLS"
+    },
+    {
+      "question": "What is the IV coefficient on slave trade intensity for log GDP per capita?",
+      "answer": "-0.318"
+    },
+    {
+      "question": "What is the OLS coefficient on slave trade for the trust outcome?",
+      "answer": "-0.041"
+    },
+    {
+      "question": "Does the effect persist when measuring trade only through 1800?",
+      "answer": "Yes, coefficient is -0.248 (column 3)"
+    },
+    {
+      "question": "What is the IV coefficient on log slaves exported for ethnic fractionalization?",
+      "answer": "0.121"
+    },
+    {
+      "question": "What is the OLS coefficient on slave trade for ethnic fractionalization in column 1?",
+      "answer": "0.084"
+    },
+    {
+      "question": "Is the IV coefficient larger than the OLS coefficient?",
+      "answer": "Yes, IV (0.121) > OLS (0.084), suggesting attenuation bias in OLS"
+    },
+    {
+      "question": "What is the direct effect of slave trade on trust in column 1?",
+      "answer": "-0.041"
+    },
+    {
+      "question": "What is the coefficient on ethnic fractionalization in the full chain model (column 3)?",
+      "answer": "-0.148"
+    },
+    {
+      "question": "What is the 2SLS coefficient on slave trade in column 4?",
+      "answer": "-0.062"
+    },
+    {
+      "question": "What is the residual direct effect of slave trade after including ethnic fractionalization?",
+      "answer": "-0.018"
+    },
+    {
+      "question": "Is the slave trade interaction with malaria index statistically significant?",
+      "answer": "No, coefficient is -0.008 with SE (0.012)"
+    },
+    {
+      "question": "Does the main effect of slave trade remain significant after adding geographic interactions?",
+      "answer": "Yes, the main effect remains around -0.20 and statistically significant in all columns"
+    },
+    {
+      "question": "What is the baseline 2SLS coefficient on slave trade?",
+      "answer": "-0.318"
+    },
+    {
+      "question": "Does the slave trade coefficient remain significant when adding settler mortality?",
+      "answer": "Yes, coefficient is -0.284 with SE (0.061)"
+    },
+    {
+      "question": "What is the sample size with settler mortality controls?",
+      "answer": "49 countries"
+    },
+    {
+      "question": "What is the null hypothesis of no persistence?",
+      "answer": "Beta = 0: slave trade has no long-run effect on current income"
+    },
+    {
+      "question": "What parameter captures intergenerational persistence of trust?",
+      "answer": "rho_1, the coefficient on lagged trust"
+    }
+  ]
+}

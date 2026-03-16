@@ -1,0 +1,7700 @@
+{
+  "paper_id": "08",
+  "field": "finance",
+  "title": "The Cross-Section of Expected Stock Returns: A Comprehensive Test of the Fama-French Five-Factor Model",
+  "journal_style": "jfe",
+  "target_pages": 65,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-finance",
+      "level": 1
+    },
+    {
+      "title": "Data",
+      "label": "sec:data-finance",
+      "level": 1
+    },
+    {
+      "title": "Factor Construction",
+      "label": "sec:data-factors",
+      "level": 2
+    },
+    {
+      "title": "Test Portfolio Construction",
+      "label": "sec:data-portfolios",
+      "level": 2
+    },
+    {
+      "title": "Theoretical Framework",
+      "label": "sec:theory-finance",
+      "level": 1
+    },
+    {
+      "title": "The CAPM and Its Limitations",
+      "label": "sec:theory-capm",
+      "level": 2
+    },
+    {
+      "title": "The Fama-French Model",
+      "label": "sec:theory-ff",
+      "level": 2
+    },
+    {
+      "title": "The Five-Factor Extension",
+      "label": "sec:theory-ff5",
+      "level": 2
+    },
+    {
+      "title": "Univariate Portfolio Sorts",
+      "label": "sec:univariate",
+      "level": 1
+    },
+    {
+      "title": "Size-Sorted Portfolios",
+      "label": "sec:size-sorts",
+      "level": 2
+    },
+    {
+      "title": "Book-to-Market-Sorted Portfolios",
+      "label": "sec:bm-sorts",
+      "level": 2
+    },
+    {
+      "title": "Double-Sorted Portfolios",
+      "label": "sec:double-sorts",
+      "level": 1
+    },
+    {
+      "title": "25 Size-BM Portfolios: Average Returns",
+      "label": "sec:25-avg-returns",
+      "level": 2
+    },
+    {
+      "title": "Patterns in the Double-Sort Matrix",
+      "label": "sec:25-patterns",
+      "level": 2
+    },
+    {
+      "title": "Time-Series Regressions and Model Tests",
+      "label": "sec:ts-regressions",
+      "level": 1
+    },
+    {
+      "title": "CAPM Performance",
+      "label": "sec:ts-capm",
+      "level": 2
+    },
+    {
+      "title": "FF3 Performance",
+      "label": "sec:ts-ff3",
+      "level": 2
+    },
+    {
+      "title": "FF5 Performance",
+      "label": "sec:ts-ff5",
+      "level": 2
+    },
+    {
+      "title": "Cross-Sectional Asset Pricing",
+      "label": "sec:cross-section",
+      "level": 1
+    },
+    {
+      "title": "Fama-MacBeth Estimation",
+      "label": "sec:fm-estimation",
+      "level": 2
+    },
+    {
+      "title": "Factor Risk Premia",
+      "label": "sec:factor-premia",
+      "level": 2
+    },
+    {
+      "title": "Further Evidence",
+      "label": "sec:further-evidence",
+      "level": 1
+    },
+    {
+      "title": "Momentum: A Challenge for FF5",
+      "label": "sec:momentum",
+      "level": 2
+    },
+    {
+      "title": "Industry Portfolios",
+      "label": "sec:industry",
+      "level": 2
+    },
+    {
+      "title": "International Evidence",
+      "label": "sec:international",
+      "level": 2
+    },
+    {
+      "title": "Robustness",
+      "label": "sec:robustness-finance",
+      "level": 1
+    },
+    {
+      "title": "Sub-Period Stability",
+      "label": "sec:sub-periods",
+      "level": 2
+    },
+    {
+      "title": "Alternative Factor Definitions",
+      "label": "sec:alt-factors",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-finance",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Econometric Theory",
+      "label": "sec:appendix-a-finance",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Data and Construction",
+      "label": "sec:appendix-b-finance",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "summary-stats-factors",
+      "caption": "Summary Statistics: Fama-French Factors",
+      "label": "tab:summary-stats-factors",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.64",
+          "role": "data",
+          "variable": "MKT-RF (Excess Market)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "4.49",
+          "role": "data",
+          "variable": "MKT-RF (Excess Market)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.55",
+          "role": "data",
+          "variable": "MKT-RF (Excess Market)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "4.18",
+          "role": "data",
+          "variable": "MKT-RF (Excess Market)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.19)",
+          "role": "data",
+          "variable": "MKT-RF (Excess Market)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "MKT-RF (Excess Market)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "MKT-RF (Excess Market)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "MKT-RF (Excess Market)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.22",
+          "role": "data",
+          "variable": "SMB (Small Minus Big)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "3.14",
+          "role": "data",
+          "variable": "SMB (Small Minus Big)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.22",
+          "role": "data",
+          "variable": "SMB (Small Minus Big)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "5.41",
+          "role": "data",
+          "variable": "SMB (Small Minus Big)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.13)",
+          "role": "data",
+          "variable": "SMB (Small Minus Big)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "SMB (Small Minus Big)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "SMB (Small Minus Big)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "SMB (Small Minus Big)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.38",
+          "role": "data",
+          "variable": "HML (High Minus Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "3.01",
+          "role": "data",
+          "variable": "HML (High Minus Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.08",
+          "role": "data",
+          "variable": "HML (High Minus Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "5.68",
+          "role": "data",
+          "variable": "HML (High Minus Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.13)",
+          "role": "data",
+          "variable": "HML (High Minus Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "HML (High Minus Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "HML (High Minus Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "HML (High Minus Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.29",
+          "role": "data",
+          "variable": "RMW (Robust Minus Weak)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "2.18",
+          "role": "data",
+          "variable": "RMW (Robust Minus Weak)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.41",
+          "role": "data",
+          "variable": "RMW (Robust Minus Weak)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "6.12",
+          "role": "data",
+          "variable": "RMW (Robust Minus Weak)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "RMW (Robust Minus Weak)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "RMW (Robust Minus Weak)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "RMW (Robust Minus Weak)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "RMW (Robust Minus Weak)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.31",
+          "role": "data",
+          "variable": "CMA (Conservative Minus Aggressive)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "1.98",
+          "role": "data",
+          "variable": "CMA (Conservative Minus Aggressive)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.18",
+          "role": "data",
+          "variable": "CMA (Conservative Minus Aggressive)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "5.91",
+          "role": "data",
+          "variable": "CMA (Conservative Minus Aggressive)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "CMA (Conservative Minus Aggressive)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "CMA (Conservative Minus Aggressive)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "CMA (Conservative Minus Aggressive)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "CMA (Conservative Minus Aggressive)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "0.34",
+          "role": "data",
+          "variable": "RF (Risk-Free Rate)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "0.28",
+          "role": "data",
+          "variable": "RF (Risk-Free Rate)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "1.12",
+          "role": "data",
+          "variable": "RF (Risk-Free Rate)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "4.02",
+          "role": "data",
+          "variable": "RF (Risk-Free Rate)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "RF (Risk-Free Rate)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "RF (Risk-Free Rate)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "RF (Risk-Free Rate)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "RF (Risk-Free Rate)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "Jul-1963",
+          "role": "summary",
+          "label": "Start date"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "Jul-1963",
+          "role": "summary",
+          "label": "Start date"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "Jul-1963",
+          "role": "summary",
+          "label": "Start date"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "Jul-1963",
+          "role": "summary",
+          "label": "Start date"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean monthly excess market return?",
+          "answer": "0.64 percent"
+        },
+        {
+          "question": "How many monthly observations span the sample?",
+          "answer": "714"
+        }
+      ]
+    },
+    {
+      "table_id": "summary-stats-portfolios",
+      "caption": "Summary Statistics: Test Portfolios",
+      "label": "tab:summary-stats-portfolios",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.81",
+          "role": "data",
+          "variable": "Small",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "5.62",
+          "role": "data",
+          "variable": "Small",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.144",
+          "role": "data",
+          "variable": "Small",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.08",
+          "role": "data",
+          "variable": "Small",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.22)",
+          "role": "data",
+          "variable": "Small",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Small",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Small",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Small",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.71",
+          "role": "data",
+          "variable": "2",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "5.01",
+          "role": "data",
+          "variable": "2",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.142",
+          "role": "data",
+          "variable": "2",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.09",
+          "role": "data",
+          "variable": "2",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.20)",
+          "role": "data",
+          "variable": "2",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "2",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "2",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "2",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.62",
+          "role": "data",
+          "variable": "3",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "4.71",
+          "role": "data",
+          "variable": "3",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.132",
+          "role": "data",
+          "variable": "3",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.10",
+          "role": "data",
+          "variable": "3",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "3",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "3",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "3",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "3",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.58",
+          "role": "data",
+          "variable": "4",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "4.48",
+          "role": "data",
+          "variable": "4",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.129",
+          "role": "data",
+          "variable": "4",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.10",
+          "role": "data",
+          "variable": "4",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.17)",
+          "role": "data",
+          "variable": "4",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "4",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "4",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "4",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.54",
+          "role": "data",
+          "variable": "Big",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "4.21",
+          "role": "data",
+          "variable": "Big",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.128",
+          "role": "data",
+          "variable": "Big",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.11",
+          "role": "data",
+          "variable": "Big",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.16)",
+          "role": "data",
+          "variable": "Big",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Big",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Big",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Big",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.48",
+          "role": "data",
+          "variable": "Growth (Low BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "4.84",
+          "role": "data",
+          "variable": "Growth (Low BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.099",
+          "role": "data",
+          "variable": "Growth (Low BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "0.09",
+          "role": "data",
+          "variable": "Growth (Low BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "Growth (Low BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Growth (Low BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Growth (Low BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Growth (Low BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.56",
+          "role": "data",
+          "variable": "2",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "4.51",
+          "role": "data",
+          "variable": "2",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "0.124",
+          "role": "data",
+          "variable": "2",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "0.10",
+          "role": "data",
+          "variable": "2",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "(0.17)",
+          "role": "data",
+          "variable": "2",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "2",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "2",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "2",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "0.64",
+          "role": "data",
+          "variable": "3",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "4.38",
+          "role": "data",
+          "variable": "3",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "0.146",
+          "role": "data",
+          "variable": "3",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "0.10",
+          "role": "data",
+          "variable": "3",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "(0.16)",
+          "role": "data",
+          "variable": "3",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "3",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "3",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "3",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "0.71",
+          "role": "data",
+          "variable": "4",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "4.42",
+          "role": "data",
+          "variable": "4",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "0.161",
+          "role": "data",
+          "variable": "4",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "0.11",
+          "role": "data",
+          "variable": "4",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "(0.17)",
+          "role": "data",
+          "variable": "4",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "4",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "4",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "4",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "0.84",
+          "role": "data",
+          "variable": "Value (High BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "5.01",
+          "role": "data",
+          "variable": "Value (High BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "0.168",
+          "role": "data",
+          "variable": "Value (High BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "0.12",
+          "role": "data",
+          "variable": "Value (High BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "(0.19)",
+          "role": "data",
+          "variable": "Value (High BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Value (High BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Value (High BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Value (High BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 1,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 22,
+          "col": 2,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 22,
+          "col": 3,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 22,
+          "col": 4,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean excess return of the Small portfolio?",
+          "answer": "0.81 percent per month"
+        },
+        {
+          "question": "What is the Sharpe ratio of the Value portfolio?",
+          "answer": "0.168"
+        },
+        {
+          "question": "What is the standard deviation of the Growth portfolio?",
+          "answer": "4.84 percent"
+        }
+      ]
+    },
+    {
+      "table_id": "size-sorted-5",
+      "caption": "Time-Series Regressions: Size-Sorted Quintile Portfolios",
+      "label": "tab:size-sorted",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.28***",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.18**",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.07",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.02",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "-0.08**",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.12***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.08***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1.02***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.98***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "0.94***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.01",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "-0.02",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "-0.03",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "-0.06**",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.98***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.99***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "1.00***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "1.00***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 5,
+          "text": "0.99***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 5,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "1.42***",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "1.01***",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.72***",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.42***",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 5,
+          "text": "-0.14***",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 5,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "-0.04",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.02",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.04",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "0.06*",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 5,
+          "text": "0.02",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 5,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 5,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "0.891",
+          "role": "summary",
+          "label": "Adj. R-sq (CAPM)"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "0.921",
+          "role": "summary",
+          "label": "Adj. R-sq (CAPM)"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "0.954",
+          "role": "summary",
+          "label": "Adj. R-sq (CAPM)"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "0.968",
+          "role": "summary",
+          "label": "Adj. R-sq (CAPM)"
+        },
+        {
+          "row": 15,
+          "col": 5,
+          "text": "0.981",
+          "role": "summary",
+          "label": "Adj. R-sq (CAPM)"
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "0.962",
+          "role": "summary",
+          "label": "Adj. R-sq (FF3)"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "0.978",
+          "role": "summary",
+          "label": "Adj. R-sq (FF3)"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "0.982",
+          "role": "summary",
+          "label": "Adj. R-sq (FF3)"
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "0.984",
+          "role": "summary",
+          "label": "Adj. R-sq (FF3)"
+        },
+        {
+          "row": 16,
+          "col": 5,
+          "text": "0.988",
+          "role": "summary",
+          "label": "Adj. R-sq (FF3)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the CAPM alpha for the Small portfolio?",
+          "answer": "0.28 percent per month"
+        },
+        {
+          "question": "What is the FF3 SMB loading for the Big portfolio?",
+          "answer": "-0.14"
+        }
+      ]
+    },
+    {
+      "table_id": "bm-sorted-5",
+      "caption": "Time-Series Regressions: Book-to-Market Quintile Portfolios",
+      "label": "tab:bm-sorted",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.14***",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.04",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.12**",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "0.24***",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.06***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.01***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.98***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.99***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "1.04***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "-0.06*",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.01",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.03",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "0.05",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Alpha (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "1.01***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.99***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.98***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.98***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 5,
+          "text": "1.01***",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 5,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "MKT-RF",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.08**",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.12***",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.18***",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.24***",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 5,
+          "text": "0.38***",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 5,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "-0.84***",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "-0.41***",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.12***",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "0.58***",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 5,
+          "text": "1.08***",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 5,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 5,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "0.948",
+          "role": "summary",
+          "label": "Adj. R-sq (CAPM)"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "0.961",
+          "role": "summary",
+          "label": "Adj. R-sq (CAPM)"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "0.964",
+          "role": "summary",
+          "label": "Adj. R-sq (CAPM)"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "0.951",
+          "role": "summary",
+          "label": "Adj. R-sq (CAPM)"
+        },
+        {
+          "row": 15,
+          "col": 5,
+          "text": "0.908",
+          "role": "summary",
+          "label": "Adj. R-sq (CAPM)"
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "0.981",
+          "role": "summary",
+          "label": "Adj. R-sq (FF3)"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "0.974",
+          "role": "summary",
+          "label": "Adj. R-sq (FF3)"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "0.972",
+          "role": "summary",
+          "label": "Adj. R-sq (FF3)"
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "0.968",
+          "role": "summary",
+          "label": "Adj. R-sq (FF3)"
+        },
+        {
+          "row": 16,
+          "col": 5,
+          "text": "0.944",
+          "role": "summary",
+          "label": "Adj. R-sq (FF3)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the CAPM alpha for the Value portfolio?",
+          "answer": "0.24 percent per month"
+        },
+        {
+          "question": "What is the FF3 HML loading for the Value portfolio?",
+          "answer": "1.08"
+        }
+      ]
+    },
+    {
+      "table_id": "double-sorted-25",
+      "caption": "Average Excess Returns (\\%/month): 25 Size- and Book-to-Market-Sorted Portfolios",
+      "label": "tab:double-sorted-25",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.48",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.72",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.88",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.01",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "1.18",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.44",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.64",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.74",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.88",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "0.98",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.58",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.68",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.78",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "0.88",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.38",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.52",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.71",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 5,
+          "text": "0.82",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.34",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "0.46",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "0.55",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.64",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 5,
+          "text": "0.74",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Average excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 5,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the average excess return for the Small-High BM portfolio?",
+          "answer": "1.18 percent per month"
+        },
+        {
+          "question": "What is the average excess return for the Big-Low BM portfolio?",
+          "answer": "0.34 percent per month"
+        }
+      ]
+    },
+    {
+      "table_id": "ts-regressions-capm",
+      "caption": "Time-Series Regressions: CAPM (25 Size/BM Portfolios)",
+      "label": "tab:ts-capm",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.082",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.091",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.84",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "4.12***",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.21)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.00)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.041",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.052",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1.41",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "2.14**",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.022)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.058",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.062",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.62",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "3.21***",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.24)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.00)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.942",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.942",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.942",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.942",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the GRS statistic for CAPM on all 25 portfolios?",
+          "answer": "4.12"
+        },
+        {
+          "question": "What is the mean absolute alpha under CAPM?",
+          "answer": "0.082 percent per month"
+        },
+        {
+          "question": "What is the average adjusted R-squared for CAPM?",
+          "answer": "0.942"
+        }
+      ]
+    },
+    {
+      "table_id": "ts-regressions-ff3",
+      "caption": "Time-Series Regressions: Fama-French Three-Factor Model",
+      "label": "tab:ts-ff3",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.031",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.038",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.12",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.54",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.007)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.018",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.021",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.94",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.88",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.22)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.48)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.024",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.028",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.01",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1.12",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.21)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.34)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.971",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.971",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.971",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.971",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the GRS statistic for FF3 on all 25 portfolios?",
+          "answer": "1.54"
+        },
+        {
+          "question": "What is the mean alpha under FF3?",
+          "answer": "0.031 percent per month"
+        },
+        {
+          "question": "What is the average adjusted R-squared for FF3?",
+          "answer": "0.971"
+        }
+      ]
+    },
+    {
+      "table_id": "ts-regressions-ff5",
+      "caption": "Time-Series Regressions: Fama-French Five-Factor Model",
+      "label": "tab:ts-ff5",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.021",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.027",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.88",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.18",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.006)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.005)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.16)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.014",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.018",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.74",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.71",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.007)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.20)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.58)",
+          "role": "data",
+          "variable": "Size quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.018",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.022",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.82",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.91",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.19)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.44)",
+          "role": "data",
+          "variable": "BM quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.018",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.024",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.81",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "1.04",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.005)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.005)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.15)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.38)",
+          "role": "data",
+          "variable": "All 25 portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.012",
+          "role": "data",
+          "variable": "OP quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.014",
+          "role": "data",
+          "variable": "OP quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.68",
+          "role": "data",
+          "variable": "OP quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.62",
+          "role": "data",
+          "variable": "OP quintiles (5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.005)",
+          "role": "data",
+          "variable": "OP quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.006)",
+          "role": "data",
+          "variable": "OP quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "OP quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.64)",
+          "role": "data",
+          "variable": "OP quintiles (5)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.974",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "0.974",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "0.974",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.974",
+          "role": "summary",
+          "label": "Avg. Adj. R-sq"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the GRS statistic for FF5 on 25 size-BM portfolios?",
+          "answer": "1.18"
+        },
+        {
+          "question": "What is the mean alpha under FF5 for 25 size-BM portfolios?",
+          "answer": "0.021 percent per month"
+        },
+        {
+          "question": "Does FF5 improve on FF3 for BM-sorted portfolios?",
+          "answer": "Yes, GRS falls from 1.12 (FF3) to 0.91 (FF5)"
+        }
+      ]
+    },
+    {
+      "table_id": "grs-test",
+      "caption": "GRS Test Statistics Across Asset Pricing Models and Test Portfolios",
+      "label": "tab:grs-test",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "4.12***",
+          "role": "data",
+          "variable": "25 Size-BM portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.54",
+          "role": "data",
+          "variable": "25 Size-BM portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.18",
+          "role": "data",
+          "variable": "25 Size-BM portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.08",
+          "role": "data",
+          "variable": "25 Size-BM portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "[0.000]",
+          "role": "data",
+          "variable": "25 Size-BM portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "[0.068]",
+          "role": "data",
+          "variable": "25 Size-BM portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "[0.276]",
+          "role": "data",
+          "variable": "25 Size-BM portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "[0.368]",
+          "role": "data",
+          "variable": "25 Size-BM portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "5.41***",
+          "role": "data",
+          "variable": "25 Size-OP portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "2.18***",
+          "role": "data",
+          "variable": "25 Size-OP portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1.04",
+          "role": "data",
+          "variable": "25 Size-OP portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.98",
+          "role": "data",
+          "variable": "25 Size-OP portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "[0.000]",
+          "role": "data",
+          "variable": "25 Size-OP portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "[0.002]",
+          "role": "data",
+          "variable": "25 Size-OP portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "[0.412]",
+          "role": "data",
+          "variable": "25 Size-OP portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "[0.498]",
+          "role": "data",
+          "variable": "25 Size-OP portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "3.88***",
+          "role": "data",
+          "variable": "25 Size-INV portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1.98**",
+          "role": "data",
+          "variable": "25 Size-INV portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.12",
+          "role": "data",
+          "variable": "25 Size-INV portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1.04",
+          "role": "data",
+          "variable": "25 Size-INV portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "[0.000]",
+          "role": "data",
+          "variable": "25 Size-INV portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "[0.016]",
+          "role": "data",
+          "variable": "25 Size-INV portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "[0.332]",
+          "role": "data",
+          "variable": "25 Size-INV portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "[0.402]",
+          "role": "data",
+          "variable": "25 Size-INV portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "6.12***",
+          "role": "data",
+          "variable": "32 Size-BM-OP portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "2.84***",
+          "role": "data",
+          "variable": "32 Size-BM-OP portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1.48*",
+          "role": "data",
+          "variable": "32 Size-BM-OP portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "1.21",
+          "role": "data",
+          "variable": "32 Size-BM-OP portfolios",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "[0.000]",
+          "role": "data",
+          "variable": "32 Size-BM-OP portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "[0.000]",
+          "role": "data",
+          "variable": "32 Size-BM-OP portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "[0.069]",
+          "role": "data",
+          "variable": "32 Size-BM-OP portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "[0.228]",
+          "role": "data",
+          "variable": "32 Size-BM-OP portfolios",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the GRS statistic for CAPM on 25 size-BM portfolios?",
+          "answer": "4.12"
+        },
+        {
+          "question": "Is FF5 rejected for 25 size-BM portfolios at 5% level?",
+          "answer": "No, GRS p-value is 0.276"
+        }
+      ]
+    },
+    {
+      "table_id": "cross-section-fm",
+      "caption": "Fama-MacBeth Cross-Sectional Regressions",
+      "label": "tab:fm-cross-section",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.41***",
+          "role": "data",
+          "variable": "Intercept (lambda_0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.28**",
+          "role": "data",
+          "variable": "Intercept (lambda_0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.24**",
+          "role": "data",
+          "variable": "Intercept (lambda_0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.22**",
+          "role": "data",
+          "variable": "Intercept (lambda_0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.11)",
+          "role": "data",
+          "variable": "Intercept (lambda_0)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.12)",
+          "role": "data",
+          "variable": "Intercept (lambda_0)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.11)",
+          "role": "data",
+          "variable": "Intercept (lambda_0)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "Intercept (lambda_0)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.28",
+          "role": "data",
+          "variable": "lambda_MKT",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.31",
+          "role": "data",
+          "variable": "lambda_MKT",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.29",
+          "role": "data",
+          "variable": "lambda_MKT",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.28",
+          "role": "data",
+          "variable": "lambda_MKT",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.21)",
+          "role": "data",
+          "variable": "lambda_MKT",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.20)",
+          "role": "data",
+          "variable": "lambda_MKT",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.19)",
+          "role": "data",
+          "variable": "lambda_MKT",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "lambda_MKT",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "lambda_SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.18**",
+          "role": "data",
+          "variable": "lambda_SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.16**",
+          "role": "data",
+          "variable": "lambda_SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.15**",
+          "role": "data",
+          "variable": "lambda_SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "lambda_SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "lambda_SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "lambda_SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "lambda_SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "lambda_HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.22***",
+          "role": "data",
+          "variable": "lambda_HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.19***",
+          "role": "data",
+          "variable": "lambda_HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.17***",
+          "role": "data",
+          "variable": "lambda_HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "lambda_HML",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "lambda_HML",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "lambda_HML",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "lambda_HML",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "lambda_RMW",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "lambda_RMW",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.14**",
+          "role": "data",
+          "variable": "lambda_RMW",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.13**",
+          "role": "data",
+          "variable": "lambda_RMW",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "lambda_RMW",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "lambda_RMW",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "lambda_RMW",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "lambda_RMW",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "lambda_CMA",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "lambda_CMA",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "0.12**",
+          "role": "data",
+          "variable": "lambda_CMA",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "0.11**",
+          "role": "data",
+          "variable": "lambda_CMA",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "lambda_CMA",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "lambda_CMA",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "lambda_CMA",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "lambda_CMA",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "lambda_MOM",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "lambda_MOM",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "lambda_MOM",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.41***",
+          "role": "data",
+          "variable": "lambda_MOM",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "lambda_MOM",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "lambda_MOM",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "lambda_MOM",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "lambda_MOM",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "25",
+          "role": "summary",
+          "label": "Test portfolios"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "25",
+          "role": "summary",
+          "label": "Test portfolios"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "25",
+          "role": "summary",
+          "label": "Test portfolios"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "25",
+          "role": "summary",
+          "label": "Test portfolios"
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "0.712",
+          "role": "summary",
+          "label": "Avg. R-sq (cross-section)"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "0.842",
+          "role": "summary",
+          "label": "Avg. R-sq (cross-section)"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "0.881",
+          "role": "summary",
+          "label": "Avg. R-sq (cross-section)"
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "0.904",
+          "role": "summary",
+          "label": "Avg. R-sq (cross-section)"
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "714",
+          "role": "summary",
+          "label": "Months"
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "714",
+          "role": "summary",
+          "label": "Months"
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "714",
+          "role": "summary",
+          "label": "Months"
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "714",
+          "role": "summary",
+          "label": "Months"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the Fama-MacBeth HML risk premium in the FF3 specification?",
+          "answer": "0.22 percent per month"
+        },
+        {
+          "question": "What is the cross-sectional R-squared for FF5+MOM?",
+          "answer": "0.904"
+        }
+      ]
+    },
+    {
+      "table_id": "factor-correlations",
+      "caption": "Correlations Among Fama-French Five Factors",
+      "label": "tab:factor-correlations",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.28***",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.00",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "SMB",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "SMB",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.31***",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.08**",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1.00",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "HML",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "HML",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-0.22***",
+          "role": "data",
+          "variable": "RMW",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-0.38***",
+          "role": "data",
+          "variable": "RMW",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.12***",
+          "role": "data",
+          "variable": "RMW",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "RMW",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "RMW",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "RMW",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "RMW",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "RMW",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.41***",
+          "role": "data",
+          "variable": "CMA",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.11***",
+          "role": "data",
+          "variable": "CMA",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.68***",
+          "role": "data",
+          "variable": "CMA",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.16***",
+          "role": "data",
+          "variable": "CMA",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "CMA",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "CMA",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "CMA",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "CMA",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the correlation between CMA and HML?",
+          "answer": "0.68"
+        },
+        {
+          "question": "What is the correlation between SMB and RMW?",
+          "answer": "-0.38"
+        }
+      ]
+    },
+    {
+      "table_id": "momentum",
+      "caption": "Momentum-Sorted Portfolios and the Fama-French Models",
+      "label": "tab:momentum",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.28",
+          "role": "data",
+          "variable": "Excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.42",
+          "role": "data",
+          "variable": "Excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.64",
+          "role": "data",
+          "variable": "Excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.84",
+          "role": "data",
+          "variable": "Excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "1.41***",
+          "role": "data",
+          "variable": "Excess return",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "Excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "Excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.11)",
+          "role": "data",
+          "variable": "Excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "Excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(0.12)",
+          "role": "data",
+          "variable": "Excess return",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "-0.81***",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "-0.08",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.08",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.24***",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "0.81***",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.74***",
+          "role": "data",
+          "variable": "FF5 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.06",
+          "role": "data",
+          "variable": "FF5 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.07",
+          "role": "data",
+          "variable": "FF5 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.21***",
+          "role": "data",
+          "variable": "FF5 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "0.74***",
+          "role": "data",
+          "variable": "FF5 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.17)",
+          "role": "data",
+          "variable": "FF5 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "FF5 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "FF5 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "FF5 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 5,
+          "text": "(0.13)",
+          "role": "data",
+          "variable": "FF5 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 5,
+          "text": "714",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the average excess return of the Winner portfolio?",
+          "answer": "1.41 percent per month"
+        },
+        {
+          "question": "Does FF5 explain momentum?",
+          "answer": "No, FF5 alpha for Winner is 0.74 and Loser is -0.74, both significant"
+        }
+      ]
+    },
+    {
+      "table_id": "industry-portfolios",
+      "caption": "FF5 Alphas: 12 Industry Portfolios",
+      "label": "tab:industry",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.11**",
+          "role": "data",
+          "variable": "Consumer NoDur",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.84***",
+          "role": "data",
+          "variable": "Consumer NoDur",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.04",
+          "role": "data",
+          "variable": "Consumer NoDur",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.18***",
+          "role": "data",
+          "variable": "Consumer NoDur",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Consumer NoDur",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Consumer NoDur",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Consumer NoDur",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Consumer NoDur",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.08",
+          "role": "data",
+          "variable": "Consumer Dur",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.14***",
+          "role": "data",
+          "variable": "Consumer Dur",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.28***",
+          "role": "data",
+          "variable": "Consumer Dur",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.14***",
+          "role": "data",
+          "variable": "Consumer Dur",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "Consumer Dur",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Consumer Dur",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Consumer Dur",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Consumer Dur",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1.02***",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.12***",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.22***",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.14*",
+          "role": "data",
+          "variable": "Energy",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.88***",
+          "role": "data",
+          "variable": "Energy",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.08**",
+          "role": "data",
+          "variable": "Energy",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.41***",
+          "role": "data",
+          "variable": "Energy",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "Energy",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Energy",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Energy",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "Energy",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "-0.04",
+          "role": "data",
+          "variable": "HiTec",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "1.18***",
+          "role": "data",
+          "variable": "HiTec",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.08**",
+          "role": "data",
+          "variable": "HiTec",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "-0.28***",
+          "role": "data",
+          "variable": "HiTec",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "HiTec",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "HiTec",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "HiTec",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "HiTec",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "0.02",
+          "role": "data",
+          "variable": "Telecom",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "0.94***",
+          "role": "data",
+          "variable": "Telecom",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "-0.11***",
+          "role": "data",
+          "variable": "Telecom",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "0.08",
+          "role": "data",
+          "variable": "Telecom",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "Telecom",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Telecom",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Telecom",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Telecom",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.08",
+          "role": "data",
+          "variable": "Shops",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "0.98***",
+          "role": "data",
+          "variable": "Shops",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Shops",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "-0.04",
+          "role": "data",
+          "variable": "Shops",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Shops",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Shops",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Shops",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Shops",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "0.14**",
+          "role": "data",
+          "variable": "Health",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "0.78***",
+          "role": "data",
+          "variable": "Health",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "-0.12***",
+          "role": "data",
+          "variable": "Health",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Health",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "Health",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Health",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Health",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Health",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Utils",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "0.61***",
+          "role": "data",
+          "variable": "Utils",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "-0.14***",
+          "role": "data",
+          "variable": "Utils",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "0.48***",
+          "role": "data",
+          "variable": "Utils",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Utils",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Utils",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Utils",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Utils",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "-0.02",
+          "role": "data",
+          "variable": "Finance",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "1.08***",
+          "role": "data",
+          "variable": "Finance",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "-0.04",
+          "role": "data",
+          "variable": "Finance",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "0.28***",
+          "role": "data",
+          "variable": "Finance",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Finance",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Finance",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Finance",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Finance",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "0.01",
+          "role": "data",
+          "variable": "Other",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "1.01***",
+          "role": "data",
+          "variable": "Other",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "0.18***",
+          "role": "data",
+          "variable": "Other",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 4,
+          "text": "0.14***",
+          "role": "data",
+          "variable": "Other",
+          "is_coefficient": true
+        },
+        {
+          "row": 22,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Other",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Other",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Other",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 4,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Other",
+          "is_stderr": true
+        },
+        {
+          "row": 23,
+          "col": 1,
+          "text": "0.061",
+          "role": "data",
+          "variable": "Mean |alpha|",
+          "is_coefficient": true
+        },
+        {
+          "row": 23,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Mean |alpha|",
+          "is_coefficient": true
+        },
+        {
+          "row": 23,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Mean |alpha|",
+          "is_coefficient": true
+        },
+        {
+          "row": 23,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Mean |alpha|",
+          "is_coefficient": true
+        },
+        {
+          "row": 24,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Mean |alpha|",
+          "is_stderr": true
+        },
+        {
+          "row": 24,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Mean |alpha|",
+          "is_stderr": true
+        },
+        {
+          "row": 24,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Mean |alpha|",
+          "is_stderr": true
+        },
+        {
+          "row": 24,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Mean |alpha|",
+          "is_stderr": true
+        },
+        {
+          "row": 25,
+          "col": 1,
+          "text": "1.44",
+          "role": "summary",
+          "label": "GRS stat"
+        },
+        {
+          "row": 25,
+          "col": 2,
+          "text": "--",
+          "role": "summary",
+          "label": "GRS stat"
+        },
+        {
+          "row": 25,
+          "col": 3,
+          "text": "--",
+          "role": "summary",
+          "label": "GRS stat"
+        },
+        {
+          "row": 25,
+          "col": 4,
+          "text": "--",
+          "role": "summary",
+          "label": "GRS stat"
+        },
+        {
+          "row": 26,
+          "col": 1,
+          "text": "[0.142]",
+          "role": "summary",
+          "label": "GRS p-value"
+        },
+        {
+          "row": 26,
+          "col": 2,
+          "text": "--",
+          "role": "summary",
+          "label": "GRS p-value"
+        },
+        {
+          "row": 26,
+          "col": 3,
+          "text": "--",
+          "role": "summary",
+          "label": "GRS p-value"
+        },
+        {
+          "row": 26,
+          "col": 4,
+          "text": "--",
+          "role": "summary",
+          "label": "GRS p-value"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the FF5 GRS statistic for 12 industry portfolios?",
+          "answer": "1.44"
+        },
+        {
+          "question": "What is the market beta for Utils?",
+          "answer": "0.61"
+        }
+      ]
+    },
+    {
+      "table_id": "international",
+      "caption": "International Evidence: FF3 Alphas by Region",
+      "label": "tab:international",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.31***",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.28***",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.24**",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.29***",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.11)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "3.88",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "3.11",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "2.18",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "4.83",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.18**",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.14*",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.21**",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.17***",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "FF3 alpha",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "2.25",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "1.75",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "2.33",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "2.83",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "t-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "Jul-1963",
+          "role": "summary",
+          "label": "Sample start"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "Nov-1990",
+          "role": "summary",
+          "label": "Sample start"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "Nov-1990",
+          "role": "summary",
+          "label": "Sample start"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "Nov-1990",
+          "role": "summary",
+          "label": "Sample start"
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "Dec-2022",
+          "role": "summary",
+          "label": "Sample end"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "Dec-2022",
+          "role": "summary",
+          "label": "Sample end"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "Dec-2022",
+          "role": "summary",
+          "label": "Sample end"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "Dec-2022",
+          "role": "summary",
+          "label": "Sample end"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the value premium alpha in Europe?",
+          "answer": "0.28 percent per month"
+        },
+        {
+          "question": "What is the t-statistic for the global value premium?",
+          "answer": "4.83"
+        }
+      ]
+    },
+    {
+      "table_id": "sub-period-early",
+      "caption": "Sub-Period Analysis: 1963-1992",
+      "label": "tab:sub-period-early",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "4.88***",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.84**",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.41",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.18",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "[0.000]",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "[0.024]",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "[0.108]",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "[0.281]",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.098",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.041",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.028",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.022",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.022)",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.007)",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.006)",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "354",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "354",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "354",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "354",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1963-92",
+          "role": "summary",
+          "label": "Period"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1963-92",
+          "role": "summary",
+          "label": "Period"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1963-92",
+          "role": "summary",
+          "label": "Period"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "1963-92",
+          "role": "summary",
+          "label": "Period"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the CAPM GRS statistic in the early sub-period?",
+          "answer": "4.88"
+        },
+        {
+          "question": "What is the FF3 GRS p-value in the early sub-period?",
+          "answer": "0.024"
+        }
+      ]
+    },
+    {
+      "table_id": "sub-period-late",
+      "caption": "Sub-Period Analysis: 1993-2022",
+      "label": "tab:sub-period-late",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "3.44***",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.28",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.01",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.94",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "[0.000]",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "[0.211]",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "[0.461]",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "[0.548]",
+          "role": "data",
+          "variable": "GRS F-statistic",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.068",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.022",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.014",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.011",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.006)",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Mean |alpha| (\\%/month)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "360",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "360",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "360",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "360",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1993-22",
+          "role": "summary",
+          "label": "Period"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1993-22",
+          "role": "summary",
+          "label": "Period"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1993-22",
+          "role": "summary",
+          "label": "Period"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "1993-22",
+          "role": "summary",
+          "label": "Period"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the CAPM GRS statistic in the late sub-period?",
+          "answer": "3.44"
+        },
+        {
+          "question": "What is the FF5 GRS p-value in the late sub-period?",
+          "answer": "0.461"
+        }
+      ]
+    },
+    {
+      "table_id": "proofs-block",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-construction",
+      "caption": "Appendix: Portfolio Construction Details",
+      "label": "tab:appendix-construction",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "Market cap",
+          "role": "data",
+          "variable": "Market cap (ME)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "CRSP",
+          "role": "data",
+          "variable": "Market cap (ME)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "NYSE median",
+          "role": "data",
+          "variable": "Market cap (ME)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "Monthly",
+          "role": "data",
+          "variable": "Market cap (ME)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Market cap (ME)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Market cap (ME)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Market cap (ME)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Market cap (ME)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "Book eq./ME",
+          "role": "data",
+          "variable": "Book-to-market (BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "Compustat",
+          "role": "data",
+          "variable": "Book-to-market (BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "NYSE 30/70",
+          "role": "data",
+          "variable": "Book-to-market (BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "Annual",
+          "role": "data",
+          "variable": "Book-to-market (BM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Book-to-market (BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Book-to-market (BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Book-to-market (BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Book-to-market (BM)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "RevProfit/Assets",
+          "role": "data",
+          "variable": "Operating profitability (OP)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "Compustat",
+          "role": "data",
+          "variable": "Operating profitability (OP)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "NYSE 30/70",
+          "role": "data",
+          "variable": "Operating profitability (OP)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "Annual",
+          "role": "data",
+          "variable": "Operating profitability (OP)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Operating profitability (OP)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Operating profitability (OP)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Operating profitability (OP)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Operating profitability (OP)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "DeltaAssets/Assets",
+          "role": "data",
+          "variable": "Investment (INV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "Compustat",
+          "role": "data",
+          "variable": "Investment (INV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "NYSE 30/70",
+          "role": "data",
+          "variable": "Investment (INV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "Annual",
+          "role": "data",
+          "variable": "Investment (INV)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Investment (INV)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Investment (INV)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Investment (INV)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Investment (INV)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "Ret(-12,-2)",
+          "role": "data",
+          "variable": "Momentum (MOM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "CRSP",
+          "role": "data",
+          "variable": "Momentum (MOM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "NYSE 30/70",
+          "role": "data",
+          "variable": "Momentum (MOM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "Monthly",
+          "role": "data",
+          "variable": "Momentum (MOM)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Momentum (MOM)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Momentum (MOM)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Momentum (MOM)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Momentum (MOM)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Which exchange provides size breakpoints?",
+          "answer": "NYSE"
+        },
+        {
+          "question": "When are portfolios reformed annually?",
+          "answer": "July of each year"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-returns",
+      "caption": "Appendix: Annual Returns by Factor Quintile",
+      "label": "tab:appendix-returns",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "9.12",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "7.88",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "7.41",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "7.08",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "6.74",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(2.21)",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(1.98)",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(1.84)",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(1.74)",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(1.62)",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "5.81",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "6.74",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "7.68",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "8.52",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "9.98",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(2.14)",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(1.88)",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(1.78)",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(1.84)",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "(2.08)",
+          "role": "data",
+          "variable": "Value-weighted",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1963-2022",
+          "role": "summary",
+          "label": "Sample"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1963-2022",
+          "role": "summary",
+          "label": "Sample"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1963-2022",
+          "role": "summary",
+          "label": "Sample"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "1963-2022",
+          "role": "summary",
+          "label": "Sample"
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "1963-2022",
+          "role": "summary",
+          "label": "Sample"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the annual excess return for the High BM quintile?",
+          "answer": "9.98 percent"
+        },
+        {
+          "question": "What is the annual excess return for the Small size quintile?",
+          "answer": "9.12 percent"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "capm",
+      "label": "eq:capm",
+      "latex": "\\mathbb{E}[R_i] - R_f = \\hat{\\beta}_i \\left(\\mathbb{E}[R_m] - R_f\\right), \\quad \\hat{\\beta}_i = \\frac{\\text{Cov}(R_i, R_m)}{\\text{Var}(R_m)}, \\quad \\mathbb{P}\\!\\left(\\hat{\\beta}_i \\in \\mathbb{R}^+\\right) > 0",
+      "description": "CAPM: expected excess return of asset $i$ equals market beta times the equity risk premium.",
+      "qa": [
+        {
+          "question": "What does beta_i measure in the CAPM?",
+          "answer": "The covariance of asset return with market return, divided by market return variance"
+        }
+      ]
+    },
+    {
+      "eq_id": "ff3-model",
+      "label": "eq:ff3",
+      "latex": "R_{it} - R_{ft} = \\alpha_i + b_i (R_{mt} - R_{ft}) + s_i \\text{SMB}_t + h_i \\text{HML}_t + \\varepsilon_{it}",
+      "description": "Fama-French three-factor model: asset excess return regressed on market, size (SMB), and value (HML) factors.",
+      "qa": [
+        {
+          "question": "What do the loadings s_i and h_i measure in FF3?",
+          "answer": "Sensitivity to the size factor (SMB) and value factor (HML) respectively"
+        }
+      ]
+    },
+    {
+      "eq_id": "expected-return",
+      "label": "eq:expected-return",
+      "latex": "E[R_i - R_f] = b_i \\lambda_{MKT} + s_i \\lambda_{SMB} + h_i \\lambda_{HML} + r_i \\lambda_{RMW} + c_i \\lambda_{CMA}",
+      "description": "Expected excess return in FF5 cross-sectional model: factor loadings times factor risk premia $\\lambda$.",
+      "qa": []
+    },
+    {
+      "eq_id": "alpha",
+      "label": "eq:alpha",
+      "latex": "\\hat{\\alpha}_i = \\mathbb{E}[R_i - R_f] - \\sum_{k=1}^K \\hat{\\beta}_{ik} \\tilde{\\lambda}_k, \\quad \\mathbb{P}\\!\\left(\\hat{\\alpha}_i = 0 \\mid \\mathcal{H}_0\\right) = 1 - \\mathbb{P}\\!\\left(\\text{GRS} > F_{N,T-N-K}^{-1}(1-\\alpha)\\right)",
+      "description": "Jensen's alpha: the difference between a portfolio's expected excess return and the expected return predicted by the factor model.",
+      "qa": []
+    },
+    {
+      "eq_id": "grs-test",
+      "label": "eq:grs",
+      "latex": "GRS = \\frac{T}{N} \\cdot \\frac{T - N - K}{T - K - 1} \\cdot \\frac{\\hat{\\alpha}' \\hat{\\Sigma}^{-1} \\hat{\\alpha}}{1 + \\bar{\\mu}' \\hat{\\Omega}^{-1} \\bar{\\mu}} \\sim F(N, T-N-K), \\quad \\hat{\\Sigma} = \\begin{bmatrix}\\tilde{\\sigma}_{11} & \\cdots & \\tilde{\\sigma}_{1N} \\\\ \\vdots & \\ddots & \\vdots \\\\ \\tilde{\\sigma}_{N1} & \\cdots & \\tilde{\\sigma}_{NN}\\end{bmatrix}",
+      "description": "Gibbons-Ross-Shanken (1989) test statistic. $\\hat{\\alpha}$ is the $N\\times1$ vector of OLS intercepts, $\\hat{\\Sigma}$ is the residual covariance, $\\bar{\\mu}$ is the mean factor vector, and $K$ is the number of factors.",
+      "qa": [
+        {
+          "question": "What is the null hypothesis of the GRS test?",
+          "answer": "All N portfolio alphas are jointly equal to zero: alpha = 0"
+        }
+      ]
+    },
+    {
+      "eq_id": "fama-macbeth",
+      "label": "eq:fama-macbeth",
+      "latex": "\\bar{\\lambda} = \\frac{1}{T} \\sum_{t=1}^T \\hat{\\lambda}_t, \\quad \\hat{\\lambda}_t = (\\hat{B}' \\hat{B})^{-1} \\hat{B}' R_t, \\quad \\text{se}(\\bar{\\lambda}) = \\frac{1}{\\sqrt{T}} \\text{sd}(\\hat{\\lambda}_t)",
+      "description": "Fama-MacBeth (1973) two-pass procedure: estimate betas in the first pass, then run monthly cross-sectional regressions to estimate risk premia $\\hat{\\lambda}_t$.",
+      "qa": [
+        {
+          "question": "How are standard errors computed in Fama-MacBeth?",
+          "answer": "Standard deviation of the time series of monthly cross-sectional estimates, divided by sqrt(T)"
+        }
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the GRS statistic for FF5 on 25 size-BM portfolios?",
+      "answer": "1.18 with p-value 0.276 (not rejected at 5% level)"
+    },
+    {
+      "question": "Does FF5 explain momentum?",
+      "answer": "No, Winner and Loser portfolios have FF5 alphas of +0.74 and -0.74 percent per month respectively"
+    },
+    {
+      "question": "What is the mean monthly excess market return over the sample?",
+      "answer": "0.64 percent"
+    },
+    {
+      "question": "What is the mean monthly excess market return?",
+      "answer": "0.64 percent"
+    },
+    {
+      "question": "How many monthly observations span the sample?",
+      "answer": "714"
+    },
+    {
+      "question": "What is the mean excess return of the Small portfolio?",
+      "answer": "0.81 percent per month"
+    },
+    {
+      "question": "What is the Sharpe ratio of the Value portfolio?",
+      "answer": "0.168"
+    },
+    {
+      "question": "What is the standard deviation of the Growth portfolio?",
+      "answer": "4.84 percent"
+    },
+    {
+      "question": "What is the CAPM alpha for the Small portfolio?",
+      "answer": "0.28 percent per month"
+    },
+    {
+      "question": "What is the FF3 SMB loading for the Big portfolio?",
+      "answer": "-0.14"
+    },
+    {
+      "question": "What is the CAPM alpha for the Value portfolio?",
+      "answer": "0.24 percent per month"
+    },
+    {
+      "question": "What is the FF3 HML loading for the Value portfolio?",
+      "answer": "1.08"
+    },
+    {
+      "question": "What is the average excess return for the Small-High BM portfolio?",
+      "answer": "1.18 percent per month"
+    },
+    {
+      "question": "What is the average excess return for the Big-Low BM portfolio?",
+      "answer": "0.34 percent per month"
+    },
+    {
+      "question": "What is the GRS statistic for CAPM on all 25 portfolios?",
+      "answer": "4.12"
+    },
+    {
+      "question": "What is the mean absolute alpha under CAPM?",
+      "answer": "0.082 percent per month"
+    },
+    {
+      "question": "What is the average adjusted R-squared for CAPM?",
+      "answer": "0.942"
+    },
+    {
+      "question": "What is the GRS statistic for FF3 on all 25 portfolios?",
+      "answer": "1.54"
+    },
+    {
+      "question": "What is the mean alpha under FF3?",
+      "answer": "0.031 percent per month"
+    },
+    {
+      "question": "What is the average adjusted R-squared for FF3?",
+      "answer": "0.971"
+    },
+    {
+      "question": "What is the GRS statistic for FF5 on 25 size-BM portfolios?",
+      "answer": "1.18"
+    },
+    {
+      "question": "What is the mean alpha under FF5 for 25 size-BM portfolios?",
+      "answer": "0.021 percent per month"
+    },
+    {
+      "question": "Does FF5 improve on FF3 for BM-sorted portfolios?",
+      "answer": "Yes, GRS falls from 1.12 (FF3) to 0.91 (FF5)"
+    },
+    {
+      "question": "What is the GRS statistic for CAPM on 25 size-BM portfolios?",
+      "answer": "4.12"
+    },
+    {
+      "question": "Is FF5 rejected for 25 size-BM portfolios at 5% level?",
+      "answer": "No, GRS p-value is 0.276"
+    },
+    {
+      "question": "What is the Fama-MacBeth HML risk premium in the FF3 specification?",
+      "answer": "0.22 percent per month"
+    },
+    {
+      "question": "What is the cross-sectional R-squared for FF5+MOM?",
+      "answer": "0.904"
+    },
+    {
+      "question": "What is the correlation between CMA and HML?",
+      "answer": "0.68"
+    },
+    {
+      "question": "What is the correlation between SMB and RMW?",
+      "answer": "-0.38"
+    },
+    {
+      "question": "What is the average excess return of the Winner portfolio?",
+      "answer": "1.41 percent per month"
+    },
+    {
+      "question": "Does FF5 explain momentum?",
+      "answer": "No, FF5 alpha for Winner is 0.74 and Loser is -0.74, both significant"
+    },
+    {
+      "question": "What is the FF5 GRS statistic for 12 industry portfolios?",
+      "answer": "1.44"
+    },
+    {
+      "question": "What is the market beta for Utils?",
+      "answer": "0.61"
+    },
+    {
+      "question": "What is the value premium alpha in Europe?",
+      "answer": "0.28 percent per month"
+    },
+    {
+      "question": "What is the t-statistic for the global value premium?",
+      "answer": "4.83"
+    },
+    {
+      "question": "What is the CAPM GRS statistic in the early sub-period?",
+      "answer": "4.88"
+    },
+    {
+      "question": "What is the FF3 GRS p-value in the early sub-period?",
+      "answer": "0.024"
+    },
+    {
+      "question": "What is the CAPM GRS statistic in the late sub-period?",
+      "answer": "3.44"
+    },
+    {
+      "question": "What is the FF5 GRS p-value in the late sub-period?",
+      "answer": "0.461"
+    },
+    {
+      "question": "Which exchange provides size breakpoints?",
+      "answer": "NYSE"
+    },
+    {
+      "question": "When are portfolios reformed annually?",
+      "answer": "July of each year"
+    },
+    {
+      "question": "What is the annual excess return for the High BM quintile?",
+      "answer": "9.98 percent"
+    },
+    {
+      "question": "What is the annual excess return for the Small size quintile?",
+      "answer": "9.12 percent"
+    },
+    {
+      "question": "What does beta_i measure in the CAPM?",
+      "answer": "The covariance of asset return with market return, divided by market return variance"
+    },
+    {
+      "question": "What do the loadings s_i and h_i measure in FF3?",
+      "answer": "Sensitivity to the size factor (SMB) and value factor (HML) respectively"
+    },
+    {
+      "question": "What is the null hypothesis of the GRS test?",
+      "answer": "All N portfolio alphas are jointly equal to zero: alpha = 0"
+    },
+    {
+      "question": "How are standard errors computed in Fama-MacBeth?",
+      "answer": "Standard deviation of the time series of monthly cross-sectional estimates, divided by sqrt(T)"
+    }
+  ]
+}
