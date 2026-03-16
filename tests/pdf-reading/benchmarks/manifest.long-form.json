@@ -1,0 +1,122 @@
+[
+  {
+    "paper_id": "01",
+    "field": "development",
+    "title": "Institutions and Economic Development: Evidence from Colonial Settlement Patterns",
+    "case_dir": "paper-01-development"
+  },
+  {
+    "paper_id": "02",
+    "field": "labor",
+    "title": "Minimum Wages and Employment: A Natural Experiment from the New Jersey--Pennsylvania Border",
+    "case_dir": "paper-02-labor"
+  },
+  {
+    "paper_id": "03",
+    "field": "trade",
+    "title": "The China Syndrome: Local Labor Market Effects of Import Competition in the United States",
+    "case_dir": "paper-03-trade"
+  },
+  {
+    "paper_id": "04",
+    "field": "public-finance",
+    "title": "Where You Grow Up Matters: Childhood Exposure Effects and the Role of Place",
+    "case_dir": "paper-04-public-finance"
+  },
+  {
+    "paper_id": "05",
+    "field": "industrial-organization",
+    "title": "Demand Estimation with Market-Level Data: A BLP Approach with Optimal Instruments",
+    "case_dir": "paper-05-industrial-organization"
+  },
+  {
+    "paper_id": "06",
+    "field": "macroeconomics",
+    "title": "Monetary Policy Shocks and the Macroeconomy: Narrative Identification in a Structural VAR",
+    "case_dir": "paper-06-macroeconomics"
+  },
+  {
+    "paper_id": "07",
+    "field": "econometric-theory",
+    "title": "Heteroskedasticity and Autocorrelation Consistent Covariance Matrix Estimation: Theory, Bandwidth Selection, and Finite-Sample Performance",
+    "case_dir": "paper-07-econometric-theory"
+  },
+  {
+    "paper_id": "08",
+    "field": "finance",
+    "title": "The Cross-Section of Expected Stock Returns: A Comprehensive Test of the Fama-French Five-Factor Model",
+    "case_dir": "paper-08-finance"
+  },
+  {
+    "paper_id": "09",
+    "field": "health",
+    "title": "Health Insurance and Health Outcomes: Evidence from a Randomized Medicaid Expansion",
+    "case_dir": "paper-09-health"
+  },
+  {
+    "paper_id": "10",
+    "field": "political-economy",
+    "title": "Information, Accountability, and Corruption: Evidence from Random Audits in Brazil",
+    "case_dir": "paper-10-political-economy"
+  },
+  {
+    "paper_id": "11",
+    "field": "education",
+    "title": "Teacher Quality and Student Outcomes: Evidence from Value-Added Models and Long-Run Data",
+    "case_dir": "paper-11-education"
+  },
+  {
+    "paper_id": "12",
+    "field": "urban",
+    "title": "Housing Supply, Land Constraints, and Urban Spatial Equilibrium",
+    "case_dir": "paper-12-urban"
+  },
+  {
+    "paper_id": "13",
+    "field": "environmental",
+    "title": "Climate, Extremes, and Economic Activity: Evidence from Nonlinear Temperature Effects Across U.S. Counties",
+    "case_dir": "paper-13-environmental"
+  },
+  {
+    "paper_id": "14",
+    "field": "behavioral",
+    "title": "Paying Not to Go to the Gym: Present Bias, Contract Choice, and Welfare in Health Club Membership",
+    "case_dir": "paper-14-behavioral"
+  },
+  {
+    "paper_id": "15",
+    "field": "economic-history",
+    "title": "The Long-Run Effects of the Slave Trade on Economic Development in Africa",
+    "case_dir": "paper-15-economic-history"
+  },
+  {
+    "paper_id": "16",
+    "field": "micro-theory",
+    "title": "Optimal Auction Design: Revenue Maximization and Mechanism Design",
+    "case_dir": "paper-16-micro-theory"
+  },
+  {
+    "paper_id": "17",
+    "field": "international-macro",
+    "title": "Exchange Rate Dynamics and International Transmission in a Two-Country DSGE Model",
+    "case_dir": "paper-17-international-macro"
+  },
+  {
+    "paper_id": "18",
+    "field": "applied-econometrics",
+    "title": "Local Average and Marginal Treatment Effects: Identification, Estimation, and Monte Carlo Evidence",
+    "case_dir": "paper-18-applied-econometrics"
+  },
+  {
+    "paper_id": "19",
+    "field": "inequality",
+    "title": "Top Income Shares in the United States, 1913-2020: New Evidence from Tax Records",
+    "case_dir": "paper-19-inequality"
+  },
+  {
+    "paper_id": "20",
+    "field": "market-design",
+    "title": "School Choice, Deferred Acceptance, and Student Outcomes: Evidence from a Centralized Admissions System",
+    "case_dir": "paper-20-market-design"
+  }
+]

@@ -1,0 +1,2006 @@
+{
+  "paper_id": "16",
+  "field": "micro-theory",
+  "title": "Optimal Auction Design: Revenue Maximization and Mechanism Design",
+  "journal_style": "econometrica",
+  "target_pages": 52,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-micro",
+      "level": 1
+    },
+    {
+      "title": "Auction Preliminaries",
+      "label": "sec:auction-prelims",
+      "level": 1
+    },
+    {
+      "title": "Auction Formats and Rules",
+      "label": "sec:auction-formats",
+      "level": 2
+    },
+    {
+      "title": "Equilibrium Concepts in Auctions",
+      "label": "sec:auction-equilibrium",
+      "level": 2
+    },
+    {
+      "title": "The Independent Private Values Model",
+      "label": "sec:ipv",
+      "level": 1
+    },
+    {
+      "title": "Model Setup and Assumptions",
+      "label": "sec:ipv-setup",
+      "level": 2
+    },
+    {
+      "title": "Bidding Strategies and Equilibrium",
+      "label": "sec:ipv-bidding",
+      "level": 2
+    },
+    {
+      "title": "Revenue Equivalence",
+      "label": "sec:rev-equiv",
+      "level": 1
+    },
+    {
+      "title": "Statement and Intuition",
+      "label": "sec:rev-equiv-statement",
+      "level": 2
+    },
+    {
+      "title": "Applications and Limits of Revenue Equivalence",
+      "label": "sec:rev-equiv-apps",
+      "level": 2
+    },
+    {
+      "title": "Optimal Auctions",
+      "label": "sec:optimal-auctions",
+      "level": 1
+    },
+    {
+      "title": "Virtual Valuations and the Regularity Condition",
+      "label": "sec:virtual-val",
+      "level": 2
+    },
+    {
+      "title": "Characterization of the Optimal Mechanism",
+      "label": "sec:optimal-char",
+      "level": 2
+    },
+    {
+      "title": "Welfare Analysis of Optimal Auctions",
+      "label": "sec:optimal-welfare",
+      "level": 2
+    },
+    {
+      "title": "Extensions",
+      "label": "sec:extensions",
+      "level": 1
+    },
+    {
+      "title": "Correlated Values and Cremer-McLean",
+      "label": "sec:correlated",
+      "level": 2
+    },
+    {
+      "title": "Risk Aversion and Asymmetric Bidders",
+      "label": "sec:risk-aversion",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-micro",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Proofs of Main Results",
+      "label": "sec:appendix-a-micro",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Numerical Examples",
+      "label": "sec:appendix-b-micro",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "mechanism-comparison",
+      "caption": "Comparison of Standard Auction Formats",
+      "label": "tab:mechanism-comparison",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "First-price sealed-bid",
+          "latex": "\\text{First-price sealed-bid (FPA)}",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "E[second-order stat]",
+          "latex": "E\\!\\left[v_{(1)}\\left(1 - \\frac{F(v_{(1)})}{f(v_{(1)})}\\right)\\right]",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "Zero (shading)",
+          "latex": "0 \\text{ (equilibrium bid shading)}",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "Yes (symmetric IPV)",
+          "latex": "\\checkmark \\text{ (symmetric IPV)}",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "Second-price sealed-bid",
+          "latex": "\\text{Second-price sealed-bid (SPA)}",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "E[second-order stat]",
+          "latex": "E[v_{(2)}]",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "E[v_(1) - v_(2)]",
+          "latex": "E[v_{(1)} - v_{(2)}]",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "Yes (dominant strategy)",
+          "latex": "\\checkmark \\text{ (dominant strategy)}",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "English ascending (oral)",
+          "latex": "\\text{English ascending (oral)}",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "E[v_(2)]",
+          "latex": "E[v_{(2)}]",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "E[v_(1) - v_(2)]",
+          "latex": "E[v_{(1)} - v_{(2)}]",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "Yes",
+          "latex": "\\checkmark",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "Dutch descending (oral)",
+          "latex": "\\text{Dutch descending (oral)}",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "Same as FPA",
+          "latex": "E\\!\\left[v_{(1)}\\!\\left(1 - \\frac{F(v_{(1)})}{f(v_{(1)})}\\right)\\right]",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "Zero (bid shading)",
+          "latex": "0 \\text{ (bid shading)}",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "Yes (symmetric IPV)",
+          "latex": "\\checkmark \\text{ (symmetric IPV)}",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "All-pay auction",
+          "latex": "\\text{All-pay auction}",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "N * E[b_i(v)]",
+          "latex": "n \\cdot E[b_i(v_i)]",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "E[v_(1)] - n*E[b]",
+          "latex": "E[v_{(1)}] - n \\cdot E[b_i(v_i)]",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "Yes (symmetric IPV)",
+          "latex": "\\checkmark \\text{ (symmetric IPV)}",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Which auction formats are strategically equivalent under symmetric IPV?",
+          "answer": "First-price sealed-bid and Dutch descending auction are strategically equivalent (both involve bid shading)"
+        },
+        {
+          "question": "Which formats are efficient under symmetric IPV?",
+          "answer": "All five formats \u2014 FPA, SPA, English, Dutch, and all-pay \u2014 are allocatively efficient under symmetric IPV with risk-neutral bidders"
+        },
+        {
+          "question": "What is the bidder surplus in a second-price auction?",
+          "answer": "E[v_{(1)} - v_{(2)}], the expected gap between highest and second-highest valuation"
+        },
+        {
+          "question": "What does the Revenue Equivalence Theorem state?",
+          "answer": "All standard auction formats yield the same expected seller revenue under symmetric IPV with risk-neutral bidders"
+        }
+      ]
+    },
+    {
+      "table_id": "bidder-surplus-by-mechanism",
+      "caption": "Bidder Surplus by Mechanism: $F \\sim \\mathrm{Uniform}[0,1]$, $n = 2$ Bidders",
+      "label": "tab:bidder-surplus-by-mechanism",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "SPA (no reserve)",
+          "latex": "\\text{SPA } (r=0)",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "E[v_(1) - v_(2)] = 1/3",
+          "latex": "E[v_{(1)} - v_{(2)}] = \\tfrac{1}{3}",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "0",
+          "latex": "0",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "1/3",
+          "latex": "\\tfrac{1}{3} \\approx 0.333",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "1/3",
+          "latex": "\\tfrac{1}{3} \\approx 0.333",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "SPA (r* = 0.5)",
+          "latex": "\\text{SPA } (r^*=\\tfrac{1}{2})",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1/8",
+          "latex": "\\tfrac{1}{8} = 0.125",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0",
+          "latex": "0",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1/8",
+          "latex": "\\tfrac{1}{8} = 0.125",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "5/12",
+          "latex": "\\tfrac{5}{12} \\approx 0.417",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "FPA (no reserve)",
+          "latex": "\\text{FPA } (r=0)",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "E[v_(1) - b_(1)] = 1/3",
+          "latex": "E[v_{(1)} - b_{(1)}] = \\tfrac{1}{3}",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0",
+          "latex": "0",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "1/3",
+          "latex": "\\tfrac{1}{3} \\approx 0.333",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "1/3",
+          "latex": "\\tfrac{1}{3} \\approx 0.333",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "All-pay (no reserve)",
+          "latex": "\\text{All-pay } (r=0)",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "v_(1) - b_(1)",
+          "latex": "E[v_{(1)} - b_{(1)}(v_{(1)})]",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-b_(2)",
+          "latex": "-E[b_{(2)}(v_{(2)})]",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "1/3",
+          "latex": "\\tfrac{1}{3} \\approx 0.333",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "1/3",
+          "latex": "\\tfrac{1}{3} \\approx 0.333",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "Posted price (p = 0.5)",
+          "latex": "\\text{Posted price } (p=0.5)",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "E[v - 0.5 | v >= 0.5]",
+          "latex": "E[v - p \\mid v \\geq p] \\cdot \\Pr(v \\geq p) = \\tfrac{1}{8}",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0",
+          "latex": "0",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "1/8",
+          "latex": "\\tfrac{1}{8} = 0.125",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "1/4",
+          "latex": "\\tfrac{1}{4} = 0.250",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the total bidder surplus in a second-price auction with no reserve?",
+          "answer": "1/3 \u2248 0.333"
+        },
+        {
+          "question": "How does the optimal reserve affect bidder surplus?",
+          "answer": "It reduces total bidder surplus from 1/3 to 1/8, transferring surplus to the seller"
+        },
+        {
+          "question": "What is seller revenue under a posted price of p=0.5 with a single buyer?",
+          "answer": "1/4 = 0.250"
+        }
+      ]
+    },
+    {
+      "table_id": "revenue-comparison",
+      "caption": "Revenue Comparison Across Auction Formats: $F \\sim \\mathrm{Uniform}[0,1]$",
+      "label": "tab:revenue-comparison",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "N = 2",
+          "latex": "2",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "1/3",
+          "latex": "\\tfrac{1}{3} \\approx 0.333",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "1/3",
+          "latex": "\\tfrac{1}{3} \\approx 0.333",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "1/3",
+          "latex": "\\tfrac{1}{3} \\approx 0.333",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "5/12",
+          "latex": "\\tfrac{5}{12} \\approx 0.417",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "N = 3",
+          "latex": "3",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1/2",
+          "latex": "\\tfrac{1}{2} = 0.500",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1/2",
+          "latex": "\\tfrac{1}{2} = 0.500",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1/2",
+          "latex": "\\tfrac{1}{2} = 0.500",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "0.531",
+          "latex": "0.531",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "N = 5",
+          "latex": "5",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "2/3",
+          "latex": "\\tfrac{2}{3} \\approx 0.667",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "2/3",
+          "latex": "\\tfrac{2}{3} \\approx 0.667",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "2/3",
+          "latex": "\\tfrac{2}{3} \\approx 0.667",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "0.679",
+          "latex": "0.679",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "N = 10",
+          "latex": "10",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "10/11",
+          "latex": "\\tfrac{10}{11} \\approx 0.833",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "10/11",
+          "latex": "\\tfrac{10}{11} \\approx 0.833",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "10/11",
+          "latex": "\\tfrac{10}{11} \\approx 0.833",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "0.838",
+          "latex": "0.838",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "N = 20",
+          "latex": "20",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "20/21",
+          "latex": "\\tfrac{20}{21} \\approx 0.905",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "20/21",
+          "latex": "\\tfrac{20}{21} \\approx 0.905",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "20/21",
+          "latex": "\\tfrac{20}{21} \\approx 0.905",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "0.908",
+          "latex": "0.908",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the expected revenue for 2 bidders under FPA with Uniform[0,1]?",
+          "answer": "1/3 \u2248 0.333"
+        },
+        {
+          "question": "Does the Revenue Equivalence Theorem hold across FPA, SPA, and all-pay here?",
+          "answer": "Yes, all three yield identical expected revenue 1/3 for n=2 bidders"
+        },
+        {
+          "question": "What is the optimal revenue for n=2 bidders?",
+          "answer": "5/12 \u2248 0.417"
+        },
+        {
+          "question": "What happens to the gap between optimal and symmetric auction revenue as n grows?",
+          "answer": "The gap shrinks toward zero as competition increases"
+        }
+      ]
+    },
+    {
+      "table_id": "numerical-uniform",
+      "caption": "Optimal Reserve Price: Numerical Results for $F \\sim \\mathrm{Uniform}[0,1]$, $n=2$ Bidders",
+      "label": "tab:numerical-uniform",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "r = 0",
+          "latex": "0",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "1/3",
+          "latex": "\\tfrac{1}{3} \\approx 0.333",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "1",
+          "latex": "1.000",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "r = 0.1",
+          "latex": "0.1",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.3484",
+          "latex": "0.3484",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.9900",
+          "latex": "0.9900",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "r = 0.25",
+          "latex": "0.25",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.3750",
+          "latex": "0.3750",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.9375",
+          "latex": "0.9375",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "r = 0.5 (optimal)",
+          "latex": "r^* = 0.5",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "5/12 = 0.4167",
+          "latex": "\\tfrac{5}{12} \\approx 0.4167",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.7500",
+          "latex": "0.7500",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "r = 0.75",
+          "latex": "0.75",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.3750",
+          "latex": "0.3750",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.4375",
+          "latex": "0.4375",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "r = 1.0",
+          "latex": "1.0",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0",
+          "latex": "0.0000",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0",
+          "latex": "0.0000",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the optimal reserve price for Uniform[0,1] with 2 bidders?",
+          "answer": "r* = 0.5"
+        },
+        {
+          "question": "What is the expected revenue at the optimal reserve r*=0.5?",
+          "answer": "5/12 \u2248 0.4167"
+        },
+        {
+          "question": "What is the probability of sale at the optimal reserve r*=0.5?",
+          "answer": "0.75"
+        },
+        {
+          "question": "What is the expected revenue with no reserve (r=0)?",
+          "answer": "1/3 \u2248 0.333"
+        }
+      ]
+    },
+    {
+      "table_id": "numerical-exponential",
+      "caption": "Optimal Reserve Price: Numerical Results for $F \\sim \\mathrm{Exp}(1)$, $n=2$ Bidders",
+      "label": "tab:numerical-exponential",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "r = 0",
+          "latex": "0",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "1/2 = 0.500",
+          "latex": "\\tfrac{1}{2} = 0.500",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "1.000",
+          "latex": "1.000",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "r = 0.5",
+          "latex": "0.5",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.5352",
+          "latex": "0.5352",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.9394",
+          "latex": "0.9394",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "r = 1.0 (optimal)",
+          "latex": "r^* = 1.0",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.5413",
+          "latex": "0.5413",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.8647",
+          "latex": "0.8647",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "r = 1.5",
+          "latex": "1.5",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.5165",
+          "latex": "0.5165",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.7769",
+          "latex": "0.7769",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "r = 2.0",
+          "latex": "2.0",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.4672",
+          "latex": "0.4672",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.6767",
+          "latex": "0.6767",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "r = 3.0",
+          "latex": "3.0",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.3233",
+          "latex": "0.3233",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.5034",
+          "latex": "0.5034",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the optimal reserve price for Exp(1) with 2 bidders?",
+          "answer": "r* = 1.0"
+        },
+        {
+          "question": "What is the virtual valuation function for Exp(1)?",
+          "answer": "phi(v) = v - 1"
+        },
+        {
+          "question": "What is the expected revenue at the optimal reserve for Exp(1)?",
+          "answer": "0.5413"
+        },
+        {
+          "question": "What is the probability of sale at the optimal reserve for Exp(1)?",
+          "answer": "0.8647"
+        }
+      ]
+    },
+    {
+      "table_id": "optimal-vs-efficient",
+      "caption": "Optimal versus Efficient Mechanisms: Allocation, Payment, and Welfare",
+      "label": "tab:optimal-vs-efficient",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "Efficient / VCG",
+          "latex": "\\text{Efficient (VCG)}",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "Award to highest v_i",
+          "latex": "q_i^{\\text{VCG}}(v) = \\mathbf{1}[v_i = \\max_j v_j]",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "max_{j != i} v_j",
+          "latex": "t_i^{\\text{VCG}}(v) = \\max_{j \\neq i} v_j \\cdot q_i^{\\text{VCG}}(v)",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "E[v_(2)]",
+          "latex": "E[v_{(2)}]",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "0",
+          "latex": "0",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "Optimal (Myerson)",
+          "latex": "\\text{Optimal (Myerson)}",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "Award to highest phi(v_i) >= 0",
+          "latex": "q_i^*(v) = \\mathbf{1}[\\varphi(v_i) = \\max_j \\varphi(v_j) \\geq 0]",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "Myerson payment rule",
+          "latex": "t_i^*(v) = v_i q_i^*(v) - \\int_{\\underline{v}}^{v_i} q_i^*(s, v_{-i})\\,ds",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "E[phi(v_(1)) 1[phi>=0]]",
+          "latex": "E[\\varphi(v_{(1)}) \\cdot \\mathbf{1}[\\varphi(v_{(1)}) \\geq 0]]",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "DWL > 0 when r* > 0",
+          "latex": "\\mathrm{DWL} > 0 \\text{ iff } r^* > 0",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "Posted price p",
+          "latex": "\\text{Posted price } p",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "Award if v_i >= p",
+          "latex": "q_i^{pp}(v) = \\mathbf{1}[v_i \\geq p]",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "p * 1[v_i >= p]",
+          "latex": "t_i^{pp}(v) = p \\cdot \\mathbf{1}[v_i \\geq p]",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "p * (1-F(p))",
+          "latex": "p \\cdot [1 - F(p)]",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "E[(v-p) 1[v in [r*,p]]]",
+          "latex": "E[(v - p) \\cdot \\mathbf{1}[v \\in [r^*, p]]]",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the allocation rule in the Myerson optimal mechanism?",
+          "answer": "Award the object to bidder i with the highest non-negative virtual valuation"
+        },
+        {
+          "question": "What is the efficiency loss in the VCG mechanism?",
+          "answer": "Zero \u2014 VCG is allocatively efficient"
+        },
+        {
+          "question": "When does the Myerson mechanism have positive deadweight loss?",
+          "answer": "Whenever the optimal reserve price r* > 0, because some high-valuation trades are excluded"
+        },
+        {
+          "question": "What is the payment in a VCG mechanism for bidder i?",
+          "answer": "The maximum valuation among all other bidders, paid only if i wins"
+        }
+      ]
+    },
+    {
+      "table_id": "optimal-reserve-distributions",
+      "caption": "Optimal Reserve Price Under Different Valuation Distributions",
+      "label": "tab:optimal-reserve-distributions",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "Uniform[0,1]",
+          "latex": "\\text{Uniform}[0,1]",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "2v - 1",
+          "latex": "2v - 1",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "1/2",
+          "latex": "\\tfrac{1}{2}",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "5/12",
+          "latex": "\\tfrac{5}{12} \\approx 0.417",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "Yes",
+          "latex": "\\checkmark",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "Exp(1)",
+          "latex": "\\text{Exp}(1)",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "v - 1",
+          "latex": "v - 1",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1",
+          "latex": "1",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.541",
+          "latex": "0.541",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "Yes",
+          "latex": "\\checkmark",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "Uniform[0,a]",
+          "latex": "\\text{Uniform}[0,a]",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "2v - a",
+          "latex": "2v - a",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "a/2",
+          "latex": "\\tfrac{a}{2}",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "5a/12",
+          "latex": "\\tfrac{5a}{12}",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "Yes",
+          "latex": "\\checkmark",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "Power: F(v) = v^alpha",
+          "latex": "F(v) = v^{\\alpha} \\text{ on } [0,1]",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "v - v/(alpha)",
+          "latex": "v\\!\\left(1 + \\tfrac{1}{\\alpha}\\right) - \\tfrac{1}{\\alpha}",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1/(alpha + 1)",
+          "latex": "\\tfrac{1}{\\alpha + 1}",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "(depends on alpha)",
+          "latex": "\\text{(closed form)}",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "Yes (alpha >= 1)",
+          "latex": "\\checkmark \\; (\\alpha \\geq 1)",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "LogNormal(0, sigma^2)",
+          "latex": "\\text{LogN}(0, \\sigma^2)",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(no closed form)",
+          "latex": "v - \\tfrac{1 - \\Phi(\\tfrac{\\ln v}{\\sigma})}{\\tfrac{1}{\\sigma v}\\phi(\\tfrac{\\ln v}{\\sigma})}",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(numerical)",
+          "latex": "\\text{numerical}",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(numerical)",
+          "latex": "\\text{numerical}",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "Yes",
+          "latex": "\\checkmark",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "Pareto(1, alpha)",
+          "latex": "\\text{Pareto}(1, \\alpha),\\; v \\geq 1",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "v - v/alpha",
+          "latex": "v\\!\\left(1 - \\tfrac{1}{\\alpha}\\right)",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "alpha/(alpha-1)",
+          "latex": "\\tfrac{\\alpha}{\\alpha - 1}",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(depends on alpha)",
+          "latex": "\\text{(closed form)}",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "Yes (alpha > 1)",
+          "latex": "\\checkmark \\; (\\alpha > 1)",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the virtual valuation for the Exponential(1) distribution?",
+          "answer": "phi(v) = v - 1"
+        },
+        {
+          "question": "What is the optimal reserve for Uniform[0,a]?",
+          "answer": "r* = a/2"
+        },
+        {
+          "question": "Is the power-law distribution F(v) = v^alpha regular for all alpha?",
+          "answer": "It is regular for alpha >= 1; for alpha < 1 it may fail the monotonicity condition"
+        },
+        {
+          "question": "What is the optimal reserve for Pareto(1, alpha)?",
+          "answer": "r* = alpha/(alpha - 1)"
+        }
+      ]
+    },
+    {
+      "table_id": "welfare-decomposition",
+      "caption": "Welfare Decomposition: Total Surplus, Revenue, and Deadweight Loss",
+      "label": "tab:welfare-decomposition",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "Total surplus (efficient)",
+          "latex": "W^{\\text{eff}} = E[v_{(n)}]",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "E[v_(n)] = n/(n+1)",
+          "latex": "E[v_{(n)}] = \\tfrac{n}{n+1}",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "2/3 (n=2)",
+          "latex": "\\tfrac{2}{3} \\approx 0.667 \\;\\; (n=2)",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "3/2 (n=2)",
+          "latex": "\\tfrac{3}{2} = 1.500 \\;\\; (n=2)",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "Seller revenue (Myerson)",
+          "latex": "R^* = E[\\varphi(v_{(1)}) \\cdot \\mathbf{1}[\\varphi(v_{(1)}) \\geq 0]]",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "E[phi(v_(1)) 1[phi>=0]]",
+          "latex": "R^* = \\int_{r^*}^{\\bar{v}} \\varphi(v) \\,n f(v) F(v)^{n-1}\\,dv",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "5/12 (n=2)",
+          "latex": "\\tfrac{5}{12} \\approx 0.417 \\;\\; (n=2)",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.541 (n=2)",
+          "latex": "0.541 \\;\\; (n=2)",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "Bidder (consumer) surplus",
+          "latex": "CS = W^{\\text{opt}} - R^*",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "W* - R*",
+          "latex": "CS = E\\!\\left[\\sum_i (v_i - t_i^*) q_i^*(v)\\right] - R^*",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.125 (n=2)",
+          "latex": "0.125 \\;\\; (n=2)",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.229 (n=2)",
+          "latex": "0.229 \\;\\; (n=2)",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "Deadweight loss",
+          "latex": "\\mathrm{DWL} = W^{\\text{eff}} - W^{\\text{opt}}",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "W^eff - W^opt",
+          "latex": "\\mathrm{DWL} = \\int_{0}^{r^*} v \\,n f(v) F(v)^{n-1}\\,dv",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.125 (n=2)",
+          "latex": "0.125 \\;\\; (n=2)",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.730 (n=2)",
+          "latex": "0.730 \\;\\; (n=2)",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the total efficient surplus for Uniform[0,1] with n=2 bidders?",
+          "answer": "2/3 \u2248 0.667"
+        },
+        {
+          "question": "What is the deadweight loss for Uniform[0,1] with n=2 bidders under the Myerson mechanism?",
+          "answer": "1/8 = 0.125"
+        },
+        {
+          "question": "What is the identity relating welfare components?",
+          "answer": "W^eff = R* + CS + DWL"
+        },
+        {
+          "question": "When is deadweight loss zero in the optimal mechanism?",
+          "answer": "When the optimal reserve r* equals the lowest possible valuation, so no trades are excluded"
+        }
+      ]
+    },
+    {
+      "table_id": "correlated-vs-ipv-revenue",
+      "caption": "Revenue in Correlated vs. Independent Private Values: Numerical Comparison",
+      "label": "tab:correlated-vs-ipv-revenue",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "Uniform, independent",
+          "latex": "\\text{Uniform}[0,1],\\;\\text{indep.}",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "2",
+          "latex": "2",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "5/12",
+          "latex": "\\tfrac{5}{12} \\approx 0.417",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "5/12",
+          "latex": "\\tfrac{5}{12} \\approx 0.417",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "No (IPV = CPV here)",
+          "latex": "\\text{No (indep.)}",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "Uniform, rho = 0.3",
+          "latex": "\\text{Uniform}[0,1],\\;\\rho = 0.3",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "2",
+          "latex": "2",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.417 (benchmark)",
+          "latex": "0.417 \\text{ (IPV benchmark)}",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.528",
+          "latex": "0.528",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "Partial",
+          "latex": "\\text{Partial}",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "Uniform, rho = 0.7",
+          "latex": "\\text{Uniform}[0,1],\\;\\rho = 0.7",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "2",
+          "latex": "2",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.417 (benchmark)",
+          "latex": "0.417 \\text{ (IPV benchmark)}",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.614",
+          "latex": "0.614",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "Near-full",
+          "latex": "\\text{Near-full}",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "Uniform, rho = 1 (common value)",
+          "latex": "\\text{Uniform}[0,1],\\;\\rho = 1",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "2",
+          "latex": "2",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "N/A",
+          "latex": "\\text{N/A}",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "2/3 = W^eff",
+          "latex": "\\tfrac{2}{3} = W^{\\text{eff}}",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "Yes (full extraction)",
+          "latex": "\\checkmark \\text{ (full)}",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "Uniform, independent, n=5",
+          "latex": "\\text{Uniform}[0,1],\\;\\text{indep.}",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "5",
+          "latex": "5",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.679",
+          "latex": "0.679",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.679",
+          "latex": "0.679",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "No (IPV = CPV here)",
+          "latex": "\\text{No (indep.)}",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "Uniform, rho=0.5, n=5",
+          "latex": "\\text{Uniform}[0,1],\\;\\rho = 0.5",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "5",
+          "latex": "5",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.679 (benchmark)",
+          "latex": "0.679 \\text{ (IPV benchmark)}",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.798",
+          "latex": "0.798",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "Partial",
+          "latex": "\\text{Partial}",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the CPV revenue with rho=0.7 and n=2 bidders?",
+          "answer": "0.614"
+        },
+        {
+          "question": "Can the seller extract full surplus under perfect correlation (rho=1)?",
+          "answer": "Yes, the seller can extract the full efficient surplus of 2/3"
+        },
+        {
+          "question": "Does correlation help the seller when valuations are independent?",
+          "answer": "No, when rho=0 (independent), CPV and IPV revenues are identical"
+        },
+        {
+          "question": "What is the CPV revenue gain over IPV for n=5 bidders with rho=0.5?",
+          "answer": "0.798 - 0.679 = 0.119, an increase of about 17.5%"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-proofs-micro",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "revelation-principle",
+      "label": "eq:revelation-principle",
+      "latex": "\\text{For any mechanism } \\mathcal{M} \\text{ with equilibrium } \\sigma^*, \\;\\exists \\text{ a direct mechanism } \\mathcal{M}' \\text{ that is IC, IR, and outcome-equivalent}",
+      "description": "Revelation Principle: without loss of generality, restrict attention to direct, incentive-compatible, individually rational mechanisms.",
+      "qa": []
+    },
+    {
+      "eq_id": "expected-utility",
+      "label": "eq:expected-utility",
+      "latex": "U_i(v_i, b_i) = v_i \\cdot q_i(b_i, b_{-i}) - t_i(b_i, b_{-i})",
+      "description": "Expected utility of bidder $i$ with valuation $v_i$: probability of winning $q_i$ times value, minus expected payment $t_i$.",
+      "qa": [
+        {
+          "question": "What does the expected utility formula say about a bidder's payoff?",
+          "answer": "Bidder i's payoff is the probability-weighted value of winning minus the expected payment"
+        }
+      ]
+    },
+    {
+      "eq_id": "ic-constraint",
+      "label": "eq:ic",
+      "latex": "U_i(v_i, v_i) \\geq U_i(v_i, v_i'), \\quad \\forall\\, v_i, v_i' \\in [\\underline{v}, \\bar{v}]",
+      "description": "Incentive Compatibility (IC): truthful reporting is a best response; misreporting $v_i'$ does not improve payoff.",
+      "qa": [
+        {
+          "question": "What does the IC constraint require?",
+          "answer": "Truthful reporting is weakly optimal \u2014 a bidder cannot improve payoff by misreporting their valuation"
+        }
+      ]
+    },
+    {
+      "eq_id": "ir-constraint",
+      "label": "eq:ir",
+      "latex": "U_i(v_i, v_i) \\geq 0, \\quad \\forall\\, v_i \\in [\\underline{v}, \\bar{v}]",
+      "description": "Individual Rationality (IR): every type weakly prefers participating. Binds at the lowest type: $U_i(\\underline{v}, \\underline{v}) = 0$.",
+      "qa": []
+    },
+    {
+      "eq_id": "revenue-equivalence",
+      "label": "eq:revenue-equivalence",
+      "latex": "E[\\text{Rev}^A] = \\int_{\\underline{v}}^{\\bar{v}} \\bar{q}(v) \\varphi(v) f(v)\\,dv = E[\\text{Rev}^B] \\iff q^A = q^B \\text{ and } U_i(\\underline{v}) = 0",
+      "description": "Revenue Equivalence Theorem: any two symmetric auctions that allocate the object to the same winner and give the lowest type zero surplus yield identical expected revenue.",
+      "qa": []
+    },
+    {
+      "eq_id": "virtual-valuation",
+      "label": "eq:virtual-valuation",
+      "latex": "\\varphi(v) = v - \\frac{1 - F(v)}{f(v)}",
+      "description": "Virtual valuation $\\varphi(v)$: the marginal revenue to the seller from selling to type $v$. Equals $v$ minus the inverse hazard rate $[1-F(v)]/f(v)$.",
+      "qa": [
+        {
+          "question": "What is the virtual valuation formula?",
+          "answer": "\\varphi(v) = v - [1-F(v)]/f(v)"
+        }
+      ]
+    },
+    {
+      "eq_id": "optimal-reserve",
+      "label": "eq:optimal-reserve",
+      "latex": "\\varphi(r^*) = 0 \\implies r^* - \\frac{1 - F(r^*)}{f(r^*)} = 0",
+      "description": "Myerson optimal reserve price $r^*$: the unique solution to $\\varphi(r^*) = 0$. For Uniform[0,1], $r^* = 1/2$; for Exp(1), $r^* = 1$.",
+      "qa": [
+        {
+          "question": "How is the Myerson optimal reserve price determined?",
+          "answer": "It is the solution to phi(r*) = 0, i.e., the value where virtual valuation equals zero"
+        }
+      ]
+    },
+    {
+      "eq_id": "optimal-allocation",
+      "label": "eq:optimal-allocation",
+      "latex": "q_i^*(v) = \\mathbf{1}\\!\\left[\\varphi(v_i) \\geq \\max_{j \\neq i} \\varphi(v_j) \\;\\text{ and }\\; \\varphi(v_i) \\geq 0\\right], \\quad \\begin{bmatrix} q_1^*(v) \\\\ \\vdots \\\\ q_n^*(v) \\end{bmatrix} \\in \\{0,1\\}^n, \\; \\sum_{i=1}^n q_i^* \\leq 1",
+      "description": "Myerson optimal allocation rule: allocate the object to the bidder with the highest non-negative virtual valuation.",
+      "qa": [
+        {
+          "question": "What is the Myerson optimal allocation rule?",
+          "answer": "Award the object to the bidder with the highest virtual valuation, provided it is non-negative"
+        }
+      ]
+    },
+    {
+      "eq_id": "expected-revenue",
+      "label": "eq:expected-revenue",
+      "latex": "E[\\text{Rev}^*] = \\int_{r^*}^{\\bar{v}} \\varphi(v) \\, n f(v) F(v)^{n-1}\\,dv = E\\!\\left[\\varphi(v_{(n)}) \\cdot \\mathbf{1}[\\varphi(v_{(n)}) \\geq 0]\\right], \\quad \\hat{R}_n \\xrightarrow{p} E[\\text{Rev}^*]",
+      "description": "Expected revenue formula: the seller's expected revenue equals expected virtual surplus allocated, i.e., the virtual value of the winning bidder when winning is optimal.",
+      "qa": []
+    },
+    {
+      "eq_id": "hazard-regularity",
+      "label": "eq:hazard-regularity",
+      "latex": "\\frac{d}{dv}\\left[v - \\frac{1-F(v)}{f(v)}\\right] = \\varphi'(v) \\geq 0 \\iff \\frac{d}{dv}\\!\\left[\\frac{1-F(v)}{f(v)}\\right] \\leq 1",
+      "description": "Regularity condition: $\\varphi(v)$ is non-decreasing. Equivalently, the hazard rate $f(v)/[1-F(v)]$ is non-decreasing (monotone hazard rate condition).",
+      "qa": [
+        {
+          "question": "What does the regularity condition require?",
+          "answer": "The virtual valuation function must be non-decreasing, equivalently the hazard rate f(v)/[1-F(v)] must be non-decreasing"
+        }
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the virtual valuation formula in Myerson's theory?",
+      "answer": "\\varphi(v) = v - [1-F(v)]/f(v)"
+    },
+    {
+      "question": "What is the optimal reserve price for Uniform[0,1] with 2 bidders?",
+      "answer": "r* = 1/2, from solving phi(r*) = 0 with phi(v) = 2v - 1"
+    },
+    {
+      "question": "What does the Revenue Equivalence Theorem state?",
+      "answer": "Any two symmetric auctions satisfying IC and IR that allocate to the same winner and give the lowest type zero surplus yield identical expected seller revenue"
+    },
+    {
+      "question": "What is the Myerson optimal allocation rule?",
+      "answer": "Allocate to the bidder with the highest non-negative virtual valuation; withhold if all virtual valuations are negative"
+    },
+    {
+      "question": "Why does the optimal mechanism generate deadweight loss?",
+      "answer": "The optimal reserve r* > 0 excludes trades where v < r*, even when v > 0, creating deadweight loss equal to the foregone surplus from excluded high-value trades"
+    },
+    {
+      "question": "Which auction formats are strategically equivalent under symmetric IPV?",
+      "answer": "First-price sealed-bid and Dutch descending auction are strategically equivalent (both involve bid shading)"
+    },
+    {
+      "question": "Which formats are efficient under symmetric IPV?",
+      "answer": "All five formats \u2014 FPA, SPA, English, Dutch, and all-pay \u2014 are allocatively efficient under symmetric IPV with risk-neutral bidders"
+    },
+    {
+      "question": "What is the bidder surplus in a second-price auction?",
+      "answer": "E[v_{(1)} - v_{(2)}], the expected gap between highest and second-highest valuation"
+    },
+    {
+      "question": "What does the Revenue Equivalence Theorem state?",
+      "answer": "All standard auction formats yield the same expected seller revenue under symmetric IPV with risk-neutral bidders"
+    },
+    {
+      "question": "What is the total bidder surplus in a second-price auction with no reserve?",
+      "answer": "1/3 \u2248 0.333"
+    },
+    {
+      "question": "How does the optimal reserve affect bidder surplus?",
+      "answer": "It reduces total bidder surplus from 1/3 to 1/8, transferring surplus to the seller"
+    },
+    {
+      "question": "What is seller revenue under a posted price of p=0.5 with a single buyer?",
+      "answer": "1/4 = 0.250"
+    },
+    {
+      "question": "What is the expected revenue for 2 bidders under FPA with Uniform[0,1]?",
+      "answer": "1/3 \u2248 0.333"
+    },
+    {
+      "question": "Does the Revenue Equivalence Theorem hold across FPA, SPA, and all-pay here?",
+      "answer": "Yes, all three yield identical expected revenue 1/3 for n=2 bidders"
+    },
+    {
+      "question": "What is the optimal revenue for n=2 bidders?",
+      "answer": "5/12 \u2248 0.417"
+    },
+    {
+      "question": "What happens to the gap between optimal and symmetric auction revenue as n grows?",
+      "answer": "The gap shrinks toward zero as competition increases"
+    },
+    {
+      "question": "What is the optimal reserve price for Uniform[0,1] with 2 bidders?",
+      "answer": "r* = 0.5"
+    },
+    {
+      "question": "What is the expected revenue at the optimal reserve r*=0.5?",
+      "answer": "5/12 \u2248 0.4167"
+    },
+    {
+      "question": "What is the probability of sale at the optimal reserve r*=0.5?",
+      "answer": "0.75"
+    },
+    {
+      "question": "What is the expected revenue with no reserve (r=0)?",
+      "answer": "1/3 \u2248 0.333"
+    },
+    {
+      "question": "What is the optimal reserve price for Exp(1) with 2 bidders?",
+      "answer": "r* = 1.0"
+    },
+    {
+      "question": "What is the virtual valuation function for Exp(1)?",
+      "answer": "phi(v) = v - 1"
+    },
+    {
+      "question": "What is the expected revenue at the optimal reserve for Exp(1)?",
+      "answer": "0.5413"
+    },
+    {
+      "question": "What is the probability of sale at the optimal reserve for Exp(1)?",
+      "answer": "0.8647"
+    },
+    {
+      "question": "What is the allocation rule in the Myerson optimal mechanism?",
+      "answer": "Award the object to bidder i with the highest non-negative virtual valuation"
+    },
+    {
+      "question": "What is the efficiency loss in the VCG mechanism?",
+      "answer": "Zero \u2014 VCG is allocatively efficient"
+    },
+    {
+      "question": "When does the Myerson mechanism have positive deadweight loss?",
+      "answer": "Whenever the optimal reserve price r* > 0, because some high-valuation trades are excluded"
+    },
+    {
+      "question": "What is the payment in a VCG mechanism for bidder i?",
+      "answer": "The maximum valuation among all other bidders, paid only if i wins"
+    },
+    {
+      "question": "What is the virtual valuation for the Exponential(1) distribution?",
+      "answer": "phi(v) = v - 1"
+    },
+    {
+      "question": "What is the optimal reserve for Uniform[0,a]?",
+      "answer": "r* = a/2"
+    },
+    {
+      "question": "Is the power-law distribution F(v) = v^alpha regular for all alpha?",
+      "answer": "It is regular for alpha >= 1; for alpha < 1 it may fail the monotonicity condition"
+    },
+    {
+      "question": "What is the optimal reserve for Pareto(1, alpha)?",
+      "answer": "r* = alpha/(alpha - 1)"
+    },
+    {
+      "question": "What is the total efficient surplus for Uniform[0,1] with n=2 bidders?",
+      "answer": "2/3 \u2248 0.667"
+    },
+    {
+      "question": "What is the deadweight loss for Uniform[0,1] with n=2 bidders under the Myerson mechanism?",
+      "answer": "1/8 = 0.125"
+    },
+    {
+      "question": "What is the identity relating welfare components?",
+      "answer": "W^eff = R* + CS + DWL"
+    },
+    {
+      "question": "When is deadweight loss zero in the optimal mechanism?",
+      "answer": "When the optimal reserve r* equals the lowest possible valuation, so no trades are excluded"
+    },
+    {
+      "question": "What is the CPV revenue with rho=0.7 and n=2 bidders?",
+      "answer": "0.614"
+    },
+    {
+      "question": "Can the seller extract full surplus under perfect correlation (rho=1)?",
+      "answer": "Yes, the seller can extract the full efficient surplus of 2/3"
+    },
+    {
+      "question": "Does correlation help the seller when valuations are independent?",
+      "answer": "No, when rho=0 (independent), CPV and IPV revenues are identical"
+    },
+    {
+      "question": "What is the CPV revenue gain over IPV for n=5 bidders with rho=0.5?",
+      "answer": "0.798 - 0.679 = 0.119, an increase of about 17.5%"
+    },
+    {
+      "question": "What does the expected utility formula say about a bidder's payoff?",
+      "answer": "Bidder i's payoff is the probability-weighted value of winning minus the expected payment"
+    },
+    {
+      "question": "What does the IC constraint require?",
+      "answer": "Truthful reporting is weakly optimal \u2014 a bidder cannot improve payoff by misreporting their valuation"
+    },
+    {
+      "question": "What is the virtual valuation formula?",
+      "answer": "\\varphi(v) = v - [1-F(v)]/f(v)"
+    },
+    {
+      "question": "How is the Myerson optimal reserve price determined?",
+      "answer": "It is the solution to phi(r*) = 0, i.e., the value where virtual valuation equals zero"
+    },
+    {
+      "question": "What is the Myerson optimal allocation rule?",
+      "answer": "Award the object to the bidder with the highest virtual valuation, provided it is non-negative"
+    },
+    {
+      "question": "What does the regularity condition require?",
+      "answer": "The virtual valuation function must be non-decreasing, equivalently the hazard rate f(v)/[1-F(v)] must be non-decreasing"
+    }
+  ]
+}

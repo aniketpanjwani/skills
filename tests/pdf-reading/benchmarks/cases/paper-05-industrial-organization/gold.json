@@ -1,0 +1,4139 @@
+{
+  "paper_id": "05",
+  "field": "industrial-organization",
+  "title": "Demand Estimation with Market-Level Data: A BLP Approach with Optimal Instruments",
+  "journal_style": "econometrica",
+  "target_pages": 70,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-io",
+      "level": 1
+    },
+    {
+      "title": "Industry Background",
+      "label": "sec:industry-bg",
+      "level": 1
+    },
+    {
+      "title": "Demand Model",
+      "label": "sec:demand",
+      "level": 1
+    },
+    {
+      "title": "Consumer Heterogeneity",
+      "label": "sec:demand-het",
+      "level": 2
+    },
+    {
+      "title": "Market Share Inversion",
+      "label": "sec:demand-inv",
+      "level": 2
+    },
+    {
+      "title": "Identification of Demand Parameters",
+      "label": "sec:demand-id",
+      "level": 2
+    },
+    {
+      "title": "Supply Side",
+      "label": "sec:supply",
+      "level": 1
+    },
+    {
+      "title": "Firm Pricing",
+      "label": "sec:supply-pricing",
+      "level": 2
+    },
+    {
+      "title": "Cost Estimation",
+      "label": "sec:supply-cost",
+      "level": 2
+    },
+    {
+      "title": "Estimation",
+      "label": "sec:estimation-io",
+      "level": 1
+    },
+    {
+      "title": "GMM Procedure",
+      "label": "sec:estimation-gmm",
+      "level": 2
+    },
+    {
+      "title": "Instruments",
+      "label": "sec:estimation-iv",
+      "level": 2
+    },
+    {
+      "title": "Standard Errors",
+      "label": "sec:estimation-se",
+      "level": 2
+    },
+    {
+      "title": "Data",
+      "label": "sec:data-io",
+      "level": 1
+    },
+    {
+      "title": "Scanner Data",
+      "label": "sec:data-scanner",
+      "level": 2
+    },
+    {
+      "title": "Product Characteristics",
+      "label": "sec:data-chars",
+      "level": 2
+    },
+    {
+      "title": "Results",
+      "label": "sec:results-io",
+      "level": 1
+    },
+    {
+      "title": "Demand Estimates",
+      "label": "sec:results-demand",
+      "level": 2
+    },
+    {
+      "title": "Elasticities",
+      "label": "sec:results-elas",
+      "level": 2
+    },
+    {
+      "title": "Markups",
+      "label": "sec:results-markups",
+      "level": 2
+    },
+    {
+      "title": "Counterfactuals",
+      "label": "sec:counter-io",
+      "level": 1
+    },
+    {
+      "title": "Merger Simulation",
+      "label": "sec:counter-merger",
+      "level": 2
+    },
+    {
+      "title": "Welfare Analysis",
+      "label": "sec:counter-welfare",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-io",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Proofs",
+      "label": "sec:appendix-a-io",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Computational Details",
+      "label": "sec:appendix-b-io",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Monte Carlo Design",
+      "label": "sec:appendix-c-io",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "market-summary-stats",
+      "caption": "Market-Level Summary Statistics",
+      "label": "tab:market-summary",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "24.3",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "8.1",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "14",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "35",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.312",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.142",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.148",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.491",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.218",
+          "role": "data",
+          "variable": "HHI",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.091",
+          "role": "data",
+          "variable": "HHI",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.118",
+          "role": "data",
+          "variable": "HHI",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.341",
+          "role": "data",
+          "variable": "HHI",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "HHI",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "HHI",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "HHI",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "HHI",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "24.81",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "12.41",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "10.50",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "41.20",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "34.2",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "18.1",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "14.1",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "58.4",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "342",
+          "role": "summary",
+          "label": "Markets"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "342",
+          "role": "summary",
+          "label": "Markets"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "342",
+          "role": "summary",
+          "label": "Markets"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "342",
+          "role": "summary",
+          "label": "Markets"
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean number of products per market?",
+          "answer": "24.3"
+        },
+        {
+          "question": "How many markets are in the sample?",
+          "answer": "342"
+        },
+        {
+          "question": "What is the mean market HHI?",
+          "answer": "0.218"
+        }
+      ]
+    },
+    {
+      "table_id": "product-characteristics",
+      "caption": "Product Characteristics Summary",
+      "label": "tab:product-chars",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "6.42",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.84",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.20",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "9.91",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "6.2",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "6.1",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "34.8",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "3.21",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1.14",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "5.00",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean quality index?",
+          "answer": "6.42"
+        },
+        {
+          "question": "What is the mean space (cu ft) of a product?",
+          "answer": "18.4"
+        }
+      ]
+    },
+    {
+      "table_id": "market-summary-stats",
+      "caption": "Market-Level Summary Statistics",
+      "label": "tab:market-summary",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "24.3",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "8.1",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "14",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "35",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Products",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.312",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.142",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.148",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.491",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Market Share (leader)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.218",
+          "role": "data",
+          "variable": "HHI",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.091",
+          "role": "data",
+          "variable": "HHI",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.118",
+          "role": "data",
+          "variable": "HHI",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.341",
+          "role": "data",
+          "variable": "HHI",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "HHI",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "HHI",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "HHI",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "HHI",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "24.81",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "12.41",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "10.50",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "41.20",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Price (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "34.2",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "18.1",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "14.1",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "58.4",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Price-Cost Margin (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "342",
+          "role": "summary",
+          "label": "Markets"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "342",
+          "role": "summary",
+          "label": "Markets"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "342",
+          "role": "summary",
+          "label": "Markets"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "342",
+          "role": "summary",
+          "label": "Markets"
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean number of products per market?",
+          "answer": "24.3"
+        },
+        {
+          "question": "How many markets are in the sample?",
+          "answer": "342"
+        },
+        {
+          "question": "What is the mean market HHI?",
+          "answer": "0.218"
+        }
+      ]
+    },
+    {
+      "table_id": "product-characteristics",
+      "caption": "Product Characteristics Summary",
+      "label": "tab:product-chars",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "6.42",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.84",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.20",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "9.91",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Quality Index (0-10)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "6.2",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "6.1",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "34.8",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Space (cu ft)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "3.21",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1.14",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "5.00",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Energy Star Rating",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "8,321",
+          "role": "summary",
+          "label": "Products"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean quality index?",
+          "answer": "6.42"
+        },
+        {
+          "question": "What is the mean space (cu ft) of a product?",
+          "answer": "18.4"
+        }
+      ]
+    },
+    {
+      "table_id": "demand-estimates-logit",
+      "caption": "Demand Estimates: Simple Logit",
+      "label": "tab:demand-logit",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.041***",
+          "role": "data",
+          "variable": "Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.182***",
+          "role": "data",
+          "variable": "Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.171***",
+          "role": "data",
+          "variable": "Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.164***",
+          "role": "data",
+          "variable": "Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.006)",
+          "role": "data",
+          "variable": "Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.029)",
+          "role": "data",
+          "variable": "Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.027)",
+          "role": "data",
+          "variable": "Price",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.318***",
+          "role": "data",
+          "variable": "Quality",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.341***",
+          "role": "data",
+          "variable": "Quality",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.328***",
+          "role": "data",
+          "variable": "Quality",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.319***",
+          "role": "data",
+          "variable": "Quality",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Quality",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Quality",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.029)",
+          "role": "data",
+          "variable": "Quality",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.027)",
+          "role": "data",
+          "variable": "Quality",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.024***",
+          "role": "data",
+          "variable": "Space",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.027***",
+          "role": "data",
+          "variable": "Space",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.025***",
+          "role": "data",
+          "variable": "Space",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.024***",
+          "role": "data",
+          "variable": "Space",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Space",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.005)",
+          "role": "data",
+          "variable": "Space",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Space",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Space",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.112***",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.118***",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.114***",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.111***",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.021)",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.020)",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "149,778",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "149,778",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "149,778",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "149,778",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.741",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the OLS price coefficient in the logit model?",
+          "answer": "-0.041"
+        },
+        {
+          "question": "What is the IV price coefficient in column 2?",
+          "answer": "-0.182"
+        },
+        {
+          "question": "What is the quality coefficient in column 1 OLS?",
+          "answer": "0.318"
+        }
+      ]
+    },
+    {
+      "table_id": "demand-estimates-rc-logit",
+      "caption": "Demand Estimates: Random Coefficients Logit (BLP)",
+      "label": "tab:demand-rc",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.241",
+          "role": "data",
+          "variable": "Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.118",
+          "role": "data",
+          "variable": "Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-7.82",
+          "role": "data",
+          "variable": "Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "4.21",
+          "role": "data",
+          "variable": "Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Price",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.384",
+          "role": "data",
+          "variable": "Quality",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.142",
+          "role": "data",
+          "variable": "Quality",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "12.41",
+          "role": "data",
+          "variable": "Quality",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "5.81",
+          "role": "data",
+          "variable": "Quality",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Quality",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Quality",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Quality",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Quality",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.031",
+          "role": "data",
+          "variable": "Space",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.014",
+          "role": "data",
+          "variable": "Space",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "7.41",
+          "role": "data",
+          "variable": "Space",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "3.62",
+          "role": "data",
+          "variable": "Space",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Space",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Space",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Space",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Space",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.128",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.041",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "6.12",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "2.91",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.021)",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Energy Star",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "149,778",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "149,778",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "149,778",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "149,778",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "18.42",
+          "role": "summary",
+          "label": "GMM Objective"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "18.42",
+          "role": "summary",
+          "label": "GMM Objective"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "18.42",
+          "role": "summary",
+          "label": "GMM Objective"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "18.42",
+          "role": "summary",
+          "label": "GMM Objective"
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "0.318",
+          "role": "summary",
+          "label": "Overid. p-value"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "0.318",
+          "role": "summary",
+          "label": "Overid. p-value"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "0.318",
+          "role": "summary",
+          "label": "Overid. p-value"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "0.318",
+          "role": "summary",
+          "label": "Overid. p-value"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean price coefficient in the RC logit?",
+          "answer": "-0.241"
+        },
+        {
+          "question": "What is the standard deviation of the price coefficient?",
+          "answer": "0.118"
+        },
+        {
+          "question": "What is the overidentification test p-value?",
+          "answer": "0.318"
+        }
+      ]
+    },
+    {
+      "table_id": "own-price-elasticities",
+      "caption": "Own-Price Elasticities by Segment",
+      "label": "tab:own-elas",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-3.21",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-4.18",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-3.84",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-4.41",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.31)",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.24)",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.38)",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-2.84",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-3.61",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-3.42",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-3.88",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.16)",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.27)",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.21)",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.34)",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-2.41",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-3.14",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-2.98",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-3.31",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.24)",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.19)",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.31)",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-2.91",
+          "role": "data",
+          "variable": "All Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-3.71",
+          "role": "data",
+          "variable": "All Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-3.42",
+          "role": "data",
+          "variable": "All Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-3.94",
+          "role": "data",
+          "variable": "All Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.17)",
+          "role": "data",
+          "variable": "All Products",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "All Products",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.22)",
+          "role": "data",
+          "variable": "All Products",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.35)",
+          "role": "data",
+          "variable": "All Products",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean own-price elasticity for all products in the RC logit?",
+          "answer": "-3.71"
+        },
+        {
+          "question": "What is the own-price elasticity for the budget segment in the RC logit?",
+          "answer": "-4.18"
+        }
+      ]
+    },
+    {
+      "table_id": "cross-price-elasticities",
+      "caption": "Cross-Price Elasticities: Selected Products",
+      "label": "tab:cross-elas",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-3.84",
+          "role": "data",
+          "variable": "Product A price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.028",
+          "role": "data",
+          "variable": "Product A price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.019",
+          "role": "data",
+          "variable": "Product A price",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.011",
+          "role": "data",
+          "variable": "Product A price",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.31)",
+          "role": "data",
+          "variable": "Product A price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Product A price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Product A price",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.002)",
+          "role": "data",
+          "variable": "Product A price",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.031",
+          "role": "data",
+          "variable": "Product B price",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-3.61",
+          "role": "data",
+          "variable": "Product B price",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.024",
+          "role": "data",
+          "variable": "Product B price",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.014",
+          "role": "data",
+          "variable": "Product B price",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Product B price",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.27)",
+          "role": "data",
+          "variable": "Product B price",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Product B price",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.002)",
+          "role": "data",
+          "variable": "Product B price",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.021",
+          "role": "data",
+          "variable": "Product C price",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.026",
+          "role": "data",
+          "variable": "Product C price",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-3.42",
+          "role": "data",
+          "variable": "Product C price",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.018",
+          "role": "data",
+          "variable": "Product C price",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Product C price",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Product C price",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "Product C price",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Product C price",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.012",
+          "role": "data",
+          "variable": "Product D price",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.015",
+          "role": "data",
+          "variable": "Product D price",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.019",
+          "role": "data",
+          "variable": "Product D price",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-3.14",
+          "role": "data",
+          "variable": "Product D price",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.002)",
+          "role": "data",
+          "variable": "Product D price",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.002)",
+          "role": "data",
+          "variable": "Product D price",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Product D price",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "Product D price",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the cross-price elasticity of Product A demand with respect to Product B price?",
+          "answer": "0.031"
+        },
+        {
+          "question": "What is the own-price elasticity of Product C?",
+          "answer": "-3.42"
+        }
+      ]
+    },
+    {
+      "table_id": "markups",
+      "caption": "Estimated Markups",
+      "label": "tab:markups",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "21.4",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "28.1",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "24.8",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "25.2",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(1.2)",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(2.1)",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(1.8)",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(3.1)",
+          "role": "data",
+          "variable": "Budget Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "26.8",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "33.4",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "29.8",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "30.4",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(1.4)",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(2.4)",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(2.0)",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(3.4)",
+          "role": "data",
+          "variable": "Mid Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "31.2",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "38.4",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "34.1",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "36.8",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(1.8)",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(2.8)",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(2.4)",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(3.8)",
+          "role": "data",
+          "variable": "Premium Segment",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the RC Logit markup for the premium segment?",
+          "answer": "38.4"
+        },
+        {
+          "question": "What is the accounting-based markup for the mid segment?",
+          "answer": "30.4"
+        }
+      ]
+    },
+    {
+      "table_id": "counterfactual-merger",
+      "caption": "Merger Simulation: Price Effects",
+      "label": "tab:merger",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "4.12",
+          "role": "data",
+          "variable": "Merging Firm A Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "6.84",
+          "role": "data",
+          "variable": "Merging Firm A Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "5.91",
+          "role": "data",
+          "variable": "Merging Firm A Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "7.21",
+          "role": "data",
+          "variable": "Merging Firm A Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.38)",
+          "role": "data",
+          "variable": "Merging Firm A Products",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.71)",
+          "role": "data",
+          "variable": "Merging Firm A Products",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.54)",
+          "role": "data",
+          "variable": "Merging Firm A Products",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.82)",
+          "role": "data",
+          "variable": "Merging Firm A Products",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "3.84",
+          "role": "data",
+          "variable": "Merging Firm B Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "6.41",
+          "role": "data",
+          "variable": "Merging Firm B Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "5.48",
+          "role": "data",
+          "variable": "Merging Firm B Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "6.78",
+          "role": "data",
+          "variable": "Merging Firm B Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.34)",
+          "role": "data",
+          "variable": "Merging Firm B Products",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.64)",
+          "role": "data",
+          "variable": "Merging Firm B Products",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.49)",
+          "role": "data",
+          "variable": "Merging Firm B Products",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.74)",
+          "role": "data",
+          "variable": "Merging Firm B Products",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1.21",
+          "role": "data",
+          "variable": "Rival Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1.94",
+          "role": "data",
+          "variable": "Rival Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.68",
+          "role": "data",
+          "variable": "Rival Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "2.11",
+          "role": "data",
+          "variable": "Rival Products",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "Rival Products",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.24)",
+          "role": "data",
+          "variable": "Rival Products",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.19)",
+          "role": "data",
+          "variable": "Rival Products",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "Rival Products",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the predicted price increase for Firm A products under RC Logit?",
+          "answer": "6.84"
+        },
+        {
+          "question": "What is the predicted price increase for rival products under logit?",
+          "answer": "1.21"
+        }
+      ]
+    },
+    {
+      "table_id": "welfare-effects",
+      "caption": "Welfare Effects of Proposed Merger",
+      "label": "tab:welfare",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-1.84",
+          "role": "data",
+          "variable": "Consumer Surplus Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-3.12",
+          "role": "data",
+          "variable": "Consumer Surplus Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-2.68",
+          "role": "data",
+          "variable": "Consumer Surplus Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-3.41",
+          "role": "data",
+          "variable": "Consumer Surplus Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.21)",
+          "role": "data",
+          "variable": "Consumer Surplus Change",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.38)",
+          "role": "data",
+          "variable": "Consumer Surplus Change",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.31)",
+          "role": "data",
+          "variable": "Consumer Surplus Change",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.44)",
+          "role": "data",
+          "variable": "Consumer Surplus Change",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "2.41",
+          "role": "data",
+          "variable": "Producer Surplus Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "3.84",
+          "role": "data",
+          "variable": "Producer Surplus Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "3.21",
+          "role": "data",
+          "variable": "Producer Surplus Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "4.12",
+          "role": "data",
+          "variable": "Producer Surplus Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "Producer Surplus Change",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.44)",
+          "role": "data",
+          "variable": "Producer Surplus Change",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.38)",
+          "role": "data",
+          "variable": "Producer Surplus Change",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.51)",
+          "role": "data",
+          "variable": "Producer Surplus Change",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.57",
+          "role": "data",
+          "variable": "Total Welfare Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.72",
+          "role": "data",
+          "variable": "Total Welfare Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.53",
+          "role": "data",
+          "variable": "Total Welfare Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.71",
+          "role": "data",
+          "variable": "Total Welfare Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "Total Welfare Change",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.22)",
+          "role": "data",
+          "variable": "Total Welfare Change",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "Total Welfare Change",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.26)",
+          "role": "data",
+          "variable": "Total Welfare Change",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the consumer surplus change under RC Logit?",
+          "answer": "-3.12"
+        },
+        {
+          "question": "What is the total welfare change under RC Logit?",
+          "answer": "0.72"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-proofs-io",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-instruments",
+      "caption": "Appendix: Instrument Relevance and Validity",
+      "label": "tab:appendix-instruments",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "84.2",
+          "role": "data",
+          "variable": "BLP Instruments (own chars)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.182",
+          "role": "data",
+          "variable": "BLP Instruments (own chars)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "12.41",
+          "role": "data",
+          "variable": "BLP Instruments (own chars)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.412",
+          "role": "data",
+          "variable": "BLP Instruments (own chars)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "BLP Instruments (own chars)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "BLP Instruments (own chars)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "BLP Instruments (own chars)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "BLP Instruments (own chars)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "91.4",
+          "role": "data",
+          "variable": "BLP Instruments (rival chars)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.201",
+          "role": "data",
+          "variable": "BLP Instruments (rival chars)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "11.84",
+          "role": "data",
+          "variable": "BLP Instruments (rival chars)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.458",
+          "role": "data",
+          "variable": "BLP Instruments (rival chars)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "BLP Instruments (rival chars)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "BLP Instruments (rival chars)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "BLP Instruments (rival chars)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "BLP Instruments (rival chars)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "72.1",
+          "role": "data",
+          "variable": "Hausman Instruments",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.161",
+          "role": "data",
+          "variable": "Hausman Instruments",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "13.12",
+          "role": "data",
+          "variable": "Hausman Instruments",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.361",
+          "role": "data",
+          "variable": "Hausman Instruments",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Hausman Instruments",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Hausman Instruments",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Hausman Instruments",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Hausman Instruments",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "142.8",
+          "role": "data",
+          "variable": "Optimal Instruments",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.318",
+          "role": "data",
+          "variable": "Optimal Instruments",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "8.41",
+          "role": "data",
+          "variable": "Optimal Instruments",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.681",
+          "role": "data",
+          "variable": "Optimal Instruments",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Optimal Instruments",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Optimal Instruments",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Optimal Instruments",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Optimal Instruments",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the F-statistic for the optimal instruments?",
+          "answer": "142.8"
+        },
+        {
+          "question": "What is the Hansen J p-value for BLP own characteristics instruments?",
+          "answer": "0.412"
+        }
+      ]
+    },
+    {
+      "table_id": "monte-carlo-bias",
+      "caption": "Monte Carlo: Bias of Estimators",
+      "label": "tab:mc-bias",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "41.2",
+          "role": "data",
+          "variable": "OLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "40.8",
+          "role": "data",
+          "variable": "OLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "41.1",
+          "role": "data",
+          "variable": "OLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "40.9",
+          "role": "data",
+          "variable": "OLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(2.1)",
+          "role": "data",
+          "variable": "OLS",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(1.4)",
+          "role": "data",
+          "variable": "OLS",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(1.0)",
+          "role": "data",
+          "variable": "OLS",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "OLS",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.8",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.2",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.8",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.3",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(1.9)",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(1.3)",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.9)",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.9",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.6",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.4",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.1",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(1.8)",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(1.2)",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the OLS bias in the price coefficient at N=1000?",
+          "answer": "41.1"
+        },
+        {
+          "question": "What is the BLP bias with optimal instruments at N=5000?",
+          "answer": "0.1"
+        }
+      ]
+    },
+    {
+      "table_id": "monte-carlo-coverage",
+      "caption": "Monte Carlo: Coverage Rates of 95\\% Confidence Intervals",
+      "label": "tab:mc-coverage",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "88.4",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "91.2",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "93.1",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "94.8",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(1.0)",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.9)",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.7)",
+          "role": "data",
+          "variable": "BLP (BLP Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "91.2",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "93.4",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "94.2",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "94.9",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.9)",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.7)",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.7)",
+          "role": "data",
+          "variable": "BLP (Optimal Instruments)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the coverage rate for BLP with BLP instruments at N=1000?",
+          "answer": "93.1"
+        },
+        {
+          "question": "What is the coverage rate for BLP with optimal instruments at N=5000?",
+          "answer": "94.9"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "indirect-utility",
+      "label": "eq:utility",
+      "latex": "u_{ijt} = \\alpha_i p_{jt} + x_{jt}'\\beta_i + \\xi_{jt} + \\varepsilon_{ijt}, \\quad \\alpha_i \\sim \\mathcal{N}\\!\\left(\\bar{\\alpha},\\; \\begin{bmatrix}\\sigma_\\alpha^2 & 0 \\\\ 0 & \\sigma_\\beta^2\\end{bmatrix}\\right), \\quad \\binom{J}{2} \\text{ cross-elasticities}",
+      "description": "Indirect utility of consumer $i$ for product $j$ in market $t$.",
+      "qa": [
+        {
+          "question": "What does xi_jt capture?",
+          "answer": "Unobserved product quality (demand-side unobservable)"
+        }
+      ]
+    },
+    {
+      "eq_id": "market-shares",
+      "label": "eq:shares",
+      "latex": "s_{jt}(\\delta, \\Sigma) = \\int \\frac{\\exp(\\delta_{jt} + \\mu_{ijt})}{1 + \\sum_k \\exp(\\delta_{kt} + \\mu_{ikt})} dP_\\nu(\\nu), \\quad \\Sigma = \\begin{bmatrix} \\sigma_p^2 & \\rho_{pq}\\sigma_p\\sigma_q \\\\ \\rho_{pq}\\sigma_p\\sigma_q & \\sigma_q^2 \\end{bmatrix}",
+      "description": "Market shares as integral over consumer heterogeneity $\\nu$ with normal mixing distribution.",
+      "qa": []
+    },
+    {
+      "eq_id": "blp-contraction",
+      "label": "eq:contraction",
+      "latex": "\\delta^{(r+1)} = \\delta^{(r)} + \\ln s^{obs} - \\ln s(\\delta^{(r)}, \\Sigma), \\quad \\|\\delta^{(r+1)} - \\delta^*\\| \\leq \\sqrt[3]{\\binom{J}{2} \\kappa^r \\|\\delta^{(0)} - \\delta^*\\|^3}",
+      "description": "BLP contraction mapping to invert market shares and recover mean utilities $\\delta$.",
+      "qa": []
+    },
+    {
+      "eq_id": "markup-formula",
+      "label": "eq:markup",
+      "latex": "p - mc = -\\\\left(\\\\frac{\\\\partial s}{\\\\partial p}'\\\\Omega\\\\right)^{-1} s",
+      "description": "Markup formula (Lerner index) from Bertrand-Nash pricing conditions, where $\\Omega$ is the ownership matrix.",
+      "qa": []
+    },
+    {
+      "eq_id": "merger-simulation",
+      "label": "eq:merger",
+      "latex": "p^m = mc + \\\\left(\\\\frac{\\\\partial s}{\\\\partial p}'\\\\Omega^m\\\\right)^{-1} s(p^m)",
+      "description": "Post-merger equilibrium prices from modified Bertrand-Nash conditions with new ownership matrix $\\Omega^m$.",
+      "qa": []
+    },
+    {
+      "eq_id": "gmm-objective",
+      "label": "eq:gmm",
+      "latex": "\\hat{\\\\theta} = \\\\arg\\\\min_{\\\\theta} \\\\xi(\\\\theta)' Z W Z' \\\\xi(\\\\theta)",
+      "description": "GMM objective function minimized over structural parameters $\\theta = (\\bar{\\beta}, \\Sigma)$.",
+      "qa": []
+    },
+    {
+      "eq_id": "optimal-instruments",
+      "label": "eq:opt-instruments",
+      "latex": "Z^*_{jt} = E\\\\left[\\\\frac{\\\\partial \\\\xi_{jt}}{\\\\partial \\\\theta} \\\\mid Z\\\\right] = -E\\\\left[\\\\frac{\\\\partial s_{jt}}{\\\\partial \\\\theta} / \\\\frac{\\\\partial s_{jt}}{\\\\partial \\\\xi_{jt}} \\\\mid Z\\\\right]",
+      "description": "Optimal instruments (Chamberlain 1987): expected Jacobian of moments.",
+      "qa": []
+    },
+    {
+      "eq_id": "own-elas",
+      "label": "eq:own-elas",
+      "latex": "\\\\varepsilon_{jjt} = \\\\frac{\\\\partial s_{jt}}{\\\\partial p_{jt}} \\\\cdot \\\\frac{p_{jt}}{s_{jt}} = \\\\frac{p_{jt}}{s_{jt}} \\\\int \\\\alpha_i s_{ijt}(1 - s_{ijt}) dP_\\\\nu",
+      "description": "Own-price elasticity formula for the random coefficients logit.",
+      "qa": []
+    },
+    {
+      "eq_id": "welfare-measure",
+      "label": "eq:welfare",
+      "latex": "CV_i = -\\\\frac{1}{\\\\alpha_i} \\\\ln\\\\left(\\\\sum_j \\\\exp(u_{ij}^{post})\\\\right) + \\\\frac{1}{\\\\alpha_i} \\\\ln\\\\left(\\\\sum_j \\\\exp(u_{ij}^{pre})\\\\right)",
+      "description": "Compensating variation welfare measure for consumer $i$.",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main estimation method?",
+      "answer": "BLP GMM with random coefficients logit demand model"
+    },
+    {
+      "question": "What is the mean own-price elasticity from the RC logit?",
+      "answer": "-3.71"
+    },
+    {
+      "question": "What is the mean price coefficient in the RC logit?",
+      "answer": "-0.241"
+    },
+    {
+      "question": "What price increase does the merger simulation predict for merging firm products under RC logit?",
+      "answer": "6.84 percent"
+    },
+    {
+      "question": "What is the overidentification test p-value for the RC logit?",
+      "answer": "0.318"
+    },
+    {
+      "question": "What is the mean number of products per market?",
+      "answer": "24.3"
+    },
+    {
+      "question": "How many markets are in the sample?",
+      "answer": "342"
+    },
+    {
+      "question": "What is the mean market HHI?",
+      "answer": "0.218"
+    },
+    {
+      "question": "What is the mean quality index?",
+      "answer": "6.42"
+    },
+    {
+      "question": "What is the mean space (cu ft) of a product?",
+      "answer": "18.4"
+    },
+    {
+      "question": "What is the mean number of products per market?",
+      "answer": "24.3"
+    },
+    {
+      "question": "How many markets are in the sample?",
+      "answer": "342"
+    },
+    {
+      "question": "What is the mean market HHI?",
+      "answer": "0.218"
+    },
+    {
+      "question": "What is the mean quality index?",
+      "answer": "6.42"
+    },
+    {
+      "question": "What is the mean space (cu ft) of a product?",
+      "answer": "18.4"
+    },
+    {
+      "question": "What is the OLS price coefficient in the logit model?",
+      "answer": "-0.041"
+    },
+    {
+      "question": "What is the IV price coefficient in column 2?",
+      "answer": "-0.182"
+    },
+    {
+      "question": "What is the quality coefficient in column 1 OLS?",
+      "answer": "0.318"
+    },
+    {
+      "question": "What is the mean price coefficient in the RC logit?",
+      "answer": "-0.241"
+    },
+    {
+      "question": "What is the standard deviation of the price coefficient?",
+      "answer": "0.118"
+    },
+    {
+      "question": "What is the overidentification test p-value?",
+      "answer": "0.318"
+    },
+    {
+      "question": "What is the mean own-price elasticity for all products in the RC logit?",
+      "answer": "-3.71"
+    },
+    {
+      "question": "What is the own-price elasticity for the budget segment in the RC logit?",
+      "answer": "-4.18"
+    },
+    {
+      "question": "What is the cross-price elasticity of Product A demand with respect to Product B price?",
+      "answer": "0.031"
+    },
+    {
+      "question": "What is the own-price elasticity of Product C?",
+      "answer": "-3.42"
+    },
+    {
+      "question": "What is the RC Logit markup for the premium segment?",
+      "answer": "38.4"
+    },
+    {
+      "question": "What is the accounting-based markup for the mid segment?",
+      "answer": "30.4"
+    },
+    {
+      "question": "What is the predicted price increase for Firm A products under RC Logit?",
+      "answer": "6.84"
+    },
+    {
+      "question": "What is the predicted price increase for rival products under logit?",
+      "answer": "1.21"
+    },
+    {
+      "question": "What is the consumer surplus change under RC Logit?",
+      "answer": "-3.12"
+    },
+    {
+      "question": "What is the total welfare change under RC Logit?",
+      "answer": "0.72"
+    },
+    {
+      "question": "What is the F-statistic for the optimal instruments?",
+      "answer": "142.8"
+    },
+    {
+      "question": "What is the Hansen J p-value for BLP own characteristics instruments?",
+      "answer": "0.412"
+    },
+    {
+      "question": "What is the OLS bias in the price coefficient at N=1000?",
+      "answer": "41.1"
+    },
+    {
+      "question": "What is the BLP bias with optimal instruments at N=5000?",
+      "answer": "0.1"
+    },
+    {
+      "question": "What is the coverage rate for BLP with BLP instruments at N=1000?",
+      "answer": "93.1"
+    },
+    {
+      "question": "What is the coverage rate for BLP with optimal instruments at N=5000?",
+      "answer": "94.9"
+    },
+    {
+      "question": "What does xi_jt capture?",
+      "answer": "Unobserved product quality (demand-side unobservable)"
+    }
+  ]
+}
