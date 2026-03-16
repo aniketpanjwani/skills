@@ -8,7 +8,7 @@
 
 </p>
 
-A set of reusable skills for Codex and Claude Code.
+A set of reusable skills for Codex, Claude Code, and Gemini CLI.
 
 ## Start Here (Simple)
 
@@ -16,13 +16,13 @@ Skills are small instruction packs that make your coding agent better at specifi
 
 - They help your agent follow a workflow instead of starting from scratch each time.
 - You can install all skills, only some skills, or only one category.
-- You can install for Codex, Claude, or both.
+- You can install for Codex, Claude, Gemini, or all.
 
 ### Easiest Path
 
 Clone this repo, then ask your coding agent:
 
-`Install this skills repo for me using scripts/bootstrap.sh for both Codex and Claude globally.`
+`Install this skills repo for me using scripts/bootstrap.sh for all tools globally.`
 
 If you want to run it manually, this is the one command most people need:
 
@@ -47,12 +47,12 @@ If you want to run it manually, this is the one command most people need:
 ### 1) Clone
 
 ```bash
-git clone https://github.com/aniketpanjwani/public-agent-skills.git ~/projects/public-agent-skills
-cd ~/projects/public-agent-skills
+git clone https://github.com/Andrei-WongE/skills.git ~/projects/skills
+cd ~/projects/skills
 chmod +x scripts/bootstrap.sh
 ```
 
-### 2) Install all skills (global, both agents)
+### 2) Install all skills (global, all agents)
 
 ```bash
 ./scripts/bootstrap.sh --target both --scope global
@@ -88,12 +88,13 @@ chmod +x scripts/bootstrap.sh
 
 - `codex`
 - `claude`
-- `both`
+- `gemini`
+- `both` (Installs for all of the above)
 
 ### Scopes
 
-- Global: `~/.codex/skills`, `~/.claude/skills`
-- Project: `<project>/.codex/skills`, `<project>/.claude/skills`
+- Global: `~/.codex/skills`, `~/.claude/skills`, `~/.gemini/skills`
+- Project: `<project>/.codex/skills`, `<project>/.claude/skills`, `<project>/.gemini/skills`
 
 ### Safe-by-default behavior
 
