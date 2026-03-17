@@ -47,7 +47,7 @@ If you want to run it manually, this is the one command most people need:
 ### 1) Clone
 
 ```bash
-git clone https://github.com/Andrei-WongE/skills.git ~/projects/skills
+git clone https://github.com/aniketpanjwani/skills.git ~/projects/skills
 cd ~/projects/skills
 chmod +x scripts/bootstrap.sh
 ```
