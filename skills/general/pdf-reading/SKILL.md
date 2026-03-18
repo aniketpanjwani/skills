@@ -21,37 +21,37 @@ Use this skill for PDF-first work on papers and reports. The default path is Doc
 Run the extractor on a PDF:
 
 ```bash
-python3 skills/general/pdf-reading/scripts/pdf_extract.py /path/to/paper.pdf
+python3 scripts/pdf_extract.py /path/to/paper.pdf
 ```
 
 Extract figures with structural labels:
 
 ```bash
-python3 skills/general/pdf-reading/scripts/pdf_extract.py /path/to/paper.pdf --extract-figures
+python3 scripts/pdf_extract.py /path/to/paper.pdf --extract-figures
 ```
 
 Extract figures with richer descriptions instead of classifier labels:
 
 ```bash
-python3 skills/general/pdf-reading/scripts/pdf_extract.py /path/to/paper.pdf --extract-figures --figure-label-mode description
+python3 scripts/pdf_extract.py /path/to/paper.pdf --extract-figures --figure-label-mode description
 ```
 
 Extract tables, agent-facing JSON, LaTeX, cleaned Markdown, CSV, and crop images:
 
 ```bash
-python3 skills/general/pdf-reading/scripts/pdf_extract.py /path/to/paper.pdf --extract-tables
+python3 scripts/pdf_extract.py /path/to/paper.pdf --extract-tables
 ```
 
 Extract both figures and tables:
 
 ```bash
-python3 skills/general/pdf-reading/scripts/pdf_extract.py /path/to/paper.pdf --extract-figures --extract-tables
+python3 scripts/pdf_extract.py /path/to/paper.pdf --extract-figures --extract-tables
 ```
 
 Use the faster MarkItDown path only when requested:
 
 ```bash
-python3 skills/general/pdf-reading/scripts/pdf_extract.py /path/to/paper.pdf --fast
+python3 scripts/pdf_extract.py /path/to/paper.pdf --fast
 ```
 
 ## Outputs

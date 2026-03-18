@@ -140,6 +140,16 @@ csv_to_lines() {
 
 
 
+is_tool_variant_dir_name() {
+
+  local dir_name="$1"
+
+  [[ "$dir_name" == "claude" || "$dir_name" == "gemini" || "$dir_name" == "codex" ]]
+
+}
+
+
+
 discover_skill_entries() {
 
   local skill_md=""
@@ -174,7 +184,7 @@ discover_skill_entries() {
 
     # If the SKILL.md is inside a tool-specific folder, the skill root is the parent
 
-    if [[ "$base_dir_name" == "claude" || "$base_dir_name" == "gemini" || "$base_dir_name" == "codex" ]]; then
+    if is_tool_variant_dir_name "$base_dir_name"; then
 
       dir="$(dirname "$dir")"
 
@@ -216,9 +226,9 @@ discover_skill_entries() {
 
 
 
-  # Output unique entries based on skill_name
-
-  sort -u -t'|' -k1,1 "$tmp_entries"
+  # Collapse identical entries produced by tool-specific overlays while keeping
+  # same-named skills from different paths visible for duplicate detection.
+  sort -u "$tmp_entries"
 
   rm -f "$tmp_entries"
 
@@ -492,6 +502,8 @@ install_skill_copy() {
 
   local dest="$2"
 
+  local dereference_links="${3:-false}"
+
 
 
   if [[ -e "$dest" ]]; then
@@ -522,17 +534,131 @@ install_skill_copy() {
 
     log "Copying with rsync: $src -> $dest"
 
-    run rsync -a "$src/" "$dest/"
+    if [[ "$dereference_links" == "true" ]]; then
+
+      run rsync -aL "$src/" "$dest/"
+
+    else
+
+      run rsync -a "$src/" "$dest/"
+
+    fi
 
   else
 
     log "Copying with cp: $src -> $dest"
 
-    run cp -R "$src/." "$dest/"
+    if [[ "$dereference_links" == "true" ]]; then
+
+      run cp -RL "$src/." "$dest/"
+
+    else
+
+      run cp -R "$src/." "$dest/"
+
+    fi
 
   fi
 
   ((INSTALLED_COUNT += 1))
+
+}
+
+
+
+link_dir_contents() {
+
+  local src="$1"
+
+  local dest="$2"
+
+  local exclude_tool_variants="${3:-false}"
+
+  local entry=""
+
+  local name=""
+
+  local dest_path=""
+
+  while IFS= read -r entry; do
+
+    [[ -z "$entry" ]] && continue
+
+    name="$(basename "$entry")"
+
+    if [[ "$exclude_tool_variants" == "true" ]] && is_tool_variant_dir_name "$name"; then
+
+      continue
+
+    fi
+
+    dest_path="$dest/$name"
+
+    if [[ -e "$dest_path" || -L "$dest_path" ]]; then
+
+      run rm -rf "$dest_path"
+
+    fi
+
+    run ln -s "$entry" "$dest_path"
+
+  done < <(find "$src" -mindepth 1 -maxdepth 1 | sort)
+
+}
+
+
+
+tool_override_dir_for_skill() {
+
+  local skill_root="$1"
+
+  local tool="$2"
+
+  local override_dir="$skill_root/$tool"
+
+  if [[ -d "$override_dir" && -f "$override_dir/SKILL.md" ]]; then
+
+    printf '%s\n' "$override_dir"
+
+    return 0
+
+  fi
+
+  return 1
+
+}
+
+
+
+prepare_tool_overlay_source() {
+
+  local skill_root="$1"
+
+  local tool="$2"
+
+  local overlay_root="$3"
+
+  local skill_name="$4"
+
+  local override_dir=""
+
+  local overlay_dir=""
+
+  if ! override_dir="$(tool_override_dir_for_skill "$skill_root" "$tool")"; then
+
+    return 1
+
+  fi
+
+  overlay_dir="$overlay_root/$skill_name-$tool"
+  run rm -rf "$overlay_dir"
+  ensure_dir "$overlay_dir"
+
+  # Root contents stay available to every tool; override files replace them.
+  link_dir_contents "$skill_root" "$overlay_dir" true
+  link_dir_contents "$override_dir" "$overlay_dir" false
+
+  printf '%s\n' "$overlay_dir"
 
 }
 
@@ -714,9 +840,15 @@ install_for_tool() {
 
   local skill_name=""
 
+  local skill_root=""
+
   local skill_src=""
 
   local skill_dest=""
+
+  local overlay_root=""
+
+  local dereference_copy=false
 
 
 
@@ -751,6 +883,8 @@ install_for_tool() {
   skills_dest="$base/skills"
 
   ensure_dir "$skills_dest"
+  overlay_root="$base/.bootstrap-overlays"
+  ensure_dir "$overlay_root"
 
 
 
@@ -758,19 +892,19 @@ install_for_tool() {
 
     [[ -z "$skill_name" ]] && continue
 
-    skill_src="$(skill_dir_for_name "$skill_name")"
+    skill_root="$(skill_dir_for_name "$skill_name")"
+    skill_src="$skill_root"
+    dereference_copy=false
 
-    
+    if skill_src="$(prepare_tool_overlay_source "$skill_root" "$tool" "$overlay_root" "$skill_name")"; then
 
-    # If a tool-specific subdirectory exists, use it as the source
+      dereference_copy=true
 
-    if [[ -d "$skill_src/$tool" && -f "$skill_src/$tool/SKILL.md" ]]; then
+    else
 
-      skill_src="$skill_src/$tool"
+      skill_src="$skill_root"
 
     fi
-
-    
 
     skill_dest="$skills_dest/$skill_name"
 
@@ -780,7 +914,7 @@ install_for_tool() {
 
     else
 
-      install_skill_copy "$skill_src" "$skill_dest"
+      install_skill_copy "$skill_src" "$skill_dest" "$dereference_copy"
 
     fi
 
