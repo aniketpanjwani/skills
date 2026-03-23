@@ -1,12 +1,18 @@
 # Skills Folder
 
-Organize skills by audience/type:
+Organize skills by audience/type. Shared skill content lives at the skill root, and
+optional tool-specific overrides can live under `codex/`, `claude/`, or `gemini/`.
 
 ```text
 skills/
   general/
     your-skill/
       SKILL.md
+      scripts/
+      codex/
+        SKILL.md
+      gemini/
+        SKILL.md
   economists/
     your-skill/
       SKILL.md
@@ -22,6 +28,10 @@ skills/your-skill/SKILL.md
 
 - Every installable skill must have `SKILL.md`.
 - Skill folder names must be globally unique across all types.
+- Keep shared files in the skill root whenever possible.
+- Tool-specific subdirectories are optional overlays. Their files are layered on top of the
+  root skill for that tool rather than replacing the whole skill.
+- If a tool-specific overlay exists, it must include its own `SKILL.md`.
 - Keep secrets out of skills.
 
 ## Selection Examples
