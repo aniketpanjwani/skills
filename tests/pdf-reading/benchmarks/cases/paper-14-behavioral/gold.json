@@ -1,0 +1,4988 @@
+{
+  "paper_id": "14",
+  "field": "behavioral",
+  "title": "Paying Not to Go to the Gym: Present Bias, Contract Choice, and Welfare in Health Club Membership",
+  "journal_style": "jf",
+  "target_pages": 55,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-beh",
+      "level": 1
+    },
+    {
+      "title": "Institutional Background and Data",
+      "label": "sec:data-beh",
+      "level": 1
+    },
+    {
+      "title": "Health Club Setting",
+      "label": "sec:data-clubs",
+      "level": 2
+    },
+    {
+      "title": "Contract Menu and Pricing",
+      "label": "sec:data-contracts",
+      "level": 2
+    },
+    {
+      "title": "Survey Data on Attendance Intentions",
+      "label": "sec:data-survey",
+      "level": 2
+    },
+    {
+      "title": "Theoretical Framework",
+      "label": "sec:theory-beh",
+      "level": 1
+    },
+    {
+      "title": "Beta-Delta Preferences",
+      "label": "sec:theory-betadelta",
+      "level": 2
+    },
+    {
+      "title": "Contract Choice Under Naive Present Bias",
+      "label": "sec:theory-naive",
+      "level": 2
+    },
+    {
+      "title": "Optimal Firm Response",
+      "label": "sec:theory-firm",
+      "level": 2
+    },
+    {
+      "title": "Reduced-Form Evidence",
+      "label": "sec:rf-beh",
+      "level": 1
+    },
+    {
+      "title": "Contract Choice Patterns",
+      "label": "sec:rf-choice",
+      "level": 2
+    },
+    {
+      "title": "Attendance Dynamics",
+      "label": "sec:rf-attendance",
+      "level": 2
+    },
+    {
+      "title": "Cancellation Delays",
+      "label": "sec:rf-cancel",
+      "level": 2
+    },
+    {
+      "title": "Structural Estimation",
+      "label": "sec:structural-beh",
+      "level": 1
+    },
+    {
+      "title": "Likelihood Function",
+      "label": "sec:struct-lik",
+      "level": 2
+    },
+    {
+      "title": "Identification Strategy",
+      "label": "sec:struct-id",
+      "level": 2
+    },
+    {
+      "title": "Estimation Results",
+      "label": "sec:struct-results",
+      "level": 2
+    },
+    {
+      "title": "Welfare and Counterfactual Analysis",
+      "label": "sec:welfare-beh",
+      "level": 1
+    },
+    {
+      "title": "Welfare Loss from Present Bias",
+      "label": "sec:welfare-loss",
+      "level": 2
+    },
+    {
+      "title": "Counterfactual Contract Menus",
+      "label": "sec:welfare-cf",
+      "level": 2
+    },
+    {
+      "title": "Policy Implications",
+      "label": "sec:welfare-policy",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-beh",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Theoretical Proofs",
+      "label": "sec:appendix-a-beh",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Survey Instrument and Attrition",
+      "label": "sec:appendix-b-beh",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Robustness of Structural Estimates",
+      "label": "sec:appendix-c-beh",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "gym-summary",
+      "caption": "Summary Statistics: Health Club Members",
+      "label": "tab:gym-summary",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.614",
+          "role": "data",
+          "variable": "Monthly Contract (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.487",
+          "role": "data",
+          "variable": "Monthly Contract (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Monthly Contract (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Monthly Contract (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Monthly Contract (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Monthly Contract (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Monthly Contract (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Monthly Contract (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.241",
+          "role": "data",
+          "variable": "Annual Contract (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.428",
+          "role": "data",
+          "variable": "Annual Contract (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Annual Contract (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Annual Contract (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Contract (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Contract (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Contract (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Contract (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.145",
+          "role": "data",
+          "variable": "Pay-Per-Visit (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.352",
+          "role": "data",
+          "variable": "Pay-Per-Visit (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Pay-Per-Visit (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Pay-Per-Visit (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Pay-Per-Visit (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Pay-Per-Visit (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Pay-Per-Visit (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Pay-Per-Visit (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "4.17",
+          "role": "data",
+          "variable": "Average Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "4.02",
+          "role": "data",
+          "variable": "Average Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.50",
+          "role": "data",
+          "variable": "Average Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "9.50",
+          "role": "data",
+          "variable": "Average Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Average Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Average Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Average Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Average Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "8.22",
+          "role": "data",
+          "variable": "Monthly Contract Duration (months)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "9.14",
+          "role": "data",
+          "variable": "Monthly Contract Duration (months)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Monthly Contract Duration (months)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "21.00",
+          "role": "data",
+          "variable": "Monthly Contract Duration (months)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Monthly Contract Duration (months)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Monthly Contract Duration (months)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Monthly Contract Duration (months)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Monthly Contract Duration (months)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "70.14",
+          "role": "data",
+          "variable": "Average Monthly Fee Paid (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "18.32",
+          "role": "data",
+          "variable": "Average Monthly Fee Paid (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "49.00",
+          "role": "data",
+          "variable": "Average Monthly Fee Paid (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "94.00",
+          "role": "data",
+          "variable": "Average Monthly Fee Paid (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Average Monthly Fee Paid (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Average Monthly Fee Paid (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Average Monthly Fee Paid (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Average Monthly Fee Paid (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "17.80",
+          "role": "data",
+          "variable": "Cost per Visit (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "19.41",
+          "role": "data",
+          "variable": "Cost per Visit (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "6.50",
+          "role": "data",
+          "variable": "Cost per Visit (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "42.00",
+          "role": "data",
+          "variable": "Cost per Visit (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Cost per Visit (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Cost per Visit (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Cost per Visit (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Cost per Visit (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "33.8",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "10.2",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "22.0",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "49.0",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "0.481",
+          "role": "data",
+          "variable": "Female (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "0.500",
+          "role": "data",
+          "variable": "Female (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Female (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Female (1=yes)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Female (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Female (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Female (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Female (1=yes)",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "2.14",
+          "role": "data",
+          "variable": "Distance to Club (miles)",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "1.88",
+          "role": "data",
+          "variable": "Distance to Club (miles)",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Distance to Club (miles)",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 4,
+          "text": "4.82",
+          "role": "data",
+          "variable": "Distance to Club (miles)",
+          "is_coefficient": true
+        },
+        {
+          "row": 22,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Distance to Club (miles)",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Distance to Club (miles)",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Distance to Club (miles)",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Distance to Club (miles)",
+          "is_stderr": true
+        },
+        {
+          "row": 23,
+          "col": 1,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations (members)"
+        },
+        {
+          "row": 23,
+          "col": 2,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations (members)"
+        },
+        {
+          "row": 23,
+          "col": 3,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations (members)"
+        },
+        {
+          "row": 23,
+          "col": 4,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations (members)"
+        },
+        {
+          "row": 24,
+          "col": 1,
+          "text": "74,661",
+          "role": "summary",
+          "label": "Member-month observations"
+        },
+        {
+          "row": 24,
+          "col": 2,
+          "text": "74,661",
+          "role": "summary",
+          "label": "Member-month observations"
+        },
+        {
+          "row": 24,
+          "col": 3,
+          "text": "74,661",
+          "role": "summary",
+          "label": "Member-month observations"
+        },
+        {
+          "row": 24,
+          "col": 4,
+          "text": "74,661",
+          "role": "summary",
+          "label": "Member-month observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What fraction of members choose the monthly contract?",
+          "answer": "0.614"
+        },
+        {
+          "question": "What is the average monthly visits for health club members?",
+          "answer": "4.17"
+        },
+        {
+          "question": "What is the average cost per visit for monthly contract holders?",
+          "answer": "\\$17.80"
+        },
+        {
+          "question": "How many member-month observations are in the sample?",
+          "answer": "74,661"
+        }
+      ]
+    },
+    {
+      "table_id": "contract-choice",
+      "caption": "Contract Choice at Enrollment: Multinomial Logit",
+      "label": "tab:contract-choice",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.312***",
+          "role": "data",
+          "variable": "Forecasted Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.284***",
+          "role": "data",
+          "variable": "Forecasted Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Forecasted Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Forecasted Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.052)",
+          "role": "data",
+          "variable": "Forecasted Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Forecasted Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.018***",
+          "role": "data",
+          "variable": "Forecasted Visits$^2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.014**",
+          "role": "data",
+          "variable": "Forecasted Visits$^2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Forecasted Visits$^2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.005)",
+          "role": "data",
+          "variable": "Forecasted Visits$^2$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.006)",
+          "role": "data",
+          "variable": "Forecasted Visits$^2$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Forecasted Visits$^2$",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.841***",
+          "role": "data",
+          "variable": "Survey: Expects to Go Often",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.612***",
+          "role": "data",
+          "variable": "Survey: Expects to Go Often",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Survey: Expects to Go Often",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "Survey: Expects to Go Often",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.108)",
+          "role": "data",
+          "variable": "Survey: Expects to Go Often",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Survey: Expects to Go Often",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "-0.084**",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "-0.091**",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "-0.071*",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.142***",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.121**",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.061",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.054)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "-0.224***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "-0.198***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "-0.241***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.034)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "0.184",
+          "role": "summary",
+          "label": "Pseudo R-squared"
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "0.184",
+          "role": "summary",
+          "label": "Pseudo R-squared"
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "0.184",
+          "role": "summary",
+          "label": "Pseudo R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the coefficient on forecasted monthly visits for choosing monthly contract?",
+          "answer": "0.312"
+        },
+        {
+          "question": "What is the coefficient on log distance for pay-per-visit?",
+          "answer": "-0.241"
+        },
+        {
+          "question": "What is the pseudo R-squared for the contract choice model?",
+          "answer": "0.184"
+        }
+      ]
+    },
+    {
+      "table_id": "attendance",
+      "caption": "Monthly Attendance Regressions",
+      "label": "tab:attendance",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-1.842***",
+          "role": "data",
+          "variable": "Monthly Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.412***",
+          "role": "data",
+          "variable": "Monthly Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-1.614***",
+          "role": "data",
+          "variable": "Monthly Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-1.589***",
+          "role": "data",
+          "variable": "Monthly Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Monthly Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Monthly Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.201)",
+          "role": "data",
+          "variable": "Monthly Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.198)",
+          "role": "data",
+          "variable": "Monthly Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.914***",
+          "role": "data",
+          "variable": "Annual Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.218***",
+          "role": "data",
+          "variable": "Annual Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.781***",
+          "role": "data",
+          "variable": "Annual Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.764***",
+          "role": "data",
+          "variable": "Annual Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.214)",
+          "role": "data",
+          "variable": "Annual Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "Annual Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.228)",
+          "role": "data",
+          "variable": "Annual Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.224)",
+          "role": "data",
+          "variable": "Annual Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-0.084***",
+          "role": "data",
+          "variable": "Months Since Join",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-0.021***",
+          "role": "data",
+          "variable": "Months Since Join",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.091***",
+          "role": "data",
+          "variable": "Months Since Join",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.088***",
+          "role": "data",
+          "variable": "Months Since Join",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Months Since Join",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Months Since Join",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "Months Since Join",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.015)",
+          "role": "data",
+          "variable": "Months Since Join",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.481***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.118***",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.015)",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Distance",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.312***",
+          "role": "data",
+          "variable": "Summer (June-Aug)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.074***",
+          "role": "data",
+          "variable": "Summer (June-Aug)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.298***",
+          "role": "data",
+          "variable": "Summer (June-Aug)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.291***",
+          "role": "data",
+          "variable": "Summer (June-Aug)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.082)",
+          "role": "data",
+          "variable": "Summer (June-Aug)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Summer (June-Aug)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.084)",
+          "role": "data",
+          "variable": "Summer (June-Aug)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.083)",
+          "role": "data",
+          "variable": "Summer (June-Aug)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "74,661",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "74,661",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "74,661",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "74,661",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "0.142",
+          "role": "summary",
+          "label": "R-squared / Log-likelihood"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "--",
+          "role": "summary",
+          "label": "R-squared / Log-likelihood"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "0.481",
+          "role": "summary",
+          "label": "R-squared / Log-likelihood"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "0.494",
+          "role": "summary",
+          "label": "R-squared / Log-likelihood"
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "4.17",
+          "role": "summary",
+          "label": "Mean Dep. Var."
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "4.17",
+          "role": "summary",
+          "label": "Mean Dep. Var."
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "4.17",
+          "role": "summary",
+          "label": "Mean Dep. Var."
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "4.17",
+          "role": "summary",
+          "label": "Mean Dep. Var."
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the OLS coefficient on monthly contract in column 1?",
+          "answer": "-1.842"
+        },
+        {
+          "question": "What is the FE coefficient on monthly contract in column 3?",
+          "answer": "-1.614"
+        },
+        {
+          "question": "What is the mean of the dependent variable?",
+          "answer": "4.17 visits per month"
+        },
+        {
+          "question": "What is the R-squared in column 4?",
+          "answer": "0.494"
+        }
+      ]
+    },
+    {
+      "table_id": "reduced-form",
+      "caption": "Reduced-Form Evidence for Present Bias: Monthly vs. Pay-Per-Visit",
+      "label": "tab:reduced-form",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.484***",
+          "role": "data",
+          "variable": "Average Monthly Visits $< 4.5$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.471***",
+          "role": "data",
+          "variable": "Average Monthly Visits $< 4.5$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.468***",
+          "role": "data",
+          "variable": "Average Monthly Visits $< 4.5$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.461***",
+          "role": "data",
+          "variable": "Average Monthly Visits $< 4.5$",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Average Monthly Visits $< 4.5$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.037)",
+          "role": "data",
+          "variable": "Average Monthly Visits $< 4.5$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.039)",
+          "role": "data",
+          "variable": "Average Monthly Visits $< 4.5$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Average Monthly Visits $< 4.5$",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.214***",
+          "role": "data",
+          "variable": "Survey Attendance Overestimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.208***",
+          "role": "data",
+          "variable": "Survey Attendance Overestimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.211***",
+          "role": "data",
+          "variable": "Survey Attendance Overestimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.204***",
+          "role": "data",
+          "variable": "Survey Attendance Overestimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Survey Attendance Overestimate",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Survey Attendance Overestimate",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Survey Attendance Overestimate",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Survey Attendance Overestimate",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "11.84***",
+          "role": "data",
+          "variable": "Monthly Contract $\\times$ Low Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "11.21***",
+          "role": "data",
+          "variable": "Monthly Contract $\\times$ Low Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "10.98***",
+          "role": "data",
+          "variable": "Monthly Contract $\\times$ Low Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "10.74***",
+          "role": "data",
+          "variable": "Monthly Contract $\\times$ Low Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(1.41)",
+          "role": "data",
+          "variable": "Monthly Contract $\\times$ Low Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(1.38)",
+          "role": "data",
+          "variable": "Monthly Contract $\\times$ Low Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(1.44)",
+          "role": "data",
+          "variable": "Monthly Contract $\\times$ Low Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(1.41)",
+          "role": "data",
+          "variable": "Monthly Contract $\\times$ Low Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.142***",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.138***",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.141***",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.135***",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.027)",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.029)",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.091",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "0.118",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "0.134",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "0.152",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the coefficient on low-visit indicator in the dominated contract regression (column 1)?",
+          "answer": "0.484"
+        },
+        {
+          "question": "What is the R-squared in column 4 of panel A?",
+          "answer": "0.152"
+        },
+        {
+          "question": "What is the coefficient on monthly contract times low visits in panel B, column 1?",
+          "answer": "11.84"
+        }
+      ]
+    },
+    {
+      "table_id": "hazard-cancellation",
+      "caption": "Hazard Model of Contract Cancellation",
+      "label": "tab:hazard-cancellation",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.084***",
+          "role": "data",
+          "variable": "Lagged Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.081***",
+          "role": "data",
+          "variable": "Lagged Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.088***",
+          "role": "data",
+          "variable": "Lagged Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.086***",
+          "role": "data",
+          "variable": "Lagged Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Lagged Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Lagged Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Lagged Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Lagged Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.004***",
+          "role": "data",
+          "variable": "Lagged Visits$^2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.004***",
+          "role": "data",
+          "variable": "Lagged Visits$^2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.005***",
+          "role": "data",
+          "variable": "Lagged Visits$^2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.004***",
+          "role": "data",
+          "variable": "Lagged Visits$^2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.001)",
+          "role": "data",
+          "variable": "Lagged Visits$^2$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.001)",
+          "role": "data",
+          "variable": "Lagged Visits$^2$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.001)",
+          "role": "data",
+          "variable": "Lagged Visits$^2$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.001)",
+          "role": "data",
+          "variable": "Lagged Visits$^2$",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.021***",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.020***",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Months in Club",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.112***",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.104***",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.118***",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-0.114***",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.037)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.039)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "-0.048**",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "-0.044**",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "-0.051**",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "-0.049**",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.021)",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.020)",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.022)",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.021)",
+          "role": "data",
+          "variable": "Age / 10",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "45,801",
+          "role": "summary",
+          "label": "Observations (member-months)"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "45,801",
+          "role": "summary",
+          "label": "Observations (member-months)"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "45,801",
+          "role": "summary",
+          "label": "Observations (member-months)"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "45,801",
+          "role": "summary",
+          "label": "Observations (member-months)"
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "5,614",
+          "role": "summary",
+          "label": "Cancellation events"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "5,614",
+          "role": "summary",
+          "label": "Cancellation events"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "5,614",
+          "role": "summary",
+          "label": "Cancellation events"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "5,614",
+          "role": "summary",
+          "label": "Cancellation events"
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "-38,421",
+          "role": "summary",
+          "label": "Log-likelihood"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "-38,284",
+          "role": "summary",
+          "label": "Log-likelihood"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "-38,614",
+          "role": "summary",
+          "label": "Log-likelihood"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "-38,518",
+          "role": "summary",
+          "label": "Log-likelihood"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the hazard ratio coefficient on lagged monthly visits in Cox model (1)?",
+          "answer": "-0.084"
+        },
+        {
+          "question": "How many cancellation events are observed?",
+          "answer": "5,614"
+        },
+        {
+          "question": "What is the coefficient on months in club in Cox model (2)?",
+          "answer": "0.020"
+        }
+      ]
+    },
+    {
+      "table_id": "structural-beta-delta",
+      "caption": "Structural Estimates: Beta-Delta Parameters",
+      "label": "tab:structural-beta-delta",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.712***",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (present bias)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.718***",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (present bias)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (present bias)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.694***",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (present bias)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (present bias)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.033)",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (present bias)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (present bias)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (present bias)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.981***",
+          "role": "data",
+          "variable": "$\\hat{\\delta}$ (monthly discount factor)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.982***",
+          "role": "data",
+          "variable": "$\\hat{\\delta}$ (monthly discount factor)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.980***",
+          "role": "data",
+          "variable": "$\\hat{\\delta}$ (monthly discount factor)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.983***",
+          "role": "data",
+          "variable": "$\\hat{\\delta}$ (monthly discount factor)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "$\\hat{\\delta}$ (monthly discount factor)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "$\\hat{\\delta}$ (monthly discount factor)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.005)",
+          "role": "data",
+          "variable": "$\\hat{\\delta}$ (monthly discount factor)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.005)",
+          "role": "data",
+          "variable": "$\\hat{\\delta}$ (monthly discount factor)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (naive agents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (naive agents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.681***",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (naive agents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (naive agents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (naive agents)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (naive agents)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (naive agents)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (naive agents)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (sophisticated agents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (sophisticated agents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.741***",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (sophisticated agents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (sophisticated agents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (sophisticated agents)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (sophisticated agents)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (sophisticated agents)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "$\\hat{\\beta}$ (sophisticated agents)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.591***",
+          "role": "data",
+          "variable": "$\\hat{\\theta}$ (overconfidence level)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.582***",
+          "role": "data",
+          "variable": "$\\hat{\\theta}$ (overconfidence level)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.614***",
+          "role": "data",
+          "variable": "$\\hat{\\theta}$ (overconfidence level)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.641***",
+          "role": "data",
+          "variable": "$\\hat{\\theta}$ (overconfidence level)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "$\\hat{\\theta}$ (overconfidence level)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.047)",
+          "role": "data",
+          "variable": "$\\hat{\\theta}$ (overconfidence level)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "$\\hat{\\theta}$ (overconfidence level)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "$\\hat{\\theta}$ (overconfidence level)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Sophistication share ($\\hat{\\pi}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Sophistication share ($\\hat{\\pi}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.381**",
+          "role": "data",
+          "variable": "Sophistication share ($\\hat{\\pi}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Sophistication share ($\\hat{\\pi}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Sophistication share ($\\hat{\\pi}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Sophistication share ($\\hat{\\pi}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.164)",
+          "role": "data",
+          "variable": "Sophistication share ($\\hat{\\pi}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Sophistication share ($\\hat{\\pi}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "4,761",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "-14,821",
+          "role": "summary",
+          "label": "Log-likelihood"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "-14,684",
+          "role": "summary",
+          "label": "Log-likelihood"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "-14,512",
+          "role": "summary",
+          "label": "Log-likelihood"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "-9,284",
+          "role": "summary",
+          "label": "Log-likelihood"
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "12",
+          "role": "summary",
+          "label": "Parameters"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "18",
+          "role": "summary",
+          "label": "Parameters"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "16",
+          "role": "summary",
+          "label": "Parameters"
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "10",
+          "role": "summary",
+          "label": "Parameters"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the baseline estimate of beta (present bias)?",
+          "answer": "0.712"
+        },
+        {
+          "question": "What is the estimated monthly discount factor delta?",
+          "answer": "0.981"
+        },
+        {
+          "question": "What is the overconfidence parameter theta in the baseline?",
+          "answer": "0.591"
+        },
+        {
+          "question": "What fraction of agents are estimated to be sophisticated?",
+          "answer": "0.381"
+        }
+      ]
+    },
+    {
+      "table_id": "structural-preferences",
+      "caption": "Structural Estimates: Per-Visit Benefits and Costs",
+      "label": "tab:structural-preferences",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "14.22***",
+          "role": "data",
+          "variable": "Per-visit benefit $b$ (\\$/visit)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "13.84***",
+          "role": "data",
+          "variable": "Per-visit benefit $b$ (\\$/visit)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "14.51***",
+          "role": "data",
+          "variable": "Per-visit benefit $b$ (\\$/visit)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "14.08***",
+          "role": "data",
+          "variable": "Per-visit benefit $b$ (\\$/visit)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(1.41)",
+          "role": "data",
+          "variable": "Per-visit benefit $b$ (\\$/visit)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(1.38)",
+          "role": "data",
+          "variable": "Per-visit benefit $b$ (\\$/visit)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(1.48)",
+          "role": "data",
+          "variable": "Per-visit benefit $b$ (\\$/visit)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(1.44)",
+          "role": "data",
+          "variable": "Per-visit benefit $b$ (\\$/visit)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "11.84***",
+          "role": "data",
+          "variable": "Per-visit cost $c$ (effort, \\$-equiv.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "11.51***",
+          "role": "data",
+          "variable": "Per-visit cost $c$ (effort, \\$-equiv.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "12.14***",
+          "role": "data",
+          "variable": "Per-visit cost $c$ (effort, \\$-equiv.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "11.72***",
+          "role": "data",
+          "variable": "Per-visit cost $c$ (effort, \\$-equiv.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(1.21)",
+          "role": "data",
+          "variable": "Per-visit cost $c$ (effort, \\$-equiv.)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(1.18)",
+          "role": "data",
+          "variable": "Per-visit cost $c$ (effort, \\$-equiv.)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(1.28)",
+          "role": "data",
+          "variable": "Per-visit cost $c$ (effort, \\$-equiv.)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(1.24)",
+          "role": "data",
+          "variable": "Per-visit cost $c$ (effort, \\$-equiv.)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "8.12***",
+          "role": "data",
+          "variable": "Hassle cost $\\kappa$ (cancellation, \\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "7.94***",
+          "role": "data",
+          "variable": "Hassle cost $\\kappa$ (cancellation, \\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "8.34***",
+          "role": "data",
+          "variable": "Hassle cost $\\kappa$ (cancellation, \\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "8.01***",
+          "role": "data",
+          "variable": "Hassle cost $\\kappa$ (cancellation, \\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.84)",
+          "role": "data",
+          "variable": "Hassle cost $\\kappa$ (cancellation, \\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.82)",
+          "role": "data",
+          "variable": "Hassle cost $\\kappa$ (cancellation, \\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.89)",
+          "role": "data",
+          "variable": "Hassle cost $\\kappa$ (cancellation, \\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.86)",
+          "role": "data",
+          "variable": "Hassle cost $\\kappa$ (cancellation, \\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.412***",
+          "role": "data",
+          "variable": "Demand elasticity $\\eta$",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.398***",
+          "role": "data",
+          "variable": "Demand elasticity $\\eta$",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.428***",
+          "role": "data",
+          "variable": "Demand elasticity $\\eta$",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-0.408***",
+          "role": "data",
+          "variable": "Demand elasticity $\\eta$",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Demand elasticity $\\eta$",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Demand elasticity $\\eta$",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Demand elasticity $\\eta$",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Demand elasticity $\\eta$",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "-14,821",
+          "role": "summary",
+          "label": "Log-likelihood"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "-14,908",
+          "role": "summary",
+          "label": "Log-likelihood"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "-14,774",
+          "role": "summary",
+          "label": "Log-likelihood"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "-14,612",
+          "role": "summary",
+          "label": "Log-likelihood"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the estimated per-visit benefit in the baseline?",
+          "answer": "\\$14.22 per visit"
+        },
+        {
+          "question": "What is the estimated per-visit cost in the baseline?",
+          "answer": "\\$11.84 per visit"
+        },
+        {
+          "question": "What is the estimated cancellation hassle cost?",
+          "answer": "\\$8.12"
+        }
+      ]
+    },
+    {
+      "table_id": "counterfactual-contract",
+      "caption": "Counterfactual Contract Analysis",
+      "label": "tab:counterfactual-contract",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.614",
+          "role": "data",
+          "variable": "Share Choosing Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.241",
+          "role": "data",
+          "variable": "Share Choosing Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.145",
+          "role": "data",
+          "variable": "Share Choosing Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Share Choosing Contract",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Share Choosing Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Share Choosing Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Share Choosing Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Share Choosing Contract",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "4.17",
+          "role": "data",
+          "variable": "Predicted Avg Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "4.84",
+          "role": "data",
+          "variable": "Predicted Avg Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "3.02",
+          "role": "data",
+          "variable": "Predicted Avg Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "4.94",
+          "role": "data",
+          "variable": "Predicted Avg Monthly Visits",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Predicted Avg Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Predicted Avg Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Predicted Avg Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Predicted Avg Monthly Visits",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "12.41",
+          "role": "data",
+          "variable": "Consumer Surplus (actual)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "19.84",
+          "role": "data",
+          "variable": "Consumer Surplus (actual)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "8.12",
+          "role": "data",
+          "variable": "Consumer Surplus (actual)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Consumer Surplus (actual)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Consumer Surplus (actual)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Consumer Surplus (actual)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Consumer Surplus (actual)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Consumer Surplus (actual)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "18.24",
+          "role": "data",
+          "variable": "Consumer Surplus (time-consistent)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "21.41",
+          "role": "data",
+          "variable": "Consumer Surplus (time-consistent)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "8.12",
+          "role": "data",
+          "variable": "Consumer Surplus (time-consistent)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "22.84",
+          "role": "data",
+          "variable": "Consumer Surplus (time-consistent)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Consumer Surplus (time-consistent)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Consumer Surplus (time-consistent)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Consumer Surplus (time-consistent)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Consumer Surplus (time-consistent)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "21.81",
+          "role": "data",
+          "variable": "Firm Profit",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "14.12",
+          "role": "data",
+          "variable": "Firm Profit",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "8.84",
+          "role": "data",
+          "variable": "Firm Profit",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "16.44",
+          "role": "data",
+          "variable": "Firm Profit",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Firm Profit",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Firm Profit",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Firm Profit",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Firm Profit",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "34.22",
+          "role": "data",
+          "variable": "Total Surplus",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "33.96",
+          "role": "data",
+          "variable": "Total Surplus",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "16.96",
+          "role": "data",
+          "variable": "Total Surplus",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "39.28",
+          "role": "data",
+          "variable": "Total Surplus",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Total Surplus",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Total Surplus",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Total Surplus",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Total Surplus",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations (simulations)"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations (simulations)"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations (simulations)"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations (simulations)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the consumer surplus under the monthly contract?",
+          "answer": "\\$12.41 per member per month"
+        },
+        {
+          "question": "What is the total surplus under the optimal contract?",
+          "answer": "\\$39.28"
+        },
+        {
+          "question": "What is the predicted average monthly visits under the annual contract?",
+          "answer": "4.84"
+        },
+        {
+          "question": "What is the firm profit under the monthly contract?",
+          "answer": "\\$21.81"
+        }
+      ]
+    },
+    {
+      "table_id": "welfare",
+      "caption": "Welfare Analysis: Costs of Present Bias",
+      "label": "tab:welfare",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "179.4***",
+          "role": "data",
+          "variable": "Welfare loss (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "48.2***",
+          "role": "data",
+          "variable": "Welfare loss (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "136.1***",
+          "role": "data",
+          "variable": "Welfare loss (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "201.8***",
+          "role": "data",
+          "variable": "Welfare loss (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(18.4)",
+          "role": "data",
+          "variable": "Welfare loss (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(9.2)",
+          "role": "data",
+          "variable": "Welfare loss (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(14.2)",
+          "role": "data",
+          "variable": "Welfare loss (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(24.1)",
+          "role": "data",
+          "variable": "Welfare loss (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "21.3\\%",
+          "role": "data",
+          "variable": "As \\% of annual fees paid",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "6.9\\%",
+          "role": "data",
+          "variable": "As \\% of annual fees paid",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "16.2\\%",
+          "role": "data",
+          "variable": "As \\% of annual fees paid",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "24.1\\%",
+          "role": "data",
+          "variable": "As \\% of annual fees paid",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "As \\% of annual fees paid",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "As \\% of annual fees paid",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "As \\% of annual fees paid",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "As \\% of annual fees paid",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "112.4",
+          "role": "data",
+          "variable": "Excess fee payments (dominated contracts)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "28.1",
+          "role": "data",
+          "variable": "Excess fee payments (dominated contracts)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "84.2",
+          "role": "data",
+          "variable": "Excess fee payments (dominated contracts)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "127.1",
+          "role": "data",
+          "variable": "Excess fee payments (dominated contracts)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(12.4)",
+          "role": "data",
+          "variable": "Excess fee payments (dominated contracts)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(6.8)",
+          "role": "data",
+          "variable": "Excess fee payments (dominated contracts)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(9.8)",
+          "role": "data",
+          "variable": "Excess fee payments (dominated contracts)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(15.2)",
+          "role": "data",
+          "variable": "Excess fee payments (dominated contracts)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "67.0",
+          "role": "data",
+          "variable": "Suboptimal attendance (procrastination)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "20.1",
+          "role": "data",
+          "variable": "Suboptimal attendance (procrastination)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "51.9",
+          "role": "data",
+          "variable": "Suboptimal attendance (procrastination)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "74.7",
+          "role": "data",
+          "variable": "Suboptimal attendance (procrastination)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(8.4)",
+          "role": "data",
+          "variable": "Suboptimal attendance (procrastination)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(4.2)",
+          "role": "data",
+          "variable": "Suboptimal attendance (procrastination)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(6.8)",
+          "role": "data",
+          "variable": "Suboptimal attendance (procrastination)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(10.4)",
+          "role": "data",
+          "variable": "Suboptimal attendance (procrastination)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "4,761",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "1,868",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "1,941",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the annual welfare loss from present bias for monthly contract holders?",
+          "answer": "\\$179.4 per year"
+        },
+        {
+          "question": "What fraction of annual fees paid represents welfare loss for monthly holders?",
+          "answer": "21.3 percent"
+        },
+        {
+          "question": "How much of the welfare loss for all members is due to excess fee payments?",
+          "answer": "\\$84.2 per year"
+        }
+      ]
+    },
+    {
+      "table_id": "overconfidence",
+      "caption": "Evidence for Overconfidence in Attendance Forecasting",
+      "label": "tab:overconfidence",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.481***",
+          "role": "data",
+          "variable": "Predicted Monthly Visits (survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.462***",
+          "role": "data",
+          "variable": "Predicted Monthly Visits (survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.498***",
+          "role": "data",
+          "variable": "Predicted Monthly Visits (survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.414***",
+          "role": "data",
+          "variable": "Predicted Monthly Visits (survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Predicted Monthly Visits (survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Predicted Monthly Visits (survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Predicted Monthly Visits (survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.052)",
+          "role": "data",
+          "variable": "Predicted Monthly Visits (survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "2.241***",
+          "role": "data",
+          "variable": "Constant (prediction error)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "2.314***",
+          "role": "data",
+          "variable": "Constant (prediction error)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "2.188***",
+          "role": "data",
+          "variable": "Constant (prediction error)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "2.582***",
+          "role": "data",
+          "variable": "Constant (prediction error)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Constant (prediction error)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.188)",
+          "role": "data",
+          "variable": "Constant (prediction error)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.214)",
+          "role": "data",
+          "variable": "Constant (prediction error)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.228)",
+          "role": "data",
+          "variable": "Constant (prediction error)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1.841***",
+          "role": "data",
+          "variable": "Monthly Contract Holder",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1.784***",
+          "role": "data",
+          "variable": "Monthly Contract Holder",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1.912***",
+          "role": "data",
+          "variable": "Monthly Contract Holder",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "2.184***",
+          "role": "data",
+          "variable": "Monthly Contract Holder",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Monthly Contract Holder",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(0.181)",
+          "role": "data",
+          "variable": "Monthly Contract Holder",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(0.208)",
+          "role": "data",
+          "variable": "Monthly Contract Holder",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(0.241)",
+          "role": "data",
+          "variable": "Monthly Contract Holder",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.912***",
+          "role": "data",
+          "variable": "Annual Contract Holder",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.881***",
+          "role": "data",
+          "variable": "Annual Contract Holder",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.941***",
+          "role": "data",
+          "variable": "Annual Contract Holder",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "1.084***",
+          "role": "data",
+          "variable": "Annual Contract Holder",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.121)",
+          "role": "data",
+          "variable": "Annual Contract Holder",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.118)",
+          "role": "data",
+          "variable": "Annual Contract Holder",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.138)",
+          "role": "data",
+          "variable": "Annual Contract Holder",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.158)",
+          "role": "data",
+          "variable": "Annual Contract Holder",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "5,841",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "3,284",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.214",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "0.248",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "--",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.198",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the coefficient on predicted monthly visits in the baseline OLS?",
+          "answer": "0.481"
+        },
+        {
+          "question": "What is the prediction error constant in the baseline regression?",
+          "answer": "2.241"
+        },
+        {
+          "question": "What is the prediction error for monthly contract holders relative to pay-per-visit?",
+          "answer": "1.841 additional visits per month"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-proofs-behavioral",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-survey",
+      "caption": "Appendix: Survey Instrument Validation and Attrition Analysis",
+      "label": "tab:appendix-survey",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "4.21",
+          "role": "data",
+          "variable": "Monthly visits (pre-survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "4.08",
+          "role": "data",
+          "variable": "Monthly visits (pre-survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.13",
+          "role": "data",
+          "variable": "Monthly visits (pre-survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.412",
+          "role": "data",
+          "variable": "Monthly visits (pre-survey)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "Monthly visits (pre-survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.12)",
+          "role": "data",
+          "variable": "Monthly visits (pre-survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "Monthly visits (pre-survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Monthly visits (pre-survey)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.618",
+          "role": "data",
+          "variable": "Contract type: Monthly",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.604",
+          "role": "data",
+          "variable": "Contract type: Monthly",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.014",
+          "role": "data",
+          "variable": "Contract type: Monthly",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.614",
+          "role": "data",
+          "variable": "Contract type: Monthly",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Contract type: Monthly",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Contract type: Monthly",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.022)",
+          "role": "data",
+          "variable": "Contract type: Monthly",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Contract type: Monthly",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "8.41",
+          "role": "data",
+          "variable": "Months in club",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "7.84",
+          "role": "data",
+          "variable": "Months in club",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.57",
+          "role": "data",
+          "variable": "Months in club",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.284",
+          "role": "data",
+          "variable": "Months in club",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.21)",
+          "role": "data",
+          "variable": "Months in club",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.31)",
+          "role": "data",
+          "variable": "Months in club",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.38)",
+          "role": "data",
+          "variable": "Months in club",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Months in club",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "5.84",
+          "role": "data",
+          "variable": "Forecast visits (next month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "5.71",
+          "role": "data",
+          "variable": "Forecast visits (next month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.13",
+          "role": "data",
+          "variable": "Forecast visits (next month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.518",
+          "role": "data",
+          "variable": "Forecast visits (next month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "Forecast visits (next month)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.21)",
+          "role": "data",
+          "variable": "Forecast visits (next month)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.25)",
+          "role": "data",
+          "variable": "Forecast visits (next month)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Forecast visits (next month)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "4.14",
+          "role": "data",
+          "variable": "Actual visits (next month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "4.02",
+          "role": "data",
+          "variable": "Actual visits (next month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.12",
+          "role": "data",
+          "variable": "Actual visits (next month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.541",
+          "role": "data",
+          "variable": "Actual visits (next month)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "Actual visits (next month)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.12)",
+          "role": "data",
+          "variable": "Actual visits (next month)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "Actual visits (next month)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Actual visits (next month)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "1.70",
+          "role": "data",
+          "variable": "Forecast error (overestimate)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "1.69",
+          "role": "data",
+          "variable": "Forecast error (overestimate)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.01",
+          "role": "data",
+          "variable": "Forecast error (overestimate)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "0.981",
+          "role": "data",
+          "variable": "Forecast error (overestimate)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.12)",
+          "role": "data",
+          "variable": "Forecast error (overestimate)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "Forecast error (overestimate)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.22)",
+          "role": "data",
+          "variable": "Forecast error (overestimate)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Forecast error (overestimate)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "5,841",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "1,911",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "7,752",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the average forecast error (overestimate) for survey respondents?",
+          "answer": "1.70 visits per month"
+        },
+        {
+          "question": "Is there differential attrition in the survey by contract type?",
+          "answer": "No, p-value for contract type balance is 0.614"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "beta-delta-utility",
+      "label": "eq:beta-delta",
+      "latex": "U_t = u(c_t) + \\beta \\sum_{\\tau=1}^{T} \\delta^\\tau u(c_{t+\\tau}), \\quad \\mathbb{E}_t[U_t] = \\mathbb{E}\\!\\left[u(c_t) + \\beta \\sum_{\\tau=1}^{T} \\delta^\\tau u(c_{t+\\tau}) \\,\\middle|\\, \\mathcal{F}_t\\right]",
+      "description": "Beta-delta quasi-hyperbolic utility: $\\beta < 1$ captures present bias, $\\delta$ governs long-run patience.",
+      "qa": [
+        {
+          "question": "What does beta < 1 capture in the beta-delta model?",
+          "answer": "Present bias: extra discounting of all future periods relative to the present"
+        }
+      ]
+    },
+    {
+      "eq_id": "contract-choice",
+      "label": "eq:contract-choice",
+      "latex": "V^M > V^{PPV} \\iff \\sum_{t=1}^{T} \\delta^t \\beta [b - c(\\nu_t)] - p^M > \\sum_{t=1}^{T} \\delta^t \\beta [b - c(\\nu_t)] \\mathbf{1}[\\nu_t > 0] - p^{PPV} \\nu_t",
+      "description": "A naive agent chooses monthly contract if perceived net value $V^M$ exceeds pay-per-visit $V^{PPV}$, based on forecasted $\\nu_t$ but evaluated at $\\beta=1$.",
+      "qa": []
+    },
+    {
+      "eq_id": "attendance-decision",
+      "label": "eq:attendance",
+      "latex": "\\nu_t^* = 1 \\iff \\beta [b - c_t] \\geq p_t, \\quad c_t \\sim F(\\cdot)",
+      "description": "Period-$t$ attendance decision: member exercises if present-biased benefit net of stochastic effort cost $c_t$ exceeds the current-period price $p_t$.",
+      "qa": []
+    },
+    {
+      "eq_id": "overconfidence-param",
+      "label": "eq:overconfidence",
+      "latex": "\\\\tilde{\\\\beta} = \\\\theta + (1-\\\\theta)\\\\beta, \\\\quad \\\\theta \\\\in [0,1]",
+      "description": "Overconfidence parameter $\\theta$: $\\theta=1$ is fully naive (believes $\\beta=1$); $\\theta=0$ is fully sophisticated.",
+      "qa": []
+    },
+    {
+      "eq_id": "structural-likelihood",
+      "label": "eq:structural-lik",
+      "latex": "\\\\mathcal{L}(\\\\beta, \\\\delta, \\\\theta, b, c, \\\\kappa) = \\\\prod_{i=1}^N P(k_i \\\\mid \\\\beta, \\\\delta, \\\\theta) \\\\cdot \\\\prod_{t} P(\\\\nu_{it} \\\\mid \\\\beta, c, p_t) \\\\cdot P(s_i \\\\mid \\\\theta, c)",
+      "description": "Full information MLE: joint likelihood over contract choices $k_i$, monthly visits $\\nu_{it}$, and survey forecasts $s_i$.",
+      "qa": [
+        {
+          "question": "What three sources of moments identify the structural parameters?",
+          "answer": "Contract choices, monthly attendance, and survey forecast data"
+        }
+      ]
+    },
+    {
+      "eq_id": "identification",
+      "label": "eq:identification",
+      "latex": "\\\\frac{\\\\partial \\\\mathcal{L}}{\\\\partial \\\\beta} = 0, \\\\quad \\\\frac{\\\\partial^2 \\\\mathcal{L}}{\\\\partial \\\\beta^2} < 0 \\\\quad \\\\Leftrightarrow \\\\quad \\\\text{Cov}(k_i, \\\\nu_{it}) \\\\neq 0",
+      "description": "Beta is identified by the covariance between contract choice and subsequent attendance: naive agents systematically choose costly contracts and attend infrequently.",
+      "qa": []
+    },
+    {
+      "eq_id": "per-visit-cost",
+      "label": "eq:per-visit-cost",
+      "latex": "c(\\nu) = c_0 + c_1 \\nu + c_2 \\nu^2 + c_3 \\sqrt[3]{\\nu}, \\quad \\mathbb{E}[c_t] = c_0 + c_1 \\bar{\\nu} + c_3 \\mathbb{E}\\!\\left[\\sqrt[3]{\\nu_t}\\right]",
+      "description": "Quadratic per-visit cost function: $c_0$ is fixed hassle cost, $c_1$ and $c_2$ capture increasing marginal effort.",
+      "qa": []
+    },
+    {
+      "eq_id": "welfare-cs",
+      "label": "eq:welfare-cs",
+      "latex": "CS = E\\\\left[\\\\sum_{t=1}^{T} \\\\delta^t [b - c_t] \\\\mathbf{1}[\\\\nu_t^*=1] - p^M\\\\right] - E\\\\left[\\\\sum_{t=1}^{T} \\\\delta^t [b - c_t] \\\\mathbf{1}[\\\\tilde{\\\\nu}_t^*=1] - p^M\\\\right]",
+      "description": "Consumer surplus loss from present bias: difference between time-consistent ($\\beta=1$) and biased ($\\beta<1$) surplus.",
+      "qa": []
+    },
+    {
+      "eq_id": "cancellation-hazard",
+      "label": "eq:hazard",
+      "latex": "h(t \\mid x) = h_0(t) \\exp(x'\\gamma), \\quad h_0(t) = p \\lambda (\\lambda t)^{p-1}, \\quad \\mathbb{P}(T > t) = \\prod_{k=1}^{K} \\exp\\!\\left(-\\binom{t}{k} \\lambda_k \\right)",
+      "description": "Proportional hazard model for cancellation: $h_0(t)$ is the Weibull baseline hazard with shape $p$ and scale $\\lambda$.",
+      "qa": []
+    },
+    {
+      "eq_id": "optimal-contract",
+      "label": "eq:optimal-contract",
+      "latex": "\\\\max_{p^F, p^M} \\\\pi = N \\\\cdot [p^F + p^M E[\\\\nu^*]] \\\\quad \\\\text{s.t.} \\\\quad CS(\\\\beta, p^F, p^M) \\\\geq \\\\bar{u}",
+      "description": "Firm's optimal contract design: maximize profit from fixed fee $p^F$ and per-visit fee $p^M$ subject to consumer participation constraint.",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main empirical finding about monthly contract choice?",
+      "answer": "Monthly contract holders attend only 4.17 times/month on average, below the 4.5-visit break-even, paying more than pay-per-visit"
+    },
+    {
+      "question": "What is the estimated beta (present bias) parameter?",
+      "answer": "0.712"
+    },
+    {
+      "question": "What is the estimated overconfidence parameter theta?",
+      "answer": "0.591"
+    },
+    {
+      "question": "What is the annual welfare loss from present bias for the average member?",
+      "answer": "\\$136 per year"
+    },
+    {
+      "question": "What fraction of the welfare loss is due to dominated contract choice?",
+      "answer": "62 percent"
+    },
+    {
+      "question": "What fraction of members choose the monthly contract?",
+      "answer": "0.614"
+    },
+    {
+      "question": "What is the average monthly visits for health club members?",
+      "answer": "4.17"
+    },
+    {
+      "question": "What is the average cost per visit for monthly contract holders?",
+      "answer": "\\$17.80"
+    },
+    {
+      "question": "How many member-month observations are in the sample?",
+      "answer": "74,661"
+    },
+    {
+      "question": "What is the coefficient on forecasted monthly visits for choosing monthly contract?",
+      "answer": "0.312"
+    },
+    {
+      "question": "What is the coefficient on log distance for pay-per-visit?",
+      "answer": "-0.241"
+    },
+    {
+      "question": "What is the pseudo R-squared for the contract choice model?",
+      "answer": "0.184"
+    },
+    {
+      "question": "What is the OLS coefficient on monthly contract in column 1?",
+      "answer": "-1.842"
+    },
+    {
+      "question": "What is the FE coefficient on monthly contract in column 3?",
+      "answer": "-1.614"
+    },
+    {
+      "question": "What is the mean of the dependent variable?",
+      "answer": "4.17 visits per month"
+    },
+    {
+      "question": "What is the R-squared in column 4?",
+      "answer": "0.494"
+    },
+    {
+      "question": "What is the coefficient on low-visit indicator in the dominated contract regression (column 1)?",
+      "answer": "0.484"
+    },
+    {
+      "question": "What is the R-squared in column 4 of panel A?",
+      "answer": "0.152"
+    },
+    {
+      "question": "What is the coefficient on monthly contract times low visits in panel B, column 1?",
+      "answer": "11.84"
+    },
+    {
+      "question": "What is the hazard ratio coefficient on lagged monthly visits in Cox model (1)?",
+      "answer": "-0.084"
+    },
+    {
+      "question": "How many cancellation events are observed?",
+      "answer": "5,614"
+    },
+    {
+      "question": "What is the coefficient on months in club in Cox model (2)?",
+      "answer": "0.020"
+    },
+    {
+      "question": "What is the baseline estimate of beta (present bias)?",
+      "answer": "0.712"
+    },
+    {
+      "question": "What is the estimated monthly discount factor delta?",
+      "answer": "0.981"
+    },
+    {
+      "question": "What is the overconfidence parameter theta in the baseline?",
+      "answer": "0.591"
+    },
+    {
+      "question": "What fraction of agents are estimated to be sophisticated?",
+      "answer": "0.381"
+    },
+    {
+      "question": "What is the estimated per-visit benefit in the baseline?",
+      "answer": "\\$14.22 per visit"
+    },
+    {
+      "question": "What is the estimated per-visit cost in the baseline?",
+      "answer": "\\$11.84 per visit"
+    },
+    {
+      "question": "What is the estimated cancellation hassle cost?",
+      "answer": "\\$8.12"
+    },
+    {
+      "question": "What is the consumer surplus under the monthly contract?",
+      "answer": "\\$12.41 per member per month"
+    },
+    {
+      "question": "What is the total surplus under the optimal contract?",
+      "answer": "\\$39.28"
+    },
+    {
+      "question": "What is the predicted average monthly visits under the annual contract?",
+      "answer": "4.84"
+    },
+    {
+      "question": "What is the firm profit under the monthly contract?",
+      "answer": "\\$21.81"
+    },
+    {
+      "question": "What is the annual welfare loss from present bias for monthly contract holders?",
+      "answer": "\\$179.4 per year"
+    },
+    {
+      "question": "What fraction of annual fees paid represents welfare loss for monthly holders?",
+      "answer": "21.3 percent"
+    },
+    {
+      "question": "How much of the welfare loss for all members is due to excess fee payments?",
+      "answer": "\\$84.2 per year"
+    },
+    {
+      "question": "What is the coefficient on predicted monthly visits in the baseline OLS?",
+      "answer": "0.481"
+    },
+    {
+      "question": "What is the prediction error constant in the baseline regression?",
+      "answer": "2.241"
+    },
+    {
+      "question": "What is the prediction error for monthly contract holders relative to pay-per-visit?",
+      "answer": "1.841 additional visits per month"
+    },
+    {
+      "question": "What is the average forecast error (overestimate) for survey respondents?",
+      "answer": "1.70 visits per month"
+    },
+    {
+      "question": "Is there differential attrition in the survey by contract type?",
+      "answer": "No, p-value for contract type balance is 0.614"
+    },
+    {
+      "question": "What does beta < 1 capture in the beta-delta model?",
+      "answer": "Present bias: extra discounting of all future periods relative to the present"
+    },
+    {
+      "question": "What three sources of moments identify the structural parameters?",
+      "answer": "Contract choices, monthly attendance, and survey forecast data"
+    }
+  ]
+}

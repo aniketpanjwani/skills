@@ -1,0 +1,5112 @@
+{
+  "paper_id": "19",
+  "field": "inequality",
+  "title": "Top Income Shares in the United States, 1913-2020: New Evidence from Tax Records",
+  "journal_style": "two_column",
+  "target_pages": 80,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-19",
+      "level": 1
+    },
+    {
+      "title": "Literature and Context",
+      "label": "sec:lit-19",
+      "level": 1
+    },
+    {
+      "title": "Tax Data and Methodology",
+      "label": "sec:data-19",
+      "level": 1
+    },
+    {
+      "title": "IRS Statistics of Income Data",
+      "label": "sec:irs-19",
+      "level": 2
+    },
+    {
+      "title": "Tax Unit Definitions and Adjustments",
+      "label": "sec:tax-units-19",
+      "level": 2
+    },
+    {
+      "title": "Pareto Interpolation Method",
+      "label": "sec:pareto-method-19",
+      "level": 2
+    },
+    {
+      "title": "Income Concepts and Capital Gains",
+      "label": "sec:income-concepts-19",
+      "level": 2
+    },
+    {
+      "title": "Top Income Shares: 1913-2020",
+      "label": "sec:shares-19",
+      "level": 1
+    },
+    {
+      "title": "Long-Run Trends in the Top 0.1\\%",
+      "label": "sec:top01-19",
+      "level": 2
+    },
+    {
+      "title": "The Top 1\\% and Top 10\\%",
+      "label": "sec:top1-10-19",
+      "level": 2
+    },
+    {
+      "title": "Pareto Coefficients Over Time",
+      "label": "sec:pareto-time-19",
+      "level": 2
+    },
+    {
+      "title": "Comparison with Survey-Based Measures",
+      "label": "sec:survey-19",
+      "level": 2
+    },
+    {
+      "title": "Composition of Top Incomes",
+      "label": "sec:composition-19",
+      "level": 1
+    },
+    {
+      "title": "The Rise of Working Rich",
+      "label": "sec:working-rich-19",
+      "level": 2
+    },
+    {
+      "title": "Capital Income at the Very Top",
+      "label": "sec:capital-top-19",
+      "level": 2
+    },
+    {
+      "title": "Heterogeneity by Gender and Industry",
+      "label": "sec:gender-ind-19",
+      "level": 2
+    },
+    {
+      "title": "International Comparison",
+      "label": "sec:intl-19",
+      "level": 1
+    },
+    {
+      "title": "Anglo-Saxon vs. Continental Europe",
+      "label": "sec:anglosaxon-19",
+      "level": 2
+    },
+    {
+      "title": "Institutional Drivers of Cross-Country Differences",
+      "label": "sec:institutions-19",
+      "level": 2
+    },
+    {
+      "title": "Mechanisms",
+      "label": "sec:mechanisms-19",
+      "level": 1
+    },
+    {
+      "title": "Tax Policy and Behavioral Responses",
+      "label": "sec:tax-policy-19",
+      "level": 2
+    },
+    {
+      "title": "Capital Accumulation and r > g",
+      "label": "sec:r-g-19",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-19",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Data Construction",
+      "label": "sec:appendix-a-19",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Pareto Methods",
+      "label": "sec:appendix-b-19",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Additional Tables",
+      "label": "sec:appendix-c-19",
+      "level": 1
+    },
+    {
+      "title": "Appendix D: Price Adjustments",
+      "label": "sec:appendix-d-19",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "tax-data-summary",
+      "caption": "Tax Return Data Summary Statistics, Selected Years",
+      "label": "tab:tax-data-summary",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "42.7",
+          "role": "data",
+          "variable": "Total tax units (millions)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "58.3",
+          "role": "data",
+          "variable": "Total tax units (millions)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "93.1",
+          "role": "data",
+          "variable": "Total tax units (millions)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "127.4",
+          "role": "data",
+          "variable": "Total tax units (millions)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "155.8",
+          "role": "data",
+          "variable": "Total tax units (millions)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Mean AGI (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "29.7",
+          "role": "data",
+          "variable": "Mean AGI (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "48.2",
+          "role": "data",
+          "variable": "Mean AGI (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "72.1",
+          "role": "data",
+          "variable": "Mean AGI (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "89.4",
+          "role": "data",
+          "variable": "Mean AGI (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "11.2",
+          "role": "data",
+          "variable": "Median AGI (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "21.4",
+          "role": "data",
+          "variable": "Median AGI (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "36.8",
+          "role": "data",
+          "variable": "Median AGI (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "48.3",
+          "role": "data",
+          "variable": "Median AGI (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "54.7",
+          "role": "data",
+          "variable": "Median AGI (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "241.3",
+          "role": "data",
+          "variable": "Top 1\\% threshold (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "318.7",
+          "role": "data",
+          "variable": "Top 1\\% threshold (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "412.4",
+          "role": "data",
+          "variable": "Top 1\\% threshold (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "723.8",
+          "role": "data",
+          "variable": "Top 1\\% threshold (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "981.4",
+          "role": "data",
+          "variable": "Top 1\\% threshold (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "1,124",
+          "role": "data",
+          "variable": "Top 0.1\\% threshold (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "1,418",
+          "role": "data",
+          "variable": "Top 0.1\\% threshold (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "1,874",
+          "role": "data",
+          "variable": "Top 0.1\\% threshold (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "3,982",
+          "role": "data",
+          "variable": "Top 0.1\\% threshold (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "6,241",
+          "role": "data",
+          "variable": "Top 0.1\\% threshold (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "68.4",
+          "role": "data",
+          "variable": "Fraction with wage income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "74.2",
+          "role": "data",
+          "variable": "Fraction with wage income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "82.1",
+          "role": "data",
+          "variable": "Fraction with wage income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "79.4",
+          "role": "data",
+          "variable": "Fraction with wage income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "76.8",
+          "role": "data",
+          "variable": "Fraction with wage income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "31.8",
+          "role": "data",
+          "variable": "Fraction with capital income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "28.4",
+          "role": "data",
+          "variable": "Fraction with capital income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "24.7",
+          "role": "data",
+          "variable": "Fraction with capital income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "29.1",
+          "role": "data",
+          "variable": "Fraction with capital income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "31.4",
+          "role": "data",
+          "variable": "Fraction with capital income (\\%)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "How many tax units were there in 2019?",
+          "answer": "155.8 million"
+        },
+        {
+          "question": "What was the top 1% AGI threshold in 2019?",
+          "answer": "$981,400 (2019 dollars)"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-tax-units",
+      "caption": "Appendix: Tax Unit Adjustments for Changing Filing Patterns",
+      "label": "tab:appendix-tax-units",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "74.4",
+          "role": "data",
+          "variable": "Married filing jointly (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "71.2",
+          "role": "data",
+          "variable": "Married filing jointly (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "56.8",
+          "role": "data",
+          "variable": "Married filing jointly (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "51.4",
+          "role": "data",
+          "variable": "Married filing jointly (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "48.2",
+          "role": "data",
+          "variable": "Married filing jointly (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "21.4",
+          "role": "data",
+          "variable": "Single filers (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "24.8",
+          "role": "data",
+          "variable": "Single filers (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "37.4",
+          "role": "data",
+          "variable": "Single filers (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "43.2",
+          "role": "data",
+          "variable": "Single filers (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "46.8",
+          "role": "data",
+          "variable": "Single filers (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "4.2",
+          "role": "data",
+          "variable": "Head of household (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "4.0",
+          "role": "data",
+          "variable": "Head of household (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "5.8",
+          "role": "data",
+          "variable": "Head of household (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "5.4",
+          "role": "data",
+          "variable": "Head of household (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "5.0",
+          "role": "data",
+          "variable": "Head of household (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Adjustment factor (MFJ = 1.0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Adjustment factor (MFJ = 1.0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Adjustment factor (MFJ = 1.0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Adjustment factor (MFJ = 1.0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Adjustment factor (MFJ = 1.0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "10.8",
+          "role": "data",
+          "variable": "Top 1\\% share (unadjusted, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "9.9",
+          "role": "data",
+          "variable": "Top 1\\% share (unadjusted, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "13.1",
+          "role": "data",
+          "variable": "Top 1\\% share (unadjusted, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "17.4",
+          "role": "data",
+          "variable": "Top 1\\% share (unadjusted, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "18.8",
+          "role": "data",
+          "variable": "Top 1\\% share (unadjusted, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "10.4",
+          "role": "data",
+          "variable": "Top 1\\% share (adjusted for filing units, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "9.7",
+          "role": "data",
+          "variable": "Top 1\\% share (adjusted for filing units, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "12.8",
+          "role": "data",
+          "variable": "Top 1\\% share (adjusted for filing units, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "17.1",
+          "role": "data",
+          "variable": "Top 1\\% share (adjusted for filing units, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Top 1\\% share (adjusted for filing units, \\%)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Has the fraction of married-filing-jointly returns changed since 1950?",
+          "answer": "Yes, declined from 74.4% to 48.2%, reflecting rising rates of single filing"
+        }
+      ]
+    },
+    {
+      "table_id": "capital-gains-inclusion",
+      "caption": "Effect of Capital Gains on Top Income Shares",
+      "label": "tab:capital-gains-inclusion",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "15.5",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "16.5",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "18.4",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "19.1",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "17.4",
+          "role": "data",
+          "variable": "2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "18.4",
+          "role": "data",
+          "variable": "2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "21.4",
+          "role": "data",
+          "variable": "2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "22.8",
+          "role": "data",
+          "variable": "2007",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "16.1",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "17.4",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "19.8",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "20.2",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "17.2",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "18.8",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "22.1",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "23.4",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "How much higher is the top 1% share under mark-to-market vs excluding capital gains in 2019?",
+          "answer": "6.2 percentage points higher (23.4% vs 17.2%)"
+        },
+        {
+          "question": "Why is 2007 an outlier in the realized CG series?",
+          "answer": "High realized capital gains in 2007 before the financial crisis created a spike in top income shares"
+        }
+      ]
+    },
+    {
+      "table_id": "agi-adjustments",
+      "caption": "AGI Adjustments: Effect of Including Excluded Income Sources",
+      "label": "tab:agi-adjustments",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "16.5",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "18.4",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "19.8",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "14.8",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "21.4",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "17.4",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "19.8",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "21.4",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "15.8",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "22.8",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "18.8",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "22.1",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "24.4",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "16.4",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "25.1",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the top 1% share under the comprehensive income definition in 2019?",
+          "answer": "25.1%"
+        },
+        {
+          "question": "Does including transfer income increase or decrease the top 1% share?",
+          "answer": "Decrease: from 18.8% baseline to 16.4% with transfers, as transfers mainly benefit lower-income groups"
+        }
+      ]
+    },
+    {
+      "table_id": "top-01-shares-by-decade",
+      "caption": "Top 0.1\\% Income Shares by Decade, 1920-2020 (\\%)",
+      "label": "tab:top-01-shares-by-decade",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "8.41",
+          "role": "data",
+          "variable": "Top 0.1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "6.28",
+          "role": "data",
+          "variable": "Top 0.1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "4.12",
+          "role": "data",
+          "variable": "Top 0.1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "3.74",
+          "role": "data",
+          "variable": "Top 0.1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "3.41",
+          "role": "data",
+          "variable": "Top 0.1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 6,
+          "text": "3.18",
+          "role": "data",
+          "variable": "Top 0.1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 7,
+          "text": "4.87",
+          "role": "data",
+          "variable": "Top 0.1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 8,
+          "text": "6.21",
+          "role": "data",
+          "variable": "Top 0.1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 9,
+          "text": "7.84",
+          "role": "data",
+          "variable": "Top 0.1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 10,
+          "text": "8.12",
+          "role": "data",
+          "variable": "Top 0.1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "7.84",
+          "role": "data",
+          "variable": "Top 0.1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "5.91",
+          "role": "data",
+          "variable": "Top 0.1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "3.88",
+          "role": "data",
+          "variable": "Top 0.1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "3.52",
+          "role": "data",
+          "variable": "Top 0.1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "3.22",
+          "role": "data",
+          "variable": "Top 0.1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 6,
+          "text": "3.01",
+          "role": "data",
+          "variable": "Top 0.1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 7,
+          "text": "4.41",
+          "role": "data",
+          "variable": "Top 0.1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 8,
+          "text": "5.74",
+          "role": "data",
+          "variable": "Top 0.1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 9,
+          "text": "6.87",
+          "role": "data",
+          "variable": "Top 0.1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 10,
+          "text": "7.41",
+          "role": "data",
+          "variable": "Top 0.1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "2.14",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "1.84",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "1.42",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "1.21",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "1.31",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 6,
+          "text": "1.38",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 7,
+          "text": "2.12",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 8,
+          "text": "2.84",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 9,
+          "text": "3.41",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 10,
+          "text": "4.02",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "5.12",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "3.81",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "2.18",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "2.11",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "1.84",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 6,
+          "text": "1.48",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 7,
+          "text": "2.18",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 8,
+          "text": "2.74",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 9,
+          "text": "3.84",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 10,
+          "text": "3.71",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "1.15",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.63",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.52",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "0.26",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 6,
+          "text": "0.32",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 7,
+          "text": "0.57",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 8,
+          "text": "0.63",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 9,
+          "text": "0.59",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 10,
+          "text": "0.68",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What was the top 0.1% share in the 1920s?",
+          "answer": "8.41%"
+        },
+        {
+          "question": "When was the top 0.1% share at its lowest?",
+          "answer": "The 1970s (3.18%)"
+        }
+      ]
+    },
+    {
+      "table_id": "top-1-shares-by-decade",
+      "caption": "Top 1\\% Income Shares by Decade, 1920-2020 (\\%)",
+      "label": "tab:top-1-shares-by-decade",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "18.42",
+          "role": "data",
+          "variable": "Top 1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "14.87",
+          "role": "data",
+          "variable": "Top 1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "11.28",
+          "role": "data",
+          "variable": "Top 1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "10.84",
+          "role": "data",
+          "variable": "Top 1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "10.41",
+          "role": "data",
+          "variable": "Top 1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 6,
+          "text": "9.87",
+          "role": "data",
+          "variable": "Top 1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 7,
+          "text": "12.34",
+          "role": "data",
+          "variable": "Top 1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 8,
+          "text": "15.84",
+          "role": "data",
+          "variable": "Top 1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 9,
+          "text": "17.41",
+          "role": "data",
+          "variable": "Top 1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 10,
+          "text": "18.74",
+          "role": "data",
+          "variable": "Top 1\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "17.14",
+          "role": "data",
+          "variable": "Top 1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "13.91",
+          "role": "data",
+          "variable": "Top 1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "10.84",
+          "role": "data",
+          "variable": "Top 1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "10.41",
+          "role": "data",
+          "variable": "Top 1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "9.98",
+          "role": "data",
+          "variable": "Top 1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 6,
+          "text": "9.48",
+          "role": "data",
+          "variable": "Top 1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 7,
+          "text": "11.47",
+          "role": "data",
+          "variable": "Top 1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 8,
+          "text": "14.21",
+          "role": "data",
+          "variable": "Top 1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 9,
+          "text": "15.48",
+          "role": "data",
+          "variable": "Top 1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 10,
+          "text": "17.18",
+          "role": "data",
+          "variable": "Top 1\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "5.84",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "4.91",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "4.12",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "3.84",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "3.74",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 6,
+          "text": "3.91",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 7,
+          "text": "5.41",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 8,
+          "text": "7.84",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 9,
+          "text": "8.42",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 10,
+          "text": "9.71",
+          "role": "data",
+          "variable": "Wage component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "10.14",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "7.81",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "5.48",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "5.12",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "4.81",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 6,
+          "text": "4.12",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 7,
+          "text": "5.18",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 8,
+          "text": "5.84",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 9,
+          "text": "6.48",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 10,
+          "text": "6.21",
+          "role": "data",
+          "variable": "Capital income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "2.44",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "2.15",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "1.68",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "1.88",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "1.86",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 6,
+          "text": "1.84",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 7,
+          "text": "1.75",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 8,
+          "text": "2.16",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 9,
+          "text": "2.51",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 10,
+          "text": "2.82",
+          "role": "data",
+          "variable": "Business income component",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What was the top 1% income share in the 2010s?",
+          "answer": "18.74%"
+        },
+        {
+          "question": "What was the top 1% share in the 1970s (the low point)?",
+          "answer": "9.87%"
+        }
+      ]
+    },
+    {
+      "table_id": "top-10-shares-by-decade",
+      "caption": "Top 10\\% Income Shares by Decade, 1920-2020 (\\%)",
+      "label": "tab:top-10-shares-by-decade",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "43.84",
+          "role": "data",
+          "variable": "Top 10\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "40.12",
+          "role": "data",
+          "variable": "Top 10\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "35.74",
+          "role": "data",
+          "variable": "Top 10\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "33.48",
+          "role": "data",
+          "variable": "Top 10\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "32.84",
+          "role": "data",
+          "variable": "Top 10\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 6,
+          "text": "32.14",
+          "role": "data",
+          "variable": "Top 10\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 7,
+          "text": "38.41",
+          "role": "data",
+          "variable": "Top 10\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 8,
+          "text": "42.18",
+          "role": "data",
+          "variable": "Top 10\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 9,
+          "text": "46.84",
+          "role": "data",
+          "variable": "Top 10\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 10,
+          "text": "47.21",
+          "role": "data",
+          "variable": "Top 10\\% share (all income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "42.14",
+          "role": "data",
+          "variable": "Top 10\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "38.84",
+          "role": "data",
+          "variable": "Top 10\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "34.91",
+          "role": "data",
+          "variable": "Top 10\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "32.74",
+          "role": "data",
+          "variable": "Top 10\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "32.14",
+          "role": "data",
+          "variable": "Top 10\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 6,
+          "text": "31.48",
+          "role": "data",
+          "variable": "Top 10\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 7,
+          "text": "37.14",
+          "role": "data",
+          "variable": "Top 10\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 8,
+          "text": "40.84",
+          "role": "data",
+          "variable": "Top 10\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 9,
+          "text": "44.41",
+          "role": "data",
+          "variable": "Top 10\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 10,
+          "text": "45.84",
+          "role": "data",
+          "variable": "Top 10\\% share (excl. cap. gains)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "25.42",
+          "role": "data",
+          "variable": "P90-P99 (next 9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "25.25",
+          "role": "data",
+          "variable": "P90-P99 (next 9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "24.46",
+          "role": "data",
+          "variable": "P90-P99 (next 9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "22.64",
+          "role": "data",
+          "variable": "P90-P99 (next 9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "22.43",
+          "role": "data",
+          "variable": "P90-P99 (next 9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 6,
+          "text": "22.27",
+          "role": "data",
+          "variable": "P90-P99 (next 9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 7,
+          "text": "26.07",
+          "role": "data",
+          "variable": "P90-P99 (next 9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 8,
+          "text": "26.34",
+          "role": "data",
+          "variable": "P90-P99 (next 9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 9,
+          "text": "29.43",
+          "role": "data",
+          "variable": "P90-P99 (next 9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 10,
+          "text": "28.47",
+          "role": "data",
+          "variable": "P90-P99 (next 9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "9.48",
+          "role": "data",
+          "variable": "P99-P99.9 (next 0.9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "8.42",
+          "role": "data",
+          "variable": "P99-P99.9 (next 0.9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "7.68",
+          "role": "data",
+          "variable": "P99-P99.9 (next 0.9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "6.84",
+          "role": "data",
+          "variable": "P99-P99.9 (next 0.9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "6.74",
+          "role": "data",
+          "variable": "P99-P99.9 (next 0.9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 6,
+          "text": "6.47",
+          "role": "data",
+          "variable": "P99-P99.9 (next 0.9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 7,
+          "text": "7.41",
+          "role": "data",
+          "variable": "P99-P99.9 (next 0.9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 8,
+          "text": "8.74",
+          "role": "data",
+          "variable": "P99-P99.9 (next 0.9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 9,
+          "text": "9.84",
+          "role": "data",
+          "variable": "P99-P99.9 (next 0.9\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 10,
+          "text": "9.94",
+          "role": "data",
+          "variable": "P99-P99.9 (next 0.9\\%)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What was the top 10% income share in the 2010s?",
+          "answer": "47.21%"
+        },
+        {
+          "question": "What fraction of the top 10% share belongs to the top 1%?",
+          "answer": "Approximately 39.7% (18.74/47.21) in the 2010s"
+        }
+      ]
+    },
+    {
+      "table_id": "pareto-coefficients-by-year",
+      "caption": "Pareto Coefficients at the Top of the Income Distribution, Selected Years",
+      "label": "tab:pareto-coefficients-by-year",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "1.714",
+          "role": "data",
+          "variable": "1929 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "1.624",
+          "role": "data",
+          "variable": "1929 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "1.512",
+          "role": "data",
+          "variable": "1929 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "1.387",
+          "role": "data",
+          "variable": "1929 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "2.142",
+          "role": "data",
+          "variable": "1950 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "2.084",
+          "role": "data",
+          "variable": "1950 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "2.018",
+          "role": "data",
+          "variable": "1950 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.948",
+          "role": "data",
+          "variable": "1950 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "2.381",
+          "role": "data",
+          "variable": "1970 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "2.314",
+          "role": "data",
+          "variable": "1970 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "2.247",
+          "role": "data",
+          "variable": "1970 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "2.182",
+          "role": "data",
+          "variable": "1970 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.987",
+          "role": "data",
+          "variable": "1990 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.924",
+          "role": "data",
+          "variable": "1990 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1.847",
+          "role": "data",
+          "variable": "1990 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "1.771",
+          "role": "data",
+          "variable": "1990 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "1.748",
+          "role": "data",
+          "variable": "2010 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "1.684",
+          "role": "data",
+          "variable": "2010 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "1.601",
+          "role": "data",
+          "variable": "2010 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "1.524",
+          "role": "data",
+          "variable": "2010 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1.692",
+          "role": "data",
+          "variable": "2019 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1.628",
+          "role": "data",
+          "variable": "2019 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.549",
+          "role": "data",
+          "variable": "2019 (Pareto alpha)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1.471",
+          "role": "data",
+          "variable": "2019 (Pareto alpha)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What does a lower Pareto alpha indicate?",
+          "answer": "Heavier tails and greater inequality at the top"
+        },
+        {
+          "question": "Is the 2019 Pareto alpha above or below 2?",
+          "answer": "Below 2 (1.692 at the top 1% threshold), indicating potentially infinite variance"
+        }
+      ]
+    },
+    {
+      "table_id": "gini-coefficient-time-series",
+      "caption": "Gini Coefficient Time Series, United States, 1913-2019",
+      "label": "tab:gini-coefficient-time-series",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "0.532",
+          "role": "data",
+          "variable": "Gini (pre-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "0.481",
+          "role": "data",
+          "variable": "Gini (pre-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "0.448",
+          "role": "data",
+          "variable": "Gini (pre-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "0.462",
+          "role": "data",
+          "variable": "Gini (pre-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "0.531",
+          "role": "data",
+          "variable": "Gini (pre-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 6,
+          "text": "0.582",
+          "role": "data",
+          "variable": "Gini (pre-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.481",
+          "role": "data",
+          "variable": "Gini (post-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.421",
+          "role": "data",
+          "variable": "Gini (post-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.381",
+          "role": "data",
+          "variable": "Gini (post-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.388",
+          "role": "data",
+          "variable": "Gini (post-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "0.448",
+          "role": "data",
+          "variable": "Gini (post-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 6,
+          "text": "0.494",
+          "role": "data",
+          "variable": "Gini (post-tax income)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "0.441",
+          "role": "data",
+          "variable": "Gini (consumption)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.381",
+          "role": "data",
+          "variable": "Gini (consumption)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.348",
+          "role": "data",
+          "variable": "Gini (consumption)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.352",
+          "role": "data",
+          "variable": "Gini (consumption)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "0.388",
+          "role": "data",
+          "variable": "Gini (consumption)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 6,
+          "text": "0.412",
+          "role": "data",
+          "variable": "Gini (consumption)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.814",
+          "role": "data",
+          "variable": "Gini (wealth)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.781",
+          "role": "data",
+          "variable": "Gini (wealth)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.748",
+          "role": "data",
+          "variable": "Gini (wealth)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.748",
+          "role": "data",
+          "variable": "Gini (wealth)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "0.821",
+          "role": "data",
+          "variable": "Gini (wealth)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 6,
+          "text": "0.869",
+          "role": "data",
+          "variable": "Gini (wealth)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "43.8",
+          "role": "data",
+          "variable": "Top 10\\% share (ref.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "40.1",
+          "role": "data",
+          "variable": "Top 10\\% share (ref.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "32.8",
+          "role": "data",
+          "variable": "Top 10\\% share (ref.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "32.1",
+          "role": "data",
+          "variable": "Top 10\\% share (ref.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "46.8",
+          "role": "data",
+          "variable": "Top 10\\% share (ref.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 6,
+          "text": "47.2",
+          "role": "data",
+          "variable": "Top 10\\% share (ref.)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What was the pre-tax Gini coefficient in 2019?",
+          "answer": "0.582"
+        },
+        {
+          "question": "Is wealth more unequally distributed than income?",
+          "answer": "Yes, the wealth Gini (0.869) is substantially higher than the income Gini (0.582) in 2019"
+        }
+      ]
+    },
+    {
+      "table_id": "composition-wages-vs-capital",
+      "caption": "Composition of Top Incomes: Wages vs. Capital, Selected Years",
+      "label": "tab:composition-wages-vs-capital",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "38.4",
+          "role": "data",
+          "variable": "Wages and salaries",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "42.1",
+          "role": "data",
+          "variable": "Wages and salaries",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "47.8",
+          "role": "data",
+          "variable": "Wages and salaries",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "52.4",
+          "role": "data",
+          "variable": "Wages and salaries",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "54.8",
+          "role": "data",
+          "variable": "Wages and salaries",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "24.1",
+          "role": "data",
+          "variable": "Dividends",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Dividends",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "12.8",
+          "role": "data",
+          "variable": "Dividends",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "9.4",
+          "role": "data",
+          "variable": "Dividends",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "8.7",
+          "role": "data",
+          "variable": "Dividends",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "14.8",
+          "role": "data",
+          "variable": "Interest",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "12.1",
+          "role": "data",
+          "variable": "Interest",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "9.4",
+          "role": "data",
+          "variable": "Interest",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "6.2",
+          "role": "data",
+          "variable": "Interest",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "4.8",
+          "role": "data",
+          "variable": "Interest",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "14.2",
+          "role": "data",
+          "variable": "Business income",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "17.4",
+          "role": "data",
+          "variable": "Business income",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "19.8",
+          "role": "data",
+          "variable": "Business income",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "21.4",
+          "role": "data",
+          "variable": "Business income",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "22.1",
+          "role": "data",
+          "variable": "Business income",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "8.5",
+          "role": "data",
+          "variable": "Capital gains",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "10.0",
+          "role": "data",
+          "variable": "Capital gains",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "10.2",
+          "role": "data",
+          "variable": "Capital gains",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "10.6",
+          "role": "data",
+          "variable": "Capital gains",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "9.6",
+          "role": "data",
+          "variable": "Capital gains",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "68.4",
+          "role": "data",
+          "variable": "Capital income (dividends + interest + realized CG)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "62.1",
+          "role": "data",
+          "variable": "Capital income (dividends + interest + realized CG)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "53.8",
+          "role": "data",
+          "variable": "Capital income (dividends + interest + realized CG)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "46.2",
+          "role": "data",
+          "variable": "Capital income (dividends + interest + realized CG)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "44.1",
+          "role": "data",
+          "variable": "Capital income (dividends + interest + realized CG)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "31.6",
+          "role": "data",
+          "variable": "Labor income (wages + business income share)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "37.9",
+          "role": "data",
+          "variable": "Labor income (wages + business income share)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "46.2",
+          "role": "data",
+          "variable": "Labor income (wages + business income share)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "53.8",
+          "role": "data",
+          "variable": "Labor income (wages + business income share)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 5,
+          "text": "55.9",
+          "role": "data",
+          "variable": "Labor income (wages + business income share)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Has the labor income share of the top 1% increased or decreased since 1950?",
+          "answer": "Increased: from 38.4% in 1950 to 54.8% in 2019"
+        },
+        {
+          "question": "What happened to the dividend share of top 1% income from 1950 to 2019?",
+          "answer": "Declined substantially, from 24.1% to 8.7%"
+        }
+      ]
+    },
+    {
+      "table_id": "composition-by-percentile",
+      "caption": "Income Composition by Percentile Group, 2019",
+      "label": "tab:composition-by-percentile",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "73.4",
+          "role": "data",
+          "variable": "Wages and salaries (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "66.8",
+          "role": "data",
+          "variable": "Wages and salaries (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "62.1",
+          "role": "data",
+          "variable": "Wages and salaries (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "57.4",
+          "role": "data",
+          "variable": "Wages and salaries (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "34.8",
+          "role": "data",
+          "variable": "Wages and salaries (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "14.2",
+          "role": "data",
+          "variable": "Business income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "17.4",
+          "role": "data",
+          "variable": "Business income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "21.8",
+          "role": "data",
+          "variable": "Business income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "24.4",
+          "role": "data",
+          "variable": "Business income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "28.1",
+          "role": "data",
+          "variable": "Business income (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "4.8",
+          "role": "data",
+          "variable": "Capital gains (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "6.4",
+          "role": "data",
+          "variable": "Capital gains (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "7.4",
+          "role": "data",
+          "variable": "Capital gains (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "9.1",
+          "role": "data",
+          "variable": "Capital gains (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "21.4",
+          "role": "data",
+          "variable": "Capital gains (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "4.2",
+          "role": "data",
+          "variable": "Dividends (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "5.8",
+          "role": "data",
+          "variable": "Dividends (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "5.9",
+          "role": "data",
+          "variable": "Dividends (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "6.4",
+          "role": "data",
+          "variable": "Dividends (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "12.2",
+          "role": "data",
+          "variable": "Dividends (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "3.4",
+          "role": "data",
+          "variable": "Interest (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "3.6",
+          "role": "data",
+          "variable": "Interest (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "2.8",
+          "role": "data",
+          "variable": "Interest (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "2.7",
+          "role": "data",
+          "variable": "Interest (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "3.5",
+          "role": "data",
+          "variable": "Interest (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "128.4",
+          "role": "data",
+          "variable": "Mean income (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "208.7",
+          "role": "data",
+          "variable": "Mean income (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "342.1",
+          "role": "data",
+          "variable": "Mean income (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "621.4",
+          "role": "data",
+          "variable": "Mean income (2019 \\$000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "5,218",
+          "role": "data",
+          "variable": "Mean income (2019 \\$000s)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What was the mean income of the top 0.1% in 2019?",
+          "answer": "$5.218 million"
+        },
+        {
+          "question": "How does wage share vary across the top of the distribution?",
+          "answer": "Decreasing: 73.4% at P90-P95 to 34.8% at the top 0.1%"
+        }
+      ]
+    },
+    {
+      "table_id": "gender-decomposition",
+      "caption": "Gender Decomposition of Top Income Shares, United States",
+      "label": "tab:gender-decomposition",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "14.8",
+          "role": "data",
+          "variable": "P90-P99",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "18.4",
+          "role": "data",
+          "variable": "P90-P99",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "22.1",
+          "role": "data",
+          "variable": "P90-P99",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "27.4",
+          "role": "data",
+          "variable": "P90-P99",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "31.8",
+          "role": "data",
+          "variable": "P90-P99",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "8.4",
+          "role": "data",
+          "variable": "Top 1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "10.8",
+          "role": "data",
+          "variable": "Top 1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "13.4",
+          "role": "data",
+          "variable": "Top 1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "17.8",
+          "role": "data",
+          "variable": "Top 1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "21.4",
+          "role": "data",
+          "variable": "Top 1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "4.8",
+          "role": "data",
+          "variable": "Top 0.1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "6.2",
+          "role": "data",
+          "variable": "Top 0.1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "7.8",
+          "role": "data",
+          "variable": "Top 0.1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "10.4",
+          "role": "data",
+          "variable": "Top 0.1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "13.1",
+          "role": "data",
+          "variable": "Top 0.1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "3.2",
+          "role": "data",
+          "variable": "Top 0.01\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "4.1",
+          "role": "data",
+          "variable": "Top 0.01\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "5.4",
+          "role": "data",
+          "variable": "Top 0.01\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "7.2",
+          "role": "data",
+          "variable": "Top 0.01\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "9.8",
+          "role": "data",
+          "variable": "Top 0.01\\%",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What share of top 0.1% income did women earn in 2019?",
+          "answer": "13.1%"
+        },
+        {
+          "question": "Has women's representation at the top grown over time?",
+          "answer": "Yes, consistently increasing at all percentile groups from 1980 to 2019"
+        }
+      ]
+    },
+    {
+      "table_id": "industry-decomposition",
+      "caption": "Industry Decomposition of Top 1\\% Income, 2000 and 2019 (\\%)",
+      "label": "tab:industry-decomposition",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "22.4",
+          "role": "data",
+          "variable": "Finance and insurance",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "24.1",
+          "role": "data",
+          "variable": "Finance and insurance",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "1.7",
+          "role": "data",
+          "variable": "Finance and insurance",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "3.8",
+          "role": "data",
+          "variable": "Finance and insurance",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "12.8",
+          "role": "data",
+          "variable": "Technology / information",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Technology / information",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "5.6",
+          "role": "data",
+          "variable": "Technology / information",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "3.2",
+          "role": "data",
+          "variable": "Technology / information",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "9.4",
+          "role": "data",
+          "variable": "Healthcare",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "11.2",
+          "role": "data",
+          "variable": "Healthcare",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "1.8",
+          "role": "data",
+          "variable": "Healthcare",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "1.4",
+          "role": "data",
+          "variable": "Healthcare",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "7.8",
+          "role": "data",
+          "variable": "Real estate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "8.4",
+          "role": "data",
+          "variable": "Real estate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.6",
+          "role": "data",
+          "variable": "Real estate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "1.6",
+          "role": "data",
+          "variable": "Real estate",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "11.4",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "7.8",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "-3.6",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.9",
+          "role": "data",
+          "variable": "Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "5.8",
+          "role": "data",
+          "variable": "Retail and wholesale",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "4.2",
+          "role": "data",
+          "variable": "Retail and wholesale",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-1.6",
+          "role": "data",
+          "variable": "Retail and wholesale",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.6",
+          "role": "data",
+          "variable": "Retail and wholesale",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "30.4",
+          "role": "data",
+          "variable": "Other",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "25.9",
+          "role": "data",
+          "variable": "Other",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "-4.5",
+          "role": "data",
+          "variable": "Other",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Other",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Which sector has the highest representation in the top 1% in 2019?",
+          "answer": "Finance and insurance (24.1%)"
+        },
+        {
+          "question": "Which sector grew most in top 1% share from 2000 to 2019?",
+          "answer": "Technology/information, rising 5.6 percentage points"
+        }
+      ]
+    },
+    {
+      "table_id": "cross-country-comparison",
+      "caption": "Cross-Country Comparison of Top 1\\% Income Shares (\\%)",
+      "label": "tab:cross-country-comparison",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "10.8",
+          "role": "data",
+          "variable": "1950",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "11.7",
+          "role": "data",
+          "variable": "1950",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "11.4",
+          "role": "data",
+          "variable": "1950",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "11.2",
+          "role": "data",
+          "variable": "1950",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "9.2",
+          "role": "data",
+          "variable": "1950",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "10.4",
+          "role": "data",
+          "variable": "1960",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "10.8",
+          "role": "data",
+          "variable": "1960",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "10.8",
+          "role": "data",
+          "variable": "1960",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "9.8",
+          "role": "data",
+          "variable": "1960",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "8.4",
+          "role": "data",
+          "variable": "1960",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "9.9",
+          "role": "data",
+          "variable": "1970",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "9.4",
+          "role": "data",
+          "variable": "1970",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "9.1",
+          "role": "data",
+          "variable": "1970",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "8.6",
+          "role": "data",
+          "variable": "1970",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "7.4",
+          "role": "data",
+          "variable": "1970",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "10.0",
+          "role": "data",
+          "variable": "1980",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "8.4",
+          "role": "data",
+          "variable": "1980",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "8.2",
+          "role": "data",
+          "variable": "1980",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "7.8",
+          "role": "data",
+          "variable": "1980",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "6.4",
+          "role": "data",
+          "variable": "1980",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "13.1",
+          "role": "data",
+          "variable": "1990",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "10.7",
+          "role": "data",
+          "variable": "1990",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "8.4",
+          "role": "data",
+          "variable": "1990",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "8.9",
+          "role": "data",
+          "variable": "1990",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "6.8",
+          "role": "data",
+          "variable": "1990",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "16.5",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "12.8",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "8.7",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "9.2",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "7.1",
+          "role": "data",
+          "variable": "2000",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "17.4",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "13.4",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "8.2",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "9.4",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "7.8",
+          "role": "data",
+          "variable": "2010",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "18.8",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "14.1",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "8.8",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "10.4",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "8.4",
+          "role": "data",
+          "variable": "2019",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Which country had the highest top 1% share in 2019?",
+          "answer": "United States (18.8%)"
+        },
+        {
+          "question": "Which country has the lowest top 1% share throughout the sample?",
+          "answer": "Sweden, with shares consistently below 9%"
+        }
+      ]
+    },
+    {
+      "table_id": "tax-rate-changes",
+      "caption": "Average Effective Tax Rates by Income Group, Selected Years (\\%)",
+      "label": "tab:tax-rate-changes",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "15.8",
+          "role": "data",
+          "variable": "Bottom 50\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "19.4",
+          "role": "data",
+          "variable": "Bottom 50\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "17.2",
+          "role": "data",
+          "variable": "Bottom 50\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "15.4",
+          "role": "data",
+          "variable": "Bottom 50\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "14.8",
+          "role": "data",
+          "variable": "Bottom 50\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "22.4",
+          "role": "data",
+          "variable": "P50-P90",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "28.1",
+          "role": "data",
+          "variable": "P50-P90",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "26.4",
+          "role": "data",
+          "variable": "P50-P90",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "22.8",
+          "role": "data",
+          "variable": "P50-P90",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "22.1",
+          "role": "data",
+          "variable": "P50-P90",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "31.2",
+          "role": "data",
+          "variable": "P90-P99",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "37.4",
+          "role": "data",
+          "variable": "P90-P99",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "32.1",
+          "role": "data",
+          "variable": "P90-P99",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "28.4",
+          "role": "data",
+          "variable": "P90-P99",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "27.8",
+          "role": "data",
+          "variable": "P90-P99",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "51.4",
+          "role": "data",
+          "variable": "Top 1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "42.1",
+          "role": "data",
+          "variable": "Top 1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "34.8",
+          "role": "data",
+          "variable": "Top 1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "29.4",
+          "role": "data",
+          "variable": "Top 1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "28.1",
+          "role": "data",
+          "variable": "Top 1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "62.8",
+          "role": "data",
+          "variable": "Top 0.1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "48.4",
+          "role": "data",
+          "variable": "Top 0.1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "38.4",
+          "role": "data",
+          "variable": "Top 0.1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "32.1",
+          "role": "data",
+          "variable": "Top 0.1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "30.4",
+          "role": "data",
+          "variable": "Top 0.1\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "71.4",
+          "role": "data",
+          "variable": "Top 0.01\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "51.2",
+          "role": "data",
+          "variable": "Top 0.01\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "40.1",
+          "role": "data",
+          "variable": "Top 0.01\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "33.8",
+          "role": "data",
+          "variable": "Top 0.01\\%",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "31.2",
+          "role": "data",
+          "variable": "Top 0.01\\%",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What was the top 0.01% effective tax rate in 1960?",
+          "answer": "71.4%"
+        },
+        {
+          "question": "How much has the top 0.1% effective tax rate changed from 1960 to 2019?",
+          "answer": "Declined from 62.8% to 30.4%, a reduction of 32.4 percentage points"
+        }
+      ]
+    },
+    {
+      "table_id": "wealth-vs-income-top-shares",
+      "caption": "Wealth vs. Income Top Shares: United States, 1913-2019",
+      "label": "tab:wealth-vs-income-top-shares",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "44.8",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "28.4",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "24.1",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "29.8",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "34.2",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 6,
+          "text": "38.1",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "19.6",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "10.8",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "9.9",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "13.1",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 6,
+          "text": "18.8",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "2.29",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "2.63",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "2.43",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "2.27",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "1.86",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 6,
+          "text": "2.03",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "22.4",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "10.4",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "7.8",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "12.8",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "18.1",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 6,
+          "text": "19.4",
+          "role": "data",
+          "variable": "Wealth share",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "8.4",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "4.1",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "3.2",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "4.9",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "7.8",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 6,
+          "text": "8.1",
+          "role": "data",
+          "variable": "Income share",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "2.67",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "2.54",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "2.44",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "2.61",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "2.32",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 6,
+          "text": "2.40",
+          "role": "data",
+          "variable": "Wealth-to-income ratio",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What was the top 1% wealth share in 2019?",
+          "answer": "38.1%"
+        },
+        {
+          "question": "Is wealth more concentrated than income at the top?",
+          "answer": "Yes, top 1% wealth share (38.1%) exceeds income share (18.8%) in 2019"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-price-deflators",
+      "caption": "Appendix: Price Deflators Used for Income Series",
+      "label": "tab:appendix-price-deflators",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "3.82",
+          "role": "data",
+          "variable": "Annualized growth 1950-2019 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "3.41",
+          "role": "data",
+          "variable": "Annualized growth 1950-2019 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "3.28",
+          "role": "data",
+          "variable": "Annualized growth 1950-2019 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "3.11",
+          "role": "data",
+          "variable": "Annualized growth 1950-2019 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "3.14",
+          "role": "data",
+          "variable": "Annualized growth 1980-2019 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "2.87",
+          "role": "data",
+          "variable": "Annualized growth 1980-2019 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "2.71",
+          "role": "data",
+          "variable": "Annualized growth 1980-2019 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "2.58",
+          "role": "data",
+          "variable": "Annualized growth 1980-2019 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "18.8",
+          "role": "data",
+          "variable": "Top 1\\% share 2019 (with deflator, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "18.8",
+          "role": "data",
+          "variable": "Top 1\\% share 2019 (with deflator, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "18.9",
+          "role": "data",
+          "variable": "Top 1\\% share 2019 (with deflator, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "18.7",
+          "role": "data",
+          "variable": "Top 1\\% share 2019 (with deflator, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.24",
+          "role": "data",
+          "variable": "Mean income growth 1980-2019 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.51",
+          "role": "data",
+          "variable": "Mean income growth 1980-2019 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1.64",
+          "role": "data",
+          "variable": "Mean income growth 1980-2019 (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "1.77",
+          "role": "data",
+          "variable": "Mean income growth 1980-2019 (\\%)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does the choice of price deflator affect estimated top income shares?",
+          "answer": "No, income shares are ratios and are deflator-invariant (top 1% share ranges only 18.7-18.9% in 2019 across deflators)"
+        }
+      ]
+    },
+    {
+      "table_id": "estate-tax-data",
+      "caption": "Estate Tax Returns: Wealth Concentration Estimates",
+      "label": "tab:estate-tax-data",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "71.4",
+          "role": "data",
+          "variable": "Number of taxable estates (000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "139.8",
+          "role": "data",
+          "variable": "Number of taxable estates (000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "52.4",
+          "role": "data",
+          "variable": "Number of taxable estates (000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "15.2",
+          "role": "data",
+          "variable": "Number of taxable estates (000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "40.8",
+          "role": "data",
+          "variable": "Number of taxable estates (000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "2.84",
+          "role": "data",
+          "variable": "Mean net estate (2019 \\$M)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "3.14",
+          "role": "data",
+          "variable": "Mean net estate (2019 \\$M)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "7.21",
+          "role": "data",
+          "variable": "Mean net estate (2019 \\$M)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "8.84",
+          "role": "data",
+          "variable": "Mean net estate (2019 \\$M)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "9.41",
+          "role": "data",
+          "variable": "Mean net estate (2019 \\$M)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "8.4",
+          "role": "data",
+          "variable": "Top 0.1\\% wealth share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "7.8",
+          "role": "data",
+          "variable": "Top 0.1\\% wealth share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "10.4",
+          "role": "data",
+          "variable": "Top 0.1\\% wealth share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "12.8",
+          "role": "data",
+          "variable": "Top 0.1\\% wealth share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "13.4",
+          "role": "data",
+          "variable": "Top 0.1\\% wealth share (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "2.14",
+          "role": "data",
+          "variable": "Estate multiplier (estates / deaths)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.98",
+          "role": "data",
+          "variable": "Estate multiplier (estates / deaths)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "3.41",
+          "role": "data",
+          "variable": "Estate multiplier (estates / deaths)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "7.84",
+          "role": "data",
+          "variable": "Estate multiplier (estates / deaths)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "6.24",
+          "role": "data",
+          "variable": "Estate multiplier (estates / deaths)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Effective estate tax rate (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "24.1",
+          "role": "data",
+          "variable": "Effective estate tax rate (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "28.4",
+          "role": "data",
+          "variable": "Effective estate tax rate (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "14.8",
+          "role": "data",
+          "variable": "Effective estate tax rate (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "16.2",
+          "role": "data",
+          "variable": "Effective estate tax rate (\\%)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Why did the number of taxable estates fall sharply from 2000 to 2010?",
+          "answer": "The 2001 EGTRRA raised the filing threshold from $675k to $1M then to $5M, removing most estates"
+        },
+        {
+          "question": "What was the top 0.1% wealth share estimated from estate tax data in 2019?",
+          "answer": "13.4%"
+        }
+      ]
+    },
+    {
+      "table_id": "proofs-block",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "pareto-interpolation",
+      "label": "eq:pareto-interp",
+      "latex": "\\hat{y}_p = y_k \\left(\\frac{n_k}{n_k - n \\cdot p}\\right)^{1/\\hat{\\alpha}_k}, \\quad \\hat{\\alpha}_k = \\frac{\\ln(n_k/n_{k+1})}{\\ln(y_{k+1}/y_k)}",
+      "description": "Pareto interpolation between tax brackets to estimate quantile income",
+      "qa": [
+        {
+          "question": "What is the Pareto interpolation formula?",
+          "answer": "y_p = y_k * (n_k / (n_k - n*p))^{1/alpha_k}, where alpha_k is estimated from adjacent bracket counts and thresholds"
+        }
+      ]
+    },
+    {
+      "eq_id": "pareto-dist",
+      "label": "eq:pareto",
+      "latex": "1 - F(y) = \\left(\\frac{y_{\\min}}{y}\\right)^\\alpha, \\quad y \\geq y_{\\min}, \\; \\alpha > 1",
+      "description": "Pareto distribution: upper tail probability for income above threshold y_min",
+      "qa": [
+        {
+          "question": "What is the Pareto distribution?",
+          "answer": "P(Y > y) = (y_min/y)^alpha for y >= y_min, where alpha > 1 is the Pareto coefficient"
+        }
+      ]
+    },
+    {
+      "eq_id": "top-share-formula",
+      "label": "eq:top-share",
+      "latex": "S(p) = \\frac{\\int_{Q(p)}^\\infty y \\, dF(y)}{\\int_0^\\infty y \\, dF(y)} = 1 - L(p), \\quad L(p) = \\frac{1}{\\mu}\\int_0^p Q(u)\\,du, \\quad \\frac{\\partial L(p)}{\\partial p} = \\frac{Q(p)}{\\mu}",
+      "description": "Top income share formula: mean income above p-th quantile times share of population",
+      "qa": [
+        {
+          "question": "How is the top p income share computed?",
+          "answer": "S(p) = mean income above the p-th quantile times (1-p), divided by overall mean income"
+        }
+      ]
+    },
+    {
+      "eq_id": "gini-pareto",
+      "label": "eq:gini-pareto",
+      "latex": "G = 1 - 2\\int_0^1 L(p)\\,dp = \\frac{1}{2\\alpha - 1}, \\quad \\frac{\\partial G}{\\partial \\alpha} = \\frac{-2}{(2\\alpha - 1)^2} < 0",
+      "description": "Gini coefficient as a function of the Pareto alpha",
+      "qa": [
+        {
+          "question": "What is the Gini coefficient for a Pareto distribution with alpha = 2?",
+          "answer": "G = 1/(2*2-1) = 1/3 = 0.333"
+        }
+      ]
+    },
+    {
+      "eq_id": "capital-share-top",
+      "label": "eq:capital-share-top",
+      "latex": "\\\\kappa(p) = \\\\frac{\\\\int_{Q(p)}^\\\\infty y^K \\\\, dF(y)}{\\\\int_{Q(p)}^\\\\infty y \\\\, dF(y)}, \\\\quad \\\\frac{\\\\partial \\\\kappa(p)}{\\\\partial p} = \\\\frac{Q^K(p) - \\\\kappa(p) Q(p)}{\\\\int_{Q(p)}^\\\\infty y\\\\,dF(y)}",
+      "description": "Capital income share within the top p percent group",
+      "qa": [
+        {
+          "question": "How is the capital share of top incomes defined?",
+          "answer": "kappa(p) = mean capital income above the p-th quantile divided by mean total income above the p-th quantile"
+        }
+      ]
+    },
+    {
+      "eq_id": "pareto-est-19",
+      "label": "eq:pareto-est-19",
+      "latex": "\\hat{\\alpha}_k = \\frac{\\ln(n_k / n_{k+1})}{\\ln(y_{k+1} / y_k)}",
+      "description": "Pareto coefficient estimation from adjacent bracket counts",
+      "qa": []
+    },
+    {
+      "eq_id": "pareto-mean-19",
+      "label": "eq:pareto-mean-19",
+      "latex": "E[Y \\mid Y > y_k] = \\frac{\\hat{\\alpha}_k}{\\hat{\\alpha}_k - 1} \\cdot y_k",
+      "description": "Mean income above threshold under Pareto assumption",
+      "qa": []
+    },
+    {
+      "eq_id": "gini-theil-19",
+      "label": "eq:gini-theil-19",
+      "latex": "G = \\frac{1}{2\\alpha-1}, \\quad T = \\frac{1}{\\alpha-1} - \\ln\\!\\left(\\frac{\\alpha}{\\alpha-1}\\right)",
+      "description": "Gini and Theil inequality measures as functions of Pareto alpha",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What was the top 1% income share in 2019?",
+      "answer": "18.8%"
+    },
+    {
+      "question": "When was the top 0.1% income share at its lowest?",
+      "answer": "The 1970s, at 3.18%"
+    },
+    {
+      "question": "What compositional shift has occurred in top incomes since the 1950s?",
+      "answer": "A shift from capital income (dividends, interest) to wage and salary income -- the rise of the working rich"
+    },
+    {
+      "question": "What has happened to the Pareto alpha since 1970?",
+      "answer": "Declined from 2.381 in 1970 to 1.692 in 2019, indicating heavier tails and more inequality"
+    },
+    {
+      "question": "What is the top 0.1% wealth share in 2019?",
+      "answer": "19.4%"
+    },
+    {
+      "question": "How many tax units were there in 2019?",
+      "answer": "155.8 million"
+    },
+    {
+      "question": "What was the top 1% AGI threshold in 2019?",
+      "answer": "$981,400 (2019 dollars)"
+    },
+    {
+      "question": "Has the fraction of married-filing-jointly returns changed since 1950?",
+      "answer": "Yes, declined from 74.4% to 48.2%, reflecting rising rates of single filing"
+    },
+    {
+      "question": "How much higher is the top 1% share under mark-to-market vs excluding capital gains in 2019?",
+      "answer": "6.2 percentage points higher (23.4% vs 17.2%)"
+    },
+    {
+      "question": "Why is 2007 an outlier in the realized CG series?",
+      "answer": "High realized capital gains in 2007 before the financial crisis created a spike in top income shares"
+    },
+    {
+      "question": "What is the top 1% share under the comprehensive income definition in 2019?",
+      "answer": "25.1%"
+    },
+    {
+      "question": "Does including transfer income increase or decrease the top 1% share?",
+      "answer": "Decrease: from 18.8% baseline to 16.4% with transfers, as transfers mainly benefit lower-income groups"
+    },
+    {
+      "question": "What was the top 0.1% share in the 1920s?",
+      "answer": "8.41%"
+    },
+    {
+      "question": "When was the top 0.1% share at its lowest?",
+      "answer": "The 1970s (3.18%)"
+    },
+    {
+      "question": "What was the top 1% income share in the 2010s?",
+      "answer": "18.74%"
+    },
+    {
+      "question": "What was the top 1% share in the 1970s (the low point)?",
+      "answer": "9.87%"
+    },
+    {
+      "question": "What was the top 10% income share in the 2010s?",
+      "answer": "47.21%"
+    },
+    {
+      "question": "What fraction of the top 10% share belongs to the top 1%?",
+      "answer": "Approximately 39.7% (18.74/47.21) in the 2010s"
+    },
+    {
+      "question": "What does a lower Pareto alpha indicate?",
+      "answer": "Heavier tails and greater inequality at the top"
+    },
+    {
+      "question": "Is the 2019 Pareto alpha above or below 2?",
+      "answer": "Below 2 (1.692 at the top 1% threshold), indicating potentially infinite variance"
+    },
+    {
+      "question": "What was the pre-tax Gini coefficient in 2019?",
+      "answer": "0.582"
+    },
+    {
+      "question": "Is wealth more unequally distributed than income?",
+      "answer": "Yes, the wealth Gini (0.869) is substantially higher than the income Gini (0.582) in 2019"
+    },
+    {
+      "question": "Has the labor income share of the top 1% increased or decreased since 1950?",
+      "answer": "Increased: from 38.4% in 1950 to 54.8% in 2019"
+    },
+    {
+      "question": "What happened to the dividend share of top 1% income from 1950 to 2019?",
+      "answer": "Declined substantially, from 24.1% to 8.7%"
+    },
+    {
+      "question": "What was the mean income of the top 0.1% in 2019?",
+      "answer": "$5.218 million"
+    },
+    {
+      "question": "How does wage share vary across the top of the distribution?",
+      "answer": "Decreasing: 73.4% at P90-P95 to 34.8% at the top 0.1%"
+    },
+    {
+      "question": "What share of top 0.1% income did women earn in 2019?",
+      "answer": "13.1%"
+    },
+    {
+      "question": "Has women's representation at the top grown over time?",
+      "answer": "Yes, consistently increasing at all percentile groups from 1980 to 2019"
+    },
+    {
+      "question": "Which sector has the highest representation in the top 1% in 2019?",
+      "answer": "Finance and insurance (24.1%)"
+    },
+    {
+      "question": "Which sector grew most in top 1% share from 2000 to 2019?",
+      "answer": "Technology/information, rising 5.6 percentage points"
+    },
+    {
+      "question": "Which country had the highest top 1% share in 2019?",
+      "answer": "United States (18.8%)"
+    },
+    {
+      "question": "Which country has the lowest top 1% share throughout the sample?",
+      "answer": "Sweden, with shares consistently below 9%"
+    },
+    {
+      "question": "What was the top 0.01% effective tax rate in 1960?",
+      "answer": "71.4%"
+    },
+    {
+      "question": "How much has the top 0.1% effective tax rate changed from 1960 to 2019?",
+      "answer": "Declined from 62.8% to 30.4%, a reduction of 32.4 percentage points"
+    },
+    {
+      "question": "What was the top 1% wealth share in 2019?",
+      "answer": "38.1%"
+    },
+    {
+      "question": "Is wealth more concentrated than income at the top?",
+      "answer": "Yes, top 1% wealth share (38.1%) exceeds income share (18.8%) in 2019"
+    },
+    {
+      "question": "Does the choice of price deflator affect estimated top income shares?",
+      "answer": "No, income shares are ratios and are deflator-invariant (top 1% share ranges only 18.7-18.9% in 2019 across deflators)"
+    },
+    {
+      "question": "Why did the number of taxable estates fall sharply from 2000 to 2010?",
+      "answer": "The 2001 EGTRRA raised the filing threshold from $675k to $1M then to $5M, removing most estates"
+    },
+    {
+      "question": "What was the top 0.1% wealth share estimated from estate tax data in 2019?",
+      "answer": "13.4%"
+    },
+    {
+      "question": "What is the Pareto interpolation formula?",
+      "answer": "y_p = y_k * (n_k / (n_k - n*p))^{1/alpha_k}, where alpha_k is estimated from adjacent bracket counts and thresholds"
+    },
+    {
+      "question": "What is the Pareto distribution?",
+      "answer": "P(Y > y) = (y_min/y)^alpha for y >= y_min, where alpha > 1 is the Pareto coefficient"
+    },
+    {
+      "question": "How is the top p income share computed?",
+      "answer": "S(p) = mean income above the p-th quantile times (1-p), divided by overall mean income"
+    },
+    {
+      "question": "What is the Gini coefficient for a Pareto distribution with alpha = 2?",
+      "answer": "G = 1/(2*2-1) = 1/3 = 0.333"
+    },
+    {
+      "question": "How is the capital share of top incomes defined?",
+      "answer": "kappa(p) = mean capital income above the p-th quantile divided by mean total income above the p-th quantile"
+    }
+  ]
+}
