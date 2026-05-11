@@ -1,61 +1,76 @@
 ---
 name: oracle
-description: "Use the @steipete/oracle CLI to bundle a prompt plus the right files for GPT-5.4 Pro. On this machine, render/copy with Oracle, then use the @Chrome plugin to submit and watch ChatGPT when the user clearly asked for that context; fall back to manual paste when Chrome automation is unavailable or unsafe."
+description: "Use the @steipete/oracle CLI to bundle a prompt plus the right files for ChatGPT review. Render/copy with Oracle, then submit through the user's Chrome session by default when safe: prefer the @Chrome plugin, then Computer Use in Chrome, then @Browser as a fallback. Use the latest Pro model with extended thinking when available."
 ---
 
 # Oracle (CLI)
 
 Oracle bundles your prompt plus selected files into one "one-shot" request so ChatGPT can answer with real repo context. Treat outputs as advisory and verify them against the codebase and tests.
 
-On this machine, Oracle is a **bundler first**. The default path is:
+Oracle is a **bundler first**. The default path is:
 
 1. use Oracle to bundle and render the exact prompt plus attachments
 2. copy that rendered bundle to the clipboard
-3. use the `@Chrome` plugin to open or reuse `https://chatgpt.com`
-4. submit the bundle to ChatGPT when the user clearly asked to send that file set
+3. submit the bundle through the user's Chrome ChatGPT session when the safety preflight passes
+4. use the latest Pro model with extended thinking when available
 5. watch for the final answer and bring the result back into the agent workflow
 
-Manual paste remains the fallback when Chrome automation is unavailable, logged out, interrupted, or unsafe for the current context.
+Manual paste remains the fallback when browser automation is unavailable, logged out, interrupted, or unsafe for the current context.
 
 Do not use Oracle API mode for routine work. Do not use Oracle's native browser automation by default. Do not use remote browser-host flows.
 
-## Preferred Default (macOS)
+## Default Workflow
 
-For ChatGPT runs on this Mac, the default is:
+Use this workflow for normal Oracle work:
 
 ```bash
-oracle --render --copy -p "<task>" --file "src/**"
+oracle --render --copy -p "<task>" --file "<tight file set>"
 ```
 
 Then:
 
-1. Use the `@Chrome` plugin / Codex Chrome Extension, not the in-app `@Browser` plugin.
-2. Open or reuse `https://chatgpt.com/` in the user's Chrome session.
+1. Pick the minimum files that still contain the truth.
+2. Run `oracle --dry-run summary --files-report ...` before rendering broad scopes.
+3. Render and copy the bundle with `oracle --render --copy`.
+4. Run the safety preflight below.
+5. Submit through the browser path ladder.
+6. Watch for the final answer, extract it, and verify it against local files and tests.
+
+## Browser Submit Ladder
+
+Use the user's Chrome session by default when the safety preflight passes:
+
+1. Use the `@Chrome` plugin / Codex Chrome Extension if it is available.
+2. If `@Chrome` is unavailable, use Computer Use to operate Google Chrome.
+3. If Chrome cannot be operated, use the in-app `@Browser` plugin as a fallback.
+4. If browser automation is unavailable or unsafe, render/copy only and ask the human to paste manually.
+
+When using any browser path:
+
+1. Open a new ChatGPT chat unless the user explicitly asked to use an existing thread.
+2. Do not read, summarize, or interact with unrelated existing chats.
 3. Verify ChatGPT is logged in by checking for the composer, not a login page.
-4. Prefer the current Pro or Extended Pro mode if visible; only change the model/thinking mode when needed.
-5. Paste the rendered Oracle bundle from the clipboard.
-6. Submit and watch until the final answer is visible.
-7. Bring the response back into Codex and verify it against the repo.
+4. Verify the visible account/workspace is the intended one when possible.
+5. Do not switch accounts.
+6. Stop if the page shows sensitive unrelated content.
+7. Never handle passwords, OTPs, CAPTCHA, account recovery, or payment prompts.
+8. Use the latest Pro model with extended thinking when available. As of May 11, 2026, that is GPT-5.5 Pro; if the UI label has changed, pick the newest visible Pro/extended-thinking mode rather than a stale hardcoded model name.
+9. Paste the rendered Oracle bundle from the clipboard.
+10. Submit and watch until generation has stopped and the send/stop control indicates completion.
+11. Bring back the final answer plus any caveats, then verify locally before acting.
 
-Why this is the preferred path:
+## Safety Preflight
 
-- Oracle still does the useful part: prompt bundling, file attachment expansion, and markdown rendering
-- Chrome can reuse the user's logged-in ChatGPT session and existing tabs
-- manual paste is still available when the browser state is not reliable
+Before submitting to ChatGPT, confirm all are true:
 
-## Chrome Plugin Path
+- The user explicitly asked to use Oracle/ChatGPT or approved sending this bundle.
+- The exact file scope is known and narrow.
+- `--dry-run summary --files-report` has been used for broad scopes.
+- No secrets, credentials, customer data, personal documents, private logs, browser/search history, regulated data, private keys, or other sensitive data are included.
+- The destination account/session is the user's intended ChatGPT session.
+- The bundle was not generated from an ambiguous glob such as `.` or the repo root without review.
 
-Use this path for normal Oracle work when the `@Chrome` plugin is available.
-
-Recommended defaults:
-
-- Oracle action: `--render --copy`
-- Model in ChatGPT: `GPT-5.4 Pro`
-- Browser/session: user's Chrome session via the `@Chrome` plugin at `https://chatgpt.com/`
-- Thinking: Pro or Extended Pro when visible; otherwise leave the current selected mode unless the user requested a specific mode
-- Attachments: directories and globs plus excludes; avoid secrets
-
-If ChatGPT is logged out, stop after opening the page and ask the human to log in. Do not handle passwords, OTPs, or CAPTCHA.
+If any item is false or unknown, do not submit automatically. Render/copy only and ask the human to review or paste manually.
 
 ## Manual-Paste Fallback
 
@@ -69,11 +84,11 @@ Use this path when Chrome automation is unavailable, logged out, interrupted, or
 ## Golden Path
 
 1. Pick a tight file set with the minimum files that still contain the truth.
-2. Preview what you are about to send with `--dry-run` and `--files-report` when needed.
+2. Preview broad scopes with `--dry-run` and `--files-report`.
 3. Render and copy the bundle with `oracle --render --copy`.
-4. Use the `@Chrome` plugin to open or reuse ChatGPT.
-5. If the bundle is clearly authorized and not sensitive, paste and submit it.
-6. Watch for the final answer, extract the result, and verify it before acting.
+4. Run the safety preflight.
+5. Submit through the browser ladder when safe.
+6. Watch for completion, extract the final result, and verify it before acting.
 
 ## Commands
 
@@ -99,6 +114,7 @@ Use this path when Chrome automation is unavailable, logged out, interrupted, or
 - Default run:
   - `oracle --render --copy -p "<task>" --file "src/**"`
   - `--copy` is a hidden alias for `--copy-markdown`
+  - If `--copy` fails, use `--copy-markdown`
 
 ## Attaching Files (`--file`)
 
@@ -113,6 +129,7 @@ Use this path when Chrome automation is unavailable, logged out, interrupted, or
 
 - Exclude:
   - `--file "src/**" --file "!src/**/*.test.ts" --file "!**/*.snap"`
+  - `--file "src/**" --file "!.env" --file "!.env.*" --file "!**/*.pem" --file "!**/*.key" --file "!**/id_rsa*" --file "!**/*token*" --file "!**/*secret*" --file "!**/.aws/**" --file "!**/.ssh/**" --file "!**/logs/**"`
 
 - Defaults from the current implementation:
   - Default-ignored dirs: `node_modules`, `dist`, `coverage`, `.git`, `.turbo`, `.next`, `build`, `tmp`
@@ -127,9 +144,11 @@ Use this path when Chrome automation is unavailable, logged out, interrupted, or
 - Use `--files-report` or `--dry-run json` to find token-heavy files before spending
 - For hidden and advanced knobs: `oracle --help --verbose`
 
+Run `oracle --dry-run summary --files-report ...` before rendering when attaching a directory or glob broader than about 10 files, using repo-root patterns, attaching generated docs/logs, including dotfiles, or expecting the bundle to exceed 100k tokens.
+
 ## Engine Policy
 
-- Normal use is render-and-copy plus `@Chrome` submit/watch
+- Normal use is render-and-copy plus browser submit/watch through the ladder above
 - Manual paste is the fallback
 - Do not use `--engine api`
 - Do not use `--models`, `--background`, Azure flags, or API follow-up flows for routine work
@@ -176,8 +195,10 @@ Oracle runs are one-shot. If you need the same context later, re-run with the sa
 ## Safety
 
 - Treat submitting an Oracle bundle to ChatGPT as transmitting the included prompt and file contents to a third party.
-- If the user clearly asks to run Oracle on a specific repo/file set, that is enough to submit normal source code and docs.
+- If the user asks to run Oracle on a specific repo/file set, run the safety preflight before browser submission.
 - Pause before submitting when the selected files or prompt include secrets, `.env` files, API keys, auth tokens, customer data, personal documents, private logs, medical/legal/financial data, browser/search history, or other sensitive data.
 - Pause when the file scope is broad or ambiguous enough that you cannot tell whether sensitive data is included.
 - Do not attach secrets by default such as `.env`, key files, or auth tokens.
+- If a sensitive file is required for debugging, redact it first and attach the redacted copy.
+- Clipboard caution: `--copy` places the full rendered bundle on the system clipboard. Avoid `--copy` for sensitive bundles; render to stdout or a temporary reviewed file instead. After use, clear the clipboard when feasible.
 - Prefer just-enough context instead of dumping the whole repo
