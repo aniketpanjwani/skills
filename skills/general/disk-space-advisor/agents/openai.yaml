@@ -1,0 +1,4 @@
+interface:
+  display_name: "Disk Space Advisor"
+  short_description: "Rank safe cleanup and archive candidates."
+  default_prompt: "Use $disk-space-advisor to inspect disk usage, recommend safe cleanup/archive decisions, and wait for explicit approval before changing files."

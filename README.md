@@ -39,6 +39,7 @@ If you want to run it manually, this is the one command most people need:
 
 | Skill | Audience | What it does | Path |
 |---|---|---|---|
+| `disk-space-advisor` | General | Evidence-first disk cleanup and external-drive archive decisions with a read-only inventory helper | `skills/general/disk-space-advisor` |
 | `oracle` | General | Bundle prompts and selected files with the Oracle CLI for ChatGPT-ready review packages | `skills/general/oracle` |
 | `pdf-reading` | General | Docling-first PDF reading with optional figure, image, and table extraction artifacts | `skills/general/pdf-reading` |
 | `python-learning-coach` | General | Personalized Python tutoring with memory, daily logs, and level adaptation | `skills/general/python-learning-coach` |
