@@ -1,0 +1,6 @@
+interface:
+  display_name: "Claude CE"
+  short_description: "Run CE workflows through Claude Code."
+  default_prompt: "Use $claude-ce to run the requested Compound Engineering workflow in Claude Code, brokering any questions back through Codex."
+policy:
+  allow_implicit_invocation: false

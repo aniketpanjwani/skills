@@ -5,6 +5,9 @@ optional tool-specific overrides can live under `codex/`, `claude/`, or `gemini/
 
 ```text
 skills/
+  agent-workflows/
+    your-skill/
+      SKILL.md
   general/
     your-skill/
       SKILL.md
@@ -45,7 +48,7 @@ List catalog:
 Install one type:
 
 ```bash
-./scripts/bootstrap.sh --target both --scope global --type economists
+./scripts/bootstrap.sh --target both --scope global --type agent-workflows
 ```
 
 Install two explicit skills:

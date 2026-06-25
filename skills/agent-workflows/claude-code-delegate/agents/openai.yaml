@@ -1,0 +1,6 @@
+interface:
+  display_name: "Claude Code Delegate"
+  short_description: "Run Claude Code workflows from Codex."
+  default_prompt: "Use $claude-code-delegate to run the requested Claude Code workflow in the target project, brokering any questions back through Codex."
+policy:
+  allow_implicit_invocation: false

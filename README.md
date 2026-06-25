@@ -39,6 +39,9 @@ If you want to run it manually, this is the one command most people need:
 
 | Skill | Audience | What it does | Path |
 |---|---|---|---|
+| `claude-ce` | Agent workflows | Run Compound Engineering ideation, brainstorming, and planning inside interactive Claude Code from Codex | `skills/agent-workflows/claude-ce` |
+| `claude-code-delegate` | Agent workflows | Delegate general Codex tasks to interactive Claude Code with artifact monitoring and question brokering | `skills/agent-workflows/claude-code-delegate` |
+| `claude-pr-review` | Agent workflows | Delegate PR review to Claude Code and Compound Engineering, post GitHub comments, and queue Codex fixes | `skills/agent-workflows/claude-pr-review` |
 | `disk-space-advisor` | General | Evidence-first disk cleanup and external-drive archive decisions with a read-only inventory helper | `skills/general/disk-space-advisor` |
 | `oracle` | General | Bundle prompts and selected files with the Oracle CLI for ChatGPT-ready review packages | `skills/general/oracle` |
 | `pdf-reading` | General | Docling-first PDF reading with optional figure, image, and table extraction artifacts | `skills/general/pdf-reading` |
@@ -76,6 +79,12 @@ chmod +x scripts/bootstrap.sh
 
 ```bash
 ./scripts/bootstrap.sh --target both --scope global --type general
+```
+
+Install the Claude Code workflow helpers:
+
+```bash
+./scripts/bootstrap.sh --target codex --scope global --type agent-workflows
 ```
 
 ### 6) See what is available
