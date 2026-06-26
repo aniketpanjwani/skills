@@ -1,0 +1,44 @@
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\definecolor{DarioInk}{HTML}{171717}
+\definecolor{DarioMuted}{HTML}{666666}
+\definecolor{DarioRule}{HTML}{D9D9D9}
+\definecolor{DarioLink}{HTML}{1D4F8F}
+
+\color{DarioInk}
+\linespread{1.06}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\setlength{\emergencystretch}{3em}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{DarioInk}}
+  {\thesection}
+  {0.75em}
+  {}
+\titlespacing*{\section}{0pt}{2.15em}{0.55em}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{DarioInk}}
+  {\thesubsection}
+  {0.65em}
+  {}
+\titlespacing*{\subsection}{0pt}{1.6em}{0.4em}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{DarioInk}}
+  {\thesubsubsection}
+  {0.55em}
+  {}
+\titlespacing*{\subsubsection}{0pt}{1.25em}{0.25em}
+
+\AtBeginDocument{%
+  \hypersetup{
+    colorlinks=true,
+    linkcolor=DarioLink,
+    urlcolor=DarioLink,
+    citecolor=DarioLink
+  }%
+}

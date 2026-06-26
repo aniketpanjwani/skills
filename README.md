@@ -2,9 +2,8 @@
 
 <p align="center"><strong>Created by Aniket Panjwani, PhD</strong></p>
 <p align="center">
-  <a href="https://ai-mba.io"><strong>Website: ai-mba.io</strong></a> |
   <a href="https://www.youtube.com/@aniketapanjwani"><strong>YouTube: @aniketapanjwani</strong></a> |
-  <a href="https://www.skool.com/the-ai-mba"><strong>Learn with 1000+ AI Devs</strong></a>
+  <a href="https://aieconomist.io/trainings"><strong>AI Trainings for Economists</strong></a>
 
 </p>
 
@@ -46,6 +45,7 @@ If you want to run it manually, this is the one command most people need:
 | `oracle` | General | Bundle prompts and selected files with the Oracle CLI for ChatGPT-ready review packages | `skills/general/oracle` |
 | `pdf-reading` | General | Docling-first PDF reading with optional figure, image, and table extraction artifacts | `skills/general/pdf-reading` |
 | `python-learning-coach` | General | Personalized Python tutoring with memory, daily logs, and level adaptation | `skills/general/python-learning-coach` |
+| `youtube-transcript-pdf` | General | Create readable PDF transcripts from YouTube captions, local Whisper fallback, and optional diarization | `skills/general/youtube-transcript-pdf` |
 
 ## Install Options
 

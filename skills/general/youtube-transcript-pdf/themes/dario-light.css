@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Newsreader 24 Pt";
+  src: url("dario-fonts/Newsreader24pt-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader 24 Pt";
+  src: url("dario-fonts/Newsreader24pt-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader 24 Pt";
+  src: url("dario-fonts/Newsreader24pt-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader 24 Pt";
+  src: url("dario-fonts/Newsreader24pt-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader 24 Pt";
+  src: url("dario-fonts/Newsreader24pt-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader Display";
+  src: url("dario-fonts/NewsreaderDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader Display";
+  src: url("dario-fonts/NewsreaderDisplay-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --dario-bg: #f0eee6;
+  --dario-surface: #faf9f5;
+  --dario-ink: #1f1e1d;
+  --dario-muted: #5e5d59;
+  --dario-rule: rgba(0, 0, 0, 0.08);
+}
+
+@page {
+  size: letter;
+  margin: 1in 0;
+  background: #f0eee6;
+}
+
+html {
+  background: var(--dario-bg);
+}
+
+body {
+  margin: 0;
+  padding: 0 0 24px;
+  background: var(--dario-bg);
+  color: var(--dario-ink);
+  font-family: "Newsreader 24 Pt", "Times New Roman", serif;
+  font-size: 18.5px;
+  font-weight: 400;
+  line-height: 30px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body > * {
+  box-sizing: border-box;
+  width: 640px;
+  max-width: calc(100% - 112px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dario-ink);
+  font-family: "Newsreader 24 Pt", "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: "Newsreader Display", "Newsreader 24 Pt", "Times New Roman", serif;
+  font-size: 46px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+h2 {
+  margin-top: 56px;
+  margin-bottom: 16.8px;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+h3 {
+  margin-top: 40px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+ul,
+ol {
+  padding-left: 1.35em;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--dario-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.14em;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--dario-rule);
+  margin: 40px auto;
+}
+
+code {
+  font-family: "Times New Roman", serif;
+}
+
+body > p:first-of-type {
+  color: var(--dario-muted);
+}
+
+@media print {
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  p,
+  li {
+    orphans: 2;
+    widows: 2;
+  }
+}
