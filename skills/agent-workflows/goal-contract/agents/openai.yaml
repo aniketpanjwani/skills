@@ -1,0 +1,4 @@
+interface:
+  display_name: "Goal Contract Builder"
+  short_description: "Draft and refine evidence-checked agent goals"
+  default_prompt: "Use $goal-contract to turn this task, plan, or brainstorm into a strong /goal contract."
