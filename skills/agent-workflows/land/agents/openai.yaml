@@ -1,4 +1,4 @@
 interface:
   display_name: "Land"
-  short_description: "Safely finish, publish, and merge approved work"
-  default_prompt: "Use $land to propose atomic commit groups, then finish the approved branch, pull request, readiness, verified merge, and primary-worktree default-branch synchronization lifecycle."
+  short_description: "Finish and merge one coherent change"
+  default_prompt: "Use $land to directly commit one obvious coherent scope, reuse or run validation once, push or reuse its pull request, wait only for required GitHub checks, merge the exact head, verify GitHub's result, and safely synchronize the primary checkout. Use the retained rigorous lifecycle only when I explicitly ask to land with full verification."

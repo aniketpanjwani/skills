@@ -42,7 +42,7 @@ If you want to run it manually, this is the one command most people need:
 | `claude-code-delegate` | Agent workflows | Delegate general Codex tasks to interactive Claude Code with artifact monitoring and question brokering | `skills/agent-workflows/claude-code-delegate` |
 | `claude-pr-review` | Agent workflows | Delegate PR review to Claude Code and Compound Engineering, post GitHub comments, and queue Codex fixes | `skills/agent-workflows/claude-pr-review` |
 | `goal-contract` | Agent workflows | Draft, critique, refine, and activate evidence-checkable agent Goals | `skills/agent-workflows/goal-contract` |
-| `land` | Agent workflows | Finish approved Git work through commits, PR readiness, exact-head merge verification, and local default-branch synchronization | `skills/agent-workflows/land` |
+| `land` | Agent workflows | Finish one coherent change through a thin GitHub landing flow, with rigorous full verification available explicitly | `skills/agent-workflows/land` |
 | `disk-space-advisor` | General | Evidence-first disk cleanup and external-drive archive decisions with a read-only inventory helper | `skills/general/disk-space-advisor` |
 | `oracle` | General | Bundle prompts and selected files with the Oracle CLI for ChatGPT-ready review packages | `skills/general/oracle` |
 | `pdf-reading` | General | Docling-first PDF reading with optional figure, image, and table extraction artifacts | `skills/general/pdf-reading` |

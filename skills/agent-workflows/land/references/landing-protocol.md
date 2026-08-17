@@ -1,6 +1,10 @@
-# Landing protocol
+# Full-verification landing protocol
 
-Read and apply every section for each `$land` run. This protocol owns orchestration, authorization boundaries, terminal merge, and reporting; the invoked Compound Engineering skills own their internal procedures.
+Read and apply every section only when `$land` selected this protocol from an
+explicit “land with full verification” request. A bare `$land` invocation uses
+the thin default in `SKILL.md` instead. This protocol owns rigorous orchestration,
+authorization boundaries, terminal merge, and reporting; the invoked Compound
+Engineering skills own their internal procedures.
 
 ## 1. Normalize the request
 
@@ -157,10 +161,10 @@ Re-read the pull request from GitHub and require:
 - the base object ID used by the final exact-head gate is recorded as the validated base; and
 - after fetching the validated base, approved head, and recorded integration commit, the recorded integration tree equals the tree produced by integrating that approved head into the applicable base with the selected method.
 
-Use the deterministic helper rather than comparing the complete integration tree directly to the pull-request-head tree:
+Use the deterministic helper rather than comparing the complete integration tree directly to the pull-request-head tree. Run it from the installed `$land` skill directory:
 
 ```bash
-python3 skills/land/scripts/verify-remote-merge.py \
+python3 scripts/verify-remote-merge.py \
   --repo <repository> \
   --method <merge|squash|rebase> \
   --candidate <exact-approved-head> \
