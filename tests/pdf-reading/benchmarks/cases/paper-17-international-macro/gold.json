@@ -1,0 +1,3100 @@
+{
+  "paper_id": "17",
+  "field": "international-macro",
+  "title": "Exchange Rate Dynamics and International Transmission in a Two-Country DSGE Model",
+  "journal_style": "jpe",
+  "target_pages": 65,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-17",
+      "level": 1
+    },
+    {
+      "title": "A Two-Country DSGE Model",
+      "label": "sec:model-17",
+      "level": 1
+    },
+    {
+      "title": "Households",
+      "label": "sec:households-17",
+      "level": 2
+    },
+    {
+      "title": "Firms and Price Setting",
+      "label": "sec:firms-17",
+      "level": 2
+    },
+    {
+      "title": "Government and Monetary Policy",
+      "label": "sec:government-17",
+      "level": 2
+    },
+    {
+      "title": "Equilibrium and Market Clearing",
+      "label": "sec:equilibrium-17",
+      "level": 2
+    },
+    {
+      "title": "Calibration",
+      "label": "sec:calibration-17",
+      "level": 1
+    },
+    {
+      "title": "Parameter Values and Sources",
+      "label": "sec:param-values-17",
+      "level": 2
+    },
+    {
+      "title": "Model Fit: Moments vs. Data",
+      "label": "sec:moments-17",
+      "level": 2
+    },
+    {
+      "title": "Solution Method",
+      "label": "sec:solution-17",
+      "level": 1
+    },
+    {
+      "title": "Quantitative Results",
+      "label": "sec:results-17",
+      "level": 1
+    },
+    {
+      "title": "Impulse Responses to Technology Shocks",
+      "label": "sec:irf-tech-17",
+      "level": 2
+    },
+    {
+      "title": "Impulse Responses to Monetary Policy Shocks",
+      "label": "sec:irf-mon-17",
+      "level": 2
+    },
+    {
+      "title": "Variance Decomposition and Historical Analysis",
+      "label": "sec:var-decomp-17",
+      "level": 2
+    },
+    {
+      "title": "Sensitivity Analysis",
+      "label": "sec:sensitivity-17",
+      "level": 1
+    },
+    {
+      "title": "Exchange Rate Disconnect",
+      "label": "sec:erd-17",
+      "level": 2
+    },
+    {
+      "title": "Current Account and Terms of Trade Dynamics",
+      "label": "sec:ca-tot-17",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-17",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Model Derivation",
+      "label": "sec:appendix-a-17",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Log-Linearization",
+      "label": "sec:appendix-b-17",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Additional Results",
+      "label": "sec:appendix-c-17",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "calibration-parameters",
+      "caption": "Calibration Parameters",
+      "label": "tab:calibration-parameters",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "beta",
+          "latex": "$\\beta$",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "0.99",
+          "latex": "0.99",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "Standard",
+          "latex": "Standard",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "phi",
+          "latex": "$\\phi$",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.00",
+          "latex": "1.00",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "Kimball (1995)",
+          "latex": "Kimball (1995)",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "sigma",
+          "latex": "$\\sigma$",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "2.00",
+          "latex": "2.00",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "Obstfeld-Rogoff (1996)",
+          "latex": "Obstfeld-Rogoff (1996)",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "theta",
+          "latex": "$\\theta$",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.50",
+          "latex": "1.50",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "Hooper-Marquez (1995)",
+          "latex": "Hooper-Marquez (1995)",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "alpha",
+          "latex": "$\\alpha$",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.72",
+          "latex": "0.72",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "Trade data",
+          "latex": "Trade data",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "xi",
+          "latex": "$\\xi$",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.75",
+          "latex": "0.75",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "Gali-Gertler (1999)",
+          "latex": "Gali-Gertler (1999)",
+          "role": "data"
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "phi_pi",
+          "latex": "$\\phi_\\pi$",
+          "role": "data"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1.50",
+          "latex": "1.50",
+          "role": "data"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "Taylor (1993)",
+          "latex": "Taylor (1993)",
+          "role": "data"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "phi_y",
+          "latex": "$\\phi_y$",
+          "role": "data"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.50",
+          "latex": "0.50",
+          "role": "data"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "Taylor (1993)",
+          "latex": "Taylor (1993)",
+          "role": "data"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "gamma",
+          "latex": "$\\gamma$",
+          "role": "data"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.28",
+          "latex": "0.28",
+          "role": "data"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "BEA/Eurostat",
+          "latex": "BEA/Eurostat",
+          "role": "data"
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "rho_a",
+          "latex": "$\\rho_a$",
+          "role": "data"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.90",
+          "latex": "0.90",
+          "role": "data"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "Backus et al. (1992)",
+          "latex": "Backus et al. (1992)",
+          "role": "data"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "sigma_a",
+          "latex": "$\\sigma_a$",
+          "role": "data"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.0071",
+          "latex": "0.0071",
+          "role": "data"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "Backus et al. (1992)",
+          "latex": "Backus et al. (1992)",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the calibrated value of the discount factor beta?",
+          "answer": "0.99"
+        },
+        {
+          "question": "What is the Calvo price-stickiness parameter?",
+          "answer": "0.75"
+        },
+        {
+          "question": "What is the Taylor rule coefficient on inflation?",
+          "answer": "1.50"
+        },
+        {
+          "question": "What is the home bias parameter alpha?",
+          "answer": "0.72"
+        }
+      ]
+    },
+    {
+      "table_id": "model-moments-vs-data",
+      "caption": "Model Moments vs. Data: Business Cycle Statistics",
+      "label": "tab:model-moments-vs-data",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1.68",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.71",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.89",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.74",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "1.27",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "1.24",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "1.41",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "1.31",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "5.61",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "5.43",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "6.12",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "5.87",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "11.24",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "9.87",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "4.32",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "10.14",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "3.14",
+          "role": "data",
+          "variable": "Terms of trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "3.08",
+          "role": "data",
+          "variable": "Terms of trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "2.11",
+          "role": "data",
+          "variable": "Terms of trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "3.19",
+          "role": "data",
+          "variable": "Terms of trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1.82",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1.76",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1.53",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "1.91",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.87",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.84",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.92",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.81",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.91",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.88",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.94",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.86",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "-0.13",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "-0.09",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "-0.18",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "-0.47",
+          "role": "data",
+          "variable": "Net exports / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "-0.44",
+          "role": "data",
+          "variable": "Net exports / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "-0.51",
+          "role": "data",
+          "variable": "Net exports / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "-0.49",
+          "role": "data",
+          "variable": "Net exports / GDP",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the data volatility of the real exchange rate?",
+          "answer": "11.24%"
+        },
+        {
+          "question": "What is the baseline model's volatility of the real exchange rate?",
+          "answer": "9.87%"
+        },
+        {
+          "question": "What is the cross-correlation of the real exchange rate with output in the data?",
+          "answer": "-0.13"
+        },
+        {
+          "question": "Does the flex-price model match the real exchange rate cross-correlation with output?",
+          "answer": "No, it predicts 0.41 vs -0.13 in data"
+        }
+      ]
+    },
+    {
+      "table_id": "impulse-response-productivity",
+      "caption": "Impulse Responses to a Home Productivity Shock (1\\% Innovation)",
+      "label": "tab:impulse-response-productivity",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.71",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.58",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.43",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.14",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "0.38",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.37",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.35",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.21",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.84",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.52",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1.11",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.39",
+          "role": "data",
+          "variable": "Investment",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "-0.62",
+          "role": "data",
+          "variable": "Real exchange rate (depreciation +)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "-0.44",
+          "role": "data",
+          "variable": "Real exchange rate (depreciation +)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "-0.28",
+          "role": "data",
+          "variable": "Real exchange rate (depreciation +)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "-0.07",
+          "role": "data",
+          "variable": "Real exchange rate (depreciation +)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.29",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.18",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.03",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.12",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.11",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.09",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.18",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.17",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.14",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.07",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.31",
+          "role": "data",
+          "variable": "Terms of trade (home TOT, deterioration +)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.22",
+          "role": "data",
+          "variable": "Terms of trade (home TOT, deterioration +)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.14",
+          "role": "data",
+          "variable": "Terms of trade (home TOT, deterioration +)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Terms of trade (home TOT, deterioration +)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the impact response of home output to a 1% productivity shock?",
+          "answer": "0.71%"
+        },
+        {
+          "question": "What is the impact response of the real exchange rate?",
+          "answer": "-0.62% (appreciation)"
+        },
+        {
+          "question": "What is the spillover to foreign output at impact?",
+          "answer": "0.12%"
+        },
+        {
+          "question": "What happens to the current account at impact?",
+          "answer": "Rises by 0.41% of GDP"
+        }
+      ]
+    },
+    {
+      "table_id": "impulse-response-monetary",
+      "caption": "Impulse Responses to a Home Monetary Policy Shock (25 bp Tightening)",
+      "label": "tab:impulse-response-monetary",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.22",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.38",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.29",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.06",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "-0.09",
+          "role": "data",
+          "variable": "Inflation (annualized pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "-0.27",
+          "role": "data",
+          "variable": "Inflation (annualized pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "-0.31",
+          "role": "data",
+          "variable": "Inflation (annualized pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "-0.08",
+          "role": "data",
+          "variable": "Inflation (annualized pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.25",
+          "role": "data",
+          "variable": "Nominal interest rate (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.19",
+          "role": "data",
+          "variable": "Nominal interest rate (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.11",
+          "role": "data",
+          "variable": "Nominal interest rate (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.02",
+          "role": "data",
+          "variable": "Nominal interest rate (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.84",
+          "role": "data",
+          "variable": "Real exchange rate (appreciation +)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Real exchange rate (appreciation +)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.38",
+          "role": "data",
+          "variable": "Real exchange rate (appreciation +)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.07",
+          "role": "data",
+          "variable": "Real exchange rate (appreciation +)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "-0.07",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "-0.11",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "-0.08",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "-0.02",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.03",
+          "role": "data",
+          "variable": "Inflation (annualized pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.09",
+          "role": "data",
+          "variable": "Inflation (annualized pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.11",
+          "role": "data",
+          "variable": "Inflation (annualized pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-0.03",
+          "role": "data",
+          "variable": "Inflation (annualized pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Nominal interest rate (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.07",
+          "role": "data",
+          "variable": "Nominal interest rate (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.06",
+          "role": "data",
+          "variable": "Nominal interest rate (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.01",
+          "role": "data",
+          "variable": "Nominal interest rate (pp)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the impact response of home output to a 25bp tightening?",
+          "answer": "-0.22%"
+        },
+        {
+          "question": "What is the peak appreciation of the real exchange rate?",
+          "answer": "0.84% at impact"
+        },
+        {
+          "question": "What is the spillover to foreign output at impact?",
+          "answer": "-0.07%"
+        }
+      ]
+    },
+    {
+      "table_id": "variance-decomposition",
+      "caption": "Variance Decomposition: Share of Variance Explained by Each Shock (\\%)",
+      "label": "tab:variance-decomposition",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "62.4",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "8.3",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "14.2",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "4.1",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "11.0",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "48.7",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "12.1",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "6.3",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "14.5",
+          "role": "data",
+          "variable": "Consumption",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "11.3",
+          "role": "data",
+          "variable": "Inflation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "3.2",
+          "role": "data",
+          "variable": "Inflation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "31.4",
+          "role": "data",
+          "variable": "Inflation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "9.8",
+          "role": "data",
+          "variable": "Inflation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "44.3",
+          "role": "data",
+          "variable": "Inflation",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "24.1",
+          "role": "data",
+          "variable": "Interest rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "5.8",
+          "role": "data",
+          "variable": "Interest rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "41.7",
+          "role": "data",
+          "variable": "Interest rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "12.3",
+          "role": "data",
+          "variable": "Interest rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "16.1",
+          "role": "data",
+          "variable": "Interest rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "21.4",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "19.8",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "27.3",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "25.6",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "5.9",
+          "role": "data",
+          "variable": "Real exchange rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "31.2",
+          "role": "data",
+          "variable": "Terms of trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "29.4",
+          "role": "data",
+          "variable": "Terms of trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "18.1",
+          "role": "data",
+          "variable": "Terms of trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "17.8",
+          "role": "data",
+          "variable": "Terms of trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "3.5",
+          "role": "data",
+          "variable": "Terms of trade",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "44.6",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "38.7",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "8.1",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "7.2",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 5,
+          "text": "1.4",
+          "role": "data",
+          "variable": "Current account / GDP",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What fraction of home output variance is explained by home TFP shocks?",
+          "answer": "62.4%"
+        },
+        {
+          "question": "What is the largest driver of real exchange rate variance?",
+          "answer": "Home monetary policy shocks (27.3%)"
+        },
+        {
+          "question": "What fraction of current account variance is explained by TFP shocks combined?",
+          "answer": "83.3% (44.6 + 38.7)"
+        }
+      ]
+    },
+    {
+      "table_id": "historical-decomposition",
+      "caption": "Historical Decomposition of Real Exchange Rate Fluctuations, 1980-2019 (Share of Variance, \\%)",
+      "label": "tab:historical-decomposition",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "28.4",
+          "role": "data",
+          "variable": "Productivity shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "31.2",
+          "role": "data",
+          "variable": "Productivity shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "24.6",
+          "role": "data",
+          "variable": "Productivity shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "22.1",
+          "role": "data",
+          "variable": "Productivity shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "41.2",
+          "role": "data",
+          "variable": "Monetary policy shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "29.8",
+          "role": "data",
+          "variable": "Monetary policy shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "33.7",
+          "role": "data",
+          "variable": "Monetary policy shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "38.4",
+          "role": "data",
+          "variable": "Monetary policy shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "18.6",
+          "role": "data",
+          "variable": "Demand shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "24.3",
+          "role": "data",
+          "variable": "Demand shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "21.4",
+          "role": "data",
+          "variable": "Demand shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "19.8",
+          "role": "data",
+          "variable": "Demand shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "11.8",
+          "role": "data",
+          "variable": "Cost-push shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "14.7",
+          "role": "data",
+          "variable": "Cost-push shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "20.3",
+          "role": "data",
+          "variable": "Cost-push shocks",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "19.7",
+          "role": "data",
+          "variable": "Cost-push shocks",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What was the dominant driver of RER variance in the 1980s?",
+          "answer": "Monetary policy shocks (41.2%)"
+        },
+        {
+          "question": "Did the role of productivity shocks increase or decrease from the 1980s to the 2010s?",
+          "answer": "Decreased, from 28.4% to 22.1%"
+        }
+      ]
+    },
+    {
+      "table_id": "exchange-rate-disconnect",
+      "caption": "Exchange Rate Disconnect: Correlations Between Exchange Rates and Macro Aggregates",
+      "label": "tab:exchange-rate-disconnect",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "-0.13",
+          "role": "data",
+          "variable": "Corr(RER, rel. output)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "-0.09",
+          "role": "data",
+          "variable": "Corr(RER, rel. output)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "-0.21",
+          "role": "data",
+          "variable": "Corr(RER, rel. output)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "0.58",
+          "role": "data",
+          "variable": "Corr(RER, rel. output)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.08",
+          "role": "data",
+          "variable": "Corr(RER, rel. consumption)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.11",
+          "role": "data",
+          "variable": "Corr(RER, rel. consumption)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.71",
+          "role": "data",
+          "variable": "Corr(RER, rel. consumption)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.64",
+          "role": "data",
+          "variable": "Corr(RER, rel. consumption)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Corr(NER, price level)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.07",
+          "role": "data",
+          "variable": "Corr(NER, price level)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.03",
+          "role": "data",
+          "variable": "Corr(NER, price level)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.39",
+          "role": "data",
+          "variable": "Corr(NER, price level)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.08",
+          "role": "data",
+          "variable": "Backus-Smith correlation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.14",
+          "role": "data",
+          "variable": "Backus-Smith correlation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.68",
+          "role": "data",
+          "variable": "Backus-Smith correlation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Backus-Smith correlation",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "6.69",
+          "role": "data",
+          "variable": "RER volatility / relative output vol.",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "5.77",
+          "role": "data",
+          "variable": "RER volatility / relative output vol.",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "3.12",
+          "role": "data",
+          "variable": "RER volatility / relative output vol.",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "1.84",
+          "role": "data",
+          "variable": "RER volatility / relative output vol.",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "7.34",
+          "role": "data",
+          "variable": "NER volatility / relative price vol.",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "6.98",
+          "role": "data",
+          "variable": "NER volatility / relative price vol.",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "6.41",
+          "role": "data",
+          "variable": "NER volatility / relative price vol.",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1.72",
+          "role": "data",
+          "variable": "NER volatility / relative price vol.",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the Backus-Smith correlation in the data?",
+          "answer": "0.08"
+        },
+        {
+          "question": "What does the incomplete markets model predict for the Backus-Smith correlation?",
+          "answer": "0.68"
+        },
+        {
+          "question": "What is the ratio of RER volatility to relative output volatility in the data?",
+          "answer": "6.69"
+        }
+      ]
+    },
+    {
+      "table_id": "current-account-dynamics",
+      "caption": "Current Account Dynamics: Empirical Evidence and Model Fit",
+      "label": "tab:current-account-dynamics",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.71***",
+          "role": "data",
+          "variable": "Current account / GDP (t)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.68***",
+          "role": "data",
+          "variable": "Current account / GDP (t)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.66***",
+          "role": "data",
+          "variable": "Current account / GDP (t)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.64***",
+          "role": "data",
+          "variable": "Current account / GDP (t)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Current account / GDP (t)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Current account / GDP (t)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Current account / GDP (t)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Current account / GDP (t)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Relative output growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.31***",
+          "role": "data",
+          "variable": "Relative output growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.28***",
+          "role": "data",
+          "variable": "Relative output growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.27***",
+          "role": "data",
+          "variable": "Relative output growth",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Relative output growth",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "Relative output growth",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "Relative output growth",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "Relative output growth",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Real exchange rate change",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Real exchange rate change",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.04**",
+          "role": "data",
+          "variable": "Real exchange rate change",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.04**",
+          "role": "data",
+          "variable": "Real exchange rate change",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Real exchange rate change",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Real exchange rate change",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Real exchange rate change",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Real exchange rate change",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Terms of trade change",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Terms of trade change",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Terms of trade change",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.12***",
+          "role": "data",
+          "variable": "Terms of trade change",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Terms of trade change",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Terms of trade change",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Terms of trade change",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Terms of trade change",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "780",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "780",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "780",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "780",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.51",
+          "role": "summary",
+          "label": "$R^2$"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.57",
+          "role": "summary",
+          "label": "$R^2$"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.61",
+          "role": "summary",
+          "label": "$R^2$"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "0.63",
+          "role": "summary",
+          "label": "$R^2$"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the AR(1) coefficient for the current account in column 1?",
+          "answer": "0.71"
+        },
+        {
+          "question": "Does relative output growth increase or decrease the current account?",
+          "answer": "Decrease; coefficient is -0.31"
+        },
+        {
+          "question": "How many country-year observations?",
+          "answer": "780"
+        }
+      ]
+    },
+    {
+      "table_id": "terms-of-trade",
+      "caption": "Terms of Trade and International Transmission",
+      "label": "tab:terms-of-trade",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.44***",
+          "role": "data",
+          "variable": "Log relative productivity",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.41***",
+          "role": "data",
+          "variable": "Log relative productivity",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.38***",
+          "role": "data",
+          "variable": "Log relative productivity",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.36***",
+          "role": "data",
+          "variable": "Log relative productivity",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "Log relative productivity",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "Log relative productivity",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "Log relative productivity",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.08)",
+          "role": "data",
+          "variable": "Log relative productivity",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log relative money supply",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.18***",
+          "role": "data",
+          "variable": "Log relative money supply",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.16***",
+          "role": "data",
+          "variable": "Log relative money supply",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.15***",
+          "role": "data",
+          "variable": "Log relative money supply",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log relative money supply",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Log relative money supply",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Log relative money supply",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Log relative money supply",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Trade balance / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Trade balance / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.21**",
+          "role": "data",
+          "variable": "Trade balance / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.19**",
+          "role": "data",
+          "variable": "Trade balance / GDP",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Trade balance / GDP",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Trade balance / GDP",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "Trade balance / GDP",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "Trade balance / GDP",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Relative fiscal balance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Relative fiscal balance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Relative fiscal balance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.07",
+          "role": "data",
+          "variable": "Relative fiscal balance",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Relative fiscal balance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Relative fiscal balance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Relative fiscal balance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "Relative fiscal balance",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "1560",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "1560",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "1560",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "1560",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.22",
+          "role": "summary",
+          "label": "$R^2$"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.41",
+          "role": "summary",
+          "label": "$R^2$"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.47",
+          "role": "summary",
+          "label": "$R^2$"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "0.48",
+          "role": "summary",
+          "label": "$R^2$"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the elasticity of terms of trade with respect to relative productivity?",
+          "answer": "-0.44 in baseline"
+        },
+        {
+          "question": "Is the effect of relative fiscal balance statistically significant?",
+          "answer": "No, coefficient 0.07 is not significant"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-sensitivity",
+      "caption": "Sensitivity Analysis: Key Model Moments Under Alternative Parameterizations",
+      "label": "tab:appendix-sensitivity",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "9.87",
+          "role": "data",
+          "variable": "RER volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "7.41",
+          "role": "data",
+          "variable": "RER volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "8.12",
+          "role": "data",
+          "variable": "RER volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "11.34",
+          "role": "data",
+          "variable": "RER volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "10.28",
+          "role": "data",
+          "variable": "RER volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.09",
+          "role": "data",
+          "variable": "RER-output corr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.07",
+          "role": "data",
+          "variable": "RER-output corr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.14",
+          "role": "data",
+          "variable": "RER-output corr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.11",
+          "role": "data",
+          "variable": "RER-output corr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "-0.08",
+          "role": "data",
+          "variable": "RER-output corr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "0.14",
+          "role": "data",
+          "variable": "Backus-Smith corr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.42",
+          "role": "data",
+          "variable": "Backus-Smith corr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.09",
+          "role": "data",
+          "variable": "Backus-Smith corr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.08",
+          "role": "data",
+          "variable": "Backus-Smith corr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "0.21",
+          "role": "data",
+          "variable": "Backus-Smith corr.",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.76",
+          "role": "data",
+          "variable": "CA volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.54",
+          "role": "data",
+          "variable": "CA volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "2.11",
+          "role": "data",
+          "variable": "CA volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "1.83",
+          "role": "data",
+          "variable": "CA volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "2.34",
+          "role": "data",
+          "variable": "CA volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "3.08",
+          "role": "data",
+          "variable": "TOT volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "2.84",
+          "role": "data",
+          "variable": "TOT volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "2.41",
+          "role": "data",
+          "variable": "TOT volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "3.31",
+          "role": "data",
+          "variable": "TOT volatility",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "3.67",
+          "role": "data",
+          "variable": "TOT volatility",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "How does lower risk aversion (low sigma) affect the Backus-Smith correlation?",
+          "answer": "It increases from 0.14 to 0.42"
+        },
+        {
+          "question": "Which parameterization produces the highest current account volatility?",
+          "answer": "Open economy (2.34)"
+        },
+        {
+          "question": "What is the baseline current account volatility?",
+          "answer": "1.76"
+        }
+      ]
+    },
+    {
+      "table_id": "proofs-block",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "euler-household",
+      "label": "eq:euler",
+      "latex": "E_t \\left[ \\beta \\left(\\frac{\\dot{C}_{t+1}}{\\dot{C}_t}\\right)^{-\\sigma} \\frac{P_t}{P_{t+1}} (1 + i_t) \\right] = 1, \\quad \\ddot{C}_t \\equiv \\frac{d^2 C}{dt^2}, \\quad \\mathcal{F}_t = \\sigma\\bigl\\{C_s, P_s : s \\leq t\\bigr\\}",
+      "description": "Household Euler equation for optimal consumption smoothing",
+      "qa": [
+        {
+          "question": "What does the Euler equation equate?",
+          "answer": "The marginal cost and marginal benefit of saving: beta * (C_{t+1}/C_t)^{-sigma} * P_t/P_{t+1} * (1+i_t) = 1"
+        }
+      ]
+    },
+    {
+      "eq_id": "budget-constraint",
+      "label": "eq:budget",
+      "latex": "P_t C_t + B_t + S_t B_t^* = (1 + i_{t-1}) B_{t-1} + S_t (1 + i_{t-1}^*) B_{t-1}^* + W_t L_t + T_t",
+      "description": "Household nominal budget constraint with home and foreign bonds",
+      "qa": [
+        {
+          "question": "What assets appear in the household budget constraint?",
+          "answer": "Home bonds B_t and foreign bonds B_t* (valued in domestic currency via S_t)"
+        }
+      ]
+    },
+    {
+      "eq_id": "ces-aggregator",
+      "label": "eq:ces",
+      "latex": "C_t = \\left[ (1-\\alpha)^{1/\\theta} C_{H,t}^{(\\theta-1)/\\theta} + \\alpha^{1/\\theta} C_{F,t}^{(\\theta-1)/\\theta} \\right]^{\\theta/(\\theta-1)}",
+      "description": "CES consumption aggregator over home and foreign varieties",
+      "qa": [
+        {
+          "question": "What is the trade elasticity in the CES aggregator?",
+          "answer": "theta, the elasticity of substitution between home and foreign goods"
+        }
+      ]
+    },
+    {
+      "eq_id": "nkpc",
+      "label": "eq:nkpc",
+      "latex": "\\pi_{H,t} = \\beta E_t \\pi_{H,t+1} + \\kappa \\hat{mc}_t, \\quad \\kappa = \\frac{(1-\\xi)(1-\\beta\\xi)}{\\xi}, \\quad \\dot{p}_{H,t} \\equiv \\iint_{\\mathcal{F}_t} \\frac{\\partial^2 p_H}{\\partial z \\partial \\omega}\\, dz\\, d\\omega",
+      "description": "New Keynesian Phillips Curve for home tradeable goods",
+      "qa": [
+        {
+          "question": "What determines the slope of the NKPC?",
+          "answer": "kappa = (1-xi)(1-beta*xi)/xi, which decreases in the Calvo parameter xi"
+        }
+      ]
+    },
+    {
+      "eq_id": "taylor-rule",
+      "label": "eq:taylor",
+      "latex": "i_t = \\rho_i i_{t-1} + (1-\\rho_i)\\left[\\bar{\\imath} + \\phi_\\pi \\pi_t + \\phi_y \\hat{y}_t\\right] + \\varepsilon_t^m",
+      "description": "Monetary policy rule (Taylor rule with interest rate smoothing)",
+      "qa": [
+        {
+          "question": "Does the Taylor rule include interest rate smoothing?",
+          "answer": "Yes, the parameter rho_i captures interest rate smoothing"
+        }
+      ]
+    },
+    {
+      "eq_id": "uip",
+      "label": "eq:uip",
+      "latex": "i_t - i_t^* = E_t \\Delta s_{t+1} + \\phi_b b_t + \\xi_t^{UIP}",
+      "description": "Uncovered interest parity condition with bond adjustment cost and risk premium",
+      "qa": [
+        {
+          "question": "What modification to standard UIP does the model include?",
+          "answer": "A bond adjustment cost term phi_b * b_t and an exogenous risk premium shock xi_t^UIP"
+        }
+      ]
+    },
+    {
+      "eq_id": "current-account",
+      "label": "eq:current-account",
+      "latex": "\\text{CA}_t = \\frac{S_t B_t^* - S_{t-1} B_{t-1}^*}{P_t Y_t} = \\text{NX}_t + (i_{t-1}^* - \\pi_t^*) \\frac{S_t B_{t-1}^*}{P_t Y_t}",
+      "description": "Current account identity: net exports plus net investment income",
+      "qa": [
+        {
+          "question": "How is the current account decomposed?",
+          "answer": "Net exports NX_t plus net investment income on foreign assets"
+        }
+      ]
+    },
+    {
+      "eq_id": "terms-of-trade-eq",
+      "label": "eq:terms-of-trade",
+      "latex": "T_t = \\frac{P_{F,t}}{P_{H,t}} = \\frac{S_t P_{F,t}^*}{P_{H,t}}",
+      "description": "Terms of trade as ratio of import to export prices",
+      "qa": [
+        {
+          "question": "How are the terms of trade defined?",
+          "answer": "Ratio of the foreign good price to home good price: P_F/P_H"
+        }
+      ]
+    },
+    {
+      "eq_id": "goods-clearing",
+      "label": "eq:goods-clearing",
+      "latex": "Y_t = C_{H,t} + C_{H,t}^* + G_t, \\quad C_{H,t}^* = \\alpha^* \\left(\\frac{S_t P_{H,t}}{P_t^*}\\right)^{-\\theta} C_t^*",
+      "description": "Goods market clearing: home output equals home and foreign demand",
+      "qa": [
+        {
+          "question": "What determines foreign demand for home goods?",
+          "answer": "Foreign demand C_{H,t}* depends on the real exchange rate and foreign consumption via the CES demand system"
+        }
+      ]
+    },
+    {
+      "eq_id": "real-exchange-rate",
+      "label": "eq:rer",
+      "latex": "\\dot{q}_t = \\dot{s}_t + \\dot{p}_t^* - \\dot{p}_t, \\quad q_t = (2\\alpha - 1) T_t + (2\\alpha^* - 1) T_t^*, \\quad \\ddot{q}_t = \\mathcal{F}\\!\\left(\\dot{T}_t, \\dot{T}_t^*\\right)",
+      "description": "Real exchange rate as function of terms of trade under LCP pricing",
+      "qa": [
+        {
+          "question": "How does the real exchange rate relate to the terms of trade?",
+          "answer": "q_t = (2*alpha - 1)*T_t + (2*alpha* - 1)*T_t*, proportional to home bias and terms of trade"
+        }
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "question": "What puzzle does the model address?",
+      "answer": "The exchange rate disconnect puzzle -- real exchange rates are highly volatile but weakly correlated with macro fundamentals"
+    },
+    {
+      "question": "What fraction of real exchange rate variance do monetary policy shocks explain?",
+      "answer": "27 percent"
+    },
+    {
+      "question": "What is the Calvo price stickiness parameter?",
+      "answer": "0.75"
+    },
+    {
+      "question": "What is the impact real exchange rate appreciation from a 25bp monetary tightening?",
+      "answer": "0.84 percent"
+    },
+    {
+      "question": "What journal style is this paper written in?",
+      "answer": "JPE (Journal of Political Economy)"
+    },
+    {
+      "question": "What is the calibrated value of the discount factor beta?",
+      "answer": "0.99"
+    },
+    {
+      "question": "What is the Calvo price-stickiness parameter?",
+      "answer": "0.75"
+    },
+    {
+      "question": "What is the Taylor rule coefficient on inflation?",
+      "answer": "1.50"
+    },
+    {
+      "question": "What is the home bias parameter alpha?",
+      "answer": "0.72"
+    },
+    {
+      "question": "What is the data volatility of the real exchange rate?",
+      "answer": "11.24%"
+    },
+    {
+      "question": "What is the baseline model's volatility of the real exchange rate?",
+      "answer": "9.87%"
+    },
+    {
+      "question": "What is the cross-correlation of the real exchange rate with output in the data?",
+      "answer": "-0.13"
+    },
+    {
+      "question": "Does the flex-price model match the real exchange rate cross-correlation with output?",
+      "answer": "No, it predicts 0.41 vs -0.13 in data"
+    },
+    {
+      "question": "What is the impact response of home output to a 1% productivity shock?",
+      "answer": "0.71%"
+    },
+    {
+      "question": "What is the impact response of the real exchange rate?",
+      "answer": "-0.62% (appreciation)"
+    },
+    {
+      "question": "What is the spillover to foreign output at impact?",
+      "answer": "0.12%"
+    },
+    {
+      "question": "What happens to the current account at impact?",
+      "answer": "Rises by 0.41% of GDP"
+    },
+    {
+      "question": "What is the impact response of home output to a 25bp tightening?",
+      "answer": "-0.22%"
+    },
+    {
+      "question": "What is the peak appreciation of the real exchange rate?",
+      "answer": "0.84% at impact"
+    },
+    {
+      "question": "What is the spillover to foreign output at impact?",
+      "answer": "-0.07%"
+    },
+    {
+      "question": "What fraction of home output variance is explained by home TFP shocks?",
+      "answer": "62.4%"
+    },
+    {
+      "question": "What is the largest driver of real exchange rate variance?",
+      "answer": "Home monetary policy shocks (27.3%)"
+    },
+    {
+      "question": "What fraction of current account variance is explained by TFP shocks combined?",
+      "answer": "83.3% (44.6 + 38.7)"
+    },
+    {
+      "question": "What was the dominant driver of RER variance in the 1980s?",
+      "answer": "Monetary policy shocks (41.2%)"
+    },
+    {
+      "question": "Did the role of productivity shocks increase or decrease from the 1980s to the 2010s?",
+      "answer": "Decreased, from 28.4% to 22.1%"
+    },
+    {
+      "question": "What is the Backus-Smith correlation in the data?",
+      "answer": "0.08"
+    },
+    {
+      "question": "What does the incomplete markets model predict for the Backus-Smith correlation?",
+      "answer": "0.68"
+    },
+    {
+      "question": "What is the ratio of RER volatility to relative output volatility in the data?",
+      "answer": "6.69"
+    },
+    {
+      "question": "What is the AR(1) coefficient for the current account in column 1?",
+      "answer": "0.71"
+    },
+    {
+      "question": "Does relative output growth increase or decrease the current account?",
+      "answer": "Decrease; coefficient is -0.31"
+    },
+    {
+      "question": "How many country-year observations?",
+      "answer": "780"
+    },
+    {
+      "question": "What is the elasticity of terms of trade with respect to relative productivity?",
+      "answer": "-0.44 in baseline"
+    },
+    {
+      "question": "Is the effect of relative fiscal balance statistically significant?",
+      "answer": "No, coefficient 0.07 is not significant"
+    },
+    {
+      "question": "How does lower risk aversion (low sigma) affect the Backus-Smith correlation?",
+      "answer": "It increases from 0.14 to 0.42"
+    },
+    {
+      "question": "Which parameterization produces the highest current account volatility?",
+      "answer": "Open economy (2.34)"
+    },
+    {
+      "question": "What is the baseline current account volatility?",
+      "answer": "1.76"
+    },
+    {
+      "question": "What does the Euler equation equate?",
+      "answer": "The marginal cost and marginal benefit of saving: beta * (C_{t+1}/C_t)^{-sigma} * P_t/P_{t+1} * (1+i_t) = 1"
+    },
+    {
+      "question": "What assets appear in the household budget constraint?",
+      "answer": "Home bonds B_t and foreign bonds B_t* (valued in domestic currency via S_t)"
+    },
+    {
+      "question": "What is the trade elasticity in the CES aggregator?",
+      "answer": "theta, the elasticity of substitution between home and foreign goods"
+    },
+    {
+      "question": "What determines the slope of the NKPC?",
+      "answer": "kappa = (1-xi)(1-beta*xi)/xi, which decreases in the Calvo parameter xi"
+    },
+    {
+      "question": "Does the Taylor rule include interest rate smoothing?",
+      "answer": "Yes, the parameter rho_i captures interest rate smoothing"
+    },
+    {
+      "question": "What modification to standard UIP does the model include?",
+      "answer": "A bond adjustment cost term phi_b * b_t and an exogenous risk premium shock xi_t^UIP"
+    },
+    {
+      "question": "How is the current account decomposed?",
+      "answer": "Net exports NX_t plus net investment income on foreign assets"
+    },
+    {
+      "question": "How are the terms of trade defined?",
+      "answer": "Ratio of the foreign good price to home good price: P_F/P_H"
+    },
+    {
+      "question": "What determines foreign demand for home goods?",
+      "answer": "Foreign demand C_{H,t}* depends on the real exchange rate and foreign consumption via the CES demand system"
+    },
+    {
+      "question": "How does the real exchange rate relate to the terms of trade?",
+      "answer": "q_t = (2*alpha - 1)*T_t + (2*alpha* - 1)*T_t*, proportional to home bias and terms of trade"
+    }
+  ]
+}

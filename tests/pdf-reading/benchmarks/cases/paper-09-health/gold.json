@@ -1,0 +1,4037 @@
+{
+  "paper_id": "09",
+  "field": "health",
+  "title": "Health Insurance and Health Outcomes: Evidence from a Randomized Medicaid Expansion",
+  "journal_style": "qje",
+  "target_pages": 55,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-health",
+      "level": 1
+    },
+    {
+      "title": "Background: The Oregon Health Insurance Experiment",
+      "label": "sec:background",
+      "level": 1
+    },
+    {
+      "title": "The Medicaid Lottery",
+      "label": "sec:lottery",
+      "level": 2
+    },
+    {
+      "title": "Timeline and Data Collection",
+      "label": "sec:timeline",
+      "level": 2
+    },
+    {
+      "title": "Experimental Design and Identification",
+      "label": "sec:design",
+      "level": 1
+    },
+    {
+      "title": "Randomization and Balance",
+      "label": "sec:randomization",
+      "level": 2
+    },
+    {
+      "title": "Compliance and the LATE",
+      "label": "sec:compliance",
+      "level": 2
+    },
+    {
+      "title": "Data",
+      "label": "sec:data-health",
+      "level": 1
+    },
+    {
+      "title": "Survey Data",
+      "label": "sec:data-survey",
+      "level": 2
+    },
+    {
+      "title": "Administrative Data",
+      "label": "sec:data-admin",
+      "level": 2
+    },
+    {
+      "title": "Clinical Measures",
+      "label": "sec:data-clinical",
+      "level": 2
+    },
+    {
+      "title": "Results: Health Care Utilization",
+      "label": "sec:results-utilization",
+      "level": 1
+    },
+    {
+      "title": "Intent-to-Treat Estimates",
+      "label": "sec:itt-results",
+      "level": 2
+    },
+    {
+      "title": "IV Estimates",
+      "label": "sec:iv-results",
+      "level": 2
+    },
+    {
+      "title": "Results: Health Outcomes",
+      "label": "sec:results-health",
+      "level": 1
+    },
+    {
+      "title": "Physical Health",
+      "label": "sec:physical-health",
+      "level": 2
+    },
+    {
+      "title": "Mental Health",
+      "label": "sec:mental-health",
+      "level": 2
+    },
+    {
+      "title": "Clinical Measures",
+      "label": "sec:clinical-measures",
+      "level": 2
+    },
+    {
+      "title": "Results: Financial Outcomes",
+      "label": "sec:results-financial",
+      "level": 1
+    },
+    {
+      "title": "Medical Debt",
+      "label": "sec:medical-debt",
+      "level": 2
+    },
+    {
+      "title": "Financial Strain",
+      "label": "sec:financial-strain",
+      "level": 2
+    },
+    {
+      "title": "Heterogeneity in Treatment Effects",
+      "label": "sec:heterogeneity",
+      "level": 1
+    },
+    {
+      "title": "Robustness",
+      "label": "sec:robustness-health",
+      "level": 1
+    },
+    {
+      "title": "Attrition and Lee Bounds",
+      "label": "sec:robust-attrition",
+      "level": 2
+    },
+    {
+      "title": "Multiple Hypothesis Testing",
+      "label": "sec:robust-mht",
+      "level": 2
+    },
+    {
+      "title": "Welfare Analysis",
+      "label": "sec:welfare",
+      "level": 1
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-health",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Proofs and Derivations",
+      "label": "sec:appendix-a-health",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Extended Balance and Robustness",
+      "label": "sec:appendix-b-health",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "first-stage",
+      "caption": "First Stage: Effect of Lottery Selection on Insurance Coverage",
+      "label": "tab:first-stage",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.258***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.256***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.254***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.251***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "821.4",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "808.2",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "795.6",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "778.3",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.068",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.074",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.081",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.094",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the compliance rate (first-stage coefficient)?",
+          "answer": "Approximately 25.8 percent (0.258)"
+        },
+        {
+          "question": "What is the first-stage F-statistic in the baseline specification?",
+          "answer": "821.4"
+        },
+        {
+          "question": "Is the first stage robust to adding controls?",
+          "answer": "Yes, coefficient is stable at 0.251--0.258 across all specifications"
+        }
+      ]
+    },
+    {
+      "table_id": "summary-stats",
+      "caption": "Summary Statistics by Treatment and Control Groups",
+      "label": "tab:summary-stats",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "40.2",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "40.5",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.3",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.48",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(11.4)",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(11.2)",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.56",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.55",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.01",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.64",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.50)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.50)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.69",
+          "role": "data",
+          "variable": "White",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.70",
+          "role": "data",
+          "variable": "White",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "White",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.72",
+          "role": "data",
+          "variable": "White",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.46)",
+          "role": "data",
+          "variable": "White",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.46)",
+          "role": "data",
+          "variable": "White",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "White",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "White",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.71",
+          "role": "data",
+          "variable": "High school graduate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.70",
+          "role": "data",
+          "variable": "High school graduate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.01",
+          "role": "data",
+          "variable": "High school graduate",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.58",
+          "role": "data",
+          "variable": "High school graduate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.45)",
+          "role": "data",
+          "variable": "High school graduate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.46)",
+          "role": "data",
+          "variable": "High school graduate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "High school graduate",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "High school graduate",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.48",
+          "role": "data",
+          "variable": "Employed at baseline",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.47",
+          "role": "data",
+          "variable": "Employed at baseline",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.01",
+          "role": "data",
+          "variable": "Employed at baseline",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Employed at baseline",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.50)",
+          "role": "data",
+          "variable": "Employed at baseline",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.50)",
+          "role": "data",
+          "variable": "Employed at baseline",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Employed at baseline",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Employed at baseline",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "3.21",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "3.18",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.03",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "0.42",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(1.08)",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(1.10)",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "1.82",
+          "role": "data",
+          "variable": "Number of chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "1.84",
+          "role": "data",
+          "variable": "Number of chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "-0.02",
+          "role": "data",
+          "variable": "Number of chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "0.71",
+          "role": "data",
+          "variable": "Number of chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "(1.44)",
+          "role": "data",
+          "variable": "Number of chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "(1.48)",
+          "role": "data",
+          "variable": "Number of chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Number of chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Number of chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "6.41",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "6.52",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "-0.11",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "0.51",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "(5.82)",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "(5.91)",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "(0.21)",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "29,834",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "45,088",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "How many individuals are in the treatment group?",
+          "answer": "29,834"
+        },
+        {
+          "question": "What is the mean age in the control group?",
+          "answer": "40.5"
+        },
+        {
+          "question": "Are baseline health measures balanced across groups?",
+          "answer": "Yes, all p-values exceed 0.40"
+        },
+        {
+          "question": "What is the mean number of chronic conditions in the treatment group?",
+          "answer": "1.82"
+        }
+      ]
+    },
+    {
+      "table_id": "attrition",
+      "caption": "Survey Response and Attrition Analysis",
+      "label": "tab:attrition",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.738",
+          "role": "data",
+          "variable": "12-month survey",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.742",
+          "role": "data",
+          "variable": "12-month survey",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.735",
+          "role": "data",
+          "variable": "12-month survey",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.007",
+          "role": "data",
+          "variable": "12-month survey",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "12-month survey",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "12-month survey",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "12-month survey",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.006)",
+          "role": "data",
+          "variable": "12-month survey",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.163",
+          "role": "data",
+          "variable": "In-person data collection",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.164",
+          "role": "data",
+          "variable": "In-person data collection",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.162",
+          "role": "data",
+          "variable": "In-person data collection",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.002",
+          "role": "data",
+          "variable": "In-person data collection",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "In-person data collection",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "In-person data collection",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "In-person data collection",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "In-person data collection",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1.000",
+          "role": "data",
+          "variable": "Administrative data (all)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1.000",
+          "role": "data",
+          "variable": "Administrative data (all)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.000",
+          "role": "data",
+          "variable": "Administrative data (all)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.000",
+          "role": "data",
+          "variable": "Administrative data (all)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Administrative data (all)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Administrative data (all)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Administrative data (all)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Administrative data (all)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the response rate for the 12-month survey?",
+          "answer": "73.8 percent overall"
+        },
+        {
+          "question": "Is there differential attrition by treatment status?",
+          "answer": "No, the difference in response rates is 0.007 (SE 0.006)"
+        }
+      ]
+    },
+    {
+      "table_id": "utilization-itt",
+      "caption": "Intent-to-Treat Estimates: Health Care Utilization",
+      "label": "tab:utilization-itt",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.408***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.404***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.398***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.063)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.063)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.108***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.104***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.098**",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.094**",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.039)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.039)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.014",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.012",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.011",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.010",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.152***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.148***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.144***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.141***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "1.98",
+          "role": "summary",
+          "label": "Control mean (Panel A)"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "1.98",
+          "role": "summary",
+          "label": "Control mean (Panel A)"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "1.98",
+          "role": "summary",
+          "label": "Control mean (Panel A)"
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "1.98",
+          "role": "summary",
+          "label": "Control mean (Panel A)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the ITT effect on outpatient visits?",
+          "answer": "0.412 additional visits per 6 months (column 1)"
+        },
+        {
+          "question": "What is the ITT effect on ER visits?",
+          "answer": "0.108 additional visits per 6 months (column 1)"
+        },
+        {
+          "question": "Is the ITT effect on hospital admissions statistically significant?",
+          "answer": "No, the estimate is 0.014 with SE 0.011"
+        },
+        {
+          "question": "What is the control mean of outpatient visits?",
+          "answer": "1.98"
+        }
+      ]
+    },
+    {
+      "table_id": "utilization-iv",
+      "caption": "IV Estimates: Effect of Medicaid Coverage on Utilization",
+      "label": "tab:utilization-iv",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1.596***",
+          "role": "data",
+          "variable": "Medicaid coverage",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.419***",
+          "role": "data",
+          "variable": "Medicaid coverage",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.054",
+          "role": "data",
+          "variable": "Medicaid coverage",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.589***",
+          "role": "data",
+          "variable": "Medicaid coverage",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.252)",
+          "role": "data",
+          "variable": "Medicaid coverage",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.152)",
+          "role": "data",
+          "variable": "Medicaid coverage",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.043)",
+          "role": "data",
+          "variable": "Medicaid coverage",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.112)",
+          "role": "data",
+          "variable": "Medicaid coverage",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "1.98",
+          "role": "summary",
+          "label": "Control mean"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.82",
+          "role": "summary",
+          "label": "Control mean"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.12",
+          "role": "summary",
+          "label": "Control mean"
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "1.84",
+          "role": "summary",
+          "label": "Control mean"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "821.4",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "821.4",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "821.4",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "821.4",
+          "role": "summary",
+          "label": "First-stage F"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV effect of Medicaid on outpatient visits?",
+          "answer": "1.596 additional visits per 6 months"
+        },
+        {
+          "question": "What is the IV effect of Medicaid on ER visits?",
+          "answer": "0.419 additional visits per 6 months"
+        },
+        {
+          "question": "What is the control mean of ER visits?",
+          "answer": "0.82"
+        }
+      ]
+    },
+    {
+      "table_id": "health-outcomes",
+      "caption": "Effect of Medicaid on Health Outcomes",
+      "label": "tab:health-outcomes",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.084***",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.326***",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "3.18",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Self-reported health (1--5)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.031***",
+          "role": "data",
+          "variable": "Health improved in past year",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.120***",
+          "role": "data",
+          "variable": "Health improved in past year",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.34",
+          "role": "data",
+          "variable": "Health improved in past year",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Health improved in past year",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.032)",
+          "role": "data",
+          "variable": "Health improved in past year",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Health improved in past year",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-0.518**",
+          "role": "data",
+          "variable": "Days physical health not good",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-2.008**",
+          "role": "data",
+          "variable": "Days physical health not good",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "8.41",
+          "role": "data",
+          "variable": "Days physical health not good",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.241)",
+          "role": "data",
+          "variable": "Days physical health not good",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.934)",
+          "role": "data",
+          "variable": "Days physical health not good",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Days physical health not good",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "-0.482***",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "-1.868***",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "6.52",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.142)",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.551)",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "PHQ-8 depression score",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "-0.034***",
+          "role": "data",
+          "variable": "Positive depression screen",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "-0.132***",
+          "role": "data",
+          "variable": "Positive depression screen",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.30",
+          "role": "data",
+          "variable": "Positive depression screen",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Positive depression screen",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.035)",
+          "role": "data",
+          "variable": "Positive depression screen",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Positive depression screen",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "-0.641***",
+          "role": "data",
+          "variable": "Days mental health not good",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "-2.484***",
+          "role": "data",
+          "variable": "Days mental health not good",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "7.24",
+          "role": "data",
+          "variable": "Days mental health not good",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.218)",
+          "role": "data",
+          "variable": "Days mental health not good",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.845)",
+          "role": "data",
+          "variable": "Days mental health not good",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Days mental health not good",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "-0.81",
+          "role": "data",
+          "variable": "Blood pressure (systolic, mmHg)",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "-3.14",
+          "role": "data",
+          "variable": "Blood pressure (systolic, mmHg)",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "122.4",
+          "role": "data",
+          "variable": "Blood pressure (systolic, mmHg)",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "(0.62)",
+          "role": "data",
+          "variable": "Blood pressure (systolic, mmHg)",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "(2.40)",
+          "role": "data",
+          "variable": "Blood pressure (systolic, mmHg)",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Blood pressure (systolic, mmHg)",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "-0.02",
+          "role": "data",
+          "variable": "Glycated hemoglobin (HbA1c, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "-0.08",
+          "role": "data",
+          "variable": "Glycated hemoglobin (HbA1c, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "5.72",
+          "role": "data",
+          "variable": "Glycated hemoglobin (HbA1c, \\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Glycated hemoglobin (HbA1c, \\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "(0.16)",
+          "role": "data",
+          "variable": "Glycated hemoglobin (HbA1c, \\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Glycated hemoglobin (HbA1c, \\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "-1.84",
+          "role": "data",
+          "variable": "Cholesterol (total, mg/dL)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "-7.13",
+          "role": "data",
+          "variable": "Cholesterol (total, mg/dL)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "204.1",
+          "role": "data",
+          "variable": "Cholesterol (total, mg/dL)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "(1.52)",
+          "role": "data",
+          "variable": "Cholesterol (total, mg/dL)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "(5.89)",
+          "role": "data",
+          "variable": "Cholesterol (total, mg/dL)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Cholesterol (total, mg/dL)",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does Medicaid improve self-reported health?",
+          "answer": "Yes, ITT effect is 0.084 (p<0.01) on 1-5 scale"
+        },
+        {
+          "question": "Does Medicaid reduce depression?",
+          "answer": "Yes, PHQ-8 score decreases by 0.482 points (ITT) or 1.868 points (IV)"
+        },
+        {
+          "question": "Does Medicaid affect blood pressure?",
+          "answer": "No significant effect: -0.81 mmHg (SE 0.62)"
+        },
+        {
+          "question": "What is the control mean of the PHQ-8 depression score?",
+          "answer": "6.52"
+        }
+      ]
+    },
+    {
+      "table_id": "financial-outcomes",
+      "caption": "Effect of Medicaid on Financial Strain and Medical Debt",
+      "label": "tab:financial-outcomes",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.062***",
+          "role": "data",
+          "variable": "Any medical debt",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.240***",
+          "role": "data",
+          "variable": "Any medical debt",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.58",
+          "role": "data",
+          "variable": "Any medical debt",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Any medical debt",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.035)",
+          "role": "data",
+          "variable": "Any medical debt",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Any medical debt",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-312.4***",
+          "role": "data",
+          "variable": "Medical debt amount (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-1,211.0***",
+          "role": "data",
+          "variable": "Medical debt amount (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1,849",
+          "role": "data",
+          "variable": "Medical debt amount (\\$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(89.1)",
+          "role": "data",
+          "variable": "Medical debt amount (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(345.4)",
+          "role": "data",
+          "variable": "Medical debt amount (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Medical debt amount (\\$)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-0.041***",
+          "role": "data",
+          "variable": "Any medical collections",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-0.159***",
+          "role": "data",
+          "variable": "Any medical collections",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.34",
+          "role": "data",
+          "variable": "Any medical collections",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Any medical collections",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Any medical collections",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Any medical collections",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "-0.058***",
+          "role": "data",
+          "variable": "Difficulty paying medical bills",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "-0.225***",
+          "role": "data",
+          "variable": "Difficulty paying medical bills",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.42",
+          "role": "data",
+          "variable": "Difficulty paying medical bills",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Difficulty paying medical bills",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.035)",
+          "role": "data",
+          "variable": "Difficulty paying medical bills",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Difficulty paying medical bills",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "-0.028***",
+          "role": "data",
+          "variable": "Borrowed money for medical costs",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "-0.109***",
+          "role": "data",
+          "variable": "Borrowed money for medical costs",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.18",
+          "role": "data",
+          "variable": "Borrowed money for medical costs",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.007)",
+          "role": "data",
+          "variable": "Borrowed money for medical costs",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.027)",
+          "role": "data",
+          "variable": "Borrowed money for medical costs",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Borrowed money for medical costs",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "-0.032***",
+          "role": "data",
+          "variable": "Skipped non-medical spending",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "-0.124***",
+          "role": "data",
+          "variable": "Skipped non-medical spending",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.28",
+          "role": "data",
+          "variable": "Skipped non-medical spending",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Skipped non-medical spending",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Skipped non-medical spending",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Skipped non-medical spending",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does Medicaid reduce medical debt?",
+          "answer": "Yes, by $312 ITT or $1,211 IV"
+        },
+        {
+          "question": "What share of the control group has any medical debt?",
+          "answer": "58 percent (0.58)"
+        },
+        {
+          "question": "What is the IV effect on difficulty paying medical bills?",
+          "answer": "-0.225 (25 percentage point reduction)"
+        }
+      ]
+    },
+    {
+      "table_id": "heterogeneity",
+      "caption": "Heterogeneity in Treatment Effects by Subgroup",
+      "label": "tab:heterogeneity",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.054**",
+          "role": "data",
+          "variable": "Age 19--34",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.312*",
+          "role": "data",
+          "variable": "Age 19--34",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.092*",
+          "role": "data",
+          "variable": "Age 19--34",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-248.1**",
+          "role": "data",
+          "variable": "Age 19--34",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.026)",
+          "role": "data",
+          "variable": "Age 19--34",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Age 19--34",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.054)",
+          "role": "data",
+          "variable": "Age 19--34",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(118.4)",
+          "role": "data",
+          "variable": "Age 19--34",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.098***",
+          "role": "data",
+          "variable": "Age 35--49",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.548***",
+          "role": "data",
+          "variable": "Age 35--49",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.118***",
+          "role": "data",
+          "variable": "Age 35--49",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-341.2***",
+          "role": "data",
+          "variable": "Age 35--49",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Age 35--49",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.198)",
+          "role": "data",
+          "variable": "Age 35--49",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Age 35--49",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(121.8)",
+          "role": "data",
+          "variable": "Age 35--49",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.114***",
+          "role": "data",
+          "variable": "Age 50--64",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-0.624***",
+          "role": "data",
+          "variable": "Age 50--64",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.124**",
+          "role": "data",
+          "variable": "Age 50--64",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-378.4***",
+          "role": "data",
+          "variable": "Age 50--64",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.032)",
+          "role": "data",
+          "variable": "Age 50--64",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.221)",
+          "role": "data",
+          "variable": "Age 50--64",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Age 50--64",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(148.2)",
+          "role": "data",
+          "variable": "Age 50--64",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.041*",
+          "role": "data",
+          "variable": "No chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "-0.218",
+          "role": "data",
+          "variable": "No chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.068",
+          "role": "data",
+          "variable": "No chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "-198.4*",
+          "role": "data",
+          "variable": "No chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "No chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.168)",
+          "role": "data",
+          "variable": "No chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "No chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(108.2)",
+          "role": "data",
+          "variable": "No chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.092***",
+          "role": "data",
+          "variable": "1--2 chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "-0.518***",
+          "role": "data",
+          "variable": "1--2 chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.112***",
+          "role": "data",
+          "variable": "1--2 chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "-348.1***",
+          "role": "data",
+          "variable": "1--2 chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "1--2 chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.194)",
+          "role": "data",
+          "variable": "1--2 chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "1--2 chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(124.8)",
+          "role": "data",
+          "variable": "1--2 chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.148***",
+          "role": "data",
+          "variable": "3+ chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "-0.841***",
+          "role": "data",
+          "variable": "3+ chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.154***",
+          "role": "data",
+          "variable": "3+ chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "-418.2***",
+          "role": "data",
+          "variable": "3+ chronic conditions",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "3+ chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.264)",
+          "role": "data",
+          "variable": "3+ chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.054)",
+          "role": "data",
+          "variable": "3+ chronic conditions",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(168.4)",
+          "role": "data",
+          "variable": "3+ chronic conditions",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Are treatment effects larger for older individuals?",
+          "answer": "Yes, the ITT on self-rated health increases from 0.054 (age 19-34) to 0.114 (age 50-64)"
+        },
+        {
+          "question": "Are treatment effects larger for sicker individuals?",
+          "answer": "Yes, the ITT on depression score is -0.841 for 3+ chronic conditions vs. -0.218 for none"
+        }
+      ]
+    },
+    {
+      "table_id": "robustness",
+      "caption": "Robustness Checks: Alternative Specifications",
+      "label": "tab:robustness",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.031***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.029***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.034***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.018**",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "0.044***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "-0.034***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "-0.032***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "-0.048***",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "-0.021**",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Lottery selection",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "74,922",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "68,418",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "68,418",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Are results robust to using probit instead of OLS?",
+          "answer": "Yes, probit marginal effects are very similar (0.029 vs 0.031)"
+        },
+        {
+          "question": "What are the Lee bounds for the depression screen effect?",
+          "answer": "Lower bound: -0.048, Upper bound: -0.021, both significant"
+        }
+      ]
+    },
+    {
+      "table_id": "cost-benefit",
+      "caption": "Back-of-Envelope Cost-Benefit Analysis",
+      "label": "tab:cost-benefit",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "3,412",
+          "role": "data",
+          "variable": "Government spending on Medicaid",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "3,018",
+          "role": "data",
+          "variable": "Government spending on Medicaid",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "3,806",
+          "role": "data",
+          "variable": "Government spending on Medicaid",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Government spending on Medicaid",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Government spending on Medicaid",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Government spending on Medicaid",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1,024",
+          "role": "data",
+          "variable": "Reduction in uncompensated care",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "684",
+          "role": "data",
+          "variable": "Reduction in uncompensated care",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1,364",
+          "role": "data",
+          "variable": "Reduction in uncompensated care",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Reduction in uncompensated care",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Reduction in uncompensated care",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Reduction in uncompensated care",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1,211",
+          "role": "data",
+          "variable": "Reduction in medical debt",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "521",
+          "role": "data",
+          "variable": "Reduction in medical debt",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1,901",
+          "role": "data",
+          "variable": "Reduction in medical debt",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Reduction in medical debt",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Reduction in medical debt",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Reduction in medical debt",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "1,584",
+          "role": "data",
+          "variable": "Value of reduced financial risk (WTP)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "898",
+          "role": "data",
+          "variable": "Value of reduced financial risk (WTP)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "2,270",
+          "role": "data",
+          "variable": "Value of reduced financial risk (WTP)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Value of reduced financial risk (WTP)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Value of reduced financial risk (WTP)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Value of reduced financial risk (WTP)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "2,148",
+          "role": "data",
+          "variable": "Value of improved mental health (QALY)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "1,012",
+          "role": "data",
+          "variable": "Value of improved mental health (QALY)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "3,284",
+          "role": "data",
+          "variable": "Value of improved mental health (QALY)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Value of improved mental health (QALY)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Value of improved mental health (QALY)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Value of improved mental health (QALY)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "2,555",
+          "role": "data",
+          "variable": "Net benefit (consumer surplus)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "97",
+          "role": "data",
+          "variable": "Net benefit (consumer surplus)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "5,013",
+          "role": "data",
+          "variable": "Net benefit (consumer surplus)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Net benefit (consumer surplus)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Net benefit (consumer surplus)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Net benefit (consumer surplus)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the annual government spending on Medicaid per enrollee?",
+          "answer": "$3,412"
+        },
+        {
+          "question": "What is the net benefit per enrollee?",
+          "answer": "$2,555"
+        },
+        {
+          "question": "What is the value of improved mental health per enrollee?",
+          "answer": "$2,148 based on QALY valuation"
+        }
+      ]
+    },
+    {
+      "table_id": "proofs-block",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-balance",
+      "caption": "Appendix: Extended Balance Table",
+      "label": "tab:appendix-balance",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.18",
+          "role": "data",
+          "variable": "Married",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.17",
+          "role": "data",
+          "variable": "Married",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.01",
+          "role": "data",
+          "variable": "Married",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Married",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Married",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Married",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Married",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Married",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.89",
+          "role": "data",
+          "variable": "English as primary language",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.90",
+          "role": "data",
+          "variable": "English as primary language",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "English as primary language",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.52",
+          "role": "data",
+          "variable": "English as primary language",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "English as primary language",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "English as primary language",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "English as primary language",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "English as primary language",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.72",
+          "role": "data",
+          "variable": "Urban residence",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.71",
+          "role": "data",
+          "variable": "Urban residence",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.01",
+          "role": "data",
+          "variable": "Urban residence",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.48",
+          "role": "data",
+          "variable": "Urban residence",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Urban residence",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Urban residence",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Urban residence",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Urban residence",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Previously had insurance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.42",
+          "role": "data",
+          "variable": "Previously had insurance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "Previously had insurance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.54",
+          "role": "data",
+          "variable": "Previously had insurance",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Previously had insurance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Previously had insurance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Previously had insurance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Previously had insurance",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.48",
+          "role": "data",
+          "variable": "Smokes currently",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.49",
+          "role": "data",
+          "variable": "Smokes currently",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "Smokes currently",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.58",
+          "role": "data",
+          "variable": "Smokes currently",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Smokes currently",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Smokes currently",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Smokes currently",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Smokes currently",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "29.8",
+          "role": "data",
+          "variable": "BMI",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "29.6",
+          "role": "data",
+          "variable": "BMI",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "0.2",
+          "role": "data",
+          "variable": "BMI",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "0.34",
+          "role": "data",
+          "variable": "BMI",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "BMI",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "BMI",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "BMI",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "BMI",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "summary",
+          "label": "Joint F-test p-value"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "summary",
+          "label": "Joint F-test p-value"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "summary",
+          "label": "Joint F-test p-value"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.82",
+          "role": "summary",
+          "label": "Joint F-test p-value"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the joint F-test p-value for baseline balance?",
+          "answer": "0.82"
+        },
+        {
+          "question": "What fraction of the treatment group smokes?",
+          "answer": "48 percent (0.48)"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "itt",
+      "label": "eq:itt",
+      "latex": "Y_i = \\alpha + \\beta \\cdot \\text{Lottery}_i + X_i'\\gamma + \\varepsilon_i",
+      "description": "Intent-to-treat specification: $Y_i$ is the outcome, $\\text{Lottery}_i$ is the random lottery indicator, $X_i$ are baseline covariates.",
+      "qa": [
+        {
+          "question": "What is the intent-to-treat estimating equation?",
+          "answer": "Y_i = alpha + beta * Lottery_i + X_i'gamma + epsilon_i"
+        }
+      ]
+    },
+    {
+      "eq_id": "iv-specification",
+      "label": "eq:iv",
+      "latex": "Y_i = \\alpha + \\delta \\cdot \\text{Medicaid}_i + X_i'\\gamma + \\varepsilon_i, \\quad \\text{Medicaid}_i = \\pi_0 + \\pi_1 \\cdot \\text{Lottery}_i + X_i'\\phi + \\nu_i",
+      "description": "Two-stage least squares: Medicaid enrollment instrumented by lottery selection. $\\delta$ is the LATE for compliers.",
+      "qa": [
+        {
+          "question": "What is the instrument for Medicaid enrollment?",
+          "answer": "The lottery selection indicator"
+        },
+        {
+          "question": "What does the IV estimate identify?",
+          "answer": "The LATE (local average treatment effect) for compliers"
+        }
+      ]
+    },
+    {
+      "eq_id": "late",
+      "label": "eq:late",
+      "latex": "\\tilde{\\delta}_{LATE} = \\frac{\\bar{Y}_1 - \\bar{Y}_0}{\\bar{D}_1 - \\bar{D}_0} = \\frac{\\beta_{ITT}}{\\pi_1}, \\quad \\frac{\\partial \\mathcal{L}}{\\partial \\tilde{\\delta}} = \\sum_{i=1}^{N}\\tilde{\\varepsilon}_i \\cdot Z_i = 0",
+      "description": "LATE equals the ITT effect divided by the first-stage compliance rate. Under monotonicity, this identifies the causal effect for compliers.",
+      "qa": []
+    },
+    {
+      "eq_id": "compliance-rate",
+      "label": "eq:compliance",
+      "latex": "\\pi_1 = \\Pr(\\text{Medicaid} = 1 | \\text{Lottery} = 1) - \\Pr(\\text{Medicaid} = 1 | \\text{Lottery} = 0) = 0.258",
+      "description": "First-stage compliance rate: the fraction of lottery winners who enroll in Medicaid beyond what the control group enrolls.",
+      "qa": [
+        {
+          "question": "What is the compliance rate?",
+          "answer": "0.258 (25.8 percent)"
+        }
+      ]
+    },
+    {
+      "eq_id": "monotonicity",
+      "label": "eq:monotonicity",
+      "latex": "\\text{Medicaid}_i(z=1) \\geq \\text{Medicaid}_i(z=0) \\quad \\forall i",
+      "description": "Monotonicity assumption: no defiers \u2014 lottery selection weakly increases Medicaid enrollment for everyone.",
+      "qa": []
+    },
+    {
+      "eq_id": "power-calculation",
+      "label": "eq:power",
+      "latex": "\\bar{N} = \\frac{(z_{1-\\alpha/2} + z_{1-\\kappa})^2 (\\tilde{\\sigma}_T^2/p + \\tilde{\\sigma}_C^2/(1-p))}{(\\tilde{\\delta}_{MDE})^2}, \\quad \\frac{\\partial \\mathcal{L}}{\\partial \\tilde{\\delta}_{MDE}} = -\\frac{2\\bar{N} \\cdot \\tilde{\\delta}_{MDE}}{(\\tilde{\\sigma}_T^2/p + \\tilde{\\sigma}_C^2/(1-p))}",
+      "description": "Sample size formula for detectable effect $\\delta_{MDE}$ given significance $\\alpha$, power $\\kappa$, and treatment share $p$.",
+      "qa": []
+    },
+    {
+      "eq_id": "het-specification",
+      "label": "eq:het",
+      "latex": "Y_i = \\alpha + \\beta_1 \\text{Lottery}_i + \\beta_2 \\text{Lottery}_i \\times S_i + \\beta_3 S_i + X_i'\\gamma + \\varepsilon_i",
+      "description": "Heterogeneity specification: interaction of lottery with subgroup indicator $S_i$ (e.g., age category, chronic conditions).",
+      "qa": []
+    },
+    {
+      "eq_id": "fwer-correction",
+      "label": "eq:fwer",
+      "latex": "p_k^{adj} = \\min\\left(1, \\; \\frac{K \\cdot p_k}{\\text{rank}(p_k)}\\right), \\quad k = 1, \\ldots, K",
+      "description": "Benjamini-Hochberg step-up procedure for controlling the false discovery rate across $K$ outcome tests.",
+      "qa": []
+    },
+    {
+      "eq_id": "lee-bounds",
+      "label": "eq:lee-bounds",
+      "latex": "\\text{LB} = E[Y_i | Z_i = 1, Y_i \\leq F_{Y|Z=1}^{-1}(1-p)], \\quad \\text{UB} = E[Y_i | Z_i = 1, Y_i \\geq F_{Y|Z=1}^{-1}(p)]",
+      "description": "Lee (2009) bounds for attrition: trimming the outcome distribution of the treatment group to match control response rates.",
+      "qa": []
+    },
+    {
+      "eq_id": "qaly-valuation",
+      "label": "eq:qaly",
+      "latex": "\\Delta \\bar{W} = v \\cdot \\Delta \\tilde{Q} + \\Delta C_{unc} + \\mu(\\sigma^2_C) - G, \\quad \\frac{\\partial^2 \\mathcal{N}(\\bar{W})}{\\partial v \\partial \\tilde{Q}} = \\mathcal{L}^{-1}\\!\\left\\{\\frac{\\partial \\bar{W}}{\\partial v}\\right\\}",
+      "description": "Welfare formula: value of QALY gains ($v \\cdot \\Delta Q$) plus uncompensated care offset plus insurance value minus government cost.",
+      "qa": [
+        {
+          "question": "What are the components of the welfare formula?",
+          "answer": "QALY gains, uncompensated care offset, insurance value of risk reduction, minus government fiscal cost"
+        }
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main identification strategy?",
+      "answer": "Randomized lottery for Medicaid enrollment, using lottery selection as instrument for Medicaid coverage"
+    },
+    {
+      "question": "What is the compliance rate?",
+      "answer": "25.8 percent (lottery winners were 0.258 more likely to enroll)"
+    },
+    {
+      "question": "Does Medicaid improve self-reported health?",
+      "answer": "Yes, by 0.326 points on a 1-5 scale (IV estimate)"
+    },
+    {
+      "question": "Does Medicaid affect clinical biomarkers?",
+      "answer": "No statistically significant effects on blood pressure, cholesterol, or HbA1c"
+    },
+    {
+      "question": "Does Medicaid reduce financial strain?",
+      "answer": "Yes, medical debt decreases by $1,211 per enrollee (IV estimate)"
+    },
+    {
+      "question": "What is the compliance rate (first-stage coefficient)?",
+      "answer": "Approximately 25.8 percent (0.258)"
+    },
+    {
+      "question": "What is the first-stage F-statistic in the baseline specification?",
+      "answer": "821.4"
+    },
+    {
+      "question": "Is the first stage robust to adding controls?",
+      "answer": "Yes, coefficient is stable at 0.251--0.258 across all specifications"
+    },
+    {
+      "question": "How many individuals are in the treatment group?",
+      "answer": "29,834"
+    },
+    {
+      "question": "What is the mean age in the control group?",
+      "answer": "40.5"
+    },
+    {
+      "question": "Are baseline health measures balanced across groups?",
+      "answer": "Yes, all p-values exceed 0.40"
+    },
+    {
+      "question": "What is the mean number of chronic conditions in the treatment group?",
+      "answer": "1.82"
+    },
+    {
+      "question": "What is the response rate for the 12-month survey?",
+      "answer": "73.8 percent overall"
+    },
+    {
+      "question": "Is there differential attrition by treatment status?",
+      "answer": "No, the difference in response rates is 0.007 (SE 0.006)"
+    },
+    {
+      "question": "What is the ITT effect on outpatient visits?",
+      "answer": "0.412 additional visits per 6 months (column 1)"
+    },
+    {
+      "question": "What is the ITT effect on ER visits?",
+      "answer": "0.108 additional visits per 6 months (column 1)"
+    },
+    {
+      "question": "Is the ITT effect on hospital admissions statistically significant?",
+      "answer": "No, the estimate is 0.014 with SE 0.011"
+    },
+    {
+      "question": "What is the control mean of outpatient visits?",
+      "answer": "1.98"
+    },
+    {
+      "question": "What is the IV effect of Medicaid on outpatient visits?",
+      "answer": "1.596 additional visits per 6 months"
+    },
+    {
+      "question": "What is the IV effect of Medicaid on ER visits?",
+      "answer": "0.419 additional visits per 6 months"
+    },
+    {
+      "question": "What is the control mean of ER visits?",
+      "answer": "0.82"
+    },
+    {
+      "question": "Does Medicaid improve self-reported health?",
+      "answer": "Yes, ITT effect is 0.084 (p<0.01) on 1-5 scale"
+    },
+    {
+      "question": "Does Medicaid reduce depression?",
+      "answer": "Yes, PHQ-8 score decreases by 0.482 points (ITT) or 1.868 points (IV)"
+    },
+    {
+      "question": "Does Medicaid affect blood pressure?",
+      "answer": "No significant effect: -0.81 mmHg (SE 0.62)"
+    },
+    {
+      "question": "What is the control mean of the PHQ-8 depression score?",
+      "answer": "6.52"
+    },
+    {
+      "question": "Does Medicaid reduce medical debt?",
+      "answer": "Yes, by $312 ITT or $1,211 IV"
+    },
+    {
+      "question": "What share of the control group has any medical debt?",
+      "answer": "58 percent (0.58)"
+    },
+    {
+      "question": "What is the IV effect on difficulty paying medical bills?",
+      "answer": "-0.225 (25 percentage point reduction)"
+    },
+    {
+      "question": "Are treatment effects larger for older individuals?",
+      "answer": "Yes, the ITT on self-rated health increases from 0.054 (age 19-34) to 0.114 (age 50-64)"
+    },
+    {
+      "question": "Are treatment effects larger for sicker individuals?",
+      "answer": "Yes, the ITT on depression score is -0.841 for 3+ chronic conditions vs. -0.218 for none"
+    },
+    {
+      "question": "Are results robust to using probit instead of OLS?",
+      "answer": "Yes, probit marginal effects are very similar (0.029 vs 0.031)"
+    },
+    {
+      "question": "What are the Lee bounds for the depression screen effect?",
+      "answer": "Lower bound: -0.048, Upper bound: -0.021, both significant"
+    },
+    {
+      "question": "What is the annual government spending on Medicaid per enrollee?",
+      "answer": "$3,412"
+    },
+    {
+      "question": "What is the net benefit per enrollee?",
+      "answer": "$2,555"
+    },
+    {
+      "question": "What is the value of improved mental health per enrollee?",
+      "answer": "$2,148 based on QALY valuation"
+    },
+    {
+      "question": "What is the joint F-test p-value for baseline balance?",
+      "answer": "0.82"
+    },
+    {
+      "question": "What fraction of the treatment group smokes?",
+      "answer": "48 percent (0.48)"
+    },
+    {
+      "question": "What is the intent-to-treat estimating equation?",
+      "answer": "Y_i = alpha + beta * Lottery_i + X_i'gamma + epsilon_i"
+    },
+    {
+      "question": "What is the instrument for Medicaid enrollment?",
+      "answer": "The lottery selection indicator"
+    },
+    {
+      "question": "What does the IV estimate identify?",
+      "answer": "The LATE (local average treatment effect) for compliers"
+    },
+    {
+      "question": "What is the compliance rate?",
+      "answer": "0.258 (25.8 percent)"
+    },
+    {
+      "question": "What are the components of the welfare formula?",
+      "answer": "QALY gains, uncompensated care offset, insurance value of risk reduction, minus government fiscal cost"
+    }
+  ]
+}

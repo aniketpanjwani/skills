@@ -1,0 +1,4994 @@
+{
+  "paper_id": "07",
+  "field": "econometric-theory",
+  "title": "Heteroskedasticity and Autocorrelation Consistent Covariance Matrix Estimation: Theory, Bandwidth Selection, and Finite-Sample Performance",
+  "journal_style": "old_school",
+  "target_pages": 50,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-et",
+      "level": 1
+    },
+    {
+      "title": "The Problem of Serial Correlation in Regression Inference",
+      "label": "sec:motivation",
+      "level": 1
+    },
+    {
+      "title": "OLS Standard Errors Under Serial Correlation",
+      "label": "sec:ols-sc",
+      "level": 2
+    },
+    {
+      "title": "Why Classical Corrections Are Insufficient",
+      "label": "sec:ols-insuf",
+      "level": 2
+    },
+    {
+      "title": "Kernel Functions and Spectral Density Estimation",
+      "label": "sec:kernels",
+      "level": 1
+    },
+    {
+      "title": "Kernel Properties and Positive Semi-Definiteness",
+      "label": "sec:kernel-psd",
+      "level": 2
+    },
+    {
+      "title": "Efficiency Bounds for Kernel Estimators",
+      "label": "sec:kernel-eff",
+      "level": 2
+    },
+    {
+      "title": "HAC Variance Estimation",
+      "label": "sec:hac-theory",
+      "level": 1
+    },
+    {
+      "title": "The Newey-West Estimator",
+      "label": "sec:nw-estimator",
+      "level": 2
+    },
+    {
+      "title": "Consistency and Asymptotic Normality",
+      "label": "sec:hac-asymptotics",
+      "level": 2
+    },
+    {
+      "title": "Rate of Convergence",
+      "label": "sec:hac-rate",
+      "level": 2
+    },
+    {
+      "title": "Bandwidth Selection",
+      "label": "sec:bw-selection",
+      "level": 1
+    },
+    {
+      "title": "Deterministic Bandwidth Rules",
+      "label": "sec:bw-deterministic",
+      "level": 2
+    },
+    {
+      "title": "Data-Driven Bandwidth Selection",
+      "label": "sec:bw-datadriven",
+      "level": 2
+    },
+    {
+      "title": "Pre-Whitening",
+      "label": "sec:prewhitening",
+      "level": 1
+    },
+    {
+      "title": "AR(1) Pre-Whitening Procedure",
+      "label": "sec:pw-procedure",
+      "level": 2
+    },
+    {
+      "title": "Finite-Sample Performance Improvements",
+      "label": "sec:pw-performance",
+      "level": 2
+    },
+    {
+      "title": "Monte Carlo Evidence",
+      "label": "sec:mc",
+      "level": 1
+    },
+    {
+      "title": "Size Performance",
+      "label": "sec:mc-size",
+      "level": 2
+    },
+    {
+      "title": "Power Performance",
+      "label": "sec:mc-power",
+      "level": 2
+    },
+    {
+      "title": "Coverage Rates",
+      "label": "sec:mc-coverage",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-et",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Mathematical Proofs",
+      "label": "sec:appendix-a-et",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Monte Carlo Design",
+      "label": "sec:appendix-b-et",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "monte-carlo-size-ols",
+      "caption": "Monte Carlo Size of OLS t-Tests Under Heteroskedasticity and Serial Correlation",
+      "label": "tab:mc-size-ols",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "5.2",
+          "role": "data",
+          "variable": "OLS t-test (homoskedastic)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "5.1",
+          "role": "data",
+          "variable": "OLS t-test (homoskedastic)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "5.0",
+          "role": "data",
+          "variable": "OLS t-test (homoskedastic)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "5.0",
+          "role": "data",
+          "variable": "OLS t-test (homoskedastic)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "OLS t-test (homoskedastic)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "OLS t-test (homoskedastic)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "OLS t-test (homoskedastic)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "OLS t-test (homoskedastic)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "6.8",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "6.1",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "5.4",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "5.2",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "5.8",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "5.4",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "5.1",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "5.0",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "18.4",
+          "role": "data",
+          "variable": "OLS t-test (no correction)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "19.1",
+          "role": "data",
+          "variable": "OLS t-test (no correction)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "19.8",
+          "role": "data",
+          "variable": "OLS t-test (no correction)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "20.1",
+          "role": "data",
+          "variable": "OLS t-test (no correction)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (no correction)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (no correction)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (no correction)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (no correction)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "17.9",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "18.6",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "19.2",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "19.8",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (heteroskedastic HC0)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "17.1",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "17.8",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "18.4",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "19.1",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "OLS t-test (HC3 bias-corrected)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "AR(1)",
+          "role": "summary",
+          "label": "DGP"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "AR(1)",
+          "role": "summary",
+          "label": "DGP"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "AR(1)",
+          "role": "summary",
+          "label": "DGP"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "AR(1)",
+          "role": "summary",
+          "label": "DGP"
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the OLS rejection rate with AR(1) errors (rho=0.5) and no correction at T=250?",
+          "answer": "19.8"
+        },
+        {
+          "question": "What is the HC3 rejection rate with iid errors at T=100?",
+          "answer": "5.4"
+        },
+        {
+          "question": "What is the nominal test level used?",
+          "answer": "5 percent"
+        },
+        {
+          "question": "How many Monte Carlo replications are used?",
+          "answer": "10,000"
+        }
+      ]
+    },
+    {
+      "table_id": "kernel-comparison",
+      "caption": "Properties of HAC Kernel Functions",
+      "label": "tab:kernel-comparison",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "1 - |u|",
+          "latex": "$1 - |u|$",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "[-1, 1]",
+          "latex": "$[-1, 1]$",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "1.00",
+          "latex": "",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1 - 6u^2 + 6|u|^3 (|u| <= 1/2)",
+          "latex": "$1 - 6u^2 + 6|u|^3 \\; (|u| \\le 1/2)$",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "[-1, 1]",
+          "latex": "$[-1, 1]$",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.539",
+          "latex": "",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "sin/cos formula",
+          "latex": "$\\frac{25}{12\\pi^2 u^2}\\left(\\frac{\\sin(6\\pi u/5)}{6\\pi u/5} - \\cos(6\\pi u/5)\\right)$",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(-inf, inf)",
+          "latex": "$(-\\infty,\\infty)$",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "1.421",
+          "latex": "",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "(1 + cos(pi u))/2",
+          "latex": "$\\frac{1}{2}(1 + \\cos(\\pi u))$",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "[-1, 1]",
+          "latex": "$[-1, 1]$",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.885",
+          "latex": "",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "sin(pi u)/(pi u)",
+          "latex": "$\\frac{\\sin(\\pi u)}{\\pi u}$",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(-inf, inf)",
+          "latex": "$(-\\infty,\\infty)$",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "1.000",
+          "latex": "",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Which kernel has the highest asymptotic efficiency?",
+          "answer": "Quadratic Spectral (QS) with efficiency 1.421"
+        },
+        {
+          "question": "What is the support of the Bartlett kernel?",
+          "answer": "[-1, 1]"
+        },
+        {
+          "question": "What is the Parzen kernel efficiency relative to Bartlett?",
+          "answer": "0.539"
+        },
+        {
+          "question": "Which kernels have unbounded support?",
+          "answer": "QS and Daniell kernels"
+        }
+      ]
+    },
+    {
+      "table_id": "empirical-application",
+      "caption": "Empirical Application: HAC Inference on U.S. Inflation Dynamics",
+      "label": "tab:empirical-application",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.684***",
+          "role": "data",
+          "variable": "Lagged inflation",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.684***",
+          "role": "data",
+          "variable": "Lagged inflation",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.684***",
+          "role": "data",
+          "variable": "Lagged inflation",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.684***",
+          "role": "data",
+          "variable": "Lagged inflation",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Lagged inflation",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.082)",
+          "role": "data",
+          "variable": "Lagged inflation",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "Lagged inflation",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.088)",
+          "role": "data",
+          "variable": "Lagged inflation",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.128***",
+          "role": "data",
+          "variable": "Output gap",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.128**",
+          "role": "data",
+          "variable": "Output gap",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.128*",
+          "role": "data",
+          "variable": "Output gap",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.128**",
+          "role": "data",
+          "variable": "Output gap",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.034)",
+          "role": "data",
+          "variable": "Output gap",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Output gap",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.067)",
+          "role": "data",
+          "variable": "Output gap",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "Output gap",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.019***",
+          "role": "data",
+          "variable": "Oil price change",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.019**",
+          "role": "data",
+          "variable": "Oil price change",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.019**",
+          "role": "data",
+          "variable": "Oil price change",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.019**",
+          "role": "data",
+          "variable": "Oil price change",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.005)",
+          "role": "data",
+          "variable": "Oil price change",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Oil price change",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Oil price change",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Oil price change",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "Constant",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.412**",
+          "role": "data",
+          "variable": "Constant",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.412*",
+          "role": "data",
+          "variable": "Constant",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.412**",
+          "role": "data",
+          "variable": "Constant",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.091)",
+          "role": "data",
+          "variable": "Constant",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Constant",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.211)",
+          "role": "data",
+          "variable": "Constant",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.198)",
+          "role": "data",
+          "variable": "Constant",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "18.42***",
+          "role": "data",
+          "variable": "Breusch-Godfrey LM (4 lags)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Breusch-Godfrey LM (4 lags)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Breusch-Godfrey LM (4 lags)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Breusch-Godfrey LM (4 lags)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Breusch-Godfrey LM (4 lags)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Breusch-Godfrey LM (4 lags)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Breusch-Godfrey LM (4 lags)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Breusch-Godfrey LM (4 lags)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "14.81**",
+          "role": "data",
+          "variable": "White heteroskedasticity test",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "White heteroskedasticity test",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "White heteroskedasticity test",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "White heteroskedasticity test",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "White heteroskedasticity test",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "White heteroskedasticity test",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "White heteroskedasticity test",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "White heteroskedasticity test",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Selected bandwidth",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "4",
+          "role": "data",
+          "variable": "Selected bandwidth",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "8",
+          "role": "data",
+          "variable": "Selected bandwidth",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "6.2",
+          "role": "data",
+          "variable": "Selected bandwidth",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Selected bandwidth",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Selected bandwidth",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Selected bandwidth",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Selected bandwidth",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "240",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "240",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "240",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "240",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "0.714",
+          "role": "summary",
+          "label": "Adj. R-sq"
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "0.714",
+          "role": "summary",
+          "label": "Adj. R-sq"
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "0.714",
+          "role": "summary",
+          "label": "Adj. R-sq"
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "0.714",
+          "role": "summary",
+          "label": "Adj. R-sq"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the OLS standard error on lagged inflation?",
+          "answer": "0.041"
+        },
+        {
+          "question": "What is the Newey-West (4 lags) standard error on lagged inflation?",
+          "answer": "0.082, approximately double the OLS standard error"
+        },
+        {
+          "question": "What bandwidth does the Andrews QS procedure select?",
+          "answer": "6.2"
+        },
+        {
+          "question": "Is the output gap coefficient significant under QS HAC?",
+          "answer": "Yes, at the 5% level (p<0.05)"
+        }
+      ]
+    },
+    {
+      "table_id": "bandwidth-comparison",
+      "caption": "Bandwidth Selection: Andrews (1991) vs. Newey-West (1994) Rule",
+      "label": "tab:bandwidth-comparison",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "4.1",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "5.8",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "9.4",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "13.2",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(1.2)",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(1.6)",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(2.4)",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(3.1)",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "3.5",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "4.9",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "7.8",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "11.0",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.0)",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.0)",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.0)",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.0)",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "4.8",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "6.7",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "10.8",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "15.1",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.9)",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(1.4)",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(1.8)",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "7.8",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "11.2",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "26.1",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(2.1)",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(2.8)",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(4.2)",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(5.6)",
+          "role": "data",
+          "variable": "Andrews (1991) plug-in",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "3.5",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "4.9",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "7.8",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "11.0",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.0)",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.0)",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.0)",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.0)",
+          "role": "data",
+          "variable": "Newey-West (1994) fixed",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "9.1",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "12.8",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "21.4",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "30.2",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(1.1)",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(1.4)",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(2.1)",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(2.8)",
+          "role": "data",
+          "variable": "Optimal (MSE-minimizing)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the Andrews plug-in bandwidth at T=100 with rho=0.5?",
+          "answer": "5.8"
+        },
+        {
+          "question": "What is the Newey-West fixed bandwidth at T=250?",
+          "answer": "7.8"
+        },
+        {
+          "question": "Which bandwidth rule most closely tracks the MSE-optimal bandwidth?",
+          "answer": "Andrews (1991) plug-in"
+        },
+        {
+          "question": "What is the optimal bandwidth at T=500 with rho=0.8?",
+          "answer": "30.2"
+        }
+      ]
+    },
+    {
+      "table_id": "pre-whitening",
+      "caption": "Pre-Whitening: Comparison of HAC Estimator Performance",
+      "label": "tab:pre-whitening",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "8.41",
+          "role": "data",
+          "variable": "Bartlett, no pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "4.82",
+          "role": "data",
+          "variable": "Bartlett, no pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "2.14",
+          "role": "data",
+          "variable": "Bartlett, no pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.08",
+          "role": "data",
+          "variable": "Bartlett, no pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(1.21)",
+          "role": "data",
+          "variable": "Bartlett, no pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.68)",
+          "role": "data",
+          "variable": "Bartlett, no pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.29)",
+          "role": "data",
+          "variable": "Bartlett, no pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "Bartlett, no pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "6.18",
+          "role": "data",
+          "variable": "Bartlett, AR(1) pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "3.41",
+          "role": "data",
+          "variable": "Bartlett, AR(1) pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1.58",
+          "role": "data",
+          "variable": "Bartlett, AR(1) pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.81",
+          "role": "data",
+          "variable": "Bartlett, AR(1) pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.89)",
+          "role": "data",
+          "variable": "Bartlett, AR(1) pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.48)",
+          "role": "data",
+          "variable": "Bartlett, AR(1) pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.21)",
+          "role": "data",
+          "variable": "Bartlett, AR(1) pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "Bartlett, AR(1) pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "7.24",
+          "role": "data",
+          "variable": "QS, no pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "4.01",
+          "role": "data",
+          "variable": "QS, no pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.78",
+          "role": "data",
+          "variable": "QS, no pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.89",
+          "role": "data",
+          "variable": "QS, no pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(1.04)",
+          "role": "data",
+          "variable": "QS, no pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.57)",
+          "role": "data",
+          "variable": "QS, no pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.24)",
+          "role": "data",
+          "variable": "QS, no pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.11)",
+          "role": "data",
+          "variable": "QS, no pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "5.41",
+          "role": "data",
+          "variable": "QS, AR(1) pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "2.98",
+          "role": "data",
+          "variable": "QS, AR(1) pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1.32",
+          "role": "data",
+          "variable": "QS, AR(1) pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.68",
+          "role": "data",
+          "variable": "QS, AR(1) pre-whitening",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.78)",
+          "role": "data",
+          "variable": "QS, AR(1) pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.42)",
+          "role": "data",
+          "variable": "QS, AR(1) pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "QS, AR(1) pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.09)",
+          "role": "data",
+          "variable": "QS, AR(1) pre-whitening",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "AR(2)",
+          "role": "summary",
+          "label": "DGP"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "AR(2)",
+          "role": "summary",
+          "label": "DGP"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "AR(2)",
+          "role": "summary",
+          "label": "DGP"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "AR(2)",
+          "role": "summary",
+          "label": "DGP"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the MSE reduction from pre-whitening for Bartlett at T=100?",
+          "answer": "From 4.82 to 3.41, a reduction of about 29%"
+        },
+        {
+          "question": "Which estimator has the lowest MSE at T=500?",
+          "answer": "QS with AR(1) pre-whitening at 0.68"
+        },
+        {
+          "question": "What is the QS no-pre-whitening MSE at T=250?",
+          "answer": "1.78"
+        }
+      ]
+    },
+    {
+      "table_id": "monte-carlo-size-hac",
+      "caption": "Monte Carlo Size of HAC-Corrected t-Tests",
+      "label": "tab:mc-size-hac",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "6.1",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "5.6",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "5.2",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "5.1",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "6.4",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "5.8",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "5.3",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "5.1",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "5.9",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "5.5",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "5.1",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "5.0",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "9.2",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "7.4",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "6.1",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "5.5",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "8.8",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "7.1",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "5.9",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "5.4",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "8.4",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "6.9",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "5.7",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "5.2",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "5.8",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "5.4",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "5.1",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "5.0",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "Bartlett (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "5.9",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "5.5",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "5.2",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "5.1",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "Parzen (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "5.7",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "5.3",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "5.0",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "5.0",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "QS (Andrews BW)",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 21,
+          "col": 4,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Which kernel achieves the smallest size distortion under AR(1) with rho=0.7?",
+          "answer": "QS kernel"
+        },
+        {
+          "question": "What is the Bartlett HAC rejection rate at T=100 with rho=0.7?",
+          "answer": "7.4"
+        },
+        {
+          "question": "What is the QS HAC size at T=500 with MA(1) errors?",
+          "answer": "5.0"
+        },
+        {
+          "question": "What is the Bartlett size at T=50 with rho=0.3?",
+          "answer": "6.1"
+        }
+      ]
+    },
+    {
+      "table_id": "monte-carlo-power",
+      "caption": "Monte Carlo Power of HAC t-Tests Against Slope Alternatives",
+      "label": "tab:mc-power",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "21.4",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "38.2",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "74.1",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "96.8",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(1.0)",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.9)",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "22.1",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "39.4",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "75.8",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "97.2",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(1.0)",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.9)",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "30.1",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "52.4",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "91.2",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "99.8",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.9)",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(1.0)",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.1)",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "48.2",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "74.8",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "98.1",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "100.0",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(1.0)",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.9)",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.0)",
+          "role": "data",
+          "variable": "Bartlett HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "49.8",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "76.2",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "98.4",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "100.0",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(1.0)",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.9)",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.0)",
+          "role": "data",
+          "variable": "QS HAC power (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "64.1",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "89.4",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "99.8",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "100.0",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(1.0)",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.1)",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.0)",
+          "role": "data",
+          "variable": "OLS power (infeasible oracle)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is Bartlett HAC power against beta=0.10 at T=250?",
+          "answer": "74.1"
+        },
+        {
+          "question": "What is QS HAC power against beta=0.20 at T=100?",
+          "answer": "76.2"
+        },
+        {
+          "question": "At what sample size does HAC power exceed 90% against beta=0.10?",
+          "answer": "T=250 (74.1%) to T=500 (96.8%)"
+        }
+      ]
+    },
+    {
+      "table_id": "finite-sample-coverage",
+      "caption": "Finite-Sample Coverage of HAC Confidence Intervals",
+      "label": "tab:finite-sample-coverage",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "89.2",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "91.8",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "93.6",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "94.4",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "90.4",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "92.6",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "94.1",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "94.7",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "91.8",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "93.4",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "94.4",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "94.8",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "82.1",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "87.4",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "91.8",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "93.6",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.8)",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.7)",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "83.8",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "88.9",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "92.8",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "94.1",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.7)",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "QS HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "86.4",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "90.8",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "93.9",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "94.6",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.7)",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Pre-whitened Bartlett",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is pre-whitened Bartlett coverage at T=100 with rho=0.8?",
+          "answer": "90.8"
+        },
+        {
+          "question": "What is QS HAC coverage at T=250 with rho=0.5?",
+          "answer": "94.1"
+        },
+        {
+          "question": "Which method achieves highest coverage at T=50 with rho=0.8?",
+          "answer": "Pre-whitened Bartlett at 86.4"
+        },
+        {
+          "question": "What is the Bartlett HAC coverage at T=50 with rho=0.5?",
+          "answer": "89.2"
+        }
+      ]
+    },
+    {
+      "table_id": "bootstrap-vs-asymptotic",
+      "caption": "Bootstrap vs. Asymptotic HAC Inference: Size and Coverage Comparison",
+      "label": "tab:bootstrap-vs-asymptotic",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "8.4",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "6.8",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "5.6",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "5.2",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "5.8",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "5.4",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "5.1",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "5.0",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "6.2",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "5.6",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "5.2",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "5.1",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "14.2",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "10.1",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "7.2",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "5.8",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.7)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "7.4",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "6.1",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "5.4",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "5.1",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "8.1",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "6.4",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "5.6",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "5.2",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "89.2",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "91.8",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "93.6",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "94.4",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "(0.6)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Asymptotic Bartlett HAC",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "93.4",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "94.2",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "94.8",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "95.0",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "Wild bootstrap (Bartlett HAC)",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "92.8",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "93.8",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "94.6",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "94.9",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "(0.5)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "(0.4)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "(0.3)",
+          "role": "data",
+          "variable": "Block bootstrap (circular)",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "999",
+          "role": "summary",
+          "label": "Bootstrap replications"
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "999",
+          "role": "summary",
+          "label": "Bootstrap replications"
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "999",
+          "role": "summary",
+          "label": "Bootstrap replications"
+        },
+        {
+          "row": 21,
+          "col": 4,
+          "text": "999",
+          "role": "summary",
+          "label": "Bootstrap replications"
+        },
+        {
+          "row": 22,
+          "col": 1,
+          "text": "5,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 22,
+          "col": 2,
+          "text": "5,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 22,
+          "col": 3,
+          "text": "5,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        },
+        {
+          "row": 22,
+          "col": 4,
+          "text": "5,000",
+          "role": "summary",
+          "label": "Monte Carlo replications"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the asymptotic Bartlett rejection rate at T=50 with rho=0.8?",
+          "answer": "14.2, far above the 5% nominal level"
+        },
+        {
+          "question": "What is the wild bootstrap rejection rate at T=50 with rho=0.8?",
+          "answer": "7.4, much closer to the 5% nominal level than the asymptotic rate of 14.2"
+        },
+        {
+          "question": "What is the wild bootstrap coverage at T=100 with rho=0.5?",
+          "answer": "94.2"
+        },
+        {
+          "question": "How many bootstrap replications are used?",
+          "answer": "999"
+        }
+      ]
+    },
+    {
+      "table_id": "proofs-block",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-dgp",
+      "caption": "Appendix: Data-Generating Process Parameters for Monte Carlo Study",
+      "label": "tab:appendix-dgp",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "AR(1)",
+          "role": "data",
+          "variable": "Error type",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "AR(1)",
+          "role": "data",
+          "variable": "Error type",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "MA(1)",
+          "role": "data",
+          "variable": "Error type",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "ARMA(1,1)",
+          "role": "data",
+          "variable": "Error type",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Error type",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Error type",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Error type",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Error type",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.3",
+          "role": "data",
+          "variable": "AR coefficient rho",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.7",
+          "role": "data",
+          "variable": "AR coefficient rho",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.0",
+          "role": "data",
+          "variable": "AR coefficient rho",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.5",
+          "role": "data",
+          "variable": "AR coefficient rho",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "AR coefficient rho",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "AR coefficient rho",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "AR coefficient rho",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "AR coefficient rho",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.0",
+          "role": "data",
+          "variable": "MA coefficient theta",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.0",
+          "role": "data",
+          "variable": "MA coefficient theta",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.5",
+          "role": "data",
+          "variable": "MA coefficient theta",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.3",
+          "role": "data",
+          "variable": "MA coefficient theta",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "MA coefficient theta",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "MA coefficient theta",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "MA coefficient theta",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "MA coefficient theta",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "1.0",
+          "role": "data",
+          "variable": "Innovation variance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "1.0",
+          "role": "data",
+          "variable": "Innovation variance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1.0",
+          "role": "data",
+          "variable": "Innovation variance",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "1.0",
+          "role": "data",
+          "variable": "Innovation variance",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Innovation variance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Innovation variance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Innovation variance",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Innovation variance",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "2.04",
+          "role": "data",
+          "variable": "Long-run variance",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "11.11",
+          "role": "data",
+          "variable": "Long-run variance",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "2.25",
+          "role": "data",
+          "variable": "Long-run variance",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "8.16",
+          "role": "data",
+          "variable": "Long-run variance",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Long-run variance",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Long-run variance",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Long-run variance",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Long-run variance",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "1.0",
+          "role": "data",
+          "variable": "Intercept",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "1.0",
+          "role": "data",
+          "variable": "Intercept",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "1.0",
+          "role": "data",
+          "variable": "Intercept",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "1.0",
+          "role": "data",
+          "variable": "Intercept",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Intercept",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Intercept",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Intercept",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Intercept",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.5",
+          "role": "data",
+          "variable": "Slope (null)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "0.5",
+          "role": "data",
+          "variable": "Slope (null)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "0.5",
+          "role": "data",
+          "variable": "Slope (null)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "0.5",
+          "role": "data",
+          "variable": "Slope (null)",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Slope (null)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Slope (null)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Slope (null)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Slope (null)",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "iid N",
+          "role": "data",
+          "variable": "Regressor type",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "iid N",
+          "role": "data",
+          "variable": "Regressor type",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "iid N",
+          "role": "data",
+          "variable": "Regressor type",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "iid N",
+          "role": "data",
+          "variable": "Regressor type",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Regressor type",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Regressor type",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Regressor type",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Regressor type",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the long-run variance for the AR(1) DGP with rho=0.7?",
+          "answer": "11.11"
+        },
+        {
+          "question": "What is the MA coefficient in DGP 3?",
+          "answer": "0.5"
+        },
+        {
+          "question": "What is the slope parameter under the null across all DGPs?",
+          "answer": "0.5"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "hac-variance",
+      "label": "eq:hac",
+      "latex": "\\hat{\\Omega}_{HAC} = \\frac{1}{T} \\sum_{j=-(T-1)}^{T-1} k\\!\\left(\\frac{j}{\\left\\lfloor M_T \\right\\rfloor}\\right) \\hat{\\Gamma}(j), \\quad \\hat{\\Gamma}(j) = \\frac{1}{T} \\sum_{s=1}^{T}\\sum_{t=|j|+1}^{T} \\hat{u}_t \\hat{u}_{t-|j|} x_t x_{t-|j|}'",
+      "description": "HAC variance estimator with kernel $k(\\cdot)$ and bandwidth $M_T$. Autocovariance $\\hat{\\Gamma}(j)$ uses OLS residuals $\\hat{u}_t$.",
+      "qa": [
+        {
+          "question": "What does the bandwidth M_T control in the HAC estimator?",
+          "answer": "The truncation point: autocovariances at lag |j| > M_T receive zero weight"
+        }
+      ]
+    },
+    {
+      "eq_id": "bartlett-kernel",
+      "label": "eq:bartlett",
+      "latex": "k_{BT}(u) = \\begin{cases} 1 - |u| & |u| \\le 1 \\\\ 0 & |u| > 1 \\end{cases}",
+      "description": "Bartlett (tent) kernel used in Newey-West HAC estimator. Compactly supported and guarantees non-negative weights on autocovariances.",
+      "qa": [
+        {
+          "question": "What is the Bartlett kernel value at u=0.5?",
+          "answer": "0.5"
+        }
+      ]
+    },
+    {
+      "eq_id": "newey-west-formula",
+      "label": "eq:nw",
+      "latex": "\\hat{V}_{NW} = \\hat{Q}_{xx}^{-1} \\hat{\\Omega}_{NW} \\hat{Q}_{xx}^{-1}, \\quad \\hat{\\Omega}_{NW} = \\hat{\\Gamma}(0) + \\sum_{j=1}^{\\left\\lceil M_T \\right\\rceil} \\left(1 - \\frac{j}{\\left\\lfloor M_T \\right\\rfloor +1}\\right)\\left[\\hat{\\Gamma}(j) + \\hat{\\Gamma}(j)'\\right]",
+      "description": "Newey-West sandwich variance estimator. $\\hat{Q}_{xx} = T^{-1}\\sum x_t x_t'$ is the sample second moment matrix.",
+      "qa": [
+        {
+          "question": "What is the weight on autocovariance at lag j in the Newey-West formula?",
+          "answer": "1 - j/(M_T + 1)"
+        }
+      ]
+    },
+    {
+      "eq_id": "consistency-condition",
+      "label": "eq:consistency",
+      "latex": "\\left\\lfloor M_T \\right\\rfloor \\to \\infty, \\quad \\frac{\\left\\lceil M_T \\right\\rceil}{T^{1/2}} \\to 0 \\implies \\hat{\\Omega}_{HAC} \\xrightarrow{p} \\Omega, \\quad \\oint_{\\|z\\|=1} S_{uu}(z)\\, dz = \\Omega",
+      "description": "Consistency conditions on bandwidth $M_T$: must grow with $T$ to capture all relevant autocovariances, but grow slower than $T^{1/2}$ to ensure averaging reduces variance.",
+      "qa": [
+        {
+          "question": "What conditions on bandwidth M_T ensure HAC consistency?",
+          "answer": "M_T -> infinity and M_T / T^(1/2) -> 0"
+        }
+      ]
+    },
+    {
+      "eq_id": "bandwidth-rule",
+      "label": "eq:nw-bw",
+      "latex": "M_T^{NW} = \\left\\lfloor 4 \\left(\\frac{T}{100}\\right)^{2/9} \\right\\rfloor",
+      "description": "Newey-West (1994) bandwidth rule: a deterministic function of sample size $T$. Grows at rate $O(T^{2/9})$, satisfying $M_T \\to \\infty$ and $M_T / T^{1/2} \\to 0$.",
+      "qa": []
+    },
+    {
+      "eq_id": "mse-expansion",
+      "label": "eq:mse",
+      "latex": "MSE(\\hat{\\Omega}_{HAC}) = \\frac{M_T}{T} \\cdot c_k \\cdot \\kappa_4 + \\frac{1}{M_T^{2q}} \\cdot d_k \\cdot \\|\\\\Omega^{(q)}\\\\|^2 + o\\!\\left(\\frac{M_T}{T} + M_T^{-2q}\\right)",
+      "description": "MSE decomposition: variance term grows as $M_T / T$; bias term decays as $M_T^{-2q}$ where $q$ is the kernel characteristic exponent.",
+      "qa": []
+    },
+    {
+      "eq_id": "data-driven-bandwidth",
+      "label": "eq:opt-bw",
+      "latex": "M_T^* = c_k \\left(\\frac{\\hat{\\alpha}(q) T}{1}\\right)^{1/(2q+1)}, \\quad \\hat{\\\\alpha}(q) = \\\\frac{\\\\sum_j |j|^{2q} \\\\hat{\\\\gamma}(j)}{\\\\hat{\\\\gamma}(0)}",
+      "description": "Andrews (1991) MSE-optimal bandwidth formula, where $c_k$ is a kernel-specific constant, $q$ is the kernel characteristic exponent, and $\\hat{\\alpha}(q)$ is a nuisance parameter estimated from data.",
+      "qa": [
+        {
+          "question": "What does the kernel characteristic exponent q determine?",
+          "answer": "The rate at which bias decays with bandwidth: bias = O(M_T^{-2q})"
+        }
+      ]
+    },
+    {
+      "eq_id": "prewhitened-estimator",
+      "label": "eq:prewhiten",
+      "latex": "\\hat{v}_t = \\hat{u}_t - \\hat{\\phi} \\hat{u}_{t-1}, \\quad \\hat{\\Omega}_{PW} = \\frac{\\hat{\\Omega}_{HAC}(\\hat{v})}{(1-\\hat{\\phi})^2}",
+      "description": "Pre-whitened HAC estimator: fit AR(1) to residuals, apply HAC to AR residuals $\\hat{v}_t$, then rescale by $(1-\\hat{\\phi})^{-2}$.",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What conditions on bandwidth M_T ensure HAC consistency?",
+      "answer": "M_T -> infinity and M_T / T^(1/2) -> 0"
+    },
+    {
+      "question": "Which kernel has the highest asymptotic efficiency?",
+      "answer": "Quadratic Spectral (QS) kernel with efficiency 1.421 relative to Bartlett"
+    },
+    {
+      "question": "What is the Newey-West bandwidth rule?",
+      "answer": "floor(4 * (T/100)^(2/9))"
+    },
+    {
+      "question": "By how much does pre-whitening reduce MSE?",
+      "answer": "Approximately 25-35% at all sample sizes"
+    },
+    {
+      "question": "What is the empirical rejection rate of OLS t-tests under AR(1) errors with rho=0.5 at T=250?",
+      "answer": "19.8 percent (versus 5 percent nominal)"
+    },
+    {
+      "question": "What is the OLS rejection rate with AR(1) errors (rho=0.5) and no correction at T=250?",
+      "answer": "19.8"
+    },
+    {
+      "question": "What is the HC3 rejection rate with iid errors at T=100?",
+      "answer": "5.4"
+    },
+    {
+      "question": "What is the nominal test level used?",
+      "answer": "5 percent"
+    },
+    {
+      "question": "How many Monte Carlo replications are used?",
+      "answer": "10,000"
+    },
+    {
+      "question": "Which kernel has the highest asymptotic efficiency?",
+      "answer": "Quadratic Spectral (QS) with efficiency 1.421"
+    },
+    {
+      "question": "What is the support of the Bartlett kernel?",
+      "answer": "[-1, 1]"
+    },
+    {
+      "question": "What is the Parzen kernel efficiency relative to Bartlett?",
+      "answer": "0.539"
+    },
+    {
+      "question": "Which kernels have unbounded support?",
+      "answer": "QS and Daniell kernels"
+    },
+    {
+      "question": "What is the OLS standard error on lagged inflation?",
+      "answer": "0.041"
+    },
+    {
+      "question": "What is the Newey-West (4 lags) standard error on lagged inflation?",
+      "answer": "0.082, approximately double the OLS standard error"
+    },
+    {
+      "question": "What bandwidth does the Andrews QS procedure select?",
+      "answer": "6.2"
+    },
+    {
+      "question": "Is the output gap coefficient significant under QS HAC?",
+      "answer": "Yes, at the 5% level (p<0.05)"
+    },
+    {
+      "question": "What is the Andrews plug-in bandwidth at T=100 with rho=0.5?",
+      "answer": "5.8"
+    },
+    {
+      "question": "What is the Newey-West fixed bandwidth at T=250?",
+      "answer": "7.8"
+    },
+    {
+      "question": "Which bandwidth rule most closely tracks the MSE-optimal bandwidth?",
+      "answer": "Andrews (1991) plug-in"
+    },
+    {
+      "question": "What is the optimal bandwidth at T=500 with rho=0.8?",
+      "answer": "30.2"
+    },
+    {
+      "question": "What is the MSE reduction from pre-whitening for Bartlett at T=100?",
+      "answer": "From 4.82 to 3.41, a reduction of about 29%"
+    },
+    {
+      "question": "Which estimator has the lowest MSE at T=500?",
+      "answer": "QS with AR(1) pre-whitening at 0.68"
+    },
+    {
+      "question": "What is the QS no-pre-whitening MSE at T=250?",
+      "answer": "1.78"
+    },
+    {
+      "question": "Which kernel achieves the smallest size distortion under AR(1) with rho=0.7?",
+      "answer": "QS kernel"
+    },
+    {
+      "question": "What is the Bartlett HAC rejection rate at T=100 with rho=0.7?",
+      "answer": "7.4"
+    },
+    {
+      "question": "What is the QS HAC size at T=500 with MA(1) errors?",
+      "answer": "5.0"
+    },
+    {
+      "question": "What is the Bartlett size at T=50 with rho=0.3?",
+      "answer": "6.1"
+    },
+    {
+      "question": "What is Bartlett HAC power against beta=0.10 at T=250?",
+      "answer": "74.1"
+    },
+    {
+      "question": "What is QS HAC power against beta=0.20 at T=100?",
+      "answer": "76.2"
+    },
+    {
+      "question": "At what sample size does HAC power exceed 90% against beta=0.10?",
+      "answer": "T=250 (74.1%) to T=500 (96.8%)"
+    },
+    {
+      "question": "What is pre-whitened Bartlett coverage at T=100 with rho=0.8?",
+      "answer": "90.8"
+    },
+    {
+      "question": "What is QS HAC coverage at T=250 with rho=0.5?",
+      "answer": "94.1"
+    },
+    {
+      "question": "Which method achieves highest coverage at T=50 with rho=0.8?",
+      "answer": "Pre-whitened Bartlett at 86.4"
+    },
+    {
+      "question": "What is the Bartlett HAC coverage at T=50 with rho=0.5?",
+      "answer": "89.2"
+    },
+    {
+      "question": "What is the asymptotic Bartlett rejection rate at T=50 with rho=0.8?",
+      "answer": "14.2, far above the 5% nominal level"
+    },
+    {
+      "question": "What is the wild bootstrap rejection rate at T=50 with rho=0.8?",
+      "answer": "7.4, much closer to the 5% nominal level than the asymptotic rate of 14.2"
+    },
+    {
+      "question": "What is the wild bootstrap coverage at T=100 with rho=0.5?",
+      "answer": "94.2"
+    },
+    {
+      "question": "How many bootstrap replications are used?",
+      "answer": "999"
+    },
+    {
+      "question": "What is the long-run variance for the AR(1) DGP with rho=0.7?",
+      "answer": "11.11"
+    },
+    {
+      "question": "What is the MA coefficient in DGP 3?",
+      "answer": "0.5"
+    },
+    {
+      "question": "What is the slope parameter under the null across all DGPs?",
+      "answer": "0.5"
+    },
+    {
+      "question": "What does the bandwidth M_T control in the HAC estimator?",
+      "answer": "The truncation point: autocovariances at lag |j| > M_T receive zero weight"
+    },
+    {
+      "question": "What is the Bartlett kernel value at u=0.5?",
+      "answer": "0.5"
+    },
+    {
+      "question": "What is the weight on autocovariance at lag j in the Newey-West formula?",
+      "answer": "1 - j/(M_T + 1)"
+    },
+    {
+      "question": "What conditions on bandwidth M_T ensure HAC consistency?",
+      "answer": "M_T -> infinity and M_T / T^(1/2) -> 0"
+    },
+    {
+      "question": "What does the kernel characteristic exponent q determine?",
+      "answer": "The rate at which bias decays with bandwidth: bias = O(M_T^{-2q})"
+    }
+  ]
+}

@@ -1,0 +1,5001 @@
+{
+  "paper_id": "02",
+  "field": "labor",
+  "title": "Minimum Wages and Employment: A Natural Experiment from the New Jersey--Pennsylvania Border",
+  "journal_style": "working_paper",
+  "target_pages": 55,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro",
+      "level": 1
+    },
+    {
+      "title": "Institutional Background",
+      "label": "sec:background",
+      "level": 1
+    },
+    {
+      "title": "Minimum Wage Legislation",
+      "label": "sec:background-mw",
+      "level": 2
+    },
+    {
+      "title": "New Jersey Labor Market",
+      "label": "sec:background-nj",
+      "level": 2
+    },
+    {
+      "title": "Theoretical Framework",
+      "label": "sec:theory",
+      "level": 1
+    },
+    {
+      "title": "Data",
+      "label": "sec:data",
+      "level": 1
+    },
+    {
+      "title": "Establishment Survey Data",
+      "label": "sec:data-survey",
+      "level": 2
+    },
+    {
+      "title": "Outcome Variables",
+      "label": "sec:data-outcomes",
+      "level": 2
+    },
+    {
+      "title": "Sample Construction",
+      "label": "sec:data-sample",
+      "level": 2
+    },
+    {
+      "title": "Empirical Strategy",
+      "label": "sec:empirical",
+      "level": 1
+    },
+    {
+      "title": "Difference-in-Differences Design",
+      "label": "sec:empirical-did",
+      "level": 2
+    },
+    {
+      "title": "Identification Assumptions",
+      "label": "sec:empirical-id",
+      "level": 2
+    },
+    {
+      "title": "Results",
+      "label": "sec:results",
+      "level": 1
+    },
+    {
+      "title": "Main Employment Effects",
+      "label": "sec:results-main",
+      "level": 2
+    },
+    {
+      "title": "Event Study",
+      "label": "sec:results-event",
+      "level": 2
+    },
+    {
+      "title": "Heterogeneity",
+      "label": "sec:results-hetero",
+      "level": 2
+    },
+    {
+      "title": "Robustness",
+      "label": "sec:robustness",
+      "level": 1
+    },
+    {
+      "title": "Placebo Tests",
+      "label": "sec:robust-placebo",
+      "level": 2
+    },
+    {
+      "title": "Alternative Control Groups",
+      "label": "sec:robust-control",
+      "level": 2
+    },
+    {
+      "title": "Dose-Response and Trends",
+      "label": "sec:robust-dose",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Proofs",
+      "label": "sec:appendix-a",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Additional Results",
+      "label": "sec:appendix-b",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Data Construction",
+      "label": "sec:appendix-c",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "summary-stats",
+      "caption": "Summary Statistics",
+      "label": "tab:summary-stats",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.62",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.21",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "6.21",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.84",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "3.91",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "8.47",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "34.2",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "12.1",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "80.0",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.22",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "6.18",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.83",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "3.88",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "8.44",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "33.9",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "12.3",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "80.0",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean employment rate in the treatment group?",
+          "answer": "0.62"
+        },
+        {
+          "question": "What is the mean log weekly earnings in the control group?",
+          "answer": "6.18"
+        },
+        {
+          "question": "What is the standard deviation of hours worked in the treatment group?",
+          "answer": "12.1"
+        }
+      ]
+    },
+    {
+      "table_id": "balance-table",
+      "caption": "Pre-Treatment Balance",
+      "label": "tab:balance",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Employment Rate (1989)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.60",
+          "role": "data",
+          "variable": "Employment Rate (1989)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.01",
+          "role": "data",
+          "variable": "Employment Rate (1989)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.43",
+          "role": "data",
+          "variable": "Employment Rate (1989)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Employment Rate (1989)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Employment Rate (1989)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Employment Rate (1989)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate (1989)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "6.19",
+          "role": "data",
+          "variable": "Log Earnings (1989)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "6.17",
+          "role": "data",
+          "variable": "Log Earnings (1989)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.02",
+          "role": "data",
+          "variable": "Log Earnings (1989)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Log Earnings (1989)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Log Earnings (1989)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Log Earnings (1989)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Log Earnings (1989)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Earnings (1989)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.24",
+          "role": "data",
+          "variable": "Industry Share Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.25",
+          "role": "data",
+          "variable": "Industry Share Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "Industry Share Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.72",
+          "role": "data",
+          "variable": "Industry Share Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Industry Share Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.03)",
+          "role": "data",
+          "variable": "Industry Share Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.02)",
+          "role": "data",
+          "variable": "Industry Share Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Industry Share Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "142.3",
+          "role": "data",
+          "variable": "Population (1000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "138.7",
+          "role": "data",
+          "variable": "Population (1000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "3.6",
+          "role": "data",
+          "variable": "Population (1000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.58",
+          "role": "data",
+          "variable": "Population (1000s)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(8.1)",
+          "role": "data",
+          "variable": "Population (1000s)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(7.9)",
+          "role": "data",
+          "variable": "Population (1000s)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(5.2)",
+          "role": "data",
+          "variable": "Population (1000s)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Population (1000s)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the pre-period employment rate difference between treatment and control?",
+          "answer": "0.01"
+        },
+        {
+          "question": "What is the p-value for the earnings balance test?",
+          "answer": "0.61"
+        }
+      ]
+    },
+    {
+      "table_id": "did-main",
+      "caption": "Difference-in-Differences: Main Results",
+      "label": "tab:did-main",
+      "gold_cells": [
+        {
+          "row": 2,
+          "col": 1,
+          "text": "-0.008",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "-0.007",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "-0.009",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "-0.008",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "-0.031***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "-0.030***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "-0.029***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "-0.030***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.041***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.038***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.040***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.039***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.012",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.010",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.011",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.010",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.017)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "-0.048***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "-0.045***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "-0.044***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "-0.046***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.062***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "0.058***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "0.061***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "0.059***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "(0.015)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "(0.017)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "0.041",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "0.312",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "0.348",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 21,
+          "col": 4,
+          "text": "0.371",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 22,
+          "col": 1,
+          "text": "421",
+          "role": "summary",
+          "label": "Counties"
+        },
+        {
+          "row": 22,
+          "col": 2,
+          "text": "421",
+          "role": "summary",
+          "label": "Counties"
+        },
+        {
+          "row": 22,
+          "col": 3,
+          "text": "421",
+          "role": "summary",
+          "label": "Counties"
+        },
+        {
+          "row": 22,
+          "col": 4,
+          "text": "421",
+          "role": "summary",
+          "label": "Counties"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the DiD coefficient on employment in column 2?",
+          "answer": "0.038"
+        },
+        {
+          "question": "What is the DiD coefficient on log earnings in column 1?",
+          "answer": "0.062"
+        },
+        {
+          "question": "How many counties are in the sample?",
+          "answer": "421"
+        },
+        {
+          "question": "What is the R-squared in column 4 for the employment panel?",
+          "answer": "0.371"
+        }
+      ]
+    },
+    {
+      "table_id": "event-study-coefficients",
+      "caption": "Event Study Coefficients",
+      "label": "tab:event-study",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.004",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.006",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.21",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.003",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.31)",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.002",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.003",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.14",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.001",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.007)",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.021**",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.029**",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.82**",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.018**",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.36)",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.038***",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.051***",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1.42***",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.033***",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.41)",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.040***",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.058***",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "1.61***",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.035***",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.017)",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.44)",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "0.039***",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "0.056***",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "1.57***",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "0.034***",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "(0.017)",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "(0.44)",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.037***",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "0.053***",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "1.49***",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.032***",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "(0.46)",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the event study employment coefficient at tau=+1?",
+          "answer": "0.038"
+        },
+        {
+          "question": "What is the pre-trend coefficient at tau=-3 for log earnings?",
+          "answer": "0.006"
+        },
+        {
+          "question": "What is the employment coefficient at tau=+2?",
+          "answer": "0.040"
+        }
+      ]
+    },
+    {
+      "table_id": "triple-diff",
+      "caption": "Triple Difference Estimates",
+      "label": "tab:triple-diff",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.038***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.036***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.037***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.036***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.018**",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.017**",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.019**",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.018**",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "33680",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "33680",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "33680",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "33680",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.298",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.341",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.372",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.389",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the triple difference coefficient in column 2?",
+          "answer": "0.017"
+        },
+        {
+          "question": "What is the base DiD coefficient in column 1 of the triple difference?",
+          "answer": "0.038"
+        }
+      ]
+    },
+    {
+      "table_id": "did-main",
+      "caption": "Difference-in-Differences: Main Results",
+      "label": "tab:did-main",
+      "gold_cells": [
+        {
+          "row": 2,
+          "col": 1,
+          "text": "-0.008",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "-0.007",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "-0.009",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "-0.008",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "-0.031***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "-0.030***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "-0.029***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "-0.030***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.041***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.038***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.040***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.039***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.012",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.010",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.011",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.010",
+          "role": "data",
+          "variable": "Treatment",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.017)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Treatment",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "-0.048***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "-0.045***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "-0.044***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "-0.046***",
+          "role": "data",
+          "variable": "Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Post",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.062***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "0.058***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "0.061***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "0.059***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "(0.015)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "(0.017)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "0.041",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "0.312",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "0.348",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 21,
+          "col": 4,
+          "text": "0.371",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 22,
+          "col": 1,
+          "text": "421",
+          "role": "summary",
+          "label": "Counties"
+        },
+        {
+          "row": 22,
+          "col": 2,
+          "text": "421",
+          "role": "summary",
+          "label": "Counties"
+        },
+        {
+          "row": 22,
+          "col": 3,
+          "text": "421",
+          "role": "summary",
+          "label": "Counties"
+        },
+        {
+          "row": 22,
+          "col": 4,
+          "text": "421",
+          "role": "summary",
+          "label": "Counties"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the DiD coefficient on employment in column 2?",
+          "answer": "0.038"
+        },
+        {
+          "question": "What is the DiD coefficient on log earnings in column 1?",
+          "answer": "0.062"
+        },
+        {
+          "question": "How many counties are in the sample?",
+          "answer": "421"
+        },
+        {
+          "question": "What is the R-squared in column 4 for the employment panel?",
+          "answer": "0.371"
+        }
+      ]
+    },
+    {
+      "table_id": "event-study-coefficients",
+      "caption": "Event Study Coefficients",
+      "label": "tab:event-study",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.004",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.006",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.21",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.003",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.31)",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "$\\tau = -3$",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.002",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.003",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.14",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.001",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.007)",
+          "role": "data",
+          "variable": "$\\tau = -2$",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.021**",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.029**",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.82**",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.018**",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.36)",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "$\\tau = 0$",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.038***",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.051***",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1.42***",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.033***",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.41)",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "$\\tau = +1$",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.040***",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.058***",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "1.61***",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.035***",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.017)",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.44)",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "$\\tau = +2$",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "0.039***",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "0.056***",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "1.57***",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "0.034***",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "(0.017)",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "(0.44)",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "$\\tau = +3$",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.037***",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "0.053***",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "1.49***",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.032***",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "(0.46)",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "$\\tau = +4$",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the event study employment coefficient at tau=+1?",
+          "answer": "0.038"
+        },
+        {
+          "question": "What is the pre-trend coefficient at tau=-3 for log earnings?",
+          "answer": "0.006"
+        },
+        {
+          "question": "What is the employment coefficient at tau=+2?",
+          "answer": "0.040"
+        }
+      ]
+    },
+    {
+      "table_id": "subgroup-male",
+      "caption": "Subgroup Analysis: Male Workers",
+      "label": "tab:subgroup-male",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.033***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.031***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.032***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.030***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.038",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.298",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.334",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.352",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the male employment DiD coefficient in column 2?",
+          "answer": "0.031"
+        }
+      ]
+    },
+    {
+      "table_id": "subgroup-female",
+      "caption": "Subgroup Analysis: Female Workers",
+      "label": "tab:subgroup-female",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.051***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.047***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.049***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.048***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.044",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.321",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.358",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.374",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the female employment DiD coefficient in column 2?",
+          "answer": "0.047"
+        },
+        {
+          "question": "What is the R-squared for females in column 4?",
+          "answer": "0.374"
+        }
+      ]
+    },
+    {
+      "table_id": "placebo-outcomes",
+      "caption": "Placebo Tests: Unaffected Outcomes",
+      "label": "tab:placebo",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.003",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.002",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.001",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.004",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is the retail employment placebo coefficient statistically significant?",
+          "answer": "No, coefficient is 0.003 with SE (0.008)"
+        },
+        {
+          "question": "What is the placebo coefficient for construction employment?",
+          "answer": "-0.002"
+        }
+      ]
+    },
+    {
+      "table_id": "alternative-control-groups",
+      "caption": "Alternative Control Groups",
+      "label": "tab:alt-control",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.038***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.035***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.040***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.039***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "29610",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "14280",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.312",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.309",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.318",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.315",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the DiD coefficient using all PA counties as control?",
+          "answer": "0.035"
+        },
+        {
+          "question": "What is the DiD coefficient using the synthetic control group?",
+          "answer": "0.040"
+        }
+      ]
+    },
+    {
+      "table_id": "dose-response",
+      "caption": "Dose-Response: Exposure to Minimum Wage Increase",
+      "label": "tab:dose-response",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.071***",
+          "role": "data",
+          "variable": "Exposure $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.068***",
+          "role": "data",
+          "variable": "Exposure $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.069***",
+          "role": "data",
+          "variable": "Exposure $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.067***",
+          "role": "data",
+          "variable": "Exposure $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Exposure $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Exposure $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.020)",
+          "role": "data",
+          "variable": "Exposure $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Exposure $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.044",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.319",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.354",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.376",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the dose-response coefficient in column 1?",
+          "answer": "0.071"
+        },
+        {
+          "question": "What is the dose-response coefficient in column 2?",
+          "answer": "0.068"
+        }
+      ]
+    },
+    {
+      "table_id": "state-trends",
+      "caption": "Robustness: State-Specific Linear Trends",
+      "label": "tab:state-trends",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.036***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.034***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.035***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.034***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.312",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.387",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.419",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.441",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the DiD coefficient with state-specific trends in column 2?",
+          "answer": "0.034"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-proofs-labor",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-full-controls",
+      "caption": "Appendix: Full Specification with Extended Controls",
+      "label": "tab:appendix-full",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.039***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.037***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.038***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.037***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.142***",
+          "role": "data",
+          "variable": "Share College",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.138***",
+          "role": "data",
+          "variable": "Share College",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.135***",
+          "role": "data",
+          "variable": "Share College",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.131***",
+          "role": "data",
+          "variable": "Share College",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Share College",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.030)",
+          "role": "data",
+          "variable": "Share College",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.032)",
+          "role": "data",
+          "variable": "Share College",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Share College",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-0.089**",
+          "role": "data",
+          "variable": "Share Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-0.082**",
+          "role": "data",
+          "variable": "Share Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.085**",
+          "role": "data",
+          "variable": "Share Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.079**",
+          "role": "data",
+          "variable": "Share Manufacturing",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Share Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.036)",
+          "role": "data",
+          "variable": "Share Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.039)",
+          "role": "data",
+          "variable": "Share Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.037)",
+          "role": "data",
+          "variable": "Share Manufacturing",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.058***",
+          "role": "data",
+          "variable": "Population (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.054***",
+          "role": "data",
+          "variable": "Population (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.055***",
+          "role": "data",
+          "variable": "Population (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.052***",
+          "role": "data",
+          "variable": "Population (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Population (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.013)",
+          "role": "data",
+          "variable": "Population (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.015)",
+          "role": "data",
+          "variable": "Population (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Population (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "16840",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.371",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "0.441",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "0.403",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "0.468",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the coefficient on share manufacturing in column 1?",
+          "answer": "-0.089"
+        },
+        {
+          "question": "What is the R-squared in column 4 of the full specification?",
+          "answer": "0.468"
+        }
+      ]
+    },
+    {
+      "table_id": "triple-diff",
+      "caption": "Triple Difference Estimates",
+      "label": "tab:triple-diff",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.038***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.036***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.037***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.036***",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.018**",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.017**",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.019**",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.018**",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Treatment $\\times$ Post $\\times$ Low-Wage",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "33680",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "33680",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "33680",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "33680",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.298",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.341",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.372",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.389",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the triple difference coefficient in column 2?",
+          "answer": "0.017"
+        },
+        {
+          "question": "What is the base DiD coefficient in column 1 of the triple difference?",
+          "answer": "0.038"
+        }
+      ]
+    },
+    {
+      "table_id": "summary-stats",
+      "caption": "Summary Statistics",
+      "label": "tab:summary-stats",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.62",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.21",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "6.21",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.84",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "3.91",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "8.47",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "34.2",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "12.1",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "80.0",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.22",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Employment Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "6.18",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.83",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "3.88",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "8.44",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Weekly Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "33.9",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "12.3",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "80.0",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Hours Worked",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "8420",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean employment rate in the treatment group?",
+          "answer": "0.62"
+        },
+        {
+          "question": "What is the mean log weekly earnings in the control group?",
+          "answer": "6.18"
+        },
+        {
+          "question": "What is the standard deviation of hours worked in the treatment group?",
+          "answer": "12.1"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "did-model",
+      "label": "eq:did",
+      "latex": "Y_{it} = \\alpha + \\beta_1 \\text{Treat}_i + \\beta_2 \\text{Post}_t + \\delta (\\text{Treat}_i \\times \\text{Post}_t) + \\varepsilon_{it}",
+      "description": "Canonical difference-in-differences model.",
+      "qa": [
+        {
+          "question": "What does delta identify in the DiD model?",
+          "answer": "The average treatment effect on the treated (ATT)"
+        }
+      ]
+    },
+    {
+      "eq_id": "parallel-trends",
+      "label": "eq:parallel-trends",
+      "latex": "E[Y_{it}(0) - Y_{it-1}(0) \\mid \\text{Treat}_i = 1] = E[Y_{it}(0) - Y_{it-1}(0) \\mid \\text{Treat}_i = 0]",
+      "description": "Parallel trends assumption: counterfactual trends are equal across groups.",
+      "qa": []
+    },
+    {
+      "eq_id": "att-definition",
+      "label": "eq:att",
+      "latex": "\\text{ATT} = \\mathcal{L}^{-1}\\!\\left\\{\\sum_{i=1}^{N}\\sum_{t=1}^{T}\\left\\lfloor Y_{it}(1) - Y_{it}(0)\\right\\rfloor \\cdot \\mathbf{1}[\\text{Treat}_i = 1, t \\geq t^*]\\right\\}\\bigg/N_1",
+      "description": "Average treatment effect on the treated (ATT) in potential outcomes notation.",
+      "qa": []
+    },
+    {
+      "eq_id": "twfe",
+      "label": "eq:twfe",
+      "latex": "Y_{it} = \\alpha_i + \\lambda_t + \\delta D_{it} + X_{it}'\\gamma + \\varepsilon_{it}",
+      "description": "Two-way fixed effects specification with unit and time fixed effects.",
+      "qa": []
+    },
+    {
+      "eq_id": "event-study",
+      "label": "eq:event-study",
+      "latex": "Y_{it} = \\alpha_i + \\lambda_t + \\sum_{i=1}^{N}\\sum_{\\tau \\neq -1} \\delta_\\tau \\cdot \\mathbf{1}[\\text{Treat}_i = 1, t - t^* = \\tau] + X_{it}'\\gamma + \\varepsilon_{it}, \\quad M = \\left\\lfloor 4\\!\\left(\\frac{T}{100}\\right)^{2/9}\\right\\rfloor",
+      "description": "Event study specification with leads and lags around treatment date $t^*$.",
+      "qa": []
+    },
+    {
+      "eq_id": "triple-diff-eq",
+      "label": "eq:triple-diff",
+      "latex": "\\mathcal{L}(\\delta) = \\sum_{i=1}^{N}\\sum_{g=1}^{G}\\sum_{t=1}^{T}\\left(Y_{igt} - \\alpha_{ig} - \\lambda_{gt} - \\mu_{it} - \\delta (\\text{Treat}_i \\times \\text{Post}_t \\times G_g)\\right)^2",
+      "description": "Triple difference model with group $g$, county $i$, and time $t$ dimensions.",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main identification strategy in this paper?",
+      "answer": "Difference-in-differences exploiting NJ's 1992 minimum wage increase with PA border counties as control"
+    },
+    {
+      "question": "What is the main finding for employment?",
+      "answer": "Employment rates increased by 3.8 percentage points in the treatment group"
+    },
+    {
+      "question": "What is the main finding for earnings?",
+      "answer": "Log weekly earnings increased by 6.2 percent"
+    },
+    {
+      "question": "Do pre-trend tests support the parallel trends assumption?",
+      "answer": "Yes, event study coefficients at tau=-3 and tau=-2 are small and insignificant"
+    },
+    {
+      "question": "What is the sample period?",
+      "answer": "1990 to 1996"
+    },
+    {
+      "question": "What is the mean employment rate in the treatment group?",
+      "answer": "0.62"
+    },
+    {
+      "question": "What is the mean log weekly earnings in the control group?",
+      "answer": "6.18"
+    },
+    {
+      "question": "What is the standard deviation of hours worked in the treatment group?",
+      "answer": "12.1"
+    },
+    {
+      "question": "What is the pre-period employment rate difference between treatment and control?",
+      "answer": "0.01"
+    },
+    {
+      "question": "What is the p-value for the earnings balance test?",
+      "answer": "0.61"
+    },
+    {
+      "question": "What is the DiD coefficient on employment in column 2?",
+      "answer": "0.038"
+    },
+    {
+      "question": "What is the DiD coefficient on log earnings in column 1?",
+      "answer": "0.062"
+    },
+    {
+      "question": "How many counties are in the sample?",
+      "answer": "421"
+    },
+    {
+      "question": "What is the R-squared in column 4 for the employment panel?",
+      "answer": "0.371"
+    },
+    {
+      "question": "What is the event study employment coefficient at tau=+1?",
+      "answer": "0.038"
+    },
+    {
+      "question": "What is the pre-trend coefficient at tau=-3 for log earnings?",
+      "answer": "0.006"
+    },
+    {
+      "question": "What is the employment coefficient at tau=+2?",
+      "answer": "0.040"
+    },
+    {
+      "question": "What is the triple difference coefficient in column 2?",
+      "answer": "0.017"
+    },
+    {
+      "question": "What is the base DiD coefficient in column 1 of the triple difference?",
+      "answer": "0.038"
+    },
+    {
+      "question": "What is the DiD coefficient on employment in column 2?",
+      "answer": "0.038"
+    },
+    {
+      "question": "What is the DiD coefficient on log earnings in column 1?",
+      "answer": "0.062"
+    },
+    {
+      "question": "How many counties are in the sample?",
+      "answer": "421"
+    },
+    {
+      "question": "What is the R-squared in column 4 for the employment panel?",
+      "answer": "0.371"
+    },
+    {
+      "question": "What is the event study employment coefficient at tau=+1?",
+      "answer": "0.038"
+    },
+    {
+      "question": "What is the pre-trend coefficient at tau=-3 for log earnings?",
+      "answer": "0.006"
+    },
+    {
+      "question": "What is the employment coefficient at tau=+2?",
+      "answer": "0.040"
+    },
+    {
+      "question": "What is the male employment DiD coefficient in column 2?",
+      "answer": "0.031"
+    },
+    {
+      "question": "What is the female employment DiD coefficient in column 2?",
+      "answer": "0.047"
+    },
+    {
+      "question": "What is the R-squared for females in column 4?",
+      "answer": "0.374"
+    },
+    {
+      "question": "Is the retail employment placebo coefficient statistically significant?",
+      "answer": "No, coefficient is 0.003 with SE (0.008)"
+    },
+    {
+      "question": "What is the placebo coefficient for construction employment?",
+      "answer": "-0.002"
+    },
+    {
+      "question": "What is the DiD coefficient using all PA counties as control?",
+      "answer": "0.035"
+    },
+    {
+      "question": "What is the DiD coefficient using the synthetic control group?",
+      "answer": "0.040"
+    },
+    {
+      "question": "What is the dose-response coefficient in column 1?",
+      "answer": "0.071"
+    },
+    {
+      "question": "What is the dose-response coefficient in column 2?",
+      "answer": "0.068"
+    },
+    {
+      "question": "What is the DiD coefficient with state-specific trends in column 2?",
+      "answer": "0.034"
+    },
+    {
+      "question": "What is the coefficient on share manufacturing in column 1?",
+      "answer": "-0.089"
+    },
+    {
+      "question": "What is the R-squared in column 4 of the full specification?",
+      "answer": "0.468"
+    },
+    {
+      "question": "What is the triple difference coefficient in column 2?",
+      "answer": "0.017"
+    },
+    {
+      "question": "What is the base DiD coefficient in column 1 of the triple difference?",
+      "answer": "0.038"
+    },
+    {
+      "question": "What is the mean employment rate in the treatment group?",
+      "answer": "0.62"
+    },
+    {
+      "question": "What is the mean log weekly earnings in the control group?",
+      "answer": "6.18"
+    },
+    {
+      "question": "What is the standard deviation of hours worked in the treatment group?",
+      "answer": "12.1"
+    },
+    {
+      "question": "What does delta identify in the DiD model?",
+      "answer": "The average treatment effect on the treated (ATT)"
+    }
+  ]
+}

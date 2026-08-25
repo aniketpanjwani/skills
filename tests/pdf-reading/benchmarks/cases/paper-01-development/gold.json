@@ -1,0 +1,1882 @@
+{
+  "paper_id": "01",
+  "field": "development",
+  "title": "Institutions and Economic Development: Evidence from Colonial Settlement Patterns",
+  "journal_style": "aer",
+  "target_pages": 45,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro",
+      "level": 1
+    },
+    {
+      "title": "Historical Background",
+      "label": "sec:history",
+      "level": 1
+    },
+    {
+      "title": "European Colonization and Institutional Origins",
+      "label": "sec:colonization",
+      "level": 2
+    },
+    {
+      "title": "Settler Mortality and Colony Type",
+      "label": "sec:mortality",
+      "level": 2
+    },
+    {
+      "title": "Theoretical Framework",
+      "label": "sec:model",
+      "level": 1
+    },
+    {
+      "title": "Production and Institutions",
+      "label": "sec:production",
+      "level": 2
+    },
+    {
+      "title": "Settlement Patterns and Institutional Choice",
+      "label": "sec:settlement",
+      "level": 2
+    },
+    {
+      "title": "Data and Measurement",
+      "label": "sec:data",
+      "level": 1
+    },
+    {
+      "title": "Data Sources",
+      "label": "sec:data-sources",
+      "level": 2
+    },
+    {
+      "title": "Variable Definitions",
+      "label": "sec:variables",
+      "level": 2
+    },
+    {
+      "title": "Sample Construction",
+      "label": "sec:sample",
+      "level": 2
+    },
+    {
+      "title": "Empirical Strategy",
+      "label": "sec:empirical",
+      "level": 1
+    },
+    {
+      "title": "Identification",
+      "label": "sec:identification",
+      "level": 2
+    },
+    {
+      "title": "Threats to Validity",
+      "label": "sec:threats",
+      "level": 2
+    },
+    {
+      "title": "Results",
+      "label": "sec:results",
+      "level": 1
+    },
+    {
+      "title": "OLS Estimates",
+      "label": "sec:ols",
+      "level": 2
+    },
+    {
+      "title": "IV Estimates",
+      "label": "sec:iv",
+      "level": 2
+    },
+    {
+      "title": "Reduced-Form Evidence",
+      "label": "sec:reduced",
+      "level": 2
+    },
+    {
+      "title": "Robustness and Extensions",
+      "label": "sec:robustness",
+      "level": 1
+    },
+    {
+      "title": "Alternative Specifications",
+      "label": "sec:alt-specs",
+      "level": 2
+    },
+    {
+      "title": "Mechanisms",
+      "label": "sec:mechanisms",
+      "level": 2
+    },
+    {
+      "title": "Heterogeneity",
+      "label": "sec:heterogeneity",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Proofs of Theoretical Results",
+      "label": "sec:appendix-proofs",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Additional Empirical Results",
+      "label": "sec:appendix-empirical",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Data Construction Details",
+      "label": "sec:appendix-data",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "summary-stats",
+      "caption": "Summary Statistics",
+      "label": "tab:summary-stats",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "64",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP), 1995",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "8.05",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP), 1995",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "1.07",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP), 1995",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "5.63",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP), 1995",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 5,
+          "text": "10.22",
+          "role": "data",
+          "variable": "Log GDP per capita (PPP), 1995",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "64",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "6.52",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.75",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "3.50",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "10.00",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "64",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "4.68",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "1.22",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "2.15",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "7.99",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "64",
+          "role": "data",
+          "variable": "Latitude (absolute value)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.16",
+          "role": "data",
+          "variable": "Latitude (absolute value)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.13",
+          "role": "data",
+          "variable": "Latitude (absolute value)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Latitude (absolute value)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "0.67",
+          "role": "data",
+          "variable": "Latitude (absolute value)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "64",
+          "role": "data",
+          "variable": "Africa dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.44",
+          "role": "data",
+          "variable": "Africa dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.50",
+          "role": "data",
+          "variable": "Africa dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Africa dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Africa dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "64",
+          "role": "data",
+          "variable": "Asia dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.16",
+          "role": "data",
+          "variable": "Asia dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.37",
+          "role": "data",
+          "variable": "Asia dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Asia dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Asia dummy",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "How many observations are in the sample?",
+          "answer": "64"
+        },
+        {
+          "question": "What is the mean log GDP per capita?",
+          "answer": "8.05"
+        }
+      ]
+    },
+    {
+      "table_id": "balance",
+      "caption": "Balance of Covariates Across High and Low Settler Mortality Countries",
+      "label": "tab:balance",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "0.22",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "0.11",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "0.11",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "0.03",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.19",
+          "role": "data",
+          "variable": "Africa dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.69",
+          "role": "data",
+          "variable": "Africa dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.50",
+          "role": "data",
+          "variable": "Africa dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Africa dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "0.22",
+          "role": "data",
+          "variable": "Asia dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.09",
+          "role": "data",
+          "variable": "Asia dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.13",
+          "role": "data",
+          "variable": "Asia dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.11",
+          "role": "data",
+          "variable": "Asia dummy",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "4.51",
+          "role": "data",
+          "variable": "Population density, 1500",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "6.20",
+          "role": "data",
+          "variable": "Population density, 1500",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-1.69",
+          "role": "data",
+          "variable": "Population density, 1500",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.38",
+          "role": "data",
+          "variable": "Population density, 1500",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.53",
+          "role": "data",
+          "variable": "British legal origin",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.47",
+          "role": "data",
+          "variable": "British legal origin",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.06",
+          "role": "data",
+          "variable": "British legal origin",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.64",
+          "role": "data",
+          "variable": "British legal origin",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is the Africa dummy balanced across groups?",
+          "answer": "No, p-value is 0.00"
+        }
+      ]
+    },
+    {
+      "table_id": "ols-results",
+      "caption": "OLS Estimates: Institutions and Economic Development",
+      "label": "tab:ols-results",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.52***",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.47***",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.43***",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.39***",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.06)",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.07)",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.89**",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.72*",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Latitude",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.41)",
+          "role": "data",
+          "variable": "Latitude",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.43)",
+          "role": "data",
+          "variable": "Latitude",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.42)",
+          "role": "data",
+          "variable": "Latitude",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.54",
+          "role": "summary",
+          "label": "$R^2$"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.57",
+          "role": "summary",
+          "label": "$R^2$"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.62",
+          "role": "summary",
+          "label": "$R^2$"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.64",
+          "role": "summary",
+          "label": "$R^2$"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the OLS coefficient on institutions in column 1?",
+          "answer": "0.52"
+        },
+        {
+          "question": "What is the R-squared in the most saturated specification (column 4)?",
+          "answer": "0.64"
+        }
+      ]
+    },
+    {
+      "table_id": "iv-results",
+      "caption": "IV Estimates: Effect of Institutions on Income",
+      "label": "tab:iv-results",
+      "gold_cells": [
+        {
+          "row": 2,
+          "col": 1,
+          "text": "0.94***",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "1.01***",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.98***",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.87***",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "(0.16)",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "(0.19)",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "(0.21)",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "(0.15)",
+          "role": "data",
+          "variable": "Average protection against expropriation",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.38",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.29",
+          "role": "data",
+          "variable": "Latitude",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Latitude",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.31)",
+          "role": "data",
+          "variable": "Latitude",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.33)",
+          "role": "data",
+          "variable": "Latitude",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "Latitude",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "-0.61***",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "-0.54***",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "-0.49***",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "-0.58***",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.13)",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.12)",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.13)",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "22.1",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "20.3",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "12.2",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "19.7",
+          "role": "summary",
+          "label": "First-stage F"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV coefficient on institutions in column 1?",
+          "answer": "0.94"
+        },
+        {
+          "question": "What is the first-stage F-statistic in column 3?",
+          "answer": "12.2"
+        },
+        {
+          "question": "Is the first-stage F above 10 in all columns?",
+          "answer": "Yes"
+        },
+        {
+          "question": "What is the first-stage coefficient on log settler mortality in column 1?",
+          "answer": "-0.61"
+        }
+      ]
+    },
+    {
+      "table_id": "reduced-form",
+      "caption": "Reduced-Form Estimates: Settler Mortality and Income",
+      "label": "tab:reduced-form",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.57***",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.54***",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.48***",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.10)",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.11)",
+          "role": "data",
+          "variable": "Log settler mortality",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.31",
+          "role": "summary",
+          "label": "$R^2$"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.35",
+          "role": "summary",
+          "label": "$R^2$"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.42",
+          "role": "summary",
+          "label": "$R^2$"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the reduced-form effect of settler mortality on income?",
+          "answer": "-0.57 in the baseline specification"
+        }
+      ]
+    },
+    {
+      "table_id": "robustness",
+      "caption": "Robustness of IV Estimates to Alternative Specifications",
+      "label": "tab:robustness",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.94***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.99***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.10***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.81***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "0.76***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.16)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.22)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.25)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.17)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(0.19)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "36",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "60",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "22.1",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "11.4",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "15.8",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "18.3",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "16.9",
+          "role": "summary",
+          "label": "First-stage F"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does excluding Africa weaken the result?",
+          "answer": "No, coefficient increases to 0.99"
+        },
+        {
+          "question": "What is the smallest first-stage F across robustness checks?",
+          "answer": "11.4 (No Africa)"
+        }
+      ]
+    },
+    {
+      "table_id": "mechanisms",
+      "caption": "Mechanisms: Institutions and Intermediate Outcomes",
+      "label": "tab:mechanisms",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "2.31**",
+          "role": "data",
+          "variable": "Avg. protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "0.78***",
+          "role": "data",
+          "variable": "Avg. protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "0.42",
+          "role": "data",
+          "variable": "Avg. protection against expropriation",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "(1.04)",
+          "role": "data",
+          "variable": "Avg. protection against expropriation",
+          "is_stderr": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "Avg. protection against expropriation",
+          "is_stderr": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "(0.31)",
+          "role": "data",
+          "variable": "Avg. protection against expropriation",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "22.1",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "22.1",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "22.1",
+          "role": "summary",
+          "label": "First-stage F"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is the effect of institutions on trade openness statistically significant?",
+          "answer": "No, the coefficient is 0.42 with a standard error of 0.31"
+        },
+        {
+          "question": "Which mechanism channel has the largest coefficient?",
+          "answer": "Investment rate (2.31)"
+        }
+      ]
+    },
+    {
+      "table_id": "heterogeneity",
+      "caption": "Heterogeneity: Effect of Institutions by Region",
+      "label": "tab:heterogeneity",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.82***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.91***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.22)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.25)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "1.12***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "1.05***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.23)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.20)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "28",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "28",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "36",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "36",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "9.8",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "8.5",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "14.3",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "13.1",
+          "role": "summary",
+          "label": "First-stage F"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is the first-stage F above 10 for all African sub-samples?",
+          "answer": "No, columns 1-2 have F-statistics of 9.8 and 8.5, both below 10"
+        },
+        {
+          "question": "Is the effect of institutions larger in Africa or non-Africa?",
+          "answer": "Larger in non-Africa (1.12 vs 0.82 in the baseline specifications)"
+        }
+      ]
+    },
+    {
+      "table_id": "proofs-block",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-alt-mortality",
+      "caption": "IV Estimates Using Alternative Mortality Data Sources",
+      "label": "tab:appendix-a",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.88***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.94***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.91***",
+          "role": "data",
+          "variable": "Institutions",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.19)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.16)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "Institutions",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "51",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "64",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "58",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "14.2",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "22.1",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "17.6",
+          "role": "summary",
+          "label": "First-stage F"
+        }
+      ],
+      "qa": []
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "main",
+      "label": "eq:main",
+      "latex": "\\log y_i = \\hat{\\mu} + \\hat{\\alpha} R_i + X_i'\\bar{\\gamma} + \\tilde{\\varepsilon}_i, \\quad \\frac{\\partial^2 \\mathcal{L}}{\\partial \\alpha \\partial \\gamma} = \\mathbb{E}\\left[\\frac{\\partial \\hat{\\varepsilon}_i}{\\partial \\alpha} \\cdot X_i'\\right]",
+      "description": "Main estimating equation (second stage)",
+      "qa": [
+        {
+          "question": "What is the main estimating equation?",
+          "answer": "log(y_i) = mu + alpha*R_i + X_i'*gamma + epsilon_i"
+        }
+      ]
+    },
+    {
+      "eq_id": "first-stage",
+      "label": "eq:first-stage",
+      "latex": "R_i = \\zeta + \\pi M_i + X_i'\\delta + \\nu_i",
+      "description": "First-stage equation",
+      "qa": [
+        {
+          "question": "What is the instrument in the first stage?",
+          "answer": "M_i (log settler mortality)"
+        }
+      ]
+    },
+    {
+      "eq_id": "exclusion",
+      "label": "eq:exclusion",
+      "latex": "\\text{Cov}(M_i, \\varepsilon_i \\mid X_i) = 0",
+      "description": "Exclusion restriction",
+      "qa": []
+    },
+    {
+      "eq_id": "wald",
+      "label": "eq:wald",
+      "latex": "\\hat{\\alpha}_{IV} = \\frac{\\text{Cov}(y_i, M_i)}{\\text{Cov}(R_i, M_i)}, \\quad \\mathbb{E}\\left[\\hat{\\alpha}_{IV}\\right] = \\alpha + \\frac{\\mathbb{E}\\left[\\bar{Z}'\\tilde{\\varepsilon}\\right]}{\\mathbb{E}\\left[\\bar{Z}' X\\right]}",
+      "description": "Wald estimator for just-identified IV",
+      "qa": []
+    },
+    {
+      "eq_id": "reduced-form",
+      "label": "eq:reduced-form",
+      "latex": "\\log y_i = \\kappa + \\beta M_i + X_i'\\lambda + u_i",
+      "description": "Reduced-form equation",
+      "qa": []
+    },
+    {
+      "eq_id": "production",
+      "label": "eq:production",
+      "latex": "Y_i = A_i K_i^{\\alpha} H_i^{1-\\alpha}",
+      "description": "Aggregate production function",
+      "qa": []
+    },
+    {
+      "eq_id": "institutions-channel",
+      "label": "eq:institutions",
+      "latex": "A_i = A(R_i, G_i) = \\bar{A} \\cdot R_i^{\\hat{\\theta}} \\cdot G_i^{\\hat{\\phi}}, \\quad \\frac{\\partial^2 A_i}{\\partial R_i \\partial G_i} = \\hat{\\theta}\\hat{\\phi}\\,\\bar{A}\\, R_i^{\\hat{\\theta}-1} G_i^{\\hat{\\phi}-1}",
+      "description": "Institutions as determinant of TFP",
+      "qa": []
+    },
+    {
+      "eq_id": "settler-model",
+      "label": "eq:settler",
+      "latex": "R_i = \\begin{cases} R^{extractive} & \\text{if } M_i > \\bar{M} \\\\ R^{inclusive} & \\text{if } M_i \\leq \\bar{M} \\end{cases}",
+      "description": "Settler mortality determines institutional type",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main identification strategy?",
+      "answer": "IV using log European settler mortality as instrument for institutional quality"
+    },
+    {
+      "question": "How many former colonies are in the sample?",
+      "answer": "64"
+    },
+    {
+      "question": "What is the main finding?",
+      "answer": "Institutions have a large causal effect on income; IV coefficient is 0.94"
+    },
+    {
+      "question": "How many observations are in the sample?",
+      "answer": "64"
+    },
+    {
+      "question": "What is the mean log GDP per capita?",
+      "answer": "8.05"
+    },
+    {
+      "question": "Is the Africa dummy balanced across groups?",
+      "answer": "No, p-value is 0.00"
+    },
+    {
+      "question": "What is the OLS coefficient on institutions in column 1?",
+      "answer": "0.52"
+    },
+    {
+      "question": "What is the R-squared in the most saturated specification (column 4)?",
+      "answer": "0.64"
+    },
+    {
+      "question": "What is the IV coefficient on institutions in column 1?",
+      "answer": "0.94"
+    },
+    {
+      "question": "What is the first-stage F-statistic in column 3?",
+      "answer": "12.2"
+    },
+    {
+      "question": "Is the first-stage F above 10 in all columns?",
+      "answer": "Yes"
+    },
+    {
+      "question": "What is the first-stage coefficient on log settler mortality in column 1?",
+      "answer": "-0.61"
+    },
+    {
+      "question": "What is the reduced-form effect of settler mortality on income?",
+      "answer": "-0.57 in the baseline specification"
+    },
+    {
+      "question": "Does excluding Africa weaken the result?",
+      "answer": "No, coefficient increases to 0.99"
+    },
+    {
+      "question": "What is the smallest first-stage F across robustness checks?",
+      "answer": "11.4 (No Africa)"
+    },
+    {
+      "question": "Is the effect of institutions on trade openness statistically significant?",
+      "answer": "No, the coefficient is 0.42 with a standard error of 0.31"
+    },
+    {
+      "question": "Which mechanism channel has the largest coefficient?",
+      "answer": "Investment rate (2.31)"
+    },
+    {
+      "question": "Is the first-stage F above 10 for all African sub-samples?",
+      "answer": "No, columns 1-2 have F-statistics of 9.8 and 8.5, both below 10"
+    },
+    {
+      "question": "Is the effect of institutions larger in Africa or non-Africa?",
+      "answer": "Larger in non-Africa (1.12 vs 0.82 in the baseline specifications)"
+    },
+    {
+      "question": "What is the main estimating equation?",
+      "answer": "log(y_i) = mu + alpha*R_i + X_i'*gamma + epsilon_i"
+    },
+    {
+      "question": "What is the instrument in the first stage?",
+      "answer": "M_i (log settler mortality)"
+    }
+  ]
+}

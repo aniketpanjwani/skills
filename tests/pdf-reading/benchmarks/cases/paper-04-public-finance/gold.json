@@ -1,0 +1,3302 @@
+{
+  "paper_id": "04",
+  "field": "public-finance",
+  "title": "Where You Grow Up Matters: Childhood Exposure Effects and the Role of Place",
+  "journal_style": "qje",
+  "target_pages": 85,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-pf",
+      "level": 1
+    },
+    {
+      "title": "Institutional Background",
+      "label": "sec:bg-pf",
+      "level": 1
+    },
+    {
+      "title": "Theoretical Framework",
+      "label": "sec:theory-pf",
+      "level": 1
+    },
+    {
+      "title": "Movers Model",
+      "label": "sec:theory-movers",
+      "level": 2
+    },
+    {
+      "title": "Selection and Identification",
+      "label": "sec:theory-id",
+      "level": 2
+    },
+    {
+      "title": "Variance Decomposition",
+      "label": "sec:theory-decomp",
+      "level": 2
+    },
+    {
+      "title": "Data",
+      "label": "sec:data-pf",
+      "level": 1
+    },
+    {
+      "title": "Tax Records",
+      "label": "sec:data-tax",
+      "level": 2
+    },
+    {
+      "title": "Geographic Definitions",
+      "label": "sec:data-geo",
+      "level": 2
+    },
+    {
+      "title": "Outcome Measures",
+      "label": "sec:data-outcomes",
+      "level": 2
+    },
+    {
+      "title": "Empirical Strategy",
+      "label": "sec:empirical-pf",
+      "level": 1
+    },
+    {
+      "title": "Identification Strategy",
+      "label": "sec:empirical-id-pf",
+      "level": 2
+    },
+    {
+      "title": "Estimation of Place Effects",
+      "label": "sec:empirical-pe",
+      "level": 2
+    },
+    {
+      "title": "Bias Correction",
+      "label": "sec:empirical-bc",
+      "level": 2
+    },
+    {
+      "title": "Main Results",
+      "label": "sec:results-pf",
+      "level": 1
+    },
+    {
+      "title": "Average Exposure Effects",
+      "label": "sec:results-avg",
+      "level": 2
+    },
+    {
+      "title": "Age Gradient",
+      "label": "sec:results-age",
+      "level": 2
+    },
+    {
+      "title": "Event Study Evidence",
+      "label": "sec:results-event",
+      "level": 2
+    },
+    {
+      "title": "Variance Decomposition Results",
+      "label": "sec:results-decomp",
+      "level": 2
+    },
+    {
+      "title": "Mechanisms",
+      "label": "sec:mechanisms-pf",
+      "level": 1
+    },
+    {
+      "title": "Schools",
+      "label": "sec:mech-schools",
+      "level": 2
+    },
+    {
+      "title": "Peers",
+      "label": "sec:mech-peers",
+      "level": 2
+    },
+    {
+      "title": "Crime and Safety",
+      "label": "sec:mech-crime",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-pf",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Identification Proofs",
+      "label": "sec:appendix-a-pf",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Additional Results",
+      "label": "sec:appendix-b-pf",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Geographic Detail",
+      "label": "sec:appendix-c-pf",
+      "level": 1
+    },
+    {
+      "title": "Appendix D: Selection Analysis",
+      "label": "sec:appendix-d-pf",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "summary-stats-pf",
+      "caption": "Summary Statistics",
+      "label": "tab:summary-stats-pf",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "49.8",
+          "role": "data",
+          "variable": "Earnings Rank (0-100)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "28.3",
+          "role": "data",
+          "variable": "Earnings Rank (0-100)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "27.1",
+          "role": "data",
+          "variable": "Earnings Rank (0-100)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "73.2",
+          "role": "data",
+          "variable": "Earnings Rank (0-100)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings Rank (0-100)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings Rank (0-100)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings Rank (0-100)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings Rank (0-100)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "10.21",
+          "role": "data",
+          "variable": "Log Annual Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.04",
+          "role": "data",
+          "variable": "Log Annual Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "9.58",
+          "role": "data",
+          "variable": "Log Annual Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "10.91",
+          "role": "data",
+          "variable": "Log Annual Earnings",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Annual Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Annual Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Annual Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Annual Earnings",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.412",
+          "role": "data",
+          "variable": "College Attendance (0/1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.492",
+          "role": "data",
+          "variable": "College Attendance (0/1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.00",
+          "role": "data",
+          "variable": "College Attendance (0/1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1.00",
+          "role": "data",
+          "variable": "College Attendance (0/1)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "College Attendance (0/1)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "College Attendance (0/1)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "College Attendance (0/1)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "College Attendance (0/1)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "9.4",
+          "role": "data",
+          "variable": "Age at Move",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "5.1",
+          "role": "data",
+          "variable": "Age at Move",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "5.0",
+          "role": "data",
+          "variable": "Age at Move",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "13.0",
+          "role": "data",
+          "variable": "Age at Move",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Age at Move",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Age at Move",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Age at Move",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Age at Move",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "52.1",
+          "role": "data",
+          "variable": "Destination CZ Rank",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "26.8",
+          "role": "data",
+          "variable": "Destination CZ Rank",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "30.2",
+          "role": "data",
+          "variable": "Destination CZ Rank",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "74.9",
+          "role": "data",
+          "variable": "Destination CZ Rank",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Destination CZ Rank",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Destination CZ Rank",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Destination CZ Rank",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Destination CZ Rank",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "48.7",
+          "role": "data",
+          "variable": "Origin CZ Rank",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "27.2",
+          "role": "data",
+          "variable": "Origin CZ Rank",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "26.8",
+          "role": "data",
+          "variable": "Origin CZ Rank",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "71.4",
+          "role": "data",
+          "variable": "Origin CZ Rank",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Origin CZ Rank",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Origin CZ Rank",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Origin CZ Rank",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Origin CZ Rank",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "3,048,412",
+          "role": "summary",
+          "label": "Observations (children)"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "3,048,412",
+          "role": "summary",
+          "label": "Observations (children)"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "3,048,412",
+          "role": "summary",
+          "label": "Observations (children)"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "3,048,412",
+          "role": "summary",
+          "label": "Observations (children)"
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations (movers)"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations (movers)"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations (movers)"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations (movers)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean earnings rank at age 26?",
+          "answer": "49.8"
+        },
+        {
+          "question": "How many mover observations are in the sample?",
+          "answer": "412,819"
+        },
+        {
+          "question": "What is the mean age at move?",
+          "answer": "9.4"
+        }
+      ]
+    },
+    {
+      "table_id": "summary-by-destination",
+      "caption": "Summary Statistics by Destination CZ Quintile",
+      "label": "tab:summary-dest",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "38.2",
+          "role": "data",
+          "variable": "Earnings Rank at 26",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "44.1",
+          "role": "data",
+          "variable": "Earnings Rank at 26",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "49.8",
+          "role": "data",
+          "variable": "Earnings Rank at 26",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "55.7",
+          "role": "data",
+          "variable": "Earnings Rank at 26",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "62.4",
+          "role": "data",
+          "variable": "Earnings Rank at 26",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings Rank at 26",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings Rank at 26",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings Rank at 26",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings Rank at 26",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings Rank at 26",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.312",
+          "role": "data",
+          "variable": "College Attendance",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.362",
+          "role": "data",
+          "variable": "College Attendance",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.412",
+          "role": "data",
+          "variable": "College Attendance",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.464",
+          "role": "data",
+          "variable": "College Attendance",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "0.521",
+          "role": "data",
+          "variable": "College Attendance",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "College Attendance",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "College Attendance",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "College Attendance",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "College Attendance",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "College Attendance",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.421",
+          "role": "data",
+          "variable": "Married at 30",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.452",
+          "role": "data",
+          "variable": "Married at 30",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.482",
+          "role": "data",
+          "variable": "Married at 30",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.511",
+          "role": "data",
+          "variable": "Married at 30",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "0.544",
+          "role": "data",
+          "variable": "Married at 30",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Married at 30",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Married at 30",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Married at 30",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Married at 30",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Married at 30",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "82,564",
+          "role": "summary",
+          "label": "Movers"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "82,564",
+          "role": "summary",
+          "label": "Movers"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "82,564",
+          "role": "summary",
+          "label": "Movers"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "82,564",
+          "role": "summary",
+          "label": "Movers"
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "82,564",
+          "role": "summary",
+          "label": "Movers"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean earnings rank for movers to the best quintile destination?",
+          "answer": "62.4"
+        },
+        {
+          "question": "What is the college attendance rate for movers to the worst quintile destination?",
+          "answer": "0.312"
+        }
+      ]
+    },
+    {
+      "table_id": "movers-first-stage",
+      "caption": "First Stage: Predicted Outcomes for Permanent Residents",
+      "label": "tab:movers-fs",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.641***",
+          "role": "data",
+          "variable": "Predicted Rank (Dest. Perm. Residents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.612***",
+          "role": "data",
+          "variable": "Predicted Rank (Dest. Perm. Residents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.598***",
+          "role": "data",
+          "variable": "Predicted Rank (Dest. Perm. Residents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.584***",
+          "role": "data",
+          "variable": "Predicted Rank (Dest. Perm. Residents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Predicted Rank (Dest. Perm. Residents)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.039)",
+          "role": "data",
+          "variable": "Predicted Rank (Dest. Perm. Residents)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Predicted Rank (Dest. Perm. Residents)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Predicted Rank (Dest. Perm. Residents)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "243.1",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "258.4",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "241.8",
+          "role": "summary",
+          "label": "F-statistic"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "236.2",
+          "role": "summary",
+          "label": "F-statistic"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the first-stage coefficient in column 2?",
+          "answer": "0.612"
+        },
+        {
+          "question": "What is the first-stage F-statistic in column 1?",
+          "answer": "243.1"
+        }
+      ]
+    },
+    {
+      "table_id": "exposure-effects-main",
+      "caption": "Main Exposure Effects Estimates",
+      "label": "tab:exposure-main",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.291***",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.394***",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.381***",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.372***",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.039)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.037)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.312",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV exposure effect in column 2?",
+          "answer": "0.394"
+        },
+        {
+          "question": "What is the OLS exposure effect in column 1?",
+          "answer": "0.291"
+        },
+        {
+          "question": "What is the IV exposure effect in column 4?",
+          "answer": "0.372"
+        }
+      ]
+    },
+    {
+      "table_id": "exposure-by-age",
+      "caption": "Exposure Effects by Age at Move",
+      "label": "tab:exposure-age",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.452***",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.381***",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.284***",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.118***",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.059)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.029)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "98,412",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "124,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "118,348",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "71,240",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the place effect for children moving at age 0-5?",
+          "answer": "0.452"
+        },
+        {
+          "question": "What is the place effect for children moving at age 16-19?",
+          "answer": "0.118"
+        }
+      ]
+    },
+    {
+      "table_id": "childhood-exposure",
+      "caption": "Childhood Exposure Gradient",
+      "label": "tab:childhood-exp",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.024***",
+          "role": "data",
+          "variable": "Years in Destination $\\times$ Dest. Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.023***",
+          "role": "data",
+          "variable": "Years in Destination $\\times$ Dest. Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.022***",
+          "role": "data",
+          "variable": "Years in Destination $\\times$ Dest. Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.021***",
+          "role": "data",
+          "variable": "Years in Destination $\\times$ Dest. Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Years in Destination $\\times$ Dest. Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Years in Destination $\\times$ Dest. Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Years in Destination $\\times$ Dest. Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Years in Destination $\\times$ Dest. Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.081**",
+          "role": "data",
+          "variable": "Years in Destination",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.078**",
+          "role": "data",
+          "variable": "Years in Destination",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.079**",
+          "role": "data",
+          "variable": "Years in Destination",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.075**",
+          "role": "data",
+          "variable": "Years in Destination",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Years in Destination",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.036)",
+          "role": "data",
+          "variable": "Years in Destination",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Years in Destination",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.037)",
+          "role": "data",
+          "variable": "Years in Destination",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the childhood exposure gradient coefficient in column 1?",
+          "answer": "0.024"
+        },
+        {
+          "question": "What is the childhood exposure gradient coefficient in column 4?",
+          "answer": "0.021"
+        }
+      ]
+    },
+    {
+      "table_id": "event-study-moves",
+      "caption": "Event Study Around Family Moves",
+      "label": "tab:event-moves",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.002",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Indicator",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.001",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Indicator",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.019***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Indicator",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.034***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Indicator",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Indicator",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Indicator",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.006)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Indicator",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Indicator",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is there evidence of pre-move sorting at t-2?",
+          "answer": "No, coefficient is 0.001 with SE (0.003)"
+        }
+      ]
+    },
+    {
+      "table_id": "origin-fixed-effects",
+      "caption": "Origin vs. Destination Fixed Effects Decomposition",
+      "label": "tab:origin-fe",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Share of Variance (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "21.3",
+          "role": "data",
+          "variable": "Share of Variance (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "31.2",
+          "role": "data",
+          "variable": "Share of Variance (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "68.8",
+          "role": "data",
+          "variable": "Share of Variance (\\%)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Share of Variance (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Share of Variance (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Share of Variance (\\%)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Share of Variance (\\%)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What share of variance is explained by destination fixed effects alone?",
+          "answer": "21.3"
+        },
+        {
+          "question": "What share of variance is explained by origin and destination together?",
+          "answer": "31.2"
+        }
+      ]
+    },
+    {
+      "table_id": "destination-characteristics",
+      "caption": "Place Effects and Destination Characteristics",
+      "label": "tab:dest-chars",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.218***",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.189***",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.194***",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.181***",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.039)",
+          "role": "data",
+          "variable": "School Quality Index",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.142***",
+          "role": "data",
+          "variable": "Social Capital Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.124***",
+          "role": "data",
+          "variable": "Social Capital Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.131***",
+          "role": "data",
+          "variable": "Social Capital Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.118***",
+          "role": "data",
+          "variable": "Social Capital Index",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.031)",
+          "role": "data",
+          "variable": "Social Capital Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Social Capital Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.033)",
+          "role": "data",
+          "variable": "Social Capital Index",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.030)",
+          "role": "data",
+          "variable": "Social Capital Index",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-0.089***",
+          "role": "data",
+          "variable": "Crime Rate (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-0.081***",
+          "role": "data",
+          "variable": "Crime Rate (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.085***",
+          "role": "data",
+          "variable": "Crime Rate (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.078***",
+          "role": "data",
+          "variable": "Crime Rate (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Crime Rate (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Crime Rate (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.021)",
+          "role": "data",
+          "variable": "Crime Rate (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Crime Rate (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.421",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.491",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.458",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.521",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the correlation between school quality and place effects in column 1?",
+          "answer": "0.218"
+        },
+        {
+          "question": "What is the correlation between crime rate and place effects in column 2?",
+          "answer": "-0.081"
+        }
+      ]
+    },
+    {
+      "table_id": "correlates-of-place-effects",
+      "caption": "Correlates of Place Effects",
+      "label": "tab:correlates",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-4.812***",
+          "role": "data",
+          "variable": "Income Segregation (Theil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-4.219***",
+          "role": "data",
+          "variable": "Income Segregation (Theil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-4.381***",
+          "role": "data",
+          "variable": "Income Segregation (Theil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-4.018***",
+          "role": "data",
+          "variable": "Income Segregation (Theil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.841)",
+          "role": "data",
+          "variable": "Income Segregation (Theil)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.781)",
+          "role": "data",
+          "variable": "Income Segregation (Theil)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.862)",
+          "role": "data",
+          "variable": "Income Segregation (Theil)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.811)",
+          "role": "data",
+          "variable": "Income Segregation (Theil)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.641***",
+          "role": "data",
+          "variable": "Upward Mobility (p25 parents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.598***",
+          "role": "data",
+          "variable": "Upward Mobility (p25 parents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.612***",
+          "role": "data",
+          "variable": "Upward Mobility (p25 parents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.581***",
+          "role": "data",
+          "variable": "Upward Mobility (p25 parents)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.081)",
+          "role": "data",
+          "variable": "Upward Mobility (p25 parents)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.075)",
+          "role": "data",
+          "variable": "Upward Mobility (p25 parents)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.084)",
+          "role": "data",
+          "variable": "Upward Mobility (p25 parents)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.079)",
+          "role": "data",
+          "variable": "Upward Mobility (p25 parents)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-8.142***",
+          "role": "data",
+          "variable": "Single Parent Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-7.481***",
+          "role": "data",
+          "variable": "Single Parent Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-7.812***",
+          "role": "data",
+          "variable": "Single Parent Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-7.214***",
+          "role": "data",
+          "variable": "Single Parent Share",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(1.241)",
+          "role": "data",
+          "variable": "Single Parent Share",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(1.181)",
+          "role": "data",
+          "variable": "Single Parent Share",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(1.298)",
+          "role": "data",
+          "variable": "Single Parent Share",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(1.218)",
+          "role": "data",
+          "variable": "Single Parent Share",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "722",
+          "role": "summary",
+          "label": "CZs"
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.481",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.541",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.512",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.568",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the correlation between income segregation and place effects in column 1?",
+          "answer": "-4.812"
+        },
+        {
+          "question": "What is the correlation between single parent share and place effects in column 2?",
+          "answer": "-7.481"
+        }
+      ]
+    },
+    {
+      "table_id": "mechanisms-schools",
+      "caption": "Mechanisms: School Quality",
+      "label": "tab:mech-schools",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.441***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (High)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.418***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (High)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (High)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.401***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (High)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (High)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.055)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (High)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (High)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.057)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (High)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.312***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.291***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.284***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.274***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.046)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.043)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ School Quality (Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the place effect for high school quality destinations in column 1?",
+          "answer": "0.441"
+        },
+        {
+          "question": "What is the place effect for low school quality destinations in column 2?",
+          "answer": "0.291"
+        }
+      ]
+    },
+    {
+      "table_id": "mechanisms-peers",
+      "caption": "Mechanisms: Peer Effects",
+      "label": "tab:mech-peers",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.421***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (High)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.398***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (High)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.394***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (High)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.382***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (High)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.054)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (High)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (High)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.057)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (High)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.053)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (High)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.341***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.321***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.315***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.308***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (Low)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.047)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.045)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.050)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.046)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Peer Income (Low)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the place effect for high peer income destinations in column 2?",
+          "answer": "0.398"
+        }
+      ]
+    },
+    {
+      "table_id": "mechanisms-crime",
+      "caption": "Mechanisms: Crime and Safety",
+      "label": "tab:mech-crime",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Low Crime",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.389***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Low Crime",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.382***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Low Crime",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.371***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Low Crime",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.052)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Low Crime",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.049)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Low Crime",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.054)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Low Crime",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ Low Crime",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.328***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ High Crime",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.308***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ High Crime",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.301***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ High Crime",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.292***",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ High Crime",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.045)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ High Crime",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ High Crime",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.047)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ High Crime",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Dest. Effect $\\times$ High Crime",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "412,819",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the place effect for low crime destinations in column 1?",
+          "answer": "0.412"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-proofs-pf",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "geographic-variation",
+      "caption": "Geographic Variation in Place Effects",
+      "label": "tab:geo-var",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "52.4",
+          "role": "data",
+          "variable": "Mean Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "49.1",
+          "role": "data",
+          "variable": "Mean Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "46.8",
+          "role": "data",
+          "variable": "Mean Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "53.2",
+          "role": "data",
+          "variable": "Mean Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Mean Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Mean Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Mean Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Mean Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "12.1",
+          "role": "data",
+          "variable": "Standard Deviation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "13.4",
+          "role": "data",
+          "variable": "Standard Deviation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "14.8",
+          "role": "data",
+          "variable": "Standard Deviation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "11.9",
+          "role": "data",
+          "variable": "Standard Deviation",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Standard Deviation",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Standard Deviation",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Standard Deviation",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Standard Deviation",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "28.4",
+          "role": "data",
+          "variable": "90th-10th Percentile Range",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "31.2",
+          "role": "data",
+          "variable": "90th-10th Percentile Range",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "34.1",
+          "role": "data",
+          "variable": "90th-10th Percentile Range",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "27.8",
+          "role": "data",
+          "variable": "90th-10th Percentile Range",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "90th-10th Percentile Range",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "90th-10th Percentile Range",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "90th-10th Percentile Range",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "90th-10th Percentile Range",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Which region has the highest mean place effect?",
+          "answer": "West, with mean 53.2"
+        },
+        {
+          "question": "Which region has the largest 90th-10th percentile range?",
+          "answer": "South, with range 34.1"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-selection",
+      "caption": "Appendix: Selection on Observables Tests",
+      "label": "tab:appendix-selection",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.018**",
+          "role": "data",
+          "variable": "Parent Income (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.012",
+          "role": "data",
+          "variable": "Parent Income (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.009",
+          "role": "data",
+          "variable": "Parent Income (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.007",
+          "role": "data",
+          "variable": "Parent Income (log)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Parent Income (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Parent Income (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Parent Income (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Parent Income (log)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.014*",
+          "role": "data",
+          "variable": "Parent Education",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.009",
+          "role": "data",
+          "variable": "Parent Education",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.006",
+          "role": "data",
+          "variable": "Parent Education",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.004",
+          "role": "data",
+          "variable": "Parent Education",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Parent Education",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Parent Education",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Parent Education",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Parent Education",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is parental income predictive of destination choice in column 3?",
+          "answer": "No, coefficient is 0.009 and insignificant"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-attrition",
+      "caption": "Appendix: Attrition Analysis",
+      "label": "tab:appendix-attrition",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.002",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.001",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.001",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.001",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.003)",
+          "role": "data",
+          "variable": "Destination Place Effect",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does the destination place effect predict attrition from the sample?",
+          "answer": "No, coefficient is 0.002 and insignificant"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "movers-model",
+      "label": "eq:movers",
+      "latex": "Y_{i,t-1}^{(k)} = \\dot{\\alpha}_{o(i)} + \\ddot{\\psi}_{d(i)} + \\varepsilon_{i,t-1}^{(k)}, \\quad \\underset{\\psi}{\\operatorname{arg\\,max}}\\; \\mathcal{L}(\\psi | Y, X)",
+      "description": "Movers model: child outcome $Y_i$ decomposed into origin $o(i)$ and destination $d(i)$ effects.",
+      "qa": [
+        {
+          "question": "What does psi_d identify in the movers model?",
+          "answer": "The place effect of destination CZ d"
+        }
+      ]
+    },
+    {
+      "eq_id": "exposure-effects",
+      "label": "eq:exposure-pf",
+      "latex": "Y_i = \\alpha + \\beta \\cdot \\psi_{d(i)} + X_i'\\gamma + \\varepsilon_i",
+      "description": "Exposure effects regression: child outcome on destination place effect, conditional on origin.",
+      "qa": []
+    },
+    {
+      "eq_id": "place-fixed-effect",
+      "label": "eq:place-fe",
+      "latex": "\\psi_c = E[Y_i \\mid o(i) = c, \\text{perm. resident}] - \\bar{Y}",
+      "description": "Place fixed effect: demeaned mean outcome for permanent resident children in CZ $c$.",
+      "qa": []
+    },
+    {
+      "eq_id": "decomp-place",
+      "label": "eq:decomp-place",
+      "latex": "\\text{Var}(Y_{i,t-1}^{(k)}) = \\text{Var}(\\dot{\\alpha}_{o(i)}) + \\text{Var}(\\ddot{\\psi}_{d(i)}) + 2\\text{Cov}(\\dot{\\alpha}_{o(i)}, \\ddot{\\psi}_{d(i)}) + \\text{Var}(\\varepsilon_{i,t-1}^{(k)})",
+      "description": "Variance decomposition of child outcomes into origin, destination, and residual components.",
+      "qa": []
+    },
+    {
+      "eq_id": "childhood-gradient",
+      "label": "eq:childhood-gradient",
+      "latex": "Y_i = \\alpha + \\sum_a \\delta_a \\cdot \\mathbf{1}[\\text{Age at move} = a] \\cdot \\psi_{d(i)} + X_i'\\gamma + \\varepsilon_i",
+      "description": "Childhood exposure gradient: exposure effect varies by age at move $a$.",
+      "qa": []
+    },
+    {
+      "eq_id": "selection-equation",
+      "label": "eq:selection",
+      "latex": "D_{oc} = \\Pr(\\text{move to } c \\mid \\text{origin} = o) = f\\!\\left(\\dot{\\psi}_c - \\dot{\\psi}_o,\\; x_{i,t-1}^{(k)},\\; \\ddot{X}_{o}\\right)",
+      "description": "Selection equation: probability of moving from $o$ to $c$ depends on place effect differential.",
+      "qa": []
+    },
+    {
+      "eq_id": "chetty-hendren-estimator",
+      "label": "eq:ch-estimator",
+      "latex": "\\hat{\\\\beta}_{CH} = \\\\frac{\\\\sum_i (\\\\psi_{d(i)} - \\\\bar{\\\\psi}) \\\\cdot (Y_i - \\\\hat{\\\\alpha}_{o(i)})}{\\\\sum_i (\\\\psi_{d(i)} - \\\\bar{\\\\psi})^2}",
+      "description": "Chetty-Hendren estimator: IV estimator projecting residualized outcomes on place effects.",
+      "qa": []
+    },
+    {
+      "eq_id": "forecast-bias",
+      "label": "eq:forecast-bias",
+      "latex": "\\\\hat{\\\\beta}^{BC} = \\\\hat{\\\\beta} \\\\cdot \\\\left(1 - \\\\frac{\\\\text{Var}(\\\\hat{\\\\psi}_c - \\\\psi_c)}{\\\\text{Var}(\\\\hat{\\\\psi}_c)}\\\\right)^{-1}",
+      "description": "Forecast-bias correction: shrinkage correction for estimation error in place effects.",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main identification strategy?",
+      "answer": "Comparing siblings who moved at different ages to the same destination, exploiting variation in childhood exposure duration"
+    },
+    {
+      "question": "What is the main finding on childhood exposure?",
+      "answer": "Each additional year of exposure to a one-rank-better destination raises earnings rank by 0.024 ranks"
+    },
+    {
+      "question": "How does the exposure effect vary with age at move?",
+      "answer": "It declines from 0.452 for moves at age 0-5 to 0.118 for moves at age 16-19"
+    },
+    {
+      "question": "What is the IV estimate of the average place effect?",
+      "answer": "0.394 in the baseline specification"
+    },
+    {
+      "question": "How many children are in the total sample?",
+      "answer": "3,048,412"
+    },
+    {
+      "question": "What is the mean earnings rank at age 26?",
+      "answer": "49.8"
+    },
+    {
+      "question": "How many mover observations are in the sample?",
+      "answer": "412,819"
+    },
+    {
+      "question": "What is the mean age at move?",
+      "answer": "9.4"
+    },
+    {
+      "question": "What is the mean earnings rank for movers to the best quintile destination?",
+      "answer": "62.4"
+    },
+    {
+      "question": "What is the college attendance rate for movers to the worst quintile destination?",
+      "answer": "0.312"
+    },
+    {
+      "question": "What is the first-stage coefficient in column 2?",
+      "answer": "0.612"
+    },
+    {
+      "question": "What is the first-stage F-statistic in column 1?",
+      "answer": "243.1"
+    },
+    {
+      "question": "What is the IV exposure effect in column 2?",
+      "answer": "0.394"
+    },
+    {
+      "question": "What is the OLS exposure effect in column 1?",
+      "answer": "0.291"
+    },
+    {
+      "question": "What is the IV exposure effect in column 4?",
+      "answer": "0.372"
+    },
+    {
+      "question": "What is the place effect for children moving at age 0-5?",
+      "answer": "0.452"
+    },
+    {
+      "question": "What is the place effect for children moving at age 16-19?",
+      "answer": "0.118"
+    },
+    {
+      "question": "What is the childhood exposure gradient coefficient in column 1?",
+      "answer": "0.024"
+    },
+    {
+      "question": "What is the childhood exposure gradient coefficient in column 4?",
+      "answer": "0.021"
+    },
+    {
+      "question": "Is there evidence of pre-move sorting at t-2?",
+      "answer": "No, coefficient is 0.001 with SE (0.003)"
+    },
+    {
+      "question": "What share of variance is explained by destination fixed effects alone?",
+      "answer": "21.3"
+    },
+    {
+      "question": "What share of variance is explained by origin and destination together?",
+      "answer": "31.2"
+    },
+    {
+      "question": "What is the correlation between school quality and place effects in column 1?",
+      "answer": "0.218"
+    },
+    {
+      "question": "What is the correlation between crime rate and place effects in column 2?",
+      "answer": "-0.081"
+    },
+    {
+      "question": "What is the correlation between income segregation and place effects in column 1?",
+      "answer": "-4.812"
+    },
+    {
+      "question": "What is the correlation between single parent share and place effects in column 2?",
+      "answer": "-7.481"
+    },
+    {
+      "question": "What is the place effect for high school quality destinations in column 1?",
+      "answer": "0.441"
+    },
+    {
+      "question": "What is the place effect for low school quality destinations in column 2?",
+      "answer": "0.291"
+    },
+    {
+      "question": "What is the place effect for high peer income destinations in column 2?",
+      "answer": "0.398"
+    },
+    {
+      "question": "What is the place effect for low crime destinations in column 1?",
+      "answer": "0.412"
+    },
+    {
+      "question": "Which region has the highest mean place effect?",
+      "answer": "West, with mean 53.2"
+    },
+    {
+      "question": "Which region has the largest 90th-10th percentile range?",
+      "answer": "South, with range 34.1"
+    },
+    {
+      "question": "Is parental income predictive of destination choice in column 3?",
+      "answer": "No, coefficient is 0.009 and insignificant"
+    },
+    {
+      "question": "Does the destination place effect predict attrition from the sample?",
+      "answer": "No, coefficient is 0.002 and insignificant"
+    },
+    {
+      "question": "What does psi_d identify in the movers model?",
+      "answer": "The place effect of destination CZ d"
+    }
+  ]
+}

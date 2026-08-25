@@ -1,0 +1,5435 @@
+{
+  "paper_id": "13",
+  "field": "environmental",
+  "title": "Climate, Extremes, and Economic Activity: Evidence from Nonlinear Temperature Effects Across U.S. Counties",
+  "journal_style": "nber_wp",
+  "target_pages": 60,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-environ",
+      "level": 1
+    },
+    {
+      "title": "Data",
+      "label": "sec:data-environ",
+      "level": 1
+    },
+    {
+      "title": "County-Level Outcome Data",
+      "label": "sec:data-outcomes",
+      "level": 2
+    },
+    {
+      "title": "Weather Data Construction",
+      "label": "sec:data-weather",
+      "level": 2
+    },
+    {
+      "title": "Climate Projections",
+      "label": "sec:data-climate",
+      "level": 2
+    },
+    {
+      "title": "Empirical Strategy",
+      "label": "sec:empirical-environ",
+      "level": 1
+    },
+    {
+      "title": "Identifying Variation",
+      "label": "sec:id-variation",
+      "level": 2
+    },
+    {
+      "title": "Nonlinear Temperature Specification",
+      "label": "sec:nonlinear-spec",
+      "level": 2
+    },
+    {
+      "title": "Robustness to Trends",
+      "label": "sec:robust-trends",
+      "level": 2
+    },
+    {
+      "title": "Main Results",
+      "label": "sec:results-environ",
+      "level": 1
+    },
+    {
+      "title": "Mortality Effects",
+      "label": "sec:mortality-results",
+      "level": 2
+    },
+    {
+      "title": "Agricultural Effects",
+      "label": "sec:agriculture-results",
+      "level": 2
+    },
+    {
+      "title": "Energy Demand Effects",
+      "label": "sec:energy-results",
+      "level": 2
+    },
+    {
+      "title": "Robustness",
+      "label": "sec:robust-environ",
+      "level": 1
+    },
+    {
+      "title": "Functional Form Sensitivity",
+      "label": "sec:robust-form",
+      "level": 2
+    },
+    {
+      "title": "Alternative Fixed Effect Structures",
+      "label": "sec:robust-fe",
+      "level": 2
+    },
+    {
+      "title": "Adaptation",
+      "label": "sec:adaptation",
+      "level": 1
+    },
+    {
+      "title": "Temporal Adaptation",
+      "label": "sec:adapt-time",
+      "level": 2
+    },
+    {
+      "title": "Income-Mediated Adaptation",
+      "label": "sec:adapt-income",
+      "level": 2
+    },
+    {
+      "title": "Projected Damages",
+      "label": "sec:damages",
+      "level": 1
+    },
+    {
+      "title": "Sectoral Damage Estimates",
+      "label": "sec:sector-damages",
+      "level": 2
+    },
+    {
+      "title": "Aggregate Welfare Costs",
+      "label": "sec:welfare-costs",
+      "level": 2
+    },
+    {
+      "title": "Monte Carlo Projections",
+      "label": "sec:monte-carlo",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-environ",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Identification and Adaptation Theory",
+      "label": "sec:appendix-a-environ",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Weather Data and Validation",
+      "label": "sec:appendix-b-environ",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "county-summary",
+      "caption": "Summary Statistics: U.S. Counties 1968--2002",
+      "label": "tab:county-summary",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "891.4",
+          "role": "data",
+          "variable": "All-Cause Mortality Rate (per 100,000)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "184.2",
+          "role": "data",
+          "variable": "All-Cause Mortality Rate (per 100,000)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "671.2",
+          "role": "data",
+          "variable": "All-Cause Mortality Rate (per 100,000)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1,124.8",
+          "role": "data",
+          "variable": "All-Cause Mortality Rate (per 100,000)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "All-Cause Mortality Rate (per 100,000)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "All-Cause Mortality Rate (per 100,000)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "All-Cause Mortality Rate (per 100,000)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "All-Cause Mortality Rate (per 100,000)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "842.1",
+          "role": "data",
+          "variable": "Age-Adjusted Mortality Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "162.4",
+          "role": "data",
+          "variable": "Age-Adjusted Mortality Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "641.8",
+          "role": "data",
+          "variable": "Age-Adjusted Mortality Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "1,048.2",
+          "role": "data",
+          "variable": "Age-Adjusted Mortality Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Age-Adjusted Mortality Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Age-Adjusted Mortality Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Age-Adjusted Mortality Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Age-Adjusted Mortality Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "4.21",
+          "role": "data",
+          "variable": "Log Corn Yield (bu/acre)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.48",
+          "role": "data",
+          "variable": "Log Corn Yield (bu/acre)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "3.61",
+          "role": "data",
+          "variable": "Log Corn Yield (bu/acre)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "4.84",
+          "role": "data",
+          "variable": "Log Corn Yield (bu/acre)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Corn Yield (bu/acre)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Corn Yield (bu/acre)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Corn Yield (bu/acre)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Corn Yield (bu/acre)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "3.84",
+          "role": "data",
+          "variable": "Log Soybean Yield",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Log Soybean Yield",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "3.31",
+          "role": "data",
+          "variable": "Log Soybean Yield",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "4.41",
+          "role": "data",
+          "variable": "Log Soybean Yield",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Soybean Yield",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Soybean Yield",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Soybean Yield",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Soybean Yield",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "12.84",
+          "role": "data",
+          "variable": "Log Residential Energy (MMBtu)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.92",
+          "role": "data",
+          "variable": "Log Residential Energy (MMBtu)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "11.74",
+          "role": "data",
+          "variable": "Log Residential Energy (MMBtu)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "14.01",
+          "role": "data",
+          "variable": "Log Residential Energy (MMBtu)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Log Residential Energy (MMBtu)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Residential Energy (MMBtu)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Residential Energy (MMBtu)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Log Residential Energy (MMBtu)",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "54.8",
+          "role": "data",
+          "variable": "Annual Mean Temperature (\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "10.2",
+          "role": "data",
+          "variable": "Annual Mean Temperature (\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "42.1",
+          "role": "data",
+          "variable": "Annual Mean Temperature (\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "68.4",
+          "role": "data",
+          "variable": "Annual Mean Temperature (\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Mean Temperature (\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Mean Temperature (\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Mean Temperature (\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Mean Temperature (\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "38.4",
+          "role": "data",
+          "variable": "Annual Total Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "14.8",
+          "role": "data",
+          "variable": "Annual Total Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "20.1",
+          "role": "data",
+          "variable": "Annual Total Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "58.8",
+          "role": "data",
+          "variable": "Annual Total Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Total Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Total Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Total Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Total Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "241",
+          "role": "data",
+          "variable": "Degree Days $>$ 90\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "312",
+          "role": "data",
+          "variable": "Degree Days $>$ 90\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "8",
+          "role": "data",
+          "variable": "Degree Days $>$ 90\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "681",
+          "role": "data",
+          "variable": "Degree Days $>$ 90\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days $>$ 90\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days $>$ 90\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days $>$ 90\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days $>$ 90\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "1,841",
+          "role": "data",
+          "variable": "Degree Days 50--59\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "684",
+          "role": "data",
+          "variable": "Degree Days 50--59\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "948",
+          "role": "data",
+          "variable": "Degree Days 50--59\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "2,814",
+          "role": "data",
+          "variable": "Degree Days 50--59\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days 50--59\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days 50--59\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days 50--59\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days 50--59\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "814",
+          "role": "data",
+          "variable": "Degree Days $<$ 32\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "618",
+          "role": "data",
+          "variable": "Degree Days $<$ 32\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "41",
+          "role": "data",
+          "variable": "Degree Days $<$ 32\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "1,748",
+          "role": "data",
+          "variable": "Degree Days $<$ 32\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days $<$ 32\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days $<$ 32\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days $<$ 32\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 21,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Degree Days $<$ 32\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 22,
+          "col": 1,
+          "text": "3,066",
+          "role": "summary",
+          "label": "Counties"
+        },
+        {
+          "row": 22,
+          "col": 2,
+          "text": "3,066",
+          "role": "summary",
+          "label": "Counties"
+        },
+        {
+          "row": 22,
+          "col": 3,
+          "text": "3,066",
+          "role": "summary",
+          "label": "Counties"
+        },
+        {
+          "row": 22,
+          "col": 4,
+          "text": "3,066",
+          "role": "summary",
+          "label": "Counties"
+        },
+        {
+          "row": 23,
+          "col": 1,
+          "text": "35",
+          "role": "summary",
+          "label": "Years"
+        },
+        {
+          "row": 23,
+          "col": 2,
+          "text": "35",
+          "role": "summary",
+          "label": "Years"
+        },
+        {
+          "row": 23,
+          "col": 3,
+          "text": "35",
+          "role": "summary",
+          "label": "Years"
+        },
+        {
+          "row": 23,
+          "col": 4,
+          "text": "35",
+          "role": "summary",
+          "label": "Years"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean all-cause mortality rate?",
+          "answer": "891.4 per 100,000"
+        },
+        {
+          "question": "How many counties are in the sample?",
+          "answer": "3,066"
+        },
+        {
+          "question": "What is the mean annual degree days above 90F?",
+          "answer": "241"
+        },
+        {
+          "question": "What is the sample period?",
+          "answer": "1968--2002, 35 years"
+        }
+      ]
+    },
+    {
+      "table_id": "panel-fe",
+      "caption": "Panel Fixed Effects: Baseline Identification",
+      "label": "tab:panel-fe",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "3.841***",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.284***",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.841***",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.481***",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.284)",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.214)",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.194)",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.148)",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.841***",
+          "role": "data",
+          "variable": "Annual Precipitation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.284**",
+          "role": "data",
+          "variable": "Annual Precipitation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.214**",
+          "role": "data",
+          "variable": "Annual Precipitation",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.148*",
+          "role": "data",
+          "variable": "Annual Precipitation",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.148)",
+          "role": "data",
+          "variable": "Annual Precipitation",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.114)",
+          "role": "data",
+          "variable": "Annual Precipitation",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.098)",
+          "role": "data",
+          "variable": "Annual Precipitation",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.084)",
+          "role": "data",
+          "variable": "Annual Precipitation",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.241",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.814",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.784",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.892",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the preferred specification?",
+          "answer": "Column 4: both county FE and state-by-year FE"
+        },
+        {
+          "question": "What is the temperature coefficient in the preferred specification?",
+          "answer": "0.481"
+        },
+        {
+          "question": "How does the within R-squared change from OLS to the full FE specification?",
+          "answer": "From 0.241 (OLS) to 0.892 (county + state-year FE)"
+        }
+      ]
+    },
+    {
+      "table_id": "temp-bins-mortality",
+      "caption": "Nonlinear Temperature Effects on Mortality",
+      "label": "tab:temp-bins-mortality",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1.841***",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.612***",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "6.481***",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.284**",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.284)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.271)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.841)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.114)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.984***",
+          "role": "data",
+          "variable": "Days with $T \\in [10, 20)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.871***",
+          "role": "data",
+          "variable": "Days with $T \\in [10, 20)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "3.481***",
+          "role": "data",
+          "variable": "Days with $T \\in [10, 20)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.148*",
+          "role": "data",
+          "variable": "Days with $T \\in [10, 20)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Days with $T \\in [10, 20)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.176)",
+          "role": "data",
+          "variable": "Days with $T \\in [10, 20)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.584)",
+          "role": "data",
+          "variable": "Days with $T \\in [10, 20)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.084)",
+          "role": "data",
+          "variable": "Days with $T \\in [10, 20)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.512***",
+          "role": "data",
+          "variable": "Days with $T \\in [20, 32)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.448***",
+          "role": "data",
+          "variable": "Days with $T \\in [20, 32)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.841***",
+          "role": "data",
+          "variable": "Days with $T \\in [20, 32)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.084",
+          "role": "data",
+          "variable": "Days with $T \\in [20, 32)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.124)",
+          "role": "data",
+          "variable": "Days with $T \\in [20, 32)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.118)",
+          "role": "data",
+          "variable": "Days with $T \\in [20, 32)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.384)",
+          "role": "data",
+          "variable": "Days with $T \\in [20, 32)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Days with $T \\in [20, 32)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Days with $T \\in [32, 50)$\\textdegree F (omit.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Days with $T \\in [32, 50)$\\textdegree F (omit.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Days with $T \\in [32, 50)$\\textdegree F (omit.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Days with $T \\in [32, 50)$\\textdegree F (omit.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Days with $T \\in [32, 50)$\\textdegree F (omit.)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Days with $T \\in [32, 50)$\\textdegree F (omit.)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Days with $T \\in [32, 50)$\\textdegree F (omit.)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Days with $T \\in [32, 50)$\\textdegree F (omit.)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "-0.124",
+          "role": "data",
+          "variable": "Days with $T \\in [50, 60)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "-0.108",
+          "role": "data",
+          "variable": "Days with $T \\in [50, 60)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "-0.418",
+          "role": "data",
+          "variable": "Days with $T \\in [50, 60)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "-0.021",
+          "role": "data",
+          "variable": "Days with $T \\in [50, 60)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "Days with $T \\in [50, 60)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.090)",
+          "role": "data",
+          "variable": "Days with $T \\in [50, 60)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.314)",
+          "role": "data",
+          "variable": "Days with $T \\in [50, 60)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Days with $T \\in [50, 60)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "-0.241**",
+          "role": "data",
+          "variable": "Days with $T \\in [60, 70)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "-0.218**",
+          "role": "data",
+          "variable": "Days with $T \\in [60, 70)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "-0.814***",
+          "role": "data",
+          "variable": "Days with $T \\in [60, 70)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "-0.041",
+          "role": "data",
+          "variable": "Days with $T \\in [60, 70)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "(0.104)",
+          "role": "data",
+          "variable": "Days with $T \\in [60, 70)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "(0.099)",
+          "role": "data",
+          "variable": "Days with $T \\in [60, 70)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "(0.341)",
+          "role": "data",
+          "variable": "Days with $T \\in [60, 70)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Days with $T \\in [60, 70)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "-0.148",
+          "role": "data",
+          "variable": "Days with $T \\in [70, 80)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "-0.131",
+          "role": "data",
+          "variable": "Days with $T \\in [70, 80)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "-0.514*",
+          "role": "data",
+          "variable": "Days with $T \\in [70, 80)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "-0.028",
+          "role": "data",
+          "variable": "Days with $T \\in [70, 80)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "(0.098)",
+          "role": "data",
+          "variable": "Days with $T \\in [70, 80)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "Days with $T \\in [70, 80)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "(0.314)",
+          "role": "data",
+          "variable": "Days with $T \\in [70, 80)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "(0.046)",
+          "role": "data",
+          "variable": "Days with $T \\in [70, 80)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "0.281***",
+          "role": "data",
+          "variable": "Days with $T \\in [80, 90)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "0.248***",
+          "role": "data",
+          "variable": "Days with $T \\in [80, 90)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "0.981***",
+          "role": "data",
+          "variable": "Days with $T \\in [80, 90)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "0.048",
+          "role": "data",
+          "variable": "Days with $T \\in [80, 90)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "Days with $T \\in [80, 90)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "(0.090)",
+          "role": "data",
+          "variable": "Days with $T \\in [80, 90)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "(0.314)",
+          "role": "data",
+          "variable": "Days with $T \\in [80, 90)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Days with $T \\in [80, 90)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "1.241***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "1.084***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "4.281***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "0.214**",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "(0.175)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "(0.584)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "(0.084)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Annual Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "-0.284*",
+          "role": "data",
+          "variable": "Annual Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "-0.914**",
+          "role": "data",
+          "variable": "Annual Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "-0.048",
+          "role": "data",
+          "variable": "Annual Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "(0.154)",
+          "role": "data",
+          "variable": "Annual Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "(0.418)",
+          "role": "data",
+          "variable": "Annual Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Annual Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 24,
+          "col": 1,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 24,
+          "col": 2,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 24,
+          "col": 3,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 24,
+          "col": 4,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 25,
+          "col": 1,
+          "text": "0.892",
+          "role": "summary",
+          "label": "R-squared (within)"
+        },
+        {
+          "row": 25,
+          "col": 2,
+          "text": "0.908",
+          "role": "summary",
+          "label": "R-squared (within)"
+        },
+        {
+          "row": 25,
+          "col": 3,
+          "text": "0.884",
+          "role": "summary",
+          "label": "R-squared (within)"
+        },
+        {
+          "row": 25,
+          "col": 4,
+          "text": "0.841",
+          "role": "summary",
+          "label": "R-squared (within)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mortality effect of extreme hot days (>90F) in column 2?",
+          "answer": "1.084 deaths per 100,000"
+        },
+        {
+          "question": "What is the mortality effect of extreme cold days (<10F) on the elderly in column 3?",
+          "answer": "6.481 deaths per 100,000"
+        },
+        {
+          "question": "Which temperature bin is omitted as the baseline?",
+          "answer": "Days with temperature 32--50 degrees F"
+        },
+        {
+          "question": "What is the within R-squared in column 1?",
+          "answer": "0.892"
+        }
+      ]
+    },
+    {
+      "table_id": "temp-bins-agriculture",
+      "caption": "Nonlinear Temperature Effects on Agricultural Yields",
+      "label": "tab:temp-bins-agriculture",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.0062***",
+          "role": "data",
+          "variable": "Degree Days 8--29\\textdegree C (beneficial)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.0058***",
+          "role": "data",
+          "variable": "Degree Days 8--29\\textdegree C (beneficial)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.0071***",
+          "role": "data",
+          "variable": "Degree Days 8--29\\textdegree C (beneficial)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.0066***",
+          "role": "data",
+          "variable": "Degree Days 8--29\\textdegree C (beneficial)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.0008)",
+          "role": "data",
+          "variable": "Degree Days 8--29\\textdegree C (beneficial)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.0009)",
+          "role": "data",
+          "variable": "Degree Days 8--29\\textdegree C (beneficial)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.0009)",
+          "role": "data",
+          "variable": "Degree Days 8--29\\textdegree C (beneficial)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.0010)",
+          "role": "data",
+          "variable": "Degree Days 8--29\\textdegree C (beneficial)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.0184***",
+          "role": "data",
+          "variable": "Degree Days $>$ 29\\textdegree C (harmful)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.0171***",
+          "role": "data",
+          "variable": "Degree Days $>$ 29\\textdegree C (harmful)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.0214***",
+          "role": "data",
+          "variable": "Degree Days $>$ 29\\textdegree C (harmful)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.0198***",
+          "role": "data",
+          "variable": "Degree Days $>$ 29\\textdegree C (harmful)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.0018)",
+          "role": "data",
+          "variable": "Degree Days $>$ 29\\textdegree C (harmful)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.0019)",
+          "role": "data",
+          "variable": "Degree Days $>$ 29\\textdegree C (harmful)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.0021)",
+          "role": "data",
+          "variable": "Degree Days $>$ 29\\textdegree C (harmful)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.0022)",
+          "role": "data",
+          "variable": "Degree Days $>$ 29\\textdegree C (harmful)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.0312***",
+          "role": "data",
+          "variable": "Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.0284***",
+          "role": "data",
+          "variable": "Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.0281***",
+          "role": "data",
+          "variable": "Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.0258***",
+          "role": "data",
+          "variable": "Precipitation (inches)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.0041)",
+          "role": "data",
+          "variable": "Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.0044)",
+          "role": "data",
+          "variable": "Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.0046)",
+          "role": "data",
+          "variable": "Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.0049)",
+          "role": "data",
+          "variable": "Precipitation (inches)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.000214***",
+          "role": "data",
+          "variable": "Precipitation Squared",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.000198***",
+          "role": "data",
+          "variable": "Precipitation Squared",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.000194***",
+          "role": "data",
+          "variable": "Precipitation Squared",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-0.000181***",
+          "role": "data",
+          "variable": "Precipitation Squared",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.000028)",
+          "role": "data",
+          "variable": "Precipitation Squared",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.000030)",
+          "role": "data",
+          "variable": "Precipitation Squared",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.000031)",
+          "role": "data",
+          "variable": "Precipitation Squared",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.000033)",
+          "role": "data",
+          "variable": "Precipitation Squared",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "71,240",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "71,240",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "68,414",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "68,414",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.641",
+          "role": "summary",
+          "label": "R-squared (within)"
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "0.684",
+          "role": "summary",
+          "label": "R-squared (within)"
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "0.618",
+          "role": "summary",
+          "label": "R-squared (within)"
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.658",
+          "role": "summary",
+          "label": "R-squared (within)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the harmful degree day coefficient for corn in column 1?",
+          "answer": "-0.0184"
+        },
+        {
+          "question": "What is the beneficial degree day coefficient for soybeans in column 3?",
+          "answer": "0.0071"
+        },
+        {
+          "question": "What is the ratio of harmful to beneficial degree day effects for corn?",
+          "answer": "Approximately 3x: -0.0184 / 0.0062 = 2.97"
+        }
+      ]
+    },
+    {
+      "table_id": "temp-bins-energy",
+      "caption": "Nonlinear Temperature Effects on Residential Energy Consumption",
+      "label": "tab:temp-bins-energy",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.000284***",
+          "role": "data",
+          "variable": "Heating Degree Days (base 65\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.000181***",
+          "role": "data",
+          "variable": "Heating Degree Days (base 65\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.000418***",
+          "role": "data",
+          "variable": "Heating Degree Days (base 65\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.000264***",
+          "role": "data",
+          "variable": "Heating Degree Days (base 65\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.000028)",
+          "role": "data",
+          "variable": "Heating Degree Days (base 65\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.000018)",
+          "role": "data",
+          "variable": "Heating Degree Days (base 65\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.000041)",
+          "role": "data",
+          "variable": "Heating Degree Days (base 65\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.000031)",
+          "role": "data",
+          "variable": "Heating Degree Days (base 65\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.000641***",
+          "role": "data",
+          "variable": "Cooling Degree Days (base 65\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.000812***",
+          "role": "data",
+          "variable": "Cooling Degree Days (base 65\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.000084",
+          "role": "data",
+          "variable": "Cooling Degree Days (base 65\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.000618***",
+          "role": "data",
+          "variable": "Cooling Degree Days (base 65\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.000064)",
+          "role": "data",
+          "variable": "Cooling Degree Days (base 65\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.000081)",
+          "role": "data",
+          "variable": "Cooling Degree Days (base 65\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.000084)",
+          "role": "data",
+          "variable": "Cooling Degree Days (base 65\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.000071)",
+          "role": "data",
+          "variable": "Cooling Degree Days (base 65\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "-0.214***",
+          "role": "data",
+          "variable": "Log Electricity Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-0.284***",
+          "role": "data",
+          "variable": "Log Electricity Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Log Electricity Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.218***",
+          "role": "data",
+          "variable": "Log Electricity Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Log Electricity Price",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "Log Electricity Price",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Log Electricity Price",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.043)",
+          "role": "data",
+          "variable": "Log Electricity Price",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.181***",
+          "role": "data",
+          "variable": "Log Natural Gas Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Log Natural Gas Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.241***",
+          "role": "data",
+          "variable": "Log Natural Gas Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-0.184***",
+          "role": "data",
+          "variable": "Log Natural Gas Price",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Log Natural Gas Price",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Log Natural Gas Price",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Log Natural Gas Price",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Log Natural Gas Price",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "Log Per-Capita Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.384***",
+          "role": "data",
+          "variable": "Log Per-Capita Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.314***",
+          "role": "data",
+          "variable": "Log Per-Capita Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.381***",
+          "role": "data",
+          "variable": "Log Per-Capita Income",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Log Per-Capita Income",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.054)",
+          "role": "data",
+          "variable": "Log Per-Capita Income",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.046)",
+          "role": "data",
+          "variable": "Log Per-Capita Income",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.054)",
+          "role": "data",
+          "variable": "Log Per-Capita Income",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "0.814",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "0.784",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "0.798",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "0.831",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the cooling degree day coefficient for electricity in column 2?",
+          "answer": "0.000812"
+        },
+        {
+          "question": "What is the heating degree day coefficient for total energy in column 1?",
+          "answer": "0.000284"
+        },
+        {
+          "question": "What is the income elasticity of total energy consumption in column 1?",
+          "answer": "0.412"
+        }
+      ]
+    },
+    {
+      "table_id": "nonlinear-dose",
+      "caption": "Dose-Response Curves: Full Set of Temperature Bins",
+      "label": "tab:nonlinear-dose",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.284***",
+          "role": "data",
+          "variable": "Bin: $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.014",
+          "role": "data",
+          "variable": "Bin: $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.012",
+          "role": "data",
+          "variable": "Bin: $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.418***",
+          "role": "data",
+          "variable": "Bin: $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Bin: $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.010)",
+          "role": "data",
+          "variable": "Bin: $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.011)",
+          "role": "data",
+          "variable": "Bin: $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "Bin: $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.152***",
+          "role": "data",
+          "variable": "Bin: $T \\in [10, 20)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.008",
+          "role": "data",
+          "variable": "Bin: $T \\in [10, 20)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.007",
+          "role": "data",
+          "variable": "Bin: $T \\in [10, 20)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.224***",
+          "role": "data",
+          "variable": "Bin: $T \\in [10, 20)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Bin: $T \\in [10, 20)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.007)",
+          "role": "data",
+          "variable": "Bin: $T \\in [10, 20)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Bin: $T \\in [10, 20)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Bin: $T \\in [10, 20)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.079***",
+          "role": "data",
+          "variable": "Bin: $T \\in [20, 32)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.004",
+          "role": "data",
+          "variable": "Bin: $T \\in [20, 32)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.004",
+          "role": "data",
+          "variable": "Bin: $T \\in [20, 32)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.118***",
+          "role": "data",
+          "variable": "Bin: $T \\in [20, 32)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Bin: $T \\in [20, 32)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Bin: $T \\in [20, 32)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.004)",
+          "role": "data",
+          "variable": "Bin: $T \\in [20, 32)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Bin: $T \\in [20, 32)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.000",
+          "role": "data",
+          "variable": "Bin: $T \\in [32, 50)$\\textdegree F (baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.000",
+          "role": "data",
+          "variable": "Bin: $T \\in [32, 50)$\\textdegree F (baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.000",
+          "role": "data",
+          "variable": "Bin: $T \\in [32, 50)$\\textdegree F (baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.000",
+          "role": "data",
+          "variable": "Bin: $T \\in [32, 50)$\\textdegree F (baseline)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Bin: $T \\in [32, 50)$\\textdegree F (baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Bin: $T \\in [32, 50)$\\textdegree F (baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Bin: $T \\in [32, 50)$\\textdegree F (baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Bin: $T \\in [32, 50)$\\textdegree F (baseline)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "-0.037**",
+          "role": "data",
+          "variable": "Bin: $T \\in [50, 70)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.018**",
+          "role": "data",
+          "variable": "Bin: $T \\in [50, 70)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.022**",
+          "role": "data",
+          "variable": "Bin: $T \\in [50, 70)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "-0.041**",
+          "role": "data",
+          "variable": "Bin: $T \\in [50, 70)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "Bin: $T \\in [50, 70)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Bin: $T \\in [50, 70)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Bin: $T \\in [50, 70)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Bin: $T \\in [50, 70)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "-0.023",
+          "role": "data",
+          "variable": "Bin: $T \\in [70, 80)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "0.042***",
+          "role": "data",
+          "variable": "Bin: $T \\in [70, 80)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "0.051***",
+          "role": "data",
+          "variable": "Bin: $T \\in [70, 80)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "-0.028",
+          "role": "data",
+          "variable": "Bin: $T \\in [70, 80)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "(0.015)",
+          "role": "data",
+          "variable": "Bin: $T \\in [70, 80)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Bin: $T \\in [70, 80)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Bin: $T \\in [70, 80)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "(0.022)",
+          "role": "data",
+          "variable": "Bin: $T \\in [70, 80)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "0.043***",
+          "role": "data",
+          "variable": "Bin: $T \\in [80, 90)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "-0.112***",
+          "role": "data",
+          "variable": "Bin: $T \\in [80, 90)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "-0.138***",
+          "role": "data",
+          "variable": "Bin: $T \\in [80, 90)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "0.048***",
+          "role": "data",
+          "variable": "Bin: $T \\in [80, 90)$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Bin: $T \\in [80, 90)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Bin: $T \\in [80, 90)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Bin: $T \\in [80, 90)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Bin: $T \\in [80, 90)$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "0.191***",
+          "role": "data",
+          "variable": "Bin: $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "-0.284***",
+          "role": "data",
+          "variable": "Bin: $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "-0.331***",
+          "role": "data",
+          "variable": "Bin: $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "0.184***",
+          "role": "data",
+          "variable": "Bin: $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Bin: $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Bin: $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "Bin: $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Bin: $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "71,240",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "68,414",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the standardized damage from extreme heat (>90F) for mortality?",
+          "answer": "0.191"
+        },
+        {
+          "question": "What is the standardized damage from extreme heat for corn yields?",
+          "answer": "-0.284 (in absolute terms, 0.284)"
+        }
+      ]
+    },
+    {
+      "table_id": "linear-temp",
+      "caption": "Linear Temperature Specification: Comparison with Nonlinear Estimates",
+      "label": "tab:linear-temp",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.481**",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.214",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.194)",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.281)",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Annual Mean Temperature Squared",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.012",
+          "role": "data",
+          "variable": "Annual Mean Temperature Squared",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Annual Mean Temperature Squared",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Annual Mean Temperature Squared",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Mean Temperature Squared",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Annual Mean Temperature Squared",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Mean Temperature Squared",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Mean Temperature Squared",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.481**",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.284*",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.241***",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1.084***",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.194)",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.162)",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.175)",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "-0.048***",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "-0.041**",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Annual Mean Temperature",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "-0.048***",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "-0.044**",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "-0.181***",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "-0.168***",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.021)",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.022)",
+          "role": "data",
+          "variable": "Predicted Effect (evaluated at mean)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the predicted mortality effect of 1F warming using the nonlinear bins model (column 3)?",
+          "answer": "1.241"
+        },
+        {
+          "question": "Does the linear specification understate or overstate mortality effects relative to bins?",
+          "answer": "Understates: 0.481 vs 1.241"
+        }
+      ]
+    },
+    {
+      "table_id": "panel-trends",
+      "caption": "Robustness to Linear County Trends and Flexible Controls",
+      "label": "tab:panel-trends",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1.241***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.084***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.991***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.014***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.175)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.168)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.171)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.841***",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.612***",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1.514***",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "1.548***",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.284)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.271)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.258)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.263)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "0.892",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "0.908",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "0.912",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "0.914",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the extreme heat mortality coefficient with linear county trends?",
+          "answer": "1.084"
+        },
+        {
+          "question": "By what percentage does adding linear trends reduce the extreme heat coefficient?",
+          "answer": "About 13 percent (1.241 to 1.084)"
+        }
+      ]
+    },
+    {
+      "table_id": "adaptation-time",
+      "caption": "Adaptation Over Time: Are Temperature Effects Declining?",
+      "label": "tab:adaptation-time",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1.614***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.284***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.984***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.084***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.241)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.198)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.175)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "-0.0214***",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "-0.0184***",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "-0.0148***",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "-0.0171***",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.0028)",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.0024)",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.0021)",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.0019)",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.000941***",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.000784***",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.000641***",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.000618***",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.000098)",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.000084)",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.000071)",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.000064)",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "35,970",
+          "role": "summary",
+          "label": "Mortality observations"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "42,924",
+          "role": "summary",
+          "label": "Mortality observations"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "27,594",
+          "role": "summary",
+          "label": "Mortality observations"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Mortality observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the hot-day mortality coefficient in 1968--1980?",
+          "answer": "1.614"
+        },
+        {
+          "question": "What is the hot-day mortality coefficient in 1994--2002?",
+          "answer": "0.984"
+        },
+        {
+          "question": "Do temperature effects on agriculture show evidence of adaptation over time?",
+          "answer": "Yes, harmful degree day coefficient falls from -0.0214 to -0.0148 across sub-periods"
+        }
+      ]
+    },
+    {
+      "table_id": "adaptation-income",
+      "caption": "Adaptation by Income: Heterogeneity in Temperature Responses",
+      "label": "tab:adaptation-income",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1.884***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.412***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.984***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.618***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.284)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.218)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.184)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.148)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "-0.0248***",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "-0.0198***",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "-0.0164***",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "-0.0121***",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.0031)",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.0026)",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.0022)",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.0018)",
+          "role": "data",
+          "variable": "Degree Days $> 29$\\textdegree C",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.000448***",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.000584***",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.000714***",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.000841***",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.000048)",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.000061)",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.000074)",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.000088)",
+          "role": "data",
+          "variable": "Cooling Degree Days",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "26,828",
+          "role": "summary",
+          "label": "Observations (mortality)"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "26,828",
+          "role": "summary",
+          "label": "Observations (mortality)"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "26,827",
+          "role": "summary",
+          "label": "Observations (mortality)"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "26,827",
+          "role": "summary",
+          "label": "Observations (mortality)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the hot-day mortality effect for the poorest income quartile?",
+          "answer": "1.884"
+        },
+        {
+          "question": "What is the hot-day mortality effect for the richest income quartile?",
+          "answer": "0.618"
+        },
+        {
+          "question": "Do richer counties respond more or less to cooling degree days in energy consumption?",
+          "answer": "More: coefficient is 0.000841 vs 0.000448 for poorest, due to higher AC penetration"
+        }
+      ]
+    },
+    {
+      "table_id": "sector-heterogeneity",
+      "caption": "Heterogeneity Across Sectors and Demographic Groups",
+      "label": "tab:sector-heterogeneity",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.641***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.248***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.084**",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.184***",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.064)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Days with $T > 90$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.714***",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.384***",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.148***",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.214***",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.108)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.074)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Days with $T < 10$\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "107,310",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Which cause of death has the largest effect from extreme heat?",
+          "answer": "Cardiovascular (0.641 per 100,000)"
+        },
+        {
+          "question": "What is the effect of extreme cold on respiratory mortality?",
+          "answer": "0.384 per 100,000"
+        }
+      ]
+    },
+    {
+      "table_id": "projected-damages-2050",
+      "caption": "Projected Climate Damages by 2050: Monte Carlo Estimates",
+      "label": "tab:projected-damages-2050",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.814",
+          "role": "data",
+          "variable": "IPCC B1 Scenario (+1.5\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.241",
+          "role": "data",
+          "variable": "IPCC B1 Scenario (+1.5\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.841",
+          "role": "data",
+          "variable": "IPCC B1 Scenario (+1.5\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.284",
+          "role": "data",
+          "variable": "IPCC B1 Scenario (+1.5\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "[0.641, 0.991]",
+          "role": "data",
+          "variable": "IPCC B1 Scenario (+1.5\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "[0.991, 1.514]",
+          "role": "data",
+          "variable": "IPCC B1 Scenario (+1.5\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "[1.484, 2.241]",
+          "role": "data",
+          "variable": "IPCC B1 Scenario (+1.5\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "[0.991, 1.584]",
+          "role": "data",
+          "variable": "IPCC B1 Scenario (+1.5\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.514",
+          "role": "data",
+          "variable": "IPCC A1B Scenario (+2.8\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "2.481",
+          "role": "data",
+          "variable": "IPCC A1B Scenario (+2.8\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "3.841",
+          "role": "data",
+          "variable": "IPCC A1B Scenario (+2.8\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "2.614",
+          "role": "data",
+          "variable": "IPCC A1B Scenario (+2.8\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "[1.184, 1.841]",
+          "role": "data",
+          "variable": "IPCC A1B Scenario (+2.8\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "[1.984, 3.014]",
+          "role": "data",
+          "variable": "IPCC A1B Scenario (+2.8\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "[3.041, 4.684]",
+          "role": "data",
+          "variable": "IPCC A1B Scenario (+2.8\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "[1.984, 3.284]",
+          "role": "data",
+          "variable": "IPCC A1B Scenario (+2.8\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "2.841",
+          "role": "data",
+          "variable": "IPCC A2 Scenario (+4.1\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "4.814",
+          "role": "data",
+          "variable": "IPCC A2 Scenario (+4.1\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "7.841",
+          "role": "data",
+          "variable": "IPCC A2 Scenario (+4.1\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "5.184",
+          "role": "data",
+          "variable": "IPCC A2 Scenario (+4.1\\textdegree C)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "[2.241, 3.481]",
+          "role": "data",
+          "variable": "IPCC A2 Scenario (+4.1\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "[3.841, 5.814]",
+          "role": "data",
+          "variable": "IPCC A2 Scenario (+4.1\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "[6.041, 9.641]",
+          "role": "data",
+          "variable": "IPCC A2 Scenario (+4.1\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "[3.841, 6.584]",
+          "role": "data",
+          "variable": "IPCC A2 Scenario (+4.1\\textdegree C)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "-4.8",
+          "role": "data",
+          "variable": "IPCC B1 Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "-7.1",
+          "role": "data",
+          "variable": "IPCC B1 Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "-10.4",
+          "role": "data",
+          "variable": "IPCC B1 Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "-7.4",
+          "role": "data",
+          "variable": "IPCC B1 Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "[-5.8, -3.8]",
+          "role": "data",
+          "variable": "IPCC B1 Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "[-8.4, -5.8]",
+          "role": "data",
+          "variable": "IPCC B1 Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "[-12.1, -8.8]",
+          "role": "data",
+          "variable": "IPCC B1 Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "[-8.8, -6.1]",
+          "role": "data",
+          "variable": "IPCC B1 Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "-9.4",
+          "role": "data",
+          "variable": "IPCC A1B Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "-14.8",
+          "role": "data",
+          "variable": "IPCC A1B Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "-21.4",
+          "role": "data",
+          "variable": "IPCC A1B Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "-15.2",
+          "role": "data",
+          "variable": "IPCC A1B Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "[-11.4, -7.4]",
+          "role": "data",
+          "variable": "IPCC A1B Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "[-17.4, -12.1]",
+          "role": "data",
+          "variable": "IPCC A1B Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "[-25.1, -17.8]",
+          "role": "data",
+          "variable": "IPCC A1B Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "[-17.8, -12.6]",
+          "role": "data",
+          "variable": "IPCC A1B Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "-16.4",
+          "role": "data",
+          "variable": "IPCC A2 Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "-26.8",
+          "role": "data",
+          "variable": "IPCC A2 Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "-38.4",
+          "role": "data",
+          "variable": "IPCC A2 Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "-27.2",
+          "role": "data",
+          "variable": "IPCC A2 Scenario",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "[-19.4, -13.4]",
+          "role": "data",
+          "variable": "IPCC A2 Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "[-31.1, -22.1]",
+          "role": "data",
+          "variable": "IPCC A2 Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "[-44.8, -32.1]",
+          "role": "data",
+          "variable": "IPCC A2 Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "[-31.4, -23.1]",
+          "role": "data",
+          "variable": "IPCC A2 Scenario",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo draws"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo draws"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo draws"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "10,000",
+          "role": "summary",
+          "label": "Monte Carlo draws"
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "18",
+          "role": "summary",
+          "label": "Climate model variants"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "18",
+          "role": "summary",
+          "label": "Climate model variants"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "18",
+          "role": "summary",
+          "label": "Climate model variants"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "18",
+          "role": "summary",
+          "label": "Climate model variants"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the central mortality damage estimate under the A1B scenario by 2050?",
+          "answer": "2.481 additional deaths per 100,000 per year"
+        },
+        {
+          "question": "What is the central agricultural yield loss under the A2 scenario?",
+          "answer": "26.8 percent"
+        },
+        {
+          "question": "How many Monte Carlo draws are used?",
+          "answer": "10,000"
+        },
+        {
+          "question": "How many CMIP3 climate model variants are used?",
+          "answer": "18"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-proofs-environ",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-weather",
+      "caption": "Appendix: Weather Data Construction and Validation",
+      "label": "tab:appendix-weather",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "4.2",
+          "role": "data",
+          "variable": "Stations per County",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "3.1",
+          "role": "data",
+          "variable": "Stations per County",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.0",
+          "role": "data",
+          "variable": "Stations per County",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "18.0",
+          "role": "data",
+          "variable": "Stations per County",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Stations per County",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Stations per County",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Stations per County",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Stations per County",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.941",
+          "role": "data",
+          "variable": "Fraction with Daily T Data",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.084",
+          "role": "data",
+          "variable": "Fraction with Daily T Data",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.714",
+          "role": "data",
+          "variable": "Fraction with Daily T Data",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "1.000",
+          "role": "data",
+          "variable": "Fraction with Daily T Data",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Fraction with Daily T Data",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Fraction with Daily T Data",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Fraction with Daily T Data",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Fraction with Daily T Data",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "8.4",
+          "role": "data",
+          "variable": "Missing Days per Year",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "12.1",
+          "role": "data",
+          "variable": "Missing Days per Year",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.0",
+          "role": "data",
+          "variable": "Missing Days per Year",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "84.0",
+          "role": "data",
+          "variable": "Missing Days per Year",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Missing Days per Year",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Missing Days per Year",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Missing Days per Year",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Missing Days per Year",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.84",
+          "role": "data",
+          "variable": "RMSE Annual Mean Temp (\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "RMSE Annual Mean Temp (\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "RMSE Annual Mean Temp (\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "RMSE Annual Mean Temp (\\textdegree F)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "RMSE Annual Mean Temp (\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "RMSE Annual Mean Temp (\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "RMSE Annual Mean Temp (\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "RMSE Annual Mean Temp (\\textdegree F)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "12.4",
+          "role": "data",
+          "variable": "RMSE Degree Days $>$ 90\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "RMSE Degree Days $>$ 90\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "RMSE Degree Days $>$ 90\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "RMSE Degree Days $>$ 90\\textdegree F",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "RMSE Degree Days $>$ 90\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "RMSE Degree Days $>$ 90\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "RMSE Degree Days $>$ 90\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "RMSE Degree Days $>$ 90\\textdegree F",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.984",
+          "role": "data",
+          "variable": "Correlation (actual vs. interpolated)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation (actual vs. interpolated)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation (actual vs. interpolated)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Correlation (actual vs. interpolated)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation (actual vs. interpolated)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation (actual vs. interpolated)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation (actual vs. interpolated)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Correlation (actual vs. interpolated)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "2,984",
+          "role": "summary",
+          "label": "Counties with $\\geq 1$ station"
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "2,984",
+          "role": "summary",
+          "label": "Counties with $\\geq 1$ station"
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "2,984",
+          "role": "summary",
+          "label": "Counties with $\\geq 1$ station"
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "2,984",
+          "role": "summary",
+          "label": "Counties with $\\geq 1$ station"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the mean number of weather stations per county?",
+          "answer": "4.2"
+        },
+        {
+          "question": "What is the RMSE of the spatial interpolation for annual mean temperature?",
+          "answer": "0.84 degrees F"
+        },
+        {
+          "question": "What is the correlation between actual and interpolated temperature?",
+          "answer": "0.984"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "damage-function",
+      "label": "eq:damage-function",
+      "latex": "D_j = f(T_j, P_j;\\, \\theta) = \\sum_{k} \\theta_k \\cdot \\mathbf{1}\\!\\left[T_j \\in \\mathcal{B}_k\\right] \\cdot d_j^k, \\quad \\begin{bmatrix} D_j^{\\text{mort}} \\\\ D_j^{\\text{agr}} \\\\ D_j^{\\text{ener}} \\end{bmatrix} = \\begin{bmatrix} \\theta_k^m \\\\ \\theta_k^a \\\\ \\theta_k^e \\end{bmatrix} \\cdot d_j^k",
+      "description": "Damage function: county-level damage $D_j$ from climate is a sum of bin-specific effects $\\theta_k$ weighted by days $d_j^k$ in temperature bin $\\mathcal{B}_k$.",
+      "qa": [
+        {
+          "question": "What does theta_k represent in the damage function?",
+          "answer": "The marginal damage of an additional day in temperature bin B_k"
+        }
+      ]
+    },
+    {
+      "eq_id": "nonlinear-dose-response",
+      "label": "eq:nonlinear-dose",
+      "latex": "y_{ct} = \\alpha_c + \\gamma_{st} + \\sum_{k=1}^{K} \\beta_k \\cdot \\lceil d_{ct}^k \\rceil + \\mathbf{x}_{ct}'\\delta + \\varepsilon_{ct}, \\quad \\ddot{y}_{ct} \\equiv y_{ct} - \\bar{y}_c - \\bar{y}_{st} + \\bar{y}",
+      "description": "Panel fixed effects estimating equation: outcome $y_{ct}$ for county $c$ in year $t$, with county FE $\\alpha_c$, state$\\times$year FE $\\gamma_{st}$, and temperature bin days $d_{ct}^k$.",
+      "qa": []
+    },
+    {
+      "eq_id": "panel-fe-equation",
+      "label": "eq:panel-fe",
+      "latex": "y_{ct} = \\alpha_c + \\lambda_t + \\beta T_{ct} + \\gamma P_{ct} + \\varepsilon_{ct}, \\quad E[\\varepsilon_{ct} \\mid \\alpha_c, \\lambda_t, T_{ct}, P_{ct}] = 0",
+      "description": "Linear panel fixed effects: within-county, within-year identification exploits year-to-year weather fluctuations after removing permanent differences across counties.",
+      "qa": []
+    },
+    {
+      "eq_id": "adaptation-model",
+      "label": "eq:adaptation",
+      "latex": "\\dot{\\beta}_k(\\tau) = -\\rho\\bigl(\\beta_k(\\tau) - \\beta_k^\\infty\\bigr), \\quad \\beta_k(\\tau) = \\beta_k^0 \\cdot e^{-\\rho \\tau} + \\beta_k^\\infty (1 - e^{-\\rho \\tau}), \\quad k = \\lfloor T_j / \\Delta T \\rfloor",
+      "description": "Adaptation model: bin coefficient $\\beta_k$ decays from short-run $\\beta_k^0$ toward long-run adapted value $\\beta_k^\\infty$ at rate $\\rho$.",
+      "qa": []
+    },
+    {
+      "eq_id": "projected-damages",
+      "label": "eq:projected-damages",
+      "latex": "\\\\Delta D = \\\\int_{\\\\mathbb{R}} \\\\hat{f}(T)\\\\,\\\\bigl[g(T; \\\\mu_1, \\\\sigma_1) - g(T; \\\\mu_0, \\\\sigma_0)\\\\bigr]\\\\,dT",
+      "description": "Projected damages: integral of estimated damage function $\\hat{f}(T)$ against the difference in temperature distributions under future ($\\mu_1, \\sigma_1$) vs. baseline ($\\mu_0, \\sigma_0$) climate.",
+      "qa": []
+    },
+    {
+      "eq_id": "wtp",
+      "label": "eq:wtp",
+      "latex": "\\\\text{WTP}_j = \\\\frac{\\\\partial D_j / \\\\partial T_j}{\\\\partial U_j / \\\\partial I_j} = \\\\frac{-\\\\partial \\\\ln y_j / \\\\partial T_j}{\\\\partial \\\\ln y_j / \\\\partial I_j} \\\\cdot I_j",
+      "description": "Willingness to pay to avoid temperature increase: ratio of marginal climate damage to marginal utility of income, expressed as income share.",
+      "qa": []
+    },
+    {
+      "eq_id": "social-cost",
+      "label": "eq:scc",
+      "latex": "\\\\text{SCC} = \\\\sum_{t=0}^{T} \\\\sum_j \\\\frac{\\\\text{WTP}_{jt}}{(1+r)^t} \\\\cdot \\\\frac{\\\\partial T_{jt}}{\\\\partial E_0}",
+      "description": "Social cost of carbon: discounted sum of marginal willingness to pay for climate stability, weighted by the temperature response to an additional unit of emissions $E_0$ today.",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main identification strategy?",
+      "answer": "Within-county year-to-year weather variation, controlling for county FE and state-by-year FE"
+    },
+    {
+      "question": "What is the mortality effect of days above 90F in the preferred specification?",
+      "answer": "1.084 deaths per 100,000 in column 4 with county FE and state-year FE and linear trends"
+    },
+    {
+      "question": "By what factor does the linear temperature specification understate mortality effects?",
+      "answer": "By a factor of 2.3 (0.481 linear vs 1.084 bins estimate)"
+    },
+    {
+      "question": "What is the projected mortality increase under the IPCC A1B scenario by 2050?",
+      "answer": "2.481 additional deaths per 100,000 per year (central estimate)"
+    },
+    {
+      "question": "By approximately what percentage has temperature damage sensitivity declined over the sample period?",
+      "answer": "Approximately 38 percent (hot-day coefficient falls from 1.614 in 1968-1980 to 0.984 in 1994-2002)"
+    },
+    {
+      "question": "What is the mean all-cause mortality rate?",
+      "answer": "891.4 per 100,000"
+    },
+    {
+      "question": "How many counties are in the sample?",
+      "answer": "3,066"
+    },
+    {
+      "question": "What is the mean annual degree days above 90F?",
+      "answer": "241"
+    },
+    {
+      "question": "What is the sample period?",
+      "answer": "1968--2002, 35 years"
+    },
+    {
+      "question": "What is the preferred specification?",
+      "answer": "Column 4: both county FE and state-by-year FE"
+    },
+    {
+      "question": "What is the temperature coefficient in the preferred specification?",
+      "answer": "0.481"
+    },
+    {
+      "question": "How does the within R-squared change from OLS to the full FE specification?",
+      "answer": "From 0.241 (OLS) to 0.892 (county + state-year FE)"
+    },
+    {
+      "question": "What is the mortality effect of extreme hot days (>90F) in column 2?",
+      "answer": "1.084 deaths per 100,000"
+    },
+    {
+      "question": "What is the mortality effect of extreme cold days (<10F) on the elderly in column 3?",
+      "answer": "6.481 deaths per 100,000"
+    },
+    {
+      "question": "Which temperature bin is omitted as the baseline?",
+      "answer": "Days with temperature 32--50 degrees F"
+    },
+    {
+      "question": "What is the within R-squared in column 1?",
+      "answer": "0.892"
+    },
+    {
+      "question": "What is the harmful degree day coefficient for corn in column 1?",
+      "answer": "-0.0184"
+    },
+    {
+      "question": "What is the beneficial degree day coefficient for soybeans in column 3?",
+      "answer": "0.0071"
+    },
+    {
+      "question": "What is the ratio of harmful to beneficial degree day effects for corn?",
+      "answer": "Approximately 3x: -0.0184 / 0.0062 = 2.97"
+    },
+    {
+      "question": "What is the cooling degree day coefficient for electricity in column 2?",
+      "answer": "0.000812"
+    },
+    {
+      "question": "What is the heating degree day coefficient for total energy in column 1?",
+      "answer": "0.000284"
+    },
+    {
+      "question": "What is the income elasticity of total energy consumption in column 1?",
+      "answer": "0.412"
+    },
+    {
+      "question": "What is the standardized damage from extreme heat (>90F) for mortality?",
+      "answer": "0.191"
+    },
+    {
+      "question": "What is the standardized damage from extreme heat for corn yields?",
+      "answer": "-0.284 (in absolute terms, 0.284)"
+    },
+    {
+      "question": "What is the predicted mortality effect of 1F warming using the nonlinear bins model (column 3)?",
+      "answer": "1.241"
+    },
+    {
+      "question": "Does the linear specification understate or overstate mortality effects relative to bins?",
+      "answer": "Understates: 0.481 vs 1.241"
+    },
+    {
+      "question": "What is the extreme heat mortality coefficient with linear county trends?",
+      "answer": "1.084"
+    },
+    {
+      "question": "By what percentage does adding linear trends reduce the extreme heat coefficient?",
+      "answer": "About 13 percent (1.241 to 1.084)"
+    },
+    {
+      "question": "What is the hot-day mortality coefficient in 1968--1980?",
+      "answer": "1.614"
+    },
+    {
+      "question": "What is the hot-day mortality coefficient in 1994--2002?",
+      "answer": "0.984"
+    },
+    {
+      "question": "Do temperature effects on agriculture show evidence of adaptation over time?",
+      "answer": "Yes, harmful degree day coefficient falls from -0.0214 to -0.0148 across sub-periods"
+    },
+    {
+      "question": "What is the hot-day mortality effect for the poorest income quartile?",
+      "answer": "1.884"
+    },
+    {
+      "question": "What is the hot-day mortality effect for the richest income quartile?",
+      "answer": "0.618"
+    },
+    {
+      "question": "Do richer counties respond more or less to cooling degree days in energy consumption?",
+      "answer": "More: coefficient is 0.000841 vs 0.000448 for poorest, due to higher AC penetration"
+    },
+    {
+      "question": "Which cause of death has the largest effect from extreme heat?",
+      "answer": "Cardiovascular (0.641 per 100,000)"
+    },
+    {
+      "question": "What is the effect of extreme cold on respiratory mortality?",
+      "answer": "0.384 per 100,000"
+    },
+    {
+      "question": "What is the central mortality damage estimate under the A1B scenario by 2050?",
+      "answer": "2.481 additional deaths per 100,000 per year"
+    },
+    {
+      "question": "What is the central agricultural yield loss under the A2 scenario?",
+      "answer": "26.8 percent"
+    },
+    {
+      "question": "How many Monte Carlo draws are used?",
+      "answer": "10,000"
+    },
+    {
+      "question": "How many CMIP3 climate model variants are used?",
+      "answer": "18"
+    },
+    {
+      "question": "What is the mean number of weather stations per county?",
+      "answer": "4.2"
+    },
+    {
+      "question": "What is the RMSE of the spatial interpolation for annual mean temperature?",
+      "answer": "0.84 degrees F"
+    },
+    {
+      "question": "What is the correlation between actual and interpolated temperature?",
+      "answer": "0.984"
+    },
+    {
+      "question": "What does theta_k represent in the damage function?",
+      "answer": "The marginal damage of an additional day in temperature bin B_k"
+    }
+  ]
+}

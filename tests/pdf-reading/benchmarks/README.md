@@ -1,8 +1,77 @@
-# Table Benchmarks
+# PDF Reading Benchmarks
+
+Two benchmark suites for evaluating PDF extraction quality.
+
+---
+
+## Long-form economics papers (20 papers)
+
+Twenty synthetic full-length economics papers (50-86 pages each) with cell-level
+gold standard data. Generated deterministically from Python — the LaTeX source
+IS the ground truth.
+
+### Quick start
+
+Regenerate all papers:
+
+```bash
+cd tests/pdf-reading/benchmarks/scripts
+python3 generate_long_form.py
+```
+
+Run the benchmark against a skill:
+
+```bash
+python3 run_benchmark.py --skill ../../../../skills/general/pdf-reading
+python3 run_benchmark.py --skill ../../../../skills/general/pdf-baseline
+```
+
+### What's in each paper
+
+| File | Contents |
+|------|----------|
+| `source.tex` | LaTeX source |
+| `source.pdf` | Compiled PDF |
+| `gold.json` | Metadata + sections + tables (cell-level) + equations + QA pairs |
+
+### Variation across papers
+
+**14 document formats** — 8 journal styles (AER, Econometrica, QJE, JPE, REStud,
+JF, RFS, JFE) plus 6 non-journal formats (working paper, typewriter, NBER WP,
+Word-like, two-column, old-school). Different fonts, spacing, margins, section
+numbering.
+
+**20 table styles** — Each paper uses a distinct table formatting convention
+reflecting real-world software: Stata esttab, Stata outreg2, R stargazer,
+R modelsummary, Python statsmodels, SAS, Excel-style, etc. Variations include
+booktabs vs hline rules, parentheses vs brackets around standard errors, stars
+on coefficients vs SEs vs none, and different note formats.
+
+**Complex math notation** — Equations include hats, bars, tildes, dots over
+variables; integrals and summations with complex bounds; matrix notation;
+partial derivatives; calligraphic and blackboard bold letters; nested
+sub/superscripts; convergence arrows; and floor/ceiling brackets.
+
+### Benchmark comparison
+
+The `pdf-baseline` skill variant in `skills/general/pdf-baseline/` strips the
+table post-processing pipeline (table_agent, table_cleanup) from the full
+`pdf-reading` skill. Run both against the benchmark to measure the value added
+by post-processing.
+
+### Scoring
+
+The benchmark runner (`run_benchmark.py`) compares extracted tables against
+`gold.json` cell data. QA scoring requires LLM evaluation and is not automated
+in the runner.
+
+---
+
+## Synthetic table benchmarks
 
 Store gold cases here for regression-first table extraction evaluation.
 
-## Synthetic generation
+### Synthetic generation
 
 You can generate a local synthetic benchmark corpus directly from built-in LaTeX table specs:
 

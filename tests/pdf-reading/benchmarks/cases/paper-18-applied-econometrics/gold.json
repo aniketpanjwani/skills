@@ -1,0 +1,3087 @@
+{
+  "paper_id": "18",
+  "field": "applied-econometrics",
+  "title": "Local Average and Marginal Treatment Effects: Identification, Estimation, and Monte Carlo Evidence",
+  "journal_style": "word_like",
+  "target_pages": 55,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-18",
+      "level": 1
+    },
+    {
+      "title": "Framework and Notation",
+      "label": "sec:framework-18",
+      "level": 1
+    },
+    {
+      "title": "Potential Outcomes and Treatment Assignment",
+      "label": "sec:po-18",
+      "level": 2
+    },
+    {
+      "title": "Population Heterogeneity and Types",
+      "label": "sec:types-18",
+      "level": 2
+    },
+    {
+      "title": "LATE Identification",
+      "label": "sec:late-id-18",
+      "level": 1
+    },
+    {
+      "title": "Assumptions and Their Interpretation",
+      "label": "sec:assumptions-18",
+      "level": 2
+    },
+    {
+      "title": "Complier Characteristics",
+      "label": "sec:complier-18",
+      "level": 2
+    },
+    {
+      "title": "Bounds Without Monotonicity",
+      "label": "sec:bounds-18",
+      "level": 2
+    },
+    {
+      "title": "Marginal Treatment Effects",
+      "label": "sec:mte-18",
+      "level": 1
+    },
+    {
+      "title": "Local IV Estimation",
+      "label": "sec:local-iv-18",
+      "level": 2
+    },
+    {
+      "title": "MTE and IV Weights",
+      "label": "sec:mte-weights-18",
+      "level": 2
+    },
+    {
+      "title": "Policy-Relevant Treatment Effects",
+      "label": "sec:prte-18",
+      "level": 2
+    },
+    {
+      "title": "Monte Carlo Design",
+      "label": "sec:mc-design-18",
+      "level": 1
+    },
+    {
+      "title": "Data Generating Processes",
+      "label": "sec:dgp-18",
+      "level": 2
+    },
+    {
+      "title": "Estimators Considered",
+      "label": "sec:estimators-18",
+      "level": 2
+    },
+    {
+      "title": "Results",
+      "label": "sec:results-18",
+      "level": 1
+    },
+    {
+      "title": "Finite-Sample Performance of LATE Estimators",
+      "label": "sec:mc-late-18",
+      "level": 2
+    },
+    {
+      "title": "Coverage Properties",
+      "label": "sec:coverage-18",
+      "level": 2
+    },
+    {
+      "title": "MTE Estimation Results",
+      "label": "sec:mte-results-18",
+      "level": 2
+    },
+    {
+      "title": "Empirical Application",
+      "label": "sec:empirical-18",
+      "level": 1
+    },
+    {
+      "title": "Wald and 2SLS Estimates",
+      "label": "sec:wald-2sls-18",
+      "level": 2
+    },
+    {
+      "title": "Specification Tests",
+      "label": "sec:spec-tests-18",
+      "level": 2
+    },
+    {
+      "title": "Extensions",
+      "label": "sec:extensions-18",
+      "level": 1
+    },
+    {
+      "title": "Multiple Instruments and Instrument Validity",
+      "label": "sec:multi-iv-18",
+      "level": 2
+    },
+    {
+      "title": "Heterogeneous Effects and Interaction Models",
+      "label": "sec:het-18",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-18",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Proofs",
+      "label": "sec:appendix-a-18",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: MTE Derivations",
+      "label": "sec:appendix-b-18",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Monte Carlo Details",
+      "label": "sec:appendix-c-18",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "complier-characteristics",
+      "caption": "Characteristics of Compliers, Always-Takers, and Never-Takers",
+      "label": "tab:complier-characteristics",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "34.2",
+          "latex": "34.2",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "31.8",
+          "latex": "31.8",
+          "role": "data"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "38.1",
+          "latex": "38.1",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "52.1",
+          "latex": "52.1",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "48.7",
+          "latex": "48.7",
+          "role": "data"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "55.3",
+          "latex": "55.3",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "12.4",
+          "latex": "12.4",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "14.2",
+          "latex": "14.2",
+          "role": "data"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "10.8",
+          "latex": "10.8",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "38.7",
+          "latex": "38.7",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "52.1",
+          "latex": "52.1",
+          "role": "data"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "28.4",
+          "latex": "28.4",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "18.3",
+          "latex": "18.3",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "41.2",
+          "latex": "41.2",
+          "role": "data"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "9.4",
+          "latex": "9.4",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.40",
+          "latex": "0.40",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.22",
+          "latex": "0.22",
+          "role": "data"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.38",
+          "latex": "0.38",
+          "role": "data"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What share of the population are compliers?",
+          "answer": "0.40 (40%)"
+        },
+        {
+          "question": "Are compliers higher or lower income than always-takers?",
+          "answer": "Lower: complier mean income $38.7k vs always-taker $52.1k"
+        },
+        {
+          "question": "Which type has the highest prior program participation?",
+          "answer": "Always-takers (41.2%)"
+        }
+      ]
+    },
+    {
+      "table_id": "bounds-no-monotonicity",
+      "caption": "Bounds on the Average Treatment Effect Without Monotonicity",
+      "label": "tab:bounds-no-monotonicity",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "-8.41",
+          "role": "data",
+          "variable": "Manski (1990) no-assumptions bounds",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "1.36",
+          "role": "data",
+          "variable": "Manski (1990) no-assumptions bounds",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "8.41",
+          "role": "data",
+          "variable": "Manski (1990) no-assumptions bounds",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "16.82",
+          "role": "data",
+          "variable": "Manski (1990) no-assumptions bounds",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Monotone treatment response",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.36",
+          "role": "data",
+          "variable": "Monotone treatment response",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "8.41",
+          "role": "data",
+          "variable": "Monotone treatment response",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "8.41",
+          "role": "data",
+          "variable": "Monotone treatment response",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "-1.84",
+          "role": "data",
+          "variable": "Monotone treatment selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "1.36",
+          "role": "data",
+          "variable": "Monotone treatment selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "4.12",
+          "role": "data",
+          "variable": "Monotone treatment selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "5.96",
+          "role": "data",
+          "variable": "Monotone treatment selection",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.00",
+          "role": "data",
+          "variable": "MTR + MTS combined",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.36",
+          "role": "data",
+          "variable": "MTR + MTS combined",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "4.12",
+          "role": "data",
+          "variable": "MTR + MTS combined",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "4.12",
+          "role": "data",
+          "variable": "MTR + MTS combined",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.78",
+          "role": "data",
+          "variable": "Machina-Storti (IV bounds)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "1.36",
+          "role": "data",
+          "variable": "Machina-Storti (IV bounds)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "1.94",
+          "role": "data",
+          "variable": "Machina-Storti (IV bounds)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "1.16",
+          "role": "data",
+          "variable": "Machina-Storti (IV bounds)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Horowitz-Manski (outcome support)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "1.36",
+          "role": "data",
+          "variable": "Horowitz-Manski (outcome support)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "2.11",
+          "role": "data",
+          "variable": "Horowitz-Manski (outcome support)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1.50",
+          "role": "data",
+          "variable": "Horowitz-Manski (outcome support)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What are the Manski no-assumptions bounds?",
+          "answer": "[-8.41, 8.41]"
+        },
+        {
+          "question": "What do Machina-Storti IV bounds imply for the ATE?",
+          "answer": "[0.78, 1.94], consistent with the LATE of 1.36"
+        },
+        {
+          "question": "Which bound set is tightest?",
+          "answer": "Machina-Storti IV bounds (width 1.16)"
+        }
+      ]
+    },
+    {
+      "table_id": "mte-by-propensity",
+      "caption": "Marginal Treatment Effects by Propensity Score Decile",
+      "label": "tab:mte-by-propensity",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "2.14***",
+          "role": "data",
+          "variable": "Decile 1 (u = 0.05)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "1.41",
+          "role": "data",
+          "variable": "Decile 1 (u = 0.05)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "2.87",
+          "role": "data",
+          "variable": "Decile 1 (u = 0.05)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "0.031",
+          "role": "data",
+          "variable": "Decile 1 (u = 0.05)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1.91***",
+          "role": "data",
+          "variable": "Decile 2 (u = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.31",
+          "role": "data",
+          "variable": "Decile 2 (u = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "2.51",
+          "role": "data",
+          "variable": "Decile 2 (u = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.067",
+          "role": "data",
+          "variable": "Decile 2 (u = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "1.72***",
+          "role": "data",
+          "variable": "Decile 3 (u = 0.25)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "1.21",
+          "role": "data",
+          "variable": "Decile 3 (u = 0.25)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "2.23",
+          "role": "data",
+          "variable": "Decile 3 (u = 0.25)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.108",
+          "role": "data",
+          "variable": "Decile 3 (u = 0.25)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.54***",
+          "role": "data",
+          "variable": "Decile 4 (u = 0.35)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.08",
+          "role": "data",
+          "variable": "Decile 4 (u = 0.35)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "2.00",
+          "role": "data",
+          "variable": "Decile 4 (u = 0.35)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.141",
+          "role": "data",
+          "variable": "Decile 4 (u = 0.35)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "1.39***",
+          "role": "data",
+          "variable": "Decile 5 (u = 0.45)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.97",
+          "role": "data",
+          "variable": "Decile 5 (u = 0.45)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "1.81",
+          "role": "data",
+          "variable": "Decile 5 (u = 0.45)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.162",
+          "role": "data",
+          "variable": "Decile 5 (u = 0.45)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1.21***",
+          "role": "data",
+          "variable": "Decile 6 (u = 0.55)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.81",
+          "role": "data",
+          "variable": "Decile 6 (u = 0.55)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.61",
+          "role": "data",
+          "variable": "Decile 6 (u = 0.55)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.158",
+          "role": "data",
+          "variable": "Decile 6 (u = 0.55)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "1.04***",
+          "role": "data",
+          "variable": "Decile 7 (u = 0.65)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.62",
+          "role": "data",
+          "variable": "Decile 7 (u = 0.65)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1.46",
+          "role": "data",
+          "variable": "Decile 7 (u = 0.65)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.138",
+          "role": "data",
+          "variable": "Decile 7 (u = 0.65)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.87***",
+          "role": "data",
+          "variable": "Decile 8 (u = 0.75)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Decile 8 (u = 0.75)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "1.33",
+          "role": "data",
+          "variable": "Decile 8 (u = 0.75)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.101",
+          "role": "data",
+          "variable": "Decile 8 (u = 0.75)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.68***",
+          "role": "data",
+          "variable": "Decile 9 (u = 0.85)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.14",
+          "role": "data",
+          "variable": "Decile 9 (u = 0.85)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "1.22",
+          "role": "data",
+          "variable": "Decile 9 (u = 0.85)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.072",
+          "role": "data",
+          "variable": "Decile 9 (u = 0.85)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.44*",
+          "role": "data",
+          "variable": "Decile 10 (u = 0.95)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "-0.18",
+          "role": "data",
+          "variable": "Decile 10 (u = 0.95)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "1.06",
+          "role": "data",
+          "variable": "Decile 10 (u = 0.95)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.022",
+          "role": "data",
+          "variable": "Decile 10 (u = 0.95)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is the MTE increasing or decreasing in the propensity score?",
+          "answer": "Decreasing: from 2.14 at u=0.05 to 0.44 at u=0.95"
+        },
+        {
+          "question": "What is the MTE at the median propensity score (u=0.45)?",
+          "answer": "1.39"
+        },
+        {
+          "question": "Which decile receives the highest 2SLS weight?",
+          "answer": "Decile 5 (u=0.45) with weight 0.162"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-dgp",
+      "caption": "Appendix: Monte Carlo DGP Specifications",
+      "label": "tab:appendix-dgp",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "1.00",
+          "role": "data",
+          "variable": "True LATE",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "1.50",
+          "role": "data",
+          "variable": "True LATE",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "1.00",
+          "role": "data",
+          "variable": "True LATE",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "2.00",
+          "role": "data",
+          "variable": "True LATE",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1.20",
+          "role": "data",
+          "variable": "True ATE",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.50",
+          "role": "data",
+          "variable": "True ATE",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.80",
+          "role": "data",
+          "variable": "True ATE",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "2.00",
+          "role": "data",
+          "variable": "True ATE",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "0.50",
+          "role": "data",
+          "variable": "Selection (rho)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.50",
+          "role": "data",
+          "variable": "Selection (rho)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.70",
+          "role": "data",
+          "variable": "Selection (rho)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Selection (rho)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.40",
+          "role": "data",
+          "variable": "Compliance rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.40",
+          "role": "data",
+          "variable": "Compliance rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.25",
+          "role": "data",
+          "variable": "Compliance rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.60",
+          "role": "data",
+          "variable": "Compliance rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.40",
+          "role": "data",
+          "variable": "Instrument strength (E[Z-compliance])",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.40",
+          "role": "data",
+          "variable": "Instrument strength (E[Z-compliance])",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.25",
+          "role": "data",
+          "variable": "Instrument strength (E[Z-compliance])",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.60",
+          "role": "data",
+          "variable": "Instrument strength (E[Z-compliance])",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Outcome variance",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "2.25",
+          "role": "data",
+          "variable": "Outcome variance",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Outcome variance",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "4.00",
+          "role": "data",
+          "variable": "Outcome variance",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "In which DGP is LATE equal to ATE?",
+          "answer": "DGP 2 (LATE = ATE = 1.50) and DGP 4 (LATE = ATE = 2.00)"
+        },
+        {
+          "question": "Which DGP has the strongest selection on unobservables?",
+          "answer": "DGP 3 (rho = 0.70)"
+        }
+      ]
+    },
+    {
+      "table_id": "monte-carlo-late-consistency",
+      "caption": "Monte Carlo: Consistency of LATE Estimators (N = 1,000 replications)",
+      "label": "tab:monte-carlo-late-consistency",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.042",
+          "role": "data",
+          "variable": "Wald / 2SLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.017",
+          "role": "data",
+          "variable": "Wald / 2SLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.009",
+          "role": "data",
+          "variable": "Wald / 2SLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.002",
+          "role": "data",
+          "variable": "Wald / 2SLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "-0.038",
+          "role": "data",
+          "variable": "Control function (bilinear)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "-0.015",
+          "role": "data",
+          "variable": "Control function (bilinear)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "-0.007",
+          "role": "data",
+          "variable": "Control function (bilinear)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "-0.001",
+          "role": "data",
+          "variable": "Control function (bilinear)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.011",
+          "role": "data",
+          "variable": "LIML",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.004",
+          "role": "data",
+          "variable": "LIML",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.002",
+          "role": "data",
+          "variable": "LIML",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.001",
+          "role": "data",
+          "variable": "LIML",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.312",
+          "role": "data",
+          "variable": "OLS (biased benchmark)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.318",
+          "role": "data",
+          "variable": "OLS (biased benchmark)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.321",
+          "role": "data",
+          "variable": "OLS (biased benchmark)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.319",
+          "role": "data",
+          "variable": "OLS (biased benchmark)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.241",
+          "role": "data",
+          "variable": "Wald / 2SLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.148",
+          "role": "data",
+          "variable": "Wald / 2SLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.104",
+          "role": "data",
+          "variable": "Wald / 2SLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.046",
+          "role": "data",
+          "variable": "Wald / 2SLS",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.228",
+          "role": "data",
+          "variable": "Control function (bilinear)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.141",
+          "role": "data",
+          "variable": "Control function (bilinear)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.099",
+          "role": "data",
+          "variable": "Control function (bilinear)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.044",
+          "role": "data",
+          "variable": "Control function (bilinear)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.219",
+          "role": "data",
+          "variable": "LIML",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.136",
+          "role": "data",
+          "variable": "LIML",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.097",
+          "role": "data",
+          "variable": "LIML",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.043",
+          "role": "data",
+          "variable": "LIML",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.318",
+          "role": "data",
+          "variable": "OLS (biased benchmark)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.319",
+          "role": "data",
+          "variable": "OLS (biased benchmark)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.321",
+          "role": "data",
+          "variable": "OLS (biased benchmark)",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.319",
+          "role": "data",
+          "variable": "OLS (biased benchmark)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the true LATE in the Monte Carlo DGP?",
+          "answer": "1.000"
+        },
+        {
+          "question": "Does 2SLS bias shrink as sample size grows?",
+          "answer": "Yes, from -0.042 to -0.002"
+        },
+        {
+          "question": "What is the OLS bias approximately?",
+          "answer": "0.319 (substantial positive bias from selection)"
+        },
+        {
+          "question": "Which estimator has the smallest RMSE at n=1000?",
+          "answer": "LIML (0.097)"
+        }
+      ]
+    },
+    {
+      "table_id": "monte-carlo-late-coverage",
+      "caption": "Monte Carlo: Coverage Rates of 95\\% Confidence Intervals for LATE",
+      "label": "tab:monte-carlo-late-coverage",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.906",
+          "role": "data",
+          "variable": "2SLS (asymptotic SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.928",
+          "role": "data",
+          "variable": "2SLS (asymptotic SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.938",
+          "role": "data",
+          "variable": "2SLS (asymptotic SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.947",
+          "role": "data",
+          "variable": "2SLS (asymptotic SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "0.912",
+          "role": "data",
+          "variable": "2SLS (heteroskedastic-robust SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.934",
+          "role": "data",
+          "variable": "2SLS (heteroskedastic-robust SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "0.942",
+          "role": "data",
+          "variable": "2SLS (heteroskedastic-robust SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "0.949",
+          "role": "data",
+          "variable": "2SLS (heteroskedastic-robust SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.931",
+          "role": "data",
+          "variable": "LIML (asymptotic SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.941",
+          "role": "data",
+          "variable": "LIML (asymptotic SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.946",
+          "role": "data",
+          "variable": "LIML (asymptotic SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.950",
+          "role": "data",
+          "variable": "LIML (asymptotic SE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.921",
+          "role": "data",
+          "variable": "2SLS (percentile bootstrap)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.938",
+          "role": "data",
+          "variable": "2SLS (percentile bootstrap)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.944",
+          "role": "data",
+          "variable": "2SLS (percentile bootstrap)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.950",
+          "role": "data",
+          "variable": "2SLS (percentile bootstrap)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.934",
+          "role": "data",
+          "variable": "2SLS (BC bootstrap)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.944",
+          "role": "data",
+          "variable": "2SLS (BC bootstrap)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.948",
+          "role": "data",
+          "variable": "2SLS (BC bootstrap)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.951",
+          "role": "data",
+          "variable": "2SLS (BC bootstrap)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.948",
+          "role": "data",
+          "variable": "Anderson-Rubin (weak-IV robust)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.950",
+          "role": "data",
+          "variable": "Anderson-Rubin (weak-IV robust)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.950",
+          "role": "data",
+          "variable": "Anderson-Rubin (weak-IV robust)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.950",
+          "role": "data",
+          "variable": "Anderson-Rubin (weak-IV robust)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Which confidence interval achieves exact nominal coverage?",
+          "answer": "Anderson-Rubin (weak-IV robust) CI achieves 0.950 at all sample sizes"
+        },
+        {
+          "question": "Does asymptotic 2SLS CI under-cover at n=200?",
+          "answer": "Yes, coverage is 0.906 vs nominal 0.950"
+        }
+      ]
+    },
+    {
+      "table_id": "monte-carlo-mte",
+      "caption": "Monte Carlo: MTE Estimation -- RMSE and Bias by Propensity Score Percentile",
+      "label": "tab:monte-carlo-mte",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.082",
+          "role": "data",
+          "variable": "Local IV (Heckman-Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.041",
+          "role": "data",
+          "variable": "Local IV (Heckman-Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.018",
+          "role": "data",
+          "variable": "Local IV (Heckman-Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.037",
+          "role": "data",
+          "variable": "Local IV (Heckman-Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "-0.091",
+          "role": "data",
+          "variable": "Local IV (Heckman-Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "-0.064",
+          "role": "data",
+          "variable": "Polynomial series (degree 3)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "-0.029",
+          "role": "data",
+          "variable": "Polynomial series (degree 3)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "-0.011",
+          "role": "data",
+          "variable": "Polynomial series (degree 3)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "-0.028",
+          "role": "data",
+          "variable": "Polynomial series (degree 3)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "-0.071",
+          "role": "data",
+          "variable": "Polynomial series (degree 3)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.071",
+          "role": "data",
+          "variable": "Local polynomial (bw = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.033",
+          "role": "data",
+          "variable": "Local polynomial (bw = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.014",
+          "role": "data",
+          "variable": "Local polynomial (bw = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.031",
+          "role": "data",
+          "variable": "Local polynomial (bw = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "-0.078",
+          "role": "data",
+          "variable": "Local polynomial (bw = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.198",
+          "role": "data",
+          "variable": "Local IV (Heckman-Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.142",
+          "role": "data",
+          "variable": "Local IV (Heckman-Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.118",
+          "role": "data",
+          "variable": "Local IV (Heckman-Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.147",
+          "role": "data",
+          "variable": "Local IV (Heckman-Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "0.211",
+          "role": "data",
+          "variable": "Local IV (Heckman-Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.167",
+          "role": "data",
+          "variable": "Polynomial series (degree 3)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.121",
+          "role": "data",
+          "variable": "Polynomial series (degree 3)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.101",
+          "role": "data",
+          "variable": "Polynomial series (degree 3)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.127",
+          "role": "data",
+          "variable": "Polynomial series (degree 3)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "0.182",
+          "role": "data",
+          "variable": "Polynomial series (degree 3)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.183",
+          "role": "data",
+          "variable": "Local polynomial (bw = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.133",
+          "role": "data",
+          "variable": "Local polynomial (bw = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.110",
+          "role": "data",
+          "variable": "Local polynomial (bw = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.138",
+          "role": "data",
+          "variable": "Local polynomial (bw = 0.15)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "0.196",
+          "role": "data",
+          "variable": "Local polynomial (bw = 0.15)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Why is MTE estimation less precise at the boundaries?",
+          "answer": "Boundary effects in local estimation lead to larger bias and RMSE at extreme propensity score values"
+        },
+        {
+          "question": "What estimator has the smallest RMSE at the median propensity score?",
+          "answer": "Polynomial series (degree 3) with RMSE 0.101"
+        }
+      ]
+    },
+    {
+      "table_id": "wald-estimates",
+      "caption": "Wald Estimates by Instrument",
+      "label": "tab:wald-estimates",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1.42***",
+          "role": "data",
+          "variable": "Wald estimate (LATE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.31***",
+          "role": "data",
+          "variable": "Wald estimate (LATE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.38***",
+          "role": "data",
+          "variable": "Wald estimate (LATE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "1.36***",
+          "role": "data",
+          "variable": "Wald estimate (LATE)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.28)",
+          "role": "data",
+          "variable": "Wald estimate (LATE)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.31)",
+          "role": "data",
+          "variable": "Wald estimate (LATE)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.34)",
+          "role": "data",
+          "variable": "Wald estimate (LATE)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "Wald estimate (LATE)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.41***",
+          "role": "data",
+          "variable": "First-stage coefficient",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.35***",
+          "role": "data",
+          "variable": "First-stage coefficient",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.28***",
+          "role": "data",
+          "variable": "First-stage coefficient",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "First-stage coefficient",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "First-stage coefficient",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "First-stage coefficient",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "First-stage coefficient",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "First-stage coefficient",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.58***",
+          "role": "data",
+          "variable": "Reduced-form coefficient",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.46***",
+          "role": "data",
+          "variable": "Reduced-form coefficient",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.39***",
+          "role": "data",
+          "variable": "Reduced-form coefficient",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Reduced-form coefficient",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.11)",
+          "role": "data",
+          "variable": "Reduced-form coefficient",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.12)",
+          "role": "data",
+          "variable": "Reduced-form coefficient",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.14)",
+          "role": "data",
+          "variable": "Reduced-form coefficient",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Reduced-form coefficient",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "104.2",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "76.8",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "31.4",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "8,412",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "8,412",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "8,412",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "8,412",
+          "role": "summary",
+          "label": "Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the Wald estimate using Instrument 1?",
+          "answer": "1.42"
+        },
+        {
+          "question": "Are the three Wald estimates statistically distinguishable?",
+          "answer": "No, all three overlap within standard errors, suggesting consistent treatment effects across subgroups"
+        },
+        {
+          "question": "What is the first-stage F-statistic for Instrument 3?",
+          "answer": "31.4"
+        }
+      ]
+    },
+    {
+      "table_id": "two-stage-estimates",
+      "caption": "Two-Stage Least Squares Estimates",
+      "label": "tab:two-stage-estimates",
+      "gold_cells": [
+        {
+          "row": 2,
+          "col": 1,
+          "text": "1.36***",
+          "role": "data",
+          "variable": "Treatment D",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "1.31***",
+          "role": "data",
+          "variable": "Treatment D",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "1.28***",
+          "role": "data",
+          "variable": "Treatment D",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "1.24***",
+          "role": "data",
+          "variable": "Treatment D",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "(0.18)",
+          "role": "data",
+          "variable": "Treatment D",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "(0.17)",
+          "role": "data",
+          "variable": "Treatment D",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "(0.16)",
+          "role": "data",
+          "variable": "Treatment D",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "(0.16)",
+          "role": "data",
+          "variable": "Treatment D",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.02**",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.02**",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.02**",
+          "role": "data",
+          "variable": "Age",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.01)",
+          "role": "data",
+          "variable": "Age",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "-0.14***",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "-0.13***",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "-0.13***",
+          "role": "data",
+          "variable": "Female",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Female",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.41***",
+          "role": "data",
+          "variable": "Instrument Z1",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.40***",
+          "role": "data",
+          "variable": "Instrument Z1",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.39***",
+          "role": "data",
+          "variable": "Instrument Z1",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.39***",
+          "role": "data",
+          "variable": "Instrument Z1",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Instrument Z1",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Instrument Z1",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Instrument Z1",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Instrument Z1",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.35***",
+          "role": "data",
+          "variable": "Instrument Z2",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.34***",
+          "role": "data",
+          "variable": "Instrument Z2",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.34***",
+          "role": "data",
+          "variable": "Instrument Z2",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "0.33***",
+          "role": "data",
+          "variable": "Instrument Z2",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Instrument Z2",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Instrument Z2",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Instrument Z2",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.04)",
+          "role": "data",
+          "variable": "Instrument Z2",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.28***",
+          "role": "data",
+          "variable": "Instrument Z3",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "0.27***",
+          "role": "data",
+          "variable": "Instrument Z3",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "0.27***",
+          "role": "data",
+          "variable": "Instrument Z3",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "0.27***",
+          "role": "data",
+          "variable": "Instrument Z3",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Instrument Z3",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Instrument Z3",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Instrument Z3",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "(0.05)",
+          "role": "data",
+          "variable": "Instrument Z3",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "8,412",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "8,412",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "8,412",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "8,412",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 20,
+          "col": 1,
+          "text": "104.2",
+          "role": "summary",
+          "label": "First-stage F (joint)"
+        },
+        {
+          "row": 20,
+          "col": 2,
+          "text": "98.7",
+          "role": "summary",
+          "label": "First-stage F (joint)"
+        },
+        {
+          "row": 20,
+          "col": 3,
+          "text": "91.3",
+          "role": "summary",
+          "label": "First-stage F (joint)"
+        },
+        {
+          "row": 20,
+          "col": 4,
+          "text": "89.4",
+          "role": "summary",
+          "label": "First-stage F (joint)"
+        },
+        {
+          "row": 21,
+          "col": 1,
+          "text": "0.84",
+          "role": "summary",
+          "label": "Hansen J p-value"
+        },
+        {
+          "row": 21,
+          "col": 2,
+          "text": "0.81",
+          "role": "summary",
+          "label": "Hansen J p-value"
+        },
+        {
+          "row": 21,
+          "col": 3,
+          "text": "0.79",
+          "role": "summary",
+          "label": "Hansen J p-value"
+        },
+        {
+          "row": 21,
+          "col": 4,
+          "text": "0.77",
+          "role": "summary",
+          "label": "Hansen J p-value"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the 2SLS estimate in the most saturated specification (column 4)?",
+          "answer": "1.24"
+        },
+        {
+          "question": "Is the overidentification test rejected?",
+          "answer": "No, Hansen J p-value is 0.77 in column 4"
+        },
+        {
+          "question": "Does adding fixed effects substantially change the treatment effect estimate?",
+          "answer": "No, it moves from 1.36 to 1.24 across columns"
+        }
+      ]
+    },
+    {
+      "table_id": "specification-tests",
+      "caption": "Specification Tests",
+      "label": "tab:specification-tests",
+      "gold_cells": [
+        {
+          "row": 0,
+          "col": 1,
+          "text": "0.47",
+          "role": "data",
+          "variable": "Hansen J (overid.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "text": "0.79",
+          "role": "data",
+          "variable": "Hansen J (overid.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "text": "Instruments valid",
+          "role": "data",
+          "variable": "Hansen J (overid.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "text": "Fail to reject",
+          "role": "data",
+          "variable": "Hansen J (overid.)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Hausman (OLS vs. 2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Hausman (OLS vs. 2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "OLS consistent",
+          "role": "data",
+          "variable": "Hausman (OLS vs. 2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "Reject",
+          "role": "data",
+          "variable": "Hausman (OLS vs. 2SLS)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "89.4",
+          "role": "data",
+          "variable": "First-stage F (joint)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "0.00",
+          "role": "data",
+          "variable": "First-stage F (joint)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "Instruments irrelevant",
+          "role": "data",
+          "variable": "First-stage F (joint)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "Reject",
+          "role": "data",
+          "variable": "First-stage F (joint)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "CV=13.9",
+          "role": "data",
+          "variable": "Stock-Yogo 10% maximal bias",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "pass",
+          "role": "data",
+          "variable": "Stock-Yogo 10% maximal bias",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "Weak instruments",
+          "role": "data",
+          "variable": "Stock-Yogo 10% maximal bias",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "Fail to reject",
+          "role": "data",
+          "variable": "Stock-Yogo 10% maximal bias",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.81",
+          "role": "data",
+          "variable": "Monotonicity (Mourifie-Wan)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.47",
+          "role": "data",
+          "variable": "Monotonicity (Mourifie-Wan)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "Monotonicity violated",
+          "role": "data",
+          "variable": "Monotonicity (Mourifie-Wan)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "Fail to reject",
+          "role": "data",
+          "variable": "Monotonicity (Mourifie-Wan)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1.84",
+          "role": "data",
+          "variable": "LATE = ATE (Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.17",
+          "role": "data",
+          "variable": "LATE = ATE (Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "MTE constant",
+          "role": "data",
+          "variable": "LATE = ATE (Vytlacil)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "Fail to reject",
+          "role": "data",
+          "variable": "LATE = ATE (Vytlacil)",
+          "is_coefficient": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is the OLS estimator rejected as consistent?",
+          "answer": "Yes, Hausman test p-value is 0.00"
+        },
+        {
+          "question": "Do the instruments pass the overidentification test?",
+          "answer": "Yes, Hansen J p-value is 0.79"
+        },
+        {
+          "question": "Is monotonicity rejected?",
+          "answer": "No, Mourifie-Wan test p-value is 0.47"
+        }
+      ]
+    },
+    {
+      "table_id": "proofs-block",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "potential-outcomes",
+      "label": "eq:potential-outcomes",
+      "latex": "Y_i = D_i Y_{1i} + (1 - D_i) Y_{0i}, \\quad D_i = Z_i D_{1i} + (1-Z_i) D_{0i}",
+      "description": "Potential outcomes framework linking observed and counterfactual outcomes",
+      "qa": [
+        {
+          "question": "How does the potential outcomes framework define the observed outcome?",
+          "answer": "Y_i = D_i * Y_{1i} + (1-D_i) * Y_{0i}, switching between treated and untreated outcome based on realized treatment"
+        }
+      ]
+    },
+    {
+      "eq_id": "late-def",
+      "label": "eq:late-def",
+      "latex": "\\text{LATE} = E[Y_{1i} - Y_{0i} \\mid D_{1i} > D_{0i}] = \\frac{E[Y_i \\mid Z_i=1] - E[Y_i \\mid Z_i=0]}{E[D_i \\mid Z_i=1] - E[D_i \\mid Z_i=0]}",
+      "description": "LATE definition: average treatment effect for compliers",
+      "qa": [
+        {
+          "question": "How is LATE identified from the data?",
+          "answer": "As the ratio of the reduced form to the first stage: (E[Y|Z=1]-E[Y|Z=0])/(E[D|Z=1]-E[D|Z=0])"
+        }
+      ]
+    },
+    {
+      "eq_id": "wald-est",
+      "label": "eq:wald-est",
+      "latex": "\\hat{\\tau}_{Wald} = \\frac{\\bar{Y}_1 - \\bar{Y}_0}{\\bar{D}_1 - \\bar{D}_0} = \\frac{\\hat{\\rho}_{YZ}}{\\hat{\\rho}_{DZ}}",
+      "description": "Wald estimator for LATE with binary instrument",
+      "qa": [
+        {
+          "question": "What is the Wald estimator?",
+          "answer": "The ratio of the sample analog of E[Y|Z=1]-E[Y|Z=0] to E[D|Z=1]-E[D|Z=0]"
+        }
+      ]
+    },
+    {
+      "eq_id": "monotonicity",
+      "label": "eq:monotonicity",
+      "latex": "D_{1i} \\geq D_{0i} \\quad \\forall i \\quad (\\text{or} \\quad D_{1i} \\leq D_{0i} \\quad \\forall i)",
+      "description": "Monotonicity (no defiers) assumption required for LATE identification",
+      "qa": [
+        {
+          "question": "What does monotonicity rule out?",
+          "answer": "Defiers: individuals who take treatment when Z=0 but not when Z=1"
+        }
+      ]
+    },
+    {
+      "eq_id": "bounds-no-mono",
+      "label": "eq:bounds-no-mono",
+      "latex": "E[Y_1 - Y_0] \\in \\left[\\text{LATE} + \\frac{p_d - p_0}{1 - p_0 + p_d} \\underline{Y}, \\; \\text{LATE} + \\frac{p_d}{p_0 + 1 - p_d} \\overline{Y}\\right]",
+      "description": "Machina-Storti bounds on ATE without monotonicity assumption",
+      "qa": [
+        {
+          "question": "What assumption does the Machina-Storti bound relax?",
+          "answer": "Monotonicity: the bounds allow for defiers and bound the ATE using only the IV and outcome support"
+        }
+      ]
+    },
+    {
+      "eq_id": "mte-def",
+      "label": "eq:mte-def",
+      "latex": "\\text{MTE}(x, u) = E[Y_{1i} - Y_{0i} \\mid X_i = x, U_i = u]",
+      "description": "Marginal Treatment Effect: effect for individual indifferent about treatment at resistance level u",
+      "qa": [
+        {
+          "question": "What is the MTE?",
+          "answer": "The average treatment effect conditional on observable covariates x and unobserved resistance to treatment u"
+        }
+      ]
+    },
+    {
+      "eq_id": "mte-local-iv",
+      "label": "eq:mte-local-iv",
+      "latex": "\\text{MTE}(x, u) = \\frac{\\partial E[Y \\mid X=x, P(Z)=p]}{\\partial p}\\Bigg|_{p=u}, \\quad \\lfloor n \\cdot u \\rfloor \\leq \\text{rank}(p_i) \\leq \\lceil n \\cdot u \\rceil",
+      "description": "MTE as derivative of the conditional expectation of Y with respect to the propensity score",
+      "qa": [
+        {
+          "question": "How is the MTE estimated via local IV?",
+          "answer": "As the partial derivative of E[Y|X,P(Z)] with respect to P(Z), evaluated at P(Z)=u"
+        }
+      ]
+    },
+    {
+      "eq_id": "ps-weighting",
+      "label": "eq:ps-weighting",
+      "latex": "E[Y_i(1) - Y_i(0)] = E\\left[\\frac{D_i Y_i}{P(Z_i)} - \\frac{(1-D_i)Y_i}{1 - P(Z_i)}\\right]",
+      "description": "Propensity score weighting representation of ATE",
+      "qa": [
+        {
+          "question": "How does propensity score weighting recover the ATE?",
+          "answer": "By reweighting observed outcomes by 1/P(Z) for treated and 1/(1-P(Z)) for untreated"
+        }
+      ]
+    },
+    {
+      "eq_id": "late-as-mte-integral",
+      "label": "eq:late-as-mte",
+      "latex": "\\text{LATE} = \\int_0^1 \\text{MTE}(u) \\, h_{LATE}(u) \\, du, \\quad h_{LATE}(u) = \\frac{\\mathbf{1}(u \\leq p_1) - \\mathbf{1}(u \\leq p_0)}{p_1 - p_0}, \\quad \\hat{\\tau} = \\underset{\\tau}{\\operatorname{arg\\,max}}\\; \\mathcal{L}(\\tau \\mid \\mathbf{Y}, \\mathbf{D}, \\mathbf{Z})",
+      "description": "LATE as a weighted average of MTEs, with instrument-specific weights",
+      "qa": [
+        {
+          "question": "Is LATE a weighted average of MTEs?",
+          "answer": "Yes, LATE = integral of MTE(u)*h_LATE(u) du, where h_LATE is the instrument-specific IV weight"
+        }
+      ]
+    },
+    {
+      "eq_id": "overid-test",
+      "label": "eq:overid",
+      "latex": "J = n \\cdot \\hat{g}' \\hat{W}^{-1} \\hat{g} \\xrightarrow{d} \\chi^2(L - K), \\quad \\hat{g} = \\frac{1}{n}\\sum_{i=1}^n Z_i (Y_i - D_i \\hat{\\tau}), \\quad \\hat{W} = \\begin{bmatrix} \\hat{\\sigma}_{11} & \\cdots & \\hat{\\sigma}_{1L} \\\\ \\vdots & \\ddots & \\vdots \\\\ \\hat{\\sigma}_{L1} & \\cdots & \\hat{\\sigma}_{LL} \\end{bmatrix}",
+      "description": "Hansen J over-identification test statistic for instrument validity",
+      "qa": [
+        {
+          "question": "What does the Hansen J test test?",
+          "answer": "The null hypothesis that all L instruments are valid (exogenous), with L-K degrees of freedom when there are K endogenous regressors"
+        }
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main identification assumption for LATE?",
+      "answer": "Monotonicity: D_{1i} >= D_{0i} for all i (no defiers)"
+    },
+    {
+      "question": "What is the empirical LATE estimate?",
+      "answer": "1.36 (from joint 2SLS with all three instruments)"
+    },
+    {
+      "question": "Does 2SLS under-cover at small samples?",
+      "answer": "Yes, asymptotic CI coverage is 0.906 at n=200 vs nominal 0.950"
+    },
+    {
+      "question": "Is the MTE increasing or decreasing in the resistance level u?",
+      "answer": "Decreasing: from 2.14 at u=0.05 to 0.44 at u=0.95"
+    },
+    {
+      "question": "What do Machina-Storti bounds imply about the ATE without monotonicity?",
+      "answer": "ATE is in [0.78, 1.94], consistent with the LATE of 1.36"
+    },
+    {
+      "question": "What share of the population are compliers?",
+      "answer": "0.40 (40%)"
+    },
+    {
+      "question": "Are compliers higher or lower income than always-takers?",
+      "answer": "Lower: complier mean income $38.7k vs always-taker $52.1k"
+    },
+    {
+      "question": "Which type has the highest prior program participation?",
+      "answer": "Always-takers (41.2%)"
+    },
+    {
+      "question": "What are the Manski no-assumptions bounds?",
+      "answer": "[-8.41, 8.41]"
+    },
+    {
+      "question": "What do Machina-Storti IV bounds imply for the ATE?",
+      "answer": "[0.78, 1.94], consistent with the LATE of 1.36"
+    },
+    {
+      "question": "Which bound set is tightest?",
+      "answer": "Machina-Storti IV bounds (width 1.16)"
+    },
+    {
+      "question": "Is the MTE increasing or decreasing in the propensity score?",
+      "answer": "Decreasing: from 2.14 at u=0.05 to 0.44 at u=0.95"
+    },
+    {
+      "question": "What is the MTE at the median propensity score (u=0.45)?",
+      "answer": "1.39"
+    },
+    {
+      "question": "Which decile receives the highest 2SLS weight?",
+      "answer": "Decile 5 (u=0.45) with weight 0.162"
+    },
+    {
+      "question": "In which DGP is LATE equal to ATE?",
+      "answer": "DGP 2 (LATE = ATE = 1.50) and DGP 4 (LATE = ATE = 2.00)"
+    },
+    {
+      "question": "Which DGP has the strongest selection on unobservables?",
+      "answer": "DGP 3 (rho = 0.70)"
+    },
+    {
+      "question": "What is the true LATE in the Monte Carlo DGP?",
+      "answer": "1.000"
+    },
+    {
+      "question": "Does 2SLS bias shrink as sample size grows?",
+      "answer": "Yes, from -0.042 to -0.002"
+    },
+    {
+      "question": "What is the OLS bias approximately?",
+      "answer": "0.319 (substantial positive bias from selection)"
+    },
+    {
+      "question": "Which estimator has the smallest RMSE at n=1000?",
+      "answer": "LIML (0.097)"
+    },
+    {
+      "question": "Which confidence interval achieves exact nominal coverage?",
+      "answer": "Anderson-Rubin (weak-IV robust) CI achieves 0.950 at all sample sizes"
+    },
+    {
+      "question": "Does asymptotic 2SLS CI under-cover at n=200?",
+      "answer": "Yes, coverage is 0.906 vs nominal 0.950"
+    },
+    {
+      "question": "Why is MTE estimation less precise at the boundaries?",
+      "answer": "Boundary effects in local estimation lead to larger bias and RMSE at extreme propensity score values"
+    },
+    {
+      "question": "What estimator has the smallest RMSE at the median propensity score?",
+      "answer": "Polynomial series (degree 3) with RMSE 0.101"
+    },
+    {
+      "question": "What is the Wald estimate using Instrument 1?",
+      "answer": "1.42"
+    },
+    {
+      "question": "Are the three Wald estimates statistically distinguishable?",
+      "answer": "No, all three overlap within standard errors, suggesting consistent treatment effects across subgroups"
+    },
+    {
+      "question": "What is the first-stage F-statistic for Instrument 3?",
+      "answer": "31.4"
+    },
+    {
+      "question": "What is the 2SLS estimate in the most saturated specification (column 4)?",
+      "answer": "1.24"
+    },
+    {
+      "question": "Is the overidentification test rejected?",
+      "answer": "No, Hansen J p-value is 0.77 in column 4"
+    },
+    {
+      "question": "Does adding fixed effects substantially change the treatment effect estimate?",
+      "answer": "No, it moves from 1.36 to 1.24 across columns"
+    },
+    {
+      "question": "Is the OLS estimator rejected as consistent?",
+      "answer": "Yes, Hausman test p-value is 0.00"
+    },
+    {
+      "question": "Do the instruments pass the overidentification test?",
+      "answer": "Yes, Hansen J p-value is 0.79"
+    },
+    {
+      "question": "Is monotonicity rejected?",
+      "answer": "No, Mourifie-Wan test p-value is 0.47"
+    },
+    {
+      "question": "How does the potential outcomes framework define the observed outcome?",
+      "answer": "Y_i = D_i * Y_{1i} + (1-D_i) * Y_{0i}, switching between treated and untreated outcome based on realized treatment"
+    },
+    {
+      "question": "How is LATE identified from the data?",
+      "answer": "As the ratio of the reduced form to the first stage: (E[Y|Z=1]-E[Y|Z=0])/(E[D|Z=1]-E[D|Z=0])"
+    },
+    {
+      "question": "What is the Wald estimator?",
+      "answer": "The ratio of the sample analog of E[Y|Z=1]-E[Y|Z=0] to E[D|Z=1]-E[D|Z=0]"
+    },
+    {
+      "question": "What does monotonicity rule out?",
+      "answer": "Defiers: individuals who take treatment when Z=0 but not when Z=1"
+    },
+    {
+      "question": "What assumption does the Machina-Storti bound relax?",
+      "answer": "Monotonicity: the bounds allow for defiers and bound the ATE using only the IV and outcome support"
+    },
+    {
+      "question": "What is the MTE?",
+      "answer": "The average treatment effect conditional on observable covariates x and unobserved resistance to treatment u"
+    },
+    {
+      "question": "How is the MTE estimated via local IV?",
+      "answer": "As the partial derivative of E[Y|X,P(Z)] with respect to P(Z), evaluated at P(Z)=u"
+    },
+    {
+      "question": "How does propensity score weighting recover the ATE?",
+      "answer": "By reweighting observed outcomes by 1/P(Z) for treated and 1/(1-P(Z)) for untreated"
+    },
+    {
+      "question": "Is LATE a weighted average of MTEs?",
+      "answer": "Yes, LATE = integral of MTE(u)*h_LATE(u) du, where h_LATE is the instrument-specific IV weight"
+    },
+    {
+      "question": "What does the Hansen J test test?",
+      "answer": "The null hypothesis that all L instruments are valid (exogenous), with L-K degrees of freedom when there are K endogenous regressors"
+    }
+  ]
+}

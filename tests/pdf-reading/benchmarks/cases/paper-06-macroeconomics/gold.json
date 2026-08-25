@@ -1,0 +1,2848 @@
+{
+  "paper_id": "06",
+  "field": "macroeconomics",
+  "title": "Monetary Policy Shocks and the Macroeconomy: Narrative Identification in a Structural VAR",
+  "journal_style": "jf",
+  "target_pages": 60,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-macro",
+      "level": 1
+    },
+    {
+      "title": "Historical Background",
+      "label": "sec:hist-bg",
+      "level": 1
+    },
+    {
+      "title": "Federal Reserve Policy History",
+      "label": "sec:hist-fed",
+      "level": 2
+    },
+    {
+      "title": "Narrative Sources",
+      "label": "sec:hist-narrative",
+      "level": 2
+    },
+    {
+      "title": "SVAR Framework",
+      "label": "sec:svar",
+      "level": 1
+    },
+    {
+      "title": "Model Specification",
+      "label": "sec:svar-spec",
+      "level": 2
+    },
+    {
+      "title": "Estimation",
+      "label": "sec:svar-est",
+      "level": 2
+    },
+    {
+      "title": "Narrative Identification",
+      "label": "sec:narrative-id",
+      "level": 1
+    },
+    {
+      "title": "Construction of Narrative Shocks",
+      "label": "sec:narrative-construct",
+      "level": 2
+    },
+    {
+      "title": "Exogeneity of Narrative Shocks",
+      "label": "sec:narrative-exog",
+      "level": 2
+    },
+    {
+      "title": "Data",
+      "label": "sec:data-macro",
+      "level": 1
+    },
+    {
+      "title": "Macroeconomic Time Series",
+      "label": "sec:data-ts",
+      "level": 2
+    },
+    {
+      "title": "Greenbook Forecast Data",
+      "label": "sec:data-gb",
+      "level": 2
+    },
+    {
+      "title": "Results",
+      "label": "sec:results-macro",
+      "level": 1
+    },
+    {
+      "title": "Impulse Responses: Output",
+      "label": "sec:results-output",
+      "level": 2
+    },
+    {
+      "title": "Impulse Responses: Prices",
+      "label": "sec:results-prices",
+      "level": 2
+    },
+    {
+      "title": "Variance Decomposition",
+      "label": "sec:results-fevd",
+      "level": 2
+    },
+    {
+      "title": "Robustness",
+      "label": "sec:robust-macro",
+      "level": 1
+    },
+    {
+      "title": "Sub-Period Analysis",
+      "label": "sec:robust-subperiod",
+      "level": 2
+    },
+    {
+      "title": "Alternative Lag Lengths",
+      "label": "sec:robust-lags",
+      "level": 2
+    },
+    {
+      "title": "Alternative Orderings",
+      "label": "sec:robust-order",
+      "level": 2
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-macro",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: SVAR Theory",
+      "label": "sec:appendix-a-macro",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Narrative Classification",
+      "label": "sec:appendix-b-macro",
+      "level": 1
+    },
+    {
+      "title": "Appendix C: Additional IRFs",
+      "label": "sec:appendix-c-macro",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "narrative-shocks-summary",
+      "caption": "Summary of Narrative Monetary Policy Shocks",
+      "label": "tab:narrative-shocks",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.04",
+          "role": "data",
+          "variable": "Narrative Shock (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.82",
+          "role": "data",
+          "variable": "Narrative Shock (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-3.00",
+          "role": "data",
+          "variable": "Narrative Shock (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "3.50",
+          "role": "data",
+          "variable": "Narrative Shock (pp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Narrative Shock (pp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Narrative Shock (pp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Narrative Shock (pp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Narrative Shock (pp)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.02",
+          "role": "data",
+          "variable": "Federal Funds Rate Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.61",
+          "role": "data",
+          "variable": "Federal Funds Rate Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-3.50",
+          "role": "data",
+          "variable": "Federal Funds Rate Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "4.25",
+          "role": "data",
+          "variable": "Federal Funds Rate Change",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Federal Funds Rate Change",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Federal Funds Rate Change",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Federal Funds Rate Change",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Federal Funds Rate Change",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "24",
+          "role": "data",
+          "variable": "Number of Episodes",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Number of Episodes",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "--",
+          "role": "data",
+          "variable": "Number of Episodes",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "--",
+          "role": "data",
+          "variable": "Number of Episodes",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Episodes",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Episodes",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Episodes",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Number of Episodes",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.12",
+          "role": "data",
+          "variable": "1960-1979 Mean Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.91",
+          "role": "data",
+          "variable": "1960-1979 Mean Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "-2.50",
+          "role": "data",
+          "variable": "1960-1979 Mean Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "3.50",
+          "role": "data",
+          "variable": "1960-1979 Mean Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "1960-1979 Mean Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "1960-1979 Mean Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "1960-1979 Mean Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "1960-1979 Mean Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "-0.01",
+          "role": "data",
+          "variable": "1980-2007 Mean Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.74",
+          "role": "data",
+          "variable": "1980-2007 Mean Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "-3.00",
+          "role": "data",
+          "variable": "1980-2007 Mean Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "2.75",
+          "role": "data",
+          "variable": "1980-2007 Mean Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "1980-2007 Mean Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "1980-2007 Mean Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "1980-2007 Mean Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "1980-2007 Mean Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "192",
+          "role": "summary",
+          "label": "Quarterly Observations"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "192",
+          "role": "summary",
+          "label": "Quarterly Observations"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "192",
+          "role": "summary",
+          "label": "Quarterly Observations"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "192",
+          "role": "summary",
+          "label": "Quarterly Observations"
+        }
+      ],
+      "qa": [
+        {
+          "question": "How many narrative monetary policy episodes are identified?",
+          "answer": "24"
+        },
+        {
+          "question": "What is the standard deviation of the narrative shock over the full sample?",
+          "answer": "0.82"
+        },
+        {
+          "question": "What is the minimum narrative shock value?",
+          "answer": "-3.00"
+        }
+      ]
+    },
+    {
+      "table_id": "forecast-errors",
+      "caption": "Forecast Error Regression: Narrative Identification",
+      "label": "tab:forecast-errors",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.891***",
+          "role": "data",
+          "variable": "Narrative Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.872***",
+          "role": "data",
+          "variable": "Narrative Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.864***",
+          "role": "data",
+          "variable": "Narrative Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.851***",
+          "role": "data",
+          "variable": "Narrative Shock",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Narrative Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.039)",
+          "role": "data",
+          "variable": "Narrative Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Narrative Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Narrative Shock",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Greenbook Forecast (output)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.124**",
+          "role": "data",
+          "variable": "Greenbook Forecast (output)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.118**",
+          "role": "data",
+          "variable": "Greenbook Forecast (output)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.112**",
+          "role": "data",
+          "variable": "Greenbook Forecast (output)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Greenbook Forecast (output)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "Greenbook Forecast (output)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.053)",
+          "role": "data",
+          "variable": "Greenbook Forecast (output)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.050)",
+          "role": "data",
+          "variable": "Greenbook Forecast (output)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "--",
+          "role": "data",
+          "variable": "Greenbook Forecast (inflation)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "--",
+          "role": "data",
+          "variable": "Greenbook Forecast (inflation)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.084*",
+          "role": "data",
+          "variable": "Greenbook Forecast (inflation)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.081*",
+          "role": "data",
+          "variable": "Greenbook Forecast (inflation)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Greenbook Forecast (inflation)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Greenbook Forecast (inflation)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Greenbook Forecast (inflation)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Greenbook Forecast (inflation)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "192",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "192",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "192",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "192",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.621",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.648",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0.661",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "0.678",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the coefficient on the narrative shock in column 1?",
+          "answer": "0.891"
+        },
+        {
+          "question": "What is the R-squared in column 4?",
+          "answer": "0.678"
+        }
+      ]
+    },
+    {
+      "table_id": "var-estimates",
+      "caption": "SVAR Coefficient Estimates",
+      "label": "tab:var-estimates",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.812***",
+          "role": "data",
+          "variable": "Lag 1 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.941***",
+          "role": "data",
+          "variable": "Lag 1 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.781***",
+          "role": "data",
+          "variable": "Lag 1 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.921***",
+          "role": "data",
+          "variable": "Lag 1 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Lag 1 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Lag 1 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.051)",
+          "role": "data",
+          "variable": "Lag 1 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.032)",
+          "role": "data",
+          "variable": "Lag 1 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.084**",
+          "role": "data",
+          "variable": "Lag 2 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.041*",
+          "role": "data",
+          "variable": "Lag 2 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.091**",
+          "role": "data",
+          "variable": "Lag 2 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.051*",
+          "role": "data",
+          "variable": "Lag 2 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Lag 2 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Lag 2 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Lag 2 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.028)",
+          "role": "data",
+          "variable": "Lag 2 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.021",
+          "role": "data",
+          "variable": "Lag 3 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.018",
+          "role": "data",
+          "variable": "Lag 3 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.028",
+          "role": "data",
+          "variable": "Lag 3 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.024",
+          "role": "data",
+          "variable": "Lag 3 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(0.036)",
+          "role": "data",
+          "variable": "Lag 3 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(0.022)",
+          "role": "data",
+          "variable": "Lag 3 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Lag 3 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(0.026)",
+          "role": "data",
+          "variable": "Lag 3 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.018",
+          "role": "data",
+          "variable": "Lag 4 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.012",
+          "role": "data",
+          "variable": "Lag 4 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.024",
+          "role": "data",
+          "variable": "Lag 4 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.018",
+          "role": "data",
+          "variable": "Lag 4 (own)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.034)",
+          "role": "data",
+          "variable": "Lag 4 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.021)",
+          "role": "data",
+          "variable": "Lag 4 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.039)",
+          "role": "data",
+          "variable": "Lag 4 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.025)",
+          "role": "data",
+          "variable": "Lag 4 (own)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "188",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "188",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "188",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "188",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.941",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.978",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.892",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "0.961",
+          "role": "summary",
+          "label": "R-squared"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the first own-lag coefficient for output?",
+          "answer": "0.812"
+        },
+        {
+          "question": "What is the R-squared for the prices equation?",
+          "answer": "0.978"
+        }
+      ]
+    },
+    {
+      "table_id": "impulse-responses-output",
+      "caption": "Impulse Response: Effect of Monetary Shock on Output",
+      "label": "tab:irf-output",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.021",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.184***",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.312***",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.218**",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.051",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.264",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.428",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.371",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.009",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "-0.104",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.196",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.065",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the peak output response to a 100bp monetary shock?",
+          "answer": "-0.312 at h=8"
+        },
+        {
+          "question": "What is the output response at h=4?",
+          "answer": "-0.184"
+        }
+      ]
+    },
+    {
+      "table_id": "impulse-responses-prices",
+      "caption": "Impulse Response: Effect of Monetary Shock on Prices",
+      "label": "tab:irf-prices",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.008",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.042",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.198***",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.341***",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.012)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.062)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.089)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "-0.014",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "-0.112",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-0.300",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.485",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.030",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.028",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "-0.096",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "-0.197",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the price response at h=12?",
+          "answer": "-0.341"
+        },
+        {
+          "question": "What is the price response at h=8?",
+          "answer": "-0.198"
+        }
+      ]
+    },
+    {
+      "table_id": "impulse-responses-interest",
+      "caption": "Impulse Response: Effect of Monetary Shock on Federal Funds Rate",
+      "label": "tab:irf-interest",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.841***",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.148**",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.021",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.048)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.081)",
+          "role": "data",
+          "variable": "Point Estimate",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.761",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.292",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.034",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.154",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Lower",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.921",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.532",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.262",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.112",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "90\\% CI Upper",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the interest rate response at h=1?",
+          "answer": "0.841"
+        },
+        {
+          "question": "What is the interest rate response at h=8?",
+          "answer": "0.148"
+        }
+      ]
+    },
+    {
+      "table_id": "variance-decomposition",
+      "caption": "Forecast Error Variance Decomposition (\\%)",
+      "label": "tab:variance-decomp",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "3.2",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "18.4",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "24.1",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "19.8",
+          "role": "data",
+          "variable": "Output",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(1.4)",
+          "role": "data",
+          "variable": "Output",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(4.2)",
+          "role": "data",
+          "variable": "Output",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(5.1)",
+          "role": "data",
+          "variable": "Output",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(4.8)",
+          "role": "data",
+          "variable": "Output",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1.8",
+          "role": "data",
+          "variable": "Prices",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "8.4",
+          "role": "data",
+          "variable": "Prices",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "14.2",
+          "role": "data",
+          "variable": "Prices",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "18.1",
+          "role": "data",
+          "variable": "Prices",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.9)",
+          "role": "data",
+          "variable": "Prices",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(2.8)",
+          "role": "data",
+          "variable": "Prices",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(3.9)",
+          "role": "data",
+          "variable": "Prices",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(4.2)",
+          "role": "data",
+          "variable": "Prices",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "42.1",
+          "role": "data",
+          "variable": "Fed Funds Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "31.8",
+          "role": "data",
+          "variable": "Fed Funds Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "22.4",
+          "role": "data",
+          "variable": "Fed Funds Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "14.1",
+          "role": "data",
+          "variable": "Fed Funds Rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "(6.1)",
+          "role": "data",
+          "variable": "Fed Funds Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "(5.8)",
+          "role": "data",
+          "variable": "Fed Funds Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "(5.2)",
+          "role": "data",
+          "variable": "Fed Funds Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "(4.1)",
+          "role": "data",
+          "variable": "Fed Funds Rate",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "2.4",
+          "role": "data",
+          "variable": "Unemployment",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "12.1",
+          "role": "data",
+          "variable": "Unemployment",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "18.8",
+          "role": "data",
+          "variable": "Unemployment",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "15.4",
+          "role": "data",
+          "variable": "Unemployment",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(1.2)",
+          "role": "data",
+          "variable": "Unemployment",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(3.4)",
+          "role": "data",
+          "variable": "Unemployment",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(4.4)",
+          "role": "data",
+          "variable": "Unemployment",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(4.1)",
+          "role": "data",
+          "variable": "Unemployment",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What share of output variance is explained by the monetary shock at h=8?",
+          "answer": "24.1"
+        },
+        {
+          "question": "What share of price variance is explained by the monetary shock at h=16?",
+          "answer": "18.1"
+        }
+      ]
+    },
+    {
+      "table_id": "sub-period-1960-1979",
+      "caption": "Sub-Period Analysis: 1960-1979",
+      "label": "tab:subperiod-1960",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.284***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.318***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.812***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.241***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.084)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.101)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.058)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the output effect at h=8 in the 1960-1979 subsample?",
+          "answer": "-0.284"
+        }
+      ]
+    },
+    {
+      "table_id": "sub-period-1980-2007",
+      "caption": "Sub-Period Analysis: 1980-2007",
+      "label": "tab:subperiod-1980",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.341***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.362***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.871***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.284***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.094)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.108)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.061)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.078)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the output effect at h=8 in the 1980-2007 subsample?",
+          "answer": "-0.341"
+        },
+        {
+          "question": "What is the FFR response at h=1 in the 1980-2007 subsample?",
+          "answer": "0.871"
+        }
+      ]
+    },
+    {
+      "table_id": "robustness-lag-length",
+      "caption": "Robustness: Alternative Lag Lengths",
+      "label": "tab:robust-lag",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.284***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.312***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.298***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.301***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.068)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.074)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.078)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the output IRF at h=8 with 4 lags?",
+          "answer": "-0.312"
+        },
+        {
+          "question": "What is the output IRF at h=8 with 6 lags?",
+          "answer": "-0.298"
+        }
+      ]
+    },
+    {
+      "table_id": "robustness-ordering",
+      "caption": "Robustness: Alternative Cholesky Orderings",
+      "label": "tab:robust-ordering",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.312***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.298***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.321***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.304***",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.071)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.074)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.069)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.073)",
+          "role": "data",
+          "variable": "Monetary Shock (+100bp)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the output IRF at h=8 with baseline ordering?",
+          "answer": "-0.312"
+        },
+        {
+          "question": "What is the output IRF with Alt 2 ordering?",
+          "answer": "-0.321"
+        }
+      ]
+    },
+    {
+      "table_id": "appendix-proofs-macro",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-narrative-dates",
+      "caption": "Appendix: Narrative Monetary Policy Episode Dates",
+      "label": "tab:narrative-dates",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1968Q4",
+          "role": "data",
+          "variable": "1968 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "+0.50",
+          "role": "data",
+          "variable": "1968 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "+0.42",
+          "role": "data",
+          "variable": "1968 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "Contraction",
+          "role": "data",
+          "variable": "1968 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "1968 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "1968 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "1968 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "1968 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "1974Q2",
+          "role": "data",
+          "variable": "1974 Q2",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "+1.25",
+          "role": "data",
+          "variable": "1974 Q2",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "+1.18",
+          "role": "data",
+          "variable": "1974 Q2",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "Contraction",
+          "role": "data",
+          "variable": "1974 Q2",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "1974 Q2",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "1974 Q2",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "1974 Q2",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "1974 Q2",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "1979Q4",
+          "role": "data",
+          "variable": "1979 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "+3.50",
+          "role": "data",
+          "variable": "1979 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "+3.21",
+          "role": "data",
+          "variable": "1979 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "Contraction",
+          "role": "data",
+          "variable": "1979 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "1979 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "1979 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "1979 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "1979 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "1982Q4",
+          "role": "data",
+          "variable": "1982 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-2.75",
+          "role": "data",
+          "variable": "1982 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-2.51",
+          "role": "data",
+          "variable": "1982 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "Expansion",
+          "role": "data",
+          "variable": "1982 Q4",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "1982 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "1982 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "1982 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "1982 Q4",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "2001Q1",
+          "role": "data",
+          "variable": "2001 Q1",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "-0.50",
+          "role": "data",
+          "variable": "2001 Q1",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "-0.44",
+          "role": "data",
+          "variable": "2001 Q1",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "Expansion",
+          "role": "data",
+          "variable": "2001 Q1",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "2001 Q1",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "2001 Q1",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "2001 Q1",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "2001 Q1",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the narrative shock size in 1979 Q4?",
+          "answer": "+3.21"
+        },
+        {
+          "question": "What type of episode was 1982 Q4?",
+          "answer": "Expansion"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "monetary-policy-rule",
+      "label": "eq:policy-rule",
+      "latex": "i_t = \\rho i_{t-1} + (1-\\rho)[\\phi_\\pi \\pi_t + \\phi_y y_t] + \\varepsilon_t^m",
+      "description": "Taylor-type monetary policy rule with interest rate smoothing $\\rho$.",
+      "qa": []
+    },
+    {
+      "eq_id": "svar-model",
+      "label": "eq:svar",
+      "latex": "A_0 y_t = A_1 y_{t-1} + \\cdots + A_p y_{t-p} + \\varepsilon_t, \\quad \\varepsilon_t \\sim \\mathcal{N}(0, I), \\quad \\mathcal{F}_t = \\sigma(y_{t}, y_{t-1}, \\ldots)",
+      "description": "Structural VAR model with $p$ lags. $A_0$ is the contemporaneous impact matrix; $\\varepsilon_t$ are structural shocks.",
+      "qa": [
+        {
+          "question": "What assumption on epsilon_t identifies the SVAR?",
+          "answer": "Structural shocks are orthonormal: Var(epsilon_t) = I"
+        }
+      ]
+    },
+    {
+      "eq_id": "structural-shocks",
+      "label": "eq:structural-shocks",
+      "latex": "u_t = A_0^{-1} \\varepsilon_t, \\quad E[u_t u_t'] = A_0^{-1}(A_0^{-1})' = \\Sigma_u",
+      "description": "Relationship between reduced-form residuals $u_t$ and structural shocks $\\varepsilon_t$.",
+      "qa": []
+    },
+    {
+      "eq_id": "cholesky",
+      "label": "eq:cholesky",
+      "latex": "A_0 = P^{-1}, \\quad \\Sigma_u = PP', \\quad P \\text{ lower triangular}",
+      "description": "Cholesky decomposition identification: $P$ is the lower-triangular Cholesky factor of the covariance matrix.",
+      "qa": []
+    },
+    {
+      "eq_id": "narrative-restriction",
+      "label": "eq:narrative",
+      "latex": "\\varepsilon_t^m = s_t^{NR}, \\quad s_t^{NR} = \\Delta i_t - E_{t-1}[\\Delta i_t]",
+      "description": "Narrative identification: monetary shock equals the change in policy rate minus the Fed's own forecast.",
+      "qa": []
+    },
+    {
+      "eq_id": "forecast-equation",
+      "label": "eq:forecast",
+      "latex": "\\Delta i_t = \\alpha + \\beta s_t^{NR} + \\gamma' \\mathbf{f}_t + \\eta_t",
+      "description": "Forecast equation: FFR change regressed on narrative shock and Greenbook macro forecasts $\\mathbf{f}_t$.",
+      "qa": []
+    },
+    {
+      "eq_id": "irf",
+      "label": "eq:irf",
+      "latex": "\\text{IRF}(h) = \\Phi_h A_0^{-1} e_i, \\quad \\hat{\\Phi}_h \\xrightarrow{d} \\Phi_h \\text{ as } T \\to \\infty, \\quad \\overset{p}{\\to} \\text{ under } \\mathcal{F}_t\\text{-measurability}",
+      "description": "Impulse response function at horizon $h$: $\\Phi_h$ is the $h$-step coefficient matrix, $e_i$ selects shock $i$.",
+      "qa": []
+    },
+    {
+      "eq_id": "variance-decomp-formula",
+      "label": "eq:fevd",
+      "latex": "\\text{FEVD}_k(h) = \\frac{e_k' \\left(\\sum_{j=0}^h \\Phi_j A_0^{-1} e_i e_i' (A_0^{-1})' \\Phi_j'\\right) e_k}{\\iint_{\\mathcal{F}_t} \\text{Var}(y_{k,t+h} \\mid \\mathcal{F}_t)\\, d\\mu(t)\\, d\\nu(k)}",
+      "description": "Forecast error variance decomposition: share of $y_k$ forecast error at horizon $h$ due to shock $i$.",
+      "qa": []
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main identification strategy?",
+      "answer": "Narrative identification using Federal Reserve records and Greenbook forecasts to construct exogenous monetary policy shocks"
+    },
+    {
+      "question": "What is the peak output response to a 100bp monetary shock?",
+      "answer": "-0.312 log points at h=8 quarters"
+    },
+    {
+      "question": "What is the price response at h=12?",
+      "answer": "-0.341 log points"
+    },
+    {
+      "question": "What share of output forecast error variance is explained by the monetary shock at h=8?",
+      "answer": "24.1 percent"
+    },
+    {
+      "question": "How many narrative monetary policy episodes are identified?",
+      "answer": "24"
+    },
+    {
+      "question": "How many narrative monetary policy episodes are identified?",
+      "answer": "24"
+    },
+    {
+      "question": "What is the standard deviation of the narrative shock over the full sample?",
+      "answer": "0.82"
+    },
+    {
+      "question": "What is the minimum narrative shock value?",
+      "answer": "-3.00"
+    },
+    {
+      "question": "What is the coefficient on the narrative shock in column 1?",
+      "answer": "0.891"
+    },
+    {
+      "question": "What is the R-squared in column 4?",
+      "answer": "0.678"
+    },
+    {
+      "question": "What is the first own-lag coefficient for output?",
+      "answer": "0.812"
+    },
+    {
+      "question": "What is the R-squared for the prices equation?",
+      "answer": "0.978"
+    },
+    {
+      "question": "What is the peak output response to a 100bp monetary shock?",
+      "answer": "-0.312 at h=8"
+    },
+    {
+      "question": "What is the output response at h=4?",
+      "answer": "-0.184"
+    },
+    {
+      "question": "What is the price response at h=12?",
+      "answer": "-0.341"
+    },
+    {
+      "question": "What is the price response at h=8?",
+      "answer": "-0.198"
+    },
+    {
+      "question": "What is the interest rate response at h=1?",
+      "answer": "0.841"
+    },
+    {
+      "question": "What is the interest rate response at h=8?",
+      "answer": "0.148"
+    },
+    {
+      "question": "What share of output variance is explained by the monetary shock at h=8?",
+      "answer": "24.1"
+    },
+    {
+      "question": "What share of price variance is explained by the monetary shock at h=16?",
+      "answer": "18.1"
+    },
+    {
+      "question": "What is the output effect at h=8 in the 1960-1979 subsample?",
+      "answer": "-0.284"
+    },
+    {
+      "question": "What is the output effect at h=8 in the 1980-2007 subsample?",
+      "answer": "-0.341"
+    },
+    {
+      "question": "What is the FFR response at h=1 in the 1980-2007 subsample?",
+      "answer": "0.871"
+    },
+    {
+      "question": "What is the output IRF at h=8 with 4 lags?",
+      "answer": "-0.312"
+    },
+    {
+      "question": "What is the output IRF at h=8 with 6 lags?",
+      "answer": "-0.298"
+    },
+    {
+      "question": "What is the output IRF at h=8 with baseline ordering?",
+      "answer": "-0.312"
+    },
+    {
+      "question": "What is the output IRF with Alt 2 ordering?",
+      "answer": "-0.321"
+    },
+    {
+      "question": "What is the narrative shock size in 1979 Q4?",
+      "answer": "+3.21"
+    },
+    {
+      "question": "What type of episode was 1982 Q4?",
+      "answer": "Expansion"
+    },
+    {
+      "question": "What assumption on epsilon_t identifies the SVAR?",
+      "answer": "Structural shocks are orthonormal: Var(epsilon_t) = I"
+    }
+  ]
+}

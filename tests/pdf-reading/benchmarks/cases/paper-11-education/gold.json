@@ -1,0 +1,3461 @@
+{
+  "paper_id": "11",
+  "field": "education",
+  "title": "Teacher Quality and Student Outcomes: Evidence from Value-Added Models and Long-Run Data",
+  "journal_style": "aer",
+  "target_pages": 55,
+  "sections": [
+    {
+      "title": "Introduction",
+      "label": "sec:intro-educ",
+      "level": 1
+    },
+    {
+      "title": "Background and Literature",
+      "label": "sec:background-educ",
+      "level": 1
+    },
+    {
+      "title": "Teacher Quality and Student Achievement",
+      "label": "sec:lit-achievement",
+      "level": 2
+    },
+    {
+      "title": "Long-Run Effects of Education Inputs",
+      "label": "sec:lit-longrun",
+      "level": 2
+    },
+    {
+      "title": "Class Size Reduction Policies",
+      "label": "sec:lit-classsize",
+      "level": 2
+    },
+    {
+      "title": "Data",
+      "label": "sec:data-educ",
+      "level": 1
+    },
+    {
+      "title": "Test Score Data",
+      "label": "sec:data-scores",
+      "level": 2
+    },
+    {
+      "title": "Tax Records and Long-Run Outcomes",
+      "label": "sec:data-tax",
+      "level": 2
+    },
+    {
+      "title": "Teacher-Student Matching",
+      "label": "sec:data-matching",
+      "level": 2
+    },
+    {
+      "title": "Value-Added Methodology",
+      "label": "sec:va-method",
+      "level": 1
+    },
+    {
+      "title": "The Value-Added Model",
+      "label": "sec:va-spec",
+      "level": 2
+    },
+    {
+      "title": "Leave-Year-Out Estimation",
+      "label": "sec:va-lyo",
+      "level": 2
+    },
+    {
+      "title": "Empirical Bayes Shrinkage",
+      "label": "sec:va-eb",
+      "level": 2
+    },
+    {
+      "title": "Validation of Value-Added Measures",
+      "label": "sec:validation",
+      "level": 1
+    },
+    {
+      "title": "Forecast Bias Tests",
+      "label": "sec:forecast-bias",
+      "level": 2
+    },
+    {
+      "title": "Quasi-Experimental Evidence: Teacher Switching",
+      "label": "sec:teacher-switching",
+      "level": 2
+    },
+    {
+      "title": "Results: Test Score Effects",
+      "label": "sec:results-scores",
+      "level": 1
+    },
+    {
+      "title": "Contemporaneous Effects",
+      "label": "sec:contemp-effects",
+      "level": 2
+    },
+    {
+      "title": "Persistence and Fade-Out",
+      "label": "sec:fade-out",
+      "level": 2
+    },
+    {
+      "title": "Results: Long-Run Effects",
+      "label": "sec:results-longrun",
+      "level": 1
+    },
+    {
+      "title": "College and Labor Market Outcomes",
+      "label": "sec:college-labor",
+      "level": 2
+    },
+    {
+      "title": "Other Adult Outcomes",
+      "label": "sec:other-adult",
+      "level": 2
+    },
+    {
+      "title": "Net Present Value Calculations",
+      "label": "sec:npv-calc",
+      "level": 2
+    },
+    {
+      "title": "Heterogeneity and Distributional Effects",
+      "label": "sec:heterogeneity-educ",
+      "level": 1
+    },
+    {
+      "title": "Class Size and Teacher Quality",
+      "label": "sec:class-size",
+      "level": 1
+    },
+    {
+      "title": "Maimonides' Rule IV",
+      "label": "sec:maimonides-iv",
+      "level": 2
+    },
+    {
+      "title": "Interaction of Class Size and Teacher VA",
+      "label": "sec:class-va-interact",
+      "level": 2
+    },
+    {
+      "title": "Robustness",
+      "label": "sec:robustness-educ",
+      "level": 1
+    },
+    {
+      "title": "Conclusion",
+      "label": "sec:conclusion-educ",
+      "level": 1
+    },
+    {
+      "title": "Appendix A: Proofs and Derivations",
+      "label": "sec:appendix-a-educ",
+      "level": 1
+    },
+    {
+      "title": "Appendix B: Alternative Specifications",
+      "label": "sec:appendix-b-educ",
+      "level": 1
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "summary-stats",
+      "caption": "Summary Statistics",
+      "label": "tab:summary-stats",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Math test score (standardized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Math test score (standardized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-3.42",
+          "role": "data",
+          "variable": "Math test score (standardized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "3.18",
+          "role": "data",
+          "variable": "Math test score (standardized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "2,541,918",
+          "role": "data",
+          "variable": "Math test score (standardized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Math test score (standardized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Math test score (standardized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Math test score (standardized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Math test score (standardized)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Math test score (standardized)",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Reading test score (standardized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "1.00",
+          "role": "data",
+          "variable": "Reading test score (standardized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "-3.28",
+          "role": "data",
+          "variable": "Reading test score (standardized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "3.54",
+          "role": "data",
+          "variable": "Reading test score (standardized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "2,541,918",
+          "role": "data",
+          "variable": "Reading test score (standardized)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Reading test score (standardized)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Reading test score (standardized)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Reading test score (standardized)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Reading test score (standardized)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Reading test score (standardized)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.48",
+          "role": "data",
+          "variable": "Free/reduced lunch eligible",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.50",
+          "role": "data",
+          "variable": "Free/reduced lunch eligible",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0",
+          "role": "data",
+          "variable": "Free/reduced lunch eligible",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "1",
+          "role": "data",
+          "variable": "Free/reduced lunch eligible",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 5,
+          "text": "2,541,918",
+          "role": "data",
+          "variable": "Free/reduced lunch eligible",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Free/reduced lunch eligible",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Free/reduced lunch eligible",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Free/reduced lunch eligible",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Free/reduced lunch eligible",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Free/reduced lunch eligible",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.16",
+          "role": "data",
+          "variable": "Black",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.37",
+          "role": "data",
+          "variable": "Black",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0",
+          "role": "data",
+          "variable": "Black",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "1",
+          "role": "data",
+          "variable": "Black",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "2,541,918",
+          "role": "data",
+          "variable": "Black",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Black",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Black",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Black",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Black",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Black",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "0.21",
+          "role": "data",
+          "variable": "Hispanic",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Hispanic",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "0",
+          "role": "data",
+          "variable": "Hispanic",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "1",
+          "role": "data",
+          "variable": "Hispanic",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 5,
+          "text": "2,541,918",
+          "role": "data",
+          "variable": "Hispanic",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Hispanic",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Hispanic",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Hispanic",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Hispanic",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Hispanic",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "12.4",
+          "role": "data",
+          "variable": "Teacher experience (years)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "9.8",
+          "role": "data",
+          "variable": "Teacher experience (years)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0",
+          "role": "data",
+          "variable": "Teacher experience (years)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "42",
+          "role": "data",
+          "variable": "Teacher experience (years)",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 5,
+          "text": "148,284",
+          "role": "data",
+          "variable": "Teacher experience (years)",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher experience (years)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher experience (years)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher experience (years)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher experience (years)",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher experience (years)",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "0.41",
+          "role": "data",
+          "variable": "Teacher has master's degree",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "0.49",
+          "role": "data",
+          "variable": "Teacher has master's degree",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "0",
+          "role": "data",
+          "variable": "Teacher has master's degree",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 4,
+          "text": "1",
+          "role": "data",
+          "variable": "Teacher has master's degree",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 5,
+          "text": "148,284",
+          "role": "data",
+          "variable": "Teacher has master's degree",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher has master's degree",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher has master's degree",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher has master's degree",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher has master's degree",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher has master's degree",
+          "is_stderr": true
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "23.8",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "4.2",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "12",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "35",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 16,
+          "col": 5,
+          "text": "148,284",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 17,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 18,
+          "col": 1,
+          "text": "0.00",
+          "role": "data",
+          "variable": "Teacher VA (math, SD units)",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 2,
+          "text": "0.14",
+          "role": "data",
+          "variable": "Teacher VA (math, SD units)",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 3,
+          "text": "-0.68",
+          "role": "data",
+          "variable": "Teacher VA (math, SD units)",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 4,
+          "text": "0.72",
+          "role": "data",
+          "variable": "Teacher VA (math, SD units)",
+          "is_coefficient": true
+        },
+        {
+          "row": 18,
+          "col": 5,
+          "text": "148,284",
+          "role": "data",
+          "variable": "Teacher VA (math, SD units)",
+          "is_coefficient": true
+        },
+        {
+          "row": 19,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher VA (math, SD units)",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher VA (math, SD units)",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher VA (math, SD units)",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher VA (math, SD units)",
+          "is_stderr": true
+        },
+        {
+          "row": 19,
+          "col": 5,
+          "text": "",
+          "role": "data",
+          "variable": "Teacher VA (math, SD units)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "How many student-year observations are in the sample?",
+          "answer": "2,541,918"
+        },
+        {
+          "question": "What is the standard deviation of teacher value-added in math?",
+          "answer": "0.14 SD units"
+        },
+        {
+          "question": "What is the mean class size?",
+          "answer": "23.8"
+        },
+        {
+          "question": "What fraction of students are eligible for free/reduced lunch?",
+          "answer": "0.48 (48 percent)"
+        }
+      ]
+    },
+    {
+      "table_id": "va-estimation",
+      "caption": "Teacher Value-Added Estimation: Forecast Bias Tests",
+      "label": "tab:va-estimation",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "1.014***",
+          "role": "data",
+          "variable": "Predicted teacher VA (leave-year-out)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "1.008***",
+          "role": "data",
+          "variable": "Predicted teacher VA (leave-year-out)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.998***",
+          "role": "data",
+          "variable": "Predicted teacher VA (leave-year-out)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.992***",
+          "role": "data",
+          "variable": "Predicted teacher VA (leave-year-out)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Predicted teacher VA (leave-year-out)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Predicted teacher VA (leave-year-out)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Predicted teacher VA (leave-year-out)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Predicted teacher VA (leave-year-out)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "2,541,918",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "2,541,918",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "2,541,918",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "2,541,918",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.018",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.124",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.584",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.612",
+          "role": "summary",
+          "label": "R-squared"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.44",
+          "role": "summary",
+          "label": "p-value ($\\hat{\\beta} = 1$)"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.66",
+          "role": "summary",
+          "label": "p-value ($\\hat{\\beta} = 1$)"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.92",
+          "role": "summary",
+          "label": "p-value ($\\hat{\\beta} = 1$)"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "0.68",
+          "role": "summary",
+          "label": "p-value ($\\hat{\\beta} = 1$)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is teacher VA a forecast-unbiased predictor of student test scores?",
+          "answer": "Yes, the coefficient is approximately 1.0 in all specifications and we cannot reject beta=1"
+        },
+        {
+          "question": "What controls are included in column 4?",
+          "answer": "Student demographics, lagged test scores (cubic), and school fixed effects"
+        },
+        {
+          "question": "What is the p-value for the test that beta=1 in column 3?",
+          "answer": "0.92"
+        }
+      ]
+    },
+    {
+      "table_id": "quasi-experimental",
+      "caption": "Quasi-Experimental Validation: Teacher Switching Design",
+      "label": "tab:quasi-experimental",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.941***",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.928***",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.914***",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.898***",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.042)",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.041)",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.043)",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.044)",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.012",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.008",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.004",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.002",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.038)",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.037)",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.039)",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.040)",
+          "role": "data",
+          "variable": "Arriving teacher VA",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "84,216",
+          "role": "summary",
+          "label": "School-grade-year obs."
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "84,216",
+          "role": "summary",
+          "label": "School-grade-year obs."
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "84,216",
+          "role": "summary",
+          "label": "School-grade-year obs."
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "84,216",
+          "role": "summary",
+          "label": "School-grade-year obs."
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does a high-VA teacher arriving at a school raise test scores?",
+          "answer": "Yes, the coefficient is 0.941 in the baseline (near unity)"
+        },
+        {
+          "question": "Is there a placebo effect on non-taught grades?",
+          "answer": "No, the coefficient is 0.012 and insignificant"
+        }
+      ]
+    },
+    {
+      "table_id": "persistence",
+      "caption": "Persistence of Teacher Effects Over Time",
+      "label": "tab:persistence",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.142***",
+          "role": "data",
+          "variable": "Teacher VA in year $t$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.118***",
+          "role": "data",
+          "variable": "Teacher VA in year $t$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.084***",
+          "role": "data",
+          "variable": "Teacher VA in year $t$",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.062***",
+          "role": "data",
+          "variable": "Teacher VA in year $t$",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Teacher VA in year $t$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.014)",
+          "role": "data",
+          "variable": "Teacher VA in year $t$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "Teacher VA in year $t$",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Teacher VA in year $t$",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "2,184,512",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "1,841,284",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "1,524,618",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "1,248,412",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "--",
+          "role": "summary",
+          "label": "Fade-out rate per year"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.17",
+          "role": "summary",
+          "label": "Fade-out rate per year"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.29",
+          "role": "summary",
+          "label": "Fade-out rate per year"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.37",
+          "role": "summary",
+          "label": "Fade-out rate per year"
+        }
+      ],
+      "qa": [
+        {
+          "question": "How much do teacher effects fade out after one year?",
+          "answer": "From the original effect, scores drop to about 0.142 (vs. ~0.16 in year t), roughly 10-15% fade"
+        },
+        {
+          "question": "Are teacher effects still significant after 4 years?",
+          "answer": "Yes, the coefficient is 0.062 with SE 0.018"
+        },
+        {
+          "question": "What is the fade-out rate after 3 years?",
+          "answer": "0.29 (29 percent cumulative fade-out)"
+        }
+      ]
+    },
+    {
+      "table_id": "long-run-outcomes",
+      "caption": "Long-Run Effects of Teacher Quality on Adult Outcomes",
+      "label": "tab:long-run",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.0182***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.0168***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.0154***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.0148***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.0028)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.0028)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.0029)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.0030)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "0.0128***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "0.0118***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "0.0104***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "0.0098***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "(0.0024)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "(0.0024)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "(0.0025)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "(0.0026)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "-0.0084***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "-0.0078***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "-0.0072***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "-0.0068**",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "(0.0024)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "(0.0024)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "(0.0025)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "(0.0026)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.412***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.384***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.348***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "0.324***",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.098)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.098)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.102)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.104)",
+          "role": "data",
+          "variable": "Teacher VA (1 SD increase)",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "1,841,212",
+          "role": "summary",
+          "label": "Observations (Panel A)"
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "1,841,212",
+          "role": "summary",
+          "label": "Observations (Panel A)"
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "1,841,212",
+          "role": "summary",
+          "label": "Observations (Panel A)"
+        },
+        {
+          "row": 15,
+          "col": 4,
+          "text": "1,841,212",
+          "role": "summary",
+          "label": "Observations (Panel A)"
+        },
+        {
+          "row": 16,
+          "col": 1,
+          "text": "0.514",
+          "role": "summary",
+          "label": "Control mean (Panel A)"
+        },
+        {
+          "row": 16,
+          "col": 2,
+          "text": "0.514",
+          "role": "summary",
+          "label": "Control mean (Panel A)"
+        },
+        {
+          "row": 16,
+          "col": 3,
+          "text": "0.514",
+          "role": "summary",
+          "label": "Control mean (Panel A)"
+        },
+        {
+          "row": 16,
+          "col": 4,
+          "text": "0.514",
+          "role": "summary",
+          "label": "Control mean (Panel A)"
+        },
+        {
+          "row": 17,
+          "col": 1,
+          "text": "10.24",
+          "role": "summary",
+          "label": "Control mean (Panel B)"
+        },
+        {
+          "row": 17,
+          "col": 2,
+          "text": "10.24",
+          "role": "summary",
+          "label": "Control mean (Panel B)"
+        },
+        {
+          "row": 17,
+          "col": 3,
+          "text": "10.24",
+          "role": "summary",
+          "label": "Control mean (Panel B)"
+        },
+        {
+          "row": 17,
+          "col": 4,
+          "text": "10.24",
+          "role": "summary",
+          "label": "Control mean (Panel B)"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Does a 1 SD increase in teacher VA raise college attendance?",
+          "answer": "Yes, by 1.82 percentage points (column 1)"
+        },
+        {
+          "question": "Does teacher quality affect adult earnings?",
+          "answer": "Yes, a 1 SD increase in teacher VA raises age-28 earnings by 1.28 percent"
+        },
+        {
+          "question": "Does teacher quality reduce teenage birth?",
+          "answer": "Yes, by 0.84 percentage points per 1 SD of teacher VA"
+        },
+        {
+          "question": "What is the control mean of college attendance?",
+          "answer": "0.514 (51.4 percent)"
+        }
+      ]
+    },
+    {
+      "table_id": "npv-calculations",
+      "caption": "Net Present Value of Replacing a Low-VA Teacher",
+      "label": "tab:npv",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "\\$252,000",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with median",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "\\$148,000",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with median",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "\\$356,000",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with median",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with median",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with median",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with median",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "\\$378,000",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with 75th pctile",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "\\$222,000",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with 75th pctile",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "\\$534,000",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with 75th pctile",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with 75th pctile",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with 75th pctile",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Replace bottom 5\\% with 75th pctile",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "\\$10,500",
+          "role": "data",
+          "variable": "Per-student NPV (bottom 5\\% to median)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "\\$6,167",
+          "role": "data",
+          "variable": "Per-student NPV (bottom 5\\% to median)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "\\$14,833",
+          "role": "data",
+          "variable": "Per-student NPV (bottom 5\\% to median)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Per-student NPV (bottom 5\\% to median)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Per-student NPV (bottom 5\\% to median)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Per-student NPV (bottom 5\\% to median)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "3\\%",
+          "role": "data",
+          "variable": "Discount rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "5\\%",
+          "role": "data",
+          "variable": "Discount rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "2\\%",
+          "role": "data",
+          "variable": "Discount rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Discount rate",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Discount rate",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Discount rate",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "25",
+          "role": "data",
+          "variable": "Years of teaching career remaining",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "15",
+          "role": "data",
+          "variable": "Years of teaching career remaining",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "30",
+          "role": "data",
+          "variable": "Years of teaching career remaining",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Years of teaching career remaining",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Years of teaching career remaining",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Years of teaching career remaining",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "24",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "24",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "24",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 14,
+          "col": 1,
+          "text": "2\\%",
+          "role": "data",
+          "variable": "Earnings growth rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 2,
+          "text": "1\\%",
+          "role": "data",
+          "variable": "Earnings growth rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 14,
+          "col": 3,
+          "text": "3\\%",
+          "role": "data",
+          "variable": "Earnings growth rate",
+          "is_coefficient": true
+        },
+        {
+          "row": 15,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings growth rate",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings growth rate",
+          "is_stderr": true
+        },
+        {
+          "row": 15,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Earnings growth rate",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the NPV of replacing a bottom 5% teacher with a median teacher?",
+          "answer": "$252,000 per classroom in baseline scenario"
+        },
+        {
+          "question": "What is the per-student NPV of replacing a bottom 5% teacher?",
+          "answer": "$10,500 per student"
+        },
+        {
+          "question": "What discount rate is used in the baseline?",
+          "answer": "3 percent"
+        }
+      ]
+    },
+    {
+      "table_id": "va-by-subgroup",
+      "caption": "Heterogeneity in Teacher Value-Added Effects",
+      "label": "tab:va-subgroup",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.172***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Low SES",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.0218***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Low SES",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.0148***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Low SES",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.0098***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Low SES",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Low SES",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.0034)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Low SES",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.0028)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Low SES",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.0028)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Low SES",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.124***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ High SES",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.0124***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ High SES",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.0088***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ High SES",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "-0.0054**",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ High SES",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ High SES",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.0030)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ High SES",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.0026)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ High SES",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.0024)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ High SES",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.018",
+          "role": "data",
+          "variable": "p-value (equality)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.021",
+          "role": "data",
+          "variable": "p-value (equality)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.068",
+          "role": "data",
+          "variable": "p-value (equality)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.142",
+          "role": "data",
+          "variable": "p-value (equality)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "p-value (equality)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "p-value (equality)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "p-value (equality)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "p-value (equality)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "0.168***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Black",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "0.0208***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Black",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "0.0142***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Black",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "-0.0094***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Black",
+          "is_coefficient": true
+        },
+        {
+          "row": 9,
+          "col": 1,
+          "text": "(0.022)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Black",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 2,
+          "text": "(0.0038)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Black",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 3,
+          "text": "(0.0032)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Black",
+          "is_stderr": true
+        },
+        {
+          "row": 9,
+          "col": 4,
+          "text": "(0.0032)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Black",
+          "is_stderr": true
+        },
+        {
+          "row": 10,
+          "col": 1,
+          "text": "0.158***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Hispanic",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 2,
+          "text": "0.0194***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Hispanic",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 3,
+          "text": "0.0132***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Hispanic",
+          "is_coefficient": true
+        },
+        {
+          "row": 10,
+          "col": 4,
+          "text": "-0.0088***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Hispanic",
+          "is_coefficient": true
+        },
+        {
+          "row": 11,
+          "col": 1,
+          "text": "(0.020)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Hispanic",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 2,
+          "text": "(0.0036)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Hispanic",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 3,
+          "text": "(0.0030)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Hispanic",
+          "is_stderr": true
+        },
+        {
+          "row": 11,
+          "col": 4,
+          "text": "(0.0030)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ Hispanic",
+          "is_stderr": true
+        },
+        {
+          "row": 12,
+          "col": 1,
+          "text": "0.128***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ White",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 2,
+          "text": "0.0132***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ White",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 3,
+          "text": "0.0094***",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ White",
+          "is_coefficient": true
+        },
+        {
+          "row": 12,
+          "col": 4,
+          "text": "-0.0058**",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ White",
+          "is_coefficient": true
+        },
+        {
+          "row": 13,
+          "col": 1,
+          "text": "(0.016)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ White",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 2,
+          "text": "(0.0030)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ White",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 3,
+          "text": "(0.0026)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ White",
+          "is_stderr": true
+        },
+        {
+          "row": 13,
+          "col": 4,
+          "text": "(0.0024)",
+          "role": "data",
+          "variable": "Teacher VA $\\times$ White",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Are teacher VA effects larger for low-SES students?",
+          "answer": "Yes, the effect on test scores is 0.172 for low SES vs. 0.124 for high SES"
+        },
+        {
+          "question": "Are teacher VA effects larger for Black students?",
+          "answer": "Yes, the effect on test scores is 0.168 for Black vs. 0.128 for White students"
+        },
+        {
+          "question": "Does teacher quality help close achievement gaps?",
+          "answer": "Yes, effects are systematically larger for disadvantaged groups"
+        }
+      ]
+    },
+    {
+      "table_id": "class-size",
+      "caption": "Class Size Effects: Maimonides' Rule IV Estimates",
+      "label": "tab:class-size",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "-0.028***",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "-0.024***",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "-0.021***",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "-0.018**",
+          "role": "data",
+          "variable": "Class size",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.008)",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.009)",
+          "role": "data",
+          "variable": "Class size",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "2,541,918",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "2,541,918",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "2,541,918",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "2,541,918",
+          "role": "summary",
+          "label": "Observations"
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "284.1",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "218.4",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "204.8",
+          "role": "summary",
+          "label": "First-stage F"
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "142.6",
+          "role": "summary",
+          "label": "First-stage F"
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the IV estimate of the class size effect?",
+          "answer": "-0.028 SD per additional student (column 1)"
+        },
+        {
+          "question": "What is the instrument for class size?",
+          "answer": "Maimonides' rule (enrollment-based discontinuity in predicted class size)"
+        },
+        {
+          "question": "Is the class size effect robust to teacher fixed effects?",
+          "answer": "Yes, the coefficient remains -0.018 and significant"
+        }
+      ]
+    },
+    {
+      "table_id": "robustness",
+      "caption": "Robustness of Value-Added Estimates",
+      "label": "tab:robustness",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.998",
+          "role": "data",
+          "variable": "Math",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.984",
+          "role": "data",
+          "variable": "Math",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "1.012",
+          "role": "data",
+          "variable": "Math",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.994",
+          "role": "data",
+          "variable": "Math",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 5,
+          "text": "0.942",
+          "role": "data",
+          "variable": "Math",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Math",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "(0.020)",
+          "role": "data",
+          "variable": "Math",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "(0.018)",
+          "role": "data",
+          "variable": "Math",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "(0.022)",
+          "role": "data",
+          "variable": "Math",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 5,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Math",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.992",
+          "role": "data",
+          "variable": "Reading",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.978",
+          "role": "data",
+          "variable": "Reading",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "1.004",
+          "role": "data",
+          "variable": "Reading",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.988",
+          "role": "data",
+          "variable": "Reading",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 5,
+          "text": "0.934",
+          "role": "data",
+          "variable": "Reading",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "(0.020)",
+          "role": "data",
+          "variable": "Reading",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "(0.021)",
+          "role": "data",
+          "variable": "Reading",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "(0.019)",
+          "role": "data",
+          "variable": "Reading",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "(0.024)",
+          "role": "data",
+          "variable": "Reading",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 5,
+          "text": "(0.026)",
+          "role": "data",
+          "variable": "Reading",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "0.0154",
+          "role": "data",
+          "variable": "Math VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "0.0148",
+          "role": "data",
+          "variable": "Math VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "0.0162",
+          "role": "data",
+          "variable": "Math VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "0.0144",
+          "role": "data",
+          "variable": "Math VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 5,
+          "text": "0.0138",
+          "role": "data",
+          "variable": "Math VA",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "(0.0029)",
+          "role": "data",
+          "variable": "Math VA",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "(0.0030)",
+          "role": "data",
+          "variable": "Math VA",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "(0.0028)",
+          "role": "data",
+          "variable": "Math VA",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "(0.0032)",
+          "role": "data",
+          "variable": "Math VA",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 5,
+          "text": "(0.0034)",
+          "role": "data",
+          "variable": "Math VA",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "Is the VA estimate robust to drift adjustment?",
+          "answer": "Yes, the forecast bias coefficient is 0.984 (very close to 1)"
+        },
+        {
+          "question": "Does shrinkage affect the VA estimates?",
+          "answer": "The forecast bias is 1.012, indicating slight over-shrinkage but near-unbiased"
+        },
+        {
+          "question": "What happens when demographics are excluded from the VA model?",
+          "answer": "The forecast bias drops to 0.942, suggesting slight bias when demographics are omitted"
+        }
+      ]
+    },
+    {
+      "table_id": "proofs-block",
+      "caption": "",
+      "label": "",
+      "gold_cells": [],
+      "qa": []
+    },
+    {
+      "table_id": "appendix-specification",
+      "caption": "Appendix: Alternative VA Estimation Methods",
+      "label": "tab:appendix-spec",
+      "gold_cells": [
+        {
+          "row": 1,
+          "col": 1,
+          "text": "0.184",
+          "role": "data",
+          "variable": "Raw SD",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "text": "0.142",
+          "role": "data",
+          "variable": "Raw SD",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "text": "0.138",
+          "role": "data",
+          "variable": "Raw SD",
+          "is_coefficient": true
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "text": "0.144",
+          "role": "data",
+          "variable": "Raw SD",
+          "is_coefficient": true
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Raw SD",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Raw SD",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Raw SD",
+          "is_stderr": true
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Raw SD",
+          "is_stderr": true
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "text": "0.142",
+          "role": "data",
+          "variable": "Signal SD ($\\hat{\\sigma}_{\\mu}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "text": "0.141",
+          "role": "data",
+          "variable": "Signal SD ($\\hat{\\sigma}_{\\mu}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "text": "0.138",
+          "role": "data",
+          "variable": "Signal SD ($\\hat{\\sigma}_{\\mu}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "text": "0.140",
+          "role": "data",
+          "variable": "Signal SD ($\\hat{\\sigma}_{\\mu}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Signal SD ($\\hat{\\sigma}_{\\mu}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Signal SD ($\\hat{\\sigma}_{\\mu}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Signal SD ($\\hat{\\sigma}_{\\mu}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Signal SD ($\\hat{\\sigma}_{\\mu}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 5,
+          "col": 1,
+          "text": "0.118",
+          "role": "data",
+          "variable": "Noise SD ($\\hat{\\sigma}_{\\varepsilon}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 2,
+          "text": "0.024",
+          "role": "data",
+          "variable": "Noise SD ($\\hat{\\sigma}_{\\varepsilon}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "text": "0.018",
+          "role": "data",
+          "variable": "Noise SD ($\\hat{\\sigma}_{\\varepsilon}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 5,
+          "col": 4,
+          "text": "0.032",
+          "role": "data",
+          "variable": "Noise SD ($\\hat{\\sigma}_{\\varepsilon}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 6,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Noise SD ($\\hat{\\sigma}_{\\varepsilon}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Noise SD ($\\hat{\\sigma}_{\\varepsilon}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Noise SD ($\\hat{\\sigma}_{\\varepsilon}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 6,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Noise SD ($\\hat{\\sigma}_{\\varepsilon}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 7,
+          "col": 1,
+          "text": "0.591",
+          "role": "data",
+          "variable": "Reliability ($\\hat{\\rho}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 2,
+          "text": "0.972",
+          "role": "data",
+          "variable": "Reliability ($\\hat{\\rho}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 3,
+          "text": "0.983",
+          "role": "data",
+          "variable": "Reliability ($\\hat{\\rho}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 7,
+          "col": 4,
+          "text": "0.950",
+          "role": "data",
+          "variable": "Reliability ($\\hat{\\rho}$)",
+          "is_coefficient": true
+        },
+        {
+          "row": 8,
+          "col": 1,
+          "text": "",
+          "role": "data",
+          "variable": "Reliability ($\\hat{\\rho}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 2,
+          "text": "",
+          "role": "data",
+          "variable": "Reliability ($\\hat{\\rho}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 3,
+          "text": "",
+          "role": "data",
+          "variable": "Reliability ($\\hat{\\rho}$)",
+          "is_stderr": true
+        },
+        {
+          "row": 8,
+          "col": 4,
+          "text": "",
+          "role": "data",
+          "variable": "Reliability ($\\hat{\\rho}$)",
+          "is_stderr": true
+        }
+      ],
+      "qa": [
+        {
+          "question": "What is the signal standard deviation of teacher quality?",
+          "answer": "Approximately 0.14 SD units, consistent across methods"
+        },
+        {
+          "question": "What is the reliability of raw OLS VA estimates?",
+          "answer": "0.591 (59.1 percent)"
+        },
+        {
+          "question": "What is the reliability of empirical Bayes estimates?",
+          "answer": "0.972 (97.2 percent)"
+        }
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "eq_id": "va-model",
+      "label": "eq:va-model",
+      "latex": "Y_{ijt} = \\alpha_{j(i,t)} + \\beta X_{ijt} + \\gamma A_{i,t-1} + \\varepsilon_{ijt}",
+      "description": "Value-added model: student $i$'s test score with teacher $j$ in year $t$, controlling for demographics $X$ and lagged achievement $A_{i,t-1}$. Teacher VA is $\\alpha_j$.",
+      "qa": [
+        {
+          "question": "What is the value-added model?",
+          "answer": "Y_ijt = alpha_j + beta*X_ijt + gamma*A_{i,t-1} + epsilon_ijt, where alpha_j is the teacher fixed effect"
+        }
+      ]
+    },
+    {
+      "eq_id": "leave-out",
+      "label": "eq:leave-out",
+      "latex": "\\hat{\\mu}_{j,-t} = \\frac{1}{|\\mathcal{T}_j \\setminus \\{t\\}|} \\sum_{s \\in \\mathcal{T}_j \\setminus \\{t\\}} \\bar{e}_{js}, \\quad \\bar{e}_{js} = \\frac{1}{n_{js}} \\sum_{i \\in \\mathcal{C}_{js}} \\hat{\\varepsilon}_{ijs}",
+      "description": "Leave-year-out VA estimate: average residual across all years except $t$ for teacher $j$. Avoids mechanical correlation between estimate and outcome.",
+      "qa": [
+        {
+          "question": "Why use leave-year-out estimation?",
+          "answer": "To avoid mechanical correlation between the VA estimate and the test scores being predicted, which would bias the forecast test toward 1"
+        }
+      ]
+    },
+    {
+      "eq_id": "forecast-bias",
+      "label": "eq:forecast-bias",
+      "latex": "Y_{ijt} = a + b \\cdot \\hat{\\mu}_{j,-t} + \\Gamma X_{ijt} + \\nu_{ijt}, \\quad H_0: b = 1",
+      "description": "Forecast bias test: regress current outcomes on predicted VA. Under unbiased VA, $b = 1$.",
+      "qa": []
+    },
+    {
+      "eq_id": "eb-shrinkage",
+      "label": "eq:eb",
+      "latex": "\\hat{\\mu}_j^{EB} = \\hat{\\rho}_j \\cdot \\hat{\\mu}_j^{OLS} + (1-\\hat{\\rho}_j) \\cdot 0, \\quad \\hat{\\rho}_j = \\frac{\\hat{\\sigma}_\\mu^2}{\\hat{\\sigma}_\\mu^2 + \\hat{\\sigma}_\\varepsilon^2 / n_j}, \\quad \\hat{\\sigma}_\\mu^2 = \\int_0^\\infty \\mu^2 \\, d\\hat{G}(\\mu) - \\frac{\\hat{\\sigma}_\\varepsilon^2}{\\bar{n}}",
+      "description": "Empirical Bayes shrinkage: shrink OLS estimate toward zero with reliability weight $\\hat{\\rho}_j$ that depends on signal variance and sample size.",
+      "qa": []
+    },
+    {
+      "eq_id": "variance-decomposition",
+      "label": "eq:decomposition",
+      "latex": "\\text{Var}(Y_{ijt}) = \\underbrace{\\sigma_\\mu^2}_{\\text{teacher}} + \\underbrace{\\sigma_\\varepsilon^2}_{\\text{residual}} + \\underbrace{\\sigma_X^2}_{\\text{observables}}, \\quad \\text{teacher share} = \\frac{\\sigma_\\mu^2}{\\sum_{i=1}^{N} \\sum_{j=1}^{M} (Y_{ijt} - \\bar{Y})^2 / (NM-1)}",
+      "description": "Variance decomposition: fraction of test score variance attributable to teachers. The teacher share measures how important teacher assignment is for student outcomes.",
+      "qa": [
+        {
+          "question": "What fraction of test score variance is attributable to teachers?",
+          "answer": "The teacher share sigma_mu^2 / Var(Y) is approximately 0.14^2 / 1 = 0.02, or about 2 percent"
+        }
+      ]
+    },
+    {
+      "eq_id": "fade-out",
+      "label": "eq:fade-out",
+      "latex": "Y_{i,t+k} = \\alpha + \\lambda^k \\delta \\hat{\\mu}_j + \\beta X_{ijt} + \\gamma A_{i,t-1} + \\varepsilon_{i,t+k}, \\quad \\lambda \\in (0,1)",
+      "description": "Fade-out model: test score effects of teacher VA decay geometrically at rate $\\lambda$ per year. Even with $\\lambda < 1$, knowledge gains may persist through complementary human capital channels.",
+      "qa": []
+    },
+    {
+      "eq_id": "long-run-specification",
+      "label": "eq:long-run",
+      "latex": "Y_{i,\\text{adult}} = \\alpha + \\delta \\hat{\\mu}_{j(i,t),-t}^{EB} + \\beta X_{ijt} + \\gamma A_{i,t-1} + \\varepsilon_i",
+      "description": "Long-run outcomes regression: adult outcome $Y_{i,\\text{adult}}$ (college, earnings, etc.) regressed on teacher VA estimated from test scores.",
+      "qa": []
+    },
+    {
+      "eq_id": "npv-formula",
+      "label": "eq:npv",
+      "latex": "NPV = n_s \\sum_{t=0}^{T-1} \\frac{1}{(1+r)^t} \\int_0^{W} \\frac{\\Delta w(\\hat{\\mu}_j) \\cdot w(\\tau)}{(1+r)^\\tau}\\,d\\tau, \\quad \\Delta w(\\hat{\\mu}_j) = \\begin{bmatrix} \\hat{\\delta}_{\\text{math}} \\\\ \\hat{\\delta}_{\\text{read}} \\end{bmatrix}' \\begin{bmatrix} \\hat{\\mu}_j^{\\text{math}} \\\\ \\hat{\\mu}_j^{\\text{read}} \\end{bmatrix}",
+      "description": "Net present value of teacher quality: $n_s$ students per year, $T$ years of teaching, $\\Delta w$ earnings gain per unit of VA, $w_\\tau$ is base earnings at experience $\\tau$, $r$ is discount rate.",
+      "qa": []
+    },
+    {
+      "eq_id": "selection-on-observables",
+      "label": "eq:selection",
+      "latex": "\\delta = \\frac{\\hat{\\beta} - 0}{\\hat{\\beta}_{controlled} - 0} \\cdot \\left(\\frac{R^2_{max} - \\tilde{R}^2}{\\tilde{R}^2 - R^2_0}\\right)^{-1}",
+      "description": "Oster (2019) proportional selection coefficient $\\delta$: ratio of selection on unobservables to observables needed to explain away the effect.",
+      "qa": []
+    },
+    {
+      "eq_id": "maimonides-rule",
+      "label": "eq:maimonides",
+      "latex": "f(n_s) = \\frac{n_s}{\\left\\lfloor (n_s - 1) / 40 \\right\\rfloor + 1}",
+      "description": "Maimonides' rule: predicted class size as a function of enrollment $n_s$. Creates discontinuities at multiples of 40 that serve as instruments.",
+      "qa": [
+        {
+          "question": "What is Maimonides' rule?",
+          "answer": "A rule that caps class size at 40, creating a new class when enrollment exceeds multiples of 40. This generates quasi-experimental variation in class size."
+        }
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "question": "What is the main identification strategy for teacher VA?",
+      "answer": "Leave-year-out estimation validated by forecast bias tests (beta = 0.998) and quasi-experimental teacher switching designs"
+    },
+    {
+      "question": "What is the standard deviation of teacher value-added?",
+      "answer": "0.14 test score standard deviations"
+    },
+    {
+      "question": "What is the effect of a 1 SD increase in teacher VA on college attendance?",
+      "answer": "1.5 percentage point increase"
+    },
+    {
+      "question": "What is the NPV of replacing a bottom-5% teacher with a median teacher?",
+      "answer": "$252,000 per classroom"
+    },
+    {
+      "question": "Are teacher VA effects larger for disadvantaged students?",
+      "answer": "Yes, effects are systematically larger for low-SES, Black, and Hispanic students"
+    },
+    {
+      "question": "How many student-year observations are in the sample?",
+      "answer": "2,541,918"
+    },
+    {
+      "question": "What is the standard deviation of teacher value-added in math?",
+      "answer": "0.14 SD units"
+    },
+    {
+      "question": "What is the mean class size?",
+      "answer": "23.8"
+    },
+    {
+      "question": "What fraction of students are eligible for free/reduced lunch?",
+      "answer": "0.48 (48 percent)"
+    },
+    {
+      "question": "Is teacher VA a forecast-unbiased predictor of student test scores?",
+      "answer": "Yes, the coefficient is approximately 1.0 in all specifications and we cannot reject beta=1"
+    },
+    {
+      "question": "What controls are included in column 4?",
+      "answer": "Student demographics, lagged test scores (cubic), and school fixed effects"
+    },
+    {
+      "question": "What is the p-value for the test that beta=1 in column 3?",
+      "answer": "0.92"
+    },
+    {
+      "question": "Does a high-VA teacher arriving at a school raise test scores?",
+      "answer": "Yes, the coefficient is 0.941 in the baseline (near unity)"
+    },
+    {
+      "question": "Is there a placebo effect on non-taught grades?",
+      "answer": "No, the coefficient is 0.012 and insignificant"
+    },
+    {
+      "question": "How much do teacher effects fade out after one year?",
+      "answer": "From the original effect, scores drop to about 0.142 (vs. ~0.16 in year t), roughly 10-15% fade"
+    },
+    {
+      "question": "Are teacher effects still significant after 4 years?",
+      "answer": "Yes, the coefficient is 0.062 with SE 0.018"
+    },
+    {
+      "question": "What is the fade-out rate after 3 years?",
+      "answer": "0.29 (29 percent cumulative fade-out)"
+    },
+    {
+      "question": "Does a 1 SD increase in teacher VA raise college attendance?",
+      "answer": "Yes, by 1.82 percentage points (column 1)"
+    },
+    {
+      "question": "Does teacher quality affect adult earnings?",
+      "answer": "Yes, a 1 SD increase in teacher VA raises age-28 earnings by 1.28 percent"
+    },
+    {
+      "question": "Does teacher quality reduce teenage birth?",
+      "answer": "Yes, by 0.84 percentage points per 1 SD of teacher VA"
+    },
+    {
+      "question": "What is the control mean of college attendance?",
+      "answer": "0.514 (51.4 percent)"
+    },
+    {
+      "question": "What is the NPV of replacing a bottom 5% teacher with a median teacher?",
+      "answer": "$252,000 per classroom in baseline scenario"
+    },
+    {
+      "question": "What is the per-student NPV of replacing a bottom 5% teacher?",
+      "answer": "$10,500 per student"
+    },
+    {
+      "question": "What discount rate is used in the baseline?",
+      "answer": "3 percent"
+    },
+    {
+      "question": "Are teacher VA effects larger for low-SES students?",
+      "answer": "Yes, the effect on test scores is 0.172 for low SES vs. 0.124 for high SES"
+    },
+    {
+      "question": "Are teacher VA effects larger for Black students?",
+      "answer": "Yes, the effect on test scores is 0.168 for Black vs. 0.128 for White students"
+    },
+    {
+      "question": "Does teacher quality help close achievement gaps?",
+      "answer": "Yes, effects are systematically larger for disadvantaged groups"
+    },
+    {
+      "question": "What is the IV estimate of the class size effect?",
+      "answer": "-0.028 SD per additional student (column 1)"
+    },
+    {
+      "question": "What is the instrument for class size?",
+      "answer": "Maimonides' rule (enrollment-based discontinuity in predicted class size)"
+    },
+    {
+      "question": "Is the class size effect robust to teacher fixed effects?",
+      "answer": "Yes, the coefficient remains -0.018 and significant"
+    },
+    {
+      "question": "Is the VA estimate robust to drift adjustment?",
+      "answer": "Yes, the forecast bias coefficient is 0.984 (very close to 1)"
+    },
+    {
+      "question": "Does shrinkage affect the VA estimates?",
+      "answer": "The forecast bias is 1.012, indicating slight over-shrinkage but near-unbiased"
+    },
+    {
+      "question": "What happens when demographics are excluded from the VA model?",
+      "answer": "The forecast bias drops to 0.942, suggesting slight bias when demographics are omitted"
+    },
+    {
+      "question": "What is the signal standard deviation of teacher quality?",
+      "answer": "Approximately 0.14 SD units, consistent across methods"
+    },
+    {
+      "question": "What is the reliability of raw OLS VA estimates?",
+      "answer": "0.591 (59.1 percent)"
+    },
+    {
+      "question": "What is the reliability of empirical Bayes estimates?",
+      "answer": "0.972 (97.2 percent)"
+    },
+    {
+      "question": "What is the value-added model?",
+      "answer": "Y_ijt = alpha_j + beta*X_ijt + gamma*A_{i,t-1} + epsilon_ijt, where alpha_j is the teacher fixed effect"
+    },
+    {
+      "question": "Why use leave-year-out estimation?",
+      "answer": "To avoid mechanical correlation between the VA estimate and the test scores being predicted, which would bias the forecast test toward 1"
+    },
+    {
+      "question": "What fraction of test score variance is attributable to teachers?",
+      "answer": "The teacher share sigma_mu^2 / Var(Y) is approximately 0.14^2 / 1 = 0.02, or about 2 percent"
+    },
+    {
+      "question": "What is Maimonides' rule?",
+      "answer": "A rule that caps class size at 40, creating a new class when enrollment exceeds multiples of 40. This generates quasi-experimental variation in class size."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.toc
+*.synctex.gz
+
+# LaTeX source (intermediate — regenerate with: python3 scripts/generate_long_form.py)
+*.tex
